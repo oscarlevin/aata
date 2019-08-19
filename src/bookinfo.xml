@@ -11,8 +11,8 @@
 <!-- See the file COPYING for copying conditions.     -->
 <docinfo>
   <document-id>judson-AATA</document-id>
-  
-  <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2019.png"/>
+
+  <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2018.png"/>
     <!-- Prefix to enhance Sage notebook contents -->
   <initialism>AATA</initialism>
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
