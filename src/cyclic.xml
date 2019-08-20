@@ -352,6 +352,36 @@
         </p>
       </example>
     </subsection>
+    <reading-questions xml:id="rqs-cyclic">
+      <exercise>
+        <statement>
+          <p>
+            Explain what it means for a group to be cyclic.  Your explanation should use the word <em>generator</em> at least once.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find two different generators for the group <m>U(9) = \{1,2,4,5,7,8\}</m>.  What does this say about whether <m>U(9)</m> is cyclic? (Compare to the previous question.)
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>H</m> is a subgroup of a cyclic group <m>G</m>.  Must <m>H</m> be abelian?  Explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-mult-group-c" permid="sHa">

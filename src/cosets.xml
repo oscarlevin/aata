@@ -244,6 +244,37 @@
         </p>
       </proof>
     </theorem>
+
+    <reading-questions xml:id="rqs-cosets">
+      <exercise>
+        <statement>
+          <p>
+            Why do we sometimes need to specify <em>left</em> or <em>right</em> cosets instead of just calling them cosets?  When do we not need to worry about this?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>G = \Z_6</m> and <m>H = \{0,2,4\}</m>.  List all cosets of <m>H</m> in <m>G</m>.  How many are there?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>G = S_4</m> and <m>H = \{(1), (12)(34), (13)(24), (14)(23)\}</m>.  What is the index of <m>H</m> in <m>G</m>?  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-lagranges-theorem" permid="dTk">
@@ -445,6 +476,37 @@
         </p>
       </proof>
     </theorem>
+
+    <reading-questions xml:id="rqs-lagrange">
+      <exercise>
+        <statement>
+          <p>
+            What does Lagrange's theorem tell us?  Explain in your own words.   
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            I'm thinking of a group of order <m>29</m>.  How many subgroups does the group have?  What does this have to do with Lagrange's theorem?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If a group has order 12, must it have a subgroup of order 6?  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-fermat-euler" permid="Kat">

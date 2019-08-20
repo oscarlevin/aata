@@ -284,6 +284,38 @@
         then the kernel of <m>\phi</m> is <m>n {\mathbb Z}</m>.
       </p>
     </example>
+
+    <reading-questions xml:id="rqs-homomorphisms">
+      <exercise>
+        <statement>
+          <p>
+            What is the difference between a <em>homomorphism</em> and an <em>isomorphism</em>? 
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What do we mean by the <term>kernel</term> of a homomorphism?  What does this say about the kernel of any <em>isomorphism</em>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What can you say about the image of a subgroup under a homomorphism?
+            That is, what can you say about <m>\phi(H)</m> for a subgroup <m>H</m> of <m>G</m> and homomorphism <m>\phi:G \to G'</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-group-isomorphism-theorems" permid="aVR">
@@ -581,6 +613,37 @@
         normal subgroups, quotient groups and properties of homomorphisms.
       </p>
     </paragraphs>
+
+    <reading-questions xml:id="rqs-fht">
+      <exercise>
+        <statement>
+          <p>
+            If <m>\phi:G \to H</m> is a group homomorphism, what can you say about <m>\ker \phi</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>N</m> is a normal subgroup of <m>G</m>, must there be a homomorphism that has <m>N</m> as its kernel?  If so, what is it?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the point of showing that <m>\eta(g_1Kg_2) = \eta(g_1K)\eta(g_2K)</m> in the proof of <xref ref="theorem-first-isomorphism"/>?  Also, why is the proof not done directly after showing this?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
     <!-- Exercises with Solutions  -->
     <!-- File: homomorph.xml  -->

@@ -430,6 +430,37 @@
         is in <m>T</m>.
       </p>
     </example>
+
+    <reading-questions xml:id="rqs-rings">
+      <exercise>
+        <statement>
+          <p>
+            How are groups and rings related to each other?  How are they different?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is a field and how do fields relate to rings?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is an integral domain?  How do integral domains relate to rings and fields?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-domains-and-fields" permid="QIu">
@@ -659,6 +690,37 @@
         </p>
       </proof>
     </theorem>
+
+    <reading-questions xml:id="rqs-domains-fields">
+      <exercise>
+        <statement>
+          <p>
+            What do we mean by a <term>zero divisor</term>?  Explain and illustrate with an example.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What do we mean by a <term>unit</term>?  Which elements of the field <m>\Q</m> are units?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the <em>Cancellation Law</em> and how does this relate to zero divisors?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-ring-homomorphisms" permid="wPD">
@@ -1068,6 +1130,59 @@
         </p>
       </statement>
     </theorem>
+
+    <reading-questions xml:id="rqs-ring-homomorphisms-ideals">
+      <exercise>
+        <statement>
+          <p>
+            Which of the following is true of the kernel of a ring homomorphism?  Briefly explain.
+            <ol>
+              <li>
+                <p>
+                  The kernel is the set of all things sent to 0.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The kernel is the set of all things sent to 1.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The kernel is the set of all things sent to either 0 or 1.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The kernel is the set of all things sent to both 0 and 1.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is an <term>ideal</term> of a ring?  How do ideals relate to subrings?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>R</m> is a ring and <m>I</m> is an ideal, what sort of thing is <m>R/I</m>?  What do its elements look like and what operation(s) exist for it?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-maximal-prime-ideals" permid="cWM">

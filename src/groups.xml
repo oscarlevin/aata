@@ -342,6 +342,36 @@
       </table>
     </subsection>
 
+    <reading-questions xml:id="rqs-equiv-classes-symmetries">
+      <exercise>
+        <statement>
+          <p>
+            What does it mean to say that a number <m>a</m> in <m>\mathbb{Z}_8</m> has a <em>multiplicative inverse</em>?  Describe this in general, and illustrate with an example of an element that has this and one that doesn't.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Why are there six <em>symmetires</em> of an equilateral triangle?  Does this mean there should be <m>4!=24</m> symmetries of a square?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Which of the operations discussed in this section are <em>commutative</em> and which are not?  What does this mean?  Illustrate with examples.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything). 
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-groups-define" permid="TmB">
@@ -700,7 +730,69 @@
       </p>
     </introduction>
 
-    <subsection xml:id="groups-subsection-basic-properties" permid="Rxo">
+    <subsection xml:id="groups-subsection-historical-note" permid="xEx">
+      <title>Historical Note</title>
+      <p permid="fPB">
+        Although the first clear axiomatic definition of a group was not given until the late 1800s,
+        group-theoretic methods had been employed before this time in the development of many areas of mathematics,
+        including geometry and the theory of algebraic equations.
+      </p>
+
+      <p permid="LWK">
+        Joseph-Louis Lagrange
+            <idx><h>Lagrange, Joseph-Louis</h></idx>
+        used group-theoretic methods in a 1770<ndash/>1771 memoir to study methods of solving polynomial equations.
+        Later, Évariste Galois
+            <idx><h>Galois, Évariste</h></idx>
+        (1811<ndash/>1832) succeeded in developing the mathematics necessary to determine exactly which polynomial equations could be solved in terms of the coefficients of the polynomial.
+        Galois' primary tool was group theory.
+      </p>
+
+      <p permid="sdT">
+        The study of geometry was revolutionized in 1872 when Felix Klein
+            <idx><h>Klein, Felix</h></idx>
+        proposed that geometric spaces should be studied by examining those properties that are invariant under a transformation of the space.
+        Sophus Lie,
+            <idx><h>Lie, Sophus</h></idx>
+        a contemporary of Klein,
+        used group theory to study solutions of partial differential equations.
+        One of the first modern treatments of group theory appeared in William Burnside's
+            <idx><h>Burnside, William</h></idx>
+        <pubtitle>The Theory of Groups of Finite Order</pubtitle> [1], first published in 1897.
+      </p>
+    </subsection>
+    <reading-questions xml:id="rqs-group-defs">
+      <exercise>
+        <statement>
+          <p>
+            What does it mean for a group to be <em>abelian</em>?  Be as specific as possible.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the inverse of the element 5 in (a) the group <m>\Z_8</m> and (b) the group <m>U(8)</m>?  Breifly explain your answers.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the order of the group <m>U(8)</m>?  Explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
+    </section>
+    <section xml:id="section-basic-properties" permid="Rxo">
       <title>Basic Properties of Groups</title>
       <proposition permid="kkM">
         <statement>
@@ -910,41 +1002,38 @@
         It is important to realize that the last statement can be made only because <m>{\mathbb Z}</m> and
         <m>{\mathbb Z}_n</m> are commutative groups.
       </p>
-    </subsection>
 
-    <subsection xml:id="groups-subsection-historical-note" permid="xEx">
-      <title>Historical Note</title>
-      <p permid="fPB">
-        Although the first clear axiomatic definition of a group was not given until the late 1800s,
-        group-theoretic methods had been employed before this time in the development of many areas of mathematics,
-        including geometry and the theory of algebraic equations.
-      </p>
-
-      <p permid="LWK">
-        Joseph-Louis Lagrange
-            <idx><h>Lagrange, Joseph-Louis</h></idx>
-        used group-theoretic methods in a 1770<ndash/>1771 memoir to study methods of solving polynomial equations.
-        Later, Évariste Galois
-            <idx><h>Galois, Évariste</h></idx>
-        (1811<ndash/>1832) succeeded in developing the mathematics necessary to determine exactly which polynomial equations could be solved in terms of the coefficients of the polynomial.
-        Galois' primary tool was group theory.
-      </p>
-
-      <p permid="sdT">
-        The study of geometry was revolutionized in 1872 when Felix Klein
-            <idx><h>Klein, Felix</h></idx>
-        proposed that geometric spaces should be studied by examining those properties that are invariant under a transformation of the space.
-        Sophus Lie,
-            <idx><h>Lie, Sophus</h></idx>
-        a contemporary of Klein,
-        used group theory to study solutions of partial differential equations.
-        One of the first modern treatments of group theory appeared in William Burnside's
-            <idx><h>Burnside, William</h></idx>
-        <pubtitle>The Theory of Groups of Finite Order</pubtitle> [1], first published in 1897.
-      </p>
-    </subsection>
-
-  </section>
+      <reading-questions xml:id="rqs-group-perperties">
+        <exercise>
+          <statement>
+            <p>
+              For any group <m>G</m> with elements <m>a</m> and <m>b</m>, is <m>(ab)\inv = a\inv b\inv</m>?  Explain why or give a counterexample.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              In any group <m>G</m> with elements <m>a</m> and <m>b</m>, is there a unique solution in the group to the equation <m>ax = b</m>? Explain why or give a counterexample.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              What are the <em>right and left cancellation laws</em>?  Do these hold for all groups, some groups, or no groups?  Explain.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+            </p>
+          </statement>
+        </exercise>
+      </reading-questions>
+    </section>
 
   <section xml:id="section-subgroups" permid="ztK">
     <title>Subgroups</title>
@@ -1227,7 +1316,36 @@
       </paragraphs>
 
     </subsection>
-
+    <reading-questions xml:id="rqs-subgroups">
+      <exercise>
+        <statement>
+          <p>
+            Is <m>\Z_4</m> a subgroup of <m>\Z_8</m>?  Explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What makes a subgroup <em>proper</em>?  What makes a subgroup <em>non-trivial</em>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The subgroup criterion in <xref ref="proposition-subgroup"/> says that for <m>H</m> to be a subgroup it is enough for <m>H \ne \emptyset</m> and whenever <m>g,h \in H</m> we also have <m>gh\inv \in H</m>.  Does every subgroup need to contain the identity?  If so, why does this criterion not say so?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
     <!-- Exercises with Solutions  -->
     <!-- File: groups.xml  -->

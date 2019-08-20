@@ -289,6 +289,36 @@
       </example>
     </subsection>
 
+    <reading-questions xml:id="rqs-factor-groups">
+      <exercise>
+        <statement>
+          <p>
+            Give two ways we can can be sure that a subgroup <m>H</m> of a group <m>G</m> is normal.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What does the notation <m>G/H</m> represent?  What does the notation <m>[G:H]</m> represent?  How are these related?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The subgroup <m>8\Z</m> is normal in <m>\Z</m>.  In the factor group <m>\Z/8\Z</m>, perform the computation <m>(3+8/Z) + (7+8\Z)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-simplicity-of-an" permid="GCx">

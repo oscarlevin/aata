@@ -293,6 +293,54 @@
       The map <m>\phi_{\alpha} : R[x] \rightarrow R</m> is called the
       <term>evaluation homomorphism</term><idx><h>Homomorphism</h><h>evaluation</h></idx> at <m>\alpha</m>.
     </p>
+
+    <reading-questions xml:id="rqs-polynomial-rings">
+      <exercise>
+        <statement>
+          <p>
+            Consider the polynomial <m>1+3x^4 - 2x</m>.  
+            <ol>
+              <li>
+                <p>
+                  Is the polynomial monic?  
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the leading coefficient?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the degree of the polynomial?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>p(x)</m> and <m>q(x)</m> are polynomials in <m>R[x]</m> for a commutative ring <m>R</m>, what can we say about the degree of the polynomial <m>p(x)q(x)</m>?  Be as specific as possible.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the <term>evaluation homomorphism</term>?  Illustrate with an example using <m>R = \Z</m> and <m>\alpha = 2</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-poly-division-algorithm" permid="jqo">
@@ -686,6 +734,37 @@
     <p permid="eVd">
       Notice the similarity between the proof of <xref ref="proposition-poly-gcd"/> and the proof of <xref ref="theorem-integers-gcd"/>.
     </p>
+
+    <reading-questions xml:id="rqs-polynomial-division-algorithm">
+      <exercise>
+        <statement>
+          <p>
+            What must be true of <m>r(x)</m> in the division algorithm for polynomials? How does this relate to <m>r</m> in the division algorithm for the integers?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What can you say about the number <m>\alpha</m> and the polynomial <m>p(x)</m> if <m>p(x)</m> is in the kernel of the evaluation homomorphism <m>\phi_\alpha</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What do we mean by the <term>greatest common divisor</term> of a pair of polynomials <m>p(x)</m> and <m>q(x)</m>?  
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-irreducible-poly" permid="Pxx">
@@ -1172,7 +1251,36 @@
         who published the story of the oath a year later.
       </p>
     </subsection>
-
+    <reading-questions xml:id="rqs-irreducible-polynomials">
+      <exercise>
+        <statement>
+          <p>
+            Is the polynomial <m>p(x) = 2x^2 - 4</m> irreducible?  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Can every monic polynomial that is not irreducible be factored into two <em>monic</em> polynomials each with smaller degree? 
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What, if anything, does Eisenstein's Criterion tell us about the polynomial <m>p(x) = x^3 + 6x^2 + 9x + 12</m>?  What about the polynomial <m>q(x) = x^3 + 6x^2 + 12x + 9</m>?  What about <m>f(x) = x^3 + 6x^2 + 12x + 36</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
     <!-- Exercises with Solutions  -->
     <!-- File: poly.xml  -->
