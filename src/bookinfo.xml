@@ -36,6 +36,14 @@
 \newcommand{\chr}{\operatorname{char}}
 \newcommand{\Null}{\operatorname{Null}}
 \newcommand{\transpose}{\text{t}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\st}{:}
+\newcommand{\inv}{^{-1}}
+
     </macros>
     <!--This is the default-->
     <cross-references text="type-global"/>

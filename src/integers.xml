@@ -656,7 +656,44 @@
         </proof>
       </theorem>
     </subsection>
-
+    <reading-questions xml:id="rqs-integers">
+      <!-- <exercise>
+        <statement>
+          <p>
+            Is every proper subset of the integers well ordered?  
+            Explain why or give a counterexample (and explain why your counterexample works).
+          </p>
+        </statement>
+      </exercise> -->
+      <exercise>
+        <statement>
+          <p>
+            What is the <em>Division Algorithm</em>?  Illustrate your answer with the exampls (a) <m>a = 4</m> and <m>b = 15</m> and (b) <m>a = -3</m> and <m>b = 5</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Use the definition of <em>greatest common divisor</em> given in the section to explain why <m>\gcd(28, 42) = 14</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Is 1 a prime number?  Answer this question based on the definition in this section and explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
     <subsection xml:id="integers-subsection-historical-note" permid="ePz">
       <title>Historical Note</title>
       <p permid="eBr">

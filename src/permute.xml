@@ -735,7 +735,41 @@
         Perhaps more theorems and concepts in mathematics have the name Cauchy attached to them than that of any other mathematician.
       </p>
     </subsection>
-
+    <reading-questions xml:id="rqs-permutations">
+      <exercise>
+        <statement>
+          <p>
+            What is the order of the group <m>S_4</m>?  What is the order of the group <m>A_4</m>?  Then, give an example of an element in <m>S_4</m> that is not in <m>A_4</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Write the permutation <m>\sigma = \begin{pmatrix}1 \amp 2 \amp 3 \amp 4 \amp 5 \amp 6 \amp 7 \\ 3 \amp 2 \amp7 \amp 5 \amp 6 \amp 4 \amp 1 \end{pmatrix}</m> in cycle notation.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Write <m>\sigma = (142)(243)</m> as a single cycle or product of disjoint cycles.  Then, find <m>\sigma(2)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(145)</m>.  <m>\sigma(2) = 2</m>.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-dihedral-groups" permid="CFp">

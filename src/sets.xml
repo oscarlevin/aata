@@ -241,8 +241,8 @@
 
   </section>
 
-  <section xml:id="section-sets-and-equivalence-relations" permid="eYQ">
-    <title>Sets and Equivalence Relations</title>
+  <section xml:id="section-sets-and-functions" permid="eYQ">
+    <title>Sets and Functions</title>
     <subsection xml:id="sets-subsection-set-theory" permid="JqM">
       <title>Set Theory</title>
       <p permid="pcJ">
@@ -1129,7 +1129,43 @@
       </theorem>
     </subsection>
 
-    <subsection xml:id="sets-subsection-equivalence-relations" permid="VFe">
+    <reading-questions xml:id="rqs-sets-functions">
+      <exercise>
+        <statement>
+          <p>
+            Consider the sets <m>A = \{x \st x-3 \in \N\}</m> and <m>B = \{x \st \frac{x}{2} \in \N\}</m>.  Find (describe) the sets <m>A \cap B</m> and <m>A \cup B</m>. 
+          </p>
+            
+          <p> 
+            Note that you can type <latex /> such as <c>$A \cap B = \{1,2,3\}$</c> (although this is not the right answer).  If you right-click on any math in this book and select <q>Show math as -> TeX commands</q>, you can see the <latex /> commands that produce that math.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What does it mean for two sets to be <term>disjoint</term>?  Describe in words and in symbols, and give an example and non-example.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the difference between a function being one-to-one (injective) and being onto (surjective)?  
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
+  </section>
+
+    <section xml:id="section-equivalence-relations" permid="VFe">
       <title>Equivalence Relations and Partitions</title>
       <p permid="vBP">
         A fundamental notion in mathematics is that of equality.
@@ -1420,55 +1456,41 @@
           which will be stated and proved in <xref ref="integers"/>.
         </p>
       </example>
-    </subsection>
 
-  </section>
+      <reading-questions xml:id="rqs-equiv-relations-parts">
+        <exercise>
+          <statement>
+            <p>
+              Consider the relation <m>R \subset \Z \times \Z</m> that holds of <m>(x,y)</m> precisely when <m>x-y = 3</m>. Is <m>R</m> an equivalence relation?  Not not, what specific properties of an equivalence relation does it not satisfy? 
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Consider a set <m>X</m> and a partition <m>\mathcal{P}</m> of <m>X</m>.  Is it possible for an element <m>a \in X</m> to belong to two distinct sets of <m>\mathcal{P}</m>?  Briefly explain.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Consider the equivalence realtion established by the integers modulo 5.  What does the notation <m>[4]</m> mean?  Be as specific as you can.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+            </p>
+          </statement>
+        </exercise>
+      </reading-questions>
 
-  <reading-questions permid="ibN">
+    </section>
 
-    <exercise permid="Kix">
-      <statement>
-        <p permid="OSq">
-          What do relations and mappings have in common?
-        </p>
-      </statement>
-    </exercise>
 
-    <exercise permid="qpG">
-      <statement>
-        <p permid="uZz">
-          What makes relations and mappings different?
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise permid="WwP">
-      <statement>
-        <p permid="bgI">
-          State carefully the three defining properties of an equivalence relation.
-          In other words, do not just <em>name</em>
-          the properties, give their definitions.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise permid="CDY">
-      <statement>
-        <p permid="HnR">
-          What is the big deal about equivalence relations? (Hint: Partitions.)
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise permid="iLh">
-      <statement>
-        <p permid="nva">
-          Describe a general technique for proving that two sets are equal.
-        </p>
-      </statement>
-    </exercise>
-
-  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: sets.xml  -->
     <!-- Title: Preliminaries -->

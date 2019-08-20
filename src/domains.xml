@@ -320,6 +320,37 @@
         </p>
       </statement>
     </corollary>
+
+    <reading-questions xml:id="rqs-fraction-fields">
+      <exercise>
+        <statement>
+          <p>
+            We defined <m>(a,b) \sim (c,d)</m> if <m>ad = bc</m>.  Why is this the right choice?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What does it mean to say that operations are <em>well-defined</em>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            This section uses the notation <m>\Q[x]</m> and also <m>\Q(x)</m>.  What do these represent and how are they related?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-factorization-domains" permid="Jbe">

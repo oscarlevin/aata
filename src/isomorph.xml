@@ -452,6 +452,37 @@
         Cayley was also one of the people responsible for the admission of women to Cambridge.
       </p>
     </subsection>
+
+    <reading-questions xml:id="rqs-isomorphisms">
+      <exercise>
+        <statement>
+          <p>
+            List three properties of a group that are preserved by isomorphism.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            True or false: for two groups to be isomorphic, they must have the same operation.  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            How many cyclic groups of order 10 are there?  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+          </p>
+        </statement>
+      </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="section-direct-products" permid="kCy">
