@@ -344,31 +344,31 @@
       </figure>
     </subsection>
 
-    <reading-questions xml:id="rqs-equiv-classes-symmetries">
-      <exercise>
+    <reading-questions xml:id="rqs-equiv-classes-symmetries" permid="CLH">
+      <exercise permid="bor">
         <statement>
-          <p>
+          <p permid="Vzf">
             What does it mean to say that a number <m>a</m> in <m>\mathbb{Z}_8</m> has a <em>multiplicative inverse</em>?  Describe this in general, and illustrate with an example of an element that has this and one that doesn't.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="HvA">
         <statement>
-          <p>
+          <p permid="BGo">
             Why are there six <em>symmetires</em> of an equilateral triangle?  Does this mean there should be <m>4!=24</m> symmetries of a square?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="nCJ">
         <statement>
-          <p>
+          <p permid="hNx">
             Which of the operations discussed in this section are <em>commutative</em> and which are not?  What does this mean?  Illustrate with examples.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="TJS">
         <statement>
-          <p>
+          <p permid="NUG">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything). 
           </p>
         </statement>
@@ -763,31 +763,31 @@
         <pubtitle>The Theory of Groups of Finite Order</pubtitle> [1], first published in 1897.
       </p>
     </subsection>
-    <reading-questions xml:id="rqs-group-defs">
-      <exercise>
+    <reading-questions xml:id="rqs-group-defs" permid="iSQ">
+      <exercise permid="zRb">
         <statement>
-          <p>
+          <p permid="ubP">
             What does it mean for a group to be <em>abelian</em>?  Be as specific as possible.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="fYk">
         <statement>
-          <p>
+          <p permid="aiY">
             What is the inverse of the element 5 in (a) the group <m>\Z_8</m> and (b) the group <m>U(8)</m>?  Breifly explain your answers.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="Mft">
         <statement>
-          <p>
+          <p permid="Gqh">
             What is the order of the group <m>U(8)</m>?  Explain.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="smC">
         <statement>
-          <p>
+          <p permid="mxq">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -1005,31 +1005,31 @@
         <m>{\mathbb Z}_n</m> are commutative groups.
       </p>
 
-      <reading-questions xml:id="rqs-group-perperties">
-        <exercise>
+      <reading-questions xml:id="rqs-group-perperties" permid="OZZ">
+        <exercise permid="YtL">
           <statement>
-            <p>
+            <p permid="SEz">
               For any group <m>G</m> with elements <m>a</m> and <m>b</m>, is <m>(ab)\inv = a\inv b\inv</m>?  Explain why or give a counterexample.
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="EAU">
           <statement>
-            <p>
+            <p permid="yLI">
               In any group <m>G</m> with elements <m>a</m> and <m>b</m>, is there a unique solution in the group to the equation <m>ax = b</m>? Explain why or give a counterexample.
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="kId">
           <statement>
-            <p>
+            <p permid="eSR">
               What are the <em>right and left cancellation laws</em>?  Do these hold for all groups, some groups, or no groups?  Explain.
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="QPm">
           <statement>
-            <p>
+            <p permid="Laa">
               After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
             </p>
           </statement>
@@ -1318,31 +1318,31 @@
       </paragraphs>
 
     </subsection>
-    <reading-questions xml:id="rqs-subgroups">
-      <exercise>
+    <reading-questions xml:id="rqs-subgroups" permid="vhi">
+      <exercise permid="wWv">
         <statement>
-          <p>
+          <p permid="rhj">
             Is <m>\Z_4</m> a subgroup of <m>\Z_8</m>?  Explain.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="ddE">
         <statement>
-          <p>
+          <p permid="Xos">
             What makes a subgroup <em>proper</em>?  What makes a subgroup <em>non-trivial</em>?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="JkN">
         <statement>
-          <p>
+          <p permid="DvB">
             The subgroup criterion in <xref ref="proposition-subgroup"/> says that for <m>H</m> to be a subgroup it is enough for <m>H \ne \emptyset</m> and whenever <m>g,h \in H</m> we also have <m>gh\inv \in H</m>.  Does every subgroup need to contain the identity?  If so, why does this criterion not say so?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="prW">
         <statement>
-          <p>
+          <p permid="jCK">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -2363,7 +2363,7 @@
                 A publisher has houses in Germany and the United States.
                 Its German prefix is 3-540.
                 If its United States prefix will be 0-<c>abc</c>,
-                find <c>abc</c> such that the rest of the <acro>ISBN</acro> code will be the same for a book printed in Germany and in the United States.
+                find <c>abc</c>such that the rest of the <acro>ISBN</acro> code will be the same for a book printed in Germany and in the United States.
                 Under the <acro>ISBN</acro> coding method the first digit identifies the language; German is 3 and English is 0.
                 The next group of numbers identifies the publisher,
                 and the last group identifies the specific book.
@@ -2470,7 +2470,7 @@
 
       <p permid="QGD">
         We would like to work with elements of <c>Z8</c>.
-        If you were to type a <c>6</c> into a compute cell right now,
+        If you were to type a <c>6</c>into a compute cell right now,
         what would you mean?
         The integer <m>6</m>, the rational number <m>\frac{6}{1}</m>,
         the real number <m>6.00000</m>,
@@ -2478,8 +2478,8 @@
         Or perhaps you really do want the integer <m>6</m> mod <m>8</m>?
         Sage really has no idea what you mean or want.
         To make this clear, you can <q>coerce</q>
-        <c>6</c> into <c>Z8</c> with the syntax <c>Z8(6)</c>.
-        Without this, Sage will treat a input number like <c>6</c> as an integer,
+        <c>6</c>into <c>Z8</c>with the syntax <c>Z8(6)</c>.
+        Without this, Sage will treat a input number like <c>6</c>as an integer,
         the simplest possible interpretation in some sense.
         Study the following carefully,
         where we first work with <q>normal</q>
@@ -2532,7 +2532,7 @@
             </sage>
 
       <p permid="wNM">
-        <c>Z8</c> is a bit unusual as a first example,
+        <c>Z8</c>is a bit unusual as a first example,
         since it has two operations defined,
         both addition and multiplication,
         with addition forming a group,
@@ -2623,7 +2623,7 @@
 
       <p permid="BxF">
         The final list comprehension deserves comment.
-        The <c>.domain()</c> method gives a list of the symbols used for the permutation group <c>triangle</c> and then <c>rho2</c> is employed with syntax like it is a function
+        The <c>.domain()</c>method gives a list of the symbols used for the permutation group <c>triangle</c>and then <c>rho2</c>is employed with syntax like it is a function
         (it <em>is</em> a function)
         to create the images that would occupy the bottom row.
       </p>
@@ -2688,11 +2688,11 @@
         Now that we understand that Sage does multiplication in reverse,
         we can compute the Cayley table for this group.
         Default behavior is to just name elements of a group as letters, <c>a,
-        b, c</c>, <m>\dots{}</m> in the same order that the <c>.list()</c> command would produce the elements of the group.
+        b, c</c>, <m>\dots{}</m> in the same order that the <c>.list()</c>command would produce the elements of the group.
         But you can also print the elements in the table as themselves
         (that uses cycle notation here),
         or you can give the elements names.
-        We will use <c>u</c> as shorthand for <m>\mu</m> and <c>r</c> as shorthand for <m>\rho</m>.
+        We will use <c>u</c>as shorthand for <m>\mu</m> and <c>r</c>as shorthand for <m>\rho</m>.
       </p>
 
             <sage permid="aiT">
@@ -2790,7 +2790,7 @@
             </sage>
 
       <p permid="SvQ">
-        It should be fairly obvious that <c>a</c> is the identity element of the group (<m>1</m>),
+        It should be fairly obvious that <c>a</c>is the identity element of the group (<m>1</m>),
         either from its behavior in the table,
         or from its <q>bottom row</q> representation as the first element of the list above.
         And if you prefer,
@@ -2807,7 +2807,7 @@
 
       <p permid="yCZ">
         Now <m>-1</m> should have the property that <m>-1\cdot -1= 1</m>.
-        We see that the identity element <c>a</c> is on the diagonal of the Cayley table only when we compute <c>d*d</c>.
+        We see that the identity element <c>a</c>is on the diagonal of the Cayley table only when we compute <c>d*d</c>.
         We can verify this easily,
         borrowing the fourth <q>bottom row</q>
         element from the list above.
@@ -2826,11 +2826,11 @@
       <p permid="eKi">
         See if you can pair up the letters with all eight elements of the quaternions.
         Be a bit careful with your names,
-        the symbol <c>I</c> is used by Sage for the imaginary number <m>i=\sqrt{-1}</m>
+        the symbol <c>I</c>is used by Sage for the imaginary number <m>i=\sqrt{-1}</m>
         (which we will use below),
         but Sage will silently let you redefine it to be anything you like.
-        Same goes for using lower-case <c>i</c> in Sage.
-        So call your elements of the quaternions something like <c>QI, QJ, QK</c> to avoid confusion.
+        Same goes for using lower-case <c>i</c>in Sage.
+        So call your elements of the quaternions something like <c>QI, QJ, QK</c>to avoid confusion.
       </p>
 
       <p permid="KRr">
@@ -2937,7 +2937,7 @@
     <exercise number="1" permid="qot" xml:id="groups-sage-exercise-order-8">
       <statement>
         <p permid="ANL">
-          Create the groups <c>CyclicPermutationGroup(8)</c> and <c>DihedralGroup(4)</c> and name these groups <c>C</c> and <c>D</c>,
+          Create the groups <c>CyclicPermutationGroup(8)</c>and <c>DihedralGroup(4)</c>and name these groups <c>C</c>and <c>D</c>,
           respectively.
           We will understand these constructions better shortly,
           but for now just understand that both objects you create are actually groups.
@@ -2948,9 +2948,9 @@
     <exercise number="2" permid="WvC" xml:id="groups-sage-exercise-order">
       <statement>
         <p permid="gUU">
-          Check that <c>C</c> and <c>D</c> have the same size by using the <c>.order()</c> method.
+          Check that <c>C</c>and <c>D</c>have the same size by using the <c>.order()</c>method.
           Determine which group is abelian,
-          and which is not, by using the <c>.is_abelian()</c> method.
+          and which is not, by using the <c>.is_abelian()</c>method.
         </p>
       </statement>
     </exercise>
@@ -2958,7 +2958,7 @@
     <exercise number="3" permid="CCL" xml:id="groups-sage-exercise-cayley-table">
       <statement>
         <p permid="Ncd">
-          Use the <c>.cayley_table()</c> method to create the Cayley table for each group.
+          Use the <c>.cayley_table()</c>method to create the Cayley table for each group.
         </p>
       </statement>
     </exercise>
@@ -2979,13 +2979,13 @@
     <exercise number="5" permid="ORd" xml:id="groups-sage-exercise-subgroup">
       <statement>
         <p permid="Zqv">
-          For <c>C</c> locate the one subgroup of order <m>4</m>.
-          The group <c>D</c> has three subgroups of order <m>4</m>.
-          Select one of the three subgroups of <c>D</c> that has a different structure than the subgroup you obtained from <c>C</c>.
+          For <c>C</c>locate the one subgroup of order <m>4</m>.
+          The group <c>D</c>has three subgroups of order <m>4</m>.
+          Select one of the three subgroups of <c>D</c>that has a different structure than the subgroup you obtained from <c>C</c>.
         </p>
 
         <p permid="FxE">
-          The <c>.subgroups()</c> method will give you a list of all of the subgroups to help you get started.
+          The <c>.subgroups()</c>method will give you a list of all of the subgroups to help you get started.
           A Cayley table will help you tell the difference between the two subgroups.
           What properties of these tables did you use to determine the difference in the structure of the subgroups?
         </p>
@@ -2995,7 +2995,7 @@
     <exercise number="6" permid="uYm" xml:id="groups-sage-exercise-subgpoup-elements">
       <statement>
         <p permid="lEN">
-          The <c>.subgroup(elt_list)</c> method of a group will create the smallest subgroup containing the specified elements of the group,
+          The <c>.subgroup(elt_list)</c>method of a group will create the smallest subgroup containing the specified elements of the group,
           when given the elements as a list <c>elt_list</c>.
           Use this command to discover the shortest list of elements necessary to recreate the subgroups you found in the previous exercise.
           The equality comparison,

@@ -321,31 +321,31 @@
       </statement>
     </corollary>
 
-    <reading-questions xml:id="rqs-fraction-fields">
-      <exercise>
+    <reading-questions xml:id="rqs-fraction-fields" permid="Zze">
+      <exercise permid="FGn">
         <statement>
-          <p>
+          <p permid="eiX">
             We defined <m>(a,b) \sim (c,d)</m> if <m>ad = bc</m>.  Why is this the right choice?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="lNw">
         <statement>
-          <p>
+          <p permid="Kqg">
             What does it mean to say that operations are <em>well-defined</em>?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="RUF">
         <statement>
-          <p>
+          <p permid="qxp">
             This section uses the notation <m>\Q[x]</m> and also <m>\Q(x)</m>.  What do these represent and how are they related?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="ybO">
         <statement>
-          <p>
+          <p permid="WEy">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>

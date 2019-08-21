@@ -1129,35 +1129,35 @@
       </theorem>
     </subsection>
 
-    <reading-questions xml:id="rqs-sets-functions">
-      <exercise>
+    <reading-questions xml:id="rqs-sets-functions" permid="hGt">
+      <exercise permid="tUL">
         <statement>
-          <p>
+          <p permid="raf">
             Consider the sets <m>A = \{x \st x-3 \in \N\}</m> and <m>B = \{x \st \frac{x}{2} \in \N\}</m>.  Find (describe) the sets <m>A \cap B</m> and <m>A \cup B</m>. 
           </p>
             
-          <p> 
-            Note that you can type <latex /> such as <c>$A \cap B = \{1,2,3\}$</c> (although this is not the right answer).  If you right-click on any math in this book and select <q>Show math as -> TeX commands</q>, you can see the <latex /> commands that produce that math.
+          <p permid="Xho"> 
+            Note that you can type <latex /> such as <c>$A \cap B = \{1,2,3\}$</c>(although this is not the right answer).  If you right-click on any math in this book and select <q>Show math as -> TeX commands</q>, you can see the <latex /> commands that produce that math.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="abU">
         <statement>
-          <p>
+          <p permid="Dox">
             What does it mean for two sets to be <term>disjoint</term>?  Describe in words and in symbols, and give an example and non-example.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="Gjd">
         <statement>
-          <p>
+          <p permid="jvG">
             What is the difference between a function being one-to-one (injective) and being onto (surjective)?  
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="mqm">
         <statement>
-          <p>
+          <p permid="PCP">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything).
           </p>
         </statement>
@@ -1457,31 +1457,31 @@
         </p>
       </example>
 
-      <reading-questions xml:id="rqs-equiv-relations-parts">
-        <exercise>
+      <reading-questions xml:id="rqs-equiv-relations-parts" permid="NNC">
+        <exercise permid="Sxv">
           <statement>
-            <p>
+            <p permid="vJY">
               Consider the relation <m>R \subset \Z \times \Z</m> that holds of <m>(x,y)</m> precisely when <m>x-y = 3</m>. Is <m>R</m> an equivalence relation?  Not not, what specific properties of an equivalence relation does it not satisfy? 
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="yEE">
           <statement>
-            <p>
+            <p permid="bRh">
               Consider a set <m>X</m> and a partition <m>\mathcal{P}</m> of <m>X</m>.  Is it possible for an element <m>a \in X</m> to belong to two distinct sets of <m>\mathcal{P}</m>?  Briefly explain.
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="eLN">
           <statement>
-            <p>
+            <p permid="HYq">
               Consider the equivalence realtion established by the integers modulo 5.  What does the notation <m>[4]</m> mean?  Be as specific as you can.
             </p>
           </statement>
         </exercise>
-        <exercise>
+        <exercise permid="KSW">
           <statement>
-            <p>
+            <p permid="ofz">
               After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
             </p>
           </statement>
@@ -2224,14 +2224,14 @@
 
       <p permid="Uez">
         At the cursor,
-        type <c>2+2</c> and then click on the evaluate link.
-        Did a <c>4</c> appear below the cell?
+        type <c>2+2</c>and then click on the evaluate link.
+        Did a <c>4</c>appear below the cell?
         If so, you have successfully sent a command off for Sage to evaluate and you have received back the (correct) answer.
       </p>
 
       <p permid="AlI">
         Here is another compute cell.
-        Try evaluating the command <c>factorial(300)</c> here.
+        Try evaluating the command <c>factorial(300)</c>here.
       </p>
 
       <sage/>
@@ -2281,7 +2281,7 @@
         The following compute cell will not print anything since the one command does not create output.
         But it will have an effect,
         as you can see when you execute the subsequent cell.
-        Notice how this uses the value of <c>b</c> from above.
+        Notice how this uses the value of <c>b</c>from above.
         Execute this compute cell <em>once</em>.
         Exactly once.
         Even if it <em>appears</em> to do nothing.
@@ -2303,14 +2303,14 @@
             </sage>
 
       <p permid="RjT">
-        So <c>b</c> came into existence as <c>6</c>.
+        So <c>b</c>came into existence as <c>6</c>.
         We subtracted <m>10</m> immediately afterward.
         Then a subsequent cell added <c>50</c>.
         This assumes you executed this cell <em>exactly</em> once!
         In the last cell we create <c>b+20</c>
         (but do not save it)
         and it is this value (<m>66</m>) that is output,
-        while <c>b</c> is still <m>46</m>.
+        while <c>b</c>is still <m>46</m>.
       </p>
 
       <p permid="xrc">
@@ -2344,16 +2344,16 @@
       <title>Immediate Help</title>
       <p permid="dyl">
         Some commands in Sage are <q>functions,</q>
-        an example is <c>factorial()</c> above.
+        an example is <c>factorial()</c>above.
         Other commands are <q>methods</q>
         of an object and are like characteristics of objects,
-        an example is <c>.inverse()</c> as a method of a matrix.
+        an example is <c>.inverse()</c>as a method of a matrix.
         Once you know how to create an object
         (such as a matrix),
         then it is easy to see all the available methods.
         Write the name of the object,
         place a period (<q>dot</q>) and hit the TAB key.
-        If you have <c>A</c> defined from above,
+        If you have <c>A</c>defined from above,
         then the compute cell below is ready to go,
         click into it and then hit TAB
         (not <q>evaluate</q>!).
@@ -2415,7 +2415,7 @@
         and a third click brings back the abbreviated form).
         Read the bottom of an error message first,
         it is your best explanation.
-        Here a <c>ZeroDivisionError</c> is not 100% accurate,
+        Here a <c>ZeroDivisionError</c>is not 100% accurate,
         but is close.
         The matrix is not invertible,
         not dissimilar to how we cannot divide scalars by zero.
@@ -2595,11 +2595,11 @@
       <title>Lists of Integers</title>
       <p permid="XIZ">
         One final type of list, with numbers this time.
-        The <c>srange()</c> function will create lists of integers.
+        The <c>srange()</c>function will create lists of integers.
         (The <q>s</q> in the name stands for <q>Sage</q>
         and so will produce integers that Sage understands best.
         Many early difficulties with Sage and group theory can be alleviated by using only this command to create lists of integers.)
-        In its simplest form an invocation like <c>srange(12)</c> will create a list of 12 integers,
+        In its simplest form an invocation like <c>srange(12)</c>will create a list of 12 integers,
         <em>starting at zero</em> and working up to,
         <em>but not including</em>, 12.
         Does this sound familiar?
@@ -2639,7 +2639,7 @@
         (not be confused with your browser's File menu item!).
         You will see a choice here labeled
         <q>Save worksheet to a file...</q> When you do this,
-        you are creating a copy of your worksheet in the <c>sws</c> format
+        you are creating a copy of your worksheet in the <c>sws</c>format
         (short for <q>Sage WorkSheet</q>).
         You can email this file, or post it on a website,
         for other Sage users and they can use the <q>Upload</q>
@@ -2674,7 +2674,7 @@
           Maybe include some nicely formatted text or <tex/> using the included mini-word-processor of the Sage Notebook
           (hover until a blue bar appears between cells and then shift-click)
           or create commentary in cells within CoCalc using the <term>magics</term>
-          <c>%html</c> or <c>%md</c> on a line of their own followed by text in <init>HTML</init> or Markdown syntax
+          <c>%html</c>or <c>%md</c>on a line of their own followed by text in <init>HTML</init> or Markdown syntax
           (respectively).
         </p>
 

@@ -294,24 +294,24 @@
       <term>evaluation homomorphism</term><idx><h>Homomorphism</h><h>evaluation</h></idx> at <m>\alpha</m>.
     </p>
 
-    <reading-questions xml:id="rqs-polynomial-rings">
-      <exercise>
+    <reading-questions xml:id="rqs-polynomial-rings" permid="TYn">
+      <exercise permid="MtO">
         <statement>
-          <p>
+          <p permid="zad">
             Consider the polynomial <m>1+3x^4 - 2x</m>.  
-            <ol>
-              <li>
-                <p>
+            <ol permid="ibS">
+              <li permid="Ojb">
+                <p permid="GEC">
                   Is the polynomial monic?  
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="uqk">
+                <p permid="mLL">
                   What is the leading coefficient?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="axt">
+                <p permid="SSU">
                   What is the degree of the polynomial?
                 </p>
               </li>
@@ -319,23 +319,23 @@
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="sAX">
         <statement>
-          <p>
+          <p permid="fhm">
             If <m>p(x)</m> and <m>q(x)</m> are polynomials in <m>R[x]</m> for a commutative ring <m>R</m>, what can we say about the degree of the polynomial <m>p(x)q(x)</m>?  Be as specific as possible.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="YIg">
         <statement>
-          <p>
+          <p permid="Lov">
             What is the <term>evaluation homomorphism</term>?  Illustrate with an example using <m>R = \Z</m> and <m>\alpha = 2</m>.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="EPp">
         <statement>
-          <p>
+          <p permid="rvE">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -735,31 +735,31 @@
       Notice the similarity between the proof of <xref ref="proposition-poly-gcd"/> and the proof of <xref ref="theorem-integers-gcd"/>.
     </p>
 
-    <reading-questions xml:id="rqs-polynomial-division-algorithm">
-      <exercise>
+    <reading-questions xml:id="rqs-polynomial-division-algorithm" permid="Afw">
+      <exercise permid="kWy">
         <statement>
-          <p>
+          <p permid="XCN">
             What must be true of <m>r(x)</m> in the division algorithm for polynomials? How does this relate to <m>r</m> in the division algorithm for the integers?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="RdH">
         <statement>
-          <p>
+          <p permid="DJW">
             What can you say about the number <m>\alpha</m> and the polynomial <m>p(x)</m> if <m>p(x)</m> is in the kernel of the evaluation homomorphism <m>\phi_\alpha</m>?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="xkQ">
         <statement>
-          <p>
+          <p permid="jRf">
             What do we mean by the <term>greatest common divisor</term> of a pair of polynomials <m>p(x)</m> and <m>q(x)</m>?  
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="drZ">
         <statement>
-          <p>
+          <p permid="PYo">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -1251,31 +1251,31 @@
         who published the story of the oath a year later.
       </p>
     </subsection>
-    <reading-questions xml:id="rqs-irreducible-polynomials">
-      <exercise>
+    <reading-questions xml:id="rqs-irreducible-polynomials" permid="gmF">
+      <exercise permid="Jzi">
         <statement>
-          <p>
+          <p permid="wfx">
             Is the polynomial <m>p(x) = 2x^2 - 4</m> irreducible?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="pGr">
         <statement>
-          <p>
+          <p permid="cmG">
             Can every monic polynomial that is not irreducible be factored into two <em>monic</em> polynomials each with smaller degree? 
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="VNA">
         <statement>
-          <p>
+          <p permid="ItP">
             What, if anything, does Eisenstein's Criterion tell us about the polynomial <m>p(x) = x^3 + 6x^2 + 9x + 12</m>?  What about the polynomial <m>q(x) = x^3 + 6x^2 + 12x + 9</m>?  What about <m>f(x) = x^3 + 6x^2 + 12x + 36</m>?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="BUJ">
         <statement>
-          <p>
+          <p permid="oAY">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -2322,7 +2322,7 @@
             </sage>
 
       <p permid="MhF">
-        Notice that <c>p</c> is a degree two polynomial,
+        Notice that <c>p</c>is a degree two polynomial,
         yet through a brute-force examination we see that the polynomial only has one root,
         contrary to our usual expectations.
         It can be even more unusual.
@@ -2459,8 +2459,8 @@
       <p permid="QRy">
         To check these factorizations,
         we need to compute in the finite field, <c>F</c>,
-        and so we need to know how the symbol <c>a</c> behaves.
-        This symbol is considered as a root of a degree two polynomial over the integers mod 5, which we can get with the <c>.modulus()</c> method.
+        and so we need to know how the symbol <c>a</c>behaves.
+        This symbol is considered as a root of a degree two polynomial over the integers mod 5, which we can get with the <c>.modulus()</c>method.
       </p>
 
             <sage permid="CZK">
@@ -2500,7 +2500,7 @@
             </sage>
 
       <p permid="dfQ">
-        However, <c>q</c> factors into a pair of degree 2 polynomials,
+        However, <c>q</c>factors into a pair of degree 2 polynomials,
         so no amount of testing for roots will discover a factor.
       </p>
 
@@ -2605,8 +2605,8 @@
             </sage>
 
       <p permid="hPJ">
-        The symbol <c>xbar</c> is a generator of the field,
-        but right now it is not accessible. <c>xbar</c> is the coset <m>x + \langle x^5+ x + 4\rangle</m>.
+        The symbol <c>xbar</c>is a generator of the field,
+        but right now it is not accessible. <c>xbar</c>is the coset <m>x + \langle x^5+ x + 4\rangle</m>.
         A better construction would include specifying this generator.
       </p>
 
@@ -2691,7 +2691,7 @@
           <m>{\mathbb Z}_5</m>, (b) a finite field with 125 elements, (c) the rationals, (d) the real numbers and (e) the complex numbers.
           To do this, build the appropriate polynomial ring,
           and construct the polynomial as a member of this ring,
-          and use the <c>.factor()</c> method.
+          and use the <c>.factor()</c>method.
         </p>
       </statement>
     </exercise>
@@ -2705,23 +2705,23 @@
           and thus quotient rings that are fields.
           Roughly speaking, they are <q>canonical</q>
           choices for each degree and each prime.
-          The command <c>conway_polynomial(p, n)</c> will return a database entry that is an irreducible polynomial of degree <m>n</m> over <m>{\mathbb Z}_p</m>.
+          The command <c>conway_polynomial(p, n)</c>will return a database entry that is an irreducible polynomial of degree <m>n</m> over <m>{\mathbb Z}_p</m>.
         </p>
 
         <p permid="lPI">
-          Execute the command <c>conway_polynomial(5, 4)</c> to obtain an allegedly irreducible polynomial of degree 4 over <m>{\mathbb Z}_5</m>:
+          Execute the command <c>conway_polynomial(5, 4)</c>to obtain an allegedly irreducible polynomial of degree 4 over <m>{\mathbb Z}_5</m>:
           <m>p = x^{4} + 4x^{2} + 4x + 2</m>.
           Construct the right polynomial ring (<ie/>,
-          in the indeterminate <m>x</m>) and verify that <c>p</c> is really an element of your polynomial ring.
+          in the indeterminate <m>x</m>) and verify that <c>p</c>is really an element of your polynomial ring.
         </p>
 
         <p permid="RWR">
           First determine that p has no linear factors.
-          The only possibility left is that <c>p</c> factors as two quadratic polynomials over <m>{\mathbb Z}_5</m>.
+          The only possibility left is that <c>p</c>factors as two quadratic polynomials over <m>{\mathbb Z}_5</m>.
           Use a list comprehension with <em>three</em>
-          <c>for</c> statements to create <em>every</em>
+          <c>for</c>statements to create <em>every</em>
           possible quadratic polynomial over <m>{\mathbb Z}_5</m>.
-          Now use this list to create every possible product of two quadratic polynomials and check to see if <c>p</c> is in this list.
+          Now use this list to create every possible product of two quadratic polynomials and check to see if <c>p</c>is in this list.
         </p>
 
         <p permid="yea">
@@ -2744,8 +2744,8 @@
         <p permid="Kss">
           Define the polynomials <m>p = x^3 + 2x^2 + 2x + 4</m> and
           <m>q = x^4 + 2x^2</m> as polynomials with coefficients from the integers.
-          Compute <c>gcd(p, q)</c> and verify that the result divides both <c>p</c> and <c>q</c>(just form a fraction in Sage and see that it simplifies cleanly,
-          or use the <c>.quo_rem()</c> method).
+          Compute <c>gcd(p, q)</c>and verify that the result divides both <c>p</c>and <c>q</c>(just form a fraction in Sage and see that it simplifies cleanly,
+          or use the <c>.quo_rem()</c>method).
         </p>
 
         <p permid="qzB">

@@ -245,31 +245,31 @@
       </proof>
     </theorem>
 
-    <reading-questions xml:id="rqs-cosets">
-      <exercise>
+    <reading-questions xml:id="rqs-cosets" permid="JGm">
+      <exercise permid="VUE">
         <statement>
-          <p>
+          <p permid="SZY">
             Why do we sometimes need to specify <em>left</em> or <em>right</em> cosets instead of just calling them cosets?  When do we not need to worry about this?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="CbN">
         <statement>
-          <p>
+          <p permid="zhh">
             Let <m>G = \Z_6</m> and <m>H = \{0,2,4\}</m>.  List all cosets of <m>H</m> in <m>G</m>.  How many are there?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="iiW">
         <statement>
-          <p>
+          <p permid="foq">
             Let <m>G = S_4</m> and <m>H = \{(1), (12)(34), (13)(24), (14)(23)\}</m>.  What is the index of <m>H</m> in <m>G</m>?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="Oqf">
         <statement>
-          <p>
+          <p permid="Lvz">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -477,31 +477,31 @@
       </proof>
     </theorem>
 
-    <reading-questions xml:id="rqs-lagrange">
-      <exercise>
+    <reading-questions xml:id="rqs-lagrange" permid="pNv">
+      <exercise permid="uxo">
         <statement>
-          <p>
+          <p permid="rCI">
             What does Lagrange's theorem tell us?  Explain in your own words.   
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="aEx">
         <statement>
-          <p>
+          <p permid="XJR">
             I'm thinking of a group of order <m>29</m>.  How many subgroups does the group have?  What does this have to do with Lagrange's theorem?
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="GLG">
         <statement>
-          <p>
+          <p permid="DRa">
             If a group has order 12, must it have a subgroup of order 6?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise permid="mSP">
         <statement>
-          <p>
+          <p permid="jYj">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
           </p>
         </statement>
@@ -938,7 +938,7 @@
           The <term>cycle structure</term><idx><h>Permutation</h><h>cycle structure of</h></idx> of a permutation <m>\sigma</m> is defined as the unordered list of the sizes of the cycles in the cycle decomposition <m>\sigma</m>. For example, the permutation <m>\sigma = (12)(345)(78)(9)</m> has cycle structure <m>(2,3,2,1)</m> which can also be written as <m>(1, 2, 2, 3)</m>.
         </p>
 
-        <p>
+        <p permid="Qfs">
           Show that any two permutations
           <m>\alpha, \beta \in S_n</m> have the same cycle structure if and only if there exists a permutation <m>\gamma</m> such that <m>\beta = \gamma \alpha \gamma^{-1}</m>.
           If <m>\beta = \gamma \alpha \gamma^{-1}</m> for some <m>\gamma \in S_n</m>,
@@ -1083,7 +1083,7 @@
       </p>
 
       <p permid="GRF">
-        The keyword <c>side</c> can be <c>'right'</c> or <c>'left'</c>,
+        The keyword <c>side</c>can be <c>'right'</c>or <c>'left'</c>,
         and if not given, then the default is right cosets.
         The options refer to which side of the product has the representative.
         Notice that now Sage's results will be
@@ -1140,10 +1140,10 @@
       <p permid="zng">
         Mathematically, we need sets,
         but Sage is working with ordered lists, and the order matters.
-        However, if we know our lists do not have duplicates (the <c>.cosets()</c> method will never produce duplicates) then we can sort the lists and a test for equality will perform as expected.
+        However, if we know our lists do not have duplicates (the <c>.cosets()</c>method will never produce duplicates) then we can sort the lists and a test for equality will perform as expected.
         The elements of a permutation group have an ordering defined for them <mdash/> it is not so important <em>what</em> this is,
         just that <em>some</em> ordering is defined.
-        The <c>sorted()</c> function will take any list and return a sorted version.
+        The <c>sorted()</c>function will take any list and return a sorted version.
         So for each list of cosets,
         we will sort the individual cosets and then sort the list of sorted cosets.
         This is a typical maneuver, though a bit complicated with the nested lists.
@@ -1224,7 +1224,7 @@
             </sage>
             <!-- RAB 2014/08/18 ref is to a proposition, not a Corollary? -->
       <p permid="rIH">
-        The output of the <c>.subgroups()</c> method can be voluminous,
+        The output of the <c>.subgroups()</c>method can be voluminous,
         so sometimes we are interested in properties of specific subgroups
         (as in the previous example)
         or broader questions of the group's
@@ -1271,10 +1271,10 @@
         Four of them, to be precise.
         These four subgroups of order 6 are similar to each other,
         can you describe them simply (<em>before</em>
-        digging into the <c>sg</c> list for more information)?
+        digging into the <c>sg</c>list for more information)?
         If you were curious how many subgroups <m>S_4</m> has,
-        you could simply count the number of subgroups in the <c>sg</c> list.
-        The <c>len()</c> function does this for <em>any</em>
+        you could simply count the number of subgroups in the <c>sg</c>list.
+        The <c>len()</c>function does this for <em>any</em>
         list and is often an easy way to count things.
       </p>
 
@@ -1289,7 +1289,7 @@
       <title>Subgroups of Cyclic Groups</title>
       <p permid="kei">
         Now that we are more familiar with permutation groups,
-        and know about the <c>.subgroups()</c> method,
+        and know about the <c>.subgroups()</c>method,
         we can revisit an idea from <xref ref="cyclic"/>.
         The subgroups of a cyclic group are always cyclic,
         but how many are there and what are their orders?
@@ -1312,7 +1312,7 @@
 
       <p permid="Qlr">
         We could do this all day, but you have Sage at your disposal,
-        so vary the order of <c>G</c> by changing <c>n</c> and study the output across many runs.
+        so vary the order of <c>G</c>by changing <c>n</c>and study the output across many runs.
         Maybe try a cyclic group of order 24 and compare with the symmetric group <m>S_4</m> (above) which also has order 24.
         Do you feel a conjecture coming on?
       </p>
@@ -1388,9 +1388,9 @@
 
       <p permid="tTt">
         When you check integers below for divisibility,
-        remember that <c>range()</c> produces plain integers,
+        remember that <c>range()</c>produces plain integers,
         which are quite simple in their functionality.
-        The <c>srange()</c> command produces Sage integers,
+        The <c>srange()</c>command produces Sage integers,
         which have many more capabilities.
         (See the last exercise for an example.)
         And remember that a list comprehension is a very compact way to examine many possibilities at once.
@@ -1400,7 +1400,7 @@
     <exercise number="1" permid="NET" xml:id="cosets-sage-exercise-A4">
       <statement>
         <p permid="ljB">
-          Use <c>.subgroups()</c> to find an example of a group <m>G</m> and an integer <m>m</m>,
+          Use <c>.subgroups()</c>to find an example of a group <m>G</m> and an integer <m>m</m>,
           so that (a) <m>m</m> divides the order of <m>G</m>,
           and (b) <m>G</m> has no subgroup of order <m>m</m>.
           (Do not use the group <m>A_4</m> for <m>G</m>,
@@ -1494,9 +1494,9 @@
         <p permid="JMl">
           Verify Euler's Theorem for all values of
           <m>0\lt n\lt 100</m> and for <m>1\leq a \leq n</m>.
-          This will require nested <c>for</c> statements with a conditional.
+          This will require nested <c>for</c>statements with a conditional.
           Again, here is a small example that might be helpful for constructing your one line of Sage code.
-          Note the use of <c>srange()</c> in this example.
+          Note the use of <c>srange()</c>in this example.
         </p>
 
             <sage permid="XYh">
@@ -1558,11 +1558,11 @@
         </p>
 
         <p permid="ChM">
-          Now, compute how many elements there are of each order using the <c>.order()</c> method,
+          Now, compute how many elements there are of each order using the <c>.order()</c>method,
           and then embed this into a list comprehension which creates a single list of these counts.
           You can check your work
           (or check Sage)
-          by wrapping this list in <c>sum()</c> and hopefully getting <m>5040</m>.
+          by wrapping this list in <c>sum()</c>and hopefully getting <m>5040</m>.
         </p>
 
         <p permid="ioV">
