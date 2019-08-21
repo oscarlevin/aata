@@ -652,8 +652,8 @@
           where <m>0 \leq \theta \lt 2 \pi</m>.
           The matrix <m>A</m> rotates a vector in <m>\mathbb R^2</m> counterclockwise about the origin by an angle of <m>\theta</m> (<xref ref="figure-o2"/>).</p>
 
-          <p>If we choose <m>A{\mathbf e}_2 = (b, -a)^\transpose</m>, then we obtain the matrix
-		  <me>
+          <p permid="IPo">If we choose <m>A{\mathbf e}_2 = (b, -a)^\transpose</m>, then we obtain the matrix
+		  <me permid="oWx">
             B
             =
             \begin{pmatrix}
@@ -667,7 +667,7 @@
             \end{pmatrix}.
           </me>
           Here, <m>\det B = -1</m> and 
-          <me>
+          <me permid="VdG">
             B^2
             =
             \begin{pmatrix}
