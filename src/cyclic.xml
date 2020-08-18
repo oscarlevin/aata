@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -171,6 +171,7 @@
           <caption>Subgroups of <m>S_3</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
           <image xml:id="cyclic-s3-subgroups" permid="epA">
+            <description>The lattice of subgroups for S-3: the top is S-3, the second line is the identity, rho-1, rho-2; the identity, mu-1; the identity, mu-2; the identity, mu-3, and the bottom is the identity subgroup.</description>
 
             <latex-image>
                 <xi:include href="tikz/cyclic-s3-subgroups.tex" parse="text"/>
@@ -421,6 +422,7 @@
         <caption>Rectangular coordinates of a complex number</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
         <image xml:id="cyclic-complex-rectangular" permid="KwJ">
+          <description>The complex plane where the horizontal axis is the x-axis or real axis and the verticle axis is the y-axis or imaginary axis. The point z1 = 2 + 3i is in the upper right quadrant, the point z2 = 1- 2i in the lower right quadrant, and z3 = -3 + 2i in the upper right quadrant.</description>
 
             <latex-image>
                 <xi:include href="tikz/cyclic-complex-rectangular.tex" parse="text"/>
@@ -448,6 +450,7 @@
         <caption>Polar coordinates of a complex number</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
         <image xml:id="cyclic-complex-polar" permid="qDS">
+          <description>The complex plane where the horizontal axis is the x-axis or real axis and the verticle axis is the y-axis or imaginary axis.  The point a + bi is in the upper right quadrant.  The point is also determined by a ray that at an angle of theta counterclockwise from the horizontal axis having a length of r.</description>
 
             <latex-image>
                 <xi:include href="tikz/cyclic-complex-polar.tex" parse="text"/>
@@ -682,6 +685,7 @@
           <caption>8th roots of unity</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
           <image width="80%" xml:id="cyclic-roots-unity" permid="WLb">
+            <description>The 8 roots of unity are spaced evenly around the unit circle beginning with 1 on the positive horizontal axis and followed by omega, i, the cube of omega, -1, omega to the fifth power, -i, and omega to the seventh power.</description>
 
             <latex-image>
                 <xi:include href="tikz/cyclic-roots-unity.tex" parse="text"/>
@@ -801,12 +805,58 @@
       </p>
     </paragraphs>
   </section>
+
+    <reading-questions permid="CZX">
+
+    <exercise permid="HgA">
+      <statement>
+        <p permid="LQt">
+          What is the order of the element <m>3</m> in <m>U(20)</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="nnJ">
+      <statement>
+        <p permid="rXC">
+          What is the order of the element <m>5</m> in <m>U(23)</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="TuS">
+      <statement>
+        <p permid="YeL">
+          Find three generators of <m>\mathbb Z_8</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="zCb">
+      <statement>
+        <p permid="ElU">
+          Find three generators of the <m>5^\text{th}</m> roots of unity.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="fJk">
+      <statement>
+        <p permid="ktd">
+          Show how to compute <m>15^{40}\pmod{23}</m> efficiently by hand.
+          Check your answer with Sage.
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: cyclic.xml  -->
     <!-- Title: Cyclic Groups -->
   <exercises xml:id="exercises-cyclic" filenamebase="cyclic" permid="nXh">
     <title>Exercises</title>
-    <exercise number="1" permid="Ope">
+
+    <exercise number="1" permid="Ope" xml:id="cyclic-exercise-prove-or-disprove-cyclic-facts">
       <statement>
         <p permid="Sim">
           Prove or disprove each of the following statements.
@@ -852,7 +902,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="uwn">
+    <exercise number="2" permid="uwn" xml:id="cyclic-exercise-order-of-elements">
       <statement>
         <p permid="ypv">
           Find the order of each of the following elements.
@@ -903,7 +953,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="aDw">
+    <exercise number="3" permid="aDw" xml:id="cyclic-exercise-subgroup-elements">
       <statement>
         <p permid="ewE">
           List all of the elements in each of the following subgroups.
@@ -999,7 +1049,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="GKF">
+    <exercise number="4" permid="GKF" xml:id="cyclic-exercise-subgroups-GL2">
       <statement>
         <p permid="KDN">
           Find the subgroups of <m>GL_2( {\mathbb R })</m> generated by each of the following matrices.
@@ -1121,7 +1171,7 @@
       </hint>
     </exercise>
 
-    <exercise number="5" permid="mRO">
+    <exercise number="5" permid="mRO" xml:id="cyclic-exercise-order-Z18-elements">
       <statement>
         <p permid="qKW">
           Find the order of every element in <m>{\mathbb Z}_{18}</m>.
@@ -1129,7 +1179,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="SYX">
+    <exercise number="6" permid="SYX" xml:id="cyclic-exercise-order-D4-elements">
       <statement>
         <p permid="WSf">
           Find the order of every element in the symmetry group of the square,
@@ -1138,7 +1188,7 @@
       </statement>
     </exercise>
 
-    <exercise number="7" permid="zgg">
+    <exercise number="7" permid="zgg" xml:id="cyclic-exercise-cyclic-subgroups-Q8">
       <statement>
         <p permid="CZo">
           What are all of the cyclic subgroups of the quaternion group,
@@ -1147,7 +1197,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="fnp">
+    <exercise number="8" permid="fnp" xml:id="cyclic-exercise-cyclic-subgroups-U30">
       <statement>
         <p permid="jgx">
           List all of the cyclic subgroups of <m>U(30)</m>.
@@ -1155,7 +1205,7 @@
       </statement>
     </exercise>
 
-    <exercise number="9" permid="Luy">
+    <exercise number="9" permid="Luy" xml:id="cyclic-exercise-generators-subgroups-Z32">
       <statement>
         <p permid="PnG">
           List every generator of each subgroup of order 8 in <m>{\mathbb Z}_{32}</m>.
@@ -1163,7 +1213,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="rBH">
+    <exercise number="10" permid="rBH" xml:id="cyclic-exercise-elements-finite-order">
       <statement>
         <p permid="vuP">
           Find all elements of finite order in each of the following groups.
@@ -1197,7 +1247,7 @@
       </hint>
     </exercise>
 
-    <exercise number="11" permid="XIQ">
+    <exercise number="11" permid="XIQ" xml:id="cyclic-exercise-possible-orders-a24">
       <statement>
         <p permid="bBY">
           If <m>a^{24} =e</m> in a group <m>G</m>,
@@ -1211,7 +1261,7 @@
       </hint>
     </exercise>
 
-    <exercise number="12" permid="DPZ">
+    <exercise number="12" permid="DPZ" xml:id="cyclic-exercise-cyclic-group-one-generator">
       <statement>
         <p permid="HJh">
           Find a cyclic group with exactly one generator.
@@ -1222,7 +1272,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="jXi">
+    <exercise number="13" permid="jXi" xml:id="cyclic-exercise-cyclic-groups-order-less-then-20">
       <statement>
         <p permid="nQq">
           For <m>n \leq 20</m>, which groups <m>U(n)</m> are cyclic?
@@ -1232,7 +1282,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="Qer">
+    <exercise number="14" permid="Qer" xml:id="cyclic-exercise-products-maynot-have-finite-orders">
       <statement>
         <p permid="TXz">
           Let
@@ -1255,7 +1305,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="wlA">
+    <exercise number="15" permid="wlA" xml:id="cyclic-exercise-complex-arithmetic">
       <statement>
         <p permid="AeI">
           Evaluate each of the following.
@@ -1306,7 +1356,7 @@
       </hint>
     </exercise>
 
-    <exercise number="16" permid="csJ">
+    <exercise number="16" permid="csJ" xml:id="cyclic-exercise-complex-polar-to-rectangular">
       <statement>
         <p permid="glR">
           Convert the following complex numbers to the form <m>a + bi</m>.
@@ -1345,7 +1395,7 @@
       </hint>
     </exercise>
 
-    <exercise number="17" permid="IzS">
+    <exercise number="17" permid="IzS" xml:id="cyclic-exercise-complex-rectangular-to-polar">
       <statement>
         <p permid="Mta">
           Change the following complex numbers to polar representation.
@@ -1397,7 +1447,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="oHb">
+    <exercise number="18" permid="oHb" xml:id="cyclic-exercise-calculate-powers-complex">
       <statement>
         <p permid="sAj">
           Calculate each of the following expressions.
@@ -1454,7 +1504,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="UOk">
+    <exercise number="19" permid="UOk" xml:id="cyclic-exercise-complex-modulus">
       <statement>
         <p permid="YHs">
           Prove each of the following statements.
@@ -1500,7 +1550,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="AVt">
+    <exercise number="20" permid="AVt" xml:id="cyclic-exercise-6-roots-of-unity">
       <statement>
         <p permid="EOB">
           List and graph the 6th roots of unity.
@@ -1510,7 +1560,7 @@
       </statement>
     </exercise>
 
-    <exercise number="21" permid="hcC">
+    <exercise number="21" permid="hcC" xml:id="cyclic-exercise-5-roots-of-unity">
       <statement>
         <p permid="kVK">
           List and graph the 5th roots of unity.
@@ -1520,7 +1570,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="NjL">
+    <exercise number="22" permid="NjL" xml:id="cyclic-exercise-calculate-powers-Zn">
       <statement>
         <p permid="RcT">
           Calculate each of the following.
@@ -1559,7 +1609,7 @@
       </hint>
     </exercise>
 
-    <exercise number="23" permid="tqU">
+    <exercise number="23" permid="tqU" xml:id="cyclic-exercise-order-of-products">
       <statement>
         <p permid="xkc">
           Let <m>a, b \in G</m>.
@@ -1588,7 +1638,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" permid="Zyd">
+    <exercise number="24" permid="Zyd" xml:id="cyclic-exercise-Zpq-generators">
       <statement>
         <p permid="drl">
           Let <m>p</m> and <m>q</m> be distinct primes.
@@ -1597,7 +1647,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" permid="FFm">
+    <exercise number="25" permid="FFm" xml:id="cyclic-exercise-Zp-hat-r-generators">
       <statement>
         <p permid="Jyu">
           Let <m>p</m> be prime and <m>r</m> be a positive integer.
@@ -1606,7 +1656,7 @@
       </statement>
     </exercise>
 
-    <exercise number="26" permid="lMv">
+    <exercise number="26" permid="lMv" xml:id="cyclic-exercise-Zp-subgroups">
       <statement>
         <p permid="pFD">
           Prove that <m>{\mathbb Z}_{p}</m> has no nontrivial subgroups if <m>p</m> is prime.
@@ -1614,7 +1664,7 @@
       </statement>
     </exercise>
 
-    <exercise number="27" permid="RTE">
+    <exercise number="27" permid="RTE" xml:id="cyclic-exercise-orders-15-16">
       <statement>
         <p permid="VMM">
           If <m>g</m> and <m>h</m> have orders <m>15</m> and <m>16</m> respectively in a group <m>G</m>,
@@ -1628,7 +1678,7 @@
       </hint>
     </exercise>
 
-    <exercise number="28" permid="yaN">
+    <exercise number="28" permid="yaN" xml:id="cyclic-exercise-generator-am">
       <statement>
         <p permid="BTV">
           Let <m>a</m> be an element in a group <m>G</m>.
@@ -1637,7 +1687,7 @@
       </statement>
     </exercise>
 
-    <exercise number="29" permid="ehW">
+    <exercise number="29" permid="ehW" xml:id="cyclic-exercise-even-number-generators-Zn">
       <statement>
         <p permid="ibe">
           Prove that <m>{\mathbb Z}_n</m> has an even number of generators for <m>n \gt 2</m>.
@@ -1645,7 +1695,7 @@
       </statement>
     </exercise>
 
-    <exercise number="30" permid="Kpf">
+    <exercise number="30" permid="Kpf" xml:id="cyclic-exercise-coprime-elements-Zn">
       <statement>
         <p permid="Oin">
           Suppose that <m>G</m> is a group and let <m>a</m>, <m>b \in G</m>.
@@ -1657,7 +1707,7 @@
 
     <!--Todo Fix references to torsion subgroup-->
 
-    <exercise number="31" permid="qwo">
+    <exercise number="31" permid="qwo" xml:id="cyclic-exercise-elements-finite-order-subgroup">
       <statement>
         <p permid="upw">
           Let <m>G</m> be an abelian group.
@@ -1676,7 +1726,7 @@
       </hint>
     </exercise>
 
-    <exercise number="32" permid="WDx">
+    <exercise number="32" permid="WDx" xml:id="cyclic-exercise-coprime-orders-generators">
       <statement>
         <p permid="awF">
           Let <m>G</m> be a finite cyclic group of order <m>n</m> generated by <m>x</m>.
@@ -1686,7 +1736,7 @@
       </statement>
     </exercise>
 
-    <exercise number="33" permid="CKG">
+    <exercise number="33" permid="CKG" xml:id="cyclic-exercise-cyclic-subgroup-order-4">
       <statement>
         <p permid="GDO">
           If <m>G</m> is an abelian group that contains a pair of cyclic subgroups of order <m>2</m>,
@@ -1696,7 +1746,7 @@
       </statement>
     </exercise>
 
-    <exercise number="34" permid="iRP">
+    <exercise number="34" permid="iRP" xml:id="cyclic-exercise-order-Zpq">
       <statement>
         <p permid="mKX">
           Let <m>G</m> be an abelian group of order <m>pq</m> where <m>\gcd(p,q) = 1</m>.
@@ -1706,7 +1756,7 @@
       </statement>
     </exercise>
 
-    <exercise number="35" permid="OYY">
+    <exercise number="35" permid="OYY" xml:id="cyclic-exercise-subgroups-of-Z">
       <statement>
         <p permid="SSg">
           Prove that the subgroups of <m>\mathbb Z</m> are exactly
@@ -1715,7 +1765,7 @@
       </statement>
     </exercise>
 
-    <exercise number="36" permid="vgh">
+    <exercise number="36" permid="vgh" xml:id="cyclic-exercise-generators-of-Zn">
       <statement>
         <p permid="yZp">
           Prove that the generators of
@@ -1725,7 +1775,7 @@
       </statement>
     </exercise>
 
-    <exercise number="37" permid="bnq">
+    <exercise number="37" permid="bnq" xml:id="cyclic-exercise-cyclic-ifno-nontrivial-proper-subgroup">
       <statement>
         <p permid="fgy">
           Prove that if <m>G</m> has no proper nontrivial subgroups,
@@ -1741,7 +1791,7 @@
       </hint>
     </exercise>
 
-    <exercise number="38" permid="Huz">
+    <exercise number="38" permid="Huz" xml:id="cyclic-exercise-order-of-element-divides-order-group">
       <statement>
         <p permid="LnH">
           Prove that the order of an element in a cyclic group <m>G</m> must divide the order of the group.
@@ -1758,7 +1808,7 @@
       </statement>
     </exercise>
 
-    <exercise number="40" permid="TIR">
+    <exercise number="40" permid="TIR" xml:id="cyclic-exercise-minus-one-root-of-unity">
       <statement>
         <p permid="XBZ">
           For what integers <m>n</m> is <m>-1</m> an <m>n</m>th root of unity?
@@ -1766,7 +1816,7 @@
       </statement>
     </exercise>
 
-    <exercise number="41" permid="zQa">
+    <exercise number="41" permid="zQa" xml:id="cyclic-exercise-polar-product-complex">
       <statement>
         <p permid="DJi">
           If <m>z = r( \cos \theta + i \sin \theta)</m> and
@@ -1779,7 +1829,7 @@
       </statement>
     </exercise>
 
-    <exercise number="42" permid="fXj">
+    <exercise number="42" permid="fXj" xml:id="cyclic-exercise-circle-group-subgroup-C-star">
       <statement>
         <p permid="jQr">
           Prove that the circle group is a subgroup of <m>{\mathbb C}^*</m>.
@@ -1787,7 +1837,7 @@
       </statement>
     </exercise>
 
-    <exercise number="43" permid="Mes">
+    <exercise number="43" permid="Mes" xml:id="cyclic-exercise-nth-root-of-unity-cyclic">
       <statement>
         <p permid="PXA">
           Prove that the <m>n</m>th roots of unity form a cyclic subgroup of <m>{\mathbb T}</m> of order <m>n</m>.
@@ -1795,7 +1845,7 @@
       </statement>
     </exercise>
 
-    <exercise number="44" permid="slB">
+    <exercise number="44" permid="slB" xml:id="cyclic-exercise-order-of-elements-circle-group">
       <statement>
         <p permid="weJ">
           Let <m>\alpha \in \mathbb T</m>.
@@ -1805,7 +1855,7 @@
       </statement>
     </exercise>
 
-    <exercise number="45" permid="YsK">
+    <exercise number="45" permid="YsK" xml:id="cyclic-exercise-order-of-elements-greaterthan-1-in-C">
       <statement>
         <p permid="clS">
           Let <m>z \in {\mathbb C}^\ast</m>.
@@ -1814,7 +1864,7 @@
       </statement>
     </exercise>
 
-    <exercise number="46" permid="EzT">
+    <exercise number="46" permid="EzT" xml:id="cyclic-exercise-order-rational-angles-in-T">
       <statement>
         <p permid="Itb">
           Let <m>z =\cos \theta + i \sin \theta</m> be in
@@ -1825,6 +1875,7 @@
     </exercise>
 
   </exercises>
+  
   <exercises xml:id="cyclic-exercises-programming" permid="Ueq">
     <title>Programming Exercises</title>
     <exercise permid="kHc">
@@ -1862,6 +1913,8 @@
       <title>Cryptology and Computational Number Theory</title>, Pomerance, C., ed. Proceedings of Symposia in Applied Mathematics, vol. 42, American Mathematical Society, Providence, RI, 1990. This book gives an excellent account of how the method of repeated squares is used in cryptography.
     </biblio>
   </references>
+
+
 
   <section xml:id="cyclic-sage" permid="EVs">
     <title>Sage</title>
@@ -2302,12 +2355,12 @@
                 <input>H.list()</input>
                 <output>
             [(),
-             (1,13,11,9,7,5,3)(2,14,12,10,8,6,4),
-             (1,11,7,3,13,9,5)(2,12,8,4,14,10,6),
-             (1,9,3,11,5,13,7)(2,10,4,12,6,14,8),
-             (1,7,13,5,11,3,9)(2,8,14,6,12,4,10),
+             (1,3,5,7,9,11,13)(2,4,6,8,10,12,14),
              (1,5,9,13,3,7,11)(2,6,10,14,4,8,12),
-             (1,3,5,7,9,11,13)(2,4,6,8,10,12,14)]
+             (1,7,13,5,11,3,9)(2,8,14,6,12,4,10),
+             (1,9,3,11,5,13,7)(2,10,4,12,6,14,8),
+             (1,11,7,3,13,9,5)(2,12,8,4,14,10,6),
+             (1,13,11,9,7,5,3)(2,14,12,10,8,6,4)]
             </output>
             </sage>
 
@@ -2564,7 +2617,7 @@
       </p>
     </introduction>
 
-    <exercise number="1" permid="dcD">
+    <exercise number="1" permid="dcD" xml:id="cyclic-sage-exercise-integers-40">
       <statement>
         <p permid="AOC">
           Execute the statement <c>R = Integers(40)</c> to create the set <c>[0,1,2,...,39]</c>This is a group under addition mod <m>40</m>,
@@ -2577,7 +2630,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="JjM">
+    <exercise number="2" permid="JjM" xml:id="cyclic-sage-exercise-u40">
       <statement>
         <p permid="gVL">
           You can create elements of this group by coercing regular integers into <c>U</c>,
@@ -2600,7 +2653,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="pqV">
+    <exercise number="3" permid="pqV" xml:id="cyclic-sage-exercise-u49">
       <statement>
         <p permid="tkd">
           The group <m>U(49)</m> is cyclic.
@@ -2616,7 +2669,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="Vye">
+    <exercise number="4" permid="Vye" xml:id="cyclic-sage-exercise-u35">
       <statement>
         <p permid="Zrm">
           The group <m>U(35)</m> is not cyclic.
@@ -2627,7 +2680,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="BFn">
+    <exercise number="5" permid="BFn" xml:id="cyclic-sage-exercise-un">
       <statement>
         <p permid="Fyv">
           Again, using only the Sage commands described previously,

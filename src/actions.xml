@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -501,7 +501,7 @@
         <caption>Equivalent colorings of square</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/28/2010 -->
         <image width="60%" xml:id="actions-colorings-square" permid="gLd">
-
+        	<description> Four squares with vertices labeled clockwise BWWW, WBWW, WWWB, and WWBW beginning in the upper left corner.</description>
             <latex-image>
                 <xi:include href="tikz/actions-colorings-square.tex" parse="text"/>
             </latex-image>
@@ -806,7 +806,7 @@
         <caption>A switching function of <m>n</m> variables</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/28/2010 -->
         <image width="80%" xml:id="actions-switching-function" permid="MSm">
-
+        	<description>A function, f, represented by a box with inputs, x1, x2, ..., xn, on the left, and an output f(x1, x2, ..., xn) on the right.</description>
             <latex-image>
                 <xi:include href="tikz/actions-switching-function.tex" parse="text"/>
             </latex-image>
@@ -831,7 +831,7 @@
         <caption>A switching function of two variables</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/28/2010 -->
         <image xml:id="actions-switching-two-variables" permid="sZv">
-
+        	<description>Two functions, f, represented by rectangle. The function on the left is represented by a rectangle that has inputs a and b on the left and output f(a, b).  The function on the right is represented by a rectangle that has inputs a and b with leads switched on the left and an output f(b, a) on the right.</description>
             <latex-image>
                 <xi:include href="tikz/actions-switching-two-variables.tex" parse="text"/>
             </latex-image>
@@ -855,7 +855,7 @@
       </p>
 
       <table xml:id="table-switching-2-variables" permid="luW">
-        <caption>Switching functions in two variables</caption>
+        <title>Switching functions in two variables</title>
         <tabular halign="center" top="medium" left="medium" permid="xJo">
           <col/>
           <col right="medium"/>
@@ -1062,7 +1062,7 @@
       </p>
 
       <table xml:id="table-switching-permutation" permid="RCf">
-        <caption>Permutations of switching functions in four variables</caption>
+        <title>Permutations of switching functions in four variables</title>
         <tabular halign="left" top="medium" permid="dQx">
           <row>
             <cell>Group</cell>
@@ -1162,12 +1162,58 @@
     </subsection>
 
   </section>
+
+  <reading-questions permid="MtJ">
+
+    <exercise permid="dcZ">
+      <statement>
+        <p permid="hMS">
+          Give an informal description of a group action.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="Jki">
+      <statement>
+        <p permid="NUb">
+          Describe the class equation.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="prr">
+      <statement>
+        <p permid="ubk">
+          What are the groups of order <m>49</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="VyA">
+      <statement>
+        <p permid="ait">
+          How many switching functions are there with 5 inputs? (Give both a simple expression and the total number as a single integer.)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="BFJ">
+      <statement>
+        <p permid="GpC">
+          The <q>Historical Note</q> mentions the proof of Burnside's Conjecture.
+          How long was the proof?
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: actions.xml  -->
     <!-- Title: Group Actions -->
   <exercises xml:id="exercises-actions" filenamebase="actions" permid="PcL">
     <title>Exercises</title>
-    <exercise number="1" permid="EDG">
+
+    <exercise number="1" permid="EDG" xml:id="actions-exercise-equivalence-relation">
       <statement>
         <p permid="qlT">
           <xref first="example-actions-gl2" last="example-actions-left-cosets">Examples</xref> in the first section each describe an action of a group <m>G</m> on a set <m>X</m>,
@@ -1189,7 +1235,7 @@
 
     <!--Todo Fix solution to Exercise 1.-->
 
-    <exercise number="2" xml:id="exercise-actions-permutation" permid="kKP">
+    <exercise number="2" xml:id="actions-exercise-permutation" permid="kKP">
       <statement>
         <p permid="Wtc">
           Compute all <m>X_g</m> and all <m>G_x</m> for each of the following permutation groups.
@@ -1221,10 +1267,10 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="QRY">
+    <exercise number="3" permid="QRY" xml:id="actions-exercise-equivalence-classes">
       <statement>
         <p permid="CAl">
-          Compute the <m>G</m>-equivalence classes of <m>X</m> for each of the <m>G</m>-sets in <xref ref="exercise-actions-permutation"/>.
+          Compute the <m>G</m>-equivalence classes of <m>X</m> for each of the <m>G</m>-sets in <xref ref="actions-exercise-permutation"/>.
           For each <m>x \in X</m> verify that <m>|G|=|{\mathcal O}_x| \cdot |G_x|</m>.
         </p>
       </statement>
@@ -1235,7 +1281,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="wZh">
+    <exercise number="4" permid="wZh" xml:id="actions-exercise-R-G-set">
       <statement>
         <p permid="iHu">
           Let <m>G</m> be the additive group of real numbers.
@@ -1266,7 +1312,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="dgq">
+    <exercise number="5" permid="dgq" xml:id="actions-exercise-A4">
       <statement>
         <p permid="OOD">
           Let <m>G = A_4</m> and suppose that <m>G</m> acts on itself by conjugation;
@@ -1289,7 +1335,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="Jnz">
+    <exercise number="6" permid="Jnz" xml:id="actions-exercise-conjugacy-class">
       <statement>
         <p permid="uVM">
           Find the conjugacy classes and the class equation for each of the following groups.
@@ -1336,7 +1382,7 @@
       </hint>
     </exercise>
 
-    <exercise number="7" permid="puI">
+    <exercise number="7" permid="puI" xml:id="actions-exercise-S5">
       <statement>
         <p permid="bcV">
           Write the class equation for <m>S_5</m> and for <m>A_5</m>.
@@ -1344,7 +1390,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="VBR">
+    <exercise number="8" permid="VBR" xml:id="actions-exercise-square">
       <statement>
         <p permid="Hke">
           If a square remains fixed in the plane,
@@ -1358,7 +1404,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="BJa">
+    <exercise number="9" permid="BJa" xml:id="actions-exercise-triangle">
       <statement>
         <p permid="nrn">
           How many ways can the vertices of an equilateral triangle be colored using three different colors?
@@ -1366,7 +1412,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="hQj">
+    <exercise number="10" permid="hQj" xml:id="actions-exercise-6-sided-die">
       <statement>
         <p permid="Tyw">
           Find the number of ways a six-sided die can be constructed if each side is marked differently with <m>1, \ldots, 6</m> dots.
@@ -1374,7 +1420,7 @@
       </statement>
     </exercise>
 
-    <exercise number="11" permid="NXs">
+    <exercise number="11" permid="NXs" xml:id="actions-exercise-cube">
       <statement>
         <p permid="zFF">
           Up to a rotation,
@@ -1393,7 +1439,7 @@
       </hint>
     </exercise>
 
-    <exercise number="12" permid="ueB">
+    <exercise number="12" permid="ueB" xml:id="actions-exercise-edges-cube">
       <statement>
         <p permid="fMO">
           Consider <m>12</m> straight wires of equal lengths with their ends soldered together to form the edges of a cube.
@@ -1403,7 +1449,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="alK">
+    <exercise number="13" permid="alK" xml:id="actions-exercise-corners-cube">
       <statement>
         <p permid="LTX">
           Suppose that we color each of the eight corners of a cube.
@@ -1413,7 +1459,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="GsT">
+    <exercise number="14" permid="GsT" xml:id="actions-exercise-tetrahedron">
       <statement>
         <p permid="sbg">
           Each of the faces of a regular tetrahedron can be painted either red or white.
@@ -1423,7 +1469,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="mAc">
+    <exercise number="15" permid="mAc" xml:id="actions-exercise-hexagon">
       <statement>
         <p permid="Yip">
           Suppose that the vertices of a regular hexagon are to be colored either red or white.
@@ -1437,7 +1483,7 @@
       </hint>
     </exercise>
 
-    <exercise number="16" permid="SHl">
+    <exercise number="16" permid="SHl" xml:id="actions-exercise-benzene">
       <statement>
         <p permid="Epy">
           A molecule of benzene is made up of six carbon atoms and six hydrogen atoms,
@@ -1462,7 +1508,7 @@
           <caption>A benzene ring</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
           <image width="30%" xml:id="exercise-benzene" permid="ZgE">
-
+          	<description>A hexagon with hydrogen atoms, H, attached at each vertex.</description>
             <latex-image>
                 <xi:include href="tikz/exercise-benzene.tex" parse="text"/>
             </latex-image>
@@ -1472,7 +1518,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="yOu">
+    <exercise number="17" permid="yOu" xml:id="actions-exercise-input-variables">
       <statement>
         <p permid="QDQ">
           How many equivalence classes of switching functions are there if the input variables <m>x_1</m>,
@@ -1489,7 +1535,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="eVD">
+    <exercise number="18" permid="eVD" xml:id="actions-exercise-switching-functions">
       <statement>
         <p permid="wKZ">
           How many equivalence classes of switching functions are there if the input variables <m>x_1</m>,
@@ -1500,7 +1546,7 @@
       </statement>
     </exercise>
 
-    <exercise number="19" permid="LcM">
+    <exercise number="19" permid="LcM" xml:id="actions-exercise-necktie">
       <statement>
         <p permid="cSi">
           A striped necktie has <m>12</m> bands of color.
@@ -1510,7 +1556,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="rjV">
+    <exercise number="20" permid="rjV" xml:id="actions-exercise-faithfully">
       <statement>
         <p permid="IZr">
           A group acts <term>faithfully</term>
@@ -1520,7 +1566,7 @@
       </statement>
     </exercise>
 
-    <exercise number="21" permid="Xre">
+    <exercise number="21" permid="Xre" xml:id="actions-exercise-abelian-pn">
       <statement>
         <p permid="pgA">
           Let <m>p</m> be prime.
@@ -1533,7 +1579,7 @@
 
     <!--Todo Finish this solution.-->
 
-    <exercise number="22" xml:id="exercise-actions-centralizer" permid="Dyn">
+    <exercise number="22" xml:id="actions-exercise-centralizer" permid="Dyn">
       <statement>
         <p permid="VnJ">
           Let <m>a \in G</m>.
@@ -1548,7 +1594,7 @@
       </hint>
     </exercise>
 
-    <exercise number="23" permid="jFw">
+    <exercise number="23" permid="jFw" xml:id="actions-exercise-ZG">
       <statement>
         <p permid="BuS">
           Let <m>|G| = p^n</m> be a nonabelian group for <m>p</m> prime.
@@ -1559,7 +1605,7 @@
 
     <!--Todo Complete this solution.-->
 
-    <exercise number="24" permid="PMF">
+    <exercise number="24" permid="PMF" xml:id="actions-exercise-finite-G-set">
       <statement>
         <p permid="hCb">
           Let <m>G</m> be a group with order <m>p^n</m> where <m>p</m> is prime and <m>X</m> a finite <m>G</m>-set.
@@ -1571,7 +1617,7 @@
 
     <!--Todo Complete this solution.-->
 
-    <exercise number="25" permid="vTO">
+    <exercise number="25" permid="vTO" xml:id="actions-exercise-subgroup-p2">
       <statement>
         <p permid="NJk">
           If <m>G</m> is a group of order <m>p^n</m>,
@@ -1585,9 +1631,10 @@
 
     <!--Todo Complete this solution.-->
   </exercises>
+
   <exercises xml:id="actions-exercises-programming" permid="vjU">
     <title>Programming Exercise</title>
-    <exercise permid="caX">
+    <exercise permid="caX" xml:id="actions-programming-exercise-conjugacy-classes-Sn">
       <statement>
         <p permid="tQt">
           Write a program to compute the number of conjugacy classes in <m>S_n</m>.
@@ -1644,6 +1691,9 @@
       <title>Mathematics Magazine</title>, May<ndash/>June 1973, 136<ndash/>47.
     </biblio>
   </references>
+
+
+
   <section xml:id="actions-sage" permid="gaW">
     <title>Sage</title>
     <introduction permid="rTP">
@@ -1928,11 +1978,11 @@
         </input>
                 <output>
         [(),
-         ('010','100','001')('011','110','101'),
-         ('010','001','100')('011','101','110'),
-         ('011','110')('001','100'),
+         ('001','010','100')('011','110','101'),
+         ('001','100','010')('011','101','110'),
          ('010','100')('011','101'),
-         ('010','001')('110','101')]
+         ('001','010')('101','110'),
+         ('001','100')('011','110')]
         </output>
             </sage>
 
@@ -2049,7 +2099,8 @@
   </section>
   <exercises xml:id="actions-sage-exercises" permid="brd">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="Iig">
+
+    <exercise number="1" permid="Iig" xml:id="actions-sage-exercise-Higman-Sims-graph">
       <statement>
         <p permid="ZXC">
           Construct the Higman-Sims graph with the command <c>graphs.HigmanSimsGraph()</c>.
@@ -2060,7 +2111,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="opp">
+    <exercise number="2" permid="opp" xml:id="actions-sage-exercise-11-vertices">
       <statement>
         <p permid="GeL">
           This exercise asks you to verify the class equation outside of the usual situation where the group action is conjugation.
@@ -2077,7 +2128,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="Uwy">
+    <exercise number="3" permid="Uwy" xml:id="actions-sage-exercise-simple-graph">
       <statement>
         <p permid="mlU">
           Construct a simple graph
@@ -2098,7 +2149,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="ADH">
+    <exercise number="4" permid="ADH" xml:id="actions-sage-exercise-group-pairs">
       <statement>
         <p permid="yAm">
           For the following two pairs of groups,
@@ -2126,7 +2177,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="gKQ">
+    <exercise number="5" permid="gKQ" xml:id="actions-sage-exercise-cube-graph">
       <statement>
         <p permid="eHv">
           Use the command <c>graphs.CubeGraph(4)</c> to build the four-dimensional cube graph,
@@ -2160,7 +2211,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="MRZ">
+    <exercise number="6" permid="MRZ" xml:id="actions-sage-exercise-order-16">
       <statement>
         <p permid="KOE">
           Build the graph given by the commands below.

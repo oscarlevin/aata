@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -103,7 +103,7 @@
           there is no integer <m>k</m> such that <m>k n \equiv 1 \pmod{ 8}</m>.
         </p>
 
-        <table xml:id="table-z8-mult" permid="PPF">
+        <figure xml:id="table-z8-mult" permid="PPF">
             <!-- math table -->
           <caption>Multiplication table for <m>{\mathbb Z_8}</m></caption>
           <p permid="sUR">
@@ -122,7 +122,7 @@
               \end{array}
             </me>
           </p>
-        </table>
+        </figure>
       </example>
 
 
@@ -233,6 +233,7 @@
       <figure xml:id="figure-groups-rectangle" permid="iKh">
         <caption>Rigid motions of a rectangle</caption>
         <image xml:id="groups-rectangle" permid="DBn">
+          <description>The four symmetries ot a rectangle: (1) sending rectangle ABCD to rectangle ABCD, (2) sending rectangle ABCD to rectangle CDAB, (3) sending rectangle ABCD to rectangle BADC, and (4) sending rectangle ABCD to rectangle DCBA.</description>
 
             <latex-image>
                 <xi:include href="tikz/groups-rectangle.tex" parse="text"/>
@@ -257,6 +258,7 @@
       <figure xml:id="figure-s3-symmetry" permid="ORq">
         <caption>Symmetries of a triangle</caption>
         <image xml:id="groups-s3-symmetry" permid="jIw">
+          <description>The six symmetries of a triangle: (1) triangle ABC to triangle ABC, (2) ABC to CAB, (3) ABC to BCA, (4) ABC to ACB, (5) ABC to CBA, and (6) ABC to BAC</description>
 
             <latex-image>
                 <xi:include href="tikz/groups-s3-symmetry.tex" parse="text"/>
@@ -322,7 +324,7 @@
         that is, for every motion there is another motion that takes the triangle back to its original orientation.
       </p>
 
-      <table xml:id="table-s3" permid="osp">
+      <figure xml:id="table-s3" permid="osp">
             <!-- math table -->
         <caption>Symmetries of an equilateral triangle</caption>
         <p permid="CCY">
@@ -339,7 +341,7 @@
             \end{array}
           </me>
         </p>
-      </table>
+      </figure>
     </subsection>
 
   </section>
@@ -462,7 +464,7 @@
           n-1 \}</m> is a group under the binary operation of addition mod <m>n</m>.
         </p>
 
-        <table xml:id="table-z5-cayley" permid="vWO">
+        <figure xml:id="table-z5-cayley" permid="vWO">
             <!-- math table -->
           <caption>Cayley table for <m>({\mathbb Z_5}, +)</m></caption>
           <p permid="lqs">
@@ -478,7 +480,7 @@
               \end{array}
             </me>
           </p>
-        </table>
+        </figure>
       </example>
 
       <example xml:id="example-groups-z6-mult" permid="ntN">
@@ -517,7 +519,7 @@
           <xref ref="table-cayley-u8"/> is a Cayley table for the group <m>U(8)</m>.
         </p>
 
-        <table xml:id="table-cayley-u8" permid="cdX">
+        <figure xml:id="table-cayley-u8" permid="cdX">
             <!-- math table -->
           <caption>Multiplication table for <m>U(8)</m></caption>
           <p permid="xEK">
@@ -532,7 +534,7 @@
               \end{array}
             </me>
           </p>
-        </table>
+        </figure>
       </example>
 
       <example xml:id="example-groups-nonabelian" permid="TAW">
@@ -1102,7 +1104,7 @@
           <m>{\mathbb Z}_4</m> and <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> must be different groups.
         </p>
 
-        <table xml:id="table-z2xz2" permid="Ilg">
+        <figure xml:id="table-z2xz2" permid="Ilg">
             <!-- math table -->
           <caption>Addition table for <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m></caption>
           <p permid="GYw">
@@ -1117,7 +1119,7 @@
               \end{array}
             </me>
           </p>
-        </table>
+        </figure>
       </example>
 
     </subsection>
@@ -1229,12 +1231,68 @@
     </subsection>
 
   </section>
+
+    <reading-questions permid="VNv">
+
+    <exercise permid="fgH">
+      <statement>
+        <p permid="PXJ">
+          In the group <m>\mathbb Z_8</m> compute, (a) <m>6+7</m>,
+          and (b) <m>2^{-1}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="LnQ">
+      <statement>
+        <p permid="weS">
+          In the group <m>U(16)</m> compute, (a)
+          <m>5\cdot 7</m>, and (b) <m>3^{-1}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="ruZ">
+      <statement>
+        <p permid="cmb">
+          State the definition of a group.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="XCi">
+      <statement>
+        <p permid="Itk">
+          Explain a single method that will decide if a subset of a group is itself a subgroup.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="DJr">
+      <statement>
+        <p permid="oAt">
+          Explain the origin of the term <q>abelian</q> for a commutative group.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="jQA">
+      <statement>
+        <p permid="UHC">
+          Give an example of a group you have seen in your previous mathematical experience,
+          but that is not an example in this chapter.
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: groups.xml  -->
     <!-- Title: Groups -->
   <exercises xml:id="exercises-groups" filenamebase="groups" permid="OCI">
     <title>Exercises</title>
-    <exercise number="1" permid="lZZ">
+
+    <exercise number="1" permid="lZZ" xml:id="groups-exercise-find-x-modn">
       <statement>
         <p permid="wzr">
           Find all <m>x \in {\mathbb Z}</m> satisfying each of the following equations.
@@ -1286,7 +1344,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Shi">
+    <exercise number="2" permid="Shi" xml:id="groups-exercise-caley-table-groups">
       <statement>
         <p permid="cGA">
           Which of the following multiplication tables defined on the set <m>G = \{ a, b, c, d \}</m> form a group?
@@ -1362,7 +1420,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" xml:id="exercise-groups-rectangle-symmetries" permid="yor">
+    <exercise number="3" xml:id="groups-exercise-rectangle-symmetries" permid="yor">
       <statement>
         <p permid="INJ">
           Write out Cayley tables for groups formed by the symmetries of a rectangle and for <m>({\mathbb Z}_4, +)</m>.
@@ -1373,7 +1431,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="evA">
+    <exercise number="4" permid="evA" xml:id="groups-exercise-symmetries-rhombus">
       <statement>
         <p permid="oUS">
           Describe the symmetries of a rhombus and prove that the set of symmetries forms a group.
@@ -1383,7 +1441,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="KCJ">
+    <exercise number="5" permid="KCJ" xml:id="groups-exercise-symmetries-square">
       <statement>
         <p permid="Vcb">
           Describe the symmetries of a square and prove that the set of symmetries is a group.
@@ -1395,7 +1453,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="qJS">
+    <exercise number="6" permid="qJS" xml:id="groups-exercise-table-u12">
       <statement>
         <p permid="Bjk">
           Give a multiplication table for the group <m>U(12)</m>.
@@ -1415,7 +1473,7 @@
       </hint>
     </exercise>
 
-    <exercise number="7" permid="WRb">
+    <exercise number="7" permid="WRb" xml:id="groups-exercise-group-operation-on-R-except-minus1">
       <statement>
         <p permid="hqt">
           Let <m>S = {\mathbb R} \setminus \{ -1 \}</m> and define a binary operation on <m>S</m> by <m>a \ast b = a + b + ab</m>.
@@ -1424,7 +1482,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="CYk">
+    <exercise number="8" permid="CYk" xml:id="groups-exercise-matrices-dont-commute">
       <statement>
         <p permid="NxC">
           Give an example of two elements <m>A</m> and <m>B</m> in
@@ -1439,7 +1497,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="jft">
+    <exercise number="9" permid="jft" xml:id="groups-exercise-sl2-closed">
       <statement>
         <p permid="tEL">
           Prove that the product of two matrices in <m>SL_2({\mathbb R})</m> has determinant one.
@@ -1449,7 +1507,7 @@
 
     <!--Todo Check references to Heisenberg group-->
 
-    <exercise number="10" permid="PmC">
+    <exercise number="10" permid="PmC" xml:id="groups-exercise-heisenberg-group">
       <statement>
         <p permid="ZLU">
           Prove that the set of matrices of the form
@@ -1487,7 +1545,7 @@
       </statement>
     </exercise>
 
-    <exercise number="11" permid="vtL">
+    <exercise number="11" permid="vtL" xml:id="groups-exercise-determinant-product">
       <statement>
         <p permid="FTd">
           Prove that <m>\det(AB) = \det(A) \det(B)</m> in <m>GL_2({\mathbb R})</m>.
@@ -1498,7 +1556,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="bAU">
+    <exercise number="12" permid="bAU" xml:id="groups-exercise-Zn-group">
       <statement>
         <p permid="mam">
           Let <m>{\mathbb Z}_2^n = \{ (a_1, a_2, \ldots,
@@ -1513,7 +1571,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="HId">
+    <exercise number="13" permid="HId" xml:id="groups-exercise-R-star">
       <statement>
         <p permid="Shv">
           Show that <m>{\mathbb R}^{\ast} = {\mathbb R} \setminus \{0 \}</m> is a group under the operation of multiplication.
@@ -1521,7 +1579,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="nPm">
+    <exercise number="14" permid="nPm" xml:id="groups-exercise-product-R-star-Z">
       <statement>
         <p permid="yoE">
           Given the groups <m>{\mathbb R}^{\ast}</m> and <m>{\mathbb Z}</m>,
@@ -1533,7 +1591,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="TWv">
+    <exercise number="15" permid="TWv" xml:id="groups-exercise-order-6-nonabelain">
       <statement>
         <p permid="evN">
           Prove or disprove that every group containing six elements is abelian.
@@ -1546,7 +1604,7 @@
       </hint>
     </exercise>
 
-    <exercise number="16" permid="AdE">
+    <exercise number="16" permid="AdE" xml:id="groups-exercise-product-exponents">
       <statement>
         <p permid="KCW">
           Give a specific example of some group <m>G</m> and elements
@@ -1561,7 +1619,7 @@
       </hint>
     </exercise>
 
-    <exercise number="17" permid="gkN">
+    <exercise number="17" permid="gkN" xml:id="groups-exercise-groups-8-elements">
       <statement>
         <p permid="qKf">
           Give an example of three different groups with eight elements.
@@ -1575,7 +1633,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="MrW">
+    <exercise number="18" permid="MrW" xml:id="groups-exercise-n-factorial-permutations">
       <statement>
         <p permid="WRo">
           Show that there are <m>n!</m> permutations of a set containing <m>n</m> items.
@@ -1600,7 +1658,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="szf">
+    <exercise number="19" permid="szf" xml:id="groups-exercise-additive-identity-Zn">
       <statement>
         <p permid="CYx">
           Show that
@@ -1612,7 +1670,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="YGo">
+    <exercise number="20" permid="YGo" xml:id="groups-exercise-multiplicative-identity-Zn">
       <statement>
         <p permid="jfG">
           Prove that there is a multiplicative identity for the integers modulo <m>n</m>:
@@ -1623,7 +1681,7 @@
       </statement>
     </exercise>
 
-    <exercise number="21" permid="ENx">
+    <exercise number="21" permid="ENx" xml:id="groups-exercise-addition-commutative-Zn">
       <statement>
         <p permid="PmP">
           For each <m>a \in {\mathbb Z}_n</m> find an element <m>b \in {\mathbb Z}_n</m> such that
@@ -1634,7 +1692,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="kUG">
+    <exercise number="22" permid="kUG" xml:id="groups-exercise-Zn-operations-well-defined">
       <statement>
         <p permid="vtY">
           Show that addition and multiplication mod <m>n</m> are well defined operations.
@@ -1643,7 +1701,7 @@
       </statement>
     </exercise>
 
-    <exercise number="23" permid="RbP">
+    <exercise number="23" permid="RbP" xml:id="groups-exercise-Zn-associative">
       <statement>
         <p permid="bBh">
           Show that addition and multiplication mod <m>n</m> are associative operations.
@@ -1651,7 +1709,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" permid="xiY">
+    <exercise number="24" permid="xiY" xml:id="groups-exercise-Zn-distribute">
       <statement>
         <p permid="HIq">
           Show that multiplication distributes over addition modulo <m>n</m>:
@@ -1662,7 +1720,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" permid="dqh">
+    <exercise number="25" permid="dqh" xml:id="groups-exercise-powers-of-inverses">
       <statement>
         <p permid="nPz">
           Let <m>a</m> and <m>b</m> be elements in a group <m>G</m>.
@@ -1680,7 +1738,7 @@
       </hint>
     </exercise>
 
-    <exercise number="26" permid="Jxq">
+    <exercise number="26" permid="Jxq" xml:id="groups-exercise-Un-idempotent">
       <statement>
         <p permid="TWI">
           Let <m>U(n)</m> be the group of units in <m>{\mathbb Z}_n</m>.
@@ -1690,7 +1748,7 @@
       </statement>
     </exercise>
 
-    <exercise number="27" permid="pEz">
+    <exercise number="27" permid="pEz" xml:id="groups-exercise-product-of-inverses">
       <statement>
         <p permid="AdR">
           Prove that the inverse of <m>g _1 g_2 \cdots g_n</m> is <m>g_n^{-1} g_{n-1}^{-1} \cdots g_1^{-1}</m>.
@@ -1698,7 +1756,7 @@
       </statement>
     </exercise>
 
-    <exercise number="28" permid="VLI">
+    <exercise number="28" permid="VLI" xml:id="groups-exercise-prove-xa-equal-b-solution">
       <statement>
         <p permid="gla">
           Prove the remainder of <xref ref="proposition-group-equations"/>:
@@ -1708,7 +1766,7 @@
       </statement>
     </exercise>
 
-    <exercise number="29" permid="BSR">
+    <exercise number="29" permid="BSR" xml:id="groups-exercise-prove-exponent-laws">
       <statement>
         <p permid="Msj">
           Prove <xref ref="theorem-exponent-laws"/>.
@@ -1716,7 +1774,7 @@
       </statement>
     </exercise>
 
-    <exercise number="30" permid="iaa">
+    <exercise number="30" permid="iaa" xml:id="groups-exercise-cancellation-laws">
       <statement>
         <p permid="szs">
           Prove the right and left cancellation laws for a group <m>G</m>;
@@ -1727,7 +1785,7 @@
       </statement>
     </exercise>
 
-    <exercise number="31" permid="Ohj">
+    <exercise number="31" permid="Ohj" xml:id="groups-exercise-a-hat-square-equal-1">
       <statement>
         <p permid="YGB">
           Show that if <m>a^2 = e</m> for all elements <m>a</m> in a group <m>G</m>,
@@ -1742,7 +1800,7 @@
       </hint>
     </exercise>
 
-    <exercise number="32" permid="uos">
+    <exercise number="32" permid="uos" xml:id="groups-exercise-finite-group-even-order">
       <statement>
         <p permid="ENK">
           Show that if <m>G</m> is a finite group of even order,
@@ -1751,7 +1809,7 @@
       </statement>
     </exercise>
 
-    <exercise number="33" permid="avB">
+    <exercise number="33" permid="avB" xml:id="groups-exercise-ab-2-and-a2-b2">
       <statement>
         <p permid="kUT">
           Let <m>G</m> be a group and suppose that
@@ -1761,7 +1819,7 @@
       </statement>
     </exercise>
 
-    <exercise number="34" permid="GCK">
+    <exercise number="34" permid="GCK" xml:id="groups-exercise-subgroups-Z3-times-Z3">
       <statement>
         <p permid="Rcc">
           Find all the subgroups of <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m>.
@@ -1772,7 +1830,7 @@
       </statement>
     </exercise>
 
-    <exercise number="35" permid="mJT">
+    <exercise number="35" permid="mJT" xml:id="groups-exercise-subgroups-S3">
       <statement>
         <p permid="xjl">
           Find all the subgroups of the symmetry group of an equilateral triangle.
@@ -1789,7 +1847,7 @@
       </hint>
     </exercise>
 
-    <exercise number="36" permid="SRc">
+    <exercise number="36" permid="SRc" xml:id="groups-exercise-subgroups-D4">
       <statement>
         <p permid="dqu">
           Compute the subgroups of the symmetry group of a square.
@@ -1797,7 +1855,7 @@
       </statement>
     </exercise>
 
-    <exercise number="37" permid="yYl">
+    <exercise number="37" permid="yYl" xml:id="groups-exercise-subgroup-powers-2">
       <statement>
         <p permid="JxD">
           Let <m>H = \{2^k : k \in {\mathbb Z} \}</m>.
@@ -1806,7 +1864,7 @@
       </statement>
     </exercise>
 
-    <exercise number="38" permid="ffu">
+    <exercise number="38" permid="ffu" xml:id="groups-exercise-subgroup-Zn-times-Zn">
       <statement>
         <p permid="pEM">
           Let <m>n = 0, 1, 2, \ldots</m> and <m>n {\mathbb Z} = \{ nk : k \in {\mathbb Z} \}</m>.
@@ -1816,7 +1874,7 @@
       </statement>
     </exercise>
 
-    <exercise number="39" xml:id="exercise-groups-circle-group" permid="LmD">
+    <exercise number="39" xml:id="groups-exercise-circle-group" permid="LmD">
       <statement>
         <p permid="VLV">
           Let <m>{\mathbb T} = \{ z \in {\mathbb C}^* : |z| =1 \}</m>.
@@ -1825,7 +1883,7 @@
       </statement>
     </exercise>
 
-    <exercise number="40" permid="rtM">
+    <exercise number="40" permid="rtM" xml:id="groups-exercise-so-2">
       <statement>
         <p permid="BTe">
           Let <m>G</m> consist of the <m>2 \times 2</m> matrices of the form
@@ -1841,7 +1899,7 @@
       </statement>
     </exercise>
 
-    <exercise number="41" permid="XAV">
+    <exercise number="41" permid="XAV" xml:id="groups-exercise-a-plus-b-sqrt-2">
       <statement>
         <p permid="ian">
           Prove that
@@ -1861,7 +1919,7 @@
       </hint>
     </exercise>
 
-    <exercise number="42" permid="jPn">
+    <exercise number="42" permid="jPn" xml:id="groups-exercise-trace-0">
       <statement>
         <p permid="Ohw">
           Let <m>G</m> be the group of
@@ -1881,7 +1939,7 @@
       </statement>
     </exercise>
 
-    <exercise number="43" permid="PWw">
+    <exercise number="43" permid="PWw" xml:id="groups-exercise-sl-2-Z">
       <statement>
         <p permid="uoF">
           Prove or disprove: <m>SL_2( {\mathbb Z} )</m>,
@@ -1891,7 +1949,7 @@
       </statement>
     </exercise>
 
-    <exercise number="44" permid="wdF">
+    <exercise number="44" permid="wdF" xml:id="groups-exercise-subgroups-Q8">
       <statement>
         <p permid="avO">
           List the subgroups of the quaternion group, <m>Q_8</m>.
@@ -1899,7 +1957,7 @@
       </statement>
     </exercise>
 
-    <exercise number="45" permid="ckO">
+    <exercise number="45" permid="ckO" xml:id="groups-exercise-intersect-subgroups">
       <statement>
         <p permid="GCX">
           Prove that the intersection of two subgroups of a group <m>G</m> is also a subgroup of <m>G</m>.
@@ -1907,7 +1965,7 @@
       </statement>
     </exercise>
 
-    <exercise number="46" permid="IrX">
+    <exercise number="46" permid="IrX" xml:id="groups-exercise-union-subgroups">
       <statement>
         <p permid="mKg">
           Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
@@ -1921,7 +1979,7 @@
       </hint>
     </exercise>
 
-    <exercise number="47" permid="ozg">
+    <exercise number="47" permid="ozg" xml:id="groups-exercise-product-subgroups">
       <statement>
         <p permid="SRp">
           Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
@@ -1931,7 +1989,7 @@
       </statement>
     </exercise>
 
-    <exercise number="48" xml:id="exercise-groups-center-group" permid="UGp">
+    <exercise number="48" xml:id="groups-exercise-center-group" permid="UGp">
       <statement>
         <p permid="yYy">
           Let <m>G</m> be a group and <m>g \in G</m>.
@@ -1951,7 +2009,7 @@
       </statement>
     </exercise>
 
-    <exercise number="49" permid="ANy">
+    <exercise number="49" permid="ANy" xml:id="groups-exercise-a4b-a3">
       <statement>
         <p permid="ffH">
           Let <m>a</m> and <m>b</m> be elements of a group <m>G</m>.
@@ -1966,7 +2024,7 @@
       </hint>
     </exercise>
 
-    <exercise number="50" permid="gUH">
+    <exercise number="50" permid="gUH"  xml:id="groups-exercise-infinite-subgroups">
       <statement>
         <p permid="LmQ">
           Give an example of an infinite group in which every nontrivial subgroup is infinite.
@@ -1986,7 +2044,7 @@
 	</exercise>
 
 -->
-    <exercise number="51" permid="NbQ">
+    <exercise number="51" permid="NbQ"  xml:id="groups-exercise-xy-equal-x-1-y-1">
       <statement>
         <p permid="rtZ">
           If <m>xy = x^{-1} y^{-1}</m> for all <m>x</m> and <m>y</m> in <m>G</m>,
@@ -1995,7 +2053,7 @@
       </statement>
     </exercise>
 
-    <exercise number="52" permid="tiZ">
+    <exercise number="52" permid="tiZ"  xml:id="groups-exercise-subgroups-of-nonabelian-groups">
       <statement>
         <p permid="XBi">
           Prove or disprove: Every proper subgroup of a nonabelian group is nonabelian.
@@ -2005,7 +2063,7 @@
 
     <!--Todo Fix references to centralizer-->
 
-    <exercise number="53" permid="Zqi">
+    <exercise number="53" permid="Zqi" xml:id="groups-exercise-centralizer">
       <statement>
         <p permid="DIr">
           Let <m>H</m> be a subgroup of <m>G</m> and
@@ -2018,7 +2076,7 @@
       </statement>
     </exercise>
 
-    <exercise number="54" permid="Fxr">
+    <exercise number="54" permid="Fxr"  xml:id="groups-exercise-commutator">
       <statement>
         <p permid="jPA">
           Let <m>H</m> be a subgroup of <m>G</m>.
@@ -2096,7 +2154,9 @@
 
         <figure xml:id="figure-upc-codes" permid="wdS">
           <caption>A <acro>UPC</acro> code</caption>
-          <image width="50%" source="images/UPCcode"/>
+          <image width="50%" source="images/UPCcode">
+            <description>The vertical lines of a UPC bar scan code for 0-05000-30042-6</description>
+          </image>
         </figure>
       </statement>
     </exercise>
@@ -2247,6 +2307,8 @@
       <title>An Introduction to the Theory of Groups</title>. 4th ed. Springer, New York, 1995.
     </biblio>
   </references>
+
+
 
   <section xml:id="groups-sage" permid="fAT">
     <title>Sage</title>
@@ -2754,7 +2816,7 @@
       </p>
     </introduction>
 
-    <exercise number="1" permid="qot">
+    <exercise number="1" permid="qot" xml:id="groups-sage-exercise-order-8">
       <statement>
         <p permid="ANL">
           Create the groups <c>CyclicPermutationGroup(8)</c> and <c>DihedralGroup(4)</c> and name these groups <c>C</c> and <c>D</c>,
@@ -2765,7 +2827,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="WvC">
+    <exercise number="2" permid="WvC" xml:id="groups-sage-exercise-order">
       <statement>
         <p permid="gUU">
           Check that <c>C</c> and <c>D</c> have the same size by using the <c>.order()</c> method.
@@ -2775,7 +2837,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="CCL">
+    <exercise number="3" permid="CCL" xml:id="groups-sage-exercise-cayley-table">
       <statement>
         <p permid="Ncd">
           Use the <c>.cayley_table()</c> method to create the Cayley table for each group.
@@ -2783,7 +2845,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="iJU">
+    <exercise number="4" permid="iJU" xml:id="groups-sage-exercise-formatted-cayley-table">
       <statement>
         <p permid="tjm">
           Write a nicely formatted discussion identifying differences between the two groups that are discernible in properties of their Cayley tables.
@@ -2796,7 +2858,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="ORd">
+    <exercise number="5" permid="ORd" xml:id="groups-sage-exercise-subgroup">
       <statement>
         <p permid="Zqv">
           For <c>C</c> locate the one subgroup of order <m>4</m>.
@@ -2812,7 +2874,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="uYm">
+    <exercise number="6" permid="uYm" xml:id="groups-sage-exercise-subgpoup-elements">
       <statement>
         <p permid="lEN">
           The <c>.subgroup(elt_list)</c> method of a group will create the smallest subgroup containing the specified elements of the group,

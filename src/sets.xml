@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -668,8 +668,7 @@
         Subsets of <m>A \times B</m> are called <term>relations</term>.
         We will define a  <term>mapping</term><idx><h>Mapping</h><see>Function</see></idx> or
         <term>function</term><idx><h>Function</h><h>definition of</h></idx>
-        <m>f \subset A \times B</m> from a set <m>A</m> to a set <m>B</m> to be the special type of relation where
-        <m>(a, b) \in f</m> if for every element <m>a \in A</m> there exists a unique element <m>b \in B</m>.
+        <m>f \subset A \times B</m> from a set <m>A</m> to a set <m>B</m> to be the special type of relation where each element <m>a \in A</m> has a unique element <m>b \in B</m> such that <m>(a, b) \in f</m>.
         Another way of saying this is that for every element in <m>A</m>,
         <m>f</m> assigns a unique element in <m>B</m>.
         We usually write <m>f:A \rightarrow B</m> or <m>A \stackrel{f}{\rightarrow} B</m>.
@@ -701,6 +700,7 @@
           <caption>Mappings and relations</caption>
             <!-- Changed the figure to a tikz diagram - TWJ 5/4/2010 -->
           <image width="60%" xml:id="sets-mappings" permid="JTP">
+            <description>Two sets of ovals, A and B, relating 1, 2, 3 to a, b, c.  The first mapping, f, sends 1 to b and 2 and 3 to c.  The second relation, g, sends 1 to a and b, 2 to c, and 3 to a</description>
 
             <latex-image>
                 <xi:include href="tikz/sets-mappings.tex" parse="text"/>
@@ -772,7 +772,7 @@
         <caption>Composition of maps</caption>
             <!-- Changed the figure to a tikz diagram - TWJ 5/4/2010 -->
         <image width="90%" xml:id="sets-composition" permid="qaY">
-
+          <description>Two sets of ovals, A and B, relating 1, 2, 3 to a, b, c and a, b, c to X, Y, Z.  The first mapping, f, sends 1 to b, 2  2 to c, and 3 to a.  The second relation, g, sends a and b to Z and c to X.  The bottom map, g circle f, sends 1 and 3 to Z and 2 to X. </description>
             <latex-image>
                 <xi:include href="tikz/sets-composition.tex" parse="text"/>
             </latex-image>
@@ -1423,12 +1423,58 @@
     </subsection>
 
   </section>
+
+  <reading-questions permid="ibN">
+
+    <exercise permid="Kix">
+      <statement>
+        <p permid="OSq">
+          What do relations and mappings have in common?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="qpG">
+      <statement>
+        <p permid="uZz">
+          What makes relations and mappings different?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="WwP">
+      <statement>
+        <p permid="bgI">
+          State carefully the three defining properties of an equivalence relation.
+          In other words, do not just <em>name</em>
+          the properties, give their definitions.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="CDY">
+      <statement>
+        <p permid="HnR">
+          What is the big deal about equivalence relations? (Hint: Partitions.)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="iLh">
+      <statement>
+        <p permid="nva">
+          Describe a general technique for proving that two sets are equal.
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: sets.xml  -->
     <!-- Title: Preliminaries -->
   <exercises xml:id="exercises-sets" filenamebase="sets" permid="mDp">
     <title>Exercises</title>
-    <exercise number="1" permid="nnj">
+    <exercise number="1" permid="nnj" xml:id="sets-exercise-set-operations">
       <statement>
         <p permid="AHh">
           Suppose that
@@ -1473,7 +1519,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Tus">
+    <exercise number="2" permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
       <statement>
         <p permid="gOq">
           If <m>A = \{ a, b, c \}</m>,
@@ -1514,7 +1560,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="zBB">
+    <exercise number="3" permid="zBB" xml:id="sets-exercise-cartesian-product-nonempty-set">
       <statement>
         <p permid="MVz">
           Find an example of two nonempty sets <m>A</m> and <m>B</m> for which <m>A \times B = B \times A</m> is true.
@@ -1522,7 +1568,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="fIK">
+    <exercise number="4" permid="fIK" xml:id="sets-exercise-union-intersect-empty-set">
       <statement>
         <p permid="tcI">
           Prove <m>A \cup \emptyset = A</m> and <m>A \cap \emptyset = \emptyset</m>.
@@ -1530,7 +1576,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="LPT">
+    <exercise number="5" permid="LPT" xml:id="sets-exercise-union-intersection-commute">
       <statement>
         <p permid="ZjR">
           Prove <m>A \cup B = B \cup A</m> and <m>A \cap B = B \cap A</m>.
@@ -1538,7 +1584,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="rXc">
+    <exercise number="6" permid="rXc" xml:id="sets-exercise-union-distributes">
       <statement>
         <p permid="Fra">
           Prove <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.
@@ -1560,7 +1606,7 @@
       </hint>
     </exercise>
 
-    <exercise number="7" permid="Yel">
+    <exercise number="7" permid="Yel" xml:id="sets-exercise-intersection-distributes">
       <statement>
         <p permid="lyj">
           Prove <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.
@@ -1568,7 +1614,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="Elu">
+    <exercise number="8" permid="Elu" xml:id="sets-exercise-subset-iff-intersection">
       <statement>
         <p permid="RFs">
           Prove <m>A \subset B</m> if and only if <m>A \cap B = A</m>.
@@ -1576,7 +1622,7 @@
       </statement>
     </exercise>
 
-    <exercise number="9" permid="ksD">
+    <exercise number="9" permid="ksD" xml:id="sets-exercise-demorgan">
       <statement>
         <p permid="xMB">
           Prove <m>(A \cap B)' = A' \cup B'</m>.
@@ -1584,7 +1630,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="QzM">
+    <exercise number="10" permid="QzM" xml:id="sets-exercise-set-minus-union">
       <statement>
         <p permid="dTK">
           Prove <m>A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)</m>.
@@ -1597,7 +1643,7 @@
       </hint>
     </exercise>
 
-    <exercise number="11" permid="wGV">
+    <exercise number="11" permid="wGV" xml:id="sets-exercise-times-union">
       <statement>
         <p permid="KaT">
           Prove <m>(A \cup B) \times C = (A \times C ) \cup (B \times C)</m>.
@@ -1605,7 +1651,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="cOe">
+    <exercise number="12" permid="cOe" xml:id="sets-exercise-set-minus-empty-set">
       <statement>
         <p permid="qic">
           Prove <m>(A \cap B) \setminus B = \emptyset</m>.
@@ -1613,7 +1659,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="IVn">
+    <exercise number="13" permid="IVn" xml:id="sets-exercise-union-set-minus">
       <statement>
         <p permid="Wpl">
           Prove <m>(A \cup B) \setminus B = A \setminus B</m>.
@@ -1621,7 +1667,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="pcw">
+    <exercise number="14" permid="pcw" xml:id="sets-exercise-set-minus-distribute">
       <statement>
         <p permid="Cwu">
           Prove <m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.
@@ -1634,7 +1680,7 @@
       </hint>
     </exercise>
 
-    <exercise number="15" permid="VjF">
+    <exercise number="15" permid="VjF" xml:id="sets-exercise-a-cap-b-setminus-c">
       <statement>
         <p permid="iDD">
           Prove <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
@@ -1642,7 +1688,7 @@
       </statement>
     </exercise>
 
-    <exercise number="16" permid="BqO">
+    <exercise number="16" permid="BqO" xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a">
       <statement>
         <p permid="OKM">
           Prove <m>(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)</m>.
@@ -1650,7 +1696,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="hxX">
+    <exercise number="17" permid="hxX" xml:id="sets-exercise-which-are-maps">
       <statement>
         <p permid="uRV">
           Which of the following relations <m>f: {\mathbb Q} \rightarrow {\mathbb Q}</m> define a mapping?
@@ -1692,7 +1738,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="NFg">
+    <exercise number="18" permid="NFg" xml:id="sets-exercise-which-are-one-to-one-onto">
       <statement>
         <p permid="aZe">
           Determine which of the following functions are one-to-one and which are onto.
@@ -1733,7 +1779,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="tMp">
+    <exercise number="19" permid="tMp" xml:id="sets-exercise-inverse-composition">
       <statement>
         <p permid="Hgn">
           Let <m>f :A \rightarrow B</m> and
@@ -1744,7 +1790,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="ZTy">
+    <exercise number="20" permid="ZTy" xml:id="sets-exercise-functions-N-to-N">
       <statement>
         <p permid="nnw">
           <ol permid="slx">
@@ -1769,7 +1815,7 @@
       </hint>
     </exercise>
 
-    <exercise number="21" permid="GaH">
+    <exercise number="21" permid="GaH" xml:id="sets-exercise-relation-on-circles">
       <statement>
         <p permid="TuF">
           Prove the relation defined on
@@ -1779,7 +1825,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="mhQ">
+    <exercise number="22" permid="mhQ" xml:id="sets-exercise-bijective-surjective-compostion">
       <statement>
         <p permid="zBO">
           Let <m>f : A \rightarrow B</m> and <m>g : B \rightarrow C</m> be maps.
@@ -1833,7 +1879,7 @@
       </hint>
     </exercise>
 
-    <exercise number="23" permid="SoZ">
+    <exercise number="23" permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
       <statement>
         <p permid="fIX">
           Define a function on the real numbers by
@@ -1852,7 +1898,7 @@
       </hint>
     </exercise>
 
-    <exercise number="24" permid="ywi">
+    <exercise number="24" permid="ywi" xml:id="sets-exercise-maps-set-operations">
       <statement>
         <p permid="LQg">
           Let <m>f: X \rightarrow Y</m> be a map with
@@ -1913,7 +1959,7 @@
       </hint>
     </exercise>
 
-    <exercise number="25" permid="eDr">
+    <exercise number="25" permid="eDr" xml:id="sets-exercise-determine-equivalence-relations">
       <statement>
         <p permid="rXp">
           Determine whether or not the following relations are equivalence relations on the given set.
@@ -1957,7 +2003,7 @@
       </hint>
     </exercise>
 
-    <exercise number="26" permid="KKA">
+    <exercise number="26" permid="KKA" xml:id="sets-exercise-nonsymmetric-circle">
       <statement>
         <p permid="Yey">
           Define a relation <m>\sim</m> on <m>{\mathbb R}^2</m> by stating that
@@ -1967,7 +2013,7 @@
       </statement>
     </exercise>
 
-    <exercise number="27" permid="qRJ">
+    <exercise number="27" permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
       <statement>
         <p permid="ElH">
           Show that an <m>m \times n</m> matrix gives rise to a well-defined map from
@@ -1976,7 +2022,7 @@
       </statement>
     </exercise>
 
-    <exercise number="28" permid="WYS">
+    <exercise number="28" permid="WYS" xml:id="sets-exercise-reflexive-error">
       <statement>
         <p permid="ksQ">
           Find the error in the following argument by providing a counterexample.
@@ -1994,7 +2040,7 @@
       </hint>
     </exercise>
 
-    <exercise number="29" permid="Dgb">
+    <exercise number="29" permid="Dgb" xml:id="sets-exercise-projective-real-line">
       <title>Projective Real Line</title>
       <statement>
         <p permid="QzZ">
@@ -2020,7 +2066,7 @@
     <biblio type="raw" permid="fAk">
 <!-- was [1] --><!-- Reference updated 5/4/2010 - TWJ -->
       Artin, M.
-      <title>Abstract Algebra</title>. 2nd ed. Pearson, Upper Saddle River, NJ, 2011.
+      <title>Algebra (Classic Version)</title>. 2nd ed. Pearson, Upper Saddle River, NJ, 2018.
     </biblio>
 
     <biblio type="raw" permid="LHt">
@@ -2114,6 +2160,8 @@
       New York, 1985. An account of the historical development of algebra.
     </biblio>
   </references>
+
+
 
   <section xml:id="sets-sage" permid="LfZ">
     <title>Sage</title>
@@ -2335,7 +2383,7 @@
                 <output>
             Traceback (most recent call last):
             ...
-            ZeroDivisionError: Matrix is singular
+            ZeroDivisionError: matrix must be nonsingular
             </output>
             </sage>
 
@@ -2592,7 +2640,7 @@
 
   <exercises xml:id="sets-sage-exercises" permid="SKy">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="jnk">
+    <exercise number="1" permid="jnk" xml:id="sets-sage-exercise-cocalc">
       <statement>
         <p permid="wHi">
           This exercise is just about making sure you know how to use Sage.

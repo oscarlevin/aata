@@ -3,13 +3,13 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
-<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="index" permid="Wih">
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="aata" permid="Wih">
   <titlepage>
     <author>
       <personname>Thomas W. Judson</personname>
@@ -37,11 +37,11 @@
         <email>abehn@uchile.cl</email>
       </author>
     </credit>
-    <date>July 10, 2019</date>
+    <date><today/></date>
   </titlepage>
 
   <colophon>
-    <edition>Annual Edition 2019</edition>
+    <edition>Annual Edition 2020</edition>
     <website>
       <name>
       <c>abstract.pugetsound.edu</c>
@@ -50,7 +50,7 @@
     </website>
 
     <copyright>
-      <year>1997<ndash/>2019</year>
+      <year>1997<ndash/>2020</year>
       <holder>Thomas W. Judson, Robert A. Beezer</holder>
       <minilicense>GFDL License</minilicense>
       <shortlicense>
@@ -196,7 +196,7 @@
             <!-- duplicate widths -->
             <!-- Replaced figure with tikz figure - TWJ 6/14/2010 -->
       <image width="100%" xml:id="preface-dependencies" permid="WSb">
-
+            <description>Chapter dependency graph.  Chapter 23 depends on Chapters 13 and 15. Chapter 22 depends on Chapter 21 and Chapter 8.  Chapter 21 depends on Chapter 20.  Chapters 18-20 depend on Chapter 17.  Chapter 17 depends on Chapter 16.  Chapter 15 depends on Chapter 14.  Chapters 12, 13, 14, and 16 depend on Chapter 11. Chapter 11 depends on Chapter 10, which depends on Chapter 9. Chapters 7-9 depend on Chapters 1-6</description>
             <latex-image>
                 <xi:include href="tikz/preface-dependencies.tex" parse="text"/>
             </latex-image>
@@ -245,17 +245,17 @@
       Robert Beezer has written a comprehensive introduction to Sage and a selection of relevant exercises that appear at the end of each chapter,
       including live Sage cells in the web version of the book.
       All of the Sage code has been subject to automated tests of accuracy,
-      using the most recent version available at this time: SageMath Version 8.8
-      (released 2019-07-02).
+      using the most recent version available at this time: SageMath Version 9.1
+      (released 2020-05-20).
     </p>
         <!-- check consistency with paragraph above -->
         <sage type="invisible" permid="Nry">
             <input>version()</input>
-            <output>'SageMath version 8.8, Release Date: 2019-06-26'</output>
+            <output>'SageMath version 9.1, Release Date: 2020-05-20'</output>
         </sage>
     <attribution>
     <line>Thomas W. Judson</line>
-    <line>Nacogdoches, Texas 2019</line></attribution>
+    <line>Nacogdoches, Texas 2020</line></attribution>
   </preface>
 </frontmatter>
 

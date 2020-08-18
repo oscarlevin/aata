@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -35,10 +35,11 @@
       </p>
 
       <figure xml:id="figure-encoding" permid="BBJ">
+        
         <caption>Encoding and decoding messages</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/10/2010 -->
         <image width="60%" xml:id="algcodes-encode-decode" permid="Qie">
-
+        	<description>A vertical flow chart where an m-digit message is passed to an encoder which is represented by a rectangle to become an n-digit codeword which is passed to a transmitter that is also represented by a rectangle.  The outcome of the transmitter may have noise and is passed to the receiver which is prepresented by a rectangle.  The receiver passes an n-digit received word to a decoder that is represented by a rectangle.  The decoder produces an m-digit received word or an error.</description>
             <latex-image>
                 <xi:include href="tikz/algcodes-encode-decode.tex" parse="text"/>
             </latex-image>
@@ -176,7 +177,7 @@
         </p>
 
         <table xml:id="table-repetition-code" permid="cww">
-          <caption>A repetition code</caption>
+          <title>A repetition code</title>
           <tabular halign="center" top="medium" permid="IDF">
             <col/>
             <col/>
@@ -268,10 +269,11 @@
         </fn></p>
 
       <figure xml:id="figure-channel" permid="rMy">
+        
         <caption>Binary symmetric channel</caption>
             <!-- Replaced figure with tikz figure - TWJ 5/10/2010 -->
         <image width="40%" xml:id="algcodes-binary-channel" permid="wpn">
-
+        	<description>A schematic diagram where a zero has probabilty p that it will be decoded as a zero and probability q that it will be decoded as a one, which are represented by arrows from 0 to 0 and 1 to 1, respectively.  A one has probabilty p that it will be decoded as a one and probability q that it will be decoded as a zero, which are represented by arrows from 1 to 1 and 0 to 1, respectively.</description>
             <latex-image>
                 <xi:include href="tikz/algcodes-binary-channel.tex" parse="text"/>
             </latex-image>
@@ -516,7 +518,7 @@
       </p>
 
       <table xml:id="table-4-bit-words" permid="hgp">
-        <caption>Distances between 4-bit codewords</caption>
+        <title>Distances between 4-bit codewords</title>
         <tabular halign="center" top="medium" left="medium" right="medium" permid="Nny">
           <row bottom="medium">
             <cell/>
@@ -700,7 +702,7 @@
         </p>
 
         <table xml:id="table-hamming-distance" permid="oKO">
-          <caption>Hamming distances for an error-correcting code</caption>
+          <title>Hamming distances for an error-correcting code</title>
           <tabular halign="center" top="medium" left="medium" right="medium" permid="URX">
             <row bottom="medium">
               <cell/>
@@ -1168,7 +1170,7 @@
     </example>
 
     <table xml:id="table-matrix-gen-code" permid="RXr">
-      <caption>A matrix-generated code</caption>
+      <title>A matrix-generated code</title>
       <tabular halign="center" top="medium" permid="yeA">
         <row bottom="medium">
           <cell>Message Word <m>\mathbf x</m></cell>
@@ -1723,7 +1725,7 @@
       </example>
 
       <table xml:id="table-cosets-of-c" permid="tuH">
-        <caption>Cosets of <m>C</m></caption>
+        <title>Cosets of <m>C</m></title>
         <tabular halign="center" top="medium" permid="FIZ">
           <row>
             <cell>Coset</cell>
@@ -1811,7 +1813,7 @@
       </p>
 
       <table xml:id="table-syndrome" permid="ZBQ">
-        <caption>Syndromes for each coset</caption>
+        <title>Syndromes for each coset</title>
         <tabular halign="center" top="medium" permid="lQi">
           <row bottom="medium">
             <cell>Syndrome</cell>
@@ -1882,7 +1884,7 @@
           <me permid="mlH">
             H {\mathbf x} =
             \begin{pmatrix}
-            0 \\ 1 \\ 1
+            0 \\ 1 \\ 0
             \end{pmatrix}
           </me>.
           Examining the decoding table,
@@ -1909,12 +1911,78 @@
       </paragraphs>
     </subsection>
   </section>
+
+    <reading-questions permid="gmA">
+
+    <exercise permid="nCe">
+      <statement>
+        <p permid="slX">
+          Suppose a binary code has minimum distance <m>d=6</m>.
+          How many errors can be detected?
+          How many errors can be corrected?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="TJn">
+      <statement>
+        <p permid="Ytg">
+          Explain why it is impossible for the 8-bit string with decimal value <m>56_{10}</m> to be an <acro>ASCII</acro> code for a character.
+          Assume the leftmost bit of the string is being used as a parity-check bit.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="zQw">
+      <statement>
+        <p permid="EAp">
+          Suppose we receive the 8-bit string with decimal value <m>56_{10}</m> when we are expecting <acro>ASCII</acro> characters with a parity-check bit in the first bit
+          (leftmost).
+          We know an error has occurred in transmission.
+          Give one of the probable guesses for the character which was actually sent
+          (other than <sq>8</sq>),
+          under the assumption that any individual bit is rarely sent in error.
+          Explain the logic of your answer.
+          (You may need to consult a table of <acro>ASCII</acro> values online.)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="fXF">
+      <statement>
+        <p permid="kHy">
+          Suppose a linear code <m>C</m> is created as the null space of the parity-check matrix
+          <me permid="wVQ">
+            H =\begin{bmatrix}
+            0 \amp 1 \amp 0 \amp 1 \amp 0 \\
+            1 \amp 1 \amp 1 \amp 1 \amp 0 \\
+            0 \amp 0 \amp 1 \amp 1 \amp 1
+            \end{bmatrix}
+          </me>
+          Then <m>x=11100</m> is not a codeword.
+          Describe a computation, and give the result of that computation,
+          which verifies that <m>x</m> is not a codeword of the code <m>C</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="MeO">
+      <statement>
+        <p permid="QOH">
+          For <m>H</m> and <m>x</m> as in the previous question,
+          suppose that <m>x</m> is received as a message.
+          Give a maximum likelihood decoding of the received message.
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: algcodes.xml  -->
     <!-- Title: Algebraic Coding Theory -->
   <exercises xml:id="exercises-algcodes" filenamebase="algcodes" permid="NfU">
     <title>Exercises</title>
-    <exercise number="1" permid="kDl">
+    <exercise number="1" permid="kDl" xml:id="algcodes-exercise-acceptable-codes">
       <statement>
         <p permid="SzU">
           Why is the following encoding scheme not acceptable?
@@ -1953,7 +2021,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="QKu">
+    <exercise number="2" permid="QKu" xml:id="algcodes-exercise-not-a-group-code">
       <statement>
         <p permid="yHd">
           Without doing any addition,
@@ -1971,7 +2039,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="wRD">
+    <exercise number="3" permid="wRD" xml:id="algcodes-exercise-hamming-distance">
       <statement>
         <p permid="eOm">
           Compute the Hamming distances between the following pairs of <m>n</m>-tuples.
@@ -2010,7 +2078,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="cYM">
+    <exercise number="4" permid="cYM" xml:id="algcodes-exercise-weights">
       <statement>
         <p permid="KVv">
           Compute the weights of the following <m>n</m>-tuples.
@@ -2049,7 +2117,7 @@
       </hint>
     </exercise>
 
-    <exercise number="5" permid="JfV">
+    <exercise number="5" permid="JfV" xml:id="algcodes-exercise-minimum-weight-7">
       <statement>
         <p permid="rcE">
           Suppose that a linear code <m>C</m> has a minimum weight of <m>7</m>.
@@ -2058,7 +2126,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="pne">
+    <exercise number="6" permid="pne" xml:id="algcodes-exercise-minimum-distance">
       <statement>
         <p permid="XjN">
           In each of the following codes,
@@ -2099,7 +2167,7 @@
       </hint>
     </exercise>
 
-    <exercise number="7" permid="Vun">
+    <exercise number="7" permid="Vun" xml:id="algcodes-exercise-null-space">
       <statement>
         <p permid="DqW">
           Compute the null space of each of the following matrices.
@@ -2201,7 +2269,7 @@
       </hint>
     </exercise>
 
-    <exercise number="8" permid="BBw">
+    <exercise number="8" permid="BBw" xml:id="algcodes-exercise-5-2-block-code">
       <statement>
         <p permid="jyf">
           Construct a <m>(5,2)</m>-block code.
@@ -2210,7 +2278,7 @@
       </statement>
     </exercise>
 
-    <exercise number="9" permid="hIF">
+    <exercise number="9" permid="hIF" xml:id="algcodes-exercise-null-space-code">
       <statement>
         <p permid="PFo">
           Let <m>C</m> be the code obtained from the null space of the matrix
@@ -2236,7 +2304,7 @@
       </hint>
     </exercise>
 
-    <exercise number="10" permid="NPO">
+    <exercise number="10" permid="NPO" xml:id="algcodes-exercise-probability">
       <statement>
         <p permid="vMx">
           Suppose that a <m>1000</m>-bit binary message is transmitted.
@@ -2249,7 +2317,7 @@
       </statement>
     </exercise>
 
-    <exercise number="11" xml:id="exercise-algcodes-check-matrices" permid="tWX">
+    <exercise number="11" xml:id="algcodes-exercise-check-matrices" permid="tWX">
       <statement>
         <p permid="bTG">
           Which matrices are canonical parity-check matrices?
@@ -2336,10 +2404,10 @@
       </hint>
     </exercise>
 
-    <exercise number="12" permid="aeg">
+    <exercise number="12" permid="aeg" xml:id="algcodes-exercise-syndromes">
       <statement>
         <p permid="IaP">
-          List all possible syndromes for the codes generated by each of the matrices in <xref ref="exercise-algcodes-check-matrices"/>.
+          List all possible syndromes for the codes generated by each of the matrices in <xref ref="algcodes-exercise-check-matrices"/>.
         </p>
       </statement>
       <hint permid="EKx">
@@ -2349,7 +2417,7 @@
       </hint>
     </exercise>
 
-    <exercise number="13" permid="Glp">
+    <exercise number="13" permid="Glp" xml:id="algcodes-exercise-syndrome-transmission-error">
       <statement>
         <p permid="ohY">
           Let
@@ -2392,7 +2460,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="msy">
+    <exercise number="14" permid="msy" xml:id="algcodes-exercise-cosets-Z8">
       <statement>
         <p permid="Uph">
           Let <m>C</m> be the group code in
@@ -2405,7 +2473,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="SzH">
+    <exercise number="15" permid="SzH" xml:id="algcodes-exercise-find-cosets">
       <statement>
         <p permid="Awq">
           For each of the following matrices,
@@ -2474,7 +2542,7 @@
       </hint>
     </exercise>
 
-    <exercise number="16" permid="yGQ">
+    <exercise number="16" permid="yGQ" xml:id="algcodes-exercise-proof-distance">
       <statement>
         <p permid="gDz">
           Let <m>{\mathbf x}</m>, <m>{\mathbf y}</m>,
@@ -2504,7 +2572,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="eNZ">
+    <exercise number="17" permid="eNZ" xml:id="algcodes-exercise-metric">
       <statement>
         <p permid="MKI">
           A <term>metric</term> on a set <m>X</m> is a map
@@ -2544,7 +2612,7 @@
       </statement>
     </exercise>
 
-    <exercise number="18" permid="KVi">
+    <exercise number="18" permid="KVi" xml:id="algcodes-exercise-i-th-coordinate">
       <statement>
         <p permid="sRR">
           Let <m>C</m> be a linear code.
@@ -2553,7 +2621,7 @@
       </statement>
     </exercise>
 
-    <exercise number="19" permid="rcr">
+    <exercise number="19" permid="rcr" xml:id="algcodes-exercise-even-weight">
       <statement>
         <p permid="YZa">
           Let <m>C</m> be a linear code.
@@ -2568,7 +2636,7 @@
       </hint>
     </exercise>
 
-    <exercise number="20" permid="XjA">
+    <exercise number="20" permid="XjA" xml:id="algcodes-exercise-even-weight-linear-code">
       <statement>
         <p permid="Fgj">
           Show that the codewords of even weight in a linear code <m>C</m> are also a linear code.
@@ -2576,7 +2644,7 @@
       </statement>
     </exercise>
 
-    <exercise number="21" permid="DqJ">
+    <exercise number="21" permid="DqJ" xml:id="algcodes-exercise-ascii-characters">
       <statement>
         <p permid="lns">
           If we are to use an error-correcting linear code to transmit the 128 <acro>ASCII</acro> characters,
@@ -2587,7 +2655,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="jxS">
+    <exercise number="22" permid="jxS" xml:id="algcodes-exercise-canonical-parity-check-matrix">
       <statement>
         <p permid="RuB">
           Find the canonical parity-check matrix that gives the even parity check bit code with three information positions.
@@ -2597,7 +2665,7 @@
       </statement>
     </exercise>
 
-    <exercise number="23" permid="PFb">
+    <exercise number="23" permid="PFb" xml:id="algcodes-exercise-20-information-positions">
       <statement>
         <p permid="xBK">
           How many check positions are needed for a single error-correcting code with 20 information positions?
@@ -2612,7 +2680,7 @@
       </hint>
     </exercise>
 
-    <exercise number="24" permid="vMk">
+    <exercise number="24" permid="vMk" xml:id="algcodes-exercise-binary-code">
       <statement>
         <p permid="dIT">
           Let <m>{\mathbf e}_i</m> be the binary <m>n</m>-tuple with a <m>1</m> in the <m>i</m>th coordinate and <m>0</m>'s elsewhere and suppose that <m>H \in {\mathbb M}_{m \times n}({\mathbb Z}_2)</m>.
@@ -2621,7 +2689,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" xml:id="exercise-algcodes-dual-code" permid="bTt">
+    <exercise number="25" xml:id="algcodes-exercise-dual-code" permid="bTt">
       <statement>
         <p permid="JQc">
           Let <m>C</m> be an <m>(n,k)</m>-linear code.
@@ -2662,7 +2730,7 @@
       </statement>
     </exercise>
 
-    <exercise number="26" permid="IaC">
+    <exercise number="26" permid="IaC" xml:id="algcodes-exercise-hamming-code">
       <statement>
         <p permid="pXl">
           Let <m>H</m> be an <m>m \times n</m> matrix over <m>{\mathbb Z}_2</m>,
@@ -2804,6 +2872,9 @@
       <title>Introduction to Coding Theory</title>. Springer, New York, 1999.
     </biblio>
   </references>
+
+
+
   <section xml:id="algcodes-sage" permid="Klo">
     <title>Sage</title>
     <introduction permid="QoV">
@@ -3025,7 +3096,7 @@
   </section>
   <exercises xml:id="algcodes-sage-exercises" permid="Zum">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="UoU">
+    <exercise number="1" permid="UoU" xml:id="algcodes-sage-exercise-golay-code">
       <statement>
         <p permid="ClD">
           Create the (binary) Golay code with the <c>codes.GolayCode()</c> constructor.
@@ -3070,7 +3141,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="Awd">
+    <exercise number="2" permid="Awd" xml:id="algcodes-sage-exercise-parity-check-bit">
       <statement>
         <p permid="isM">
           One technique for improving the characteristics of a code is to add an overall parity-check bit,
@@ -3112,7 +3183,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="gDm">
+    <exercise number="3" permid="gDm" xml:id="algcodes-sage-exercise-buggy-sage-code">
       <statement>
         <p permid="OzV">
           <em>Note:</em> This problem is on holiday
@@ -3124,7 +3195,7 @@
 
         <p permid="uHe">
           The dual of an <m>(n,k)</m> block code is formed as all the set of all binary vectors which are orthogonal to every vector of the original code.
-          <xref ref="exercise-algcodes-dual-code"/> describes this construction and asks about some of its properties.
+          <xref ref="algcodes-exercise-dual-code"/> describes this construction and asks about some of its properties.
         </p>
 
         <p permid="aOn">
@@ -3146,7 +3217,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="MKv">
+    <exercise number="4" permid="MKv" xml:id="algcodes-sage-exercise-perfect-code">
       <statement>
         <p permid="ncF">
           A code with minimum distance <m>d</m> is called <term>perfect</term>

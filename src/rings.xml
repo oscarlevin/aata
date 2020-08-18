@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -117,7 +117,7 @@
       <caption>Types of rings</caption>
             <!-- Replaced figure with tikz figure - TWJ 8/13/2010 -->
       <image width="50%" xml:id="rings-types" permid="UIT">
-
+      		<description>A graph with rings at the top level connected to commutative rings and rings with identity at the second level. Commutative rings is connected to integral domains on the third level while rings with identity is connected to both integral domains and division rings on the third level.  Integral domains and division rings are connected to fields on the bottom level.</description>
             <latex-image>
                 <xi:include href="tikz/rings-types.tex" parse="text"/>
             </latex-image>
@@ -1552,12 +1552,57 @@
       </p>
     </paragraphs>
   </section>
+
+    <reading-questions permid="bCH">
+
+    <exercise permid="sHw">
+      <statement>
+        <p permid="xrp">
+          What is the fundamental difference between groups and rings?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="YOF">
+      <statement>
+        <p permid="dyy">
+          Give two characterizations of an integral domain.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="EVO">
+      <statement>
+        <p permid="JFH">
+          Provide two examples of fields, one infinite, one finite.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="lcX">
+      <statement>
+        <p permid="pMQ">
+          Who was Emmy Noether?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="Rkg">
+      <statement>
+        <p permid="VTZ">
+          Speculate on a computer program that might use the Chinese Remainder Theorem to speed up computations with large integers.
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: rings.xml  -->
     <!-- Title: Rings -->
   <exercises xml:id="exercises-rings" filenamebase="rings" permid="LYB">
     <title>Exercises</title>
-    <exercise number="1" permid="Vsn">
+
+    <exercise number="1" permid="Vsn" xml:id="rings-exercise-which-are-rings">
       <statement>
         <p permid="mjH">
           Which of the following sets are rings with respect to the usual operations of addition and multiplication?
@@ -1622,7 +1667,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Bzw">
+    <exercise number="2" permid="Bzw" xml:id="rings-exercise-2x2-matrix-ring">
       <statement>
         <p permid="SqQ">
           Let <m>R</m> be the ring of <m>2 \times 2</m> matrices of the form
@@ -1639,7 +1684,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="hGF">
+    <exercise number="3" permid="hGF" xml:id="rings-exercise-units">
       <statement>
         <p permid="yxZ">
           List or characterize all of the units in each of the following rings.
@@ -1714,7 +1759,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="NNO">
+    <exercise number="4" permid="NNO" xml:id="rings-exercise-ideals">
       <statement>
         <p permid="eFi">
           Find all of the ideals in each of the following rings.
@@ -1764,7 +1809,7 @@
       </hint>
     </exercise>
 
-    <exercise number="5" permid="tUX">
+    <exercise number="5" permid="tUX" xml:id="rings-exercise-RmodI-multiplication-table">
       <statement>
         <p permid="KMr">
           For each of the following rings <m>R</m> with ideal <m>I</m>,
@@ -1787,7 +1832,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="acg">
+    <exercise number="6" permid="acg" xml:id="rings-exercise-homo-Z6-Z15">
       <statement>
         <p permid="qTA">
           Find all homomorphisms <m>\phi : {\mathbb Z} / 6 {\mathbb Z} \rightarrow {\mathbb Z} / 15 {\mathbb Z}</m>.
@@ -1797,7 +1842,7 @@
 
     <!--Todo Add solution.-->
 
-    <exercise number="7" permid="Gjp">
+    <exercise number="7" permid="Gjp" xml:id="rings-exercise-R-not-iso-C">
       <statement>
         <p permid="XaJ">
           Prove that <m>{\mathbb R}</m> is not isomorphic to <m>{\mathbb C}</m>.
@@ -1811,7 +1856,7 @@
       </hint>
     </exercise>
 
-    <exercise number="8" permid="mqy">
+    <exercise number="8" permid="mqy" xml:id="rings-exercise-Q-root-2-Q-root-3">
       <statement>
         <p permid="DhS">
           Prove or disprove: The ring
@@ -1827,7 +1872,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="SxH">
+    <exercise number="9" permid="SxH" xml:id="rings-exercise-characteristic">
       <statement>
         <p permid="jpb">
           What is the characteristic of the field formed by the set of matrices
@@ -1857,7 +1902,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="yEQ">
+    <exercise number="10" permid="yEQ" xml:id="rings-exercise-C-iso-2x2-matrices">
       <statement>
         <p permid="Pwk">
           Define a map <m>\phi : {\mathbb C} \rightarrow {\mathbb M}_2 ({\mathbb R})</m> by
@@ -1876,7 +1921,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="11" permid="eLZ">
+    <exercise number="11" permid="eLZ" xml:id="rings-exercise-gaussian-integers">
       <statement>
         <p permid="vDt">
           Prove that the Gaussian integers,
@@ -1885,7 +1930,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" xml:id="exercise-rings-gaussian" permid="KTi">
+    <exercise number="12" xml:id="rings-exercise-gaussian" permid="KTi">
       <statement>
         <p permid="bKC">
           Prove that <m>{\mathbb Z}[ \sqrt{3}\, i ] = \{ a + b \sqrt{3}\, i : a, b \in {\mathbb Z} \}</m> is an integral domain.
@@ -1893,7 +1938,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="rar">
+    <exercise number="13" permid="rar" xml:id="rings-exercise-systems-congruences">
       <statement>
         <p permid="HRL">
           Solve each of the following systems of congruences.
@@ -1949,7 +1994,7 @@
       </hint>
     </exercise>
 
-    <exercise number="14" permid="XhA">
+    <exercise number="14" permid="XhA" xml:id="rings-exercise-parallel-computation">
       <statement>
         <p permid="nYU">
           Use the method of parallel computation outlined in the text to calculate
@@ -1961,7 +2006,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="15" permid="DoJ">
+    <exercise number="15" permid="DoJ" xml:id="rings-exercise-parallelcomputation-fails">
       <statement>
         <p permid="Ugd">
           Explain why the method of parallel computation outlined in the text fails for
@@ -1970,7 +2015,7 @@
       </statement>
     </exercise>
 
-    <exercise number="16" permid="jvS">
+    <exercise number="16" permid="jvS" xml:id="rings-exercise-field-ideals">
       <statement>
         <p permid="Anm">
           If <m>R</m> is a field,
@@ -1984,7 +2029,7 @@
       </hint>
     </exercise>
 
-    <exercise number="17" permid="PDb">
+    <exercise number="17" permid="PDb" xml:id="rings-exercise-minus-a">
       <statement>
         <p permid="guv">
           Let <m>a</m> be any element in a ring <m>R</m> with identity.
@@ -1993,7 +2038,7 @@
       </statement>
     </exercise>
 
-    <exercise number="18" permid="vKk">
+    <exercise number="18" permid="vKk" xml:id="rings-exercise-ring-homomorphisms">
       <statement>
         <p permid="MBE">
           Let <m>\phi : R \rightarrow S</m> be a ring homomorphism.
@@ -2037,7 +2082,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="bRt">
+    <exercise number="19" permid="bRt" xml:id="rings-exercise-associative-distributive">
       <statement>
         <p permid="sIN">
           Prove that the associative law for multiplication and the distributive laws hold in <m>R/I</m>.
@@ -2045,7 +2090,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="HYC">
+    <exercise number="20" permid="HYC" xml:id="rings-exercise-second-iso">
       <statement>
         <p permid="YPW">
           Prove the Second Isomorphism Theorem for rings: Let <m>I</m> be a subring of a ring <m>R</m>  and  <m>J</m> an ideal in <m>R</m>.
@@ -2059,7 +2104,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="21" permid="ofL">
+    <exercise number="21" permid="ofL" xml:id="rings-exercise-third-iso">
       <statement>
         <p permid="EXf">
           Prove the Third Isomorphism Theorem for rings: Let <m>R</m> be a ring and <m>I</m> and <m>J</m> be ideals of <m>R</m>,
@@ -2074,7 +2119,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="22" permid="UmU">
+    <exercise number="22" permid="UmU" xml:id="rings-exercise-correspondence">
       <statement>
         <p permid="leo">
           Prove the Correspondence Theorem: Let <m>I</m> be an ideal of a ring <m>R</m>.
@@ -2087,7 +2132,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="23" xml:id="exercise-rings-subring-conditions" permid="Aud">
+    <exercise number="23" xml:id="rings-exercise-subring-conditions" permid="Aud">
       <statement>
         <p permid="Rlx">
           Let <m>R</m> be a ring and <m>S</m> a subset of <m>R</m>.
@@ -2116,7 +2161,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" xml:id="exercise-rings-subring-intersection" permid="gBm">
+    <exercise number="24" xml:id="rings-exercise-subring-intersection" permid="gBm">
       <statement>
         <p permid="xsG">
           Let <m>R</m> be a ring with a collection of subrings <m>\{ R_{\alpha} \}</m>.
@@ -2126,7 +2171,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" permid="MIv">
+    <exercise number="25" permid="MIv" xml:id="rings-exercise-collection-deals">
       <statement>
         <p permid="dzP">
           Let <m>\{ I_{\alpha} \}_{\alpha \in A}</m> be a collection of ideals in a ring <m>R</m>.
@@ -2137,7 +2182,7 @@
       </statement>
     </exercise>
 
-    <exercise number="26" permid="sPE">
+    <exercise number="26" permid="sPE" xml:id="rings-exercise-integral-domain-ideals">
       <statement>
         <p permid="JGY">
           Let <m>R</m> be an integral domain.
@@ -2154,7 +2199,7 @@
       </hint>
     </exercise>
 
-    <exercise number="27" permid="YWN">
+    <exercise number="27" permid="YWN" xml:id="rings-exercise-nilpotent">
       <statement>
         <p permid="pOh">
           Let <m>R</m> be a commutative ring.
@@ -2165,7 +2210,7 @@
       </statement>
     </exercise>
 
-    <exercise number="28" permid="FdW">
+    <exercise number="28" permid="FdW" xml:id="rings-exercise-boolean">
       <statement>
         <p permid="VVq">
           A ring <m>R</m> is a <term>Boolean ring</term>
@@ -2182,7 +2227,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="29" permid="llf">
+    <exercise number="29" permid="llf" xml:id="rings-exercise-a3-commutative">
       <statement>
         <p permid="Ccz">
           Let <m>R</m> be a ring, where <m>a^3 =a</m> for all <m>a \in R</m>.
@@ -2193,7 +2238,7 @@
 
     <!--Todo Check solution.-->
 
-    <exercise number="30" permid="Rso">
+    <exercise number="30" permid="Rso" xml:id="rings-exercise-1R-1S">
       <statement>
         <p permid="ijI">
           Let <m>R</m> be a ring with identity <m>1_R</m> and <m>S</m> a subring of <m>R</m> with identity <m>1_S</m>.
@@ -2204,7 +2249,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="31" permid="xzx">
+    <exercise number="31" permid="xzx" xml:id="rings-exercise-R-0">
       <statement>
         <p permid="OqR">
           If we do not require the identity of a ring to be distinct from 0, we will not have a very interesting mathematical structure.
@@ -2213,7 +2258,7 @@
         </p>
       </statement>
     </exercise>
-
+<!--
     <exercise number="32" permid="dGG">
       <statement>
         <p permid="uya">
@@ -2222,8 +2267,8 @@
         </p>
       </statement>
     </exercise>
-
-    <exercise number="33" permid="JNP">
+-->
+    <exercise number="32" permid="JNP" xml:id="rings-exercise-center">
       <statement>
         <p permid="aFj">
           Let <m>R</m> be a ring.
@@ -2236,7 +2281,7 @@
       </statement>
     </exercise>
 
-    <exercise number="34" permid="pUY">
+    <exercise number="33" permid="pUY" xml:id="rings-exercise-localized-at-p">
       <statement>
         <p permid="GMs">
           Let <m>p</m> be prime.
@@ -2267,7 +2312,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="35" permid="Wch">
+    <exercise number="34" permid="Wch" xml:id="rings-exercise-Zp">
       <statement>
         <p permid="mTB">
           Prove or disprove: Every finite integral domain is isomorphic to <m>{\mathbb Z}_p</m>.
@@ -2277,7 +2322,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="36" permid="Cjq">
+    <exercise number="35" permid="Cjq" xml:id="rings-exercise-automorphisms">
       <statement>
         <p permid="TaK">
           Let <m>R</m> be a ring with identity.
@@ -2323,7 +2368,7 @@
       </statement>
     </exercise>
 
-    <exercise number="37" permid="iqz">
+    <exercise number="36" permid="iqz" xml:id="rings-exercise-cartesian-product">
       <statement>
         <p permid="zhT">
           Let <m>R</m> and <m>S</m> be arbitrary rings.
@@ -2348,7 +2393,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="38" permid="OxI">
+    <exercise number="37" permid="OxI" xml:id="rings-exercise-idempotent">
       <statement>
         <p permid="fpc">
           An element <m>x</m> in a ring is called an
@@ -2369,7 +2414,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="39" permid="uER">
+    <exercise number="38" permid="uER" xml:id="rings-exercise-solution-mod-n">
       <statement>
         <p permid="Lwl">
           Let <m>\gcd(a, n) = d</m> and <m>\gcd(b, d) \neq 1</m>.
@@ -2380,7 +2425,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="40" permid="aMa">
+    <exercise number="39" permid="aMa" xml:id="rings-exercise-chinese-remainder-theorem">
       <title>The Chinese Remainder Theorem for Rings</title>
       <statement>
         <p permid="rDu">
@@ -2421,9 +2466,10 @@
 
     <!--Todo Finish solution.-->
   </exercises>
+
   <exercises xml:id="rings-exercises-programming" permid="sfK">
     <title>Programming Exercise</title>
-    <exercise permid="GTj">
+    <exercise permid="GTj" xml:id="rings-exercise-program-chinese-remainder">
       <statement>
         <p permid="XKD">
           Write a computer program implementing fast addition and multiplication using the Chinese Remainder Theorem and the method outlined in the text.
@@ -2495,6 +2541,8 @@
       <title>Commutative Algebra</title>, vols. I and II. Springer, New York, 1975, 1960.
     </biblio>
   </references>
+
+
 
   <section xml:id="rings-sage" permid="ple">
     <title>Sage</title>
@@ -3419,7 +3467,8 @@
 
   <exercises xml:id="rings-sage-exercises" permid="YmT">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="nas">
+
+    <exercise number="1" permid="nas" xml:id="rings-sage-exercise-Z11-Z12">
       <statement>
         <p permid="DRM">
           Define the two rings <m>{\mathbb Z}_{11}</m> and
@@ -3434,7 +3483,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="ThB">
+    <exercise number="2" permid="ThB" xml:id="rings-sage-exercise-ideals">
       <statement>
         <p permid="jYV">
           Define <c>R</c> to be the ring of integers, <m>{\mathbb Z}</m>,
@@ -3448,7 +3497,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="zoK">
+    <exercise number="3" permid="zoK" xml:id="rings-sage-exercise-finite-field">
       <statement>
         <p permid="Qge">
           Create a finite field <m>F</m> of order 81 with <c>F.&lt;t&gt;=FiniteField(3^4)</c>.
@@ -3490,7 +3539,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="fvT">
+    <exercise number="4" permid="fvT" xml:id="rings-sage-exercise-quotient-ring">
       <statement>
         <p permid="wnn">
           Build and analyze a quotient ring as follows:

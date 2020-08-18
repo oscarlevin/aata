@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -45,7 +45,7 @@
         We begin our investigation of the Sylow Theorems by examining subgroups of order <m>p</m>,
         where <m>p</m> is prime.
         A group <m>G</m> is a <term><m>p</m>-group</term>
-            <idx><h>Group!<m>p</m>-group</h></idx>
+            <idx><h>Group</h><h><m>p</m>-group</h></idx>
         if every element in <m>G</m> has as its order a power of <m>p</m>,
         where <m>p</m> is a prime number.
         A subgroup of a group <m>G</m> is a
@@ -487,7 +487,7 @@
       <p permid="BoB">
         The subgroup <m>G'</m> of <m>G</m> is called the
         <term>commutator subgroup</term><idx><h>Subgroup</h><h>commutator</h></idx> of <m>G</m>.
-        We leave the proof of this theorem as an exercise (<xref ref="exercise-normal-commutator"/> in <xref ref="normal"/>).
+        We leave the proof of this theorem as an exercise (<xref ref="normal-exercise-commutator"/> in <xref ref="normal"/>).
       </p>
 
       <example xml:id="example-sylow-group-1645-subgroups" permid="ALL">
@@ -653,7 +653,7 @@
           If <m>|H \cap K| \leq 4</m>,
           then by <xref ref="lemma-hk-subgroup"/>,
           <me permid="wTd">
-            |HK| = \frac{16 \cdot 16}{4} =64
+            |HK| \geq \frac{16 \cdot 16}{4} =64
           </me>,
           which is impossible.
           Notice that <m>H \cap K</m> has index two in both of <m>H</m> and <m>K</m>,
@@ -704,12 +704,60 @@
     </subsection>
 
   </section>
+
+  
+  <reading-questions permid="EPk">
+
+    <exercise permid="RyB">
+      <statement>
+        <p permid="Wiu">
+          State Sylow's First Theorem.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="xFK">
+      <statement>
+        <p permid="CpD">
+          How many groups are there of order <m>69</m>?
+          Why?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="dMT">
+      <statement>
+        <p permid="iwM">
+          Give two descriptions, fundamentally different in character,
+          of the normalizer of a subgroup.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="JUc">
+      <statement>
+        <p permid="ODV">
+          Suppose that <m>G</m> is an abelian group.  What is the commutator subgroup of <m>G</m>, and how do you know?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="qbl">
+      <statement>
+        <p permid="uLe">
+          What's all the fuss about Sylow's Theorems?
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: sylow.xml  -->
     <!-- Title: The Sylow Theorems -->
   <exercises xml:id="exercises-sylow" filenamebase="sylow" permid="kiZ">
     <title>Exercises</title>
-    <exercise number="1" permid="lYm">
+
+    <exercise number="1" permid="lYm" xml:id="sylow-exercise-order-18">
       <statement>
         <p permid="NCT">
           What are the orders of all Sylow <m>p</m>-subgroups where <m>G</m> has order <m>18</m>,
@@ -726,7 +774,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Sfv">
+    <exercise number="2" permid="Sfv" xml:id="sylow-exercise-S4">
       <statement>
         <p permid="tKc">
           Find all the Sylow <m>3</m>-subgroups of <m>S_4</m> and show that they are all conjugate.
@@ -744,7 +792,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="3" permid="ymE">
+    <exercise number="3" permid="ymE" xml:id="sylow-exercise-order-45">
       <statement>
         <p permid="ZRl">
           Show that every group of order <m>45</m> has a normal subgroup of order <m>9</m>.
@@ -752,7 +800,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="etN">
+    <exercise number="4" permid="etN" xml:id="sylow-exercise-normalizer">
       <statement>
         <p permid="FYu">
           Let <m>H</m> be a Sylow <m>p</m>-subgroup of <m>G</m>.
@@ -761,7 +809,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" xml:id="exercise-sylow-order-96" permid="KAW">
+    <exercise number="5" xml:id="sylow-exercise-order-96" permid="KAW">
       <statement>
         <p permid="mfD">
           Prove that no group of order <m>96</m> is simple.
@@ -782,7 +830,7 @@
       </hint>
     </exercise>
 
-    <exercise number="6" permid="qIf">
+    <exercise number="6" permid="qIf" xml:id="sylow-exercise-order-160">
       <statement>
         <p permid="SmM">
           Prove that no group of order <m>160</m> is simple.
@@ -790,7 +838,7 @@
       </statement>
     </exercise>
 
-    <exercise number="7" permid="WPo">
+    <exercise number="7" permid="WPo" xml:id="sylow-exercise-order-pk">
       <statement>
         <p permid="ytV">
           If <m>H</m> is a normal subgroup of a finite group <m>G</m> and
@@ -800,7 +848,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="CWx">
+    <exercise number="8" permid="CWx" xml:id="sylow-exercise-order-p2q2">
       <statement>
         <p permid="eBe">
           Let <m>G</m> be a group of order <m>p^2 q^2</m>,
@@ -817,7 +865,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="jdG">
+    <exercise number="9" permid="jdG" xml:id="sylow-exercise-order-33">
       <statement>
         <p permid="KIn">
           Show that a group of order <m>33</m> has only one Sylow <m>3</m>-subgroup.
@@ -825,7 +873,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="PkP">
+    <exercise number="10" permid="PkP" xml:id="sylow-exercise-normalizer-normal">
       <statement>
         <p permid="qPw">
           Let <m>H</m> be a subgroup of a group <m>G</m>.
@@ -839,17 +887,17 @@
       </hint>
     </exercise>
 
-    <exercise number="11" permid="vrY">
+    <exercise number="11" permid="vrY" xml:id="sylow-exercise-divisible-by-p">
       <statement>
         <p permid="WWF">
-          Let <m>G</m> be a finite group divisible by a prime <m>p</m>.
+          Let <m>G</m> be a finite group whose order is divisible by a prime <m>p</m>.
           Prove that if there is only one Sylow <m>p</m>-subgroup in <m>G</m>,
           it must be a normal subgroup of <m>G</m>.
         </p>
       </statement>
     </exercise>
 
-    <exercise number="12" permid="bzh">
+    <exercise number="12" permid="bzh" xml:id="sylow-exercise-p-to-r-1">
       <statement>
         <p permid="DdO">
           Let <m>G</m> be a group of order <m>p^r</m>, <m>p</m> prime.
@@ -858,7 +906,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="HGq">
+    <exercise number="13" permid="HGq" xml:id="sylow-exercise-order-pnk">
       <statement>
         <p permid="jkX">
           Suppose that <m>G</m> is a finite group of order <m>p^n k</m>,
@@ -870,7 +918,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="14" permid="nNz">
+    <exercise number="14" permid="nNz" xml:id="sylow-exercise-normalizer-conjugate">
       <statement>
         <p permid="Psg">
           Let <m>H</m> be a subgroup of a finite group <m>G</m>.
@@ -881,7 +929,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="15" permid="TUI">
+    <exercise number="15" permid="TUI" xml:id="sylow-exercise-order-108">
       <statement>
         <p permid="vzp">
           Prove that a group of order <m>108</m> must have a normal subgroup.
@@ -891,7 +939,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="16" permid="AbR">
+    <exercise number="16" permid="AbR" xml:id="sylow-exercise-order-175">
       <statement>
         <p permid="bGy">
           Classify all the groups of order <m>175</m> up to isomorphism.
@@ -899,7 +947,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="gja">
+    <exercise number="17" permid="gja" xml:id="sylow-exercise-order-255">
       <statement>
         <p permid="HNH">
           Show that every group of order <m>255</m> is cyclic.
@@ -916,7 +964,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="18" permid="Mqj">
+    <exercise number="18" permid="Mqj" xml:id="sylow-exercise-G-isomorphic-P1-Pn">
       <statement>
         <p permid="nUQ">
           Let <m>G</m> have order <m>p_1^{e_1} \cdots p_n^{e_n}</m> and suppose that <m>G</m> has <m>n</m> Sylow <m>p</m>-subgroups
@@ -928,7 +976,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="19" permid="sxs">
+    <exercise number="19" permid="sxs" xml:id="sylow-exercise-inner-automorphism">
       <statement>
         <p permid="UbZ">
           Let <m>P</m> be a normal Sylow <m>p</m>-subgroup of <m>G</m>.
@@ -937,7 +985,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="YEB">
+    <exercise number="20" permid="YEB" xml:id="sylow-exercise-odd-order-nonabelain">
       <statement>
         <p permid="Aji">
           What is the smallest possible order of a group <m>G</m> such that <m>G</m> is nonabelian and <m>|G|</m> is odd?
@@ -948,7 +996,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="21" permid="ELK">
+    <exercise number="21" permid="ELK" xml:id="sylow-exercise-frattini-lemma">
       <title>The Frattini Lemma</title>
       <statement>
         <p permid="gqr">
@@ -960,7 +1008,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="kST">
+    <exercise number="22" permid="kST" xml:id="sylow-exercise-order-pnq">
       <statement>
         <p permid="MxA">
           Show that if the order of <m>G</m> is <m>p^nq</m>,
@@ -972,7 +1020,7 @@
 
     <!--Todo Fix this and complete the solution.-->
 
-    <exercise number="23" permid="Rac">
+    <exercise number="23" permid="Rac" xml:id="sylow-exercise-distinct-conjugates">
       <statement>
         <p permid="sEJ">
           Prove that the number of distinct conjugates of a subgroup <m>H</m> of a finite group <m>G</m> is <m>[G : N(H) ]</m>.
@@ -988,7 +1036,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="24" permid="xhl">
+    <exercise number="24" permid="xhl" xml:id="sylow-exercise-S5-D4">
       <statement>
         <p permid="YLS">
           Prove that a Sylow <m>2</m>-subgroup of <m>S_5</m> is isomorphic to <m>D_4</m>.
@@ -996,7 +1044,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" permid="dou">
+    <exercise number="25" permid="dou" xml:id="sylow-exercise-another-proof">
       <title>Another Proof of the Sylow Theorems</title>
       <statement>
         <p permid="ETb">
@@ -1058,7 +1106,7 @@
       </statement>
     </exercise>
 
-    <exercise number="26" permid="JvD">
+    <exercise number="26" permid="JvD" xml:id="sylow-exercise-G-prime">
       <statement>
         <p permid="lak">
           Let <m>G</m> be a group.
@@ -1076,6 +1124,7 @@
     </exercise>
 
   </exercises>
+
   <exercises xml:id="sylow-exercises-project" permid="Qqi">
     <title>A Project</title>
     <introduction permid="pCM">
@@ -1091,7 +1140,7 @@
     </introduction>
 
     <table xml:id="table-sylow-project" permid="afG">
-      <caption>Numbers of distinct groups <m>G</m>, <m>|G| \leq 60</m></caption>
+      <title>Numbers of distinct groups <m>G</m>, <m>|G| \leq 60</m></title>
       <tabular halign="center" top="medium" left="medium" permid="GmP">
         <col/>
         <col right="medium"/>
@@ -1266,7 +1315,7 @@
     </table>
         <!--Fix INTRO
 -->
-    <exercise permid="VJV">
+    <exercise permid="VJV" xml:id="sylow-exercise-simple-groups-order-leq-60">
       <statement>
         <p permid="Rht">
           Find all simple groups <m>G</m> ( <m>|G| \leq 60</m>).
@@ -1275,7 +1324,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="BRe">
+    <exercise permid="BRe" xml:id="sylow-exercise-groups-number-distinct-groups-order-leq-60">
       <statement>
         <p permid="xoC">
           Find the number of distinct groups <m>G</m>,
@@ -1284,7 +1333,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="hYn">
+    <exercise permid="hYn" xml:id="sylow-exercise-find-groups-leq-60">
       <statement>
         <p permid="dvL">
           Find the actual groups
@@ -1343,6 +1392,7 @@
       <title>The Classification of Finite Simple Groups</title>. American Mathematical Society, Providence RI, 1994.
     </biblio>
   </references>
+
 
   <section xml:id="sylow-sage" permid="Vab">
     <title>Sage</title>
@@ -1567,7 +1617,7 @@
                 <output>
         Subgroup generated by
         [(2,18)(3,17)(4,16)(5,15)(6,14)(7,13)(8,12)(9,11),
-         (1,2)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11),
+         (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18),
          (1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18),
          (1,15,11,7,3,17,13,9,5)(2,16,12,8,4,18,14,10,6)]
         of (Dihedral group of order 36 as a permutation group)
@@ -1611,7 +1661,7 @@
         Subgroup generated by
         [(1,2)(3,18)(4,17)(5,16)(6,15)(7,14)(8,13)(9,12)(10,11),
          (1,5)(2,4)(6,18)(7,17)(8,16)(9,15)(10,14)(11,13),
-         (1,13,7)(2,14,8)(3,15,9)(4,16,10)(5,17,11)(6,18,12)]
+         (1,7,13)(2,8,14)(3,9,15)(4,10,16)(5,11,17)(6,12,18)]
         of (Dihedral group of order 36 as a permutation group)
         </output>
             </sage>
@@ -1765,7 +1815,7 @@
 
             <sage permid="uiO">
                 <input>gap.version()</input>
-                <output>'4.10.1'</output>
+                <output>'4.10.2'</output>
             </sage>
 
       <p permid="xYw">
@@ -1890,7 +1940,8 @@
 
   <exercises xml:id="sylow-sage-exercises" permid="wxr">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="Ofw">
+
+    <exercise number="1" permid="Ofw" xml:id="sylow-sage-exercise-commutator-subgroup-theorem">
       <statement>
         <p permid="JCU">
           This exercise verifies <xref ref="theorem-commutator-subgroup-theorem"/>.
@@ -1905,7 +1956,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="umF">
+    <exercise number="2" permid="umF" xml:id="sylow-sage-exercise-A5">
       <statement>
         <p permid="pKd">
           For each possible prime,
@@ -1922,7 +1973,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="atO">
+    <exercise number="3" permid="atO" xml:id="sylow-sage-exercise-D36">
       <statement>
         <p permid="BYv">
           For the dihedral group <m>D_{36}</m>
@@ -1942,7 +1993,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="GAX">
+    <exercise number="4" permid="GAX" xml:id="sylow-sage-exercise-distinct-conjugates-lemma">
       <statement>
         <p permid="OmN">
           This exercise verifies <xref ref="lemma-distinct-conjugates"/>.
@@ -1968,7 +2019,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="mIg">
+    <exercise number="5" permid="mIg" xml:id="sylow-sage-exercise-order-48">
       <statement>
         <p permid="utW">
           <xref ref="example-group-48"/> shows that every group of order <m>48</m> has a normal subgroup.
@@ -1985,7 +2036,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="SPp">
+    <exercise number="6" permid="SPp" xml:id="sylow-sage-exercise-second-third-sylow-theorems">
       <statement>
         <p permid="aBf">
           The proofs of the Second and Third Sylow Theorems

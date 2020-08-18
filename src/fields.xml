@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -122,7 +122,7 @@
         </p>
       </example>
 
-      <table xml:id="table-addition-z2-alpha" permid="UmH">
+      <figure xml:id="table-addition-z2-alpha" permid="UmH">
             <!-- math table -->
         <caption>Addition Table for <m>{\mathbb Z}_2(\alpha)</m></caption>
         <p permid="CLG">
@@ -137,9 +137,9 @@
             \end{array}
           </me>
         </p>
-      </table>
+      </figure>
 
-      <table xml:id="table-multiplication-z2-alpha" permid="AtQ">
+      <figure xml:id="table-multiplication-z2-alpha" permid="AtQ">
             <!-- math table -->
         <caption>Multiplication Table for <m>{\mathbb Z}_2(\alpha)</m></caption>
         <p permid="iSP">
@@ -154,7 +154,7 @@
             \end{array}
           </me>
         </p>
-      </table>
+      </figure>
 
       <p permid="OZY">
         The following theorem, due to Kronecker,
@@ -1090,19 +1090,19 @@
           we have isomorphisms <m>\sigma: E[x]/\langle p(x) \rangle \rightarrow E(\alpha)</m> and <m>\tau : F[x]/\langle q(x) \rangle \rightarrow F( \beta )</m>,
           defined by evaluation at <m>\alpha</m> and <m>\beta</m>,
           respectively.
-          Therefore, <m>\overline{\phi} = \tau \psi \sigma^{-1}</m> is the required isomorphism.
+          Therefore, <m>\overline{\phi} = \tau \psi \sigma^{-1}</m> is the required isomorphism (see <xref ref="figure-splitting-fields-1"/>).
         </p>
-            <!-- Replaced figure with tikz figure - TWJ 8/29/2010 -->
-        <sidebyside width="60%" margins="auto" permid="uLv">
-            <!-- duplicate widths? -->
-          <image width="60%" xml:id="fields-extension-isomorph" permid="HYp">
 
-            <latex-image>
-                <xi:include href="tikz/fields-extension-isomorph.tex" parse="text"/>
-            </latex-image>
-          </image>
-
-        </sidebyside>
+        <figure xml:id="figure-splitting-fields-1">
+          <caption></caption>
+          <p><me>\begin{CD}
+          E[x]/\langle p(x) \rangle    @>\psi>>  F[x]/\langle q(x) \rangle  \\
+          @VV{\sigma}V        @VV{\tau}V\\
+          E(\alpha)     @>\overline{\phi}>>  F(\beta) \\
+          @VVV        @VVV\\
+          E     @>\phi>>  F
+          \end{CD}</me></p>
+        </figure>
 
         <p permid="HQY">
           We leave the proof of uniqueness as a exercise.
@@ -1138,19 +1138,19 @@
           By <xref ref="lemma-field-isomorphism"/>,
           there exists an isomorphism
           <m>\overline{\phi} : E(\alpha ) \rightarrow F( \beta)</m> such that <m>\overline{\phi}( \alpha ) = \beta</m> and
-          <m>\overline{\phi}</m> agrees with <m>\phi</m> on <m>E</m>.
+          <m>\overline{\phi}</m> agrees with <m>\phi</m> on <m>E</m>  (see <xref ref="figure-splitting-fields-2"/>).
         </p>
-            <!-- Replaced figure with tikz figure - TWJ 8/29/2010 -->
-        <sidebyside width="50%" margins="auto" permid="aSE">
-            <!-- duplicate widths? -->
-          <image width="50%" xml:id="fields-splitting-isomorph" permid="ofy">
 
-            <latex-image>
-                <xi:include href="tikz/fields-splitting-isomorph.tex" parse="text"/>
-            </latex-image>
-          </image>
-
-        </sidebyside>
+        <figure xml:id="figure-splitting-fields-2">
+          <caption></caption>
+          <p><me>\begin{CD}
+          K  @>\psi>>  L  \\
+          @VV{\sigma}V        @VV{\tau}V\\
+          E(\alpha)     @>\overline{\phi}>>  F(\beta) \\
+          @VVV        @VVV\\
+          E     @>\phi>>  F
+          \end{CD}</me></p>
+        </figure>
 
         <p permid="Amz">
           Now write <m>p(x) = (x - \alpha ) f(x)</m> and <m>q(x) = ( x - \beta) g(x)</m>,
@@ -1272,7 +1272,7 @@
         <caption>Construction of products</caption>
             <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
         <image width="80%" xml:id="fields-multiply" permid="jvF">
-
+        	<description>A triangle ADE with B on the line segment AD and C on the line segment AE such that BC is parallel to DE.  The length of AB is 1, the length of AD is beta, the length of AC is alpha and the length of AE is x.</description>
             <latex-image>
                 <xi:include href="tikz/fields-multiply.tex" parse="text"/>
             </latex-image>
@@ -1301,7 +1301,7 @@
         <caption>Construction of roots</caption>
             <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
         <image width="80%" xml:id="fields-root" permid="PCO">
-
+        	<description>A semi-circle with AC on the diameter and B on the arc of the circle.  D is on eht line segment AC such that BD is perpendicular to AC.  The length of AD is 1, the length of DC is alpha, and the length of BD is x. Triangles ABC, ADB, and BDC arre similar right triangle.</description>
             <latex-image>
                 <xi:include href="tikz/fields-root.tex" parse="text"/>
             </latex-image>
@@ -1641,12 +1641,60 @@
       </p>
     </subsection>
   </section>
+
+    <reading-questions permid="Pop">
+
+    <exercise permid="ZTY">
+      <statement>
+        <p permid="eDR">
+          What does it mean for an extension field <m>E</m> of a field <m>F</m> to be a simple extension of <m>F</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="Gbh">
+      <statement>
+        <p permid="KLa">
+          What is the definition of a minimal polynomial of an element <m>\alpha\in E</m>,
+          where <m>E</m> is an extension of <m>F</m>,
+          and <m>\alpha</m> is algebraic over <m>F</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="miq">
+      <statement>
+        <p permid="qSj">
+          Describe how linear algebra enters into this chapter.
+          What critical result relies on a proof that is almost entirely linear algebra?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="Spz">
+      <statement>
+        <p permid="WZs">
+          What is the definition of an algebraically closed field?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="ywI">
+      <statement>
+        <p permid="DgB">
+          What is a splitting field of a polynomial <m>p(x)\in F[x]</m>?
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: fields.xml  -->
     <!-- Title: Fields -->
   <exercises xml:id="exercises-fields" filenamebase="fields" permid="Lvl">
     <title>Exercises</title>
-    <exercise number="1" permid="kHP">
+
+    <exercise number="1" permid="kHP" xml:id="fields-exercise-algebraic-numbers">
       <statement>
         <p permid="nCI">
           Show that each of the following numbers is algebraic over
@@ -1693,7 +1741,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="QOY">
+    <exercise number="2" permid="QOY" xml:id="fields-exercise-basis-field-extension">
       <statement>
         <p permid="TJR">
           Find a basis for each of the following field extensions.
@@ -1764,7 +1812,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="wWh">
+    <exercise number="3" permid="wWh" xml:id="fields-exercise-splitting-field">
       <statement>
         <p permid="zRa">
           Find the splitting field for each of the following polynomials.
@@ -1803,7 +1851,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="ddq">
+    <exercise number="4" permid="ddq" xml:id="fields-exercise-root-4-3">
       <statement>
         <p permid="fYj">
           Consider the field extension
@@ -1836,7 +1884,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="Jkz">
+    <exercise number="5" permid="Jkz" xml:id="fields-exercise-gf-8">
       <statement>
         <p permid="Mfs">
           Show that <m>{\mathbb Z}_2[x] / \langle x^3 + x + 1 \rangle</m> is a field with eight elements.
@@ -1854,7 +1902,7 @@
       </hint>
     </exercise>
 
-    <exercise number="6" permid="prI">
+    <exercise number="6" permid="prI" xml:id="fields-exercise-9-gon">
       <statement>
         <p permid="smB">
           Show that the regular <m>9</m>-gon is not constructible with a straightedge and compass,
@@ -1863,7 +1911,7 @@
       </statement>
     </exercise>
 
-    <exercise number="7" permid="VyR">
+    <exercise number="7" permid="VyR" xml:id="fields-exercise-one-degree">
       <statement>
         <p permid="YtK">
           Prove that the cosine of one degree (<m>\cos 1^\circ</m>) is algebraic over
@@ -1872,7 +1920,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="BGa">
+    <exercise number="8" permid="BGa" xml:id="fields-exercise-3-times-cube">
       <statement>
         <p permid="EAT">
           Can a cube be constructed with three times the volume of a given cube?
@@ -1885,7 +1933,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="hNj">
+    <exercise number="9" permid="hNj" xml:id="fields-exercise-algebraic-not-finite">
       <statement>
         <p permid="kIc">
           Prove that <m>{\mathbb Q}(\sqrt{3}, \sqrt[4]{3}, \sqrt[8]{3}, \ldots )</m> is an algebraic extension of
@@ -1894,7 +1942,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="NUs">
+    <exercise number="10" permid="NUs" xml:id="fields-exercise-Q-pi-3">
       <statement>
         <p permid="QPl">
           Prove or disprove:
@@ -1903,7 +1951,7 @@
       </statement>
     </exercise>
 
-    <exercise number="11" permid="ubB">
+    <exercise number="11" permid="ubB" xml:id="fields-exercise-splitting-field-p-x">
       <statement>
         <p permid="wWu">
           Let <m>p(x)</m> be a nonconstant polynomial of degree <m>n</m> in <m>F[x]</m>.
@@ -1912,7 +1960,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="aiK">
+    <exercise number="12" permid="aiK" xml:id="fields-exercise-Q-root-2-Q-root-3">
       <statement>
         <p permid="ddD">
           Prove or disprove:
@@ -1921,7 +1969,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="GpT">
+    <exercise number="13" permid="GpT" xml:id="fields-exercise-isomorphic-fields">
       <statement>
         <p permid="JkM">
           Prove that the fields <m>{\mathbb Q}(\sqrt[4]{3}\, )</m> and
@@ -1932,7 +1980,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="14" permid="mxc">
+    <exercise number="14" permid="mxc" xml:id="fields-exercise-K-E-F-algebraic">
       <statement>
         <p permid="prV">
           Let <m>K</m> be an algebraic extension of <m>E</m>,
@@ -1952,7 +2000,7 @@
       </hint>
     </exercise>
 
-    <exercise number="15" permid="SEl">
+    <exercise number="15" permid="SEl" xml:id="fields-exercise-Q-mod-poly-field">
       <statement>
         <p permid="Vze">
           Prove or disprove:
@@ -1963,7 +2011,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="16" permid="yLu">
+    <exercise number="16" permid="yLu" xml:id="fields-exercise-char-p">
       <statement>
         <p permid="BGn">
           Let <m>F</m> be a field of characteristic <m>p</m>.
@@ -1974,7 +2022,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="17" permid="eSD">
+    <exercise number="17" permid="eSD" xml:id="fields-exercise-p-x-splits-alg-closure">
       <statement>
         <p permid="hNw">
           Let <m>E</m> be the algebraic closure of a field <m>F</m>.
@@ -1983,7 +2031,7 @@
       </statement>
     </exercise>
 
-    <exercise number="18" permid="KZM">
+    <exercise number="18" permid="KZM" xml:id="fields-exercise-linear-poly-irred">
       <statement>
         <p permid="NUF">
           If every irreducible polynomial <m>p(x)</m> in <m>F[x]</m> is linear,
@@ -1994,7 +2042,7 @@
 
     <!--Todo Fix this proof.-->
 
-    <exercise number="19" permid="rgV">
+    <exercise number="19" permid="rgV" xml:id="fields-exercise-alpha-beta-construct">
       <statement>
         <p permid="ubO">
           Prove that if <m>\alpha</m> and <m>\beta</m> are constructible numbers such that <m>\beta \neq 0</m>,
@@ -2005,7 +2053,7 @@
 
     <!--Todo Fix this proof.-->
 
-    <exercise number="20" permid="Xoe">
+    <exercise number="20" permid="Xoe" xml:id="fields-exercise-algebraic-elements-over-Q">
       <statement>
         <p permid="aiX">
           Show that the set of all elements in
@@ -2015,7 +2063,7 @@
       </statement>
     </exercise>
 
-    <exercise number="21" permid="Dvn">
+    <exercise number="21" permid="Dvn" xml:id="fields-exercise-auto-permute-zeros">
       <statement>
         <p permid="Gqg">
           Let <m>E</m> be an algebraic extension of a field <m>F</m>,
@@ -2026,7 +2074,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="jCw">
+    <exercise number="22" permid="jCw" xml:id="fields-exercise-Q-root-3-root-7">
       <statement>
         <p permid="mxp">
           Show that <m>{\mathbb Q}( \sqrt{3}, \sqrt{7}\, ) = {\mathbb Q}( \sqrt{3} + \sqrt{7}\, )</m>.
@@ -2049,7 +2097,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="23" permid="PJF">
+    <exercise number="23" permid="PJF" xml:id="fields-exercise-extension-degree-2">
       <statement>
         <p permid="SEy">
           Let <m>E</m> be a finite extension of a field <m>F</m>.
@@ -2059,7 +2107,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" permid="vQO">
+    <exercise number="24" permid="vQO" xml:id="fields-exercise-Z6">
       <statement>
         <p permid="yLH">
           Prove or disprove: Given a polynomial <m>p(x)</m> in <m>{\mathbb Z}_6[x]</m>,
@@ -2070,7 +2118,7 @@
 
     <!--Todo Finish this proof.-->
 
-    <exercise number="25" permid="bXX">
+    <exercise number="25" permid="bXX" xml:id="fields-exercise-alpha-alpha-3">
       <statement>
         <p permid="eSQ">
           Let <m>E</m> be a field extension of <m>F</m> and <m>\alpha \in E</m>.
@@ -2081,7 +2129,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="26" permid="Ifg">
+    <exercise number="26" permid="Ifg" xml:id="fields-exercise-transcendental">
       <statement>
         <p permid="KZZ">
           Let <m>\alpha, \beta</m> be transcendental over <m>{\mathbb Q}</m>.
@@ -2091,7 +2139,7 @@
       </statement>
     </exercise>
 
-    <exercise number="27" permid="omp">
+    <exercise number="27" permid="omp" xml:id="fields-exercise-not-transcendental">
       <statement>
         <p permid="rhi">
           Let <m>E</m> be an extension field of <m>F</m> and
@@ -2120,7 +2168,7 @@
       </hint>
     </exercise>
 
-    <exercise number="28" xml:id="exercise-fields-degree-irred-poly" permid="Uty">
+    <exercise number="28" xml:id="fields-exercise-degree-irred-poly" permid="Uty">
       <statement>
         <p permid="Xor">
           Let <m>\alpha</m> be a root of an irreducible monic polynomial
@@ -2188,6 +2236,8 @@
       <title>Introduction to Abstract Algebra</title>. Random House,  New York, 1987. This work contains a proof showing that every field has an algebraic closure.
     </biblio>
   </references>
+
+
 
   <section xml:id="fields-sage" permid="IAF">
     <title>Sage</title>
@@ -2847,7 +2897,8 @@
 
   <exercises xml:id="fields-sage-exercises" permid="rCu">
     <title>Sage Exercises</title>
-    <exercise number="1" permid="gHQ">
+
+    <exercise number="1" permid="gHQ" xml:id="fields-sage-exercise-Z3">
       <statement>
         <p permid="DvA">
           Create the polynomial <m>p(x)=x^5+2x^4+1</m> over <m>{\mathbb Z}_3</m>.
@@ -2869,7 +2920,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="MOZ">
+    <exercise number="2" permid="MOZ" xml:id="fields-sage-exercise-Z3-PID">
       <statement>
         <p permid="vRb">
           This problem continues the previous one.
@@ -2892,7 +2943,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="sWi">
+    <exercise number="3" permid="sWi" xml:id="fields-sage-exercise-finite-extension">
       <statement>
         <p permid="Ift">
           The subsection <xref ref="fields-subsection-algebraic-elements" text="title"/> relies on techniques from linear algebra and contains <xref ref="theorem-finite-extension"/>:
@@ -2931,7 +2982,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="Zdr">
+    <exercise number="4" permid="Zdr" xml:id="fields-sage-exercise-splitting-field">
       <statement>
         <p permid="gId">
           Construct the splitting field of
@@ -2940,7 +2991,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="FkA">
+    <exercise number="5" permid="FkA" xml:id="fields-sage-exercise-irred-poly">
       <statement>
         <p permid="MPm">
           Form the number field, <m>K</m>,

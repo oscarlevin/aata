@@ -3,16 +3,20 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <docinfo>
-  <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2019.png"/>
+  <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2020.png"/>
     <!-- Prefix to enhance Sage notebook contents -->
   <initialism>AATA</initialism>
+
+    <!-- Identify text uniquely -->
+    <document-id>judson-AATA</document-id>
+
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
     <!-- \notdivide replaces \notmid to avoid conflict with tikz - TWJ 5/6/2010 -->
     <!-- Added operator \gf  - TWJ 2/26/2013 -->
@@ -43,21 +47,5 @@
     \usetikzlibrary{snakes}
     </latex-image-preamble>
 
-  <search>
-    <google>
-      <cx>002637997310187229905:qj2oy0jlpyu</cx>
-    </google>
-  </search>
-
-  <analytics>
-  <statcounter>
-
-  <project>
-    10568106
-  </project>
-
-  <security>510ba080</security>
-  </statcounter>
-  </analytics>
 </docinfo>
 

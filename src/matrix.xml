@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2019  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2019  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2020  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2020  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -302,7 +302,7 @@
         <caption><m>SL_2(\mathbb R)</m> acting on the unit square</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image xml:id="matrix-sl2r" permid="dFT">
-
+        	<description>Two side-by figures. The figure on the left is a square on set of axes with the left edge a vector from the origin to (0,1) and bottom edge a vector from the origin to (1,0). The figure on the right is a parallelogram on set of axes with the left edge a vector from the origin to (1,1) and bottom edge a vector from the origin to (1,0).</description>
             <latex-image>
                 <xi:include href="tikz/matrix-sl2r.tex" parse="text"/>
             </latex-image>
@@ -620,7 +620,7 @@
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
             <!-- Fixed tikz figure - TWJ 12/8/2011 -->
         <image xml:id="matrix-o2" permid="JNc">
-
+        	<description>Two side-by figures. The figure on the left is a set of axes with an arrow pointing up and right from the origin to (a,b) and the second arrow pointing down and right from the origin to a point (a, -b). The figure on the right is a set of axes with an arrow pointed up and right from the origin to (cosine theta, sine theta) and an arrow point up and left at a right angle to the first vector from the origin to (sine theta, minus cosine theta).</description>
             <latex-image>
                 <xi:include href="tikz/matrix-o2.tex" parse="text"/>
             </latex-image>
@@ -721,7 +721,7 @@
         </me>.
         The identity of the group is <m>(I,{\mathbf 0})</m>;
         the inverse of <m>(A, {\mathbf x})</m> is <m>(A^{-1}, -A^{-1} {\mathbf x})</m>.
-        In <xref ref="exercise-matrix-en-group"/>,
+        In <xref ref="matrix-exercise-en-group"/>,
         you are asked to check that <m>E(n)</m> is indeed a group under this operation.
       </p>
 
@@ -729,8 +729,8 @@
         <caption>Translations in <m>\mathbb R^2</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image xml:id="matrix-r2-translations" permid="pUl">
-
-            <latex-image>
+          <description>Two side-by figures. The figure on the left is a set of axes with an arrow pointing up and right from the origin to a point x. The figure on the right is a set of axes with an arrow of the same length and same direction from a point to the right and above the origin to a point x + y.</description>
+          <latex-image>
                 <xi:include href="tikz/matrix-r2-translations.tex" parse="text"/>
             </latex-image>
         </image>
@@ -780,7 +780,7 @@
         <caption>Glide reflections</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image xml:id="matrix-glide-reflections" permid="Wbu">
-
+        	<description>Two side-by figures. The figure on the left is a set of axes with an arrow pointing up and right from the origin to a point x. The figure on the right is a set of axes with an arrow of the same length but pointing down and right from a point on the horizontal axis to a point T(x).</description>
             <latex-image>
                 <xi:include href="tikz/matrix-glide-reflections.tex" parse="text"/>
             </latex-image>
@@ -976,7 +976,7 @@
         <caption>A wallpaper pattern in <m>\mathbb R^2</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image xml:id="matrix-wallpaper-r2" permid="CiD">
-
+        	<description>A wallpaper of chevrons with the top row of chevrons pointing downward, the second row of chevrons pointing upwards, and so on.</description>
             <latex-image>
                 <xi:include href="tikz/matrix-wallpaper-r2.tex" parse="text"/>
             </latex-image>
@@ -988,7 +988,7 @@
         <caption>A crystal structure in <m>\mathbb R^3</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image width="50%" xml:id="matrix-crystal-r3" permid="ipM">
-
+        	<description>A three-dimensional lattice of cubes that are slanted to the right.  The vertices are highlighted with small filled circles.</description>
             <latex-image>
                 <xi:include href="tikz/matrix-crystal-r3.tex" parse="text"/>
             </latex-image>
@@ -1073,7 +1073,8 @@
         <caption>A lattice in  <m>\mathbb R^2</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 6/11/2010 -->
         <image xml:id="matrix-lattice-r2" permid="OwV">
-
+        	<description>A lattice of parallelograms slanted to the right.  There are four arrows, each beginning in the center at the origin and pointing to the right to (2,0), pointing up and right to (1,1), pointing up and left to (
+        		minus one, one), and pointing down and left to (minus one, minus one).</description>
             <latex-image>
                 <xi:include href="tikz/matrix-lattice-r2.tex" parse="text"/>
             </latex-image>
@@ -1163,7 +1164,7 @@
         <caption>Types of lattices in  <m>\mathbb R^2</m></caption>
             <!-- Replaced figure with tikz figure - TWJ 6/14/2010 -->
         <image xml:id="matrix-lattices-r2" permid="uEe">
-
+        	<description>There are two rows of figures.  The left top figure is a lattice of squares, the middle top figure is a lattice of rectangles that are not squares, the right top figure is  a lattice of rhombuses slanted to the left. The bottom left figure is a lattice of parallelograms that are not rhombuses slanted to the left.  The bottom right figure is a lattice of equilateral triangles, six of which make up a regular hexagon.</description>
             <latex-image>
                 <xi:include href="tikz/matrix-lattices-r2.tex" parse="text"/>
             </latex-image>
@@ -1172,7 +1173,7 @@
       </figure>
 
       <table xml:id="table-wallpaper" permid="TgO">
-        <caption>The 17 wallpaper groups</caption>
+        <title>The 17 wallpaper groups</title>
         <tabular halign="center" top="medium" permid="znX">
           <row>
             <cell>Notation and</cell>
@@ -1292,7 +1293,7 @@
         <caption>The wallpaper groups p4m and  p4g</caption>
             <!-- Replaced figure with tikz figure - TWJ 6/14/2010 -->
         <image xml:id="matrix-p4m-p4g" permid="aLn">
-
+        	<description>There are two side by side figures.  The figure on the left is a lattice of squares.  The figure on the right is a lattice of squares and in each square there are four rectangular paths form the center of the square that rotate counterclockwise.</description>
             <latex-image>
                 <xi:include href="tikz/matrix-p4m-p4g.tex" parse="text"/>
             </latex-image>
@@ -1340,12 +1341,57 @@
     </subsection>
 
   </section>
+
+    <reading-questions permid="jhg">
+
+    <exercise permid="QAm">
+      <statement>
+        <p permid="Vkf">
+          What is a nonsingular matrix? Give an example of a <m>2 \times 2</m> nonsingular matrix. How do you know your example is nonsingular?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="wHv">
+      <statement>
+        <p permid="Bro">
+          What is an isometry in <m>\mathbb R^n</m>? Can you give an example of an isometry in <m>\mathbb R^2</m>?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="cOE">
+      <statement>
+        <p permid="hyx">
+          What is an orthonormal set of vectors?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="IVN">
+      <statement>
+        <p permid="NFG">
+          What is the difference between the orthogonal group and the special orthogonal group?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="pcW">
+      <statement>
+        <p permid="tMP">
+          What is a lattice?
+        </p>
+      </statement>
+    </exercise>
+
+  </reading-questions>
     <!-- Exercises with Solutions  -->
     <!-- File: matrix.xml  -->
     <!-- Title: Matrix Groups and Symmetry -->
   <exercises xml:id="exercises-matrix" filenamebase="matrix" permid="nJm">
     <title>Exercises</title>
-    <exercise number="1" permid="Obj">
+
+    <exercise number="1" permid="Obj" xml:id="matrix-exercise-identity">
       <statement>
         <p permid="tFP">
           Prove the identity
@@ -1365,7 +1411,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="uis">
+    <exercise number="2" permid="uis" xml:id="matrix-exercise-On">
       <statement>
         <p permid="ZMY">
           Show that <m>O(n)</m> is a group.
@@ -1373,7 +1419,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="apB">
+    <exercise number="3" permid="apB" xml:id="matrix-exercise-orthogonal">
       <statement>
         <p permid="FUh">
           Prove that the following matrices are orthogonal.
@@ -1435,7 +1481,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="GwK">
+    <exercise number="4" permid="GwK" xml:id="matrix-exercise-symmetry-figure">
       <statement>
         <p permid="mbq">
           Determine the symmetry group of each of the figures in <xref ref="figure-exercise-symmetry-groups"/>.
@@ -1445,7 +1491,7 @@
           <caption/>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
           <image xml:id="exercise-symmetry-groups" permid="GSw">
-
+            <description>There are two figures in the top row and one figure on bottom.  The top left figure, a,  is a rectangle.  Inside the rectangle is an oval in the lower left and a solid circle in the upper right.  The top right figure, c, is there intersecting circles of the same radii.  The bottom middle figure, b, is a large square with the two diagonals.  The midpoints of the large square are the vertices of a smaller inscribed square.</description>
             <latex-image>
                 <xi:include href="tikz/exercise-symmetry-groups.tex" parse="text"/>
             </latex-image>
@@ -1455,7 +1501,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="mDT">
+    <exercise number="5" permid="mDT" xml:id="matrix-exercise-inner-product">
       <statement>
         <p permid="ypI">
           Let <m>{\mathbf x}</m>, <m>{\mathbf y}</m>,
@@ -1505,7 +1551,7 @@
       </hint>
     </exercise>
 
-    <exercise number="6" xml:id="exercise-matrix-en-group" permid="SLc">
+    <exercise number="6" xml:id="matrix-exercise-en-group" permid="SLc">
       <statement>
         <p permid="ewR">
           Verify that
@@ -1519,7 +1565,7 @@
 
     <!--Todo Expand this solution.-->
 
-    <exercise number="7" permid="ySl">
+    <exercise number="7" permid="ySl" xml:id="matrix-exercise-bases-lattice">
       <statement>
         <p permid="KEa">
           Prove that <m>\{ (2,1), (1,1) \}</m> and
@@ -1539,7 +1585,7 @@
       </hint>
     </exercise>
 
-    <exercise number="8" permid="eZu">
+    <exercise number="8" permid="eZu" xml:id="matrix-exercise-E-2">
       <statement>
         <p permid="qLj">
           Let <m>G</m> be a subgroup of <m>E(2)</m> and suppose that <m>T</m> is the translation subgroup of <m>G</m>.
@@ -1550,7 +1596,7 @@
 
     <!--Todo Expand this solution.-->
 
-    <exercise number="9" permid="LgD">
+    <exercise number="9" permid="LgD" xml:id="matrix-exercise-SL2-R">
       <statement>
         <p permid="WSs">
           Let <m>A \in SL_2({\mathbb R})</m> and suppose that the vectors <m>{\mathbf x}</m> and
@@ -1563,7 +1609,7 @@
 
     <!--Todo Expand this solution.-->
 
-    <exercise number="10" permid="rnM">
+    <exercise number="10" permid="rnM" xml:id="matrix-exercise-SO-n">
       <statement>
         <p permid="CZB">
           Prove that <m>SO(n)</m> is a normal subgroup of <m>O(n)</m>.
@@ -1578,7 +1624,7 @@
 
     <!--Todo Expand this solution.-->
 
-    <exercise number="11" permid="XuV">
+    <exercise number="11" permid="XuV" xml:id="matrix-exercise-isometry">
       <statement>
         <p permid="jgK">
           Show that any isometry <m>f</m> in <m>{\mathbb R}^n</m> is a one-to-one map.
@@ -1586,7 +1632,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="DCe">
+    <exercise number="12" permid="DCe" xml:id="matrix-exercise-A-x">
       <statement>
         <p permid="PnT">
           Prove or disprove:
@@ -1598,7 +1644,7 @@
 
     <!--Todo Expand this solution. Complete the PMI part.-->
 
-    <exercise number="13" permid="jJn">
+    <exercise number="13" permid="jJn" xml:id="matrix-exercise-O-n-abelian-subgroup">
       <statement>
         <p permid="vvc">
           Prove or disprove: There exists an infinite abelian subgroup of <m>O(n)</m>.
@@ -1613,7 +1659,7 @@
 
     <!--Todo Expand this solution. Find the example.-->
 
-    <exercise number="14" permid="PQw">
+    <exercise number="14" permid="PQw" xml:id="matrix-exercise-unit-circle">
       <statement>
         <p permid="bCl">
           Let <m>{\mathbf x} = (x_1, x_2)</m> be a point on the unit circle in <m>{\mathbb R}^2</m>;
@@ -1624,7 +1670,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="vXF">
+    <exercise number="15" permid="vXF" xml:id="matrix-exercise-semi-direct-product">
       <statement>
         <p permid="HJu">
           Let <m>G</m> be a group with a subgroup <m>H</m>
@@ -1676,7 +1722,7 @@
 
     <!--Todo Expand solution.-->
 
-    <exercise number="16" permid="ceO">
+    <exercise number="16" permid="ceO" xml:id="matrix-exercise-17-wallpaper-1">
       <statement>
         <p permid="nQD">
           Determine which of the 17 wallpaper groups preserves the symmetry of the pattern in <xref ref="figure-wallpaper"/>.
@@ -1684,7 +1730,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="IlX">
+    <exercise number="17" permid="IlX" xml:id="matrix-exercise-17-wallpaper-2">
       <statement>
         <p permid="TXM">
           Determine which of the 17 wallpaper groups preserves the symmetry of the pattern in <xref ref="figure-exercise-wallpaper"/>.
@@ -1701,7 +1747,7 @@
       <caption/>
             <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
       <image xml:id="exercise-wallpaper" permid="mZF">
-
+            <description>A lattices of hexagons.  Each hexagon is divided into three rhombuses.</description>
             <latex-image>
                 <xi:include href="tikz/exercise-wallpaper.tex" parse="text"/>
             </latex-image>
@@ -1709,7 +1755,7 @@
 
     </figure>
 
-    <exercise number="18" permid="otg">
+    <exercise number="18" permid="otg" xml:id="matrix-exercise-dodecahedron">
       <statement>
         <p permid="AeV">
           Find the rotation group of a dodecahedron.
@@ -1719,7 +1765,7 @@
 
     <!--Todo Elaborate on this solution.-->
 
-    <exercise number="19" permid="UAp">
+    <exercise number="19" permid="UAp" xml:id="matrix-exercise-17-wallpaper-symmetry">
       <statement>
         <p permid="gme">
           For each of the 17 wallpaper groups,
@@ -1815,6 +1861,8 @@
       <title>Symmetry</title>. Princeton University Press, Princeton, NJ, 1952.
     </biblio>
   </references>
+
+
 
   <section xml:id="matrix-sage" permid="stf">
     <title>Sage</title>
