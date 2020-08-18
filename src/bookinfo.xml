@@ -10,13 +10,7 @@
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <docinfo>
-<<<<<<< HEAD
   <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2020.png"/>
-=======
-  <document-id>judson-AATA</document-id>
-
-  <brandlogo url="http://abstract.pugetsound.edu" source="images/cover_aata_2018.png"/>
->>>>>>> 04b738cab80b979d4d503e2d5ad531190ced180c
     <!-- Prefix to enhance Sage notebook contents -->
   <initialism>AATA</initialism>
 
