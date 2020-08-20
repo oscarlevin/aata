@@ -21,7 +21,7 @@
       called factor or quotient groups.
       Factor groups may be studied directly or by using homomorphisms,
       a generalization of isomorphisms.
-      We will study homomorphisms in <xref ref="homomorph"/>.
+      We will study isomorphisms and homomorphisms in <xref ref="isomorph"/>.
     </p>
   </introduction>
     <!-- % TWJ, 2010/03/31 -->
@@ -213,7 +213,7 @@
         </sidebyside>
 
         <p permid="Dfo">
-          This group is isomorphic to <m>{\mathbb Z}_2</m>.
+          This group has order 2, and you might think it looks a lot like <m>{\mathbb Z}_2</m> (in <xref ref="isomorph"/> we will see that this group is <term>isomorphic</term> to <m>\Z_2</m>).
           At first, multiplying cosets seems both complicated and strange;
           however, notice that <m>S_3 / N</m> is a smaller group.
           The factor group displays a certain amount of information about <m>S_3</m>.
@@ -283,8 +283,8 @@
           Since <m>srs^{-1} = srs = r^{-1} \in R_n</m>,
           the group of rotations is a normal subgroup of <m>D_n</m>;
           therefore, <m>D_n / R_n</m> is a group.
-          Since there are exactly two elements in this group,
-          it must be isomorphic to <m>{\mathbb Z}_2</m>.
+          The group has exactly two elements, so it will look just like 
+          <m>{\mathbb Z}_2</m>.
         </p>
       </example>
     </subsection>
@@ -319,6 +319,169 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-normal">
+      <title>Practice Problems</title>
+      <exercise xml:id="ex-d4-normal">
+        <statement>
+          <p>
+            Let <m>G = D_4</m>, the group of symmetries of a square, and take <m>H = \{r_0, r_2, d_1, d_2\}</m>.  Is <m>H</m> normal in <m>G</m>?  If so, how many elements are in the factor group <m>G/H</m>?  Write out its group table.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, <m>H</m> is normal in <m>G</m>.  You can see this by checking left vs right cosets.  In fact, you see that there will only be two cosets.  If you take any <m>a \in H</m>, we have <m>aH = H = Ha</m>.  What about <m>b \notin H</m>?  You can quickly check that we will have <m>bH = Hb</m>. 
+          </p>
+
+          <p>
+            The factor group <m>G/H</m> will have order 2, since <m>|G/H| = [G:H] = \frac{|G|}{|H|}</m>.   Thus writing it's group table will be very easy.  Use <m>H</m> and <m>r_1H</m> as the two elements.  <m>H</m> is the identity, and <m>r_1Hr_1H = H</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            A <term>conjugate</term> of an element <m>x \in G</m> is an element of <m>G</m> with the form <m>gxg\inv</m> for some <m>g \in G</m>.  Using <m>G = D_4</m> and <m>H = \{r_0, r_2, d_1, d_2\}</m>, find all the conjugates of all the elements of <m>H</m>.  What do you notice? 
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The conjuages of <m>r_0</m> are all <m>r_0</m>, since <m>gr_0g\inv = gg\inv = r_0</m> for any <m>g \in G</m>.  It is easy to check that the conjugates of <m>r_2</m> are allways <m>r_2</m>. Let's find some conjugates of <m>d_1</m>:
+            <md>
+              <mrow>r_0d_1r_0\inv \amp = d_1 </mrow>
+              <mrow>r_1d_1r_1\inv \amp = d_2 </mrow>
+              <mrow>r_2d_1r_2\inv \amp = d_1 </mrow>
+              <mrow>r_3d_1r_3\inv \amp = d_2 </mrow>
+              <mrow>hd_1h\inv \amp = d_2 </mrow>
+              <mrow>vd_1v\inv \amp = d_2 </mrow>
+              <mrow>d_1d_1d_1\inv \amp = d_1 </mrow>
+              <mrow>d_2d_1d_2\inv \amp = d_1 </mrow>
+            </md>.
+            Similarly, the conjugates of <m>d_2</m> will be either <m>d_1</m> or <m>d_2</m>.
+          </p>
+
+          <p>
+            Note that the conjugates for things in <m>H</m> are always (possibly different) things in <m>H</m>.  We say that <m>H</m> is <em>closed</em> under conjugates.  Of course we knew this would happen since <m>H</m> is normal in <m>G</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Prove that if <m>G</m> is abelian and <m>H</m> is a subgroup, that <m>G/H</m> is abelian.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <proof>
+              <p>
+                Consider two arbitrary elements of <m>G/H</m>:                <m>aH</m> and <m>bH</m>.  Note that <m>a,b \in G</m>, so <m>ab = ba</m>. We have 
+                <me>
+                  aHbH = abH = baH = bHaH
+                </me>.
+                Thus <m>G/H</m> is abelian. 
+              </p>
+            </proof>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            True or false: If <m>H</m> is abelian and <m>G/H</m> is abelian, then <m>G</m> is abelian.  Prove your answer.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Look at <xref ref="ex-d4-normal"/>
+.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Prove that <m>H</m> is not normal in <m>G</m>.  Then give a specific example of what goes wrong if you try to define coset multiplication on the set of cosets <m>G/H</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Consider <m>r_1H = \{r_1, d_1\}</m>.  But <m>Hr_1 = \{r_1, d_2\}</m>.  So <m>r_1H \ne Hr_1</m>, so <m>H</m> is not normal.
+          </p>
+
+          <p>
+            To see what goes wrong with defining multiplication, consider <m>r_1Hr_1H = r_1r_1H = r_2H</m>.  This is the coset <m>r_2H = \{r_2, v\}</m>.  But since <m>r_1H = d_1H</m>, we should get the same set if we multiply <m>d_1Hd_1H = d_1d_1H = r_0H</m>.  But of course we don't, since <m>r_0H = H = \{r_0, h\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Again let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Show that <m>H </m> is not closed under conjugates.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know <m>H</m> won't be closed under conjugates because <m>H</m> is not normal in <m>G</m>.  But to be sure, consider <m>r_1hr_1\inv = r_1hr_3 = v</m>.  Since <m>h \in H</m> but <m>v \notin H</m>, we see that <m>H</m> is not closed under conjugates.
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+
+    <exercises xml:id="collected-normal">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Let <m>G = S_3</m> and <m>H = \{(1), (13)\}</m>. 
+            <ol>
+              <li>
+                <p>
+                Find the three (left) cosets of <m>H</m> in <m>G</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Explain what goes wrong if you try to define an operation on the set of cosets <m>G/H</m>.  Do this with a specific example using this <m>G</m> and <m>H</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Write out all the conjugates of <m>H</m> in <m>G</m>.  That is, find <m>gxg\inv</m> for all <m>x \in H</m> and <m>g \in G</m>.  Is <m>H</m> closed under conjugates?
+                </p>
+              </li>
+              <li>
+                <p>
+                Show that <m>H</m> is not normal in <m>G</m> using the definition (about left and right cosets).
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+      </exercise>
+
+      <exercise number="C2">
+        <statement>
+          <p>
+          BONUS! Prove that if <m>[G : H] = 2</m> then <m>H</m> is normal in <m>G</m>. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+          This is not all that hard.  Try an example (such as <xref ref="ex-d4-normal"/>) to see why this works.  Then explain it in general.
+          </p>
+        </hint>
+      </exercise>
+    </exercises>
+
   </section>
 
   <section xml:id="section-simplicity-of-an" permid="GCx">
@@ -612,7 +775,7 @@
     <!-- File: normal.xml  -->
     <!-- Title: Normal Subgroups and Factor Groups -->
   <exercises xml:id="exercises-normal" filenamebase="normal" permid="hZN">
-    <title>Exercises</title>
+    <title>Additional Exercises</title>
 
     <exercise number="1" permid="wds" xml:id="normal-exercise-normal-subgroup">
       <statement>

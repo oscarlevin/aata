@@ -10,7 +10,7 @@
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="cosets" permid="Uzy">
-  <title>Cosets and Lagrange's Theorem</title>
+  <title>Cosets and Factor Groups</title>
   <introduction permid="EVb">
     <p permid="QGQ">
       Lagrange's Theorem,
@@ -275,728 +275,644 @@
         </statement>
       </exercise>
     </reading-questions>
+    <exercises xml:id="practice-cosets">
+      <title>Practice Problems</title>
+
+
+      <exercise number="5" permid="uRv">
+        <statement>
+          <p permid="yDm">
+          List the left and right cosets of the subgroups in each of the following.
+
+            <ol cols="2" permid="Meb">
+              <li permid="eRz">
+                <p permid="ivZ">
+                  <m>\langle 8 \rangle</m> in <m>{\mathbb Z}_{24}</m>
+                </p>
+              </li>
+
+              <li permid="KYI">
+                <p permid="ODi">
+                  <m>\langle 3 \rangle</m> in <m>U(8)</m>
+                </p>
+              </li>
+
+              <li permid="rfR">
+                <p permid="uKr">
+                  <m>3 {\mathbb Z}</m> in <m>{\mathbb Z}</m>
+                </p>
+              </li>
+
+              <li permid="Xna">
+                <p permid="aRA">
+                  <m>A_4</m> in <m>S_4</m>
+                </p>
+              </li>
+
+              <li permid="Duj">
+                <p permid="GYJ">
+                  <m>A_n</m> in <m>S_n</m>
+                </p>
+              </li>
+
+              <li permid="jBs">
+                <p permid="nfS">
+                  <m>D_4</m> in <m>S_4</m>
+                </p>
+              </li>
+
+              <li permid="PIB">
+                <p permid="Tnb">
+                  <m>{\mathbb T}</m> in <m>{\mathbb C}^\ast</m>
+                </p>
+              </li>
+
+              <li permid="vPK">
+                <p permid="zuk">
+                  <m>H = \{ (1), (123), (132) \}</m> in <m>S_4</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="DPI">
+          <p permid="jPN">
+          (a) <m>\langle 8 \rangle</m>,
+            <m>1 + \langle 8 \rangle</m>,
+            <m>2 + \langle 8 \rangle</m>,
+            <m>3 + \langle 8 \rangle</m>,
+            <m>4 + \langle 8 \rangle</m>,
+            <m>5 + \langle 8 \rangle</m>,
+            <m>6 + \langle 8 \rangle</m>,
+          and <m>7 + \langle 8 \rangle</m>; 
+          </p>
+          <p>
+          (c) <m>3 {\mathbb Z}</m>,
+            <m>1 + 3 {\mathbb Z}</m>, and <m>2 + 3 {\mathbb Z}</m>.
+          </p>
+        </hint>
+      </exercise>
+
+
+      <exercise number="12" permid="LPG">
+        <statement>
+          <p permid="PBx">
+          If <m>ghg^{-1} \in H</m> for all <m>g \in G</m> and <m>h \in H</m>,
+          show that right cosets are identical to left cosets.
+          That is, show that <m>gH = Hg</m> for all <m>g \in G</m>.
+          </p>
+        </statement>
+        <hint permid="hcl">
+          <p permid="wef">
+          Let <m>g_1 \in gH</m>.
+          Show that <m>g_1 \in Hg</m> and thus <m>gH \subset Hg</m>.
+          </p>
+        </hint>
+        <solution>
+          <p>
+          Suppose <m>ghg\inv \in H</m> for all <m>g \in G</m> and <m>h \in H</m>.  Consider a fixed <m>g \in G</m>. We want to show that <m>gH = Hg</m>, which we will do by showing that everything in <m>gH</m> is already in <m>Hg</m>, and visa-versa.
+          </p>
+          <p>
+          First, let <m>x \in gH</m>.  This means that <m>x = gh_1</m> for some <m>h_1 \in H</m>.  But then <m>x = gh_1(g\inv g) = (gh_1g\inv)g</m>.  Since <m>gh_1g\inv \in H</m>, we have that <m>x \in Hg</m>.
+          </p>
+          <p>
+          Similarly, if <m>y \in Hg</m>, then <m>y = h_2g</m> for some <m>h_2 \in H</m>.  We have <m>y = (gg\inv)h_2g = g(g\inv hg)</m>.  But <m>g\inv h g \in H</m> (as <m>g\inv \in G</m>, we have <m>(g\inv)h(g\inv)\inv \in H</m>), so <m>y \in gH</m>.
+          </p>
+        </solution>
+      </exercise>
+
+
+      <exercise number="17" permid="Qzz">
+        <statement>
+          <p permid="Ulq">
+          Suppose that <m>[G : H] = 2</m>.
+          If <m>a</m> and <m>b</m> are not in <m>H</m>,
+          show that <m>ab \in H</m>.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise number="18" permid="wGI">
+        <statement>
+          <p permid="Asz">
+          If <m>[G : H] = 2</m>, prove that <m>gH = Hg</m>.
+          </p>
+        </statement>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-cosets">
+      <title>Collected Homework</title>
+
+      <exercise number="1">
+        <statement>
+          <p>
+          Let <m>G</m> be a group and <m>H</m> a subgroup of <m>G</m>.  Let <m>a</m> and <m>b</m> be elements of <m>G</m>.  Prove that <m>aH = b H</m> if and only if <m>b\inv a \in H</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+          Remember you need to prove two directions: first assume <m>aH = bH</m> and prove that <m>b\inv a \in H</m>.  Second, assume <m>b\inv a \in H</m>, and prove <m>aH = bH</m>.  To prove this second direction, it would be enough to show that <m>a \in bH</m> using the fact we proved in class.
+          </p>
+        </hint>
+      </exercise>
+    </exercises>
+
   </section>
 
-  <section xml:id="section-lagranges-theorem" permid="dTk">
-    <title>Lagrange's Theorem</title>
-    <proposition xml:id="cosets_theorem_4" permid="jmX">
-      <statement>
-        <p permid="ORD">
-          Let <m>H</m> be a subgroup of <m>G</m> with <m>g \in G</m> and define a map
-          <m>\phi:H \rightarrow gH</m> by <m>\phi(h) = gh</m>.
-          The map <m>\phi</m> is bijective;
-          hence, the number of elements in <m>H</m> is the same as the number of elements in <m>gH</m>.
-        </p>
-      </statement>
+<section xml:id="section-factor-groups" permid="avo">
+<title>Factor Groups and Normal Subgroups</title>
+  <introduction permid="ntA">
+    <p permid="HPh">
+      If <m>H</m> is a subgroup of a group <m>G</m>,
+      then right cosets are not always the same as left cosets;
+      that is, it is not always the case that <m>gH = Hg</m> for all <m>g \in G</m>.
+      The subgroups for which this property holds play a critical role in group theory<mdash/>
+they allow for the construction of a new class of groups,
+      called factor or quotient groups.
+      Factor groups may be studied directly or by using homomorphisms,
+      a generalization of isomorphisms.
+      We will study isomorphisms and homomorphisms in <xref ref="isomorph"/>.
+</p>
+</introduction>
+<subsection xml:id="normal-subsection-normal-subgroups" permid="dpU">
+  <title>Normal Subgroups</title>
+  <p permid="fmy">
+        A subgroup <m>H</m> of a group <m>G</m> is <term>normal</term>
+    <idx>
+      <h>Subgroup</h>
+      <h>normal</h>
+    </idx>
+    <idx>
+      <h>Normal subgroup</h>
+    </idx>
+        in G if <m>gH = Hg</m> for all <m>g \in G</m>.
+        That is, a normal subgroup of a group <m>G</m> is one in which the right and left cosets are precisely the same.
+  </p>
 
-      <proof permid="Cav">
-        <p permid="ANY">
-          We first show that the map <m>\phi</m> is one-to-one.
-          Suppose that <m>\phi(h_1) = \phi(h_2)</m> for elements <m>h_1, h_2 \in H</m>.
-          We must show that <m>h_1 = h_2</m>,
-          but <m>\phi(h_1) = gh_1</m> and <m>\phi(h_2) = gh_2</m>.
-          So <m>gh_1 = gh_2</m>, and by left cancellation <m>h_1= h_2</m>.
-          To show that <m>\phi</m> is onto is easy.
-          By definition every element of <m>gH</m> is of the form <m>gh</m> for some <m>h \in H</m> and <m>\phi(h) = gh</m>.
-        </p>
-      </proof>
-    </proposition>
-
-    <theorem xml:id="theorem-lagrange" permid="eDe">
-      <title>Lagrange</title>
-      <idx>
-      <h>Lagrange's Theorem</h>
-      </idx>
-      <statement>
-        <p permid="KhK">
-          Let <m>G</m> be a finite group and let <m>H</m> be a subgroup of <m>G</m>.
-          Then <m>|G|/|H| = [G : H]</m> is the number of distinct left cosets of <m>H</m> in <m>G</m>.
-          In particular,
-          the number of elements in <m>H</m> must divide the number of elements in <m>G</m>.
-        </p>
-      </statement>
-
-      <proof permid="JEU">
-        <p permid="gVh">
-          The group <m>G</m> is partitioned into <m>[G : H]</m> distinct left cosets.
-          Each left coset has <m>|H|</m> elements;
-          therefore, <m>|G| = [G : H] |H|</m>.
-        </p>
-      </proof>
-    </theorem>
-
-    <corollary xml:id="corollary-cosets-theorem-6" permid="bIy">
-      <statement>
-        <p permid="Hne">
-          Suppose that <m>G</m> is a finite group and <m>g \in G</m>.
-          Then the order of <m>g</m> must divide the number of elements in <m>G</m>.
-        </p>
-      </statement>
-    </corollary>
-
-    <corollary xml:id="corollary-cosets-theorem-7" permid="HPH">
-      <statement>
-        <p permid="nun">
-          Let <m>|G| = p</m> with <m>p</m> a prime number.
-          Then <m>G</m> is cyclic and any <m>g \in G</m> such that <m>g \neq e</m> is a generator.
-        </p>
-      </statement>
-
-      <proof permid="OoN">
-        <p permid="Ncq">
-          Let <m>g</m> be in <m>G</m> such that <m>g \neq e</m>.
-          Then by <xref ref="corollary-cosets-theorem-6"/>,
-          the order of <m>g</m> must divide the order of the group.
-          Since <m>|\langle g \rangle| \gt 1</m>, it must be <m>p</m>.
-          Hence, <m>g</m> generates <m>G</m>.
-        </p>
-      </proof>
-    </corollary>
-
-    <p permid="NqL">
-      <xref ref="corollary-cosets-theorem-7"/> suggests that groups of prime order <m>p</m> must somehow look like <m>{\mathbb Z}_p</m>.
+  <example xml:id="example-normal-abelian" permid="yXY">
+    <p permid="eCE">
+          Let <m>G</m> be an abelian group.
+          Every subgroup <m>H</m> of <m>G</m> is a normal subgroup.
+          Since <m>gh = hg</m> for all <m>g \in G</m> and <m>h \in H</m>,
+          it will always be the case that <m>gH = Hg</m>.
     </p>
+  </example>
 
-    <corollary xml:id="corollary-cosets-theorem-8" permid="nWQ">
-      <statement>
-        <p permid="TBw">
-          Let <m>H</m> and <m>K</m> be subgroups of a finite group <m>G</m> such that <m>G \supset H \supset K</m>.
-          Then
-          <me permid="WKx">
-            [G:K] = [G:H][H:K]
-          </me>.
-        </p>
-      </statement>
+  <example xml:id="example-normal-s3" permid="ffh">
+    <p permid="KJN">
+          Let <m>H</m> be the subgroup of <m>S_3</m> consisting of elements <m>(1)</m> and <m>(12)</m>.
+          Since
+      <me permid="iQY">
+            (123) H = \{ (123), (13) \} \quad \text{and} \quad H (123) = \{ (123), (23) \}
+      </me>,
+      <m>H</m> cannot be a normal subgroup of <m>S_3</m>.
+          However, the subgroup <m>N</m>,
+          consisting of the permutations <m>(1)</m>,      <m>(123)</m>,
+          and <m>(132)</m>, is normal since the cosets of <m>N</m> are
+      <md permid="OYh">
+        <mrow>N  =   \{ (1), (123), (132) \}</mrow>
+        <mrow>(12) N =  N (12)  =  \{ (12), (13), (23) \}</mrow>
+      </md>.
+    </p>
+  </example>
 
-      <proof permid="uvW">
-        <p permid="tjz">
-          Observe that
-          <me permid="CRG">
-            [G:K] = \frac{|G|}{|K|} = \frac{|G|}{|H|} \cdot \frac{|H|}{|K|} = [G:H][H:K]
-          </me>.
-        </p>
-      </proof>
-    </corollary>
+  <p permid="LtH">
+        The following theorem is fundamental to our understanding of normal subgroups.
+  </p>
 
-    <remark permid="YNS">
-      <title>The converse of Lagrange's Theorem is false</title>
-      <p permid="kzH">
-        The group <m>A_4</m> has order <m>12</m>;
-        however, it can be shown that it does not possess a subgroup of order <m>6</m>.
-        According to Lagrange's Theorem,
-        subgroups of a group of order <m>12</m> can have orders of either <m>1</m>,
-        <m>2</m>,
-        <m>3</m>, <m>4</m>, or <m>6</m>.
-        However, we are not guaranteed that subgroups of every possible order exist.
-        To prove that <m>A_4</m> has no subgroup of order <m>6</m>,
-        we will assume that it does have such a subgroup <m>H</m> and show that a contradiction must occur.
-        Since <m>A_4</m> contains eight <m>3</m>-cycles,
-        we know that <m>H</m> must contain a <m>3</m>-cycle.
-        We will show that if <m>H</m> contains one <m>3</m>-cycle,
-        then it must contain more than <m>6</m> elements.
+  <theorem xml:id="theorem-normal-equivalents" permid="SQP">
+    <statement>
+      <p permid="tLC">
+            Let <m>G</m> be a group and <m>N</m> be a subgroup of <m>G</m>.
+            Then the following statements are equivalent.
+
+        <ol permid="sNn">
+          <li permid="CgZ">
+            <p permid="iYc">
+                  The subgroup <m>N</m> is normal in <m>G</m>.
+            </p>
+          </li>
+
+          <li permid="ioi">
+            <p permid="Pfl">
+                  For all <m>g \in G</m>,              <m>gNg^{-1} \subset N</m>.
+            </p>
+          </li>
+
+          <li permid="Ovr">
+            <p permid="vmu">
+                  For all <m>g \in G</m>,              <m>gNg^{-1} = N</m>.
+            </p>
+          </li>
+        </ol>
       </p>
-    </remark>
-        <!-- % TWJ, 2011/11/20 -->
-        <!-- % Fixed the proof that <m>A_4</m> contains no subgroup of order 6.  This mistake was -->
-        <!-- % pointed out by Z. Teitler. -->
-    <proposition xml:id="proposition-cosets-theorem-10" permid="Pug">
-      <statement>
-        <p permid="uYM">
-          The group <m>A_4</m> has no subgroup of order <m>6</m>.
-        </p>
-      </statement>
+    </statement>
 
-      <proof permid="ihE">
-        <p permid="ZqI">
-          Since <m>[A_4 : H] = 2</m>,
-          there are only two cosets of <m>H</m> in <m>A_4</m>.
-          Inasmuch as one of the cosets is <m>H</m> itself,
-          right and left cosets must coincide;
-          therefore, <m>gH = Hg</m> or
-          <m>g H g^{-1} = H</m> for every <m>g \in A_4</m>.
-          Since there are eight <m>3</m>-cycles in <m>A_4</m>,
-          at least one <m>3</m>-cycle must be in <m>H</m>.
-          Without loss of generality, assume that <m>(123)</m> is in <m>H</m>.
-          Then <m>(123)^{-1} = (132)</m> must also be in <m>H</m>.
-          Since <m>g h g^{-1} \in H</m> for all
-          <m>g \in A_4</m> and all <m>h \in H</m> and
-          <md permid="PfY">
-            <mrow>(124)(123)(124)^{-1} &amp; = (124)(123)(142)  = (243)</mrow>
-            <mrow>(243)(123)(243)^{-1} &amp; = (243)(123)(234)  = (142)</mrow>
-          </md>
-          we can conclude that <m>H</m> must have at least seven elements
-          <me permid="iYP">
-            (1), (123), (132), (243), (243)^{-1} = (234), (142), (142)^{-1} = (124)
-          </me>.
-          Therefore, <m>A_4</m> has no subgroup of order <m>6</m>.
-        </p>
-      </proof>
-    </proposition>
+    <proof permid="fPb">
+      <p permid="EkH">
+            (1) <m>\Rightarrow</m> (2).
+            Since <m>N</m> is normal in <m>G</m>,
+        <m>gN = Ng</m> for all <m>g \in G</m>.
+            Hence, for a given <m>g \in G</m> and <m>n \in N</m>,
+            there exists an <m>n'</m> in <m>N</m> such that <m>g n = n' g</m>.
+            Therefore, <m>gng^{-1} = n' \in N</m> or <m>gNg^{-1} \subset N</m>.
+      </p>
 
-    <p permid="txU">
-      In fact, we can say more about when two cycles have the same length.
+      <p permid="krQ">
+            (2) <m>\Rightarrow</m> (3).
+            Let <m>g \in G</m>.
+            Since <m>gNg^{-1} \subset N</m>,
+            we need only show <m>N \subset gNg^{-1}</m>.
+            For <m>n \in N</m>,        <m>g^{-1}ng=g^{-1}n(g^{-1})^{-1} \in N</m>.
+            Hence, <m>g^{-1}ng = n'</m> for some <m>n' \in N</m>.
+            Therefore, <m>n = g n' g^{-1}</m> is in <m>g N g^{-1}</m>.
+      </p>
+
+      <p permid="QyZ">
+            (3) <m>\Rightarrow</m> (1).
+            Suppose that <m>gNg^{-1} = N</m> for all <m>g \in G</m>.
+            Then for any <m>n \in N</m> there exists an
+        <m>n' \in N</m> such that <m>gng^{-1} = n'</m>.
+            Consequently, <m>gn = n' g</m> or <m>gN \subset Ng</m>.
+            Similarly, <m>Ng \subset gN</m>.
+      </p>
+    </proof>
+  </theorem>
+</subsection>
+
+<subsection xml:id="normal-subsection-factor-groups" permid="Jxd">
+  <title>Factor Groups</title>
+  <p permid="rAQ">
+        If <m>N</m> is a normal subgroup of a group <m>G</m>,
+        then the cosets of <m>N</m> in <m>G</m> form a group <m>G/N</m> under the operation <m>(aN) (bN) = abN</m>.
+        This group is called the <term>factor</term>
+    <idx>
+      <h>Group</h>
+      <h>factor</h>
+    </idx>
+        or <term>quotient group</term>
+    <idx>
+      <h>Group</h>
+      <h>quotient</h>
+    </idx>
+        of <m>G</m> and <m>N</m>.
+
+    <notation>
+      <usage>G/N</usage>
+      <description>factor group of <m>G</m> mod <m>N</m>
+      </description>
+    </notation>
+
+        Our first task is to prove that <m>G/N</m> is indeed a group.
+  </p>
+
+  <theorem permid="Lmq">
+    <statement>
+      <p permid="ZSL">
+            Let <m>N</m> be a normal subgroup of a group <m>G</m>.
+            The cosets of <m>N</m> in <m>G</m> form a group <m>G/N</m> of order <m>[G:N]</m>.
+      </p>
+    </statement>
+
+    <proof permid="LWk">
+      <p permid="wGi">
+            The group operation on <m>G/N</m> is <m>(a N ) (b N)= a b N</m>.
+            This operation must be shown to be well-defined;
+            that is, group multiplication must be independent of the choice of  coset representative.
+            Let <m>aN = bN</m> and <m>cN = dN</m>.
+            We must show that
+        <me permid="vfq">
+              (aN) (cN) = acN = bd N = (b N)(d N)
+        </me>.
+            Then <m>a = b n_1</m> and <m>c = d n_2</m> for some <m>n_1</m> and <m>n_2</m> in <m>N</m>.
+            Hence,
+        <md permid="bmz">
+          <mrow>acN &amp; = b n_1 d n_2 N</mrow>
+          <mrow>&amp; = b n_1 d N</mrow>
+          <mrow>&amp; = b n_1 N d</mrow>
+          <mrow>&amp; = b N d</mrow>
+          <mrow>&amp; = b d N</mrow>
+        </md>.
+            The remainder of the theorem is easy:
+        <m>eN = N</m> is the identity and
+        <m>g^{-1} N</m> is the inverse of <m>gN</m>.
+            The order of <m>G/N</m> is,
+            of course, the number of cosets of <m>N</m> in <m>G</m>.
+      </p>
+    </proof>
+  </theorem>
+
+  <p permid="XHZ">
+        It is very important to remember that the elements in a factor group are
+    <em>sets of elements</em> in the original group.
+  </p>
+
+  <example xml:id="example-normal-factor-s3" permid="rtz">
+    <p permid="qQW">
+          Consider the normal subgroup of <m>S_3</m>,
+      <m>N = \{ (1), (123), (132) \}</m>.
+          The cosets of <m>N</m> in <m>S_3</m> are <m>N</m> and <m>(12) N</m>.
+          The factor group <m>S_3 / N</m> has the following multiplication table.
     </p>
 
-    <theorem xml:id="theorem-cycle-length-theorem" permid="KKn">
-      <statement>
-        <p permid="qoT">
-          Two cycles <m>\tau</m> and <m>\mu</m> in <m>S_n</m> have the same length if and only if there exists a
-          <m>\sigma \in S_n</m> such that <m>\mu = \sigma \tau \sigma^{-1}</m>.
-        </p>
-      </statement>
+    <sidebyside width="100%" permid="jPa">
+      <!-- math table -->
+      <p permid="WYf">
+        <me permid="HtI">
+              \begin{array}{c|cc}
+              &amp; N &amp; (12) N \\ \hline
+              N &amp; N &amp; (12) N \\
+              (12) N &amp; (12) N &amp; N
+              \end{array}
+        </me>
+      </p>
+    </sidebyside>
 
-      <proof permid="pMd">
-        <p permid="FxR">
-          Suppose that
-          <md permid="vnh">
-            <mrow>\tau &amp; = (a_1, a_2, \ldots, a_k )</mrow>
-            <mrow>\mu  &amp; = (b_1, b_2, \ldots, b_k )</mrow>
-          </md>.
-          Define <m>\sigma</m> to be the permutation
-          <md permid="buq">
-            <mrow>\sigma( a_1 ) &amp; = b_1</mrow>
-            <mrow>\sigma( a_2 ) &amp; = b_2</mrow>
-            <mrow>&amp; \vdots</mrow>
-            <mrow>\sigma( a_k ) &amp; = b_k</mrow>
-          </md>.
-          Then <m>\mu = \sigma \tau \sigma^{-1}</m>.
-        </p>
+    <p permid="Dfo">
+          This group has order 2, and you might think it looks a lot like <m>{\mathbb Z}_2</m> (in <xref ref="isomorph"/>
+ we will see that this group is <term>isomorphic</term> to <m>\Z_2</m>).
+          At first, multiplying cosets seems both complicated and strange;
+          however, notice that <m>S_3 / N</m> is a smaller group.
+          The factor group displays a certain amount of information about <m>S_3</m>.
+          Actually, <m>N = A_3</m>, the group of even permutations,
+          and <m>(12) N = \{ (12), (13), (23) \}</m> is the set of odd permutations.
+          The information captured in <m>G/N</m> is parity;
+          that is, multiplying two even or two odd permutations results in an even permutation,
+          whereas multiplying an odd permutation by an even permutation yields an odd permutation.
+  </p>
+</example>
 
-        <p permid="lFa">
-          Conversely, suppose that <m>\tau = (a_1, a_2, \ldots,
-          a_k )</m> is a <m>k</m>-cycle and <m>\sigma \in S_n</m>.
-          If <m>\sigma( a_i ) = b</m> and
-          <m>\sigma( a_{(i \bmod k) + 1}) = b'</m>, then <m>\mu( b) = b'</m>.
-          Hence,
-          <me permid="HBz">
-            \mu = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k) )
-          </me>.
-          Since <m>\sigma</m> is one-to-one and onto,
-          <m>\mu</m> is a cycle of the same length as <m>\tau</m>.
-        </p>
-      </proof>
-    </theorem>
+<example xml:id="example-normal-factor-z3" permid="XAI">
+  <p permid="jmx">
+          Consider the normal subgroup
+    <m>3 {\mathbb Z}</m> of <m>{\mathbb Z}</m>.
+          The cosets of <m>3 {\mathbb Z}</m> in <m>{\mathbb Z}</m> are
+    <md permid="nAR">
+      <mrow>0 + 3 {\mathbb Z} &amp; = \{ \ldots, -3, 0, 3, 6, \ldots \}</mrow>
+      <mrow>1 + 3 {\mathbb Z} &amp; = \{ \ldots, -2, 1, 4, 7, \ldots \}</mrow>
+      <mrow>2 + 3 {\mathbb Z} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}</mrow>
+    </md>.
+          The group <m>{\mathbb Z}/ 3 {\mathbb Z}</m> is given by the Cayley table below.
+  </p>
 
-    <reading-questions xml:id="rqs-lagrange" permid="pNv">
-      <exercise permid="uxo">
-        <statement>
-          <p permid="rCI">
-            What does Lagrange's theorem tell us?  Explain in your own words.   
-          </p>
-        </statement>
-      </exercise>
-      <exercise permid="aEx">
-        <statement>
-          <p permid="XJR">
-            I'm thinking of a group of order <m>29</m>.  How many subgroups does the group have?  What does this have to do with Lagrange's theorem?
-          </p>
-        </statement>
-      </exercise>
-      <exercise permid="GLG">
-        <statement>
-          <p permid="DRa">
-            If a group has order 12, must it have a subgroup of order 6?  Briefly explain.
-          </p>
-        </statement>
-      </exercise>
-      <exercise permid="mSP">
-        <statement>
-          <p permid="jYj">
+  <sidebyside width="100%" permid="PWj">
+    <!-- math table -->
+    <p permid="PtG">
+      <me permid="TIa">
+              \begin{array}{c|ccc}
+              + &amp; 0 + 3{\mathbb Z} &amp; 1 + 3{\mathbb Z} &amp; 2 + 3{\mathbb Z} \\\hline
+              0 + 3{\mathbb Z} &amp; 0 + 3{\mathbb Z} &amp; 1 + 3{\mathbb Z} &amp; 2 + 3{\mathbb Z} \\
+              1 + 3{\mathbb Z} &amp; 1 + 3{\mathbb Z} &amp; 2 + 3{\mathbb Z} &amp; 0 + 3{\mathbb Z} \\
+              2 + 3{\mathbb Z} &amp; 2 + 3{\mathbb Z} &amp; 0 + 3{\mathbb Z} &amp; 1 + 3{\mathbb Z}
+              \end{array}
+      </me>
+    </p>
+  </sidebyside>
+
+  <p permid="vAP">
+          In general, the subgroup <m>n {\mathbb Z}</m> of <m>{\mathbb Z}</m> is normal.
+          The cosets of <m>{\mathbb Z } / n {\mathbb Z}</m> are
+    <md permid="zPj">
+      <mrow>n {\mathbb Z}</mrow>
+      <mrow>1 + n {\mathbb Z}</mrow>
+      <mrow>2 + n {\mathbb Z}</mrow>
+      <mrow>\vdots</mrow>
+      <mrow>(n-1) + n {\mathbb Z}</mrow>
+    </md>.
+          The sum of the cosets <m>k + n{\mathbb Z}</m> and
+    <m>l + n{\mathbb Z}</m> is <m>k+l + n{\mathbb Z}</m>.
+          Notice that we have written our cosets additively,
+          because the group operation is integer addition.
+  </p>
+</example>
+
+<example xml:id="example-normal-factor_dn" permid="DHR">
+  <p permid="bHY">
+          Consider the dihedral group <m>D_n</m>,
+          generated by the two elements <m>r</m> and <m>s</m>, satisfying the relations
+    <md permid="fWs">
+      <mrow>r^n &amp; = \identity</mrow>
+      <mrow>s^2 &amp; = \identity</mrow>
+      <mrow>srs &amp; = r^{-1}</mrow>
+    </md>.
+          The element <m>r</m> actually generates the cyclic subgroup of rotations,
+    <m>R_n</m>, of <m>D_n</m>.
+          Since <m>srs^{-1} = srs = r^{-1} \in R_n</m>,
+          the group of rotations is a normal subgroup of <m>D_n</m>;
+          therefore, <m>D_n / R_n</m> is a group.
+          The group has exactly two elements, so it will look just like 
+    <m>{\mathbb Z}_2</m>.
+  </p>
+</example>
+</subsection>
+
+<reading-questions xml:id="rqs-factor-groups" permid="BkP">
+<exercise permid="hrY">
+  <statement>
+    <p permid="FUI">
+            Give two ways we can can be sure that a subgroup <m>H</m> of a group <m>G</m> is normal.
+    </p>
+  </statement>
+</exercise>
+<exercise permid="Nzh">
+  <statement>
+    <p permid="mbR">
+            What does the notation <m>G/H</m> represent?  What does the notation <m>[G:H]</m> represent?  How are these related?
+    </p>
+  </statement>
+</exercise>
+<exercise permid="tGq">
+  <statement>
+    <p permid="Sja">
+            The subgroup <m>8\Z</m> is normal in <m>\Z</m>.  In the factor group <m>\Z/8\Z</m>, perform the computation <m>(3+8\Z) + (7+8\Z)</m>.
+    </p>
+  </statement>
+</exercise>
+<exercise permid="ZNz">
+  <statement>
+    <p permid="yqj">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
-          </p>
-        </statement>
-      </exercise>
-    </reading-questions>
-  </section>
+    </p>
+  </statement>
+</exercise>
+</reading-questions>
 
-  <section xml:id="section-fermat-euler" permid="Kat">
-    <title>Fermat's and Euler's Theorems</title>
-    <introduction permid="lck">
-      <p permid="wNZ">
-        The <term>Euler</term> <m>\phi</m>-<term>function</term><idx><h>Euler <m>\phi</m>-function</h></idx> is the map <m>\phi : {\mathbb N } \rightarrow {\mathbb N}</m> defined by
-        <m>\phi(n) = 1</m> for <m>n=1</m>, and, for <m>n \gt 1</m>,
-        <m>\phi(n)</m> is the number of positive integers <m>m</m> with
-        <m>1 \leq m \lt n</m> and <m>\gcd(m,n) = 1</m>.
-      </p>
+<exercises xml:id="practice-normal">
+<title>Practice Problems</title>
+<exercise xml:id="ex-d4-normal">
+  <statement>
+    <p>
+            Let <m>G = D_4</m>, the group of symmetries of a square, and take <m>H = \{r_0, r_2, d_1, d_2\}</m>.  Is <m>H</m> normal in <m>G</m>?  If so, how many elements are in the factor group <m>G/H</m>?  Write out its group table.
+    </p>
+  </statement>
+  <solution>
+    <p>
+            Yes, <m>H</m> is normal in <m>G</m>.  You can see this by checking left vs right cosets.  In fact, you see that there will only be two cosets.  If you take any <m>a \in H</m>, we have <m>aH = H = Ha</m>.  What about <m>b \notin H</m>?  You can quickly check that we will have <m>bH = Hb</m>. 
+    </p>
 
-      <p permid="cVi">
-        From <xref ref="proposition-zn-equiv-classes"/>, we know that the order of <m>U(n)</m>,
-        the group of units in <m>{\mathbb Z}_n</m>, is <m>\phi(n)</m>.
-        For example,
-        <m>|U(12)| = \phi(12) = 4</m> since the numbers that are relatively prime to 12 are 1, 5, 7, and 11.
-        For any prime <m>p</m>, <m>\phi(p) = p-1</m>.
-        We state these results in the following theorem.
-      </p>
+    <p>
+            The factor group <m>G/H</m> will have order 2, since <m>|G/H| = [G:H] = \frac{|G|}{|H|}</m>.   Thus writing it's group table will be very easy.  Use <m>H</m> and <m>r_1H</m> as the two elements.  <m>H</m> is the identity, and <m>r_1Hr_1H = H</m>.
+    </p>
+  </solution>
+</exercise>
 
-      <theorem xml:id="theorem-cosets-theorem-11" permid="qRw">
-        <statement>
-          <p permid="Wwc">
-            Let <m>U(n)</m> be the group of units in <m>{\mathbb Z}_n</m>.
-            Then <m>|U(n)| = \phi(n)</m>.
-          </p>
-        </statement>
-      </theorem>
+<exercise>
+  <statement>
+    <p>
+            A <term>conjugate</term> of an element <m>x \in G</m> is an element of <m>G</m> with the form <m>gxg\inv</m> for some <m>g \in G</m>.  Using <m>G = D_4</m> and <m>H = \{r_0, r_2, d_1, d_2\}</m>, find all the conjugates of all the elements of <m>H</m>.  What do you notice? 
+    </p>
+  </statement>
+  <solution>
+    <p>
+            The conjuages of <m>r_0</m> are all <m>r_0</m>, since <m>gr_0g\inv = gg\inv = r_0</m> for any <m>g \in G</m>.  It is easy to check that the conjugates of <m>r_2</m> are allways <m>r_2</m>. Let's find some conjugates of <m>d_1</m>:
+      <md>
+        <mrow>r_0d_1r_0\inv \amp = d_1 </mrow>
+        <mrow>r_1d_1r_1\inv \amp = d_2 </mrow>
+        <mrow>r_2d_1r_2\inv \amp = d_1 </mrow>
+        <mrow>r_3d_1r_3\inv \amp = d_2 </mrow>
+        <mrow>hd_1h\inv \amp = d_2 </mrow>
+        <mrow>vd_1v\inv \amp = d_2 </mrow>
+        <mrow>d_1d_1d_1\inv \amp = d_1 </mrow>
+        <mrow>d_2d_1d_2\inv \amp = d_1 </mrow>
+      </md>.
+            Similarly, the conjugates of <m>d_2</m> will be either <m>d_1</m> or <m>d_2</m>.
+    </p>
 
-      <p permid="Jcr">
-        The following theorem is an important result in number theory,
-        due to Leonhard Euler.
-      </p>
+    <p>
+            Note that the conjugates for things in <m>H</m> are always (possibly different) things in <m>H</m>.  We say that <m>H</m> is <em>closed</em> under conjugates.  Of course we knew this would happen since <m>H</m> is normal in <m>G</m>.
+    </p>
+  </solution>
+</exercise>
 
-      <theorem xml:id="theorem-eulers_theorem" permid="WYF">
-        <title>Euler's Theorem</title>
-        <statement>
-          <p permid="CDl">
-            Let <m>a</m> and <m>n</m> be integers such that <m>n \gt 0</m> and <m>\gcd(a, n) = 1</m>.
-            Then <m>a^{\phi(n)} \equiv 1 \pmod{n}</m>.
-          </p>
-        </statement>
-
-        <proof permid="VTm">
-          <p permid="RMj">
-            By <xref ref="theorem-cosets-theorem-11"/> the order of <m>U(n)</m> is <m>\phi(n)</m>.
-            Consequently, <m>a^{\phi(n)} = 1</m> for all <m>a \in U(n)</m>;
-            or <m>a^{\phi(n)} - 1</m> is divisible by <m>n</m>.
-            Therefore, <m>a^{\phi(n)} \equiv 1 \pmod{n}</m>.
-          </p>
-        </proof>
-      </theorem>
-
-      <p permid="pjA">
-        If we consider the special case of Euler's Theorem in which <m>n = p</m> is prime and recall that <m>\phi(p) = p - 1</m>,
-        we obtain the following result, due to Pierre de Fermat.
-            <idx><h>Fermat, Pierre de</h></idx>
-      </p>
-
-      <theorem xml:id="theorem-cosets-theorem-13" permid="DfO">
-        <title>Fermat's Little Theorem</title>
-        <idx>
-        <h>Fermat's Little Theorem</h>
-        </idx>
-        <statement>
-          <p permid="iKu">
-            Let <m>p</m> be any prime number and suppose that <m>p \notdivide a</m>
-            (<m>p</m> does not divide <m>a</m>).
-
-            <notation>
-              <usage>a \notdivide b</usage>
-              <description><m>a</m> does not divide <m>b</m></description>
-            </notation>
-
-            Then
-            <me permid="nII">
-              a^{p-1} \equiv 1 \pmod{ p }
-            </me>.
-            Furthermore, for any integer <m>b</m>,
-            <m>b^p \equiv b \pmod{ p}</m>.
-          </p>
-        </statement>
-      </theorem>
-      <paragraphs permid="RES">
-        <title>Sage</title>
-        <p permid="VqJ">
-          Sage can create all the subgroups of a group,
-          so long as the group is not too large.
-          It can also create the cosets of a subgroup.
+<exercise>
+  <statement>
+    <p>
+            Prove that if <m>G</m> is abelian and <m>H</m> is a subgroup, that <m>G/H</m> is abelian.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <proof>
+        <p>
+                Consider two arbitrary elements of <m>G/H</m>:          <m>aH</m> and <m>bH</m>.  Note that <m>a,b \in G</m>, so <m>ab = ba</m>. We have 
+          <me>
+                  aHbH = abH = baH = bHaH
+          </me>.
+                Thus <m>G/H</m> is abelian. 
         </p>
-      </paragraphs>
+      </proof>
+    </p>
+  </solution>
+</exercise>
 
-    </introduction>
+<exercise>
+  <statement>
+    <p>
+            True or false: If <m>H</m> is abelian and <m>G/H</m> is abelian, then <m>G</m> is abelian.  Prove your answer.
+    </p>
+  </statement>
+  <hint>
+    <p>
+            Look at <xref ref="ex-d4-normal"/>
+.
+    </p>
+  </hint>
+</exercise>
 
-    <subsection xml:id="cosets-subsection-historical-note" permid="AGH">
-      <title>Historical Note</title>
-      <p permid="Owe">
-        Joseph-Louis Lagrange
-            <idx><h>Lagrange, Joseph-Louis</h></idx>
-        (1736<ndash/>1813), born in Turin, Italy,
-        was of French and Italian descent.
-        His talent for mathematics became apparent at an early age.
-        Leonhard Euler
-            <idx><h>Euler, Leonhard</h></idx>
-        recognized Lagrange's abilities when Lagrange, who was only 19,
-        communicated to Euler some work that he had done in the calculus of variations.
-        That year he was also named a professor at the Royal Artillery School in Turin.
-        At the age of 23 he joined the Berlin Academy.
-        Frederick the Great had written to Lagrange proclaiming that the
-        <q>greatest king in Europe</q>
-        should have the <q>greatest mathematician in Europe</q> at his court.
-        For 20 years Lagrange held the position vacated by his mentor, Euler.
-        His works include contributions to number theory,
-        group theory, physics and mechanics,
-        the calculus of variations,
-        the theory of equations, and differential equations.
-        Along with Laplace and Lavoisier, Lagrange was one of the people responsible for designing the metric system.
-        During his life Lagrange profoundly influenced the development of mathematics,
-        leaving much to the next generation of mathematicians in the form of examples and new problems to be solved.
-      </p>
-    </subsection>
-  </section>
+<exercise>
+  <statement>
+    <p>
+            Let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Prove that <m>H</m> is not normal in <m>G</m>.  Then give a specific example of what goes wrong if you try to define coset multiplication on the set of cosets <m>G/H</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+            Consider <m>r_1H = \{r_1, d_1\}</m>.  But <m>Hr_1 = \{r_1, d_2\}</m>.  So <m>r_1H \ne Hr_1</m>, so <m>H</m> is not normal.
+    </p>
+
+    <p>
+            To see what goes wrong with defining multiplication, consider <m>r_1Hr_1H = r_1r_1H = r_2H</m>.  This is the coset <m>r_2H = \{r_2, v\}</m>.  But since <m>r_1H = d_1H</m>, we should get the same set if we multiply <m>d_1Hd_1H = d_1d_1H = r_0H</m>.  But of course we don't, since <m>r_0H = H = \{r_0, h\}</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+            Again let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Show that <m>H </m> is not closed under conjugates.
+    </p>
+  </statement>
+  <solution>
+    <p>
+            We know <m>H</m> won't be closed under conjugates because <m>H</m> is not normal in <m>G</m>.  But to be sure, consider <m>r_1hr_1\inv = r_1hr_3 = v</m>.  Since <m>h \in H</m> but <m>v \notin H</m>, we see that <m>H</m> is not closed under conjugates.
+    </p>
+  </solution>
+</exercise>
+</exercises>
+
+
+<exercises xml:id="collected-normal">
+<title>Collected Homework</title>
+
+<exercise number="C1">
+  <statement>
+    <p>
+          Let <m>G = S_3</m> and <m>H = \{(1), (13)\}</m>. 
+      <ol>
+        <li>
+          <p>
+                Find the three (left) cosets of <m>H</m> in <m>G</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+                Explain what goes wrong if you try to define an operation on the set of cosets <m>G/H</m>.  Do this with a specific example using this <m>G</m> and <m>H</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+                Write out all the conjugates of <m>H</m> in <m>G</m>.  That is, find <m>gxg\inv</m> for all <m>x \in H</m> and <m>g \in G</m>.  Is <m>H</m> closed under conjugates?
+          </p>
+        </li>
+        <li>
+          <p>
+                Show that <m>H</m> is not normal in <m>G</m> using the definition (about left and right cosets).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+
+</exercise>
+
+<exercise number="C2">
+  <statement>
+    <p>
+          BONUS! Prove that if <m>[G : H] = 2</m> then <m>H</m> is normal in <m>G</m>. 
+    </p>
+  </statement>
+  <hint>
+    <p>
+          This is not all that hard.  Try an example (such as <xref ref="ex-d4-normal"/>
+) to see why this works.  Then explain it in general.
+    </p>
+  </hint>
+</exercise>
+</exercises>
+
+</section>
+
+
+
 
     <!-- Exercises with Solutions  -->
     <!-- File: cosets.xml  -->
     <!-- Title: Cosets and Lagrange's Theorem -->
-  <exercises xml:id="exercises-cosets" filenamebase="cosets" permid="FqA">
-    <title>Exercises</title>
+    <xi:include href="./exercises/cosets-additional.ptx" />
 
-    <exercise number="1" permid="WoL" xml:id="cosets-exercise-order-35">
-      <statement>
-        <p permid="aaC">
-          Suppose that <m>G</m> is a finite group with an element <m>g</m> of order <m>5</m> and an element <m>h</m> of order <m>7</m>.
-          Why must <m>|G| \geq 35</m>?
-        </p>
-      </statement>
-      <hint permid="GKo">
-        <p permid="ffU">
-          The order of <m>g</m> and the order <m>h</m> must both divide the order of <m>G</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="2" permid="CvU" xml:id="cosets-exercise-order-60">
-      <statement>
-        <p permid="GhL">
-          Suppose that <m>G</m> is a finite group with <m>60</m> elements.
-          What are the orders of possible subgroups of <m>G</m>?
-        </p>
-      </statement>
-      <hint permid="SYG">
-        <p permid="Lnd">
-          The possible orders must divide <m>60</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="3" permid="iDd" xml:id="cosets-exercise-integers-finite-index">
-      <statement>
-        <p permid="moU">
-          Prove or disprove: Every subgroup of the integers has finite index.
-        </p>
-      </statement>
-      <hint permid="fmY">
-        <p permid="rum">
-          This is true for every proper nontrivial subgroup.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="4" permid="OKm" xml:id="cosets-exercise-integers-finite-order">
-      <statement>
-        <p permid="Swd">
-          Prove or disprove: Every subgroup of the integers has finite order.
-        </p>
-      </statement>
-      <hint permid="rBq">
-        <p permid="XBv">
-          False.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="5" permid="uRv" xml:id="cosets-exercise-left-and-right-cosets">
-      <statement>
-        <p permid="yDm">
-          List the left and right cosets of the subgroups in each of the following.
-
-          <ol cols="2" permid="Meb">
-            <li permid="eRz">
-              <p permid="ivZ">
-                <m>\langle 8 \rangle</m> in <m>{\mathbb Z}_{24}</m>
-              </p>
-            </li>
-
-            <li permid="KYI">
-              <p permid="ODi">
-                <m>\langle 3 \rangle</m> in <m>U(8)</m>
-              </p>
-            </li>
-
-            <li permid="rfR">
-              <p permid="uKr">
-                <m>3 {\mathbb Z}</m> in <m>{\mathbb Z}</m>
-              </p>
-            </li>
-
-            <li permid="Xna">
-              <p permid="aRA">
-                <m>A_4</m> in <m>S_4</m>
-              </p>
-            </li>
-
-            <li permid="Duj">
-              <p permid="GYJ">
-                <m>A_n</m> in <m>S_n</m>
-              </p>
-            </li>
-
-            <li permid="jBs">
-              <p permid="nfS">
-                <m>D_4</m> in <m>S_4</m>
-              </p>
-            </li>
-
-            <li permid="PIB">
-              <p permid="Tnb">
-                <m>{\mathbb T}</m> in <m>{\mathbb C}^\ast</m>
-              </p>
-            </li>
-
-            <li permid="vPK">
-              <p permid="zuk">
-                <m>H = \{ (1), (123), (132) \}</m> in <m>S_4</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <hint permid="DPI">
-        <p permid="jPN">
-          (a) <m>\langle 8 \rangle</m>,
-          <m>1 + \langle 8 \rangle</m>,
-          <m>2 + \langle 8 \rangle</m>,
-          <m>3 + \langle 8 \rangle</m>,
-          <m>4 + \langle 8 \rangle</m>,
-          <m>5 + \langle 8 \rangle</m>,
-          <m>6 + \langle 8 \rangle</m>,
-          and <m>7 + \langle 8 \rangle</m>; (c) <m>3 {\mathbb Z}</m>,
-          <m>1 + 3 {\mathbb Z}</m>, and <m>2 + 3 {\mathbb Z}</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="6" permid="aYE" xml:id="cosets-exercise-cosets-sl2">
-      <statement>
-        <p permid="eKv">
-          Describe the left cosets of
-          <m>SL_2( {\mathbb R} )</m> in <m>GL_2( {\mathbb R})</m>.
-          What is the index of <m>SL_2( {\mathbb R} )</m> in <m>GL_2( {\mathbb R})</m>?
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="7" permid="HfN" xml:id="cosets-exercise-euler-n-15">
-      <statement>
-        <p permid="KRE">
-          Verify Euler's Theorem for <m>n = 15</m> and <m>a = 4</m>.
-        </p>
-      </statement>
-      <hint permid="wlj">
-        <p permid="PWW">
-          <m>4^{\phi(15)} \equiv 4^8 \equiv 1 \pmod{15}</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="8" permid="nmW" xml:id="cosets-exercise-fermat-4n-plus-3">
-      <statement>
-        <p permid="qYN">
-          Use Fermat's Little Theorem to show that if <m>p = 4n + 3</m> is prime,
-          there is no solution to the equation <m>x^2 \equiv -1 \pmod{p}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="9" permid="Tuf" xml:id="cosets-exercise-Z-infinite-in-Q">
-      <statement>
-        <p permid="XfW">
-          Show that the integers have infinite index in the additive group of rational numbers.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="10" permid="zBo" xml:id="cosets-exercise-R-in-C">
-      <statement>
-        <p permid="Dnf">
-          Show that the additive group of real numbers has infinite index in the additive group of the complex numbers.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="11" permid="fIx" xml:id="cosets-exercise-equivalent-cosets">
-      <statement>
-        <p permid="juo">
-          Let <m>H</m> be a subgroup of a group <m>G</m> and suppose that <m>g_1, g_2 \in G</m>.
-          Prove that the following conditions are equivalent.
-
-          <ol permid="slk">
-            <li permid="Zcn">
-              <p permid="cGN">
-                <m>g_1 H = g_2 H</m>
-              </p>
-            </li>
-
-            <li permid="Fjw">
-              <p permid="INW">
-                <m>H g_1^{-1} = H g_2^{-1}</m>
-              </p>
-            </li>
-
-            <li permid="lqF">
-              <p permid="oVf">
-                <m>g_1 H \subset g_2 H</m>
-              </p>
-            </li>
-
-            <li permid="RxO">
-              <p permid="Vco">
-                <m>g_2 \in g_1 H</m>
-              </p>
-            </li>
-
-            <li permid="xEX">
-              <p permid="Bjx">
-                <m>g_1^{-1} g_2 \in H</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="12" permid="LPG" xml:id="cosets-exercise-ghg-inverse-left-right-cosets">
-      <statement>
-        <p permid="PBx">
-          If <m>ghg^{-1} \in H</m> for all <m>g \in G</m> and <m>h \in H</m>,
-          show that right cosets are identical to left cosets.
-          That is, show that <m>gH = Hg</m> for all <m>g \in G</m>.
-        </p>
-      </statement>
-      <hint permid="hcl">
-        <p permid="wef">
-          Let <m>g_1 \in gH</m>.
-          Show that <m>g_1 \in Hg</m> and thus <m>gH \subset Hg</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="13" permid="rWP" xml:id="cosets-exercise-counterexample-proof">
-      <statement>
-        <p permid="vIG">
-          What fails in the proof of <xref ref="theorem-cosets-theorem-3"/> if
-          <m>\phi : {\mathcal L}_H \rightarrow {\mathcal R}_H</m> is defined by <m>\phi( gH ) = Hg</m>?
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="14" permid="YdY" xml:id="cosets-exercise-order-g-divides-n">
-      <statement>
-        <p permid="bPP">
-          Suppose that <m>g^n = e</m>.
-          Show that the order of <m>g</m> divides <m>n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="15" permid="Elh" xml:id="cosets-exercise-cycle-structure">
-      <statement>
-        <p permid="HWY">
-          The <term>cycle structure</term><idx><h>Permutation</h><h>cycle structure of</h></idx> of a permutation <m>\sigma</m> is defined as the unordered list of the sizes of the cycles in the cycle decomposition <m>\sigma</m>. For example, the permutation <m>\sigma = (12)(345)(78)(9)</m> has cycle structure <m>(2,3,2,1)</m> which can also be written as <m>(1, 2, 2, 3)</m>.
-        </p>
-
-        <p permid="Qfs">
-          Show that any two permutations
-          <m>\alpha, \beta \in S_n</m> have the same cycle structure if and only if there exists a permutation <m>\gamma</m> such that <m>\beta = \gamma \alpha \gamma^{-1}</m>.
-          If <m>\beta = \gamma \alpha \gamma^{-1}</m> for some <m>\gamma \in S_n</m>,
-          then <m>\alpha</m> and <m>\beta</m> are <term>conjugate</term>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="16" permid="ksq" xml:id="cosets-exercise-elements-of-order-2">
-      <statement>
-        <p permid="oeh">
-          If <m>|G| = 2n</m>,
-          prove that the number of elements of order <m>2</m> is odd.
-          Use this result to show that <m>G</m> must contain a subgroup of order 2.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="17" permid="Qzz" xml:id="cosets-exercise-index-2-ab-in-H">
-      <statement>
-        <p permid="Ulq">
-          Suppose that <m>[G : H] = 2</m>.
-          If <m>a</m> and <m>b</m> are not in <m>H</m>,
-          show that <m>ab \in H</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="18" permid="wGI" xml:id="cosets-exercise-index-2-left-right-cosets">
-      <statement>
-        <p permid="Asz">
-          If <m>[G : H] = 2</m>, prove that <m>gH = Hg</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="19" permid="cNR" xml:id="cosets-exercise-coset-intersection">
-      <statement>
-        <p permid="gzI">
-          Let <m>H</m> and <m>K</m> be subgroups of a group <m>G</m>.
-          Prove that <m>gH \cap gK</m> is a coset of <m>H \cap K</m> in <m>G</m>.
-        </p>
-      </statement>
-      <hint permid="ehF">
-        <p permid="clo">
-          Show that <m>g(H \cap K) = gH \cap gK</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="20" permid="IVa" xml:id="cosets-exercise-double-cosets">
-      <statement>
-        <p permid="MGR">
-          Let <m>H</m> and <m>K</m> be subgroups of a group <m>G</m>.
-          Define a relation <m>\sim</m> on <m>G</m> by
-          <m>a \sim b</m> if there exists an <m>h \in H</m> and a <m>k \in K</m> such that <m>hak = b</m>.
-          Show that this relation is an equivalence relation.
-          The corresponding equivalence classes are called
-          <term>double cosets</term>.
-          Compute the double cosets of <m>H = \{ (1),(123), (132) \}</m> in <m>A_4</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="21" permid="pcj" xml:id="cosets-exercise-number-generators-cyclic-group">
-      <statement>
-        <p permid="sOa">
-          Let <m>G</m> be a cyclic group of order <m>n</m>.
-          Show that there are exactly <m>\phi(n)</m> generators for <m>G</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="22" permid="Vjs" xml:id="cosets-exercise-euler-phi-formula">
-      <statement>
-        <p permid="YVj">
-          Let <m>n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}</m>,
-          where <m>p_1, p_2, \ldots, p_k</m> are distinct primes.
-          Prove that
-          <me permid="YzK">
-            \phi(n) =  n \left( 1 - \frac{1}{p_1} \right) \left( 1 - \frac{1}{p_2} \right)\cdots \left( 1 - \frac{1}{p_k} \right)
-          </me>.
-        </p>
-      </statement>
-      <hint permid="CKp">
-        <p permid="Isx">
-          If <m>\gcd(m,n) = 1</m>,
-          then <m>\phi(mn) = \phi(m)\phi(n)</m> (<xref ref="integers-exercise-gcd-products"/> in <xref ref="integers"/>).
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="23" permid="BqB" xml:id="cosets-exercise-euler-phi-sum">
-      <statement>
-        <p permid="Fcs">
-          Show that
-          <me permid="QVl">
-            n = \sum_{d \mid n} \phi(d)
-          </me>
-          for all positive integers <m>n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-  </exercises>
 
 
 

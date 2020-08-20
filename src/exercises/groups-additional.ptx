@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-groups" permid="OCI">
+  <title>Additional Exercises</title>
+
+
+  <exercise permid="KCJ" xml:id="groups-exercise-symmetries-square">
+    <statement>
+      <p permid="Vcb">
+          Describe the symmetries of a square and prove that the set of symmetries is a group.
+          Give a Cayley table for the symmetries.
+          How many ways can the vertices of a square be permuted?
+          Is each permutation necessarily a symmetry of the square?
+          The symmetry group of the square is denoted by <m>D_4</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="CYk" xml:id="groups-exercise-matrices-dont-commute">
+    <statement>
+      <p permid="NxC">
+          Give an example of two elements <m>A</m> and <m>B</m> in
+        <m>GL_2({\mathbb R})</m> with <m>AB \neq BA</m>.
+      </p>
+    </statement>
+    <hint permid="Xfw">
+      <p permid="fWF">
+          Pick two matrices.
+          Almost any pair will work.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="jft" xml:id="groups-exercise-sl2-closed">
+    <statement>
+      <p permid="tEL">
+          Prove that the product of two matrices in <m>SL_2({\mathbb R})</m> has determinant one.
+      </p>
+    </statement>
+  </exercise>
+
+  <!--Todo Check references to Heisenberg group-->
+
+  <exercise permid="PmC" xml:id="groups-exercise-heisenberg-group">
+    <statement>
+      <p permid="ZLU">
+          Prove that the set of matrices of the form
+        <me permid="lTi">
+            \begin{pmatrix}
+            1 &amp; x &amp; y \\
+            0 &amp; 1 &amp; z \\
+            0 &amp; 0 &amp; 1
+            \end{pmatrix}
+        </me>
+          is a group under matrix multiplication.
+          This group, known as the
+        <term>Heisenberg group</term>,
+          is important in quantum physics.
+          Matrix multiplication in the Heisenberg group is defined by
+        <me permid="Sar">
+            \begin{pmatrix}
+            1 &amp; x &amp; y \\
+            0 &amp; 1 &amp; z \\
+            0 &amp; 0 &amp; 1
+            \end{pmatrix}
+            \begin{pmatrix}
+            1 &amp; x' &amp; y' \\
+            0 &amp; 1 &amp; z' \\
+            0 &amp; 0 &amp; 1
+            \end{pmatrix}
+            =
+            \begin{pmatrix}
+            1 &amp; x+x' &amp; y+y'+xz' \\
+            0 &amp; 1 &amp; z+z' \\
+            0 &amp; 0 &amp; 1
+            \end{pmatrix}
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="vtL" xml:id="groups-exercise-determinant-product">
+    <statement>
+      <p permid="FTd">
+          Prove that <m>\det(AB) = \det(A) \det(B)</m> in <m>GL_2({\mathbb R})</m>.
+          Use this result to show that the binary operation in the group <m>GL_2({\mathbb R})</m> is closed;
+          that is, if <m>A</m> and <m>B</m> are in <m>GL_2({\mathbb R})</m>,
+          then <m>AB \in GL_2({\mathbb R})</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="bAU" xml:id="groups-exercise-Zn-group">
+    <statement>
+      <p permid="mam">
+          Let <m>{\mathbb Z}_2^n = \{ (a_1, a_2, \ldots,
+          a_n) : a_i \in {\mathbb Z}_2 \}</m>.
+          Define a binary operation on <m>{\mathbb Z}_2^n</m> by
+        <me permid="CRt">
+            (a_1, a_2, \ldots, a_n) + (b_1, b_2, \ldots, b_n) = (a_1 + b_1, a_2 + b_2, \ldots, a_n + b_n)
+        </me>.
+          Prove that <m>{\mathbb Z}_2^n</m> is a group under this operation.
+          This group is important in algebraic coding theory.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="HId" xml:id="groups-exercise-R-star">
+    <statement>
+      <p permid="Shv">
+          Show that <m>{\mathbb R}^{\ast} = {\mathbb R} \setminus \{0 \}</m> is a group under the operation of multiplication.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="nPm" xml:id="groups-exercise-product-R-star-Z">
+    <statement>
+      <p permid="yoE">
+          Given the groups <m>{\mathbb R}^{\ast}</m> and <m>{\mathbb Z}</m>,
+          let <m>G = {\mathbb R}^{\ast} \times {\mathbb Z}</m>.
+          Define a binary operation <m>\circ</m> on <m>G</m> by <m>(a,m) \circ (b,n) = (ab,
+          m + n)</m>.
+          Show that <m>G</m> is a group under this operation.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="TWv" xml:id="groups-exercise-order-6-nonabelain">
+    <statement>
+      <p permid="evN">
+          Prove or disprove that every group containing six elements is abelian.
+      </p>
+    </statement>
+    <hint permid="UkQ">
+      <p permid="MdO">
+          There is a nonabelian group containing six elements.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="AdE" xml:id="groups-exercise-product-exponents">
+    <statement>
+      <p permid="KCW">
+          Give a specific example of some group <m>G</m> and elements
+        <m>g,
+          h \in G</m> where <m>(gh)^n \neq g^nh^n</m>.
+      </p>
+    </statement>
+    <hint permid="gzi">
+      <p permid="skX">
+          Look at the symmetry group of an equilateral triangle or a square.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="gkN" xml:id="groups-exercise-groups-8-elements">
+    <statement>
+      <p permid="qKf">
+          Give an example of three different groups with eight elements.
+          Why are the groups different?
+      </p>
+    </statement>
+    <hint permid="sNA">
+      <p permid="Ysg">
+          The are five different groups of order 8.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="MrW" xml:id="groups-exercise-n-factorial-permutations">
+    <statement>
+      <p permid="WRo">
+          Show that there are <m>n!</m> permutations of a set containing <m>n</m> items.
+      </p>
+    </statement>
+    <hint permid="FbS">
+      <p permid="Ezp">
+          Let
+        <me permid="iYC">
+            \sigma =
+            \begin{pmatrix}
+            1 &amp; 2 &amp; \cdots &amp; n \\ a_1 &amp; a_2 &amp; \cdots &amp; a_n
+            \end{pmatrix}
+        </me>
+          be in <m>S_n</m>.
+          All of the <m>a_i</m>s must be distinct.
+          There are <m>n</m> ways to choose <m>a_1</m>,
+        <m>n - 1</m> ways to choose <m>a_2, \ldots</m>, 2 ways to choose <m>a_{n - 1}</m>,
+          and only one way to choose <m>a_n</m>.
+          Therefore, we can form <m>\sigma</m> in <m>n(n - 1) \cdots 2 \cdot 1 = n!</m> ways.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="szf" xml:id="groups-exercise-additive-identity-Zn">
+    <statement>
+      <p permid="CYx">
+          Show that
+        <me permid="vmU">
+            0 + a  \equiv a + 0  \equiv a \pmod{ n }
+        </me>
+          for all <m>a \in {\mathbb Z}_n</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="YGo" xml:id="groups-exercise-multiplicative-identity-Zn">
+    <statement>
+      <p permid="jfG">
+          Prove that there is a multiplicative identity for the integers modulo <m>n</m>:
+        <me permid="bud">
+            a \cdot  1   \equiv  a \pmod{n}
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="ENx" xml:id="groups-exercise-addition-commutative-Zn">
+    <statement>
+      <p permid="PmP">
+          For each <m>a \in {\mathbb Z}_n</m> find an element <m>b \in {\mathbb Z}_n</m> such that
+        <me permid="HBm">
+            a + b \equiv b + a  \equiv 0 \pmod{ n}
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="kUG" xml:id="groups-exercise-Zn-operations-well-defined">
+    <statement>
+      <p permid="vtY">
+          Show that addition and multiplication mod <m>n</m> are well defined operations.
+          That is, show that the operations do not depend on the choice of the representative from the equivalence classes mod <m>n</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="RbP" xml:id="groups-exercise-Zn-associative">
+    <statement>
+      <p permid="bBh">
+          Show that addition and multiplication mod <m>n</m> are associative operations.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="xiY" xml:id="groups-exercise-Zn-distribute">
+    <statement>
+      <p permid="HIq">
+          Show that multiplication distributes over addition modulo <m>n</m>:
+        <me permid="TPE">
+            a(b  + c)  \equiv ab + ac  \pmod{n}
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="dqh" xml:id="groups-exercise-powers-of-inverses">
+    <statement>
+      <p permid="nPz">
+          Let <m>a</m> and <m>b</m> be elements in a group <m>G</m>.
+          Prove that <m>ab^na^{-1} = (aba^{-1})^n</m> for <m>n \in \mathbb Z</m>.
+      </p>
+    </statement>
+    <hint permid="Chm">
+      <p permid="kGy">
+        <md permid="zWN">
+          <mrow>(aba^{-1})^n &amp; = (aba^{-1})(aba^{-1}) \cdots (aba^{-1})</mrow>
+          <mrow>&amp; = ab(aa^{-1})b(aa^{-1})b \cdots b(aa^{-1})ba^{-1}</mrow>
+          <mrow>&amp; = ab^na^{-1}</mrow>
+        </md>.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise permid="Jxq" xml:id="groups-exercise-Un-idempotent">
+    <statement>
+      <p permid="TWI">
+          Let <m>U(n)</m> be the group of units in <m>{\mathbb Z}_n</m>.
+          If <m>n \gt 2</m>, prove that there is an element
+        <m>k \in U(n)</m> such that <m>k^2 = 1</m> and <m>k \neq 1</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="pEz" xml:id="groups-exercise-product-of-inverses">
+    <statement>
+      <p permid="AdR">
+          Prove that the inverse of <m>g _1 g_2 \cdots g_n</m> is <m>g_n^{-1} g_{n-1}^{-1} \cdots g_1^{-1}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise permid="VLI" xml:id="groups-exercise-prove-xa-equal-b-solution">
+    <statement>
+      <p permid="gla">
+          Prove the remainder of <xref ref="proposition-group-equations"/>
+:
+          if <m>G</m> is a group and <m>a, b \in G</m>,
+          then the equation <m>xa = b</m> has a unique solution in <m>G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="BSR" xml:id="groups-exercise-prove-exponent-laws">
+  <statement>
+    <p permid="Msj">
+          Prove <xref ref="theorem-exponent-laws"/>
+.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="iaa" xml:id="groups-exercise-cancellation-laws">
+  <statement>
+    <p permid="szs">
+          Prove the right and left cancellation laws for a group <m>G</m>;
+          that is, show that in the group <m>G</m>,
+      <m>ba = ca</m> implies <m>b = c</m> and <m>ab = ac</m> implies <m>b = c</m> for elements <m>a,
+          b, c \in G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Ohj" xml:id="groups-exercise-a-hat-square-equal-1">
+  <statement>
+    <p permid="YGB">
+          Show that if <m>a^2 = e</m> for all elements <m>a</m> in a group <m>G</m>,
+          then <m>G</m> must be abelian.
+    </p>
+  </statement>
+  <hint permid="Tfx">
+    <p permid="QNH">
+          Since <m>abab = (ab)^2 = e = a^2 b^2 = aabb</m>,
+          we know that <m>ba = ab</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="uos" xml:id="groups-exercise-finite-group-even-order">
+  <statement>
+    <p permid="ENK">
+          Show that if <m>G</m> is a finite group of even order,
+          then there is an <m>a \in G</m> such that <m>a</m> is not the identity and <m>a^2 = e</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="avB" xml:id="groups-exercise-ab-2-and-a2-b2">
+  <statement>
+    <p permid="kUT">
+          Let <m>G</m> be a group and suppose that
+      <m>(ab)^2 = a^2b^2</m> for all <m>a</m> and <m>b</m> in <m>G</m>.
+          Prove that <m>G</m> is an abelian group.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="GCK" xml:id="groups-exercise-subgroups-Z3-times-Z3">
+  <statement>
+    <p permid="Rcc">
+          Find all the subgroups of <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m>.
+          Use this information to show that
+      <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m> is not the same group as <m>{\mathbb Z}_9</m>.
+          (See <xref ref="example-groups-z2xz2"/>
+ for a short description of the product of groups.)
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="mJT" xml:id="groups-exercise-subgroups-S3">
+  <statement>
+    <p permid="xjl">
+          Find all the subgroups of the symmetry group of an equilateral triangle.
+    </p>
+  </statement>
+  <hint permid="DWz">
+    <p permid="wUQ">
+      <m>H_1 = \{ \identity \}</m>,
+      <m>H_2 = \{ \identity, \rho_1, \rho_2 \}</m>,
+      <m>H_3 = \{ \identity, \mu_1 \}</m>,
+      <m>H_4 = \{ \identity, \mu_2 \}</m>,
+      <m>H_5 = \{ \identity, \mu_3 \}</m>,      <m>S_3</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="SRc" xml:id="groups-exercise-subgroups-D4">
+  <statement>
+    <p permid="dqu">
+          Compute the subgroups of the symmetry group of a square.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="yYl" xml:id="groups-exercise-subgroup-powers-2">
+  <statement>
+    <p permid="JxD">
+          Let <m>H = \{2^k : k \in {\mathbb Z} \}</m>.
+          Show that <m>H</m> is a subgroup of <m>{\mathbb Q}^*</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="ffu" xml:id="groups-exercise-subgroup-Zn-times-Zn">
+  <statement>
+    <p permid="pEM">
+          Let <m>n = 0, 1, 2, \ldots</m> and <m>n {\mathbb Z} = \{ nk : k \in {\mathbb Z} \}</m>.
+          Prove that <m>n {\mathbb Z}</m> is a subgroup of <m>{\mathbb Z}</m>.
+          Show that these subgroups are the only subgroups of <m>\mathbb{Z}</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="groups-exercise-circle-group" permid="LmD">
+  <statement>
+    <p permid="VLV">
+          Let <m>{\mathbb T} = \{ z \in {\mathbb C}^* : |z| =1 \}</m>.
+          Prove that <m>{\mathbb T}</m> is a subgroup of <m>{\mathbb C}^*</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="rtM" xml:id="groups-exercise-so-2">
+  <statement>
+    <p permid="BTe">
+          Let <m>G</m> consist of the <m>2 \times 2</m> matrices of the form
+      <me permid="Yzx">
+            \begin{pmatrix}
+            \cos \theta &amp; -\sin \theta \\
+            \sin \theta &amp; \cos \theta
+            \end{pmatrix}
+      </me>,
+          where <m>\theta \in {\mathbb R}</m>.
+          Prove that <m>G</m> is a subgroup of <m>SL_2({\mathbb R})</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="XAV" xml:id="groups-exercise-a-plus-b-sqrt-2">
+  <statement>
+    <p permid="ian">
+          Prove that
+      <me permid="xch">
+            G = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \text{ and } a \text{ and } b \text{ are not both zero} \}
+      </me>
+          is a subgroup of <m>{\mathbb R}^{\ast}</m> under the group operation of multiplication.
+    </p>
+  </statement>
+  <hint permid="UUK">
+    <p permid="dbZ">
+          The identity of <m>G</m> is <m>1 = 1 + 0 \sqrt{2}</m>.
+          Since <m>(a + b \sqrt{2}\, )(c + d \sqrt{2}\, ) = (ac + 2bd) + (ad + bc)\sqrt{2}</m>,
+      <m>G</m> is closed under multiplication.
+          Finally, <m>(a + b \sqrt{2}\, )^{-1} = a/(a^2 - 2b^2) - b\sqrt{2}/(a^2 - 2 b^2)</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="jPn" xml:id="groups-exercise-trace-0">
+  <statement>
+    <p permid="Ohw">
+          Let <m>G</m> be the group of
+      <m>2 \times 2</m> matrices under addition and
+      <me permid="djq">
+            H =
+            \left\{
+            \begin{pmatrix}
+            a &amp; b \\
+            c &amp; d
+            \end{pmatrix} :
+            a + d = 0
+            \right\}
+      </me>.
+          Prove that <m>H</m> is a subgroup of <m>G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="PWw" xml:id="groups-exercise-sl-2-Z">
+  <statement>
+    <p permid="uoF">
+          Prove or disprove: <m>SL_2( {\mathbb Z} )</m>,
+          the set of <m>2 \times 2</m> matrices with integer entries and determinant one,
+          is a subgroup of <m>SL_2( {\mathbb R} )</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="wdF" xml:id="groups-exercise-subgroups-Q8">
+  <statement>
+    <p permid="avO">
+          List the subgroups of the quaternion group, <m>Q_8</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="ckO" xml:id="groups-exercise-intersect-subgroups">
+  <statement>
+    <p permid="GCX">
+          Prove that the intersection of two subgroups of a group <m>G</m> is also a subgroup of <m>G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="IrX" xml:id="groups-exercise-union-subgroups">
+  <statement>
+    <p permid="mKg">
+          Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
+          then <m>H \cup K</m> is a subgroup of <m>G</m>.
+    </p>
+  </statement>
+  <hint permid="FLM">
+    <p permid="Jji">
+          Look at <m>S_3</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="ozg" xml:id="groups-exercise-product-subgroups">
+  <statement>
+    <p permid="SRp">
+          Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
+          then <m>H K = \{hk : h \in H \text{ and } k \in K \}</m> is a subgroup of <m>G</m>.
+          What if <m>G</m> is abelian?
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="groups-exercise-center-group" permid="UGp">
+  <statement>
+    <p permid="yYy">
+          Let <m>G</m> be a group and <m>g \in G</m>.
+          Show that
+      <me permid="mDc">
+            Z(G) = \{ x \in G : gx = xg \text{ for all } g \in G \}
+      </me>
+          is a subgroup of <m>G</m>.
+          This subgroup is called the <term>center</term> of <m>G</m>.
+
+      <notation>
+        <usage>Z(G)</usage>
+        <description>the center of a group</description>
+      </notation>
+
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="ANy" xml:id="groups-exercise-a4b-a3">
+  <statement>
+    <p permid="ffH">
+          Let <m>a</m> and <m>b</m> be elements of a group <m>G</m>.
+          If <m>a^4 b = ba</m> and <m>a^3 = e</m>,
+          prove that <m>ab = ba</m>.
+    </p>
+  </statement>
+  <hint permid="eow">
+    <p permid="pqr">
+      <m>b a = a^4 b = a^3 a b = ab</m>
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="gUH" xml:id="groups-exercise-infinite-subgroups">
+  <statement>
+    <p permid="LmQ">
+          Give an example of an infinite group in which every nontrivial subgroup is infinite.
+    </p>
+  </statement>
+</exercise>
+
+<!--Todo Move the old Exercise 50 to struct.xml-->
+<!--
+	<exercise>
+		<statement>
+			<p>Give an example of an infinite group in which every proper subgroup is finite.</p>
+		</statement>
+		<solution>
+			<p>Such groups exist, but the answer is complicated.</p>
+		</solution>
+	</exercise>
+
+-->
+<exercise permid="NbQ" xml:id="groups-exercise-xy-equal-x-1-y-1">
+  <statement>
+    <p permid="rtZ">
+          If <m>xy = x^{-1} y^{-1}</m> for all <m>x</m> and <m>y</m> in <m>G</m>,
+          prove that <m>G</m> must be abelian.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="tiZ" xml:id="groups-exercise-subgroups-of-nonabelian-groups">
+  <statement>
+    <p permid="XBi">
+          Prove or disprove: Every proper subgroup of a nonabelian group is nonabelian.
+    </p>
+  </statement>
+</exercise>
+
+<!--Todo Fix references to centralizer-->
+
+<exercise permid="Zqi" xml:id="groups-exercise-centralizer">
+  <statement>
+    <p permid="DIr">
+          Let <m>H</m> be a subgroup of <m>G</m> and
+      <me permid="SKl">
+            C(H) = \{ g \in G : gh = hg \text{ for all } h \in H \}
+      </me>.
+          Prove <m>C(H)</m> is a subgroup of <m>G</m>.
+          This subgroup is called the <term>centralizer</term> of <m>H</m> in <m>G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Fxr" xml:id="groups-exercise-commutator">
+  <statement>
+    <p permid="jPA">
+          Let <m>H</m> be a subgroup of <m>G</m>.
+          If <m>g \in G</m>, show that
+      <m>gHg^{-1} = \{ghg^{-1} : h\in H\}</m> is also a subgroup of <m>G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Ope" xml:id="cyclic-exercise-prove-or-disprove-cyclic-facts">
+  <statement>
+    <p permid="Sim">
+          Prove or disprove each of the following statements.
+
+      <ol permid="SRT">
+        <li permid="UHg">
+          <p permid="iZg">
+                All of the generators of <m>{\mathbb Z}_{60}</m> are prime.
+          </p>
+        </li>
+
+        <li permid="AOp">
+          <p permid="Pgp">
+            <m>U(8)</m> is cyclic.
+          </p>
+        </li>
+
+        <li permid="gVy">
+          <p permid="vny">
+            <m>{\mathbb Q}</m> is cyclic.
+          </p>
+        </li>
+
+        <li permid="NcH">
+          <p permid="buH">
+                If every proper subgroup of a group <m>G</m> is cyclic,
+                then <m>G</m> is a cyclic group.
+          </p>
+        </li>
+
+        <li permid="tjQ">
+          <p permid="HBQ">
+                A group with a finite number of subgroups is finite.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint permid="Ryf">
+    <p permid="dcQ">
+          (a) False; (c) false; (e) true.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="uwn" xml:id="cyclic-exercise-order-of-elements">
+  <statement>
+    <p permid="ypv">
+          Find the order of each of the following elements.
+
+      <ol cols="2" permid="yZc">
+        <li permid="ZqZ">
+          <p permid="nIZ">
+            <m>5 \in {\mathbb Z}_{12}</m>
+          </p>
+        </li>
+
+        <li permid="Fyi">
+          <p permid="TQi">
+            <m>\sqrt{3} \in {\mathbb R}</m>
+          </p>
+        </li>
+
+        <li permid="lFr">
+          <p permid="zXr">
+            <m>\sqrt{3} \in {\mathbb R}^\ast</m>
+          </p>
+        </li>
+
+        <li permid="RMA">
+          <p permid="geA">
+            <m>-i \in {\mathbb C}^\ast</m>
+          </p>
+        </li>
+
+        <li permid="xTJ">
+          <p permid="MlJ">
+            <m>72 \in {\mathbb Z}_{240}</m>
+          </p>
+        </li>
+
+        <li permid="eaS">
+          <p permid="ssS">
+            <m>312 \in {\mathbb Z}_{471}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint permid="dMx">
+    <p permid="JjZ">
+          (a) <m>12</m>; (c) infinite; (e) <m>10</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="aDw" xml:id="cyclic-exercise-subgroup-elements">
+  <statement>
+    <p permid="ewE">
+          List all of the elements in each of the following subgroups.
+
+      <ol permid="fgl">
+        <li permid="Kib">
+          <p permid="YAb">
+                The subgroup of <m>{\mathbb Z}</m> generated by <m>7</m>
+          </p>
+        </li>
+
+        <li permid="qpk">
+          <p permid="EHk">
+                The subgroup of <m>{\mathbb Z}_{24}</m> generated by <m>15</m>
+          </p>
+        </li>
+
+        <li permid="Wwt">
+          <p permid="kOt">
+                All subgroups of <m>{\mathbb Z}_{12}</m>
+          </p>
+        </li>
+
+        <li permid="CDC">
+          <p permid="QVC">
+                All subgroups of <m>{\mathbb Z}_{60}</m>
+          </p>
+        </li>
+
+        <li permid="iKL">
+          <p permid="xcL">
+                All subgroups of <m>{\mathbb Z}_{13}</m>
+          </p>
+        </li>
+
+        <li permid="ORU">
+          <p permid="djU">
+                All subgroups of <m>{\mathbb Z}_{48}</m>
+          </p>
+        </li>
+
+        <li permid="uZd">
+          <p permid="Jrd">
+                The subgroup generated by 3 in <m>U(20)</m>
+          </p>
+        </li>
+
+        <li permid="bgm">
+          <p permid="pym">
+                The subgroup generated by 5 in <m>U(18)</m>
+          </p>
+        </li>
+
+        <li permid="Hnv">
+          <p permid="VFv">
+                The subgroup of <m>{\mathbb R}^\ast</m> generated by <m>7</m>
+          </p>
+        </li>
+
+        <li permid="nuE">
+          <p permid="BME">
+                The subgroup of <m>{\mathbb C}^\ast</m> generated by <m>i</m> where <m>i^2 = -1</m>
+          </p>
+        </li>
+
+        <li permid="TBN">
+          <p permid="hTN">
+                The subgroup of <m>{\mathbb C}^\ast</m> generated by <m>2i</m>
+          </p>
+        </li>
+
+        <li permid="zIW">
+          <p permid="OaW">
+                The subgroup of <m>{\mathbb C}^\ast</m> generated by <m>(1 + i) / \sqrt{2}</m>
+          </p>
+        </li>
+
+        <li permid="fQf">
+          <p permid="uif">
+                The subgroup of <m>{\mathbb C}^\ast</m> generated by <m>(1 + \sqrt{3}\, i) / 2</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint permid="qaP">
+    <p permid="pri">
+          (a) <m>7 {\mathbb Z} = \{ \ldots, -7, 0, 7, 14, \ldots \}</m>; (b) <m>\{ 0, 3, 6, 9, 12, 15, 18, 21 \}</m>; (c) <m>\{ 0 \}</m>,
+      <m>\{ 0, 6 \}</m>,      <m>\{ 0, 4, 8 \}</m>,      <m>\{ 0, 3, 6, 9 \}</m>,
+      <m>\{ 0, 2, 4, 6, 8, 10 \}</m>; (g)
+      <m>\{ 1, 3, 7, 9 \}</m>; (j) <m>\{ 1, -1, i, -i \}</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="GKF" xml:id="cyclic-exercise-subgroups-GL2">
+  <statement>
+    <p permid="KDN">
+          Find the subgroups of <m>GL_2( {\mathbb R })</m> generated by each of the following matrices.
+
+      <ol cols="3" permid="Lnu">
+        <li permid="tTK">
+          <p permid="ceB">
+            <m>\displaystyle \begin{pmatrix}
+                0 &amp; 1 \\
+                -1 &amp; 0
+                \end{pmatrix}</m>
+          </p>
+        </li>
+
+        <li permid="aaT">
+          <p permid="IlK">
+            <m>\displaystyle
+                \begin{pmatrix}
+                0 &amp; 1/3 \\
+                3 &amp; 0
+                \end{pmatrix}</m>
+          </p>
+        </li>
+
+        <li permid="Gic">
+          <p permid="osT">
+            <m>\displaystyle
+                \begin{pmatrix}
+                1 &amp; -1 \\
+                1 &amp; 0
+                \end{pmatrix}</m>
+          </p>
+        </li>
+
+        <li permid="mpl">
+          <p permid="UAc">
+            <m>\displaystyle
+                \begin{pmatrix}
+                1 &amp; -1 \\
+                0 &amp; 1
+                \end{pmatrix}</m>
+          </p>
+        </li>
+
+        <li permid="Swu">
+          <p permid="AHl">
+            <m>\displaystyle
+                \begin{pmatrix}
+                1 &amp; -1 \\
+                -1 &amp; 0
+                \end{pmatrix}</m>
+          </p>
+        </li>
+
+        <li permid="yDD">
+          <p permid="gOu">
+            <m>\displaystyle
+                \begin{pmatrix}
+                \sqrt{3}/ 2 &amp; 1/2 \\
+                -1/2 &amp; \sqrt{3}/2
+                \end{pmatrix}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint permid="Cph">
+    <p permid="Vyr">
+          (a)
+      <me permid="znK">
+            \begin{pmatrix}
+            1 &amp; 0 \\
+            0 &amp; 1
+            \end{pmatrix},
+            \begin{pmatrix}
+            -1 &amp; 0 \\
+            0 &amp; -1
+            \end{pmatrix},
+            \begin{pmatrix}
+            0 &amp; -1 \\
+            1 &amp; 0
+            \end{pmatrix},
+            \begin{pmatrix}
+            0 &amp; 1 \\
+            -1 &amp; 0
+            \end{pmatrix}
+      </me>.
+    </p>
+
+    <p permid="BFA">
+          (c)
+      <me permid="fuT">
+            \begin{pmatrix}
+            1 &amp; 0 \\
+            0 &amp; 1
+            \end{pmatrix},
+            \begin{pmatrix}
+            1 &amp; -1 \\
+            1 &amp; 0
+            \end{pmatrix},
+            \begin{pmatrix}
+            -1 &amp; 1 \\
+            -1 &amp; 0
+            \end{pmatrix}, \\
+            \begin{pmatrix}
+            0 &amp; 1 \\
+            -1 &amp; 1
+            \end{pmatrix},
+            \begin{pmatrix}
+            0 &amp; -1 \\
+            1 &amp; -1
+            \end{pmatrix},
+            \begin{pmatrix}
+            -1 &amp; 0 \\
+            0 &amp; -1
+            \end{pmatrix}
+      </me>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="mRO" xml:id="cyclic-exercise-order-Z18-elements">
+  <statement>
+    <p permid="qKW">
+          Find the order of every element in <m>{\mathbb Z}_{18}</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="SYX" xml:id="cyclic-exercise-order-D4-elements">
+  <statement>
+    <p permid="WSf">
+          Find the order of every element in the symmetry group of the square,
+      <m>D_4</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="zgg" xml:id="cyclic-exercise-cyclic-subgroups-Q8">
+  <statement>
+    <p permid="CZo">
+          What are all of the cyclic subgroups of the quaternion group,
+      <m>Q_8</m>?
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="fnp" xml:id="cyclic-exercise-cyclic-subgroups-U30">
+  <statement>
+    <p permid="jgx">
+          List all of the cyclic subgroups of <m>U(30)</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Luy" xml:id="cyclic-exercise-generators-subgroups-Z32">
+  <statement>
+    <p permid="PnG">
+          List every generator of each subgroup of order 8 in <m>{\mathbb Z}_{32}</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="rBH" xml:id="cyclic-exercise-elements-finite-order">
+  <statement>
+    <p permid="vuP">
+          Find all elements of finite order in each of the following groups.
+          Here the <q>
+      <m>\ast</m>
+    </q> indicates the set with zero removed.
+
+    <ol cols="3" permid="ruD">
+      <li permid="PBO">
+        <p permid="xMF">
+          <m>{\mathbb Z}</m>
+        </p>
+      </li>
+
+      <li permid="vIX">
+        <p permid="dTO">
+          <m>{\mathbb Q}^\ast</m>
+        </p>
+      </li>
+
+      <li permid="bQg">
+        <p permid="KaX">
+          <m>{\mathbb R}^\ast</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+<hint permid="Tns">
+  <p permid="hMJ">
+          (a) <m>0</m>; (b) <m>1, -1</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="XIQ" xml:id="cyclic-exercise-possible-orders-a24">
+<statement>
+  <p permid="bBY">
+          If <m>a^{24} =e</m> in a group <m>G</m>,
+          what are the possible orders of <m>a</m>?
+  </p>
+</statement>
+<hint permid="fBK">
+  <p permid="NTS">
+    <m>1, 2, 3, 4, 6, 8, 12, 24</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="DPZ" xml:id="cyclic-exercise-cyclic-group-one-generator">
+<statement>
+  <p permid="HJh">
+          Find a cyclic group with exactly one generator.
+          Can you find cyclic groups with exactly two generators?
+          Four generators?
+          How about <m>n</m> generators?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="jXi" xml:id="cyclic-exercise-cyclic-groups-order-less-then-20">
+<statement>
+  <p permid="nQq">
+          For <m>n \leq 20</m>, which groups <m>U(n)</m> are cyclic?
+          Make a conjecture as to what is true in general.
+          Can you prove your conjecture?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Qer" xml:id="cyclic-exercise-products-maynot-have-finite-orders">
+<statement>
+  <p permid="TXz">
+          Let
+    <me permid="wte">
+            A =
+            \begin{pmatrix}
+            0 &amp; 1 \\
+            -1 &amp; 0
+            \end{pmatrix}
+            \qquad \text{and} \qquad
+            B =
+            \begin{pmatrix}
+            0 &amp; -1 \\
+            1 &amp; -1
+            \end{pmatrix}
+    </me>
+          be elements in <m>GL_2( {\mathbb R} )</m>.
+          Show that <m>A</m> and <m>B</m> have finite orders but <m>AB</m> does not.
+  </p>
+</statement>
+</exercise>
+
+
+
+
+<exercise permid="UOk" xml:id="cyclic-exercise-complex-modulus">
+<statement>
+  <p permid="YHs">
+          Prove each of the following statements.
+
+    <ol cols="2" permid="wew">
+      <li permid="Tgo">
+        <p permid="Brf">
+          <m>|z| = | \overline{z}|</m>
+        </p>
+      </li>
+
+      <li permid="znx">
+        <p permid="hyo">
+          <m>z \overline{z} = |z|^2</m>
+        </p>
+      </li>
+
+      <li permid="fuG">
+        <p permid="NFx">
+          <m>z^{-1} = \overline{z} / |z|^2</m>
+        </p>
+      </li>
+
+      <li permid="LBP">
+        <p permid="tMG">
+          <m>|z +w| \leq |z| + |w|</m>
+        </p>
+      </li>
+
+      <li permid="rIY">
+        <p permid="ZTP">
+          <m>|z - w| \geq | |z| - |w||</m>
+        </p>
+      </li>
+
+      <li permid="XQh">
+        <p permid="mih">
+          <m>|z w| = |z| |w|</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="AVt" xml:id="cyclic-exercise-6-roots-of-unity">
+<statement>
+  <p permid="EOB">
+          List and graph the 6th roots of unity.
+          What are the generators of this group?
+          What are the primitive 6th roots of unity?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="hcC" xml:id="cyclic-exercise-5-roots-of-unity">
+<statement>
+  <p permid="kVK">
+          List and graph the 5th roots of unity.
+          What are the generators of this group?
+          What are the primitive 5th roots of unity?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="NjL" xml:id="cyclic-exercise-calculate-powers-Zn">
+<statement>
+  <p permid="RcT">
+          Calculate each of the following.
+
+    <ol cols="2" permid="clF">
+      <li permid="oOs">
+        <p permid="Dgs">
+          <m>292^{3171} \pmod{ 582}</m>
+        </p>
+      </li>
+
+      <li permid="UVB">
+        <p permid="jnB">
+          <m>2557^{ 341} \pmod{ 5681}</m>
+        </p>
+      </li>
+
+      <li permid="BcK">
+        <p permid="PuK">
+          <m>2071^{ 9521} \pmod{ 4724}</m>
+        </p>
+      </li>
+
+      <li permid="hjT">
+        <p permid="vBT">
+          <m>971^{ 321} \pmod{ 765}</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+<hint permid="ZMy">
+  <p permid="SDL">
+          (a) <m>292</m>; (c) <m>1523</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="tqU" xml:id="cyclic-exercise-order-of-products">
+<statement>
+  <p permid="xkc">
+          Let <m>a, b \in G</m>.
+          Prove the following statements.
+
+    <ol permid="IsO">
+      <li permid="Nrc">
+        <p permid="bJc">
+                The order of <m>a</m> is the same as the order of <m>a^{-1}</m>.
+        </p>
+      </li>
+
+      <li permid="tyl">
+        <p permid="HQl">
+                For all <m>g \in G</m>,          <m>|a| = |g^{-1}ag|</m>.
+        </p>
+      </li>
+
+      <li permid="ZFu">
+        <p permid="nXu">
+                The order of <m>ab</m> is the same as the order of <m>ba</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Zyd" xml:id="cyclic-exercise-Zpq-generators">
+<statement>
+  <p permid="drl">
+          Let <m>p</m> and <m>q</m> be distinct primes.
+          How many generators does <m>{\mathbb Z}_{pq}</m> have?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="FFm" xml:id="cyclic-exercise-Zp-hat-r-generators">
+<statement>
+  <p permid="Jyu">
+          Let <m>p</m> be prime and <m>r</m> be a positive integer.
+          How many generators does <m>{\mathbb Z}_{p^r}</m> have?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="lMv" xml:id="cyclic-exercise-Zp-subgroups">
+<statement>
+  <p permid="pFD">
+          Prove that <m>{\mathbb Z}_{p}</m> has no nontrivial subgroups if <m>p</m> is prime.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="RTE" xml:id="cyclic-exercise-orders-15-16">
+<statement>
+  <p permid="VMM">
+          If <m>g</m> and <m>h</m> have orders <m>15</m> and <m>16</m> respectively in a group <m>G</m>,
+          what is the order of <m>\langle g \rangle \cap \langle h \rangle </m>?
+  </p>
+</statement>
+<hint permid="KDA">
+  <p permid="yKU">
+    <m>|\langle g \rangle \cap \langle h \rangle| = 1</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="yaN" xml:id="cyclic-exercise-generator-am">
+<statement>
+  <p permid="BTV">
+          Let <m>a</m> be an element in a group <m>G</m>.
+          What is a generator for the subgroup <m>\langle a^m \rangle \cap \langle a^n \rangle</m>?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="ehW" xml:id="cyclic-exercise-even-number-generators-Zn">
+<statement>
+  <p permid="ibe">
+          Prove that <m>{\mathbb Z}_n</m> has an even number of generators for <m>n \gt 2</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Kpf" xml:id="cyclic-exercise-coprime-elements-Zn">
+<statement>
+  <p permid="Oin">
+          Suppose that <m>G</m> is a group and let <m>a</m>,    <m>b \in G</m>.
+          Prove that if <m>|a| = m</m> and <m>|b| = n</m> with <m>\gcd(m,n) = 1</m>,
+          then <m>\langle a \rangle \cap \langle b \rangle = \{ e \}</m>.
+  </p>
+</statement>
+</exercise>
+
+<!--Todo Fix references to torsion subgroup-->
+
+<exercise permid="qwo" xml:id="cyclic-exercise-elements-finite-order-subgroup">
+<statement>
+  <p permid="upw">
+          Let <m>G</m> be an abelian group.
+          Show that the elements of finite order in <m>G</m> form a subgroup.
+          This subgroup is called the <term>torsion subgroup</term> of <m>G</m>.
+  </p>
+</statement>
+<hint permid="Pnt">
+  <p permid="eSd">
+          The identity element in any group has finite order.
+          Let <m>g, h \in G</m> have orders <m>m</m> and <m>n</m>,
+          respectively.
+          Since <m>(g^{-1})^m = e</m> and <m>(gh)^{mn} = e</m>,
+          the elements of finite order in <m>G</m> form a subgroup of <m>G</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="WDx" xml:id="cyclic-exercise-coprime-orders-generators">
+<statement>
+  <p permid="awF">
+          Let <m>G</m> be a finite cyclic group of order <m>n</m> generated by <m>x</m>.
+          Show that if <m>y = x^k</m> where <m>\gcd(k,n) = 1</m>,
+          then <m>y</m> must be a generator of <m>G</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="CKG" xml:id="cyclic-exercise-cyclic-subgroup-order-4">
+<statement>
+  <p permid="GDO">
+          If <m>G</m> is an abelian group that contains a pair of cyclic subgroups of order <m>2</m>,
+          show that <m>G</m> must contain a subgroup of order <m>4</m>.
+          Does this subgroup have to be cyclic?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="iRP" xml:id="cyclic-exercise-order-Zpq">
+<statement>
+  <p permid="mKX">
+          Let <m>G</m> be an abelian group of order <m>pq</m> where <m>\gcd(p,q) = 1</m>.
+          If <m>G</m> contains elements <m>a</m> and <m>b</m> of order <m>p</m> and <m>q</m> respectively,
+          then show that <m>G</m> is cyclic.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="OYY" xml:id="cyclic-exercise-subgroups-of-Z">
+<statement>
+  <p permid="SSg">
+          Prove that the subgroups of <m>\mathbb Z</m> are exactly
+    <m>n{\mathbb Z}</m> for <m>n = 0, 1, 2, \ldots</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="vgh" xml:id="cyclic-exercise-generators-of-Zn">
+<statement>
+  <p permid="yZp">
+          Prove that the generators of
+    <m>{\mathbb Z}_n</m> are the integers <m>r</m> such that
+    <m>1 \leq r \lt n</m> and <m>\gcd(r,n) = 1</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="bnq" xml:id="cyclic-exercise-cyclic-ifno-nontrivial-proper-subgroup">
+<statement>
+  <p permid="fgy">
+          Prove that if <m>G</m> has no proper nontrivial subgroups,
+          then <m>G</m> is a cyclic group.
+  </p>
+</statement>
+<hint permid="glE">
+  <p permid="KZm">
+          If <m>g</m> is an element distinct from the identity in <m>G</m>,
+    <m>g</m> must generate <m>G</m>;
+          otherwise, <m>\langle g \rangle</m> is a nontrivial proper subgroup of <m>G</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="Huz" xml:id="cyclic-exercise-order-of-element-divides-order-group">
+<statement>
+  <p permid="LnH">
+          Prove that the order of an element in a cyclic group <m>G</m> must divide the order of the group.
+  </p>
+</statement>
+</exercise>
+
+<exercise xml:id="cyclic-exercise-subgroups-exist" permid="nBI">
+<statement>
+  <p permid="ruQ">
+          Prove that if <m>G</m> is a cyclic group of order <m>m</m> and <m>d \mid m</m>,
+          then <m>G</m> must have a subgroup of order <m>d</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="TIR" xml:id="cyclic-exercise-minus-one-root-of-unity">
+<statement>
+  <p permid="XBZ">
+          For what integers <m>n</m> is <m>-1</m> an <m>n</m>th root of unity?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="zQa" xml:id="cyclic-exercise-polar-product-complex">
+<statement>
+  <p permid="DJi">
+          If <m>z = r( \cos \theta + i \sin \theta)</m> and
+    <m>w = s(\cos \phi + i \sin \phi)</m> are two nonzero complex numbers,
+          show that
+    <me permid="lTZ">
+            zw = rs[ \cos( \theta + \phi) + i \sin( \theta + \phi)]
+    </me>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="fXj" xml:id="cyclic-exercise-circle-group-subgroup-C-star">
+<statement>
+  <p permid="jQr">
+          Prove that the circle group is a subgroup of <m>{\mathbb C}^*</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Mes" xml:id="cyclic-exercise-nth-root-of-unity-cyclic">
+<statement>
+  <p permid="PXA">
+          Prove that the <m>n</m>th roots of unity form a cyclic subgroup of <m>{\mathbb T}</m> of order <m>n</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="slB" xml:id="cyclic-exercise-order-of-elements-circle-group">
+<statement>
+  <p permid="weJ">
+          Let <m>\alpha \in \mathbb T</m>.
+          Prove that <m>\alpha^m =1</m> and <m>\alpha^n = 1</m> if and only if
+    <m>\alpha^d = 1</m> for <m>d = \gcd(m,n)</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="YsK" xml:id="cyclic-exercise-order-of-elements-greaterthan-1-in-C">
+<statement>
+  <p permid="clS">
+          Let <m>z \in {\mathbb C}^\ast</m>.
+          If <m>|z| \neq 1</m>, prove that the order of <m>z</m> is infinite.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="EzT" xml:id="cyclic-exercise-order-rational-angles-in-T">
+<statement>
+  <p permid="Itb">
+          Let <m>z =\cos \theta + i \sin \theta</m> be in
+    <m>{\mathbb T}</m> where <m>\theta \in {\mathbb Q}</m>.
+          Prove that the order of <m>z</m> is infinite.
+  </p>
+</statement>
+</exercise>
+
+
+<exercise permid="BzW" xml:id="permute-exercise-inverse-cycle">
+  <statement>
+    <p permid="pVL">
+          Find <m>(a_1, a_2, \ldots, a_n)^{-1}</m>.
+    </p>
+  </statement>
+  <hint permid="WMB">
+    <p permid="tlQ">
+      <m>(a_1, a_2, \ldots, a_n)^{-1} = (a_1, a_{n}, a_{n-1}, \ldots, a_2)</m>
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="Syh" xml:id="permute-exercise-cycle-structures-A5">
+  <statement>
+    <p permid="GTW">
+          What are the possible cycle structures of elements of <m>A_5</m>?
+          What about <m>A_6</m>?
+    </p>
+  </statement>
+  <hint permid="ggn">
+    <p permid="lHr">
+          Permutations of the form
+      <me permid="mkh">
+            (1), (a_1, a_2)(a_3, a_4), (a_1, a_2, a_3), (a_1, a_2, a_3, a_4, a_5)
+      </me>
+          are possible for <m>A_5</m>.
+    </p>
+  </hint>
+</exercise>
+
+<exercise permid="yFq" xml:id="permute-exercise-order-sigma-i">
+  <statement>
+    <p permid="nbf">
+          Let <m>\sigma \in S_n</m> have order <m>n</m>.
+          Show that for all integers <m>i</m> and <m>j</m>,
+      <m>\sigma^i = \sigma^j</m> if and only if <m>i \equiv j \pmod{n}</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="exercise-permute-order-product-cycles" permid="eMz">
+  <statement>
+    <p permid="Tio">
+          Let <m>\sigma = \sigma_1 \cdots \sigma_m \in S_n</m> be the product of disjoint cycles.
+          Prove that the order of <m>\sigma</m> is the least common multiple of the lengths of the cycles <m>\sigma_1, \ldots, \sigma_m</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="KTI" xml:id="permute-exercise-elements-D5">
+  <statement>
+    <p permid="zpx">
+          Using cycle notation, list the elements in <m>D_5</m>.
+          What are <m>r</m> and <m>s</m>?
+          Write every element as a product of <m>r</m> and <m>s</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="raR" xml:id="permute-exercise-diagonals-cube">
+  <statement>
+    <p permid="fwG">
+          If the diagonals of a cube are labeled as <xref ref="figure-motions"/>
+,
+          to which motion of the cube does the permutation <m>(12)(34)</m> correspond?
+          What about the other permutations of the diagonals?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Xia" xml:id="permute-exercise-rigid-motions-tetrahedron">
+<statement>
+  <p permid="LDP">
+          Find the group of rigid motions of a tetrahedron.
+          Show that this is the same group as <m>A_4</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Dpj" xml:id="permute-exercise-Sn-nonabelian">
+<statement>
+  <p permid="rKY">
+          Prove that <m>S_n</m> is nonabelian for <m>n \geq 3</m>.
+  </p>
+</statement>
+<hint permid="xey">
+  <p permid="ROA">
+          Calculate <m>(123)(12)</m> and <m>(12)(123)</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="jws" xml:id="permute-exercise-An-nonabelian">
+<statement>
+  <p permid="XSh">
+          Show that <m>A_n</m> is nonabelian for <m>n \geq 4</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="PDB" xml:id="permute-exercise-Dn-nonabelian">
+<statement>
+  <p permid="DZq">
+          Prove that <m>D_n</m> is nonabelian for <m>n \geq 3</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise xml:id="permute-exercise-cycle-n-1-transpositions" permid="vKK">
+<statement>
+  <p permid="kgz">
+          Let <m>\sigma \in S_n</m> be a cycle.
+          Prove that <m>\sigma</m> can be written as the product of at most <m>n-1</m> transpositions.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="bRT" xml:id="permute-exercise-sigma-n-2-transpositions">
+<statement>
+  <p permid="QnI">
+          Let <m>\sigma \in S_n</m>.
+          If <m>\sigma</m> is not a cycle,
+          prove that <m>\sigma</m> can be written as the product of at most <m>n - 2</m> transpositions.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="HZc" xml:id="permute-exercise-sigma-odd">
+<statement>
+  <p permid="wuR">
+          If <m>\sigma</m> can be expressed as an odd number of transpositions,
+          show that any other product of transpositions equaling <m>\sigma</m> must also be odd.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="ogl" xml:id="permute-exercise-sigma-squared-cycle">
+<statement>
+  <p permid="cCa">
+          If <m>\sigma</m> is a cycle of odd length,
+          prove that <m>\sigma^2</m> is also a cycle.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Unu" xml:id="permute-exercise-3-cycle-even">
+<statement>
+  <p permid="IJj">
+          Show that a <m>3</m>-cycle is an even permutation.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="AuD" xml:id="permute-exercise-An-product-3-cycles">
+<statement>
+  <p permid="oQs">
+          Prove that in <m>A_n</m> with <m>n \geq 3</m>,
+          any permutation is a product of cycles of length <m>3</m>.
+  </p>
+</statement>
+<hint permid="arb">
+  <p permid="xVJ">
+          Consider the cases <m>(ab)(bc)</m> and <m>(ab)(cd)</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="gBM" xml:id="permute-exercise-Sn-product-certain-cycles">
+<statement>
+  <p permid="UXB">
+          Prove that any element in <m>S_n</m> can be written as a finite product of the following permutations.
+
+    <ol permid="Wrc">
+      <li permid="ijV">
+        <p permid="ZeE">
+          <m>(1 2), (13), \ldots, (1n)</m>
+        </p>
+      </li>
+
+      <li permid="Ore">
+        <p permid="FlN">
+          <m>(1 2), (23), \ldots, (n- 1,n)</m>
+        </p>
+      </li>
+
+      <li permid="uyn">
+        <p permid="lsW">
+          <m>(12), (1 2 \ldots n )</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="MIV" xml:id="permute-exercise-lambda-g-permutation">
+<statement>
+  <p permid="BeK">
+          Let <m>G</m> be a group and define a map
+    <m>\lambda_g : G \rightarrow G</m> by <m>\lambda_g(a) = g a</m>.
+          Prove that <m>\lambda_g</m> is a permutation of <m>G</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="sQe" xml:id="permute-exercise-n-factorial-permutations">
+<statement>
+  <p permid="hlT">
+          Prove that there exist <m>n!</m> permutations of a set containing <m>n</m> elements.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="YXn" xml:id="permute-exercise-center-Dn">
+<statement>
+  <p permid="Ntc">
+          Recall that the <term>center</term> of a group <m>G</m> is
+    <me permid="eFI">
+            Z(G) = \{ g \in G : gx = xg \text{ for all } x \in G \}
+    </me>.
+          Find the center of <m>D_8</m>.
+          What about the center of <m>D_{10}</m>?
+          What is the center of <m>D_n</m>?
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="Few" xml:id="permute-exercise-conjugate-cycle">
+<statement>
+  <p permid="tAl">
+          Let <m>\tau = (a_1, a_2, \ldots,
+          a_k)</m> be a cycle of length <m>k</m>.
+
+    <ol permid="Cyl">
+      <li permid="TaX">
+        <p permid="JVG">
+                Prove that if <m>\sigma</m> is any permutation, then
+          <me permid="Xbj">
+                  \sigma \tau \sigma^{-1 } = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k))
+          </me>
+                is a cycle of length <m>k</m>.
+        </p>
+      </li>
+
+      <li permid="zig">
+        <p permid="qcP">
+                Let <m>\mu</m> be a cycle of length <m>k</m>.
+                Prove that there is a permutation <m>\sigma</m> such that <m>\sigma \tau \sigma^{-1 } = \mu</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+<hint permid="Lid">
+  <p permid="ecS">
+          For (a), show that <m>\sigma \tau \sigma^{-1 }(\sigma(a_i)) = \sigma(a_{i + 1})</m>.
+  </p>
+</hint>
+</exercise>
+
+<exercise permid="llF" xml:id="permute-exercise-conjugate-cycles-equivalence-relation">
+<statement>
+  <p permid="ZHu">
+          For <m>\alpha</m> and <m>\beta</m> in <m>S_n</m>,
+          define <m>\alpha \sim \beta</m> if there exists an
+    <m>\sigma \in S_n</m> such that <m>\sigma \alpha \sigma^{-1} = \beta</m>.
+          Show that <m>\sim</m> is an equivalence relation on <m>S_n</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="RsO" xml:id="permute-exercise-SX-equivalence-relation">
+<statement>
+  <p permid="FOD">
+          Let <m>\sigma \in S_X</m>.
+          If <m>\sigma^n(x) = y</m> for some <m>n \in \mathbb Z</m>, we will say that <m>x \sim y</m>.
+
+    <ol permid="iFu">
+      <li permid="rDH">
+        <p permid="iyq">
+                Show that <m>\sim</m> is an equivalence relation on <m>X</m>.
+        </p>
+      </li>
+
+      <li permid="DRZ">
+        <p permid="uMI">
+                Define the <term>orbit</term> of <m>x \in X</m> under <m>\sigma \in S_X</m> to be the set
+          <me permid="vDT">
+                  {\mathcal O}_{x, \sigma} = \{ y : x \sim y  \}
+          </me>.
+                Compute the orbits of each element in <m>\{1, 2, 3, 4, 5\}</m> under each of the following elements in <m>S_5</m>:
+          <md permid="bLc">
+            <mrow>\alpha &amp; = (1254)</mrow>
+            <mrow>\beta &amp; = (123)(45)</mrow>
+            <mrow>\gamma &amp; = (13)(25)</mrow>
+          </md>.
+        </p>
+      </li>
+
+      <li permid="jZi">
+        <p permid="aTR">
+                If <m>{\mathcal O}_{x, \sigma} \cap {\mathcal O}_{y, \sigma} \neq \emptyset</m>,
+                prove that <m>{\mathcal O}_{x, \sigma} = {\mathcal O}_{y, \sigma}</m>.
+                The orbits under a permutation <m>\sigma</m> are the equivalence classes corresponding to the equivalence relation <m>\sim</m>.
+        </p>
+      </li>
+
+      <li permid="Qgr">
+        <p permid="Hba">
+                A subgroup <m>H</m> of <m>S_X</m> is <term>transitive</term>
+                if for every <m>x, y \in X</m>,
+                there exists a <m>\sigma \in H</m> such that <m>\sigma(x) = y</m>.
+                Prove that <m>\langle \sigma \rangle</m> is transitive if and only if
+          <m>{\mathcal O}_{x, \sigma} = X</m> for some <m>x \in X</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="xzX" xml:id="permute-exercise-center-Sn">
+<statement>
+  <p permid="lVM">
+          Let <m>\alpha \in S_n</m> for <m>n \geq 3</m>.
+          If <m>\alpha \beta = \beta \alpha</m> for all <m>\beta \in S_n</m>,
+          prove that <m>\alpha</m> must be the identity permutation;
+          hence, the center of <m>S_n</m> is the trivial subgroup.
+  </p>
+</statement>
+</exercise>
+
+<exercise xml:id="permute-exercise-inverse-even" permid="dHg">
+<statement>
+  <p permid="ScV">
+          If <m>\alpha</m> is even, prove that <m>\alpha^{-1}</m> is also even.
+          Does a corresponding result hold if <m>\alpha</m> is odd?
+  </p>
+</statement>
+</exercise>
+
+<exercise xml:id="permute-exercise-conjugate-An">
+<statement>
+  <p>
+          If <m>\sigma \in A_n</m> and <m>\tau \in S_n</m>,
+          show that <m>\tau^{-1} \sigma \tau \in A_n</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="JOp" xml:id="permute-exercise-a-1-b-1-ab-even">
+<statement>
+  <p permid="yke">
+          Show that <m>\alpha^{-1} \beta^{-1} \alpha \beta</m> is even for <m>\alpha, \beta \in S_n</m>.
+  </p>
+</statement>
+</exercise>
+
+<exercise permid="pVy" xml:id="permute-exercise-Dn-relations">
+<statement>
+  <p permid="ern">
+          Let <m>r</m> and <m>s</m> be the elements in <m>D_n</m> described in <xref ref="theorem-dn-generator"/>
+
+  <ol permid="OMD">
+    <li permid="AXt">
+      <p permid="rSc">
+                Show that <m>srs = r^{-1}</m>.
+      </p>
+    </li>
+
+    <li permid="heC">
+      <p permid="XZl">
+                Show that <m>r^k s = s r^{-k}</m> in <m>D_n</m>.
+      </p>
+    </li>
+
+    <li permid="NlL">
+      <p permid="Egu">
+                Prove that the order of <m>r^k \in D_n</m> is <m>n / \gcd(k,n)</m>.
+      </p>
+    </li>
+  </ol>
+</p>
+</statement>
+</exercise>
+</exercises>

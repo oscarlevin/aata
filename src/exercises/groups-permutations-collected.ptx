@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-groups-permutations">
+  
+    <title>Collected Homework</title>
+
+    <exercise>
+      <statement>
+        <p>
+          The identity can be written as <m>\varepsilon = (13)(24)(35)(14)(12)(15)(34)(45)</m>. Mimic the proof that <m>\varepsilon</m> must be even and show how to eliminate <m>x = 5</m> from the product of transpositions and write <m>\varepsilon</m> as the product of 2 fewer transpositions in the process.  Show all intermediate steps.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Bonus: One way you could prove that <m>|A_n| = \frac{n!}{2}</m> is to show that <m>S_n</m> has an equal number of even permutations as odd permutations.  One way you could do this is by finding a bijection from the set of even permutations to the set of odd permutations.  Define <m>f:A_n \to \overline{A_n}</m> (here <m>\overline{A_n}</m> is the compliment of <m>A_n</m>, so the set of all odd permutations) by 
+          <m>f(\tau) = (12)\tau</m>.
+        </p>
+        <p>
+          Prove that <m>f</m> really is a bijection.  Careful: there are multiple ways to write permutations as products of transpositions. 
+        </p>
+      </statement>
+      
+    </exercise>
+  </exercises>

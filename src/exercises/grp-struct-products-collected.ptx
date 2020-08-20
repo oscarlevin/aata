@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-grps-struct-products">
+  
+    <title>Collected Homework</title>
+
+    <exercise>
+      <statement>
+        <p>
+          
+        Consider the group <m>U(35) = \{1,2,3,4,6,8,9,11,12,13,16,17,18,19,22,23,24,26,27,29,31,32,33,34\}</m> under the operation of multiplication modulo <m>35</m>.  The orders of the elements are:
+
+        <tabular halign="center">
+          <row bottom="medium">
+            <cell right="medium">
+              <m>​g</m>
+            </cell>
+            <cell right="medium">
+                1
+            </cell>
+            <cell right="medium">
+                2
+            </cell>
+            <cell right="medium">
+                3
+            </cell>
+            <cell right="medium">
+                4
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                8
+            </cell>
+            <cell right="medium">
+                9
+            </cell>
+            <cell right="medium">
+                11
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                13
+            </cell>
+            <cell right="medium">
+                16
+            </cell>
+            <cell right="medium">
+                17
+            </cell>
+            <cell right="medium">
+                18
+            </cell>
+            <cell right="medium">
+                19
+            </cell>
+            <cell right="medium">
+                22
+            </cell>
+            <cell right="medium">
+                23
+            </cell>
+            <cell right="medium">
+                24
+            </cell>
+            <cell right="medium">
+                26
+            </cell>
+            <cell right="medium">
+                27
+            </cell>
+            <cell right="medium">
+                29
+            </cell>
+            <cell right="medium">
+                31
+            </cell>
+            <cell right="medium">
+                32
+            </cell>
+            <cell right="medium">
+                33
+            </cell>
+            <cell>
+                34
+            </cell>
+          </row>
+          <row>
+            <cell right="medium">
+              <m>\ord(g)</m>
+            </cell>
+            <cell right="medium">
+                1
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                2
+            </cell>
+            <cell right="medium">
+                4
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                3
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                4
+            </cell>
+            <cell right="medium">
+                3
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                4
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                4
+            </cell>
+            <cell right="medium">
+                2
+            </cell>
+            <cell right="medium">
+                6
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell right="medium">
+                12
+            </cell>
+            <cell>
+                2
+            </cell>
+          </row>
+        </tabular>
+          
+          <ol>
+            <li>
+             <p>
+               Find two <m>p</m>-groups <m>H</m> and <m>K</m> such that <m>U(35)</m> is the internal direct product of <m>H</m> and <m>K</m>.  Briefly explain why your groups work.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Let <m>H</m> be the larger of the two groups above.  Show how to decompose it as the internal direct product of <m>\langle a \rangle</m> and <m>H'</m> where <m>a</m> is of maximal order and <m>H'</m> is some other subgroup of <m>H</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the decompositions above (perhaps repeating the second step as needed), write <m>U(35)</m> as the direct product of groups of the form <m>\Z_{p^k}</m> (<m>p</m> prime).
+              </p>
+            </li>
+        </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The only primes which divide <m>|U(35)|</m> are 2 and 3, so we are looking for a <m>2</m>-group and a <m>3</m>-group.  We take <m>G(2) = \{1,6,8,13,22, 27, 29, 34\}</m> to be the group of elements whose orders are powers of <m>2</m> and <m>G(3) = \{1, 11, 16\}</m> to be the group of elements whose orders are powers of 3.  Clearly <m>G(2) \cap G(3) = \{1\}</m>, and we can also show that <m>G(2)\cdot G(3) = U(35)</m> by simply multiplying out every pair of elements, one from <m>G(2)</m> and the other from <m>G(3)</m> (we will get exactly the elements of <m>U(35)</m>).
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>H = G(2)</m>.  We take any element of <m>G(2)</m> of maximal order.  That is, consider <m>\langle 8 \rangle = \{1, 8, 29, 22\}</m>.  For <m>H'</m> we need a 2-element subgroup generated by an element not in <m>\langle 8\rangle</m>.  So let <m>H' = \{1, 6\}</m>.  Again, the intersection is clearly just <m>\{1\}</m> and multiplying the elements of <m>\langle 8 \rangle</m> by <m>6</m> gives the other elements of <m>H</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>G(3) \cong \Z_{3}</m> and <m>H' \cong \Z_2</m>.  Since <m>\langle 8\rangle</m> contains an element of order 4 we have <m>\langle 8 \rangle \cong \Z_{4}</m>.  Thus 
+                <me>U(35) \cong \Z_2 \times \Z_3 \times \Z_4.</me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>

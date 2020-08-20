@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+ <section xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="section-galois-applications" permid="vku">
+     <title>Applications: Galois Groups</title>
+     <subsection xml:id="galois-subsection-solvable-by-radicals" permid="ZCq">
+       <title>Solvability by Radicals</title>
+             <!-- Major clean up of the section -->
+             <!-- TWJ 3/5/2013 -->
+       <p permid="Qxm">
+         Throughout this section we shall assume that all fields have characteristic zero to ensure that irreducible polynomials do not have multiple roots.
+         The immediate goal of this section is to determine when the roots of a polynomial <m>f(x)</m> can be computed with a finite number of operations on the coefficients of <m>f(x)</m>.
+         The allowable operations are addition, subtraction,
+         multiplication, division, and the extraction of <m>n</m>th roots.
+         Certainly the solution to the quadratic equation,
+         <m>a x^2 + b x +c = 0</m>, illustrates this process:
+         <me permid="hJS">
+           x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+         </me>.
+         The only one of these operations that might demand a larger field is the taking of <m>n</m>th roots.
+         We are led to the following definition.
+       </p>
+
+       <p permid="wEv">
+         An extension field <m>E</m> of a field <m>F</m> is an
+         <term>extension by radicals</term>
+             <idx><h>Extension</h><h>radical</h></idx>
+         if there exists a chain of subfields
+         <me permid="NRb">
+           F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+         </me>
+         such for <m>i = 1, 2, \ldots, r</m>,
+         we have  <m>F_i = F_{i - 1}(\alpha_i)</m> and
+         <m>\alpha_i^{n_i} \in F_{i-1}</m> for some positive integer <m>n_i</m>.
+         A polynomial <m>f(x)</m> is <term>solvable by radicals</term>
+             <idx><h>Solvability by radicals</h></idx>
+         over <m>F</m> if the splitting field <m>K</m> of <m>f(x)</m> over <m>F</m> is contained in an extension of <m>F</m> by radicals.
+         Our goal is to arrive at criteria that will tell us whether or not a polynomial <m>f(x)</m> is solvable by radicals by examining the Galois group <m>f(x)</m>.
+       </p>
+
+       <p permid="cLE">
+         The easiest polynomial to solve by radicals is one of the form <m>x^n - a</m>.
+         <!-- As we discussed in <xref ref="cyclic"/>, -->
+         The roots of <m>x^n - 1</m> are called the
+         <term>nth roots of unity</term>.
+             <idx><h><m>n</m>th root of unity</h></idx>
+         These roots are a finite subgroup of the splitting field of <m>x^n -1</m>.
+         <!-- By <xref ref="corollary-cyclic-group-finite-field"/>,  -->
+         The <m>n</m>th roots of unity form a cyclic group.
+         Any generator of this group is called a
+         <term>primitive nth root of unity</term>.
+             <idx><h>Primitive <m>n</m>th root of unity</h></idx>
+       </p>
+
+       <example xml:id="example-galois-group-xn-1" permid="MiF">
+         <p permid="TNr">
+           The polynomial <m>x^n - 1</m> is solvable by radicals over <m>{\mathbb Q}</m>.
+           The roots of this polynomial are <m>1, \omega, \omega^2, \ldots, \omega^{n - 1}</m>, where
+           <me permid="tYk">
+             \omega = \cos\left( \frac{2 \pi}{n} \right) + i \sin\left( \frac{2 \pi}{n} \right)
+           </me>.
+           The splitting field of <m>x^n - 1</m> over
+           <m>{\mathbb Q}</m> is <m>{\mathbb Q}(\omega)</m>.
+         </p>
+       </example>
+
+       <p permid="ISN">
+         We shall prove that a polynomial is solvable by radicals if its Galois group is solvable.
+         Recall that a subnormal series of a group <m>G</m> is a finite sequence of subgroups
+         <me permid="aft">
+           G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+         </me>,
+         where <m>H_i</m> is normal in <m>H_{i+1}</m>.
+         A group <m>G</m> is solvable  if it has a subnormal series
+         <m>\{ H_i \}</m> such that all of the factor groups <m>H_{i+1} /H_i</m> are abelian.
+         For example,
+         if we examine the series <m>\{ \identity \} \subset A_3 \subset S_3</m>,
+         we see that <m>S_3</m> is solvable.
+         On the other hand, <m>S_5</m> is not solvable,
+         by <xref ref="theorem-an-simple"/>.
+       </p>
+             <!-- Corrected the definition of a solvable group.  Suggested by K. Halasz. -->
+             <!-- TWJ 1/10/2014  -->
+       <lemma xml:id="lemma-xn-a-solvable" permid="zUn">
+         <statement>
+           <p permid="FJM">
+             Let <m>F</m> be a field of characteristic zero and <m>E</m> be the splitting field of <m>x^n - a</m> over <m>F</m> with <m>a \in F</m>.
+             Then <m>G(E/F)</m> is a solvable group.
+           </p>
+         </statement>
+
+         <proof permid="ZQL">
+           <p permid="aHW">
+             The roots of <m>x^n - a</m> are <m>\sqrt[n]{a}, \omega \sqrt[n]{a}, \ldots, \omega^{n-1} \sqrt[n]{a}</m>,
+             where <m>\omega</m> is a primitive <m>n</m>th root of unity.
+             Suppose that <m>F</m> contains all of its <m>n</m>th roots of unity.
+             If <m>\zeta</m> is one of the roots of  <m>x^n - a</m>,
+             then distinct roots of <m>x^n - a</m> are
+             <m>\zeta, \omega \zeta, \ldots, \omega^{n - 1} \zeta</m>,
+             and <m>E = F(\zeta)</m>.
+             Since <m>G(E/F)</m> permutes the roots <m>x^n - a</m>,
+             the elements in  <m>G(E/F)</m> must be determined by their action on these roots.
+             Let <m>\sigma</m>  and <m>\tau</m> be in <m>G(E/F)</m> and suppose that
+             <m>\sigma( \zeta ) = \omega^i \zeta</m> and <m>\tau( \zeta ) = \omega^j \zeta</m>.
+             If <m>F</m> contains the roots of unity, then
+             <me permid="GmC">
+               \sigma \tau( \zeta ) = \sigma( \omega^j \zeta) = \omega^j \sigma( \zeta ) = \omega^{i+j} \zeta = \omega^i \tau( \zeta ) = \tau( \omega^i \zeta ) = \tau \sigma( \zeta )
+             </me>.
+             Therefore, <m>\sigma \tau = \tau \sigma</m> and <m>G(E/F)</m> is abelian, and
+             <m>G(E/F)</m> must be solvable.
+           </p>
+             <!-- typo correction in proof.  Suggested by L.Handricks and K. Kelley. -->
+             <!-- TWJ - 5/3/2013 -->
+           <p permid="GPf">
+             Now suppose that <m>F</m> does not contain a primitive <m>n</m>th root of unity.
+             Let <m>\omega</m> be a generator of the cyclic group of the <m>n</m>th roots of unity.
+             Let <m>\alpha</m> be a zero of <m>x^n - a</m>.
+             Since <m>\alpha</m> and <m>\omega \alpha</m> are both in the splitting field of <m>x^n - a</m>,
+             <m>\omega = (\omega \alpha)/ \alpha</m> is also in <m>E</m>.
+             Let <m>K = F( \omega)</m>.
+             Then <m>F \subset K \subset E</m>.
+             Since <m>K</m> is the splitting field of <m>x^n - 1</m>,
+             <m>K</m> is a normal extension of <m>F</m>.
+             Therefore, any automorphism <m>\sigma</m> in
+             <m>G(F( \omega)/ F)</m> is determined by <m>\sigma( \omega)</m>.
+             It must be the case that <m>\sigma( \omega ) = \omega^i</m> for some integer <m>i</m> since all of the zeros of <m>x^n - 1</m> are powers of <m>\omega</m>.
+             If <m>\tau( \omega ) = \omega^j</m> is in <m>G(F(\omega)/F)</m>, then
+             <me permid="mtL">
+               \sigma \tau( \omega ) = \sigma( \omega^j ) = [ \sigma( \omega )]^j = \omega^{ij} = [\tau( \omega ) ]^i = \tau( \omega^i )  = \tau \sigma( \omega )
+             </me>.
+             Therefore, <m>G(F( \omega ) / F)</m> is abelian.
+             By the Fundamental Theorem of Galois Theory the series
+             <me permid="SAU">
+               \{ \identity \} \subset G(E/ F(\omega)) \subset G(E/F)
+             </me>
+             is a normal series.
+             By our previous argument, <m>G(E/F(\omega))</m> is abelian.
+             Since
+             <me permid="yId">
+               G(E/F) /G(E/F( \omega)) \cong G(F(\omega)/F)
+             </me>
+             is also abelian, <m>G(E/F)</m> is solvable.
+           </p>
+         </proof>
+       </lemma>
+
+       <lemma xml:id="lemma-radical-extension" permid="gbw">
+         <statement>
+           <p permid="lQV">
+             Let <m>F</m> be a field of characteristic zero and let
+             <me permid="ePm">
+               F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+             </me>
+             a radical extension of <m>F</m>.
+             Then there exists a normal radical extension
+             <me permid="KWv">
+               F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+             </me>
+             such that <m>K</m> that contains <m>E</m> and <m>K_i</m> is a normal extension of <m>K_{i-1}</m>.
+           </p>
+         </statement>
+             <!-- Major rewrite of the proof. -->
+             <!-- TWJ - 3/5/2013 -->
+             <!-- Proof should be correct now. -->
+             <!-- TWJ - 6/5/2013 -->
+         <proof permid="FXU">
+           <p permid="mWo">
+             Since <m>E</m> is a radical extension of <m>F</m>,
+             there exists a chain of subfields
+             <me permid="rdE">
+               F = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_r = E
+             </me>
+             such for <m>i = 1, 2, \ldots, r</m>,
+             we have  <m>F_i = F_{i - 1}(\alpha_i)</m> and
+             <m>\alpha_i^{n_i} \in F_{i-1}</m> for some positive integer <m>n_i</m>.
+             We will build a normal radical extension of <m>F</m>,
+             <me permid="XkN">
+               F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+             </me>
+             such that <m>K \supseteq E</m>.
+             Define <m>K_1</m> for be the splitting field of <m>x^{n_1} - \alpha_1^{n_1}</m>.
+             The roots of this polynomial are <m>\alpha_1, \alpha_1 \omega, \alpha_1 \omega^2, \ldots, \alpha_1 \omega^{n_1 - 1}</m>,
+             where <m>\omega</m> is a primitive <m>n_1</m>th root of unity.
+             If <m>F</m> contains all of its <m>n_1</m> roots of unity,
+             then <m>K_1 = F(\alpha_!)</m>.
+             On the other hand,
+             suppose that <m>F</m> does not contain a primitive <m>n_1</m>th root of unity.
+             If <m>\beta</m> is a root of <m>x^{n_1} - \alpha_1^{n_1}</m>,
+             then all of the roots of  <m>x^{n_1} - \alpha_1^{n_1}</m> must be <m>\beta, \omega \beta, \ldots, \omega^{n_1-1}</m>,
+             where  <m>\omega</m> is a primitive  <m>n_1</m>th root of unity.
+             In this case, <m>K_1 = F(\omega \beta)</m>.
+             Thus, <m>K_1</m> is a normal radical extension of <m>F</m> containing <m>F_1</m>.
+             Continuing in this manner, we obtain
+             <me permid="DrW">
+               F = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_r = K
+             </me>
+             such that <m>K_i</m> is a normal extension of <m>K_{i-1}</m> and
+             <m>K_i \supseteq F_i</m> for <m>i = 1, 2, \ldots, r</m>.
+           </p>
+         </proof>
+       </lemma>
+
+       <p permid="oZW">
+         We will now prove the main theorem about solvability by radicals.
+       </p>
+
+       <theorem xml:id="theorem-solvable-by-radicals" permid="TNe">
+         <statement>
+           <p permid="wqa">
+             Let <m>f(x)</m> be in <m>F[x]</m>, where <m>\chr F = 0</m>.
+             If <m>f(x)</m> is solvable by radicals,
+             then the Galois group of <m>f(x)</m> over <m>F</m> is solvable.
+           </p>
+         </statement>
+
+         <proof permid="wEi">
+           <p permid="Tdx">
+             Since <m>f(x)</m> is solvable by radicals there exists an extension <m>E</m> of <m>F</m> by radicals <m>F = F_0 \subset F_1 \subset \cdots \subset F_n = E</m>.
+             By  <xref ref="lemma-radical-extension"/>,
+             we can assume that <m>E</m> is a splitting field <m>f(x)</m> and <m>F_i</m> is normal over <m>F_{i - 1}</m>.
+             By the Fundamental Theorem of Galois Theory,
+             <m>G(E/F_i)</m> is a normal subgroup of <m>G(E/F_{i - 1})</m>.
+             Therefore, we have a subnormal series of subgroups of <m>G(E/F)</m>:
+             <me permid="jzf">
+               \{ \identity \} \subset G(E/F_{n - 1}) \subset \cdots \subset G(E/F_1) \subset G(E/F)
+             </me>.
+             Again by the Fundamental Theorem of Galois Theory, we know that
+             <me permid="PGo">
+               G(E/F_{i - 1})/G(E/F_i) \cong G(F_i/F_{i - 1})
+             </me>.
+             By <xref ref="lemma-xn-a-solvable"/>, <m>G(F_i/F_{i - 1})</m> is solvable;
+             hence, <m>G(E/F)</m> is also solvable.
+           </p>
+         </proof>
+       </theorem>
+
+       <p permid="Vhf">
+         The converse of <xref ref="theorem-solvable-by-radicals"/> is also true.
+         For a proof,
+         see any of the references at the end of this chapter.
+       </p>
+     </subsection>
+
+     <subsection xml:id="galois-subsection-quintic" permid="FJz">
+       <title>Insolvability of the Quintic</title>
+       <p permid="Boo">
+         We are now in a position to find a fifth-degree polynomial that is not solvable by radicals.
+         We merely need to find a polynomial whose Galois group is <m>S_5</m>.
+         We begin by proving a lemma.
+       </p>
+             <!-- Corrected the lemma by requiring that <m>p</m> be prime in <m>S_p</m>.  Suggested by R. Beezer and K. Brooks. - TWJ 6/15/2012 -->
+       <lemma xml:id="lemma-sn-generating" permid="spO">
+         <statement>
+           <p permid="RYe">
+             If <m>p</m> is prime,
+             then any subgroup of <m>S_p</m> that contains a transposition and a cycle of length <m>p</m> must be all of <m>S_p</m>.
+           </p>
+         </statement>
+
+         <proof permid="mfd">
+           <p permid="zkG">
+             Let <m>G</m> be a subgroup of <m>S_p</m> that contains a transposition <m>\sigma</m> and <m>\tau</m> a cycle of length <m>p</m>.
+             We may assume that <m>\sigma = (1 2)</m>.
+             The order of <m>\tau</m> is <m>p</m> and <m>\tau^n</m> must be a cycle of length <m>p</m> for <m>1 \leq n \lt p</m>.
+             Therefore, we may assume that <m>\mu = \tau^n = (1 2 i_3 \ldots i_p)</m> for some <m>n</m>,
+             where <m>1 \leq n \lt p</m>
+             (see <xref ref="exercise-permute-order-product-cycles"/>).
+             Noting that <m>(1 2)(12 i_3\ldots i_p) = (2 i_3\ldots i_p)</m> and <m>(2i_3 \ldots i_p)^k(12)(2i_3 \ldots i_p)^{-k} = (1i_k)</m>,
+             we can obtain all the transpositions of the form <m>(1n)</m> for <m>1 \leq n \lt p</m>.
+             However, these transpositions generate all transpositions in <m>S_p</m>,
+             since <m>(1j)(1 i)(1 j) = (i j)</m>.
+             The transpositions generate <m>S_p</m>.
+           </p>
+         </proof>
+       </lemma>
+
+       <figure xml:id="figure-galois-4" permid="hvx">
+         <caption>The graph of <m>f(x) = x^5 - 6 x^3 - 27 x - 3</m></caption>
+         <image width="70%" xml:id="galois-quintic" permid="GWw">
+
+             <sageplot>
+             f(x) = x^5 - 6*x^3 -27*x -3
+             grid=[srange(-3,4,1), srange(-70,80,10)]
+             curve = plot(f(x), (x, -3.1,3.1), xmax=4, ymin=-75, ymax=75, color='black', thickness=2, aspect_ratio=0.05, gridlines=grid, axes_labels=['$x$','$y$'], fontsize=18)
+             label = text('$f(x)= x^5-6x^3-27x-3$', (1.9, 45), color='black', fontsize=16)
+             curve+label
+             </sageplot>
+         </image>
+                 <!--  Remove X's on double hyphens
+        <image xml:id="galois-quintic">
+          <latex-image-code><![CDATA[
+            \begin{tikzpicture}[xscale=0.8,yscale=0.05,domain=-3.2:3.2,samples=320]
+            \draw[very thin,color=gray] (-4,-75) grid [xstep=1,ystep=10] (4,75);
+
+            \draw[->] (-4.2,0) -X- (4.2,0) node[right] {$x$};
+            \draw[->] (0,-80.2) -X- (0,80.2) node[above] {$y$};
+
+            \draw[thick,color=red]	plot[smooth,id=quintic]	function{x**5 - 6 *x**3 - 27 *x - 3}	node[above] {$f(x) =x^5 - 6 x^3 - 27 x - 3$};
+
+            \node [right] at (0,40)  {40};
+            \node [right] at (0,-40)  {-40};
+
+            \node [above] at (4,0)  {4};
+            \node [above] at (2,0)  {2};
+            \node [above] at (-2,0)  {-2};
+            \node [above] at (-4,0)  {-4};
+
+            \end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        -->
+       </figure>
+
+       <example xml:id="example-galois-x5" permid="YwX">
+         <p permid="zUA">
+           We will show that <m>f(x) = x^5 - 6 x^3 - 27 x - 3 \in {\mathbb Q}[x]</m> is not solvable.
+           We claim that the Galois group of <m>f(x)</m> over <m>{\mathbb Q}</m> is <m>S_5</m>.
+           By Eisenstein's Criterion,
+           <m>f(x)</m> is irreducible and,
+           therefore, must be separable.
+           The derivative of <m>f(x)</m> is <m>f'(x) = 5 x^4 - 18 x^2 - 27</m>;
+           hence, setting <m>f'(x) = 0</m> and solving,
+           we find that the only real roots of <m>f'(x)</m> are
+           <me permid="vNx">
+             x = \pm \sqrt{ \frac{6 \sqrt{6} + 9 }{5} }
+           </me>.
+           Therefore, <m>f(x)</m> can have at most one maximum and one minimum.
+           It is easy to show that <m>f(x)</m> changes sign between <m>-3</m> and <m>-2</m>,
+           between <m>-2</m> and <m>0</m>,
+           and once again between <m>0</m> and <m>4</m> (<xref ref="figure-galois-4"/>).
+           Therefore, <m>f(x)</m> has exactly three distinct real roots.
+           The remaining two roots of <m>f(x)</m> must be complex conjugates.
+           Let <m>K</m> be the splitting field of <m>f(x)</m>.
+           Since <m>f(x)</m> has five distinct roots in <m>K</m> and every automorphism of <m>K</m> fixing
+           <m>{\mathbb Q}</m> is determined by the way it permutes the roots of <m>f(x)</m>,
+           we know that <m>G(K/{\mathbb Q})</m> is a subgroup of <m>S_5</m>.
+           Since <m>f</m> is irreducible,
+           there is an element in <m>\sigma \in G(K/{\mathbb Q})</m> such that
+           <m>\sigma(a) = b</m> for two roots <m>a</m> and <m>b</m> of <m>f(x)</m>.
+           The automorphism of <m>{\mathbb C}</m> that takes
+           <m>a + bi \mapsto a - bi</m> leaves the real roots fixed and interchanges the complex roots;
+           consequently, <m>G(K/{\mathbb Q} )</m> contains a transpostion.
+           If <m>\alpha</m> is one of the real roots of <m>f(x)</m>,
+           then <m>[\mathbb Q(\alpha) : \mathbb Q] = 5</m> by <xref ref="fields-exercise-degree-irred-poly"/>.
+           Since <m>\mathbb Q(\alpha)</m> is a subfield of <m>K</m>,
+           it must be the case the <m>[K : \mathbb Q]</m> is divisible by 5.
+           Since <m>[K : \mathbb Q] = |G(K/{\mathbb Q})|</m> and <m>G(K/{\mathbb Q}) \subset S_5</m>,
+           we know that <m>G(K/{\mathbb Q})</m> contains a cycle of length <m>5</m>.
+           By <xref ref="lemma-sn-generating"/>,
+           <m>S_5</m> is generated by a transposition and an element of order <m>5</m>;
+           therefore, <m>G(K/{\mathbb Q} )</m> must be all of <m>S_5</m>.
+           By <xref ref="theorem-an-simple"/>, <m>S_5</m> is not solvable.
+           Consequently, <m>f(x)</m> cannot be solved by radicals.
+         </p>
+       </example>
+             <!--  Changed <m>G(K/F )</m> to <m>G(K/{\mathbb Q} )</m>.  Suggested by Aleks Vlasev. - TWJ 8/10/2011 -->
+     </subsection>
+
+     <subsection xml:id="galois-subsection-fun-theorem-of-algebra" permid="lQI">
+       <title>The Fundamental Theorem of Algebra</title>
+       <p permid="NCG">
+         It seems fitting that the last theorem that we will state and prove is the Fundamental Theorem of Algebra.
+         This theorem was first proven by Gauss in his doctoral thesis.
+         Prior to Gauss's proof,
+         mathematicians suspected that there might exist polynomials over the real and complex numbers having no solutions.
+         The Fundamental Theorem of Algebra states that every polynomial over the complex numbers factors into distinct linear factors.
+       </p>
+
+       <theorem permid="EEg">
+         <title>Fundamental Theorem of Algebra</title>
+         <idx>
+         <h>Fundamental Theorem</h>
+         <h>of Algebra</h>
+         </idx>
+         <statement>
+           <p permid="cxj">
+             The field of complex numbers is algebraically closed;
+             that is, every polynomial in
+             <m>{\mathbb C}[x]</m> has a root in <m>{\mathbb C}</m>.
+           </p>
+         </statement>
+                 <!--				<comment>
+          <p>For our proof we shall assume two facts from calculus.  We need the results that every polynomial of odd degree over <m>{\mathbb R}</m> has a real root and that every positive real number has a square root.</p>
+        </comment>-->
+         <proof permid="cLr">
+           <p permid="frP">
+             Suppose that <m>E</m> is a proper finite field extension of the complex numbers.
+             Since any finite extension of a field of characteristic zero is a simple extension,
+             there exists an <m>\alpha \in E</m> such that
+             <m>E = {\mathbb C}( \alpha )</m> with <m>\alpha</m> the root of an irreducible polynomial <m>f(x)</m> in <m>{\mathbb C}[x]</m>.
+             The splitting field <m>L</m> of <m>f(x)</m> is a finite normal separable extension of
+             <m>{\mathbb C}</m> that contains <m>E</m>.
+             We must show that it is impossible for <m>L</m> to be a proper extension of <m>{\mathbb C}</m>.
+           </p>
+
+           <p permid="LyY">
+             Suppose that <m>L</m> is a proper extension of <m>{\mathbb C}</m>.
+             Since <m>L</m> is the splitting field of
+             <m>f(x)(x^2 + 1)</m> over <m>{\mathbb R}</m>,
+             <m>L</m> is a finite normal separable extension of <m>{\mathbb R}</m>.
+             Let <m>K</m> be the fixed field of a Sylow 2-subgroup <m>G</m> of <m>G(L/{\mathbb R})</m>.
+             Then <m>L \supset K \supset {\mathbb R}</m> and <m>|G( L / K )| =[L:K]</m>.
+             Since <m>[L : {\mathbb R}] = [L:K][K:{\mathbb R}]</m>,
+             we know that <m>[K:{\mathbb R}]</m> must be odd.
+             Consequently,
+             <m>K = {\mathbb R}(\beta)</m> with <m>\beta</m> having a minimal polynomial <m>f(x)</m> of odd degree.
+             Therefore, <m>K = {\mathbb R}</m>.
+           </p>
+
+           <p permid="rGh">
+             We now know that <m>G(L/{\mathbb R})</m> must be a 2-group.
+             It follows that <m>G(L / {\mathbb C})</m> is a <m>2</m>-group.
+             We have assumed that <m>L \neq {\mathbb C}</m>;
+             therefore, <m>|G(L / {\mathbb C})| \geq 2</m>.
+             By the first Sylow Theorem and the Fundamental Theorem of Galois Theory,
+             there exists a subgroup <m>G</m> of
+             <m>G(L/{\mathbb C})</m> of index 2 and a field <m>E</m> fixed elementwise by <m>G</m>.
+             Then <m>[E:{\mathbb C}] = 2</m> and there exists an element
+             <m>\gamma \in E</m> with minimal polynomial
+             <m>x^2 + b x + c</m> in <m>{\mathbb C}[x]</m>.
+             This polynomial has roots <m>( - b \pm \sqrt{b^2 - 4c}\, ) / 2</m> that are in <m>{\mathbb C}</m>,
+             since <m>b^2 - 4 c</m> is in <m>{\mathbb C}</m>.
+             This is impossible; hence, <m>L = {\mathbb C}</m>.
+           </p>
+         </proof>
+       </theorem>
+
+       <p permid="tJP">
+         Although our proof was strictly algebraic,
+         we were forced to rely on results from calculus.
+         It is necessary to assume the completeness axiom from analysis to show that every polynomial of odd degree has a real root and that every positive real number has a square root.
+         It seems that there is no possible way to avoid this difficulty and formulate a purely algebraic argument.
+         It is somewhat amazing that there are several elegant proofs of the Fundamental Theorem of Algebra that use complex analysis.
+         It is also interesting to note that we can obtain a proof of such an important theorem from two very different fields of mathematics.
+       </p>
+
+
+     </subsection>
+    <xi:include href="exercises/galois-applications-collected.ptx" />
+
+   </section>

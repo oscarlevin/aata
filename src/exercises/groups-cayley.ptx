@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-groups-cayley">
+  
+    <title>Collected Homework</title>
+
+    <exercise>
+    <statement>
+      <p>
+        Let's prove Cayley's theorem.  Here is the overall structure, including the <q>big idea</q>.  After this, you are asked to provide the details.
+      </p>
+      <proof>
+        <p>
+          Let <m>G</m> be a graph.  We will define a group of permuations <m>\overline{G}</m> that is isomorphic to <m>G</m>.
+          For any <m>g \in G</m>, define a  function
+           <m>\lambda_g : G \rightarrow G</m> by <m>\lambda_g(a) = ga</m>.
+           [Show <m>\lambda_g</m> is a permutation of <m>G</m>, i.e., a bijection.]
+        </p>
+        <p>
+          Now we are ready to define our group <m>\overline{G}</m>.
+          Let
+          <me>
+            \overline{G} = \{ \lambda_g \st g \in G \}
+          </me>.
+          We must show that <m>\overline{G}</m> is a group (where the operation is composition of functions).   [Show that <m>\overline{G}</m> is subgroup of <m>S_G</m> by showing it contains the identity, is closed under the operation, and is closed under inverses.]
+        </p>
+
+        <p>
+          We can define an isomorphism from <m>G</m> to
+          <m>\overline{G}</m> by <m>\phi : g \mapsto \lambda_g</m>.  We must prove this is really an isomorphism.  [Show that <m>\phi</m> is a bijection and satisfies the homomorphism property.]
+        </p>
+      </proof>
+      <p>
+        Now fill in the gaps:
+        <ol>
+          <li>
+            <p>
+              Prove that <m>\lambda_g</m> is injective (one-to-one).
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\lambda_g</m> is surjective (onto).
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\overline{G}</m> contains the identity.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\overline{G}</m> is closed under the operation (composition).
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\overline{G}</m> is closed under inverses.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\phi</m> is injective.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\phi</m> is surjective.   
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>\phi</m> satisfies the homomorphism property.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <hint>
+      <p>
+        To prove a function <m>f:A \to B</m> is injective, suppose <m>f(a) = f(b)</m> and deduce that <m>a = b</m>.  To prove that the function is surjective, assume <m>b \in B</m> and find some <m>a \in A</m> such that <m>f(a) = b</m>.
+      </p>
+    </hint>
+      <!-- <solution>
+            <p>
+              To show that <m>\lambda_g</m> is one-to-one,
+              suppose that <m>\lambda_g(a) = \lambda_g(b)</m>.
+              Then
+              <me>
+                ga =\lambda_g(a) = \lambda_g(b) = gb
+              </me>.
+              Hence, <m>a = b</m>.
+              To show that <m>\lambda_g</m> is onto,
+              we must prove that for each <m>a \in G</m>,
+              there is a <m>b</m> such that <m>\lambda_g (b) = a</m>.
+              Let <m>b = g^{-1} a</m>.
+            </p>
+
+            <p>
+              <m>\overline{G}</m> contains the identity <m>\lambda_e</m>: <m>\lambda_e\circ \lambda_g = \lambda_g</m>.
+              We have closure under composition of functions since
+              <me>
+                (\lambda_g \circ \lambda_h )(a) = \lambda_g(ha) = gha = \lambda_{gh} (a)
+              </me>.
+              Also,
+              <me>
+                (\lambda_{g^{-1}} \circ \lambda_g) (a) = \lambda_{g^{-1}} (ga) = g^{-1} g a = a = \lambda_e (a)
+              </me>.
+            </p>
+
+            <p>
+              <m>\phi</m> is also one-to-one, because if <m>\phi(g)(a) = \phi(h)(a)</m>, then
+              <me>
+                ga = \lambda_g a = \lambda_h a=  ha
+              </me>.
+              Hence, <m>g = h</m>.
+              That <m>\phi</m> is onto follows from the fact that
+              <m>\phi( g ) = \lambda_g</m> for any <m>\lambda_g \in \overline{G}</m>.
+              The homomorphism property holds as well:
+              <me>
+                \phi(gh) = \lambda_{gh} = \lambda_g \lambda_h = \phi(g) \phi(h)
+              </me>.
+            </p>
+      </solution> -->
+    </exercise>
+
+
+
+  </exercises>

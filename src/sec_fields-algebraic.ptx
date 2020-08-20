@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fields-subsection-algebraic-elements">
+  
+    <title>Algebraic Elements</title>
+    <p permid="lrW">
+      An element <m>\alpha</m> in an extension field <m>E</m> over <m>F</m> is <term>algebraic</term>
+      over <m>F</m> if <m>f(\alpha)=0</m> for some nonzero polynomial <m>f(x) \in F[x]</m>.
+      An element in <m>E</m> that is not algebraic over <m>F</m> is
+      <term>transcendental</term><idx><h>Element</h><h>transcendental</h></idx>
+          <idx><h>Transcendental element</h></idx>
+      over <m>F</m>.
+      An extension field <m>E</m> of a field <m>F</m> is an
+      <term>algebraic extension</term>
+          <idx><h>Algebraic extension</h></idx>
+          <idx><h>Extension</h><h>algebraic</h></idx>
+      of <m>F</m> if every element in <m>E</m> is algebraic over <m>F</m>.
+      If <m>E</m> is a field extension of <m>F</m> and
+      <m>\alpha_1, \ldots, \alpha_n</m> are contained in <m>E</m>,
+      we denote the smallest field containing <m>F</m> and
+      <m>\alpha_1, \ldots, \alpha_n</m> by <m>F( \alpha_1, \ldots, \alpha_n)</m>.
+
+      <notation>
+        <usage>F( \alpha_1, \ldots, \alpha_n)</usage>
+        <description>smallest field containing <m>F</m> and <m>\alpha_1, \ldots, \alpha_n</m></description>
+      </notation>
+
+      If <m>E = F( \alpha )</m> for some <m>\alpha \in E</m>,
+      then <m>E</m> is a <term>simple extension</term>
+          <idx><h>Simple extension</h></idx>
+          <idx><h>Extension</h><h>simple</h></idx>
+      of <m>F</m>.
+    </p>
+
+    <example xml:id="example-fields-extension-pi" permid="RUr">
+      <p permid="hdC">
+        Both <m>\sqrt{2}</m> and <m>i</m> are algebraic over
+        <m>{\mathbb Q}</m> since they are zeros of the polynomials <m>x^2 -2</m> and <m>x^2 + 1</m>,
+        respectively.
+        Clearly <m>\pi</m> and <m>e</m> are algebraic over the real numbers;
+        however, it is a nontrivial fact that they are transcendental over <m>{\mathbb Q}</m>.
+        Numbers in <m>{\mathbb R}</m> that are algebraic over
+        <m>{\mathbb Q}</m> are in fact quite rare.
+        Almost all real numbers are transcendental over <m>{\mathbb Q}</m>.<fn>
+        The probability that a real number chosen at random from the interval <m>[0, 1]</m> will be transcendental over the rational numbers is one.
+        </fn>(In many cases we do not know whether or not a particular number is transcendental;
+        for example,
+        it is still not known whether <m>\pi + e</m> is transcendental or algebraic.)
+      </p>
+    </example>
+
+    <p permid="Rzf">
+      A complex number that is algebraic over <m>{\mathbb Q}</m> is an
+      <term>algebraic number</term>.
+          <idx><h>Algebraic number</h></idx>
+      A <term>transcendental number</term>
+          <idx><h>Transcendental number</h></idx>
+      is an element of <m>{\mathbb C}</m> that is transcendental over <m>{\mathbb Q}</m>.
+    </p>
+
+    <example xml:id="example-fields-sqrt2-sqrt3" permid="ybA">
+      <p permid="NkL">
+        We will show that <m>\sqrt{2 + \sqrt{3} }</m> is algebraic over <m>{\mathbb Q}</m>.
+        If <m>\alpha = \sqrt{2 + \sqrt{3} }</m>,
+        then <m>\alpha^2 = 2 + \sqrt{3}</m>.
+        Hence, <m>\alpha^2 - 2 = \sqrt{3}</m> and <m>( \alpha^2 - 2)^2 = 3</m>.
+        Since <m>\alpha^4 - 4 \alpha^2 + 1 = 0</m>,
+        it must be true that <m>\alpha</m> is a zero of the polynomial <m>x^4 - 4 x^2 + 1 \in {\mathbb Q}[x]</m>.
+      </p>
+    </example>
+
+    <!-- <p permid="xGo">
+      It is very easy to give an example of an extension field <m>E</m> over a field <m>F</m>,
+      where <m>E</m> contains an element transcendental over <m>F</m>.
+      The following theorem characterizes transcendental extensions.
+    </p>
+
+    <theorem permid="oHO">
+      <statement>
+        <p permid="RkK">
+          Let <m>E</m> be an extension field of <m>F</m> and <m>\alpha \in E</m>.
+          Then <m>\alpha</m> is transcendental over <m>F</m> if and only if
+          <m>F( \alpha )</m> is isomorphic to <m>F(x)</m>,
+          the field of fractions of <m>F[x]</m>.
+        </p>
+      </statement>
+
+      <proof permid="LJG">
+        <p permid="pdA">
+          Let <m>\phi_{\alpha} : F[x] \rightarrow E</m> be the evaluation homomorphism for <m>\alpha</m>.
+          Then <m>\alpha</m> is transcendental over <m>F</m> if and only if
+          <m>\phi_{\alpha} (p(x)) = p(\alpha) \neq 0</m> for all non-constant polynomials <m>p(x) \in F[x]</m>.
+          This is true if and only if <m>\ker \phi_{\alpha} = \{ 0 \}</m>;
+          that is, it is true exactly when <m>\phi_{\alpha}</m> is one-to-one.
+          Hence, <m>E</m> must contain a copy of <m>F[x]</m>.
+          The smallest field containing <m>F[x]</m> is the field of fractions <m>F(x)</m>.
+          By <xref ref="theorem-field-of-quotients"/>, <m>E</m> must contain a copy of this field.
+        </p>
+      </proof>
+    </theorem> -->
+
+    <p>
+      There are lots of extension fields that contain elements transcendental over the base field.  For example, we could consider <m>\Q(\pi)</m>. It turns out this will be isomorphic to <m>\Q(x)</m>, the field of all rational functions with rational coefficients.  So in some sense, this is not that interesting: no matter what transcendental element you add, you get the same extension field.  We have a more interesting situation in the case of algebraic extensions.
+    </p>
+
+    <theorem permid="UOX" xml:id="thm_minimum-poly">
+      <statement>
+        <p permid="xrT">
+          Let <m>E</m> be an extension field of a field <m>F</m> and
+          <m>\alpha \in E</m> with <m>\alpha</m> algebraic over <m>F</m>.
+          Then there is a unique irreducible monic polynomial
+          <m>p(x) \in F[x]</m> of smallest degree such that <m>p( \alpha ) = 0</m>.
+          If <m>f(x)</m> is another polynomial in <m>F[x]</m> such that <m>f(\alpha) = 0</m>,
+          then <m>p(x)</m> divides <m>f(x)</m>.
+        </p>
+      </statement>
+          <!--  Removed the hypothesis that f(x) be monic.  Suggested by Davis Schubert. - TWJ 4/24/2013 -->
+      <proof permid="rQP">
+        <p permid="VkJ">
+          Let <m>\phi_{\alpha} : F[x] \rightarrow E</m> be the evaluation homomorphism.
+          The kernel of <m>\phi_{\alpha}</m> is a principal ideal generated by some
+          <m>p(x) \in F[x]</m> with <m>\deg p(x) \geq 1</m>.
+          We know that such a polynomial exists,
+          since <m>F[x]</m> is a principal ideal domain and <m>\alpha</m> is algebraic.
+          The ideal <m>\langle p(x) \rangle</m> consists exactly of those elements of <m>F[x]</m> having <m>\alpha</m> as a zero.
+          If <m>f( \alpha ) = 0</m> and <m>f(x)</m> is not the zero polynomial,
+          then <m>f(x) \in \langle p(x) \rangle</m> and <m>p(x)</m> divides <m>f(x)</m>.
+          So <m>p(x)</m> is a polynomial of minimal degree having <m>\alpha</m> as a zero.
+          Any other polynomial of the same degree having <m>\alpha</m> as a zero must have the form
+          <m>\beta p( x)</m> for some <m>\beta \in F</m>.
+        </p>
+
+        <p permid="BrS">
+          Suppose now that <m>p(x) = r(x) s(x)</m> is a factorization of <m>p(x)</m> into polynomials of lower degree.
+          Since <m>p( \alpha ) = 0</m>,
+          <m>r( \alpha ) s( \alpha ) = 0</m>;
+          consequently,
+          either <m>r( \alpha )=0</m> or <m>s( \alpha ) = 0</m>,
+          which contradicts the fact that <m>p</m> is of minimal degree.
+          Therefore, <m>p(x)</m> must be irreducible.
+        </p>
+      </proof>
+    </theorem>
+
+    <p permid="JUG">
+      Let <m>E</m> be an extension field of <m>F</m> and
+      <m>\alpha \in E</m> be algebraic over <m>F</m>.
+      The unique monic polynomial <m>p(x)</m> of the last theorem is called the
+      <term>minimal polynomial</term><idx><h>Polynomial</h><h>minimal</h></idx>
+          <idx><h>Minimal polynomial</h></idx>
+      for <m>\alpha</m> over <m>F</m>.
+      The degree of <m>p(x)</m> is the
+      <term>degree of <m>\alpha</m> over <m>F</m></term>.
+    </p>
+
+    <example xml:id="example-fields-minimal-poly" permid="eiJ">
+      <p permid="trU">
+        Let <m>f(x) = x^2 - 2</m> and <m>g(x) = x^4 - 4 x^2 + 1</m>.
+        These polynomials are the minimal polynomials of
+        <m>\sqrt{2}</m> and <m>\sqrt{2 + \sqrt{3} }</m>, respectively.
+      </p>
+    </example>
+
+    <proposition xml:id="proposition-minimal-poly" permid="ZyQ">
+      <statement>
+        <p permid="zhg">
+          Let <m>E</m> be a field extension of <m>F</m> and
+          <m>\alpha \in E</m> be algebraic over <m>F</m>.
+          Then <m>F( \alpha ) \cong F[x] / \langle p(x) \rangle</m>,
+          where <m>p(x)</m> is the minimal polynomial of <m>\alpha</m> over <m>F</m>.
+        </p>
+      </statement>
+
+      <proof permid="hrK">
+        <p permid="hzb">
+          Let <m>\phi_{\alpha} : F[x] \rightarrow E</m> be the evaluation homomorphism.
+          The kernel of this map is <m>\langle p(x) \rangle</m>,
+          where <m>p(x)</m> is the minimal polynomial of <m>\alpha</m>.
+          By the Fundamental Homomorphism Theorem for rings,
+          the image of <m>\phi_{\alpha}</m> in <m>E</m> is isomorphic to
+          <m>F( \alpha )</m> since it contains both <m>F</m> and <m>\alpha</m>.
+        </p>
+      </proof>
+    </proposition>
+    
+    
+    <p>
+      Recall that <m>F(\alpha)</m> is simply the smallest field that contains <m>F</m> and <m>\alpha</m>.  What do elements in this set look like?  Since <m>F(\alpha)</m> is a field, it is closed under addition and multiplication, so <m>a + b \alpha + c \alpha^2 + \cdots</m> are elements we can get in <m>F(\alpha)</m>.  Do we need to consider arbitrarily large powers of <m>\alpha</m>?  No, and this is why it is helpful to recognize <m>F(\alpha)</m> as a quotient ring.  
+    </p>
+
+    
+    
+          <!--  Corrected the kernel of <m>\phi_{\alpha}</m>.  Suggested by Aleks Vlasev. - TWJ 8/10/2011 -->
+    <theorem xml:id="theorem-simple_extension" permid="AWg">
+      <statement>
+        <p permid="dzc">
+          Let <m>E = F( \alpha )</m> be a simple extension of <m>F</m>,
+          where <m>\alpha \in E</m> is algebraic over <m>F</m>.
+          Suppose that the degree of <m>\alpha</m> over <m>F</m> is <m>n</m>.
+          Then every element <m>\beta \in E</m> can be expressed uniquely in the form
+          <me permid="XCM">
+            \beta = b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n - 1}
+          </me>
+          for <m>b_i \in F</m>.
+        </p>
+      </statement>
+
+      <proof permid="XXY">
+        <p permid="NGk">
+          Since <m>\phi_{\alpha} ( F[x] ) \cong F( \alpha )</m>,
+          every element in <m>E = F( \alpha )</m> must be of the form <m>\phi_{\alpha} ( f(x) ) = f( \alpha )</m>,
+          where <m>f(\alpha)</m> is a polynomial in <m>\alpha</m> with coefficients in <m>F</m>.
+          Let
+          <me permid="DJV">
+            p(x) = x^n + a_{n - 1} x^{n - 1} + \cdots + a_0
+          </me>
+          be the minimal polynomial of <m>\alpha</m>.
+          Then <m>p( \alpha ) = 0</m>; hence,
+          <me permid="jRe">
+            {\alpha}^n = - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0
+          </me>.
+          Similarly,
+          <md permid="wfw">
+            <mrow>{\alpha}^{n + 1} &amp; = {\alpha} {\alpha}^n</mrow>
+            <mrow>&amp; = - a_{n - 1} {\alpha}^n - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}</mrow>
+            <mrow>&amp; = - a_{n - 1}( - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0) - a_{n - 2} {\alpha}^{n - 1} - \cdots - a_0 {\alpha}</mrow>
+          </md>.
+          Continuing in this manner,
+          we can express every monomial <m>{\alpha}^m</m>, <m>m \geq n</m>,
+          as a linear combination of powers of
+          <m>{\alpha}</m> that are less than <m>n</m>.
+          Hence, any <m>\beta \in F( \alpha )</m> can be written as
+          <me permid="PYn">
+            \beta = b_0 + b_1 \alpha + \cdots + b_{n - 1} \alpha^{n - 1}
+          </me>.
+        </p>
+
+        <p permid="tNt">
+          To show uniqueness, suppose that
+          <me permid="cmF">
+            \beta = b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n-1} = c_0 + c_1 \alpha + \cdots + c_{n - 1} \alpha^{n - 1}
+          </me>
+          for <m>b_i</m> and <m>c_i</m> in <m>F</m>.
+          Then
+          <me permid="ItO">
+            g(x) = (b_0 - c_0) + (b_1 - c_1) x + \cdots + (b_{n - 1} - c_{n - 1})x^{n - 1}
+          </me>
+          is in <m>F[x]</m> and <m>g( \alpha ) = 0</m>.
+          Since the degree of <m>g(x)</m> is less than the degree of <m>p( x )</m>,
+          the irreducible polynomial of <m>\alpha</m>,
+          <m>g(x)</m> must be the zero polynomial.
+          Consequently,
+          <me permid="oAX">
+            b_0 - c_0 = b_1 - c_1 = \cdots = b_{n - 1} - c_{n - 1} = 0
+          </me>,
+          or <m>b_i = c_i</m> for <m>i = 0, 1, \ldots, n-1</m>.
+          Therefore, we have shown uniqueness.
+        </p>
+      </proof>
+    </theorem>
+          <!--  Changed = to \cong.  Suggested by Aleks Vlasev. - TWJ 8/10/2011 -->
+    <example xml:id="example-fields-isomorph" permid="KpS">
+      <p permid="Zzd">
+        Since <m>x^2 + 1</m> is irreducible over <m>{\mathbb R}</m>,
+        <m>\langle x^2 + 1 \rangle</m> is a maximal ideal in <m>{\mathbb R}[x]</m>.
+        So <m>E = {\mathbb R}[x]/\langle x^2 + 1 \rangle</m> is a field extension of
+        <m>{\mathbb R}</m> that contains a root of <m>x^2 + 1</m>.
+        Let <m>\alpha = x + \langle x^2 + 1 \rangle</m>.
+        We can identify <m>E</m> with the complex numbers.
+        By <xref ref="proposition-minimal-poly"/>,
+        <m>E</m> is isomorphic to <m>{\mathbb R}( \alpha ) = \{ a + b \alpha : a, b \in {\mathbb R} \}</m>.
+        We know that <m>\alpha^2 = -1</m> in <m>E</m>, since
+        <md permid="UIg">
+          <mrow>\alpha^2 + 1 &amp; = (x + \langle x^2 + 1  \rangle)^2 + (1 + \langle x^2 + 1 \rangle)</mrow>
+          <mrow>&amp; = (x^2 + 1) + \langle x^2 + 1  \rangle</mrow>
+          <mrow>&amp; = 0</mrow>
+        </md>.
+        Hence, we have an isomorphism of <m>{\mathbb R}( \alpha )</m> with
+        <m>{\mathbb C}</m> defined by the map that takes <m>a + b \alpha</m> to <m>a + bi</m>.
+      </p>
+    </example>
+    
+    
+  <paragraphs xml:id="subsec_fields-extensions-summary">
+  <title>Summary</title>
+  
+    <p>
+      At this point, it might seem like we are running around in circles, as it often seems whenever we get close to the Fundamental Homomorphism Theorem.  Before moving on, let's try to sort out the different things the theorems and propositions are doing in this section.
+    </p>
+    
+    <p>
+      First, if we are start with a given polynomial <m>p(x)</m> over some field <m>F</m>, we know there is some extension field <m>E</m> above <m>F</m> in which <m>p(x)</m> has a root <m>\alpha</m> (and therefore factors).  This is <xref ref="theorem-fundamental-of-field-theory"/>.
+    </p>
+    
+    <p>
+      On the other hand, we can start a extension field <m>E</m> of a base field <m>F</m> that contains some element <m>\alpha</m> <em>algebraic</em> over <m>F</m>.  By definition, <m>\alpha</m> is the root to some polynomial with coefficients from <m>F</m>, and by <xref ref="thm_minimum-poly"/> there is a minimum polynomial <m>p(x)</m> for <m>\alpha</m>.  By <xref ref="proposition-minimal-poly"/>, the field extension <m>F(\alpha)</m> (which is a subfield of <m>E</m>, if not <m>E</m> exactly) is isomorphic to the quotient ring <m>F[x]/\langle p(x) \rangle</m>.  
+    </p>
+    
+    <p>
+      So if you have a minimal polynomial <m>p(x)</m>, you can find an extension field that contains a root <m>\alpha</m>, namely <m>F[x]/\langle p(x)\rangle</m>.  Or if you have an extension field with a root <m>\alpha</m>, you can find a minimal polynomial <m>p(x)</m> and the extension field that you would get by starting with <m>p(x)</m> will be precisely the smallest field containing <m>F</m> and <m>\alpha</m>.
+    </p>
+  </paragraphs>
+  
+  <xi:include href="./exercises/fields-algebraic.ptx" />
+  <xi:include href="./exercises/fields-algebraic-collected.ptx" />
+  
+</section>
+  

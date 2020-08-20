@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-extension-degree">
+    <title>Activity: Dimension and Degree</title>
+
+    <introduction>
+        <p>
+          Recall that a <em>basis</em> for a vector space is a linearly independent spanning set, and that the <em>dimension</em> of a vector space is the size of a (any) basis for the space.  
+        </p>
+        <p>
+          If <m>K</m> is an extension field of <m>F</m>, we can view <m>K</m> as a vector space over the field of scalars <m>F</m>.  In this case, we say the <term>degree</term> of <m>K</m> over <m>F</m>, written <m>[K:F]</m> is the dimension of this vector space.
+        </p>
+    </introduction>
+
+    <exercise workspace="7%">
+      <statement>
+        <p>
+        Find a basis for <m>\Q(\sqrt[3]{5})</m> over <m>\Q</m>.  What is <m>[\Q(\sqrt[3]{5}):\Q]</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          One possible basis is <m>\{1, \sqrt[3]{5}, \sqrt[3]{5}^2\}</m>.  Thus <m>[\Q(\sqrt[3]{5}):\Q] = 3</m>. 
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise workspace="7%">
+        <statement>
+        <p> 
+           Find a basis for <m>\Q(\sqrt{7})</m> over <m>\Q</m>.  What is <m>[\Q(\sqrt{7}):\Q]</m>?
+        </p>
+       </statement>
+       <solution>
+         <p>
+           One possible basis is <m>\{1, \sqrt{7}\}</m>, making <m>[\Q(\sqrt{7}):\Q] = 2</m>
+         </p>
+       </solution>
+    </exercise>
+    
+
+        
+    <exercise workspace="7%">
+      <statement>
+        <p>
+          Suppose <m>\alpha</m> is a root of <m>p(x) = x^5 -6x^4 + 9x^2 + 3</m>.  Find a basis for <m>\Q(\alpha)</m> over <m>\Q</m>.  What is <m>[\Q(\alpha):\Q]</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The polynomial <m>p(x)</m> is irreducible by Eisenstein's criterion.  Therefore, it is the minimal polynomial for any of its roots, including <m>\alpha</m>.  We then know that <m>\{1, \alpha, \alpha^2, \alpha^3, \alpha^4\}</m> will be a basis for <m>\Q(\alpha)</m>, making <m>[\Q(\alpha):\Q] = 5</m>.
+        </p>
+      </solution>
+    </exercise>
+        
+        <exercise workspace="17%">
+          <statement>
+            <p>
+              What is the connection between the degree of a field extension and polynomials?  Investigate this.  In particular, if you claim that you can always find a basis in some systematic way, how do you know it is really a basis?  How do you know the basis is linearly independent?  How do you know it spans?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We claim that <m>[\Q(c):\Q]</m> is equal to the degree of the minimal polynomial for <m>c</m> (so the degree of the extension is the degree of the polynomial).  In fact, we know that <m>\{1, c, c^2, \ldots, c^{n-1}\}</m> will always be a basis (where <m>n</m> is the degree).  
+            </p>
+            
+            <p>
+              Why is this?  We know that <m>\Q(c)</m> must contain all powers of <m>c</m>.  However, <m>c^m</m> for <m>m\ge n</m> can always be expressed as a linear combination of <m>c^i</m> for <m>i \lt n</m>, using the minimal polynomial for <m>c</m>.  This proves that <m>\{1, c, c^2, \ldots, c^{n-1}\}</m> spans <m>\Q(c)</m>.  To see why this set is linearly independent, note that if it were not, then there would be a linear combination of powers of <m>c</m> that was zero.  But that would give a polynomial equal to zero at <m>c</m>, making <m>c</m> a root of a polynomial of degree less than <m>n</m>.
+            </p>
+          </solution>
+        </exercise>
+        
+        <exercise workspace="7%">
+          <statement>
+            <p>
+              The polynomial <m>q(x) = x^7-6 x^6-7 x^5+51 x^4-60 x^2-21</m> has <m>\alpha</m> (from question 3) and <m>\sqrt{7}</m> as roots.  Does this mean <m>[\Q(\sqrt{7}):\Q] = [\Q(\alpha):\Q] = 7</m>?  Why not?
+            </p>
+          
+          </statement>
+          <solution>
+            <p>
+              Clearly this cannot be true, since we already said that these degrees were <m>2</m> and <m>5</m> respectively.  They key thing that made our argument work above was that the polynomial was a <em>minimal</em> polynomial.  
+            </p>
+            
+            <p>
+              To further see that this is silly, what would the basis for <m>\Q(\sqrt{7})</m> be if it had size 7?  Would it be <m>\{1, \sqrt{7}, \sqrt{7}^2,\ldots, \sqrt{7}^6\}</m>?  That is clearly linearly dependent, since <m>\sqrt{7}^2</m> is a multiple of 1.  
+            </p>
+          </solution>
+        </exercise>
+    
+      
+
+</worksheet>

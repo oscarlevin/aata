@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-powers">
+    <title>Powers mod Powers</title>
+
+    <introduction>
+      <p>
+        Main Question: What is the remainder when you divide <m>a^p</m> by <m>p</m>? 
+        </p>
+    </introduction>
+
+
+
+<exercise workspace="50%">
+  <statement>
+    <p>
+      Compute <m>a^p</m> for various values of <m>a</m> and <m>p</m>.  What is your conjecture?
+    </p>
+  </statement>
+</exercise>
+
+<p>
+  Find the remainders when you perform the following divisions.  Try different values of <m>a</m>.  
+</p>
+<exercise workspace="5%">
+          <p>
+            <m>a^6</m> divided by 10?
+          </p>
+</exercise>
+<exercise workspace="5%">
+          <p>
+            <m>a^9</m> divided by 15?
+          </p>
+</exercise>
+<exercise workspace="5%">
+          <p>
+            <m>a^{13}</m> divided by 21?
+          </p>
+</exercise>
+<exercise workspace="1%">
+          <p>
+            <m>a^{2321}</m> divided by <m>2419</m>?
+          </p>
+</exercise>
+
+</worksheet>

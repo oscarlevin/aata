@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-galois-field-automorphisms" permid="iWc">
+      <title>Field Automorphisms</title>
+
+        <p permid="sqb">
+          Our first task is to establish a link between group theory and field theory by examining automorphisms of fields.
+        </p>
+
+        <proposition permid="ZgR">
+          <statement>
+            <p permid="IEs">
+              The set of all automorphisms of a field <m>F</m> is a group under composition of functions.
+            </p>
+          </statement>
+
+          <proof permid="ISA">
+            <p permid="vGg">
+              If <m>\sigma</m> and <m>\tau</m> are automorphisms of <m>F</m>,
+              then so are <m>\sigma \tau</m> and <m>\sigma^{-1}</m>.
+              The identity is certainly an automorphism;
+              hence, the set of all automorphisms of a field <m>F</m> is indeed a group.
+            </p>
+          </proof>
+        </proposition>
+
+        <proposition permid="Foa">
+          <statement>
+            <p permid="oLB">
+              Let <m>E</m> be a field extension of <m>F</m>.
+              Then the set of all automorphisms of <m>E</m> that fix <m>F</m> elementwise is a group;
+              that is, the set of all automorphisms <m>\sigma : E \rightarrow E</m> such that
+              <m>\sigma( \alpha ) = \alpha</m> for all <m>\alpha \in F</m> is a group.
+            </p>
+          </statement>
+
+          <proof permid="oZJ">
+            <p permid="bNp">
+              We need only show that the set of automorphisms of <m>E</m> that fix <m>F</m> elementwise is a subgroup of the group of all automorphisms of <m>E</m>.
+              Let <m>\sigma</m> and <m>\tau</m> be two automorphisms of <m>E</m> such that <m>\sigma( \alpha ) = \alpha</m> and
+              <m>\tau( \alpha ) = \alpha</m> for all <m>\alpha \in F</m>.
+              Then <m>\sigma \tau( \alpha ) = \sigma( \alpha) = \alpha</m> and <m>\sigma^{-1}( \alpha ) = \alpha</m>.
+              Since the identity fixes every element of <m>E</m>,
+              the set of automorphisms of <m>E</m> that leave elements of <m>F</m> fixed is a subgroup of the entire group of automorphisms of <m>E</m>.
+            </p>
+          </proof>
+        </proposition>
+
+        <p permid="Yxk">
+          Let <m>E</m> be a field extension of <m>F</m>.
+          We will denote the full group of automorphisms of <m>E</m> by <m>\aut(E)</m>.
+          We define the <term>Galois group</term>
+              <idx><h>Group</h><h>Galois</h></idx>
+              <idx><h>Galois group</h></idx>
+          of <m>E</m> over <m>F</m> to be the group of automorphisms of <m>E</m> that fix <m>F</m> elementwise; that is,
+          <me permid="QbN">
+            G(E/F) = \{ \sigma \in \aut(E) : \sigma(\alpha) = \alpha \text{ for all } \alpha \in F \}
+          </me>.
+          If <m>f(x)</m> is a polynomial in <m>F[x]</m> and <m>E</m> is the splitting field of <m>f(x)</m> over <m>F</m>,
+          then we define the Galois group of <m>f(x)</m> to be <m>G(E/F)</m>.
+
+          <notation>
+            <usage>G(E/F)</usage>
+            <description>Galois group of <m>E</m> over <m>F</m></description>
+          </notation>
+
+        </p>
+
+        <example xml:id="example-galois-complex-conj" permid="iAD">
+          <p permid="qAO">
+            Complex conjugation, defined by <m>\sigma : a + bi \mapsto a - bi</m>,
+            is an automorphism of the complex numbers.
+            Since
+            <me permid="wiW">
+              \sigma(a) = \sigma(a + 0i) = a - 0i = a
+            </me>,
+            the automorphism defined by complex conjugation must be in <m>G( {\mathbb C} / {\mathbb R} )</m>.
+          </p>
+        </example>
+
+        <example xml:id="example-galois-q-sqrt5" permid="OHM">
+          <p permid="WHX">
+            Consider the fields <m>{\mathbb Q} \subset {\mathbb Q}(\sqrt{5}\, ) \subset {\mathbb Q}( \sqrt{3}, \sqrt{5}\, )</m>.
+            Then for <m>a, b \in {\mathbb Q}( \sqrt{5}\, )</m>,
+            <me permid="cqf">
+              \sigma( a + b \sqrt{3}\, ) = a - b \sqrt{3}
+            </me>
+            is an automorphism of <m>{\mathbb Q}(\sqrt{3}, \sqrt{5}\, )</m> leaving <m>{\mathbb Q}( \sqrt{5}\, )</m> fixed.
+            Similarly,
+            <me permid="Ixo">
+              \tau( a + b \sqrt{5}\, ) = a - b \sqrt{5}
+            </me>
+            is an automorphism of <m>{\mathbb Q}(\sqrt{3}, \sqrt{5}\, )</m> leaving <m>{\mathbb Q}( \sqrt{3}\, )</m> fixed.
+            The automorphism <m>\mu = \sigma \tau</m> moves both <m>\sqrt{3}</m> and <m>\sqrt{5}</m>.
+            It will soon be clear that
+            <m>\{ \identity, \sigma, \tau, \mu \}</m> is the Galois group of
+            <m>{\mathbb Q}(\sqrt{3}, \sqrt{5}\, )</m> over <m>{\mathbb Q}</m>.
+            The following table shows that this group is isomorphic to <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m>.
+            <me permid="oEx">
+              \begin{array}{c|cccc}
+              &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\
+              \hline
+              \identity  &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\
+              \sigma &amp; \sigma &amp; \identity &amp; \mu &amp; \tau \\
+              \tau &amp; \tau &amp; \mu &amp; \identity &amp; \sigma \\
+              \mu &amp; \mu &amp; \tau &amp; \sigma &amp; \identity
+              \end{array}
+            </me>
+            We may also regard the field
+            <m>{\mathbb Q}( \sqrt{3}, \sqrt{5}\, )</m> as a vector space over
+            <m>{\mathbb Q}</m> that has basis <m>\{ 1, \sqrt{3}, \sqrt{5}, \sqrt{15}\, \}</m>.
+            It is no coincidence that <m>|G( {\mathbb Q}( \sqrt{3}, \sqrt{5}\, ) /{\mathbb Q})| = [{\mathbb Q}(\sqrt{3}, \sqrt{5}\, ):{\mathbb Q})] = 4</m>.
+          </p>
+        </example>
+
+        <proposition xml:id="proposition-roots-permute" permid="lvj">
+          <statement>
+            <p permid="USK">
+              Let <m>E</m> be a field extension of <m>F</m> and <m>f(x)</m> be a polynomial in <m>F[x]</m>.
+              Then any automorphism in <m>G(E/F)</m> defines a permutation of the roots of <m>f(x)</m> that lie in <m>E</m>.
+            </p>
+          </statement>
+
+          <proof permid="VgS">
+            <p permid="HUy">
+              Let
+              <me permid="ULG">
+                f(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n
+              </me>
+              and suppose that <m>\alpha \in E</m> is a zero of <m>f(x)</m>.
+              Then for <m>\sigma \in G(E/F)</m>,
+              <md permid="ASP">
+                <mrow>0 &amp; = \sigma( 0 )</mrow>
+                <mrow>&amp; = \sigma( f( \alpha ))</mrow>
+                <mrow>&amp; = \sigma(a_0 + a_1\alpha + a_2 \alpha^2 + \cdots + a_n \alpha^n)</mrow>
+                <mrow>&amp; = a_0 + a_1 \sigma(\alpha) + a_2 [\sigma(\alpha)]^2 + \cdots + a_n [\sigma(\alpha)]^n;</mrow>
+              </md>
+              therefore, <m>\sigma( \alpha )</m> is also a zero of <m>f(x)</m>.
+            </p>
+          </proof>
+        </proposition>
+
+        <p permid="EEt">
+          Let <m>E</m> be an algebraic extension of a field <m>F</m>.
+          Two elements <m>\alpha, \beta \in E</m> are <term>conjugate</term>
+              <idx><h>Conjugate elements</h></idx>
+          over <m>F</m> if they have the same minimal polynomial.
+          For example,
+          in the field <m>{\mathbb Q}( \sqrt{2}\, )</m> the elements
+          <m>\sqrt{2}</m> and <m>-\sqrt{2}</m> are conjugate over
+          <m>{\mathbb Q}</m> since they are both roots of the irreducible polynomial <m>x^2 - 2</m>.
+        </p>
+
+        <p permid="kLC">
+          A converse of the last proposition exists.
+          The proof follows directly from <xref ref="lemma-field-isomorphism"/>.
+        </p>
+
+        <proposition permid="RCs">
+          <statement>
+            <p permid="AZT">
+              If <m>\alpha</m> and <m>\beta</m> are conjugate over <m>F</m>,
+              there exists an isomorphism
+              <m>\sigma : F( \alpha ) \rightarrow F( \beta )</m> such that <m>\sigma</m> is the identity when restricted to <m>F</m>.
+            </p>
+          </statement>
+        </proposition>
+
+        <theorem xml:id="theorem-extension-order" permid="gLq">
+          <statement>
+            <p permid="XNq">
+              Let <m>f(x)</m> be a polynomial in <m>F[x]</m> and suppose that <m>E</m> is the splitting field for <m>f(x)</m> over <m>F</m>.
+              If <m>f(x)</m> has no repeated roots, then
+              <me permid="gZY">
+                |G(E/F)| = [E:F]
+              </me>.
+            </p>
+          </statement>
+
+          <proof permid="Yby">
+            <p permid="obH">
+              We will use mathematical induction on the degree of <m>f(x)</m>.
+              If the degree of <m>f(x)</m> is <m>0</m> or <m>1</m>,
+              then <m>E = F</m> and there is nothing to show.
+              Assume that the result holds for all polynomials of degree <m>k</m> with <m>0 \leq k \lt n</m>.
+              Suppose that the degree of <m>f(x)</m> is <m>n</m>.
+              Let <m>p(x)</m> be an irreducible factor of <m>f(x)</m> of degree <m>r</m>.
+              Since all of the roots of <m>p(x)</m> are in <m>E</m>,
+              we can choose one of these roots,
+              say <m>\alpha</m>, so that <m>F \subset F( \alpha ) \subset E</m>.
+              Then
+              <me permid="Nhh">
+                [E: F(\alpha)] = n/r \quad \text{and} \quad [F(\alpha): F] = r
+              </me>.
+              If <m>\beta</m> is any other root of <m>p(x)</m>,
+              then <m>F \subset F( \beta ) \subset E</m>.
+              By <xref ref="lemma-field-isomorphism"/>,
+              there exists a unique isomorphism
+              <m>\sigma: F( \alpha ) \rightarrow F( \beta )</m> for each such <m>\beta</m> that fixes <m>F</m> elementwise.
+              Since <m>E</m> is a splitting field of <m>p(x)</m>,
+              there are exactly <m>r</m> such isomorphisms.
+              For each of these automorphisms,
+              we can use our induction hypothesis on <m>[E: F(\alpha)] = n/r \lt n</m> to conclude that
+              <me permid="toq">
+                |G(E/F(\alpha))| = [E:F(\alpha)]
+              </me>.
+              Consequently, there are
+              <me permid="Zvz">
+                [E:F] = [E:F(\alpha)] [F( \alpha):F] = n
+              </me>
+              possible automorphisms of <m>E</m> that fix <m>F</m>,
+              or <m>|G(E/F)| = [E:F]</m>.
+            </p>
+          </proof>
+        </theorem>
+              <!-- agraph{Original Proof} -->
+              <!-- The proof is similar to the proof of <xref ref="fields:isomorph_extension_theorem" />.  We will use mathematical induction on the degree of <m>f(x)</m>.  If the degree of <m>f(x)</m> is 0 or 1, then <m>E = F</m> and there is nothing to show.  Assume -->
+              <!-- that the result holds for all polynomials of degree <m>k</m> with <m>0 \leq k \lt n</m>.  Suppose that the degree of <m>f(x)</m> is <m>n</m>.  Let <m>p(x)</m> be an irreducible factor of <m>f(x)</m> of degree <m>r</m>.  Since all of the roots of <m>p(x)</m> are in <m>E</m>, we can choose one of -->
+              <!-- these roots, say <m>\alpha</m>, so that <m>F \subset F( \alpha ) \subset E</m>.  If <m>\beta</m> is any other root of <m>p(x)</m>, then <m>F \subset F( \beta ) \subset E</m>.  By <xref ref="fields:isomorph_lemma" />, there exists a unique isomorphism <m>\overline{\sigma}: F( \alpha ) \rightarrow F( \beta )</m> for each such <m>\beta</m> that fixes <m>F</m> elementwise.  Since <m>E</m> is a splitting field of <m>F(\beta)</m>, there are exactly <m>r</m> such isomorphisms.  We can factor -->
+              <!-- <m>p(x)</m> in <m>F(\alpha)</m> as <m>p(x) = (x - \alpha) q(x)</m>.  The degree of <m>q(x)</m> is less than <m>r</m>.  Since we know that <m>E</m> is the  splitting field of <m>q(x)</m> over <m>F(\alpha)</m>, we can apply -->
+              <!-- the induction  hypothesis to conclude that  -->
+              <!-- \[ -->
+              <!-- |G(E/F(\alpha))| = [E:F(\alpha)]. -->
+              <!-- \] -->
+              <!-- Consequently, there are -->
+              <!-- \[ -->
+              <!-- [E:F] = [E:F(\alpha)] [F( \alpha):F] -->
+              <!-- \] -->
+              <!-- possible automorphisms of <m>E</m> that fix <m>F</m>, or <m>|G(E/F)| = [E:F]</m>. -->
+              <!-- Proof fixed<mdash />I hope.  TWJ 24/4/2013 -->
+        <corollary permid="qfc">
+          <statement>
+            <p permid="yfn">
+              Let <m>F</m> be a finite field with a finite extension <m>E</m> such that <m>[E:F]=k</m>.
+              Then <m>G(E/F)</m> is cyclic of order <m>k</m>.
+            </p>
+          </statement>
+              <!-- Corrected statement of the corollary.  Suggested by K. Wenholz. - TWJ 5/15/2012 -->
+          <proof permid="Smm">
+            <p permid="UiQ">
+              Let <m>p</m> be the characteristic of <m>E</m> and <m>F</m> and assume that the orders of <m>E</m> and <m>F</m> are <m>p^m</m> and <m>p^n</m>,
+              respectively.
+              Then <m>nk = m</m>.
+              We can also assume that <m>E</m> is the splitting field of
+              <m>x^{p^m} - x</m> over a subfield of order <m>p</m>.
+              Therefore, <m>E</m> must also be the splitting field of <m>x^{p^m} - x</m> over <m>F</m>.
+              Applying <xref ref="theorem-extension-order"/>, we find that <m>|G(E/F)| = k</m>.
+            </p>
+
+            <p permid="ApZ">
+              To prove that <m>G(E/F)</m> is cyclic,
+              we must find a generator for <m>G(E/F)</m>.
+              Let <m>\sigma : E \rightarrow E</m> be defined by <m>\sigma(\alpha) = \alpha^{p^n}</m>.
+              We claim that <m>\sigma</m> is the element in <m>G(E/F)</m> that we are seeking.
+              We first need to show that <m>\sigma</m> is in <m>\aut(E)</m>.
+              If <m>\alpha</m> and <m>\beta</m> are in <m>E</m>,
+              <me permid="FCI">
+                \sigma(\alpha + \beta) = (\alpha + \beta)^{p^n} = \alpha^{p^n} + \beta^{p^n} = \sigma(\alpha) + \sigma(\beta)
+              </me>
+              by <xref ref="lemma-freshmans-dream"/>.
+              Also, it is easy to show that <m>\sigma(\alpha \beta) = \sigma( \alpha ) \sigma( \beta )</m>.
+              Since <m>\sigma</m> is a nonzero homomorphism of fields,
+              it must be injective.
+              It must also be onto, since <m>E</m> is a finite field.
+              We know that <m>\sigma</m> must be in <m>G(E/F)</m>,
+              since <m>F</m> is the splitting field of
+              <m>x^{p^n} - x</m> over the base field of order <m>p</m>.
+              This means that <m>\sigma</m> leaves every element in <m>F</m> fixed.
+              Finally, we must show that the order of <m>\sigma</m> is <m>k</m>.
+              By <xref ref="theorem-extension-order"/>, we know that
+              <me permid="lJR">
+                \sigma^k( \alpha ) = \alpha^{p^{nk}} = \alpha^{p^m} = \alpha
+              </me>
+              is the identity of <m>G( E/F)</m>.
+              However, <m>\sigma^r</m> cannot be the identity for <m>1 \leq r \lt k</m>;
+              otherwise, <m>x^{p^{nr}} - x</m> would have <m>p^m</m> roots,
+              which is impossible.
+            </p>
+          </proof>
+              <!-- Corrected proof.  Suggested by M. Faucette. - TWJ 4/7/2014 -->
+        </corollary>
+
+        <example xml:id="example-galois-group-sqrt3-5" permid="uOV">
+          <p permid="CPg">
+            We can now confirm that the Galois group of <m>{\mathbb Q}( \sqrt{3}, \sqrt{5}\, )</m> over
+            <m>{\mathbb Q}</m> in <xref ref="example-galois-q-sqrt5"/> is indeed isomorphic to <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m>.
+            Certainly the group <m>H = \{ \identity, \sigma, \tau, \mu \}</m> is a subgroup of <m>G({\mathbb Q}( \sqrt{3}, \sqrt{5}\, )/{\mathbb Q})</m>;
+            however, <m>H</m> must be all of <m>G({\mathbb Q}( \sqrt{3}, \sqrt{5}\, )/{\mathbb Q})</m>, since
+            <me permid="RRa">
+              |H| = [{\mathbb Q}( \sqrt{3}, \sqrt{5}\, ):{\mathbb Q}] = |G({\mathbb Q}( \sqrt{3}, \sqrt{5}\, )/{\mathbb Q})| = 4
+            </me>.
+          </p>
+        </example>
+
+        <example xml:id="example-galois-group-x4" permid="aWe">
+          <p>
+            Let us compute the Galois group of
+            <me permid="xYj">
+              f(x) = x^4 + x^3 + x^2 + x + 1
+            </me>
+            over <m>{\mathbb Q}</m>.
+            First let's check that <m>f(x)</m> is irreducible over <m>\Q</m>.  To do this, consider a new polynomial <m>g(x) = f(x+1)</m> (essentially doing a change of variables).  We have 
+            <me>
+              g(x) = x^4 + 5x^3 + 10x^2 + 10x + 5.
+            </me>
+            This is irreducible by Eisenstein's criterion.  But if <m>f(x)</m> factored, then so would <m>g(x)</m>, so we see that <m>f(x)</m> is irreducible.
+          </p>
+          <p>
+            Furthermore, since <m>(x -1)f(x) = x^5 - 1</m>,
+            we can use DeMoivre's Theorem to determine that the roots of <m>f(x)</m> are <m>\omega^i</m>,
+            where  <m>i = 1, \ldots, 4</m> and
+            <me permid="efs">
+              \omega = \cos(2 \pi / 5 ) + i \sin(2 \pi / 5 )
+            </me>.
+            Hence, the splitting field of <m>f(x)</m> must be <m>{\mathbb Q}(\omega)</m>.
+            We can define automorphisms
+            <m>\sigma_i</m> of <m>{\mathbb Q}(\omega )</m> by
+            <m>\sigma_i( \omega ) = \omega^i</m> for <m>i = 1, \ldots, 4</m>.
+            It is easy to check that these are indeed distinct automorphisms in <m>G( {\mathbb Q}( \omega) / {\mathbb Q} )</m>.
+            Since
+            <me permid="KmB">
+              [{\mathbb Q}( \omega) : {\mathbb Q}] = | G( {\mathbb Q}( \omega) / {\mathbb Q})| = 4
+            </me>,
+            the <m>\sigma_i</m>'s must be all of <m>G( {\mathbb Q}( \omega) / {\mathbb Q} )</m>.
+            Therefore, <m>G({\mathbb Q}( \omega) / {\mathbb Q})\cong {\mathbb Z}_4</m> since <m>\omega</m> is a generator for the Galois group.
+          </p>
+        </example>
+   
+
+  <xi:include href="exercises/galois-automorphisms-collected.ptx" />
+
+
+    </section>
+

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-lagrange" permid="Evp">
+    <title>Lagrange's Theorem and its consequences</title>
+    
+    <xi:include href="./worksheets/groups-powers.ptx"/>
+    
+    <subsection xml:id="section-lagranges-theorem" permid="dTk">
+      <title>Lagrange's Theorem</title>
+      <proposition xml:id="cosets_theorem_4" permid="jmX">
+        <statement>
+          <p permid="ORD">
+            Let <m>H</m> be a subgroup of <m>G</m> with <m>g \in G</m> and define a map
+            <m>\phi:H \rightarrow gH</m> by <m>\phi(h) = gh</m>.
+            The map <m>\phi</m> is bijective;
+            hence, the number of elements in <m>H</m> is the same as the number of elements in <m>gH</m>.
+          </p>
+        </statement>
+
+        <proof permid="Cav">
+          <p permid="ANY">
+            We first show that the map <m>\phi</m> is one-to-one.
+            Suppose that <m>\phi(h_1) = \phi(h_2)</m> for elements <m>h_1, h_2 \in H</m>.
+            We must show that <m>h_1 = h_2</m>,
+            but <m>\phi(h_1) = gh_1</m> and <m>\phi(h_2) = gh_2</m>.
+            So <m>gh_1 = gh_2</m>, and by left cancellation <m>h_1= h_2</m>.
+            To show that <m>\phi</m> is onto is easy.
+            By definition every element of <m>gH</m> is of the form <m>gh</m> for some <m>h \in H</m> and <m>\phi(h) = gh</m>.
+          </p>
+        </proof>
+      </proposition>
+
+      <theorem xml:id="theorem-lagrange" permid="eDe">
+        <title>Lagrange</title>
+        <idx>
+        <h>Lagrange's Theorem</h>
+        </idx>
+        <statement>
+          <p permid="KhK">
+            Let <m>G</m> be a finite group and let <m>H</m> be a subgroup of <m>G</m>.
+            Then <m>|G|/|H| = [G : H]</m> is the number of distinct left cosets of <m>H</m> in <m>G</m>.
+            In particular,
+            the number of elements in <m>H</m> must divide the number of elements in <m>G</m>.
+          </p>
+        </statement>
+
+        <proof permid="JEU">
+          <p permid="gVh">
+            The group <m>G</m> is partitioned into <m>[G : H]</m> distinct left cosets.
+            Each left coset has <m>|H|</m> elements;
+            therefore, <m>|G| = [G : H] |H|</m>.
+          </p>
+        </proof>
+      </theorem>
+
+      <corollary xml:id="corollary-cosets-theorem-6" permid="bIy">
+        <statement>
+          <p permid="Hne">
+            Suppose that <m>G</m> is a finite group and <m>g \in G</m>.
+            Then the order of <m>g</m> must divide the number of elements in <m>G</m>.
+          </p>
+        </statement>
+      </corollary>
+
+      <corollary xml:id="corollary-cosets-theorem-7" permid="HPH">
+        <statement>
+          <p permid="nun">
+            Let <m>|G| = p</m> with <m>p</m> a prime number.
+            Then <m>G</m> is cyclic and any <m>g \in G</m> such that <m>g \neq e</m> is a generator.
+          </p>
+        </statement>
+
+        <proof permid="OoN">
+          <p permid="Ncq">
+            Let <m>g</m> be in <m>G</m> such that <m>g \neq e</m>.
+            Then by <xref ref="corollary-cosets-theorem-6"/>,
+            the order of <m>g</m> must divide the order of the group.
+            Since <m>|\langle g \rangle| \gt 1</m>, it must be <m>p</m>.
+            Hence, <m>g</m> generates <m>G</m>.
+          </p>
+        </proof>
+      </corollary>
+
+      <p permid="NqL">
+        <xref ref="corollary-cosets-theorem-7"/> suggests that groups of prime order <m>p</m> must somehow look like <m>{\mathbb Z}_p</m>.
+      </p>
+
+      <corollary xml:id="corollary-cosets-theorem-8" permid="nWQ">
+        <statement>
+          <p permid="TBw">
+            Let <m>H</m> and <m>K</m> be subgroups of a finite group <m>G</m> such that <m>G \supset H \supset K</m>.
+            Then
+            <me permid="WKx">
+              [G:K] = [G:H][H:K]
+            </me>.
+          </p>
+        </statement>
+
+        <proof permid="uvW">
+          <p permid="tjz">
+            Observe that
+            <me permid="CRG">
+              [G:K] = \frac{|G|}{|K|} = \frac{|G|}{|H|} \cdot \frac{|H|}{|K|} = [G:H][H:K]
+            </me>.
+          </p>
+        </proof>
+      </corollary>
+
+      <remark permid="YNS">
+        <title>The converse of Lagrange's Theorem is false</title>
+        <p permid="kzH">
+          The group <m>A_4</m> has order <m>12</m>;
+          however, it can be shown that it does not possess a subgroup of order <m>6</m>.
+          According to Lagrange's Theorem,
+          subgroups of a group of order <m>12</m> can have orders of either <m>1</m>,
+          <m>2</m>,
+          <m>3</m>, <m>4</m>, or <m>6</m>.
+          However, we are not guaranteed that subgroups of every possible order exist.
+          To prove that <m>A_4</m> has no subgroup of order <m>6</m>,
+          we will assume that it does have such a subgroup <m>H</m> and show that a contradiction must occur.
+          Since <m>A_4</m> contains eight <m>3</m>-cycles,
+          we know that <m>H</m> must contain a <m>3</m>-cycle.
+          We will show that if <m>H</m> contains one <m>3</m>-cycle,
+          then it must contain more than <m>6</m> elements.
+        </p>
+      </remark>
+          <!-- % TWJ, 2011/11/20 -->
+          <!-- % Fixed the proof that <m>A_4</m> contains no subgroup of order 6.  This mistake was -->
+          <!-- % pointed out by Z. Teitler. -->
+      <proposition xml:id="proposition-cosets-theorem-10" permid="Pug">
+        <statement>
+          <p permid="uYM">
+            The group <m>A_4</m> has no subgroup of order <m>6</m>.
+          </p>
+        </statement>
+
+        <proof permid="ihE">
+          <p permid="ZqI">
+            Since <m>[A_4 : H] = 2</m>,
+            there are only two cosets of <m>H</m> in <m>A_4</m>.
+            Inasmuch as one of the cosets is <m>H</m> itself,
+            right and left cosets must coincide;
+            therefore, <m>gH = Hg</m> or
+            <m>g H g^{-1} = H</m> for every <m>g \in A_4</m>.
+            Since there are eight <m>3</m>-cycles in <m>A_4</m>,
+            at least one <m>3</m>-cycle must be in <m>H</m>.
+            Without loss of generality, assume that <m>(123)</m> is in <m>H</m>.
+            Then <m>(123)^{-1} = (132)</m> must also be in <m>H</m>.
+            Since <m>g h g^{-1} \in H</m> for all
+            <m>g \in A_4</m> and all <m>h \in H</m> and
+            <md permid="PfY">
+              <mrow>(124)(123)(124)^{-1} &amp; = (124)(123)(142)  = (243)</mrow>
+              <mrow>(243)(123)(243)^{-1} &amp; = (243)(123)(234)  = (142)</mrow>
+            </md>
+            we can conclude that <m>H</m> must have at least seven elements
+            <me permid="iYP">
+              (1), (123), (132), (243), (243)^{-1} = (234), (142), (142)^{-1} = (124)
+            </me>.
+            Therefore, <m>A_4</m> has no subgroup of order <m>6</m>.
+          </p>
+        </proof>
+      </proposition>
+
+      <p permid="txU">
+        In fact, we can say more about when two cycles have the same length.
+      </p>
+
+      <theorem xml:id="theorem-cycle-length-theorem" permid="KKn">
+        <statement>
+          <p permid="qoT">
+            Two cycles <m>\tau</m> and <m>\mu</m> in <m>S_n</m> have the same length if and only if there exists a
+            <m>\sigma \in S_n</m> such that <m>\mu = \sigma \tau \sigma^{-1}</m>.
+          </p>
+        </statement>
+
+        <proof permid="pMd">
+          <p permid="FxR">
+            Suppose that
+            <md permid="vnh">
+              <mrow>\tau &amp; = (a_1, a_2, \ldots, a_k )</mrow>
+              <mrow>\mu  &amp; = (b_1, b_2, \ldots, b_k )</mrow>
+            </md>.
+            Define <m>\sigma</m> to be the permutation
+            <md permid="buq">
+              <mrow>\sigma( a_1 ) &amp; = b_1</mrow>
+              <mrow>\sigma( a_2 ) &amp; = b_2</mrow>
+              <mrow>&amp; \vdots</mrow>
+              <mrow>\sigma( a_k ) &amp; = b_k</mrow>
+            </md>.
+            Then <m>\mu = \sigma \tau \sigma^{-1}</m>.
+          </p>
+
+          <p permid="lFa">
+            Conversely, suppose that <m>\tau = (a_1, a_2, \ldots,
+            a_k )</m> is a <m>k</m>-cycle and <m>\sigma \in S_n</m>.
+            If <m>\sigma( a_i ) = b</m> and
+            <m>\sigma( a_{(i \bmod k) + 1}) = b'</m>, then <m>\mu( b) = b'</m>.
+            Hence,
+            <me permid="HBz">
+              \mu = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k) )
+            </me>.
+            Since <m>\sigma</m> is one-to-one and onto,
+            <m>\mu</m> is a cycle of the same length as <m>\tau</m>.
+          </p>
+        </proof>
+      </theorem>
+    </subsection>
+
+    <subsection xml:id="section-fermat-euler" permid="Kat">
+      <title>Fermat's and Euler's Theorems</title>
+        <p permid="wNZ">
+          The <term>Euler</term> <m>\phi</m>-<term>function</term><idx><h>Euler <m>\phi</m>-function</h></idx> is the map <m>\phi : {\mathbb N } \rightarrow {\mathbb N}</m> defined by
+          <m>\phi(n) = 1</m> for <m>n=1</m>, and, for <m>n \gt 1</m>,
+          <m>\phi(n)</m> is the number of positive integers <m>m</m> with
+          <m>1 \leq m \lt n</m> and <m>\gcd(m,n) = 1</m>.
+        </p>
+
+        <p permid="cVi">
+          From <xref ref="proposition-zn-equiv-classes"/>, we know that the order of <m>U(n)</m>,
+          the group of units in <m>{\mathbb Z}_n</m>, is <m>\phi(n)</m>.
+          For example,
+          <m>|U(12)| = \phi(12) = 4</m> since the numbers that are relatively prime to 12 are 1, 5, 7, and 11.
+          For any prime <m>p</m>, <m>\phi(p) = p-1</m>.
+          We state these results in the following theorem.
+        </p>
+
+        <theorem xml:id="theorem-cosets-theorem-11" permid="qRw">
+          <statement>
+            <p permid="Wwc">
+              Let <m>U(n)</m> be the group of units in <m>{\mathbb Z}_n</m>.
+              Then <m>|U(n)| = \phi(n)</m>.
+            </p>
+          </statement>
+        </theorem>
+
+        <p permid="Jcr">
+          The following theorem is an important result in number theory,
+          due to Leonhard Euler.
+        </p>
+
+        <theorem xml:id="theorem-eulers_theorem" permid="WYF">
+          <title>Euler's Theorem</title>
+          <statement>
+            <p permid="CDl">
+              Let <m>a</m> and <m>n</m> be integers such that <m>n \gt 0</m> and <m>\gcd(a, n) = 1</m>.
+              Then <m>a^{\phi(n)} \equiv 1 \pmod{n}</m>.
+            </p>
+          </statement>
+
+          <proof permid="VTm">
+            <p permid="RMj">
+              By <xref ref="theorem-cosets-theorem-11"/> the order of <m>U(n)</m> is <m>\phi(n)</m>.
+              Consequently, <m>a^{\phi(n)} = 1</m> for all <m>a \in U(n)</m>;
+              or <m>a^{\phi(n)} - 1</m> is divisible by <m>n</m>.
+              Therefore, <m>a^{\phi(n)} \equiv 1 \pmod{n}</m>.
+            </p>
+          </proof>
+        </theorem>
+
+        <p permid="pjA">
+          If we consider the special case of Euler's Theorem in which <m>n = p</m> is prime and recall that <m>\phi(p) = p - 1</m>,
+          we obtain the following result, due to Pierre de Fermat.
+              <idx><h>Fermat, Pierre de</h></idx>
+        </p>
+
+        <theorem xml:id="theorem-little-fermat" permid="DfO">
+          <title>Fermat's Little Theorem</title>
+          <idx>
+          <h>Fermat's Little Theorem</h>
+          </idx>
+          <statement>
+            <p permid="iKu">
+              Let <m>p</m> be any prime number and suppose that <m>p \notdivide a</m>
+              (<m>p</m> does not divide <m>a</m>).
+
+              <notation>
+                <usage>a \notdivide b</usage>
+                <description><m>a</m> does not divide <m>b</m></description>
+              </notation>
+
+              Then
+              <me permid="nII">
+                a^{p-1} \equiv 1 \pmod{ p }
+              </me>.
+              Furthermore, for any integer <m>b</m>,
+              <m>b^p \equiv b \pmod{ p}</m>.
+            </p>
+          </statement>
+        </theorem>
+
+
+      </subsection>
+
+      <subsection xml:id="cosets-subsection-historical-note" permid="AGH">
+        <title>Historical Note</title>
+        <p permid="Owe">
+          Joseph-Louis Lagrange
+              <idx><h>Lagrange, Joseph-Louis</h></idx>
+          (1736<ndash/>1813), born in Turin, Italy,
+          was of French and Italian descent.
+          His talent for mathematics became apparent at an early age.
+          Leonhard Euler
+              <idx><h>Euler, Leonhard</h></idx>
+          recognized Lagrange's abilities when Lagrange, who was only 19,
+          communicated to Euler some work that he had done in the calculus of variations.
+          That year he was also named a professor at the Royal Artillery School in Turin.
+          At the age of 23 he joined the Berlin Academy.
+          Frederick the Great had written to Lagrange proclaiming that the
+          <q>greatest king in Europe</q>
+          should have the <q>greatest mathematician in Europe</q> at his court.
+          For 20 years Lagrange held the position vacated by his mentor, Euler.
+          His works include contributions to number theory,
+          group theory, physics and mechanics,
+          the calculus of variations,
+          the theory of equations, and differential equations.
+          Along with Laplace and Lavoisier, Lagrange was one of the people responsible for designing the metric system.
+          During his life Lagrange profoundly influenced the development of mathematics,
+          leaving much to the next generation of mathematicians in the form of examples and new problems to be solved.
+        </p>
+      </subsection>
+
+    </section>

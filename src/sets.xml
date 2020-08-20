@@ -1163,6 +1163,276 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-1-2">
+      <title>Practice Problems</title>
+
+      <exercise>
+        <statement>
+          <p>
+        Same or different: <m>\{2^n \in \N \st n \in \N\}</m> and <m>\{n \in \N \st 2^n \in \N\}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+        Different.  The first set only has elements that are powers of 2, while the second set is all natural numbers.
+          </p>
+        </answer>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+        Same or different: <m>\{2^n \st n \in \N\}</m> and <m>\{n \st n = 2^x \text{ for some } x \in \N\}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+        Same.
+          </p>
+        </answer>
+      </exercise>
+
+
+      <exercise permid="nnj">
+        <statement>
+          <p permid="AHh">
+          Suppose that
+            <md permid="FjW">
+              <mrow>A &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is even} \},</mrow>
+              <mrow>B &amp; = \{x : x \in \mathbb N \text{ and } x \text{ is prime}\},</mrow>
+              <mrow>C &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is a multiple of } 5\}</mrow>
+            </md>.
+          Describe each of the following sets.
+
+            <ol cols="2" permid="TIN">
+              <li permid="MOi">
+                <p permid="PXj">
+                  <m>A \cap B</m>
+                </p>
+              </li>
+
+              <li permid="sVr">
+                <p permid="wes">
+                  <m>B \cap C</m>
+                </p>
+              </li>
+
+              <li permid="ZcA">
+                <p permid="clB">
+                  <m>A \cup B</m>
+                </p>
+              </li>
+
+              <li permid="FjJ">
+                <p permid="IsK">
+                  <m>A \cap (B \cup C)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="sGW">
+          <p permid="rIU">
+          (a) <m>A \cap B = \{ 2 \}</m>; (b) <m>B \cap C = \{ 5 \}</m>.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+      I'm trying to invent a function <m>f: \{1,2,3\} \to \{1,2,3,4\}</m>.  So far, I've decided <m>f(1) = 4</m> and <m>f(2) = 1</m>.  What should <m>f(3)</m> be ...
+            <ol>
+              <li>
+                <p>
+            ... if I want <m>f</m> to be one-to-one?
+                </p>
+              </li>
+              <li>
+                <p>
+            ... if I want <m>f</m> to be onto?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+      To be one to one, I could take <m>f(3) = 2</m> or <m>f(3) = 3</m>, but the other two options would not work.  There is no choice I can make to make <m>f</m> onto.
+          </p>
+        </answer>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+      I'm trying to invent a function <m>f: \{1,2,3\} \to \{1,2\}</m>.  So far, I've decided <m>f(1) = 2</m>.  What should <m>f(2)</m> and <m>f(3)</m> be ...
+            <ol>
+              <li>
+                <p>
+            ... if I want <m>f</m> to be one-to-one?
+                </p>
+              </li>
+              <li>
+                <p>
+            ... if I want <m>f</m> to be onto?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+      There is no way to make <m>f</m> one-to-one.  To make it onto, I just need one of <m>f(2)</m> or <m>f(3)</m> to be 1, so every element in the codomain is the image of at least one element of the domain.
+          </p>
+        </answer>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+        Consider the function <m>f:\Z \to \Z</m> given by <m>f(n) = \begin{cases}n+1 \amp \text{ if }n\text{ is even} \\ n-3 \amp \text{ if }n\text{ is odd} . \end{cases}
+            </m>
+
+            <ol>
+              <li>
+                <p>
+              Is <m>f</m> injective?
+              Prove your answer.
+                </p>
+              </li>
+
+              <li>
+                <p>
+              Is <m>f</m> surjective?
+              Prove your answer.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+            <ol>
+              <li>
+                <p>
+                  <m>f</m> is injective.
+                </p>
+
+                <proof>
+                  <p>
+                Let <m>x</m> and <m>y</m> be elements of the domain <m>\Z</m>.
+                Assume <m>f(x) = f(y)</m>.
+                If <m>x</m> and <m>y</m> are both even,
+                then <m>f(x) = x+1</m> and <m>f(y) = y+1</m>.
+                Since <m>f(x) = f(y)</m>,
+                we have <m>x + 1 = y + 1</m> which implies that <m>x = y</m>.
+                Similarly, if <m>x</m> and <m>y</m> are both odd,
+                then <m>x - 3 = y-3</m> so again <m>x = y</m>.
+                The only other possibility is that <m>x</m> is even an <m>y</m> is odd
+                (or visa-versa).
+                But then <m>x + 1</m> would be odd and <m>y - 3</m> would be even,
+                so it cannot be that <m>f(x) = f(y)</m>.
+                Therefore if <m>f(x) = f(y)</m> we then have <m>x = y</m>,
+                which proves that <m>f</m> is injective.
+                  </p>
+                </proof>
+
+              </li>
+
+              <li>
+                <p>
+                  <m>f</m> is surjective.
+                </p>
+
+                <proof>
+                  <p>
+                Let <m>y</m> be an element of the codomain <m>\Z</m>.
+                We will show there is an element <m>n</m> of the domain (<m>\Z</m>) such that <m>f(n) = y</m>.
+                There are two cases: First, if <m>y</m> is even, then let <m>n = y+3</m>.
+                Since <m>y</m> is even, <m>n</m> is odd,
+                so <m>f(n) = n-3 = y+3-3 = y</m> as desired.
+                Second, if <m>y</m> is odd, then let <m>n = y-1</m>.
+                Since <m>y</m> is odd, <m>n</m> is even,
+                so <m>f(n) = n+1 = y-1+1 = y</m> as needed.
+                Therefore <m>f</m> is surjective.
+                  </p>
+                </proof>
+
+              </li>
+            </ol>
+          </ol>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-1-2">
+      <title>Collected Homework</title>
+      <exercise>
+        <statement>
+          <p>
+          Consider the sets below.  
+            <me>
+            A = \{2n \st n \in \Z\} \qquad \text{ and } \qquad B = \{x \in \Z \st x^2 \in A\}
+            </me>.
+            <ol>
+              <li>
+                <p>
+                Describe the sets <m>A</m> and <m>B</m> in words or by listing enough elements to see what is going on.
+                </p>
+              </li>
+              <li>
+                <p>
+                If <m>a \in A</m> and <m>b \in A</m>, must <m>a+b \in A</m>?  Explain.
+                </p>
+              </li>
+              <li>
+                <p>
+                If <m>a \in B</m> and <m>b \in B</m>, must <m>a+b \in B</m>?  Explain.
+                </p>
+              </li>
+            </ol>
+
+
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise permid="mhQ">
+        <statement>
+          <p permid="zBO">
+          Let <m>f : A \rightarrow B</m> and <m>g : B \rightarrow C</m> be maps.
+
+            <ol permid="YsG">
+              <li permid="QsI">
+                <p permid="TBJ">
+                If <m>f</m> and <m>g</m> are both one-to-one functions,
+                show that <m>g \circ f</m> is one-to-one.
+                </p>
+              </li>
+
+              <li permid="wzR">
+                <p permid="zIS">
+                If <m>g \circ f</m> is onto, show that <m>g</m> is onto.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="oGX">
+          <p permid="oOo">
+          To show a function <m>h</m> is one-to-one, you show that if <m>h(x) = h(y)</m> then <m>x=y</m>.
+          </p>
+          <p>
+          To show a function <m>h</m> is onto, show that for every element <m>c</m> in the codomain, there is some element <m>a</m> in the domain such that <m>h(a) = c</m>. 
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>
   </section>
 
     <section xml:id="section-equivalence-relations" permid="VFe">
@@ -1488,6 +1758,192 @@
         </exercise>
       </reading-questions>
 
+
+      <exercises xml:id="practice-1-3">
+        <title>Practice Problems</title>
+
+        <exercise>
+          <statement>
+            <p>
+            Consider all points <m>(x,y) \in \R \times \R = \R^2</m> (that is, all ordered pairs of real numbers; he usual real plane).  Define <m>\sim</m> defined by <m>(x,y) \sim (a,b)</m> if and only if <m>x^2 + y^2 = a^2 + b^2</m>.  Prove <m>\sim</m> is an equivalence relation. 
+            </p>
+          </statement>
+          <hint>
+            <p>
+            There are three things you must check. Note that since our set is a set of ordered pairs, the properties we are checking will need to relate ordered pairs to other ordered pairs.
+            </p>
+          </hint>
+          <solution>
+            <p>
+            For reflexivity, note that <m>x^2 + y^2 = x^2 + y^2</m> so <m>(x,y) \sim (x,y)</m>.  For symmetry, note that if <m>x^2 + y^2 = a^2 + b^2</m> then <m>a^2 + b^2 = x^2 + y^2</m> (since equality is symmetric).  For transitivity, if <m>x^2 + y^2 = a^2 + b^2</m> and <m>a^2 + b^2 = c^2 + d^2</m>, then <m>x^2 + y^2 = c^2 + d^2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+
+        <exercise permid="eDr">
+          <statement>
+            <p permid="rXp">
+          Determine whether or not the following relations are equivalence relations on the given set.
+                        <!-- If the relation is an equivalence relation,
+          describe the partition given by it. -->
+          If the relation is not an equivalence relation,
+          state why it fails to be one.
+
+              <ol cols="2" permid="kGY">
+                <li permid="jgg">
+                  <p permid="mph">
+                    <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>x \geq y</m>
+                  </p>
+                </li>
+
+                <li permid="Pnp">
+                  <p permid="Swq">
+                    <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>mn &gt; 0</m>
+                  </p>
+                </li>
+
+                <li permid="vuy">
+                  <p permid="yDz">
+                    <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>|x - y| \leq 4</m>
+                  </p>
+                </li>
+
+                <li permid="bBH">
+                  <p permid="eKI">
+                    <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>m \equiv n \pmod{6}</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <hint permid="ZxZ">
+            <p permid="hjP">
+          (a) The relation fails to be symmetric. (b) The relation is not reflexive,
+          since <m>0</m> is not equivalent to itself. (c) The relation is not transitive.
+            </p>
+          </hint>
+        </exercise>
+
+        <exercise permid="KKA">
+          <statement>
+            <p permid="Yey">
+          Define a relation <m>\sim</m> on <m>{\mathbb R}^2</m> by stating that
+              <m>(a, b) \sim (c, d)</m> if and only if <m>a^2 + b^2 \leq c^2 + d^2</m>.
+          Show that <m>\sim</m> is reflexive and transitive but not symmetric.
+            </p>
+          </statement>
+          <hint>
+            <p>
+            It is helpful to describe the points geometrically.  What does <m>a^2 + b^2</m> describe about the point <m>(a,b)</m>?
+            </p>
+          </hint>
+        </exercise>
+
+
+        <exercise>
+          <statement>
+            <p>
+            For each non-negative real numbers <m>r</m>, define the set <m>A_r = \{(x,y) \in \R\times \R \st x^2 + y^2 = r^2\}</m>.  Prove that <m>\{A_r\}</m> is a partition.  Then say which equivalence relation for which it is the set of equivalence classes.
+            </p>
+          </statement>
+          <solution>
+            <p>
+            We must show that every point on the plane number is in one and only one of the sets <m>A_r</m> and that each <m>A_r</m> is nonempty.  Since <m>x^2 + y^2</m> is the square of the distance from the origin to <m>(x,y)</m>, no point is in more than one <m>A_r</m> (this would mean that the point was both distance <m>r^2</m> and <m>s^2</m> from the origin).  Moreover, every point is in some <m>A_r</m>, in particular, for <m>r^2 = x^2 + y^2</m>.
+            </p>
+
+            <p>
+            Each <m>A_r</m> is nonempty since the point <m>(r,0) \in A_r</m>.
+            </p>
+
+            <p>
+            The corresponding equivalence relation is <m>\sim</m> such that <m>(x,y) \sim (a,b)</m> if and only if <m>x^2 + y^2 = a^2 + b^2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+          Consider the relation <m>\sim</m> on <m>\Z</m> defined by <m>a \sim b</m> if and only if <m>ab \ge 0</m>.
+              <ol>
+                <li>
+                  <p>
+                Prove that <m>\sim</m> is not an equivalence relation.  Say specifically what property of equivalence relations fails.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                Let <m>[a] = \{b \st a \sim b\}</m> (the usual way you would define equivalence classes if <m>\sim</m> were an equivalence relation).  This still gives you sets of integers.  Explain why this collection of sets is not a partition.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>\sim</m> is reflexive and symmetric, but not transitive.  For example, consider the integers <m>-1, 0, 1</m>.  We have <m>-1 \sim 0</m> and <m>0 \sim 1</m> but <m>-1 \not\sim 1</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                We have <m>[1] = \{0, 1, 2, 3,\ldots\}</m> and <m>[0] = \Z</m>.  Thus the collection of sets cannot be a partition because there are non-disjoint, non-equal sets in the collection.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercises>
+
+
+      <exercises xml:id="collected-1-3">
+        <title>Collected Homework</title>
+
+        <exercise>
+          <statement>
+            <p>
+          Define the relation <m>\sim</m> on the real numbers <m>\R</m> by <m>a \sim b</m> if and only if <m>b-a \in \Z</m>.  Prove that <m>\sim</m> is an equivalence relation.
+            </p>
+          </statement>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+          Let <m>\mathcal L</m> be the set of all linear functions <m>f:\R \to \R</m>.   Define <m>\sim</m> on <m>\mathcal L</m> by <m>f \sim g</m> if and only if <m>f(0) = g(0)</m>.  
+              <ol>
+                <li>
+                  <p>
+                Prove that <m>\sim</m> is an equivalence relation.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                Describe the equivalence classes given by <m>\sim</m>.  In particular, describe <m>[f]</m> for <m>f(x) = 3x+2</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                For each real number <m>m</m>, define the set <m>A_m = \{f \in \mathcal L \st f \text{ has slope } m\}</m>.  Prove that the collection <m>\{A_m \st m \in R\}</m> is a partition of <m>\mathcal L</m>.  
+                  </p>
+                </li>
+                <li>
+                  <p>
+                Describe the equivalence relation that corresponds to the partition <m>\{A_m\}</m> from the previous part.  In particular, give an example of two functions that are equivalent and two that are not.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+
+      </exercises>
+
     </section>
 
 
@@ -1495,52 +1951,8 @@
     <!-- File: sets.xml  -->
     <!-- Title: Preliminaries -->
   <exercises xml:id="exercises-sets" filenamebase="sets" permid="mDp">
-    <title>Exercises</title>
-    <exercise number="1" permid="nnj" xml:id="sets-exercise-set-operations">
-      <statement>
-        <p permid="AHh">
-          Suppose that
-          <md permid="FjW">
-            <mrow>A &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is even} \},</mrow>
-            <mrow>B &amp; = \{x : x \in \mathbb N \text{ and } x \text{ is prime}\},</mrow>
-            <mrow>C &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is a multiple of } 5\}</mrow>
-          </md>.
-          Describe each of the following sets.
-
-          <ol cols="2" permid="TIN">
-            <li permid="MOi">
-              <p permid="PXj">
-                <m>A \cap B</m>
-              </p>
-            </li>
-
-            <li permid="sVr">
-              <p permid="wes">
-                <m>B \cap C</m>
-              </p>
-            </li>
-
-            <li permid="ZcA">
-              <p permid="clB">
-                <m>A \cup B</m>
-              </p>
-            </li>
-
-            <li permid="FjJ">
-              <p permid="IsK">
-                <m>A \cap (B \cup C)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <hint permid="sGW">
-        <p permid="rIU">
-          (a) <m>A \cap B = \{ 2 \}</m>; (b) <m>B \cap C = \{ 5 \}</m>.
-        </p>
-      </hint>
-    </exercise>
-
+    <title>Additional Exercises</title>
+  
     <exercise number="2" permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
       <statement>
         <p permid="gOq">
@@ -1847,59 +2259,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="mhQ" xml:id="sets-exercise-bijective-surjective-compostion">
-      <statement>
-        <p permid="zBO">
-          Let <m>f : A \rightarrow B</m> and <m>g : B \rightarrow C</m> be maps.
-
-          <ol permid="YsG">
-            <li permid="QsI">
-              <p permid="TBJ">
-                If <m>f</m> and <m>g</m> are both one-to-one functions,
-                show that <m>g \circ f</m> is one-to-one.
-              </p>
-            </li>
-
-            <li permid="wzR">
-              <p permid="zIS">
-                If <m>g \circ f</m> is onto, show that <m>g</m> is onto.
-              </p>
-            </li>
-
-            <li permid="cHa">
-              <p permid="fQb">
-                If <m>g \circ f</m> is one-to-one,
-                show that <m>f</m> is one-to-one.
-              </p>
-            </li>
-
-            <li permid="IOj">
-              <p permid="LXk">
-                If <m>g \circ f</m> is one-to-one and <m>f</m> is onto,
-                show that <m>g</m> is one-to-one.
-              </p>
-            </li>
-
-            <li permid="oVs">
-              <p permid="set">
-                If <m>g \circ f</m> is onto and <m>g</m> is one-to-one,
-                show that <m>f</m> is onto.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <hint permid="oGX">
-        <p permid="oOo">
-          (a) Let <m>x, y \in A</m>.
-          Then <m>g(f(x)) = (g \circ f)(x) = (g \circ f)(y) = g(f(y))</m>.
-          Thus, <m>f(x) = f(y)</m> and <m>x = y</m>,
-          so <m>g \circ f</m> is one-to-one. (b) Let <m>c \in C</m>,
-          then <m>c = (g \circ f)(x) = g(f(x))</m> for some <m>x \in A</m>.
-          Since <m>f(x) \in B</m>, <m>g</m> is onto.
-        </p>
-      </hint>
-    </exercise>
+    
 
     <exercise number="23" permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
       <statement>
@@ -1981,59 +2341,6 @@
       </hint>
     </exercise>
 
-    <exercise number="25" permid="eDr" xml:id="sets-exercise-determine-equivalence-relations">
-      <statement>
-        <p permid="rXp">
-          Determine whether or not the following relations are equivalence relations on the given set.
-          If the relation is an equivalence relation,
-          describe the partition given by it.
-          If the relation is not an equivalence relation,
-          state why it fails to be one.
-
-          <ol cols="2" permid="kGY">
-            <li permid="jgg">
-              <p permid="mph">
-                <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>x \geq y</m>
-              </p>
-            </li>
-
-            <li permid="Pnp">
-              <p permid="Swq">
-                <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>mn &gt; 0</m>
-              </p>
-            </li>
-
-            <li permid="vuy">
-              <p permid="yDz">
-                <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>|x - y| \leq 4</m>
-              </p>
-            </li>
-
-            <li permid="bBH">
-              <p permid="eKI">
-                <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>m \equiv n \pmod{6}</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <hint permid="ZxZ">
-        <p permid="hjP">
-          (a) The relation fails to be symmetric. (b) The relation is not reflexive,
-          since <m>0</m> is not equivalent to itself. (c) The relation is not transitive.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="26" permid="KKA" xml:id="sets-exercise-nonsymmetric-circle">
-      <statement>
-        <p permid="Yey">
-          Define a relation <m>\sim</m> on <m>{\mathbb R}^2</m> by stating that
-          <m>(a, b) \sim (c, d)</m> if and only if <m>a^2 + b^2 \leq c^2 + d^2</m>.
-          Show that <m>\sim</m> is reflexive and transitive but not symmetric.
-        </p>
-      </statement>
-    </exercise>
 
     <exercise number="27" permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
       <statement>

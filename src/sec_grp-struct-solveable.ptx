@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+ <section xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="section-solvable-groups" permid="WbU">
+   <title>Solvable Groups</title>
+
+  <xi:include href="worksheets/grp-struct-series.ptx" />
+
+   <subsection xml:id="subsec-solvable-groups">
+     <title>Series of Subgroups</title>
+     
+   <p permid="mcd">
+     A <term>subnormal series</term><idx><h>Subnormal series of a group</h></idx>  of a group <m>G</m> is a finite sequence of subgroups
+     <me permid="Jzu">
+       G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+     </me>,
+     where <m>H_i</m> is a normal subgroup of <m>H_{i+1}</m>.
+     If each subgroup <m>H_i</m> is normal in <m>G</m>,
+     then the series is called a <term>normal series</term>.
+         <idx><h>Normal series of a group</h></idx>
+     The <term>length</term> of a  subnormal or normal series is the number of proper inclusions.
+   </p>
+
+   <example xml:id="example-normal-series" permid="bvH">
+     <p permid="SEL">
+       Any series of subgroups of an abelian group is a normal series.
+       Consider the following  series of groups:
+       <md permid="pGD">
+         <mrow>{\mathbb Z} \supset 9{\mathbb Z} \supset 45{\mathbb Z} \supset 180{\mathbb Z} \supset \{0\},</mrow>
+         <mrow>{\mathbb Z}_{24} \supset \langle 2 \rangle \supset \langle 6 \rangle \supset \langle 12 \rangle \supset \{0\}</mrow>
+       </md>.
+     </p>
+   </example>
+
+   <example xml:id="example-subnormal-series" permid="HCQ">
+     <p permid="yLU">
+       A subnormal series need not be a normal series.
+       Consider the following subnormal series of the group <m>D_4</m>:
+       <me permid="VNM">
+         D_4 \supset \{ (1), (12)(34), (13)(24), (14)(23) \} \supset \{  (1), (12)(34) \} \supset \{ (1) \}
+       </me>.
+       The subgroup <m>\{  (1), (12)(34) \}</m> is not normal in <m>D_4</m>;
+       consequently, this series is not a normal series.
+     </p>
+   </example>
+
+   <p permid="Sjm">
+     A subnormal (normal) series <m>\{ K_j \}</m> is a
+     <term>refinement of a subnormal (normal) series</term>
+     <m>\{ H_i \}</m> if <m>\{ H_i \} \subset \{ K_j \}</m>.
+     That is, each <m>H_i</m> is one of the <m>K_j</m>.
+   </p>
+
+   <example xml:id="example-refinement" permid="nJZ">
+     <p permid="eTd">
+       The series
+       <me permid="BUV">
+         {\mathbb Z} \supset 3{\mathbb Z} \supset 9{\mathbb Z} \supset 45{\mathbb Z} \supset 90{\mathbb Z} \supset 180{\mathbb Z} \supset \{0\}
+       </me>
+       is a refinement of the series
+       <me permid="ice">
+         {\mathbb Z} \supset 9{\mathbb Z} \supset 45{\mathbb Z} \supset 180{\mathbb Z} \supset \{0\}
+       </me>.
+     </p>
+   </example>
+
+   <p permid="yqv">
+     The best way to study a subnormal or normal series of subgroups,
+     <m>\{ H_i \}</m> of <m>G</m>,
+     is actually to study the factor groups <m>H_{i+1}/H_i</m>.
+     We say that two subnormal (normal) series <m>\{H_i \}</m> and
+     <m>\{ K_j \}</m> of a group <m>G</m> are <term>isomorphic</term>
+     if there is a one-to-one correspondence between the collections of factor groups
+     <m>\{H_{i+1}/H_i \}</m> and <m>\{ K_{j+1}/ K_j \}</m>.
+   </p>
+
+   <example xml:id="example-isomorph-series" permid="TRi">
+     <p permid="Lam">
+       The two normal series
+       <md permid="Ojn">
+         <mrow>{\mathbb Z}_{60} \supset \langle 3 \rangle \supset  \langle 15 \rangle \supset \{ 0 \}</mrow>
+         <mrow>{\mathbb Z}_{60} \supset \langle 4 \rangle \supset  \langle 20 \rangle \supset \{ 0 \}</mrow>
+       </md>
+       of the group <m>{\mathbb Z}_{60}</m> are isomorphic since
+       <md permid="uqw">
+         <mrow>{\mathbb Z}_{60} / \langle 3 \rangle \cong \langle 20 \rangle / \{ 0 \} \cong {\mathbb Z}_{3}</mrow>
+         <mrow>\langle 3 \rangle / \langle 15 \rangle \cong \langle 4 \rangle /  \langle 20 \rangle \cong {\mathbb Z}_{5}</mrow>
+         <mrow>\langle 15 \rangle / \{ 0 \} \cong {\mathbb Z}_{60} / \langle 4 \rangle \cong {\mathbb Z}_4</mrow>
+       </md>.
+     </p>
+   </example>
+
+    <p>
+      A group is called <term>simple</term> provided it contains no non-trivial normal subgroups.  For series, we care whether the factor groups are simple or not.
+    </p>
+   <p permid="exE">
+     A subnormal series <m>\{ H_i \}</m> of a group <m>G</m> is a
+     <term>composition series</term>
+         <idx><h>Composition series</h></idx>
+     if all the factor groups are simple;
+     that is, if none of the factor groups of the series contains a normal subgroup.
+     A normal series <m>\{ H_i \}</m> of <m>G</m> is a
+     <term>principal series</term>
+         <idx><h>Principal series</h></idx>
+     if all the factor groups are simple.
+   </p>
+
+   <example xml:id="example-composition-series" permid="zYr">
+     <p permid="rhv">
+       The group <m>{\mathbb Z}_{60}</m> has  a composition series
+       <me permid="axF">
+         {\mathbb Z}_{60} \supset \langle 3 \rangle \supset  \langle 15 \rangle \supset \langle 30 \rangle  \supset \{ 0 \}
+       </me>
+       with factor groups
+       <md permid="mLX">
+         <mrow>{\mathbb Z}_{60} / \langle 3 \rangle &amp; \cong  {\mathbb Z}_{3}</mrow>
+         <mrow>\langle 3 \rangle / \langle 15 \rangle &amp; \cong  {\mathbb Z}_{5}</mrow>
+         <mrow>\langle 15 \rangle / \langle 30 \rangle &amp; \cong  {\mathbb Z}_{2}</mrow>
+         <mrow>\langle 30 \rangle / \{ 0 \} &amp; \cong  {\mathbb Z}_2</mrow>
+       </md>.
+       Since <m>{\mathbb Z}_{60}</m> is an abelian group,
+       this series is automatically a principal series.
+       Notice that a composition series need not be unique.
+       The series
+       <me permid="GEO">
+         {\mathbb Z}_{60} \supset \langle 2 \rangle \supset \langle 4 \rangle \supset  \langle 20 \rangle \supset \{ 0 \}
+       </me>
+       is also a composition series.
+     </p>
+   </example>
+
+   <example xml:id="example-sn_series" permid="gfA">
+     <p permid="XoE">
+       For <m>n \geq 5</m>, the series
+       <me permid="STg">
+         S_n \supset A_n \supset \{ (1) \}
+       </me>
+       is a composition series for <m>S_n</m> since
+       <m>S_n / A_n \cong {\mathbb Z}_2</m> and <m>A_n</m> is simple.
+     </p>
+   </example>
+       <!-- typo corrected.  Suggested by L. Franklin. -->
+       <!-- TWJ - 12/19/2011 -->
+   <example xml:id="example-z-series" permid="MmJ">
+     <p permid="DvN">
+       Not every group has a composition series or a principal series.
+       Suppose that
+       <me permid="zap">
+         \{ 0 \} = H_0 \subset H_1 \subset \cdots \subset H_{n-1} \subset H_n = {\mathbb Z}
+       </me>
+       is a subnormal series for the integers under addition.
+       Then <m>H_1</m> must be of the form
+       <m>k {\mathbb Z}</m> for some <m>k \in {\mathbb N}</m>.
+       In this case <m>H_1 / H_0 \cong k {\mathbb Z}</m> is an infinite cyclic group with many nontrivial proper normal subgroups.
+     </p>
+   </example>
+       <!-- changed n to k in the example.  Suggested by P. Diethelm. -->
+       <!-- TWJ 4/24/2013 -->
+   <p permid="KEN">
+     Although composition series need not be unique as in the case of <m>{\mathbb Z}_{60}</m>,
+     it turns out that any two composition series are related.
+     The factor groups of the two composition series for
+     <m>{\mathbb Z}_{60}</m> are <m>{\mathbb Z}_2</m>,
+     <m>{\mathbb Z}_2</m>, <m>{\mathbb Z}_3</m>, and <m>{\mathbb Z}_5</m>;
+     that is, the two composition series are isomorphic.
+     The Jordan-Hölder Theorem says that this is always the case.
+   </p>
+
+   <theorem permid="yje">
+     <title>Jordan-Hölder</title>
+     <idx>
+     <h>Jordan-Hölder Theorem</h>
+     </idx>
+     <statement>
+       <p permid="psi">
+         Any two composition series of <m>G</m> are isomorphic.
+       </p>
+     </statement>
+
+     <proof permid="kPt">
+       <p permid="QPy">
+         We shall employ mathematical induction on the length of the composition series.
+         If the length of a composition series is 1, then <m>G</m> must be a simple group.
+         In this case any two composition series are isomorphic.
+       </p>
+
+       <p permid="wWH">
+         Suppose now that the theorem is true for all groups having a composition series of length <m>k</m>,
+         where <m>1 \leq k \lt n</m>.
+         Let
+         <md permid="wfJ">
+           <mrow>G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}</mrow>
+           <mrow>G = K_m \supset K_{m-1} \supset \cdots \supset K_1 \supset K_0 = \{ e \}</mrow>
+         </md>
+         be two composition series for <m>G</m>.
+         We can form two new subnormal series for <m>G</m> since
+         <m>H_i \cap K_{m-1}</m> is normal in <m>H_{i+1} \cap K_{m-1}</m> and
+         <m>K_j \cap H_{n-1}</m> is normal in <m>K_{j+1} \cap H_{n-1}</m>:
+         <md permid="cmS">
+           <mrow>G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}</mrow>
+           <mrow>G = K_m \supset K_{m-1} \supset K_{m-1} \cap H_{n-1} \supset \cdots \supset K_0 \cap H_{n-1} = \{ e \}</mrow>
+         </md>.
+         Since <m>H_i \cap K_{m-1}</m> is normal in <m>H_{i+1} \cap K_{m-1}</m>,
+         the Second Isomorphism Theorem implies that
+         <md permid="Iub">
+           <mrow>(H_{i+1} \cap K_{m-1}) / (H_i \cap K_{m-1}) &amp; =  (H_{i+1} \cap K_{m-1}) / (H_i \cap ( H_{i+1} \cap K_{m-1} ))</mrow>
+           <mrow>&amp; \cong  H_i (H_{i+1} \cap K_{m-1})/ H_i</mrow>
+         </md>,
+         where <m>H_i</m> is normal in <m>H_i (H_{i+1} \cap K_{m-1})</m>.
+         Since <m>\{ H_i \}</m> is a composition series,
+         <m>H_{i+1} / H_i</m> must be simple;
+         consequently,
+         <m>H_i (H_{i+1} \cap K_{m-1})/ H_i</m> is either <m>H_{i+1}/H_i</m> or <m>H_i/H_i</m>.
+         That is, <m>H_i (H_{i+1} \cap K_{m-1})</m> must be either <m>H_i</m> or <m>H_{i+1}</m>.
+         Removing any nonproper inclusions from the series
+         <me permid="fhy">
+           H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}
+         </me>,
+         we have a composition series for <m>H_{n-1}</m>.
+         Our induction hypothesis says that this series must be equivalent to the composition series
+         <me permid="LoH">
+           H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+         </me>.
+         Hence, the composition series
+         <me permid="rvQ">
+           G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+         </me>
+         and
+         <me permid="XCZ">
+           G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}
+         </me>
+         are equivalent.
+         If <m>H_{n-1} = K_{m-1}</m>,
+         then the composition series <m>\{H_i \}</m> and
+         <m>\{ K_j \}</m> are equivalent and we are done;
+         otherwise, <m>H_{n-1} K_{m-1}</m>  is a normal subgroup of <m>G</m> properly containing <m>H_{n-1}</m>.
+         In this case <m>H_{n-1} K_{m-1} = G</m> and we can apply the Second Isomorphism Theorem once again; that is,
+         <me permid="DKi">
+           K_{m-1} / (K_{m-1} \cap H_{n-1}) \cong (H_{n-1} K_{m-1}) / H_{n-1} = G/H_{n-1}
+         </me>.
+         Therefore,
+         <me permid="jRr">
+           G = H_n \supset H_{n-1} \supset H_{n-1} \cap K_{m-1} \supset \cdots \supset H_0 \cap K_{m-1} = \{ e \}
+         </me>
+         and
+         <me permid="PYA">
+           G = K_m \supset K_{m-1} \supset K_{m-1} \cap H_{n-1} \supset \cdots \supset K_0 \cap H_{n-1} = \{ e \}
+         </me>
+         are equivalent and the proof of the theorem is complete.
+       </p>
+     </proof>
+   </theorem>
+
+   <p permid="qLW">
+     A group <m>G</m> is <term>solvable</term>
+         <idx><h>Group</h><h>solvable</h></idx>
+     if it has a subnormal series
+     <m>\{ H_i \}</m> such that all of the factor groups <m>H_{i+1} / H_i</m> are abelian.
+     Solvable groups will play a fundamental role when we study Galois theory and the solution of polynomial equations.
+   </p>
+       <!-- Corrected the definition of a solvable group.  Suggested by K. Halasz. -->
+       <!-- TWJ 1/10/2014 -->
+   <example xml:id="solvable" permid="stS">
+     <p permid="jCW">
+       The group <m>S_4</m> is solvable since
+       <me permid="oBk">
+         S_4 \supset A_4 \supset \{ (1), (12)(34), (13)(24), (14)(23) \} \supset \{ (1) \}
+       </me>
+       has abelian factor groups; however,
+       for <m>n \geq 5</m> the series
+       <me permid="UIt">
+         S_n \supset A_n \supset \{ (1) \}
+       </me>
+       is a composition series for <m>S_n</m> with a nonabelian factor group.
+       Therefore, <m>S_n</m> is not a solvable group for <m>n \geq 5</m>.
+     </p>
+   </example>
+
+  </subsection>
+  <xi:include href="exercises/groups-struct-solveable-collected.ptx" />
+ </section>

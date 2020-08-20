@@ -316,6 +316,84 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-homomorph">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>\DR</m> represent the group of all differentiable functions from <m>\R</m> to <m>\R</m>, under addition, and <m>\FR</m> be the group of all functions from <m>\R</m> to <m>\R</m>, under addition.  Let <m>\phi:\DR\to \FR</m> be given by <m>\phi(f) = f'</m> (the derivative of <m>f</m>).  Prove that <m>\phi</m> is a homomorphism and describe its kernel.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let <m>f</m> and <m>g</m> be functions in <m>\DR</m>.  Then <m>\phi(f+g) = (f+g)' = f' + g' = \phi(f) + \phi(g)</m>, using the additive property of derivatives.  Thus <m>\phi</m> is a homomorphism.
+          </p>
+
+          <p>
+            The kernel of <m>\phi</m> is the set of all differentiable functions whose derivative is 0.  From calculus, we know that these are exactly the constant functions.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>\phi: \Z \to \Z</m> be given by <m>\phi(n) = 5n</m>.  Prove that <m>\phi</m> is a group homomorphism.  Find the kernel and image of <m>\phi</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have <m>\phi(a+b) = 5(a+b) = 5a+5b = \phi(a) + \phi(b)</m>, so <m>\phi</m> is a homomorphism.  The image of <m>\phi</m> will be <m>5\Z</m>.  The kernel is <m>\{0\}</m> (as you will show below, this is not surprising since <m>\phi</m> is injective).
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            If <m>G</m> is an abelian group, show that <m>\phi: G \to G</m> defined by <m>\phi(g) = g^2</m> is a homomorphism.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have <m>\phi(ab) = (ab)^2 = a^2b^2</m> since <m>G</m> is abelian.  But <m>\phi(a)\phi(b) = a^2 b^2</m>, so we see that <m>\phi</m> satisfies the homomorphism property.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            How many homomorphisms from <m>\Z_7</m> to <m>\Z_{10}</m> are there?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Only one: the trivial homomorphism.  There are only two possible kernels: <m>\{0\}</m> or <m>\Z_7</m> (since there are only two subgroups of <m>\Z_7</m>).  If <m>\{0\}</m> is the kernel, then the homomorphism will be injective.  But that would mean that the image of the homomorphism would be a 7 elements subgroup of <m>\Z_{10}</m> which is impossible.  Thus the kernel can only be <m>\Z_{7}</m> which gives the trivial homomorphism (<m>\phi(x) = 0</m> for all <m>x</m>).
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+
+    <exercises xml:id="collected-homomorph">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Let <m>\phi:G \to H</m> be a homomorphism with kernel <m>K</m>.  Prove that <m>\phi</m> is injective (one-to-one) if and only if <m>K = \{e\}</m>.  (That is, if and only if the <em>only</em> element in the kernel is the identity.)  
+          </p>
+        </statement>
+        <hint>
+          <p>
+          The forward direction should be pretty easy.  For the converse (if <m>K = \{e\}</m> then <m>\phi</m> is injective), use the <q>standard</q> method to show a function is injective.  You will likely need to consider <m>\phi(a)\phi(b)\inv</m>.
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>    
   </section>
 
   <section xml:id="section-group-isomorphism-theorems" permid="aVR">
@@ -644,6 +722,121 @@
         </statement>
       </exercise>
     </reading-questions>
+
+
+    <exercises xml:id="practice-fht">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+            Describe all the homomorphisms from <m>\Z_{24}</m> to <m>\Z_{18}</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The kernel of a homomorphism must be a subgroup of the domain and the image must be a subgroup of the codomain.  Further, a generator must map to a generator.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            The possible kernels are the subgroups of <m>\Z_{24}</m>.  We could have <m>K = \Z_{24}</m>, and this gives the trivial homomorphism (everything goes to 0).  Our next possible kernel is <m>\langle 2 \rangle = \{0, 2, 4, \ldots, 22\}</m>.  We can then send everything else to <m>9 \in \Z_{18}</m>.
+          </p>
+
+          <p>
+            Now take <m>K = \langle 3 \rangle = \{0, 3, 6, \ldots, 21\}</m>.  We know that <m>\Z_{24}/K \cong H</m> where <m>H</m> is the image of the homomorphism.  So we must have a 3-element subgroup of <m>\Z_{18}</m> as the image of the homomorphism.  Send <m>1</m> to <m>6</m> and <m>2</m> to 12, and so on.
+          </p>
+
+          <p>
+            There is not a subgroup of <m>\Z_{18}</m> containing 4 elements (since <m>4</m> does not divide 18), so it is impossible for us to have a kernel <m>\langle 4 \rangle</m>.  The next possible subgroup the kernel could be is <m>\langle 6 \rangle = \{0, 6, 12, 18\}</m>, which would give us 6 cosets.  There is a subgroup of order 6 in <m>\Z_{18}</m>, namely <m>\langle 3 \rangle = \{0, 3, 6, 9, 12, 15\}</m>.  So we can define <m>\phi(n) = 3n</m> as the homomorphism.
+          </p>
+
+          <p>
+            The kernel <m>K = \langle 8 \rangle</m> is not possible, nor is <m>K = \langle 12 \rangle</m>.  Thus we have all of the homomorphisms described.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Prove that <m>\Z/\langle 5\rangle \cong \Z_5</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Define <m>\psi:\Z \to \Z_5</m> by <m>\psi(x) = x \pmod{5}</m>.  That is, send every element in <m>\Z</m> to its remainder when divided by 5.  The kernel of <m>\psi</m> is <m>\langle 5\rangle</m>, so by the Fundamental Homomorphism Theorem, <m>\Z/\langle 5 \rangle \cong \Z_5</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>\FR</m> be the set of all functions <m>f:\R to \R</m> under addition.  Let <m>B = \{f \in \FR \st f(0) = 0\}</m>.  Prove that <m>\FR/B \cong \R</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Define a surjective homomorphism <m>\psi:\FR \to \R</m> and use the FHT.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            Define a surjective homomorphism <m>\psi:\FR \to \R</m> by <m>\psi(f) = f(0)</m>.  That is, <m>\psi</m> sends a function to its <m>y</m>-intercept.  It is easy to check this is a homomorphism: <m>\psi(f+g) = (f+g)(0) = f(0) + g(0) = \psi(f)+ \psi(g)</m>.  Also, it is clearly surjective since every real number <m>c</m> is the <m>y</m>-intercept for the constant function <m>f(x) = c</m>.  Further, the kernel of <m>\psi</m> is precisely <m>B</m>.
+          </p>
+          <p>
+            Thus, by the Fundamental Homomorphism Theorem, <m>\FR/B \cong \R</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            How many homomorphic images are there of <m>D_4</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Suppose <m>H</m> is a homomorphic image of <m>D_4</m>.  Then <m>H \cong D_4/K</m> where <m>K</m> is the kernel of the homomorphism.  We know that <m>K</m> is a normal subgroup of <m>D_4</m>, which limits the number of possibilities for <m>K</m>.  We could have <m>K = \{r_0\}</m> or <m>k = D_4</m>, in which case we find that <m>H \cong D_4</m> or <m>H \cong \{e\}</m>, respetively.
+          </p>
+
+          <p>
+            The other normal subgroups of <m>D_4</m> are the three 4-element subgroups, and <m>\{r_0, r_2\}</m>.  For any of the 4-element subgroups, <m>D_4/K</m> would have size <m>2</m>, so this would say that <m>H \cong \Z_2</m> (since that is the only 2-element group).
+          </p>
+          <p>
+            For <m>K = \{r_0, r_2\}</m>, we will have <m>|H| = 4</m>, so there are two possibilities: <m>\Z_4</m> or <m>\Z_2 \times \Z_2</m>.  Now any element not in this kernel, if you square it, you will get something in the kernel.  That is, <m>(aK)^2 = a^2K = K</m> for all <m>a \in D_4</m>.  Thus <m>D_4/K \cong \Z_2\times \Z_2</m>.    
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+
+    <exercises xml:id="collected-fht">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Let <m>G</m> be an abelian group.  Let <m>H = \{g^2 \st g \in G\}</m> and <m>K = \{g \in G \st g^2 = e\}</m>.
+            <ol>
+              <li>
+                <p>
+                Find <m>H</m> and <m>K</m> for the example <m>G = U(7)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Use the Fundamental Homomorphism Theorem the relate the groups <m>H</m> and <m>K</m>.  That is, find a surjective homomorphism from <m>G</m> to one of them, such that the other is the kernel.  Justify your claims (including that your function really is a homomorphism).  Then explain how one is isomorphic to a quotient group involving the other. 
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+      </exercise>
+
+    </exercises>
   </section>
 
   
@@ -652,7 +845,7 @@
     <!-- File: homomorph.xml  -->
     <!-- Title: Homomorphisms -->
   <exercises xml:id="exercises-homomorph" filenamebase="homomorph" permid="WlY">
-    <title>Exercises</title>
+    <title>Additional Exercises</title>
 
     <exercise number="1" permid="nkj"  xml:id="homomorph-exercise-det-homomorph">
       <statement>

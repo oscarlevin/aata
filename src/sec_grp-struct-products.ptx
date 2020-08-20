@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-direct-products" permid="kCy">
+      <title>Direct Products</title>
+      <introduction permid="xfl">
+        <p permid="vbQ">
+          Given two groups <m>G</m> and <m>H</m>,
+          it is possible to construct a new group from the Cartesian product of <m>G</m> and <m>H</m>,
+          <m>G \times H</m>.
+          Conversely, given a large group,
+          it is sometimes possible to decompose the group;
+          that is, a group is sometimes isomorphic to the direct product of two smaller groups.
+          Rather than studying a large group <m>G</m>,
+          it is often easier to study the component groups of <m>G</m>.
+        </p>
+      </introduction>
+
+      <xi:include href="./worksheets/grp-struct-products.ptx"/>
+
+
+      <subsection xml:id="isomorph-subsection-external-products" permid="HpV">
+        <title>External Direct Products</title>
+        <p permid="khm">
+          If <m>(G,\cdot)</m> and <m>(H, \circ)</m> are groups,
+          then we can make the Cartesian product of <m>G</m> and <m>H</m> into a new group.
+          As a set, our group is just the ordered pairs
+          <m>(g, h) \in G \times H</m> where <m>g \in G</m> and <m>h \in H</m>.
+          We can define a binary operation on <m>G \times H</m> by
+          <me permid="Ljd">
+            (g_1, h_1)(g_2, h_2) = (g_1 \cdot g_2, h_1 \circ h_2);
+          </me>
+          that is, we just multiply elements in the first coordinate as we do in <m>G</m> and elements in the second coordinate as we do in <m>H</m>.
+          We have specified the particular operations <m>\cdot</m> and <m>\circ</m> in each group here for the sake of clarity;
+          we usually just write <m>(g_1, h_1)(g_2, h_2) = (g_1  g_2, h_1 h_2)</m>.
+        </p>
+
+        <proposition xml:id="theorem-isomorph-7" permid="BAJ">
+          <statement>
+            <p permid="Lqh">
+              Let <m>G</m> and <m>H</m> be groups.
+              The set <m>G \times H</m> is a group under the operation <m>(g_1, h_1)(g_2, h_2) = (g_1 g_2, h_1 h_2)</m> where
+              <m>g_1, g_2 \in G</m> and <m>h_1, h_2 \in H</m>.
+            </p>
+          </statement>
+
+          <proof permid="arO">
+            <p permid="kYk">
+              Clearly the binary operation defined above is closed.
+              If <m>e_G</m> and <m>e_H</m> are the identities of the groups <m>G</m> and <m>H</m> respectively,
+              then <m>(e_G, e_H)</m> is the identity of <m>G \times H</m>.
+              The inverse of <m>(g, h) \in G \times H</m> is <m>(g^{-1}, h^{-1})</m>.
+              The fact that the operation is associative follows directly from the associativity of <m>G</m> and <m>H</m>.
+            </p>
+          </proof>
+        </proposition>
+
+        <example xml:id="example-isomorph-r2-product" permid="adt">
+          <p permid="Nfu">
+            Let <m>{\mathbb R}</m> be the group of real numbers under addition.
+            The Cartesian product of <m>{\mathbb R}</m> with itself,
+            <m>{\mathbb R} \times {\mathbb R} = {\mathbb R}^2</m>,
+            is also a group,
+            in which the group operation is just addition in each coordinate;
+            that is, <m>(a, b) + (c, d) = (a + c, b + d)</m>.
+            The identity is <m>(0,0)</m> and the inverse of <m>(a, b)</m> is <m>(-a, -b)</m>.
+          </p>
+        </example>
+
+        <example xml:id="example-isomorph-z2xz2" permid="GkC">
+          <p permid="tmD">
+            Consider
+            <me permid="rqm">
+              {\mathbb Z}_2 \times {\mathbb Z}_2 = \{ (0, 0), (0, 1), (1, 0),(1, 1) \}
+            </me>.
+            Although <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> and
+            <m>{\mathbb Z}_4</m> both contain four elements, they are not isomorphic.
+            Every element <m>(a,b)</m> in <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> has order <m>2</m>,
+            since <m>(a,b) + (a,b) = (0,0)</m>;
+            however, <m>{\mathbb Z}_4</m> is cyclic.
+          </p>
+        </example>
+
+        <p permid="Qov">
+          The group <m>G \times H</m> is called the
+          <term>external direct product</term><idx><h>Direct product of groups</h><h>external</h></idx>
+              <idx><h>External direct product</h></idx>
+          of  <m>G</m> and <m>H</m>.
+          Notice that there is nothing special about the fact that we have used only two groups to build a new group.
+          The direct product
+          <me permid="Xxv">
+            \prod_{i = 1}^n G_i = G_1 \times G_2 \times \cdots \times G_n
+          </me>
+          of the groups <m>G_1, G_2, \ldots, G_n</m> is defined in exactly the same manner.
+          If <m>G = G_1 = G_2 = \cdots = G_n</m>,
+          we often write <m>G^n</m> instead of <m>G_1 \times G_2 \times \cdots \times G_n</m>.
+        </p>
+
+        <example xml:id="example-isomorph-z2n" permid="mrL">
+          <p permid="ZtM">
+            The group <m>{\mathbb Z}_2^n</m>,
+            considered as a set, is just the set of all binary <m>n</m>-tuples.
+            The group operation is the <q>exclusive or</q>
+            of two binary <m>n</m>-tuples.
+            For example,
+            <me permid="DEE">
+              (01011101) + (01001011) = (00010110)
+            </me>.
+            This group is important in coding theory,
+            in cryptography, and in many areas of computer science.
+          </p>
+        </example>
+
+        <theorem xml:id="theorem-isomorph-lcm" permid="pmr">
+          <statement>
+            <p permid="mNx">
+              Let <m>(g, h) \in G \times H</m>.
+              If <m>g</m> and <m>h</m> have finite orders <m>r</m> and <m>s</m> respectively,
+              then the order of <m>(g, h)</m> in
+              <m>G \times H</m> is the least common multiple of <m>r</m> and <m>s</m>.
+            </p>
+          </statement>
+
+          <proof permid="hWn">
+            <p permid="Rft">
+              Suppose that <m>m</m> is the least common multiple of <m>r</m> and <m>s</m> and let <m>n = |(g,h)|</m>.
+              Then
+              <md permid="jLN">
+                <mrow>(g,h)^m  = (g^m, h^m) = (e_G,e_H)</mrow>
+                <mrow>(g^n, h^n)  = (g, h)^n = (e_G,e_H)</mrow>
+              </md>.
+              Hence, <m>n</m> must divide <m>m</m>, and <m>n \leq m</m>.
+              However, by the second equation,
+              both <m>r</m> and <m>s</m> must divide <m>n</m>;
+              therefore, <m>n</m> is a common multiple of <m>r</m> and <m>s</m>.
+              Since <m>m</m> is the <em>least common multiple</em>
+              of <m>r</m> and <m>s</m>, <m>m \leq n</m>.
+              Consequently, <m>m</m> must be equal to <m>n</m>.
+            </p>
+          </proof>
+        </theorem>
+
+        <corollary permid="hHS">
+          <statement>
+            <p permid="XEz">
+              Let <m>(g_1, \ldots, g_n) \in \prod G_i</m>.
+              If <m>g_i</m> has finite order <m>r_i</m> in <m>G_i</m>,
+              then the order of <m>(g_1, \ldots,
+              g_n)</m> in <m>\prod G_i</m> is the least common multiple of <m>r_1, \ldots, r_n</m>.
+            </p>
+          </statement>
+        </corollary>
+
+        <example xml:id="example-isomorph-z12xz60" permid="SyU">
+          <p permid="FAV">
+            Let <m>(8, 56) \in {\mathbb Z}_{12} \times {\mathbb Z}_{60}</m>.
+            Since <m>\gcd(8,12) = 4</m>,
+            the order of <m>8</m> is <m>12/4 = 3</m> in <m>{\mathbb Z}_{12}</m>.
+            Similarly, the order of <m>56</m> in <m>{\mathbb Z}_{60}</m> is <m>15</m>.
+            The least common multiple of <m>3</m> and <m>15</m> is <m>15</m>;
+            hence, <m>(8, 56)</m> has order <m>15</m> in <m>{\mathbb Z}_{12} \times {\mathbb Z}_{60}</m>.
+          </p>
+        </example>
+
+        <example xml:id="example-isomorph-z2xz3" permid="yGd">
+          <p permid="lIe">
+            The group <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m> consists of the pairs
+            <md permid="PSW">
+              <mrow>&amp; (0,0), &amp; &amp; (0, 1), &amp; &amp; (0, 2), &amp; &amp; (1,0), &amp; &amp; (1, 1), &amp; &amp; (1, 2)</mrow>
+            </md>.
+            In this case, unlike that of
+            <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> and <m>{\mathbb Z}_4</m>,
+            it is true that <m>{\mathbb Z}_2 \times {\mathbb Z}_3 \cong {\mathbb Z}_6</m>.
+            We need only show that <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m> is cyclic.
+            It is easy to see that <m>(1,1)</m> is a generator for <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m>.
+          </p>
+        </example>
+
+        <p permid="wvE">
+          The next theorem tells us exactly when the direct product of two cyclic groups is cyclic.
+        </p>
+
+        <theorem xml:id="theorem-z-pq" permid="VtA">
+          <statement>
+            <p permid="SUG">
+              The group <m>{\mathbb Z}_m \times {\mathbb Z}_n</m> is isomorphic to
+              <m>{\mathbb Z}_{mn}</m> if and only if <m>\gcd(m,n)=1</m>.
+            </p>
+          </statement>
+
+          <proof permid="Odw">
+            <p permid="xmC">
+              We will first show that if <m>{\mathbb Z}_m \times {\mathbb Z}_n \cong {\mathbb Z}_{mn}</m>,
+              then <m>\gcd(m, n) = 1</m>.
+              We will prove the contrapositive;
+              that is, we will show that if <m>\gcd(m, n) = d \gt 1</m>,
+              then <m>{\mathbb Z}_m \times {\mathbb Z}_n</m> cannot be cyclic.
+              Notice that <m>mn/d</m> is divisible by both <m>m</m> and <m>n</m>;
+              hence, for any element <m>(a,b) \in {\mathbb Z}_m \times {\mathbb Z}_n</m>,
+              <me permid="waf">
+                \underbrace{(a,b) + (a,b)+ \cdots + (a,b)}_{mn/d \; \text{times}} = (0, 0)
+              </me>.
+              Therefore, no <m>(a, b)</m> can generate all of <m>{\mathbb Z}_m \times {\mathbb Z}_n</m>.
+            </p>
+
+            <p permid="dtL">
+              The converse follows directly from <xref ref="theorem-isomorph-lcm"/> since
+              <m>\lcm(m,n) = mn</m> if and only if <m>\gcd(m,n)=1</m>.
+            </p>
+          </proof>
+        </theorem>
+
+        <corollary xml:id="corollary-relatively-prime" permid="NPb">
+          <statement>
+            <p permid="DLI">
+              Let <m>n_1, \ldots, n_k</m> be positive integers.
+              Then
+              <me permid="cho">
+                \prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
+              </me>
+              if and only if <m>\gcd( n_i, n_j) =1</m> for <m>i \neq j</m>.
+            </p>
+          </statement>
+        </corollary>
+
+        <corollary permid="tWk">
+          <statement>
+            <p permid="jSR">
+              If
+              <me permid="Iox">
+                m = p_1^{e_1} \cdots  p_k^{e_k}
+              </me>,
+              where the <m>p_i</m>s are distinct primes, then
+              <me permid="ovG">
+                {\mathbb Z}_m \cong {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
+              </me>.
+            </p>
+          </statement>
+
+          <proof permid="mGg">
+            <p permid="JAU">
+              Since the greatest common divisor of <m>p_i^{e_i}</m> and
+              <m>p_j^{e_j}</m> is 1 for <m>i \neq j</m>,
+              the proof follows from <xref ref="corollary-relatively-prime"/>.
+            </p>
+          </proof>
+        </corollary>
+              <!-- This reference needs to be fixed - TWJ 6/2/2010 -->
+        <p permid="cCN">
+          In <xref ref="section-finite-abelian-groups"/>,
+          we will prove that all finite abelian groups are isomorphic to direct products of the form
+          <me permid="UCP">
+            {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
+          </me>
+          where <m>p_1, \ldots, p_k</m> are
+          (not necessarily distinct)
+          primes.
+        </p>
+      </subsection>
+
+      <subsection xml:id="isomorph-subsection-internal-products" permid="nxe">
+        <title>Internal Direct Products</title>
+        <p permid="IJW">
+          The external direct product of two groups builds a large group out of two smaller groups.
+          We would like to be able to reverse this process and conveniently break down a group into its direct product components;
+          that is, we would like to be able to say when a group is isomorphic to the direct product of two of its subgroups.
+        </p>
+
+        <p permid="oRf">
+          Let <m>G</m> be a group with subgroups <m>H</m> and <m>K</m> satisfying the following conditions.
+
+          <ul permid="EYf">
+            <li permid="Rmx">
+              <p permid="ZAQ">
+                <m>G = HK = \{ hk : h \in H, k \in K \}</m>;
+              </p>
+            </li>
+
+            <li permid="xtG">
+              <p permid="FHZ">
+                <m>H \cap K = \{ e \}</m>;
+              </p>
+            </li>
+
+            <li permid="dAP">
+              <p permid="lPi">
+                <m>hk = kh</m> for all <m>k \in K</m> and <m>h \in H</m>.
+              </p>
+            </li>
+          </ul>
+
+          Then <m>G</m> is the <term>internal direct product</term><idx><h>Direct product of groups</h><h>internal</h></idx>
+              <idx><h>Internal direct product</h></idx>
+          of <m>H</m> and <m>K</m>.
+        </p>
+
+        <example xml:id="example-isomorph-u8" permid="rbE">
+          <p permid="RPn">
+            The group <m>U(8)</m> is the internal direct product of
+            <me permid="AJY">
+              H = \{1, 3 \} \quad \text{and} \quad K  = \{1, 5 \}
+            </me>.
+          </p>
+        </example>
+
+        <example xml:id="example-isomorph-d6-product" permid="XiN">
+          <p permid="xWw">
+            The dihedral group <m>D_6</m> is an internal direct product of its two subgroups
+            <me permid="gRh">
+              H = \{\identity, r^3  \} \quad \text{and} \quad K  = \{\identity, r^2, r^4, s, r^2s, r^4 s \}
+            </me>.
+            It can easily be shown that <m>K \cong S_3</m>;
+            consequently, <m>D_6 \cong {\mathbb Z}_2 \times S_3</m>.
+          </p>
+        </example>
+
+        <example xml:id="example-isomorph-s3-not-a-product" permid="DpW">
+          <p permid="edF">
+            Not every group can be written as the internal direct product of two of its proper subgroups.
+            If the group <m>S_3</m> were an internal direct product of its proper subgroups <m>H</m> and <m>K</m>,
+            then one of the subgroups, say <m>H</m>,
+            would have to have order <m>3</m>.
+            In this case <m>H</m> is the subgroup <m>\{ (1), (123), (132) \}</m>.
+            The subgroup <m>K</m> must have order <m>2</m>,
+            but no matter which subgroup we choose for <m>K</m>,
+            the condition that <m>hk = kh</m> will never be satisfied for <m>h \in H</m> and <m>k \in K</m>.
+          </p>
+        </example>
+
+        <theorem xml:id="theorem-isomorph-directproducts" permid="eNm">
+          <statement>
+            <p permid="zbP">
+              Let <m>G</m> be the internal direct product of subgroups <m>H</m> and <m>K</m>.
+              Then <m>G</m> is isomorphic to <m>H \times K</m>.
+            </p>
+          </statement>
+
+          <proof permid="ukF">
+            <p permid="pId">
+              Since <m>G</m> is an internal direct product,
+              we can write any element <m>g \in G</m> as <m>g =hk</m> for some <m>h \in H</m> and some <m>k \in K</m>.
+              Define a map <m>\phi : G \rightarrow H \times K</m> by <m>\phi(g) = (h,k)</m>.
+            </p>
+
+            <p permid="VPm">
+              The first problem that we must face is to show that <m>\phi</m> is a well-defined map;
+              that is, we must show that <m>h</m> and <m>k</m> are uniquely determined by <m>g</m>.
+              Suppose that <m>g = hk=h'k'</m>.
+              Then <m>h^{-1} h'= k (k')^{-1}</m> is in both <m>H</m> and <m>K</m>,
+              so it must be the identity.
+              Therefore, <m>h = h'</m> and <m>k = k'</m>,
+              which proves that <m>\phi</m> is, indeed, well-defined.
+            </p>
+
+            <p permid="BWv">
+              To show that <m>\phi</m> preserves the group operation,
+              let <m>g_1 = h_1 k_1</m> and <m>g_2 = h_2 k_2</m> and observe that
+              <md permid="MYq">
+                <mrow>\phi( g_1 g_2 ) &amp; = \phi( h_1 k_1 h_2 k_2 )</mrow>
+                <mrow>&amp; = \phi(h_1  h_2 k_1 k_2)</mrow>
+                <mrow>&amp; = (h_1  h_2, k_1 k_2)</mrow>
+                <mrow>&amp; = (h_1, k_1)( h_2, k_2)</mrow>
+                <mrow>&amp; = \phi( g_1 ) \phi(  g_2 )</mrow>
+              </md>.
+              We will leave the proof that <m>\phi</m> is one-to-one and onto as an exercise.
+            </p>
+          </proof>
+        </theorem>
+
+        <example xml:id="example-isomorph-z6-product" permid="jxf">
+          <p permid="KkO">
+            The group <m>{\mathbb Z}_6</m> is an internal direct product isomorphic to <m>\{ 0, 2, 4\} \times \{ 0, 3 \}</m>.
+          </p>
+        </example>
+
+        <p permid="UYo">
+          We can extend the definition of an internal direct product of <m>G</m> to a collection of subgroups
+          <m>H_1, H_2, \ldots, H_n</m> of <m>G</m>, by requiring that
+
+          <ul permid="lfo">
+            <li permid="JHY">
+              <p permid="RWr">
+                <m>G = H_1 H_2 \cdots H_n = \{ h_1 h_2 \cdots h_n : h_i \in H_i \}</m>;
+              </p>
+            </li>
+
+            <li permid="pPh">
+              <p permid="ydA">
+                <m>H_i \cap \langle \cup_{j \neq i} H_j \rangle = \{ e \}</m>;
+              </p>
+            </li>
+
+            <li permid="VWq">
+              <p permid="ekJ">
+                <m>h_i h_j = h_j h_i</m> for all
+                <m>h_i \in H_i</m> and <m>h_j \in H_j</m>.
+              </p>
+            </li>
+          </ul>
+
+          We will leave the proof of the following theorem as an exercise.
+        </p>
+
+        <theorem permid="KUv">
+          <statement>
+            <p permid="fiY">
+              Let <m>G</m> be the internal direct product of subgroups <m>H_i</m>,
+              where <m>i = 1, 2, \ldots, n</m>.
+              Then <m>G</m> is isomorphic to <m>\prod_i H_i</m>.
+            </p>
+          </statement>
+        </theorem>
+
+      </subsection>
+
+      <xi:include href="exercises/grp-struct-products-collected.ptx" />
+    </section>

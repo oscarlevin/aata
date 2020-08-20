@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-RSA-lab">
+    <title>Activity: RSA Cryptography Lab</title>
+
+    <introduction>
+        <p>
+          Let's implement the ideas behind RSA cyprtography to create a public encryption key that you can use to have your friends send you secure messages. 
+        </p>
+        
+        <p>
+          We will use SAGE to compete this activity.  The easiest way to get started with this is to use the online SAGE cell at <url>https://sagecell.sagemath.org/</url>.  Of course if you have SAGE installed, you can use that.
+        </p>
+    </introduction>
+
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          First you will need to select two very large prime numbers.  Let's shoot for 20-25 digits. Luckily, SAGE has the command <c>next_prime()</c> which will give you the next prime larger than your input.  So pick a random input and get two primes.  You will want to save these as a constant.  So <c>p = next_prime(20)</c> for example. 
+        </p>
+      </statement>
+    </exercise>
+
+
+    <exercise workspace="1%">
+        <statement>
+        <p> 
+           Now you can compute <m>n = pq</m> and <m>m = (p-1)(q-1)</m>.  Notice that you <em>could</em> ask SAGE to find <m>\varphi(n)</m> using <c>euler_phi(n)</c>, but you should think about why this is a really really really bad idea.
+        </p>
+       </statement>
+    </exercise>
+    
+
+    
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          Now we need <m>E</m> and <m>D</m>.  Recall that we want <m>\gcd(E,m) = 1</m> and <m>DE \equiv 1 \pmod{m}</m>.  How are you going to find these?  
+        </p>
+        <p>
+          SAGE has the command <c>gcd(E, m)</c> that will compute the gcd of the two inputs.  There is also the command <c>inverse_mod(E, m)</c> which will run the Euclidean algorithm forwards and backwards on <m>E</m> and <m>m</m>.
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          You can now publish the encryption pair <m>(n,E)</m> so your friends can send you messages.  If they had a message <m>x</m> to send you, they would simply need to compute <m>x^E \pmod(n)</m>.  SAGE can do this with <c>mod(x^E,n)</c>, but if <m>x</m> and <m>E</m> are large, this would take a really long time.
+        </p>
+        
+        <p>
+          Luckily, there is a better way: <c>power_mod(x,E,n)</c> computes the same thing, but uses the method of repeated squaring to make this much more efficient.  You will need to use this to decrypt the message <m>y</m> when you take <m>y^D \pmod{n}</m>.  So once you get a message, do that.
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          The last piece of the puzzle is what to do with the number you get out of the decryption.  You will find some <m>x</m>, but need that to be translated into text you can read.
+        </p>
+        
+        <p>
+          This depends on the agreed upon method for translating a string of symbols into numbers.  Suppose we have a string called <c>message</c>.  We can create a list of ASCII code values (0 through 127) using <c>digits = [ord(letter) for letter in message]</c>.  That is, <c>ord()</c> converts a single letter into its ASCII code. 
+        </p>
+        
+        <p>
+          We then must convert a collection of letters into a single number base 128.  SAGE can do this using the <c>ZZ()</c> function.  So <c>ZZ(digits,128)</c>.  This will only work if <m>128^k \lt n</m>, where <m>k</m> is the number of digits.  So in practice, we would break the longer message into chunks and encrypt each chunk separately.
+        </p>
+        
+        <p>
+          To undo this coding, you can break down the received message <c>received</c> using <c>digits = received.digits(base=128)</c>, which makes a list of digits.  Then you can create a list of letters using <c>letters = [chr(ascii) for ascii in digits]</c>.  Finally, put these letters into a string using <c>''.join(letters)</c>. 
+        </p>
+      </statement>
+
+    </exercise>
+    
+</worksheet>

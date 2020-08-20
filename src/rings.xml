@@ -461,6 +461,185 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-rings-intro">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+            Consider <m>\Z_8</m> as a ring.  
+            <ol>
+              <li>
+                <p>
+                  What are the <em>units</em> in this ring?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>\Z_8</m> a commutative ring?  A division ring?  An integral domain?  A field?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What if we look at <m>U(8) = \{1, 3, 5, 7\}</m>.  These all have multiplicative inverses mod 8.  Is <m>U(8)</m> a field?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The units are the elements of the ring that have multiplicative inverses.  So here, <m>1, 3, 5, 7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\Z_8</m> is a commutative ring (with unity) but is not a division ring, and thus not a field.  It is also not an integral domain because it contains zero divisors, such as <m>2</m> and <m>4</m> (since <m>2\cdot 4 = 0</m>).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>U(8)</m> is a group under multiplication, but is not a field.  We would still need addition to work, and this subset is not a subring, since <m>U(8)</m> is not closed under addition.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Define <m>\Z_3[i] = \{a+bi \st a, b \in \Z_3;~ i^2 = -1\}</m>.
+            <ol>
+              <li>
+                <p>
+                  How many elements are there in <m>\Z_3[i]</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Construct addition and multiplication tables for <m>\Z_3[i]</m>.  
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>\Z_3[i]</m> a ring?  A commutative ring?  A commutative ring with unity?  A division ring?  An integral domain?  A field?  Use your tables to justify your answers.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            There will be 9 elements.  When doing the tables, reduce mod 3 after each calculation.  For example, <m>2i\cdot 2i = -4 = 2</m>.
+          </p>
+          <p>
+            <m>\Z_3[i]</m> will be a field, so a commutative division ring with unity and an integral domain.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            How can you tell from the addition or multiplication tables whether a ring <m>R</m> is an integral domain?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We only need to look at the multiplication table.  Unless we include rows and columns for 0 (which is unnecessary, since <m>0 \cdot x = 0</m>), an integral domain will have no zeros at all in the multiplication table.  Any zero in a row and column that are not zero would say that that row and column are zero divisors.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            We let <m>\Z[x]</m> be the ring of polynomials in the variable <m>x</m> with integer coefficients.  So <m>x^2 + 5x + 7 \in \Z[x]</m>, for example.
+            <ol>
+              <li>
+                <p>
+                  Is <m>\Z[x]</m> a commutative ring?  With unity?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explain how you know that <m>\Z[x]</m> is not a field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  What if we considered <m>\R[x]</m>, allowing real coefficients instead of just integer coefficients.  Is <em>this</em> a field?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Yes, <m>\Z[x]</m> is a commutative ring with unity.  <m>1</m> is a polynomial.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Look at the elements <m>x \in \Z[x]</m>.  There is no polynomial we can multiply by <m>x</m> to give us 1.  It's not just that <m>1/x</m> is not a polynomial, it is that any polynomial times <m>x</m> will result in a polynomial of degree at least 1.
+                </p>
+              </li>
+              <li>
+                <p>
+                  As we have above, it is not the coefficients that are the problem (although if <m>\R[x]</m> we do have more units, since now <m>5</m> has an inverse).
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+
+    <exercises xml:id="collected-rings-intro">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+         Consider the ring <m>\Z_{5} = \{0, 1, 2, 3, 4\}</m>, where both addition and multiplication are done modulo 5.
+            <ol>
+              <li>
+                <p>
+               Although <m>\Z_5</m> does not contain negative numbers, explain how <m>-1</m> and <m>-3</m> still make sense.  Which elements of <m>\Z_5</m> are these?
+                </p>
+              </li>
+              <li>
+                <p>
+               What is <m>(-3)2</m>?  Use your answer to the previous part to calculate this.  Is this what you would want it to be?  
+                </p>
+              </li>
+              <li>
+                <p>
+               Similarly, while <m>\frac{1}{3}</m> is not an element of <m>\Z_5</m>, this should still make sense.  Which element of <m>\Z_5</m> should <m>\frac{1}{3}</m> be?
+                </p>
+              </li>
+              <li>
+                <p>
+               Compute <m>\frac{1}{3} + \frac{1}{3}</m> and <m>\frac{1}{3} + 3</m> both the way you want to and using what you found in the previous part.  Does this work out?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+      </exercise>
+
+    </exercises>
+
   </section>
 
   <section xml:id="section-domains-and-fields" permid="QIu">
@@ -721,6 +900,109 @@
         </statement>
       </exercise>
     </reading-questions>
+    <exercises xml:id="practice-rings-props">
+      <title>Practice Problems</title>
+
+      <exercise>
+        <statement>
+          <p>
+            For which <m>n</m> is <m>\Z_n</m> an integral domain?  For which <m>n</m> is <m>\Z_n</m> a field?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\Z_n</m> will be an integral domain and a field for any prime <m>n</m>.  If <m>n</m> is not prime, say <m>n = ab</m>, then <m>a</m> and <m>b</m> are both zero divisors.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Just like we did for groups, we can take the direct product of rings.  For example, the ring <m>\Z_2 \times \Z_3</m> contains 6 elements.  We add and multiply elements wise.
+          </p>
+
+          <p>
+            For which <m>m</m> and <m>n</m> is the ring <m>\Z_m \times \Z_n</m> an integral domain?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            None of them, as long as <m>m</m> and <m>n</m> are at least 2.  Then we will have zero divisors <m>(1, 0)</m> and <m>(0,1)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>R</m> be a ring.  For <m>x \in R</m>, we write <m>nx</m> to mean <m>x + x + \cdots + x</m> (            <m>n</m> times).  What is <m>(nx)^2</m>?  What about <m>(nx)^3</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's try <m>(2x)^2</m>.  This is really <m>(x+x)(x+x)</m>, which we can apply the distributive property to.  We get <m>x(x+x) + x(x+x) = x^2 + x^2 + x^2 + x^2 = 4x^2</m>.  It should be clear this generalizes (although a careful proof would use induction).  So <m>(nx)^2 = n^2x^2</m>.  In fact, <m>(nx)^p = n^px^p</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose that <m>R</m> is a ring such that <m>x^3 = x</m> for all <m>x \in R</m>.  Prove that <m>6x = 0</m> for all <m>x \in R</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Consider the elements <m>x + x = 2x</m>.  We have <m>2x = (2x)^3 = 8x^3 = 8x</m>.  Thus <m>6x = 0</m>.
+          </p>
+        </solution>
+      </exercise>
+
+
+    </exercises>
+
+
+    <exercises xml:id="collected-rings-props">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          An element <m>a</m> in a ring <m>R</m> is called an <term>idempotent</term> if <m>a^2 = a</m>.            
+          Prove that if <m>R</m> is an integral domain, the only idempotents are 0 and 1.  Then give an example of a ring that has an idempotent other than 0 and 1.
+          </p>
+        </statement>
+      </exercise>
+
+
+      <exercise number="C2">
+        <statement>
+          <p>
+          Suppose <m>R</m> is a ring such that <m>x^2 = x</m> for all <m>x \in R</m> (that is, every element is idempotent; such rings are called <term>Boolean rings</term>).  
+            <ol>
+              <li>
+                <p>
+                Prove that <m>-x = x</m> for all <m>x \in R</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Prove that <m>R</m> is commutative.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+          For the second part, what is <m>(a+b)^2</m>?
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>
+
   </section>
 
   <section xml:id="section-ring-homomorphisms" permid="wPD">
@@ -1041,7 +1323,7 @@
       <term>natural</term><idx><h>Homomorphism</h><h>natural</h></idx> or
       <term>canonical homomorphism</term>.
           <idx><h>Homomorphism</h><h>canonical</h></idx>
-      In ring theory we have isomorphism theorems relating ideals and ring homomorphisms similar to the isomorphism theorems for groups that relate normal subgroups and homomorphisms in <xref ref="homomorph"/>.
+      In ring theory we have isomorphism theorems relating ideals and ring homomorphisms similar to the isomorphism theorems for groups that relate normal subgroups and homomorphisms in <xref ref="isomorph"/>.
       We will prove only the First Isomorphism Theorem for rings in this chapter and leave the proofs of the other two theorems as exercises.
       All of the proofs are similar to the proofs of the isomorphism theorems for groups.
     </p>
@@ -1183,6 +1465,215 @@
         </statement>
       </exercise>
     </reading-questions>
+    <exercises xml:id="practice-rings-ideals">
+      <title>Practice Problems</title>
+
+      <exercise>
+        <statement>
+          <p>
+          Let <m>\phi:R \to S</m> be a surjective (onto) ring homomorphism.  Prove that if <m>R</m> and <m>S</m> both have unities <m>1_R</m> and <m>1_S</m> then <m>\phi(1_R) = 1_S</m>.  
+          </p>
+        </statement>
+        <solution>
+          <p>
+          We have <m>\phi(1_R) = \phi(1_R1_R) = \phi(1_R)\phi(1_R)</m>.  But the unique element <m>x \in S</m> such that <m>ax = a</m> and <m>xa = a</m> for <m>a \in S</m> is <m>x = 1_S</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Let <m>R</m> be a ring with unity and <m>\phi:R \to S</m> a (not necessarily surjective) homomorphism.  Could <m>1</m> be in the kernel?  Show that if it is, that <m>\phi</m> is the trivial homomorphism <m>\phi(x) = 0</m> for all <m>x \in R</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          We know that the kernel <m>K</m> of <m>\phi</m> is an ideal.  If <m>1 \in K</m>, then <m>a\cdot 1 = a \in K</m>, since <m>K</m> absorbs products.  This means that every element of <m>R</m> is in the kernel, so the homomorphism is trivial.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Consider the ring <m>R = \Z_3 \times \Z_3</m>.  This contains 9 elements, each of the form <m>(a,b)</m> where <m>a, b \in \Z_3</m>.  
+            <ol>
+              <li>
+                <p>
+                Find the two non-trivial ideas of <m>R</m> and the subring of <m>R</m> that is not an ideal.  Call this non-ideal subring <m>B</m>.
+                </p>
+              </li>
+            </ol>
+            <ol>
+              <li>
+                <p>
+                Give an example of what goes wrong if you try to form the quotient ring <m>R/B</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+              The ideals are <m>\{(0,0), (1,0), (2,0)\}</m> and <m>\{(0,0), (0,1), (0,2)\}</m>. 
+              The subring that is not an ideal is <m>B = \{(0,0), (1,1), (2,2)\}</m>.  To see this is not an ideal, note that <m>(0,1)\cdot (1,1) = (0,1) \notin B</m>, so <m>B</m> does not absorb products.
+                </p>
+              </li>
+              <li>
+                <p>
+              Consider two cosets <m>(0,0) + B = B</m> and <m>(1,0) + B</m> (the other coset would be <m>(0,1) + B</m>).  There is no problem with defining these cosets, and in fact <m>R/B</m> will be a quotient group (since <m>B</m> is a normal subgroup of <m>\Z_3\times \Z_3</m>).  
+                </p>
+
+                <p>
+              Thus the problem must be with multiplication.  We would have <m>((0,0)+B)((1,0)+B) = (0,0)+B</m>.  But another name for <m>(0,0) + B</m> is <m>(1,1)+B</m>, and <m>((1,1)+B)((1,0)+B) = (1,0)+B \ne B</m>.  So coset multiplication is not well defined.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+           Give an example of rings <m>R</m> and <m>S</m> and a function <m>\phi:R \to S</m> which is a group homomorphism but not a ring homomorphism.
+          </p>
+        </statement>
+        <hint>
+          <p>
+           You know that if the kernel of <m>\phi</m> happens to be an ideal, then <m>\phi</m> will automatically be a ring homomorphism, by the Fundamental Homomorphism Theorem.  So we must find a ring <m>R</m> that has a subgroup (which would automatically be a normal subgroup) which is not an ideal.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+           Here is a nice application of homomorphisms.  For each <m>n</m>, we  consider the canonical homomorphism from <m>\Z</m> to <m>\Z/n\Z</m>.  It is easier to think of this as the homomorphism that sends <m>\Z</m> to <m>\Z_n</m>, which maps <m>a \in \Z</m> to <m>a \pmod{n}</m>.
+            <ol>
+              <li>
+                <p>
+                 Consider the equation <m>11x^2 - 8y^2 +  109 = 0</m>.  Note that <m>(7,9)</m> is a solution to this equation.  Explain how we can use this fact and a homomorphism to be sure that there is a solution in <m>\Z_5</m> to the equation <m>x^2 + 2y^2 + 4 = 0</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                 Prove that the equation <m>x^2 - 7y^2 - 24 = 0</m> has no integer solutions.  You might want to use a homomorphism from <m>\Z</m> to <m>\Z_7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                 Prove that <m>x^2 + (x+1)^2 + (x+2)^2 = y^2</m> has no integer solutions.  Hint: <m>\Z_3</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+           The point of all this is that if there is no solution to the corresponding equation in <m>\Z_n</m>, then there is no solution in <m>\Z</m>.  When you apply the homomorphism to both sides of the equation, you use the homomorphism property to reduce every coefficient mod <m>n</m>.  And then you only have <m>n</m> possible values for each variable.  Better yet, if you pick <m>n</m> that makes one of the coefficients 0, you only have to check the other one.
+          </p>
+        </hint>
+        <solution>
+          <p>
+           (b) Suppose there was some pair <m>(a,b) \in \Z^2</m> that was a solution to the equation.  Apply the natural <m>\phi:\Z \to \Z_7</m>: 
+            <me>
+             \phi(a^2 - 7b^2 - 24) = \phi(0)
+            </me>
+            <me>
+             \phi(a)^2 - 0 \phi(b) - 3 = 0
+            </me>
+           But this says that <m>3</m> is a square in <m>\Z_7</m>.  Checking each element in <m>\Z_7</m>, we find this is not the case, so no such <m>(a,b)</m> can exist.
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+
+    <exercises xml:id="collected-rings-ideals">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Let <m>F</m> be a field and <m>R</m> any ring containing more than one element. 
+            <ol>
+              <li>
+                <p>
+                Prove that <m>F</m> has no nontrivial ideals.
+                </p>
+              </li>
+              <li>
+                <p>
+                Prove that if there is a surjective homomorphism <m>\phi:F \to R</m>, then <m>F \cong R</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <ol>
+              <li>
+                <p>
+                The trivial ideals are <m>\{0\}</m> and <m>F</m>.  What if an ideal <m>I</m> contained some <m>a \ne 0</m>? 
+                </p>
+              </li>
+              <li>
+                <p>
+                On a previous homework you proved that if the kernel of a homomorphism is the identity, then the homomorphism is injective.  This holds for ring homomorphisms as well and you may use that fact here. 
+                </p>
+              </li>
+            </ol>
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise number="Bonus">
+        <statement>
+          <p>
+          Make up a problem similar to 5(b) or 5(c) from the practice problem above and show how to solve it.        
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise number="C2">
+        <statement>
+          <p>
+      Consider the ring <m>\R[x]</m> of polynomials in the variable <m>x</m> with real coefficients.  We can divide polynomials using long division, which results in some remainder.
+            <ol>
+              <li>
+                <p>
+            What is the remainder when you divide <m>3x^4 - 7x^3 + x^2 - 3x + 7</m> by <m>x^2 + 1</m>?  (Perform the long division, but you only need to submit the results: quotient and remainder.)
+                </p>
+              </li>
+              <li>
+                <p>
+            What do you get when you substitute <m>x^2 = -1</m> into <m>3x^4 - 7x^3 + x^2 - 3x + 7</m>? 
+                </p>
+              </li>
+              <li>
+                <p>
+            Coincidence?  What sort of polynomial will you always get as a remainder when dividing a polynomial by<m>x^2 + 1</m>?  What sort of polynomial will you always get when substituting <m>x^2 = -1</m> into a polynomial?
+                </p>
+              </li>
+              <li>
+                <p>
+            Consider the quotient ring <m>\R[x]/\langle x^2 + 1\rangle</m>.  Use an evaluation homomorphism (with <m>a = \sqrt{-1}</m>) to prove that this quotient ring is isomorphic to <m>\bC</m> (the complex numbers, <m>\bC = \{a+bi \st a,b \in \R; i^2 = -1\}</m>).
+                </p>
+              </li>
+            </ol>
+
+
+          </p>
+        </statement>
+      </exercise>
+
+    </exercises>
   </section>
 
   <section xml:id="section-maximal-prime-ideals" permid="cWM">
@@ -1673,7 +2164,7 @@
     <!-- File: rings.xml  -->
     <!-- Title: Rings -->
   <exercises xml:id="exercises-rings" filenamebase="rings" permid="LYB">
-    <title>Exercises</title>
+    <title>Additional Exercises</title>
 
     <exercise number="1" permid="Vsn" xml:id="rings-exercise-which-are-rings">
       <statement>

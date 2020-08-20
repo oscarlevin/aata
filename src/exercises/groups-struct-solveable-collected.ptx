@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-groups-struct-solvable">
+  
+    <title>Collected Homework</title>
+
+    <exercise>
+      <statement>
+      <p>
+        
+        Consider the normal series below for <m>\Z_{24}</m>:
+        <me>
+          \Z_{24} \supset \langle 12 \rangle \supset \{0\}
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Find the two quotient groups for the series.  Find the <q>standard</q> abelian groups each is isomorphic to.
+            </p>
+          </li>
+          <li>
+            <p>
+              For the <em>quotient group</em> that is not simple found above, find a non-trivial normal subgroup (of the quotient group).  Then realize the subgroup as a quotient group <m>G'/\langle 12\rangle</m> for some <m>G'</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Demonstrate/explain how this shows us how to build a longer normal series for <m>\Z_{24}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find two different composition series for <m>\Z_{24}</m> (one can be an extension of what you were working on above).  Then use quotient groups to demonstrate that the two series are <q>isomorphic</q> (and explain what this means).
+            </p>
+          </li>
+        </ol>
+      </p>
+      </statement>
+    </exercise>
+
+
+  </exercises>

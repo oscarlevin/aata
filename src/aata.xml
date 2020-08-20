@@ -19,35 +19,53 @@
   <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
   <book xml:id="aata-toc" permid="aZr">
     <title>Abstract Algebra</title>
-    <subtitle>Theory and Applications</subtitle>
+    <subtitle>Theory and Applications, Remixed!</subtitle>
     <xi:include href="./frontmatter.xml" />                 <!-- Title Page, Preface, etc. -->
-    <xi:include href="./sets.xml" />                        <!-- Set Theory  -->
-    <xi:include href="./integers.xml" />                    <!-- Integers -->
-    <xi:include href="./groups.xml" />                      <!-- Groups -->
-    <xi:include href="./cyclic.xml" />                      <!-- Cyclic Groups -->
-    <xi:include href="./permute.xml" />                     <!-- Permutation Groups -->
-    <xi:include href="./cosets.xml" />                      <!-- Cosets and Lagrange's Theorem -->
-    <xi:include href="./crypt.xml" />                       <!-- Cryptography -->
+    <part xml:id="part-groups">
+      <title>Groups</title>
+      <xi:include href="./sets.xml" />                        <!-- Set Theory  -->
+      <xi:include href="./integers.xml" />                    <!-- Integers -->
+      <xi:include href="./groups.xml" />                      <!-- Groups -->
+      <!-- <xi:include href="./cyclic.xml" />                      Cyclic Groups -->
+      <!-- <xi:include href="./permute.xml" />                     Permutation Groups -->
+      <xi:include href="./cosets.xml" />                      <!-- Cosets and Lagrange's Theorem -->
+      <!-- <xi:include href="./normal.xml" />                      Normal Subgroups -->
+      <xi:include href="./isomorph.xml" />                    <!-- Isomorphisms -->
+          <!-- TWJ, 2010/03/31                                       -->
+          <!-- The chapter HOMOMORPHISMS AND FACTOR GROUPS is now    -->
+          <!-- two chapters: (10) NORMAL SUBGROUPS AND FACTOR GROUPS -->
+          <!-- (11) HOMOMORPHISMS                                    -->
+      <!-- <xi:include href="./homomorph.xml" />                   Homomorphisms -->
+      
+    </part>
+    <part xml:id="part-rings-and-fields">
+      <title>Rings and Fields</title>
+      <xi:include href="./rings.xml" />                       <!-- Introduction to Rings -->
+      <xi:include href="./poly.xml" />                        <!-- Polynomial Rings -->
+      <xi:include href="./domains.xml" />                     <!-- Integral Domains -->
+      <xi:include href="./ch_fields.ptx" />
+      <xi:include href="./ch_galois.ptx" />
+
+      
+    </part>
+    <part xml:id="part-more-group-theory">
+      <title>More Group Theory</title>
+      
+      <xi:include href="./ch_groups.ptx" />
+      <xi:include href="./ch_grp-struct.ptx" />
+      <xi:include href="./ch_cryptography.ptx" />
+      <xi:include href="./ch_actions.ptx" />
+      <xi:include href="./sylow.xml" />                       <!-- Sylow Theorems -->
+
+      
+    </part>
+    <part xml:id="part-additional">
+    <title>Additional Topics</title>
+      <xi:include href="./matrix.xml" />                      <!-- Groups of Symmetries -->
     <xi:include href="./algcodes.xml" />                    <!-- Coding Theory -->
-    <xi:include href="./isomorph.xml" />                    <!-- Isomorphisms -->
-        <!-- TWJ, 2010/03/31                                       -->
-        <!-- The chapter HOMOMORPHISMS AND FACTOR GROUPS is now    -->
-        <!-- two chapters: (10) NORMAL SUBGROUPS AND FACTOR GROUPS -->
-        <!-- (11) HOMOMORPHISMS                                    -->
-    <xi:include href="./normal.xml" />                      <!-- Normal Subgroups -->
-    <xi:include href="./homomorph.xml" />                   <!-- Homomorphisms -->
-    <xi:include href="./matrix.xml" />                      <!-- Groups of Symmetries -->
-    <xi:include href="./struct.xml" />                      <!-- Abelian and Solvable Groups -->
-    <xi:include href="./actions.xml" />                     <!-- Group Actions -->
-    <xi:include href="./sylow.xml" />                       <!-- Sylow Theorems -->
-    <xi:include href="./rings.xml" />                       <!-- Introduction to Rings -->
-    <xi:include href="./poly.xml" />                        <!-- Polynomial Rings -->
-    <xi:include href="./domains.xml" />                     <!-- Integral Domains -->
-    <xi:include href="./boolean.xml" />                     <!-- Lattices and Boolean Algebras -->
-    <xi:include href="./vect.xml" />                        <!-- Vector Spaces -->
-    <xi:include href="./fields.xml" />                      <!-- Extension Fields -->
     <xi:include href="./finite.xml" />                      <!-- Finite Fields -->
-    <xi:include href="./galois.xml" />                      <!-- Galois Theory -->
+    <xi:include href="./boolean.xml" />                     <!-- Lattices and Boolean Algebras -->
+    </part>
     <xi:include href="./backmatter.xml" />                  <!-- GFDL, Hints, Notation -->
   </book>
 </pretext>

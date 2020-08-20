@@ -1,0 +1,4 @@
+source = 'src/aata.xml'
+output = './'
+param = ('html.knowl.example:no', 'toc.level:3', 'numbering.theorems.level:2', 'numbering.equations.level:2', 'numbering.footnotes.level:1', 'numbering.maximum.level:3')
+publisher = None

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+  
+
+
+    <section xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="section-constructions" permid="ctw">
+      <title>Geometric Constructions</title>
+      <introduction permid="Tof">
+        <p permid="vhh">
+          In ancient Greece, three classic problems were posed.
+          These problems are geometric in nature and involve straightedge-and-compass constructions from what is now high school geometry;
+          that is, we are allowed to use only a straightedge and compass to solve them.
+          The problems can be stated as follows.
+
+          <ol permid="gWl">
+            <li permid="CEp">
+              <p permid="pUy">
+                Given an arbitrary angle,
+                can one trisect the angle into three equal subangles using only a straightedge and compass?
+              </p>
+            </li>
+
+            <li permid="iLy">
+              <p permid="WbH">
+                Given an arbitrary circle,
+                can one construct a square with the same area using only a straightedge and compass?
+              </p>
+            </li>
+
+            <li permid="OSH">
+              <p permid="CiQ">
+                Given a cube,
+                can one construct the edge of another cube having twice the volume of the original?
+                Again, we are only allowed to use a straightedge and compass to do the construction.
+              </p>
+            </li>
+          </ol>
+
+          After puzzling mathematicians for over two thousand years,
+          each of these constructions was finally shown to be impossible.
+          We will use the theory of fields to provide a proof that the solutions do not exist.
+          It is quite remarkable that the long-sought solution to each of these three geometric problems came from abstract algebra.
+        </p>
+
+        <p permid="boq">
+          First, let us determine more specifically what we mean by a straightedge and compass,
+          and also examine the nature of these problems in a bit more depth.
+          To begin with, <em>a straightedge is not a ruler</em>.
+          We cannot measure arbitrary lengths with a straightedge.
+          It is merely a tool for drawing a line through two points.
+          The statement that the trisection of an arbitrary angle is impossible means that there is at least one angle that is impossible to trisect with a straightedge-and-compass construction.
+          Certainly it is possible to trisect an angle in special cases.
+          We can construct a <m>30^\circ</m> angle;
+          hence, it is possible to trisect a <m>90^\circ</m> angle.
+          However, we will show that it is impossible to construct a <m>20^\circ</m> angle.
+          Therefore, we cannot trisect a <m>60^\circ</m> angle.
+        </p>
+      </introduction>
+
+      <xi:include href="worksheets/fields-constructions.ptx" />
+      
+      <xi:include href="worksheets/fields-constructable-numbers.ptx"/>
+
+
+      <subsection xml:id="fields-subsection-constructible-numbers" permid="iiI">
+        <title>Constructible Numbers</title>
+        <p permid="nhj">
+          A real number <m>\alpha</m> is <term>constructible</term>
+              <idx><h>Constructible number</h></idx>
+          if we can construct a line segment of length
+          <m>| \alpha |</m> in a finite number of steps from a segment of unit length by using a straightedge and compass.
+        </p>
+
+        <theorem xml:id="theorem-constructible-numbers" permid="TJE">
+          <statement>
+            <p permid="mSO">
+              The set of all constructible real numbers forms a subfield <m>F</m> of the field of real numbers.
+            </p>
+          </statement>
+
+          <proof permid="Vds">
+            <p permid="gtI">
+              Let <m>\alpha</m> and <m>\beta</m> be constructible numbers.
+              We must show that <m>\alpha + \beta</m>,
+              <m>\alpha - \beta</m>, <m>\alpha \beta</m>,
+              and <m>\alpha / \beta</m> (<m>\beta \neq 0</m>) are also constructible numbers.
+              We can assume that both <m>\alpha</m> and <m>\beta</m> are positive with <m>\alpha \gt \beta</m>.
+              It is quite obvious how to construct
+              <m>\alpha + \beta</m> and <m>\alpha - \beta</m>.
+              To find a line segment with length <m>\alpha \beta</m>,
+              we assume that <m>\beta \gt 1</m> and construct the triangle in <xref ref="figure-multiplication-construction"/> such that triangles
+              <m>\triangle ABC</m> and <m>\triangle ADE</m> are similar.
+              Since <m>\alpha / 1 = x / \beta</m>,
+              the line segment <m>x</m> has length <m>\alpha \beta</m>.
+              A similar construction can be made if <m>\beta \lt 1</m>.
+              We will leave it as an exercise to show that the same triangle can be used to construct
+              <m>\alpha / \beta</m> for <m>\beta \neq 0</m>.
+            </p>
+          </proof>
+        </theorem>
+
+        <figure xml:id="figure-multiplication-construction" permid="rRc">
+          <caption>Construction of products</caption>
+              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
+          <image width="80%" xml:id="fields-multiply" permid="jvF">
+
+              <latex-image>
+                  <xi:include href="tikz/fields-multiply.tex" parse="text"/>
+              </latex-image>
+          </image>
+
+        </figure>
+
+        <lemma permid="fXW">
+          <statement>
+            <p permid="Lvy">
+              If <m>\alpha</m> is a constructible number,
+              then <m>\sqrt{\alpha}</m> is a constructible number.
+            </p>
+          </statement>
+
+          <proof permid="tGc">
+            <p permid="MAR">
+              In <xref ref="figure-root-construction"/> the triangles <m>\triangle ABD</m>,
+              <m>\triangle BCD</m>, and <m>\triangle ABC</m> are similar;
+              hence, <m>1 /x = x / \alpha</m>, or <m>x^2 = \alpha</m>.
+            </p>
+          </proof>
+        </lemma>
+
+        <figure xml:id="figure-root-construction" permid="XYl">
+          <caption>Construction of roots</caption>
+              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
+          <image width="80%" xml:id="fields-root" permid="PCO">
+
+              <latex-image>
+                  <xi:include href="tikz/fields-root.tex" parse="text"/>
+              </latex-image>
+          </image>
+
+        </figure>
+
+        <p permid="Tos">
+          By <xref ref="theorem-constructible-numbers"/>,
+          we can locate in the plane any point
+          <m>P =( p, q)</m> that has rational coordinates <m>p</m> and <m>q</m>.
+          We need to know what other points can be constructed with a compass and straightedge from points with rational coordinates.
+        </p>
+
+        <lemma permid="Mff">
+          <statement>
+            <p permid="rCH">
+              Let <m>F</m> be a subfield of <m>{\mathbb R}</m>.
+
+              <ol permid="APc">
+                <li permid="uZQ">
+                  <p permid="ipZ">
+                    If a line contains two points in <m>F</m>,
+                    then it has the equation <m>a x + by + c = 0</m>,
+                    where <m>a</m>, <m>b</m>, and <m>c</m> are in <m>F</m>.
+                  </p>
+                </li>
+
+                <li permid="bgZ">
+                  <p permid="Oxi">
+                    If a circle has a center at a point with coordinates in <m>F</m> and a radius that is also in <m>F</m>,
+                    then it has the equation <m>x^2 + y^2 + d x + e y + f = 0</m>,
+                    where <m>d</m>, <m>e</m>, and <m>f</m> are in <m>F</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+
+          <proof permid="ZNl">
+            <p permid="sIa">
+              Let <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> be points on a line whose coordinates are in <m>F</m>.
+              If <m>x_1 = x_2</m>,
+              then the equation of the line through the two points is <m>x - x_1 = 0</m>,
+              which has the form <m>a x + by + c = 0</m>.
+              If <m>x_1 \neq x_2</m>,
+              then the equation of the line through the two points is given by
+              <me permid="wPq">
+                y - y_1 = \left( \frac{y_2 - y_1}{x_2 - x_1} \right) (x - x_1)
+              </me>,
+              which can also be put into the proper form.
+            </p>
+
+            <p permid="YPj">
+              To prove the second part of the lemma,
+              suppose that <m>(x_1, y_1)</m> is the center of a circle of radius <m>r</m>.
+              Then the circle has the equation
+              <me permid="cWz">
+                (x - x_1)^2 + (y - y_1)^2 - r^2 = 0
+              </me>.
+              This equation can easily be put into the appropriate form.
+            </p>
+          </proof>
+        </lemma>
+
+        <p permid="zvB">
+          Starting with a field of constructible numbers <m>F</m>,
+          we have three possible ways of constructing additional points in
+          <m>{\mathbb R}</m> with a compass and straightedge.
+
+          <ol permid="lGe">
+            <li permid="Hoi">
+              <p permid="uEr">
+                To find possible new points in <m>{\mathbb R}</m>,
+                we can take the intersection of two lines,
+                each of which passes through two known points with coordinates in <m>F</m>.
+              </p>
+            </li>
+
+            <li permid="nvr">
+              <p permid="aLA">
+                The intersection of a line that passes through two points that have coordinates in <m>F</m> and a circle whose center has coordinates in <m>F</m> with radius of a length in <m>F</m> will give new points in <m>{\mathbb R}</m>.
+              </p>
+            </li>
+
+            <li permid="TCA">
+              <p permid="GSJ">
+                We can obtain new points in
+                <m>{\mathbb R}</m> by intersecting two circles whose centers have coordinates in <m>F</m> and whose radii are of lengths in <m>F</m>.
+              </p>
+            </li>
+          </ol>
+
+          The first case gives no new points in <m>{\mathbb R}</m>,
+          since the solution of two equations of the form
+          <m>a x + by + c = 0</m> having coefficients in <m>F</m> will always be in <m>F</m>.
+          The third case can be reduced to the second case.
+          Let
+          <md permid="sPr">
+            <mrow>x^2 + y^2 + d_1 x + e_1 y + f_1 = 0</mrow>
+            <mrow>x^2 + y^2 + d_2 x + e_2 y + f_2 = 0</mrow>
+          </md>
+   <!-- corrected equation - 28 April 2012 - TWJ -->
+          be the equations of two circles,
+          where <m>d_i</m>, <m>e_i</m>,
+          and <m>f_i</m> are in <m>F</m> for <m>i = 1, 2</m>.
+          These circles have the same intersection as the circle
+          <me permid="gAZ">
+            x^2 + y^2 + d_1 x +e_1 x + f_1 = 0
+          </me>
+          and the line
+          <me permid="MIi">
+            (d_1 - d_2) x + b(e_2 - e_1)y + (f_2 - f_1) = 0
+          </me>.
+          The last equation is that of the chord passing through the intersection points of the two circles.
+          Hence, the intersection of two circles can be reduced to the case of an intersection of a line with a circle.
+        </p>
+
+        <p permid="fCK">
+          Considering the case of the intersection of a line and a circle,
+          we must determine the nature of the solutions of the equations
+          <md permid="pkR">
+            <mrow>a x + by + c &amp; = 0</mrow>
+            <mrow>x^2 + y^2 + d x + e y + f &amp; = 0</mrow>
+          </md>.
+          If we eliminate <m>y</m> from these equations,
+          we obtain an equation of the form <m>Ax^2 + B x + C = 0</m>,
+          where <m>A</m>, <m>B</m>, and <m>C</m> are in <m>F</m>.
+          The <m>x</m> coordinate of the intersection points is given by
+          <me permid="JdI">
+            x = \frac{- B \pm \sqrt{B^2 - 4 A C} }{2 A}
+          </me>
+          and is in <m>F( \sqrt{\alpha}\, )</m>,
+          where <m>\alpha = B^2 - 4 A C \gt 0</m>.
+          We have proven the following lemma.
+        </p>
+
+        <lemma xml:id="lemma-lines-and-circles" permid="smo">
+          <statement>
+            <p permid="XJQ">
+              Let <m>F</m> be a field of constructible numbers.
+              Then the points determined by the intersections of lines and circles in <m>F</m> lie in the field
+              <m>F( \sqrt{\alpha}\, )</m> for some <m>\alpha</m> in <m>F</m>.
+            </p>
+          </statement>
+        </lemma>
+
+
+        <p>
+          So what is the field of <em>all</em> constructible numbers?  This will definitely contain <m>\Q</m>, but then we can repeatedly add square roots of elements.  And not just elements from <m>\Q</m>, but also square roots of elements found in extension fields we got by taking square roots previously.  
+        </p>
+        
+        <p>
+          This brings us to the idea of an <term>itterated extension</term>: you get an extension field by adding a new number, then get another extension field by adding a new number to the first extension field.  And we can keep going as far as we like.  
+        </p>
+        
+        <p>
+          So what we have now is that every constructable number is an element of some extension field of some extension field of some extension field of <ellipsis /> some extension field of <m>\Q</m>, each extension of the form <m>F(\sqrt{\alpha_i})</m> where <m>\alpha_i \in F</m> (but the <m>F</m>s are changing as we go up the line).  We can state this more cleanly as follows.
+        </p>
+
+
+        <theorem>
+          <statement>
+            <p>
+              A real number <m>\alpha</m> is a constructible number if and only if there exists a  sequence of fields
+              <me>
+                {\mathbb Q} = F_0 \subset F_1 \subset \cdots \subset F_k
+              </me>
+              such that <m>F_i = F_{i-1}( \sqrt{ \alpha_i}\, )</m> with
+              <m>\alpha_i \in F_i</m> and <m>\alpha \in F_k</m>.
+              <!-- In particular,
+              there exists an integer <m>k \gt 0</m> such that <m>[{\mathbb Q}(\alpha) : {\mathbb Q} ] = 2^k</m>. -->
+            </p>
+          </statement>
+
+          <!-- <proof permid="BkB">
+            <p permid="EWs">
+              The existence of the <m>F_i</m>'s and the
+              <m>\alpha_i</m>'s is a direct consequence of <xref ref="lemma-lines-and-circles"/> and of the fact that
+              <me permid="Bzj">
+                [F_k: {\mathbb Q}] = [F_k : F_{k - 1}][F_{k - 1} : F_{k - 2}] \cdots [F_1: {\mathbb Q} ] = 2^k
+              </me>.
+            </p>
+          </proof> -->
+        </theorem>
+              <!-- Clarified where <m>\alpha_i</m> lives - TWJ 4/23/2011 -->
+        
+        <p>
+          Now if we want the field of <em>all</em> constructible numbers, we need to extend this process forever.  This shows that the field of constructible numbers is not a <q>finite</q> extension of <m>\Q</m>, although it is still an <em>algebraic</em> extension.
+        </p>      
+              
+        <p>
+          What does all of this have to do with solving the problems of doubling the cube, squaring the circle, and trisecting an angle?  To answer this question we need to use what we have developed about the <em>size</em> of a field extension: its <term>degree</term>. 
+        </p>
+      </subsection>
+
+    
+    <xi:include href="exercises/fields-constructions-intro-collected.ptx" />
+  
+    </section>

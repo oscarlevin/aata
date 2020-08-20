@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-splitting-fields">
+  
+    <title>Collected Homework</title>
+
+<exercise>
+  <statement>
+    <p>
+      Consider the field <m>\Q(\sqrt[4]{3}, i)</m>.
+      <ol>
+        <li>
+          <p>
+            Is this a splitting field for some polynomial in <m>\Q[x]</m>?  If so, what is the degree of that polynomial.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the <m>[Q(\sqrt[4]{3}, i):\Q]</m>?  Explain how you know.
+          </p>
+        </li>
+        <li>
+          <p>
+            It turns out that there are exactly 8 different fields between <m>\Q</m> and <m>\Q(\sqrt[4]{3}, i)</m>.  Find at least four of these (more if you can) and draw a large tower diagram showing how these are related (with degrees marked appropriately).
+          </p>
+        </li>
+        <li>
+          <p>
+            Bonus! (but not really that hard, just not something we have done in a while): Prove that the fields <m>\Q(\sqrt[4]{3})</m> and <m>\Q(\sqrt[4]{3}i)</m> are isomorphic, but not equal.  Note, this fact might be helpful for the previous parts.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+   
+  </exercises>

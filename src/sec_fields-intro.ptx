@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-fields-intro">
+  <title>Introduction</title>
+
+    <p>
+      Recall that a <term>field</term> is a commutative division ring.  That is, a field is a type of ring (i.e., a set together with two operations, addition and multiplication, satisfying the ring axioms).  The ring is commutative (meaning <em>multiplication</em> commutes; addition is commutative in all rings), and every non-zero element in the ring has a multiplicative inverse.
+    </p>
+    
+    <p>
+      We have seen only a few examples of fields so far: certainly the rational numbers <m>\Q</m> are a field, as are the real numbers <m>\R</m> and the complex numbers <m>\C</m>.  We have also considered <em>finite</em> fields such as <m>\Z_3</m>, <m>\Z_5</m>, and <m>\Z_7</m> (but not <m>\Z_6</m> which is not even an integral domain). 
+      
+    </p>
+    <p>
+      In fact, we have seen other fields as well: <m>\Q[x]/\langle x - 1\rangle</m> is a field, which happens to be isomorphic to <m>\Q</m>.  Another example is <m>\Q[x]/\langle x^2 - 2\rangle</m>, which is not isomorphic to <m>\Q</m>, but still happens to be a field.   When we considered quotient ring like these before, we focused on its structure as a quotient ring, not worrying too much about its structure as a field.  That is about to change.
+    </p>
+    
+    <p>      
+      A reasonable place to start is to consider how different fields relate to each other.  This is not unlike studying <em>subgroups</em> to better understand groups, or subrings and ideals to better understand rings.  One notable difference is that with fields, we often think about expanding a smaller field into a larger one, rather than restricting a larger group into a (smaller) subgroup.
+    </p>
+      
+      
+    <p>
+      <idx><h>Extension</h><h>field</h></idx>
+      <idx><h>Field</h><h>extension</h></idx>
+      <idx><h>Field</h><h>base</h></idx>
+      Given some field <m>F</m>, we can ask whether it is contained in a larger field. Think of the rational numbers,
+      which reside inside the real numbers,
+      while in turn, the real numbers live inside the complex numbers.
+      We would say that the rational numbers are a <term>subfield</term> of the real numbers, or say that the real numbers are a <term>extension field</term> of the rational numbers.  Indeed, we often think of the real numbers as the field you get by adding all the <q>gaps</q> in the number line to the rational numbers; we extend the rationals to get the reals.  Similarly, if you start with the real numbers and <q>throw in</q> the imaginary number <m>i</m>, you get the complex numbers (an extension field of both <m>\Q</m> and <m>\R</m>).  The smaller field <m>F</m> is called the <term>base field</term>.
+      We write <m>F \subset E</m>.
+    </p>
+    
+    
+    <p>
+      Are there other fields hanging out around these traditional choices?  Is there a field <em>between</em> <m>\Q</m> and <m>\R</m>?  We will see that the answer to this is an overwhelming <em>yes</em>!  Most of what we  mean by <em>field theory</em> is precisely the study of fields that are extensions of <m>\Q</m>.  
+    </p>
+    
+    <p>
+      It is not at all obvious where to start looking for fields between <m>\Q</m> and <m>\R</m>.  We could start with <m>\R</m> and eliminate numbers, but this does not do much for us.  We really want to extend <m>\Q</m>. What can we add to this already infinite set?  We choose to add <em>roots of polynomials</em>!  This will have the added benefit of helping us to study the polynomials as well.
+      </p>
+  
+    <p permid="qxo">
+      More specifically if we are given a field <m>F</m> and a polynomial <m>p(x) \in F[x]</m>,
+      we can ask whether or not we can find a field <m>E</m> containing <m>F</m> such that <m>p(x)</m> factors into linear factors over <m>E[x]</m>.
+      For example, if we consider the polynomial
+      <me permid="pGq">
+        p(x) = x^4 -5 x^2 + 6
+      </me>
+      in <m>\Q[x]</m>,
+      then <m>p(x)</m> factors as <m>(x^2 - 2)(x^2 - 3)</m>.
+      However, both of these factors are irreducible in <m>\Q[x]</m>.
+      If we wish to find a zero of <m>p(x)</m>,
+      we must (and can) go to a larger field.
+      Certainly the field of real numbers will work, since
+      <me permid="VNz">
+        p(x) = (x - \sqrt{2} ) (x + \sqrt{2} )( x - \sqrt{3})(x + \sqrt{3})
+      </me>.
+      It is possible to find a smaller field in which <m>p(x)</m> has a zero, namely
+      <me permid="BUI">
+        {\mathbb Q }( \sqrt{2} ) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}
+      </me>.
+      Our goal is to compute and study such fields for arbitrary polynomials over a field <m>F</m>.
+    </p>
+    
+    <p>
+      Before proceeding though, we should probably convince ourselves that <m>E = \Q(\sqrt{2})</m> really is a field.   First, why is this a ring?  Well, <m>E</m> is a subset of <m>\R</m>, so all we need to check is that it is a subring of <m>\R</m>.  If we take two elements <m>a+b\sqrt{2}</m> and <m>c + d \sqrt{2}</m>, is their sum, difference, and product still in <m>E</m>?  The only one of these that is not obvious is the product.  But,
+      <me>
+        (a+b\sqrt{2})(c+d\sqrt{2}) = ac+2bd + (ad + bc)\sqrt{2}
+      </me>,
+      which has the correct form to be in <m>E</m>.
+    </p>
+    
+    <p>
+      What about multiplicative inverses though?  Does every <m>a+b\sqrt{2}</m>, with <m>a</m> and <m>b</m> not both zero, have an inverse?  In this example, it is not too difficult to see the answer is yes.  In fact, we can take 
+      <me>
+        (a+b\sqrt 2)\inv = \frac{a}{a^2 - 2b^2} - \frac{b}{a^2 - 2b^2}\sqrt{2}
+      </me>.
+      This was found by rationalizing the denominator of <m>\frac{1}{a+b\sqrt{2}}</m> by multiplying by <m>a-b\sqrt{2}</m> in both the numerator and denominator.  That works fine for this simple example, but we will need to think about other methods for more complicated extensions.
+    </p>
+    
+    <p>
+      Here is another example:
+    </p>
+
+    <example xml:id="example-fields-q-sqrt2" permid="qbC">
+      <p permid="oIb">
+        Let's start with <m>\Q(\sqrt{2})</m> as our base field, and take another extension.  That is, let
+        <me permid="ibR">
+          F = {\mathbb Q}( \sqrt{2}\,) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}
+        </me>
+        and let <m>E =  {\mathbb Q }( \sqrt{2} + \sqrt{3}\,)</m> be the smallest field containing both
+        <m>{\mathbb Q}</m> and the real number <m>\sqrt{2} + \sqrt{3}</m>.
+        For now, assume both <m>E</m> and <m>F</m> are fields, so they are both extension fields of the rational numbers.
+        We claim that <m>E</m> is an extension field of <m>F</m>.
+        To see this,
+        we need only show that <m>\sqrt{2}</m> is in <m>E</m>.
+        Since <m>\sqrt{2} + \sqrt{3}</m> is in <m>E</m>,
+        <m>1 / (\sqrt{2} + \sqrt{3}\,) = \sqrt{3} - \sqrt{2}</m> must also be in <m>E</m>.
+        Taking linear combinations of
+        <m>\sqrt{2} + \sqrt{3}</m> and <m>\sqrt{3} - \sqrt{2}</m>,
+        we find that <m>\sqrt{2}</m> and
+        <m>\sqrt{3}</m> must both be in <m>E</m>.
+      </p>
+      
+      <p>
+        Note that this also shows that <m>E</m> is an extension field of <m>\Q(\sqrt{3})</m>.  Later we will consider how <m>E</m> relates to the fields <m>\Q(\sqrt{2}, \sqrt{3})</m>, the smallest field that contains both <m>\sqrt{2}</m> and <m>\sqrt{3}</m>.
+      </p>
+    </example>
+    
+    <p>
+      The example above make sense using real numbers we already know about.  Our next goal will be to simply add a arbitrary root of a polynomial, perhaps without even knowing which real (or complex) number that root is.  Surprisingly, this will work!  To get a feel for this, attempt the problems on the following activity. 
+    </p>
+
+
+  
+  <xi:include href="./worksheets/fields-intro.ptx"/>
+  
+  
+</section>

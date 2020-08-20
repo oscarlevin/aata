@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-quotientrings">
+    <title>Activity: Quotient Rings that are Extension Fields</title>
+
+    <introduction>
+        <p>Let's explore the connection between extension fields and quotient rings. We have seen that <m>F[x]/\langle p(x) \rangle \cong F(\alpha)</m>, where <m>\alpha</m> is a root of its minimal polynomial <m>p(x)</m>.  The goal of this activity is to see how working in quotient rings help us realize <m>E = F(\alpha)</m> as a field.</p>
+        
+        <p>
+          We will start easy.  For now, let <m>E = \Q(\sqrt{2})</m>.
+        </p>
+    </introduction>
+
+    <exercise workspace="10%">
+      <statement>
+        <p> 
+          What quotient ring is <m>E</m> isomorphic to?  
+        </p>
+     </statement>
+     <solution>
+       <p>
+         An irreducible polynomial for <m>\alpha = \sqrt{2}</m> is <m>p(x) = x^2 -2</m>, so <m>\Q(\sqrt{2}) \cong \Q[x]/\langle x^2 - 2 \rangle</m>.
+       </p>
+     </solution>
+    </exercise>
+    
+    <exercise workspace="10%">
+      <statement>
+        <p>
+          One element in <m>E</m> is <m>1+3\sqrt{2}</m>.  What element in the quotient ring does this correspond to?  
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This will be the coset <m>1+3x + \langle x^2 - 2\rangle</m>.
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise workspace="30%">
+      <statement>
+        <p>
+          What will <m>\gcd(3x+1, x^2 - 2)</m> be?  How do you know?  Then verify you are correct using the Euclidean algorithm.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The gcd will be 1, since <m>x^2 - 2</m> is irreducible.  We have <m>x^2 - 2 = (\frac{1}{3}x -\frac{1}{9}(3x+1)) - \frac{17}{9}</m>.  The next step will necessarily give us zero remainder, so the gcd is <m>-\frac{17}{9}</m>$.  But we can multiply by any constant, so we also have gcd equal to 1. 
+        </p>
+      </solution>
+    </exercise>
+
+    <pagebreak/>
+
+
+
+    <exercise workspace="30%">
+      <statement>
+        <p>
+          Bezout's identity says that for any polynomials <m>a(x)</m> and <m>b(x)</m>, there are polynomials <m>s(x)</m> and <m>t(x)</m> such that
+          <me>
+            \gcd(a(x), b(x)) = s(x)a(x) + t(x)b(x)
+          </me>.
+          Find <m>s(x)</m> and <m>t(x)</m> in our case, by working backwards from the Euclidean algorithm above.          
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Go backwards to get <m>1 = s(x)(x^2-2)+t(x)(3x+1)</m>.  In fact, we get <m>s(x) = -\frac{9}{17}</m> and <m>t(x) = \frac{3}{17} x - \frac{1}{17}</m>.  
+        </p>
+      </solution>
+    </exercise> 
+    
+    <exercise workspace="30%">
+      <statement>
+        <p>
+          What does Bezout's identity have to do with the expression
+          <me>
+            1+\langle x^2 - 2\rangle = (3x+1 + \langle x^2 - 2\rangle)(t(x) + \langle x^2 - 2\rangle)
+          </me>
+          and what does this have to do with finding inverses?  In particular, what is <m>(1+3\sqrt{2})\inv</m> in <m>E</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Notice that <m>s(x)(x^2 - 2) \in \langle x^2 - 2\rangle</m> and so what we have here shows us that <m>1 \in \langle x^2 - 2\rangle + (\frac{3}{17} x - \frac{1}{17})(3x + 1) = (\langle x^2 - 2\rangle + \frac{3}{17} x - \frac{1}{17})(\langle x^2 - 2\rangle + 3x+1)</m>.  
+
+          Thus <m>\langle x^2 - 2\rangle + \frac{3}{17} x - \frac{1}{17}</m> is the multiplicative inverse of <m>\langle x^2 - 2\rangle 3x + 1</m>.  Going back to <m>E</m>, we see that the inverse of <m>1+3\sqrt{2}</m> must therefore be <m>-\frac{1}{17} + \frac{3}{17}\sqrt{2}</m>.
+
+          This will always work, because for any coset <m>\langle x^2 - 2 \rangle + r(x)</m>, with <m>r(x)</m> not a multiple of <m>x^2 - 2</m> (so for any non-zero coset), the gcd of <m>x^2 - 2</m> and <m>r(x)</m> will be 1, so we can find <m>s(x)</m> and <m>t(x)</m> such that <m>1 = s(x)(x^2 - 2) + t(x)r(x)</m>.  Then <m>\langle x^2 - 2\rangle + t(x)</m> will be the multiplicative inverse.
+        </p>
+      </solution>
+    </exercise>     
+
+    <exercise>
+      <statement>
+        <p>
+          Now let's try this again with a more complicated polynomial.  As in the earlier activity, take <m>p(x) = x^3 + 3x^2 - x + 2</m> and let <m>\s</m> be a root.  Use quotient rings to find the inverse of the element <m>2 + 3\s^2</m> in <m>E = \Q(\s)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We work in <m>\Q[x]/\langle p(x) \rangle</m>, where <m>p(x) = x^3 + 3x^2 - x + 2</m>.  We must find a polynomial <m>t(x) \in \Q[x]</m> such that <me>1 + \langle p(x) \rangle = (2+3x^2)(t(x)) + \langle p(x) \rangle</me>,
+          which is equivalent to finding polynomials <m>t(x)</m> and <m>s(x)</m> such that <me>
+            1 = s(x)p(x) + t(x)(2+3x^2)
+          </me>.
+          We know such <m>s(x)</m> and <m>t(x)</m> exist by Bezout's theorem and the fact that <m>p(x)</m> is irreducible, so <m>\gcd(p(x), 2+3x^2) = 1</m>.
+        </p>
+        
+        <p>
+          The Euclidean Algorithm gives us:
+          <md>
+            <mrow>x^3 + 3x^2 - x + 2 \amp = \left(\frac{x}{3}+1\right)\left(3x^2 + 2\right) + \frac{-5x}{3} </mrow>
+            <mrow> 3x^2 + 2 \amp = \left(\frac{-9x}{5}\right)\left(\frac{-5x}{3}\right) + 2</mrow>
+          </md>.
+          Then working backwards we find:
+          <md>
+            <mrow>1 \amp = \frac{1}{2}(3x^2 + 2) + \left(\frac{9x}{10}\right)\left(\frac{-5x}{3}\right) </mrow>
+            <mrow> 1 \amp = \frac{1}{2}(3x^2+2) +\left(\frac{9x}{10}\right)\left((x^3 + 3x^2 - x + 2) - \left(\frac{x}{3}+1\right)\left(3x^2 + 2\right) \right)  </mrow>
+            <mrow> 1 \amp = \left(\frac{1}{2} - \frac{9x}{10}\frac{x}{3} - \frac{9x}{10}\right)(3x^2 + 2) + \left(\frac{9x}{10}\right)(x^3 + 3x^2 - x + 2) </mrow>
+          </md>.
+          So we have <m>s(x) = \frac{9x}{10}</m> and crucially <m>t(x) = \frac{1}{2} - \frac{9}{10}x - \frac{3}{10}x^2</m>.
+        </p>
+        
+        <p>
+          Shifting back to <m>E</m>, we see that the inverse of <m>2+ 3\s^2</m> is <m>\frac{1}{2} - \frac{9}{10}\s - \frac{3}{10}\s^2</m>
+        </p>
+      </solution>
+    </exercise>
+
+
+</worksheet>

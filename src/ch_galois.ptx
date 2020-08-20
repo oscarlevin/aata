@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2018  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2018  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="galois" permid="hgP">
+  <title>Galois Theory</title>
+  <introduction permid="zyO">
+    <p permid="gbJ">
+      A classic problem of algebra is to find the solutions of a polynomial equation.
+      The solution to the quadratic equation was known in antiquity.
+      Italian mathematicians found general solutions to the general cubic and quartic equations in the sixteenth century;
+      however, attempts to solve the general fifth-degree, or quintic,
+      polynomial were repulsed for the next three hundred years.
+      Certainly, equations such as
+      <m>x^5 - 1 = 0</m> or <m>x^6 - x^3 - 6 = 0</m> could be solved,
+      but no solution like the quadratic formula was found for the general quintic,
+      <me permid="jUE">
+        a x^5 + b x^4 +c x^3 + d x^2 + e x + f = 0
+      </me>.
+      Finally, at the beginning of the nineteenth century, Ruffini and Abel both found quintics that could not be solved with any formula.
+      It was Galois, however,
+      who provided the full explanation by showing which polynomials could and could not be solved by formulas.
+      He discovered the connection between groups and field extensions.
+      Galois theory demonstrates the strong interdependence of group and field theory,
+      and has had far-reaching implications beyond its original purpose.
+    </p>
+
+    <p permid="MiS">
+      In this chapter we will prove the Fundamental Theorem of Galois Theory.
+      This result will later be used to establish the insolvability of the quintic and to prove the Fundamental Theorem of Algebra (after we review some group theory in the next chapter).
+    </p>
+  </introduction>
+  
+  <xi:include href="./sec_galois-splitting-fields.ptx"/>
+  <xi:include href="./sec_galois-field-automorphisms.ptx"/>
+  <xi:include href="./sec_galois-fund-theorem-galois-theory.ptx"/>
+  <!-- <xi:include href="./sec_galois-applications.ptx"/> -->
+  
+
+</chapter>

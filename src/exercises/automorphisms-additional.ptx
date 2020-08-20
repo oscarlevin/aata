@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homomorph-exercises-automorphisms">
+
+<title>Additional Exercises: Automorphisms</title>
+
+<exercise permid="ZQy" xml:id="homomorph-exercise-aut-G">
+  <statement>
+    <p permid="ZnV">
+          Let <m>\aut(G)</m> be the set of all automorphisms of <m>G</m>;
+          that is, isomorphisms from <m>G</m> to itself.
+          Prove this set forms a group and is a subgroup of the group of permutations of <m>G</m>;
+          that is, <m>\aut(G) \leq S_G</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="FXH" xml:id="homomorph-exercise-inner-aut">
+  <statement>
+    <p permid="Fve">
+          An <term>inner automorphism</term>
+      <idx>
+        <h>Automorphism</h>
+        <h>inner</h>
+      </idx> of <m>G</m>,
+      <me permid="kbv">
+            i_g : G \rightarrow G
+      </me>,
+          is defined by the map
+      <me permid="QiE">
+            i_g(x) = g x g^{-1}
+      </me>,
+          for <m>g \in G</m>.
+          Show that <m>i_g \in \aut(G)</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="meQ" xml:id="homomorph-exercise-Inn-G">
+  <statement>
+    <p permid="lCn">
+          The set of all inner automorphisms is denoted by <m>\inn(G)</m>.
+          Show that <m>\inn(G)</m> is a subgroup of <m>\aut(G)</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="SlZ" xml:id="homomorph-exercise-auto-not-inner">
+  <statement>
+    <p permid="RJw">
+          Find an automorphism of a group <m>G</m> that is not an inner automorphism.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="yti" xml:id="homomorph-exercise-ZG-inner">
+  <statement>
+    <p permid="xQF">
+          Let <m>G</m> be a group and <m>i_g</m> be an inner automorphism of <m>G</m>,
+          and define a map
+      <me permid="wpN">
+            G \rightarrow \aut(G)
+      </me>
+          by
+      <me permid="cwW">
+            g \mapsto i_g
+      </me>.
+          Prove that this map is a homomorphism with image <m>\inn(G)</m> and kernel <m>Z(G)</m>.
+          Use this result to conclude that
+      <me permid="IEf">
+            G/Z(G) \cong \inn(G)
+      </me>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="eAr" xml:id="homomorph-exercise-aut-S3">
+  <statement>
+    <p permid="dXO">
+          Compute <m>\aut(S_3)</m> and <m>\inn(S_3)</m>.
+          Do the same thing for <m>D_4</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="KHA" xml:id="homomorph-exercise-aut-Z">
+  <statement>
+    <p permid="KeX">
+          Find all of the homomorphisms <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m>.
+          What is <m>\aut({\mathbb Z})</m>?
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="qOJ" xml:id="homomorph-exercise-aut-Z8">
+  <statement>
+    <p permid="qmg">
+          Find all of the automorphisms of <m>{\mathbb Z}_8</m>.
+          Prove that <m>\aut({\mathbb Z}_8) \cong U(8)</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="WVS" xml:id="homomorph-exercise-a-to-ka">
+  <statement>
+    <p permid="Wtp">
+          For <m>k \in {\mathbb Z}_n</m>,
+          define a map <m>\phi_k : {\mathbb Z}_n \rightarrow {\mathbb Z}_n</m> by <m>a \mapsto ka</m>.
+          Prove that <m>\phi_k</m> is a homomorphism.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Ddb" xml:id="homomorph-exercise-phi-k-Zn">
+  <statement>
+    <p permid="CAy">
+          Prove that <m>\phi_k</m> is an isomorphism if and only if <m>k</m> is a generator of <m>{\mathbb Z}_n</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="jkk" xml:id="homomorph-exercise-aut-Zn">
+  <statement>
+    <p permid="iHH">
+          Show that every automorphism of
+      <m>{\mathbb Z}_n</m> is of the form <m>\phi_k</m>,
+          where <m>k</m> is a generator of <m>{\mathbb Z}_n</m>.
+    </p>
+  </statement>
+</exercise>
+
+<exercise permid="Prt" xml:id="homomorph-exercise-Un-aut-Zn">
+  <statement>
+    <p permid="OOQ">
+          Prove that <m>\psi : U(n) \rightarrow \aut({\mathbb Z}_n)</m> is an isomorphism,
+          where <m>\psi : k \mapsto \phi_k</m>.
+    </p>
+  </statement>
+</exercise>
+
+</exercises>

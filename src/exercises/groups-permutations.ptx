@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-groups-permutations">
+  
+    <title>Practice Problems</title>
+
+    <exercise number="1">
+      <statement>
+        <p>
+          Write the following permutations in cycle notation.
+
+          <ol cols="2">
+            <li>
+              <p>
+                <me>
+                  \begin{pmatrix}
+                  1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+                  2 &amp; 4 &amp; 1 &amp; 5 &amp; 3
+                  \end{pmatrix}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{pmatrix}
+                  1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+                  4 &amp; 2 &amp; 5 &amp; 1 &amp; 3
+                  \end{pmatrix}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{pmatrix}
+                  1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+                  3 &amp; 5 &amp; 1 &amp; 4 &amp; 2
+                  \end{pmatrix}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{pmatrix}
+                  1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+                  1 &amp; 4 &amp; 3 &amp; 2 &amp; 5
+                  \end{pmatrix}
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          (a) <m>(12453)</m>; (b) <m>(14)(35)</m>; (c) <m>(13)(25)</m>; (d) <m>(24)</m>.
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise number="2">
+      <statement>
+        <p>
+          Compute each of the following.
+
+          <ol cols="2">
+            <li>
+              <p>
+                <m>(1345)(234)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(12)(1253)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(143)(23)(24)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1423)(34)(56)(1324)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1254)(13)(25)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1254) (13)(25)^2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1254)^{-1} (123)(45) (1254)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1254)^2 (123)(45)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(123)(45) (1254)^{-2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1254)^{100}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>|(1254)|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>|(1254)^2|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(12)^{-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(12537)^{-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>[(12)(34)(12)(47)]^{-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>[(1235)(467)]^{-1}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          (a) <m>(135)(24)</m>; (b) <m>(253)</m>; (c) <m>(14)(23)</m>; (d) <m>(12)(56)</m>; (e) <m>(1324)</m>; (f) <m>(13254)</m>; (g) <m>(134)(25)</m>; (h) <m>(14)(235)</m>; (i) <m>(143)(25)</m>; (j) <m>(1)</m>; (k) <m>4</m> (i.e., the order of the element); (l) <m>2</m>; (m) <m>(12)</m>; (n) <m>(17352)</m>; (o) <m>(374)</m>; (p) <m>(476)(1532)</m>.
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise number="3">
+      <statement>
+        <p>
+          Express the following permutations as products of transpositions and identify them as even or odd.
+
+          <ol cols="2">
+            <li>
+              <p>
+                <m>(14356)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(156)(234)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1426)(142)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(17254)(1423)(154632)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(142637)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          (a) <m>(16)(15)(13)(14)</m> (even); (b) <m>(15)(56)(23)(24)</m> (even); (c) <m>(16)(14)(12)</m> (odd); (d) <m>(17)(72)(25)(54)(14)(42)(23)(15)(54)(46)(63)(32)</m> (even); (e) <m>(14)(42)(26)(63)(37)</m> (odd).
+        </p>
+      </answer>
+    </exercise>
+    <exercise number="5">
+      <statement>
+        <p>
+          List all of the subgroups of <m>S_4</m>.
+          Find each of the following sets:
+
+          <ol>
+            <li>
+              <p>
+                <m>\{ \sigma \in S_4 : \sigma(1) = 3 \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\{ \sigma \in S_4 : \sigma(2) = 2 \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\{ \sigma \in S_4 : \sigma(1) = 3</m> and <m>\sigma(2) = 2 \}</m>.
+              </p>
+            </li>
+          </ol>
+
+          Are any of these sets subgroups of <m>S_4</m>?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          (a) <m>\{ (13), (13)(24), (132), (134), (1324), (1342) \}</m> is not a subgroup.
+        </p>
+        <p>
+      (b) <m>\{(1), (134), (143), (13), (14), (34)\}</m> is a subgroup.
+        </p>
+        <p>
+      (c) <m>\{(13), (134)\}</m> is not a subgroup.
+        </p>
+
+      </hint>
+    </exercise>
+
+    <exercise number="6">
+      <statement>
+        <p>
+          Find all of the subgroups in <m>A_4</m>.
+          What is the order of each subgroup?
+        </p>
+      </statement>
+      <hint>
+        <p>
+      There are subgroups of orders 1, 2, 3, 4, and 12.  You have multiple choices for the subgroups of order 2 and 3.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise number="7">
+      <statement>
+        <p>
+          Find all possible orders of elements in <m>S_7</m> and <m>A_7</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+      The possible orders in <m>S_7</m> are 1, 2, 3, 4, 5, 6, 7, 10, and 12.  In <m>A_7</m> you can only have orders 1, 2, 3, 5, 6, and 7.
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise number="8">
+      <statement>
+        <p>
+          Show that <m>A_{10}</m> contains an element of order <m>15</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          <m>(12345)(678)</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise number="9">
+      <statement>
+        <p>
+          Does <m>A_8</m> contain an element of order <m>26</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+      No.  We will give a good reason why in chapter 6.
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise number="10">
+      <statement>
+        <p>
+          Find an element of largest order in <m>S_n</m> for <m>n = 3, \ldots, 10</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(123)</m>,          <m>(1234)</m>,          <m>(12)(345)</m>, 
+          <m>(123456)</m>,          <m>(123)(4567)</m>,          <m>(123)(45678)</m>,          <m>(1234)(56789)</m>,          <m>(12)(345)(678910)</m>.
+        </p>
+      </answer>
+    </exercise>
+
+  </exercises>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_fields-extension-degree">
+    <title>Galois (sub)Groups</title>
+    <introduction>
+      <p>
+        Consider the polynomial <m>a(x) = x^4 - 2</m> in <m>\Q[x]</m>.
+      </p>
+    </introduction>
+
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Find the splitting field <m>E</m> for <m>a(x)</m> over <m>\Q</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are four roots of <m>a(x)</m>, namely <m>\pm \sqrt[4]{2}</m> and <m>\pm\sqrt[4]{2}i</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise workspace="15%">
+        <statement>
+        <p> 
+          Describe the Galois group <m>G</m> for <m>a(x)</m> over <m>\Q</m>.  How big is it?  Does it look like any group we have studied before?
+        </p>
+       </statement>
+       <solution>
+
+       </solution>
+    </exercise>
+    
+
+        
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Find all the subgroups of <m>G</m>.  Find all the subfields of <m>E</m> above <m>\Q</m>.  What do you notice?  Draw the lattice of subgroups and subfields to illustrate the connections.
+        </p>
+      </statement>
+      <solution>
+      
+      </solution>
+    </exercise>
+        
+      
+
+</worksheet>

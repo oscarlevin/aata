@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2018  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2018  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="groups">
+  <title>Some of the Structure of Groups</title>
+  <introduction>
+    <p>
+      We have seen that field extensions can help us understand polynomials and their roots.  One of the fundamental tools for understanding field extensions is to study Galois groups, the groups of automorphisms of splitting fields.  Since there is a correspondence between Galois groups and their fields, understanding groups better will help us understand fields, and therefore polynomials.  
+    </p>
+    
+    <p>
+      So let's take a break from fields and polynomials and take a closer look at group theory.  
+    </p>
+  </introduction>
+  
+  <xi:include href="./sec_groups-cayley.ptx"/>
+  <xi:include href="./sec_groups-permutations.ptx"/>
+  <xi:include href="./sec_grp-struct-solveable.ptx"/>
+  <xi:include href="./sec_grp-struct-simple-an.ptx"/>
+  <xi:include href="./sec_grp-struct-galois.ptx"/>
+
+
+  
+
+</chapter>

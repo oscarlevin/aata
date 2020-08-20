@@ -19,19 +19,19 @@
 <!-- Followed by a sequential number across that level -->
 <!-- For example "2" implies Theorem 5.3.12 is         -->
 <!-- 12-th theorem, lemma, etc in 5.2                  -->
-<xsl:param name="numbering.theorems.level" select="'1'" />
+<xsl:param name="numbering.theorems.level" select="'2'" />
 <!-- How many levels in numbering of equations     -->
 <!-- Analagous to numbering theorems, but distinct -->
-<xsl:param name="numbering.equations.level" select="'1'" />
+<xsl:param name="numbering.equations.level" select="'2'" />
 <!-- Level where footnote numbering resets                                -->
 <!-- For example, "2" would be sections in books, subsections in articles -->
-<xsl:param name="numbering.footnotes.level" select="'0'" />
+<xsl:param name="numbering.footnotes.level" select="'1'" />
 <!-- Last level where subdivision (section) numbering takes place     -->
 <!-- For example, "2" would mean subsections of a book are unnumbered -->
 <!-- N.B.: the levels above cannot be numerically larger              -->
-<xsl:param name="numbering.maximum.level" select="'2'" />
+<!-- <xsl:param name="numbering.maximum.level" select="'3'" /> -->
 
 <!-- Thius is a quick fix for a bigger problem with arbitrary "apply-templates" in back matter mode -->
-<xsl:template match="todo" mode="backmatter" />
+<!-- <xsl:template match="todo" mode="backmatter" /> -->
 
 </xsl:stylesheet>

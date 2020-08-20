@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2018  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2018  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fields" permid="pNh">
+  <title>Fields</title>
+  <introduction>
+    <p>
+      Our goal in this chapter is to understand the theory of <term>fields</term>, similar to how we studied groups and rings.  The motivation is not altruistic though.  Rather, we will study fields as a canvas in which we can solve other problems, from factoring polynomials to constructing geometric figures with a straight edge and compass.
+    </p>
+  </introduction>
+  
+  <xi:include href="./sec_fields-intro.ptx"/>
+  
+  <xi:include href="./sec_fields-extensions.ptx" />
+
+  <xi:include href="./sec_fields-algebraic.ptx" />
+  
+  <xi:include href="./sec_fields-vectorspaces.ptx"/>
+  <xi:include href="./sec_fields-vectorspaces2.ptx"/>
+
+  <xi:include href="./sec_fields-constructions-intro.ptx"/>
+
+  <xi:include href="./sec_fields-constructions-conc.ptx"/> 
+
+<!-- <xi:include href="./sec_fields-splitting-fields.ptx"/> -->
+
+
+
+
+</chapter>

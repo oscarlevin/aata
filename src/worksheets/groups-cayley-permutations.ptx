@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-cayley-permutations">
+    <title>Activity: Cayley Permutations</title>
+
+    <introduction>
+        <p>
+          We have studied <em>permutation groups</em>, as well as groups that do not appear to be groups of permutations (such as <m>\Z_n</m>, <m>\Z_n\times \Z_m</m>, groups of functions or matrices, <m>D_4</m>, etc.).  How distinct are these non-permutation groups from permutation groups?
+        </p>
+    </introduction>
+
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Write the <m>4\times 4</m> group tables for <m>\Z_4</m> and  <m>U(8)</m>, the group of <em>units</em>  of <m>\Z_8</m> (numbers relatively prime to 8) under multiplication.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \begin{array}{c|cccc}
+            + &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+            \hline
+            0       &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+            1       &amp; 1 &amp; 2 &amp; 3 &amp; 0 \\
+            2       &amp; 2 &amp; 3 &amp; 0 &amp; 1 \\
+            3       &amp; 3 &amp; 0 &amp; 1 &amp; 2
+            \end{array}
+            \qquad
+            <me>
+              \begin{array}{c|cccc}
+              \cdot &amp; 1 &amp; 3 &amp; 5 &amp; 7 \\
+              \hline
+              1       &amp; 1 &amp; 3 &amp; 5 &amp; 7 \\
+              3       &amp; 3 &amp; 1 &amp; 7 &amp; 5 \\
+              5       &amp; 5 &amp; 7 &amp; 1 &amp; 3 \\
+              7       &amp; 7 &amp; 5 &amp; 3 &amp; 1
+              \end{array}
+            </me>
+          </me>
+        </p>
+      </solution>
+    </exercise>
+
+
+        <exercise workspace="15%">
+            <statement>
+            <p> 
+               For each element in the groups above, we can see what adding or multiplying it by the other elements does to the other elements.  For example, <m>5 \in U(8)</m> corresponds to this function: <m>\lambda_5 = \begin{pmatrix}1 \amp 3 \amp 5 \amp 7\\ 5 \amp 7 \amp 1 \amp 3\end{pmatrix}</m>, since <m>5 \cdot 1 = 5 </m>, <m>5 \cdot 3 = 7</m>, and so on.
+            </p>
+            
+            <p>
+              For each element <m>g</m> in each group above, write down the corresponding function <m>\lambda_g</m>.
+            </p>
+           </statement>
+           <solution>
+             <p>
+               For <m>Z_4</m> we have
+               <me>
+                 \lambda_0 = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3 \\ 0 \amp 1 \amp 2 \amp 3\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_1 = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3 \\ 1 \amp 2 \amp 3 \amp 0\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_2 = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3 \\ 2 \amp 3 \amp 0 \amp 1\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_3 = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3 \\ 3 \amp 0 \amp 1 \amp 2\end{pmatrix}
+               </me>
+             </p>
+             
+             <p>
+               For <m>U(8)</m> we get
+               <me>
+                 \lambda_1 = \begin{pmatrix}1 \amp 3 \amp 5 \amp 7\\ 1 \amp 3 \amp 5 \amp 7\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_3 = \begin{pmatrix}1 \amp 3 \amp 5 \amp 7\\ 3 \amp 1 \amp 7 \amp 5\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_5 = \begin{pmatrix}1 \amp 3 \amp 5 \amp 7\\ 5 \amp 7 \amp 1 \amp 3\end{pmatrix}
+               </me>
+               <me>
+                 \lambda_7 = \begin{pmatrix}1 \amp 3 \amp 5 \amp 7\\ 7 \amp 5 \amp 3 \amp 1\end{pmatrix}
+               </me>
+             </p>
+             
+             <p>
+               Notice that we are getting the rows in the group table as the outputs of the function.  This makes sense, right?
+             </p>
+           </solution>
+        </exercise>
+        
+
+        
+        <exercise workspace="15%">
+          <statement>
+            <p>
+              What happens when you compose two functions <m>\lambda_g</m> and <m>\lambda_h</m> for <m>g</m> and <m>h</m> in a group?  Try this with a few examples you have above.  What do you notice about the function you get?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              For example, in the case of <m>\Z_4</m>, we have <me>\lambda_2\lambda_1 = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3\\ 2 \amp 3 \amp 0 \amp 1 \end{pmatrix}\begin{pmatrix}0 \amp 1 \amp 2 \amp 3\\ 1 \amp 2 \amp 3 \amp 0 \end{pmatrix} = \begin{pmatrix}0 \amp 1 \amp 2 \amp 3\\ 3 \amp 0 \amp 1 \amp 2 \end{pmatrix} = \lambda_3 </me>.
+              In <m>U(8)</m>, we have <m>\lambda_3\lambda_7 = \lambda_5</m>.  But notice that <m>5 = 3 \cdot 7</m> in <m>U(8)</m>.  In other words, the <m>\lambda_g</m> are acting just like <m>g</m>.
+            </p>
+          </solution>
+        </exercise>
+        
+        <exercise workspace="1%">
+          <statement>
+            <p>
+              Consider the set <m>\overline{G} = \{\lambda_g \st g \in G\}</m>.  Since each <m>\lambda_g</m> is a permutation of the elements of <m>G</m>, each of these will be a subset of <m>S_n</m> where <m>n = |G|</m> (in our case, <m>n=4</m>).  Is <m>\overline{G}</m> a subgroup of <m>S_4</m> in both our cases?  Will it be a subgroup in general?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Instead of using the elements of <m>G</m> themselves, if we put them in some order (a first one, second one, etc), then we can associate numbers <m>1,2,3,\ldots,n</m> to the <m>n</m> elements of <m>G</m>.  The permutations <m>\lambda_g</m> are then exactly elements of <m>S_n</m>.
+            </p>
+            
+            <p>
+              What we found in the previous question is that the <m>\lambda_g</m> act just like the elements <m>g</m> they come from.  In fact, we can prove that <m>G \cong \overline{G}</m>: the set of permutations <m>\overline{G}</m> is a subgroup of <m>S_n</m>, in fact, a subgroup isomorphic to <m>G</m>.
+            </p>
+          </solution>
+        </exercise>
+    
+
+</worksheet>

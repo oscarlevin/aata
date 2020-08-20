@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-applications">
+  
+    <title>Collected Homework</title>
+
+<exercise>
+  <statement>
+    <p>
+      Previously, we saw that the field <m>E = \Q(\sqrt[4]{3},i)</m> was the splitting field for the polynomial <m>x^4-3</m> and that the Galois group <m>G(E/\Q)</m> was isomorphic to <m>D_4</m>.  Now let's explore the solvability of the Galois group and whether the polynomial <m>x^4 - 3</m> is solvable by radicals.
+      <ol>
+        <li>
+          <p>
+            Verify that <m>D_4</m> (i.e., the Galois group) is solvable.  You have done everything you need for this already, you just need to put the pieces together with the definition of <em>solvable</em>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Pick a subnormal series that witnesses that <m>D_4</m> is solvable, and look at the corresponding series of subfields of <m>E</m> (i.e., the subfields that are fixfields for the subgroups).  Verify that each of these are <em>normal</em> field extensions (i.e., that they are themselves splitting fields).
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>F</m> be one of the fixfields from the previous part.  What are the elements of the Galois group <m>G(F/\Q)</m> and how do these relate to the Galois groups <m>G(E/\Q)</m> and <m>G(E/F)</m>?  Illustrate the connection using example elements.
+          </p>
+        </li>
+        <li>
+          <p>
+            Pick a non-normal subgroup of <m>D_4</m> and consider its fixfield.  Demonstrate that the fixfield is not a normal extension. 
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+   
+
+   <exercise>
+     <statement>
+       <p>
+         Find a degree 5 polynomial whose Galois group is isomorphic to <m>S_5</m>.  Explain how you know your example works and what the significance is.  Your example should be different from the one we discuss in class.
+       </p>
+     </statement>
+   </exercise>
+
+   <exercise>
+     <statement>
+       <p>
+         Bonus (worth 5000 points): Express the roots of the polynomial you found in the previous question in terms of rational numbers, field, operations, and radicals (square roots, cube roots, etc).  
+       </p>
+     </statement>
+   </exercise>
+  </exercises>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_rings-review1">
+    <title>Activity: Review of Rings and Quotient Rings</title>
+
+    <introduction>
+      
+        <p>
+          The goal of this activity is to remind ourselves of basic but crucially important definitions we will need in our study of fields.
+        </p>
+        
+        <p>
+          You will be asked to provide definitions. Some definitions will include terms that also should be defined.  Make sure that everyone knows what every word in a definition means (if not, provide definitions for those words).  For example, a <term>field</term> is a commutative division ring.  If you have not yet defined commutative ring and division ring, you should say what these mean. 
+        </p>
+    </introduction>
+
+        <exercise workspace="10%">
+            <statement>
+            <p> 
+              Give a definition of a <term>ring</term>.
+            </p>
+           </statement>
+           <solution>
+             <p>
+               A ring is a set <m>R</m> together with two operations called <m>+</m> and <m>\cdot</m> such that  <m>(R,+)</m> forms an abelian group, <m>\cdot</m> is associative, and the distributive laws hold.
+             </p>
+           </solution>
+        </exercise>
+        
+        <exercise workspace="10%">
+          <statement>
+            <p>
+              What is a <term>commutative ring with unity</term>?  How is this different from a ring?  (Note, <q>unity</q> is also sometimes called <q>identity</q>.)
+            </p>
+          </statement>
+          <solution>
+            <p>
+              A ring is <term>commutative</term> provided the multiplication operation <m>\cdot</m> is commutative (the plus opperation is always commutative).  A ring has <term>unity</term> provided there is a multiplicative identity.  Some rings have these properties, some do not.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise workspace="10%">
+            <statement>
+            <p>
+              What is a <term>commutative division ring</term>?  What does <q>division</q> refer to here, and how is this different from a ring in general?
+            </p>
+            </statement>
+            <solution>
+              <p>
+                This is also called a <term>field</term>.  We already said what commutative means.  A <term>division ring</term> means that every non-zero element has a <em>multiplicative</em> inverse.  Note that every element has an additive inverse in every ring. 
+              </p>
+            </solution>
+        </exercise>
+        
+        <exercise workspace="10%">
+          <statement>
+            <p>
+              Give the definition of an <term>integral domain</term>.  How does this relate to the other types of structures you defined above?
+            </p>
+          </statement>
+          <!-- <hint>
+            <p>
+              Is <m>x - \s</m> a factor?
+            </p>
+          </hint> -->
+          <solution>
+            <p>
+              An <term>integral domain</term> is a commutative ring with unity which contains no zero-divisors.  That is, there is no non-zero element <m>a</m> such that <m>a \cdot b = 0</m> for some non-zero <m>b</m>.  Equivalently, we could say that an integral domain is a commutative ring with unity which satisfies the cancelation property: that if <m>a \ne 0</m> and <m>ab = ac</m> then <m>b = c</m>.
+            </p>
+            <p>
+              Every field (commutative division ring) is an integral domain, but not every integral domain is a field.  For example, <m>\Z</m> is an integral domain, but not a field.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              What is an <term>ideal</term>?  What is the difference between an ideal and a <term>subring</term>?  
+            </p>
+          </statement>
+          <solution>
+            <p>
+              An ideal is a type of subring (which is a subset that is also a ring).  While a ring must be closed under addition, subtraction (i.e., additive inverses), and multiplication, and <em>ideal</em> must also have the property that the product of an element inside the ideal with any element of the ring (even outside the idea) will be an element in the idea.  That is, <m>ra \in I</m> whenever <m>r \in R</m> and <m>a \in I</m>, the ideal.
+            </p>
+
+          </solution>
+        </exercise>
+
+
+        <pagebreak/>
+        
+        <exercise workspace="15%">
+            <statement>
+            <p> 
+              Consider the integers <m>\Z</m> (an integral doamin, right?).  What does the notation <m>\langle 3 \rangle</m> mean?  What sort of thing is this?  What is <m>\langle r \rangle</m> in general?
+            </p>
+           </statement>
+           <solution>
+             <p>
+               In <m>\Z</m>, we have <m>\langle 3 \rangle = \{\ldots, -3, 0, 3, 6, 9 \ldots\}</m>, the set of all multiples of 3.  This is an ideal.  In general, <m>\langle r \rangle</m> is the set of all multiples of <m>r</m>, which is always an ideal.  In fact, it is a <term>principle ideal</term> since it is an ideal generated by a single element.               
+             </p>
+           </solution>
+        </exercise>
+        
+        <exercise workspace="15%">
+          <statement>
+            <p>
+              What is <m>\Q[x]</m>?  Then give an example of an ideal in <m>\Q[x]</m>, using proper notation and by listing out some of the elements in the ideal.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\Q[x]</m> is the ring of polynomials in the variable <m>x</m> with coefficients from <m>\Q</m>.  This ring is an integral domain.
+            </p>
+
+            <p>
+              An example of an ideal in <m>\Q[x]</m> is <m>\langle x^2 + 1\rangle</m>, the set of all multiples of <m>x^2 + 1</m>.  So this ideal includes <m>\{0, x^2 + 1, x^3 + x, 2x^2 + 2, (x+1)(x^2+1), \ldots\}</m>.  Note that every non-zero polynomial in the ideal has degree at least 2.
+            </p>
+
+            <p>
+              In fact, every ideal in <m>\Q[x]</m> will be of the form <m>\langle r \rangle</m> because <m>\Q[x]</m> is a <term>principle ideal domain</term> (every ideal is principle).
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise workspace="15%">
+            <statement>
+            <p>
+              Give the definition of a <term>quotient ring</term> (i.e. a <term>factor ring</term>).  What do elements of a quotient ring look like?  How are the operations defined?  
+            </p>
+            </statement>
+            <solution>
+              <p>
+                A quotient ring is <m>R/I</m> where <m>I</m> is an ideal of a ring <m>R</m>.  This is a set of cosets <m>a + I</m> where <m>a</m> is an element of <m>R</m>.   Each coset is a set of element from <m>R</m>; those elements that you get by adding <m>a</m> to an element of <m>I</m>.
+              </p>
+              <p>
+                The operations are defined by <m>(a+I) + (b+I) = (a+b)+I</m> and <m>(a+I)(b+I) = ab + I</m>.  Equivalently, you can take any element from each coset, operate them together, and take the coset which contains the result.
+              </p>
+            </solution>
+        </exercise>
+        
+        <exercise workspace="23%">
+          <statement>
+            <p>
+              Illustrate you you wrote about quotient rings above using two examples: First, <m>\Z/\langle 3 \rangle</m>, and then <m>\Q[x]/\langle x^2 + 1\rangle</m>.  How many elements are in each of these quotient rings?  What do the elements look like?  Show how to add/multiply elements.
+            </p>
+          </statement>
+          <solution>
+            <p>
+             
+            </p>
+          </solution>
+
+        </exercise>
+  <!-- <conclusion>
+    <title>If you have time</title>
+    <p>
+      After completing the activity above, if you have time, you should look again at the activity distributed the first day of class, and try to answer the prompts on the second page.
+    </p>
+  </conclusion> -->
+
+
+</worksheet>

@@ -17,7 +17,7 @@
 <xsl:import href="aata-common.xsl" />
 
 <!-- List Chapters and Sections in sidebar Table of Contents -->
-<xsl:param name="toc.level" select="'2'" />
+<!-- <xsl:param name="toc.level" select="'3'" /> -->
 
 <!-- Examples are knowlized by default -->
 <!-- With no titles, we turn this off  -->

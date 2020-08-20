@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-galois-fund-theorem-galois-theory" permid="Pdl">
+      <title>The Fundamental Theorem</title>
+      <introduction permid="LNg">
+        <p permid="QSL">
+          The goal of this section is to prove the Fundamental Theorem of Galois Theory.
+          This theorem explains the connection between the subgroups of <m>G(E/F)</m> and the intermediate fields between <m>E</m> and <m>F</m>.
+        </p>
+
+        <proposition permid="xJB">
+          <statement>
+            <p permid="Nol">
+              Let <m>\{\sigma_i : i \in I \}</m> be a  collection of automorphisms of a field <m>F</m>.
+              Then
+
+              <notation>
+                <usage>F_{\{\sigma_i \}}</usage>
+                <description>field fixed by the automorphism <m>\sigma_i</m></description>
+              </notation>
+
+              <me permid="vdD">
+                F_{\{\sigma_i \}} = \{ a \in F : \sigma_i(a) = a \text{ for all } \sigma_i \}
+              </me>
+              is a subfield of <m>F</m>.
+            </p>
+          </statement>
+
+          <proof permid="hvk">
+            <p permid="sLA">
+              Let <m>\sigma_i(a) = a</m> and <m>\sigma_i(b)=b</m>.
+              Then
+              <me permid="bkM">
+                \sigma_i(a \pm b) = \sigma_i(a) \pm \sigma_i(b) = a \pm b
+              </me>
+              and
+              <me permid="HrV">
+                \sigma_i(a b) = \sigma_i(a) \sigma_i(b) = a  b
+              </me>.
+              If <m>a \neq 0</m>,
+              then  <m>\sigma_i(a^{-1}) = [\sigma_i(a)]^{-1} = a^{-1}</m>.
+              Finally, <m>\sigma_i(0) = 0</m> and
+              <m>\sigma_i(1)=1</m> since <m>\sigma_i</m> is an automorphism.
+            </p>
+          </proof>
+        </proposition>
+
+        <corollary permid="Wml">
+          <statement>
+            <p permid="emw">
+              Let <m>F</m> be a field and let <m>G</m> be a subgroup of <m>\aut(F)</m>.
+              Then
+
+              <notation>
+                <usage>F_G</usage>
+                <description>field fixed by the automorphism group <m>G</m></description>
+              </notation>
+
+              <me permid="nze">
+                F_G = \{ \alpha \in F : \sigma( \alpha ) = \alpha \text{ for all } \sigma \in G \}
+              </me>
+              is a subfield of <m>F</m>.
+            </p>
+          </statement>
+        </corollary>
+
+        <p permid="wZU">
+          The subfield <m>F_{ \{\sigma_i \} }</m> of <m>F</m> is called the <term>fixed field</term>
+              <idx><h>Field</h><h>fixed</h></idx>
+          of <m>\{ \sigma_i \}</m>.
+          The field fixed by a subgroup <m>G</m> of <m>\aut(F)</m> will be denoted by <m>F_G</m>.
+        </p>
+
+        <example permid="Hdn">
+          <p permid="Pdy">
+            Let <m>\sigma : {\mathbb Q}(\sqrt{3}, \sqrt{5}\, ) \rightarrow {\mathbb Q}(\sqrt{3}, \sqrt{5}\, )</m> be the automorphism that maps <m>\sqrt{3}</m> to <m>-\sqrt{3}</m>.
+            Then <m>{\mathbb Q}( \sqrt{5}\, )</m> is the subfield of
+            <m>{\mathbb Q}(\sqrt{3}, \sqrt{5}\, )</m> left fixed by <m>\sigma</m>.
+          </p>
+        </example>
+
+        <proposition xml:id="proposition-fixed-field" permid="dQK">
+          <statement>
+            <p permid="tvu">
+              Let <m>E</m> be a splitting field over <m>F</m> of a separable polynomial.
+              Then <m>E_{G(E/F)} = F</m>.
+            </p>
+          </statement>
+
+          <proof permid="NCt">
+            <p permid="YSJ">
+              Let <m>G = G(E/F)</m>.
+              Clearly, <m>F \subset E_G \subset E</m>.
+              Also, <m>E</m> must be a splitting field of <m>E_G</m> and <m>G(E/F) = G(E/E_G)</m>.
+              By <xref ref="theorem-extension-order"/>,
+              <me permid="TGn">
+                |G| = [E: E_G] =[ E:F]
+              </me>.
+              Therefore, <m>[E_G : F ] =1</m>.
+              Consequently,  <m>E_G = F</m>.
+            </p>
+          </proof>
+        </proposition>
+
+        <p permid="dhd">
+          A large number of mathematicians first learned Galois theory from Emil Artin's monograph on the subject [1]. The very clever proof of the following lemma is due to Artin.
+        </p>
+
+        <lemma permid="JXT">
+          <statement>
+            <p permid="ZCD">
+              Let <m>G</m> be a finite group of automorphisms of <m>E</m> and let <m>F = E_G</m>.
+              Then <m>[E:F] \leq |G|</m>.
+            </p>
+          </statement>
+
+          <proof permid="tJC">
+            <p permid="EZS">
+              Let <m>|G| = n</m>.
+              We must show that any set of <m>n + 1</m> elements
+              <m>\alpha_1, \ldots, \alpha_{n + 1}</m> in <m>E</m> is linearly dependent over <m>F</m>;
+              that is, we need to find elements
+              <m>a_i \in F</m>, not all zero, such that
+              <me permid="zNw">
+                a_1 \alpha_1 + a_2 \alpha_2 + \cdots + a_{n + 1} \alpha_{n + 1} = 0
+              </me>.
+              Suppose that <m>\sigma_1 = \identity, \sigma_2, \ldots, \sigma_n</m> are the automorphisms in <m>G</m>.
+              The homogeneous system of linear equations
+              <md permid="MbO">
+                <mrow>\sigma_1( \alpha_1 ) x_1 + \sigma_1(\alpha_2) x_2 + \cdots + \sigma_1(\alpha_{n + 1} ) x_{n + 1} &amp; = 0</mrow>
+                <mrow>\sigma_2( \alpha_1 ) x_1 + \sigma_2(\alpha_2) x_2 + \cdots + \sigma_2(\alpha_{n + 1} ) x_{n + 1} &amp; = 0</mrow>
+                <mrow>&amp; \vdots &amp;</mrow>
+                <mrow>\sigma_n( \alpha_1 ) x_1 + \sigma_n(\alpha_2) x_2 + \cdots + \sigma_n(\alpha_{n + 1} ) x_{n + 1} &amp; = 0</mrow>
+              </md>
+              has more unknowns than equations.
+              From linear algebra we know that this system has a nontrivial solution,
+              say <m>x_i = a_i</m> for <m>i = 1, 2, \ldots, n + 1</m>.
+              Since <m>\sigma_1</m> is the identity,
+              the first equation translates to
+              <me permid="fUF">
+                a_1 \alpha_1 +  a_2 \alpha_2 + \cdots + a_{n + 1} \alpha_{n + 1} = 0
+              </me>.
+              The problem is that some of the <m>a_i</m>'s may be in <m>E</m> but not in <m>F</m>.
+              We must show that this is impossible.
+            </p>
+              <!-- Corrected typo.  Suggested by K. Brooks. - TWJ 6/15/2012 -->
+            <p permid="lhb">
+              Suppose that at least one of the <m>a_i</m>'s is in <m>E</m> but not in <m>F</m>.
+              By rearranging the <m>\alpha_i</m>'s we may assume that <m>a_1</m> is nonzero.
+              Since any nonzero multiple of a solution is also a solution,
+              we can also assume that <m>a_1 = 1</m>.
+              Of all possible solutions fitting this description,
+              we choose the one with the smallest number of nonzero terms.
+              Again, by rearranging <m>\alpha_2, \ldots, \alpha_{n + 1}</m> if necessary,
+              we can assume that <m>a_2</m> is in <m>E</m> but not in <m>F</m>.
+              Since <m>F</m> is the subfield of <m>E</m> that is fixed elementwise by <m>G</m>,
+              there exists a <m>\sigma_i</m> in <m>G</m> such that <m>\sigma_i( a_2 ) \neq a_2</m>.
+              Applying <m>\sigma_i</m> to each equation in the system,
+              we end up with the same homogeneous system,
+              since <m>G</m> is a group.
+              Therefore, <m>x_1 = \sigma_i(a_1) = 1</m>,
+              <m>x_2 = \sigma_i(a_2)</m>, <m>\ldots</m>,
+              <m>x_{n + 1} = \sigma_i(a_{n+1} )</m> is also a solution of the original system.
+              We know that a linear combination of two solutions of a homogeneous system is also a solution;
+              consequently,
+              <md permid="siX">
+                <mrow>x_1 &amp; = 1 -1 = 0</mrow>
+                <mrow>x_2 &amp; = a_2 - \sigma_i(a_2)</mrow>
+                <mrow>&amp; \vdots &amp;</mrow>
+                <mrow>x_{n + 1} &amp; = a_{n + 1} - \sigma_i(a_{n + 1})</mrow>
+              </md>
+              must be another solution of the system.
+              This is a nontrivial solution because <m>\sigma_i( a_2 ) \neq a_2</m>,
+              and has fewer nonzero entries than our original solution.
+              This is a contradiction,
+              since the number of nonzero solutions to our original solution was assumed to be minimal.
+              We can therefore conclude that <m>a_1, \ldots, a_{n + 1} \in F</m>.
+            </p>
+          </proof>
+        </lemma>
+
+        <p permid="Jom">
+          Let <m>E</m> be an algebraic extension of <m>F</m>.
+          If every irreducible polynomial in <m>F[x]</m> with a root in <m>E</m> has all of its roots in <m>E</m>,
+          then <m>E</m> is called a <term>normal extension</term>
+              <idx><h>Extension</h><h>normal</h></idx>
+              <idx><h>Normal extension</h></idx>
+          of <m>F</m>; that is,
+          every irreducible polynomial in <m>F[x]</m> containing a root in <m>E</m> is the product of linear factors in <m>E[x]</m>.
+        </p>
+
+        <theorem permid="MSz">
+          <statement>
+            <p permid="kbI">
+              Let <m>E</m> be a field extension of <m>F</m>.
+              Then the following statements are equivalent.
+
+              <ol permid="DNi">
+                <li permid="gZL">
+                  <p permid="kiM">
+                    <m>E</m> is a finite, normal,
+                    separable extension of <m>F</m>.
+                  </p>
+                </li>
+
+                <li permid="NgU">
+                  <p permid="QpV">
+                    <m>E</m> is a splitting field over <m>F</m> of a separable polynomial.
+                  </p>
+                </li>
+
+                <li permid="tod">
+                  <p permid="wxe">
+                    <m>F = E_G</m> for some finite group <m>G</m> of automorphisms of <m>E</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+
+          <proof permid="kpQ">
+            <p permid="Rok">
+              (1) <m>\Rightarrow</m> (2).
+              Let <m>E</m> be a finite, normal,
+              separable extension of <m>F</m>.
+              By the Primitive Element Theorem,
+              we can find an <m>\alpha</m> in <m>E</m> such that <m>E = F(\alpha)</m>.
+              Let <m>f(x)</m> be the minimal polynomial of <m>\alpha</m> over <m>F</m>.
+              The field <m>E</m> must contain all of the roots of <m>f(x)</m> since it is a normal extension <m>F</m>;
+              hence, <m>E</m> is a splitting field for <m>f(x)</m>.
+            </p>
+
+            <p permid="xvt">
+              (2) <m>\Rightarrow</m> (3).
+              Let <m>E</m> be the splitting field over <m>F</m> of a separable polynomial.
+              By <xref ref="proposition-fixed-field"/>, <m>E_{G(E/F)} = F</m>.
+              Since <m>| G(E/F)| = [E:F]</m>, this is a finite group.
+            </p>
+
+            <p permid="dCC">
+              (3) <m>\Rightarrow</m> (1).
+              Let <m>F = E_G</m> for some finite group of automorphisms <m>G</m> of <m>E</m>.
+              Since <m>[E:F] \leq |G|</m>, <m>E</m> is a finite extension of <m>F</m>.
+              To show that <m>E</m> is a finite,
+              normal extension of <m>F</m>,
+              let <m>f(x) \in F[x]</m> be an irreducible monic polynomial that has a root <m>\alpha</m> in <m>E</m>.
+              We must show that <m>f(x)</m> is the product of distinct linear factors in <m>E[x]</m>.
+              By <xref ref="proposition-roots-permute"/>,
+              automorphisms in <m>G</m> permute the roots of <m>f(x)</m> lying in <m>E</m>.
+              Hence, if we let <m>G</m> act on <m>\alpha</m>,
+              we can obtain distinct roots <m>\alpha_1 = \alpha, \alpha_2, \ldots, \alpha_n</m> in <m>E</m>.
+              Let <m>g(x) = \prod_{i = 1}^{n} (x -\alpha_i)</m>.
+              Then <m>g(x)</m> is separable over <m>F</m> and <m>g( \alpha ) = 0</m>.
+              Any automorphism <m>\sigma</m> in <m>G</m> permutes the factors of <m>g(x)</m> since it permutes these roots;
+              hence, when <m>\sigma</m> acts on <m>g(x)</m>,
+              it must fix the coefficients of <m>g(x)</m>.
+              Therefore, the coefficients of <m>g(x)</m> must be in <m>F</m>.
+              Since <m>\deg g(x) \leq \deg f(x)</m> and <m>f(x)</m> is the minimal polynomial of <m>\alpha</m>,
+              <m>f(x) = g(x)</m>.
+            </p>
+          </proof>
+        </theorem>
+
+        <corollary permid="Ctu">
+          <statement>
+            <p permid="KtF">
+              Let <m>K</m> be a field extension of <m>F</m> such that <m>F = K_G</m> for some finite group of automorphisms <m>G</m> of <m>K</m>.
+              Then <m>G = G(K/F)</m>.
+            </p>
+          </statement>
+
+          <proof permid="ytv">
+            <p permid="JJL">
+              Since <m>F = K_G</m>, <m>G</m> is a subgroup of <m>G(K/F)</m>.
+              Hence,
+              <me permid="Yqg">
+                [K : F ] \leq |G| \leq |G(K/F)| = [K:F]
+              </me>.
+              It follows that <m>G = G(K/F)</m>,
+              since they must have the same order.
+            </p>
+          </proof>
+        </corollary>
+
+        <p permid="pvv">
+          Before we determine the exact correspondence between field extensions and automorphisms of fields,
+          let us return to a familiar example.
+        </p>
+
+        <example xml:id="example-galois-field-lattice" permid="nkw">
+          <p permid="vkH">
+            In <xref ref="example-galois-q-sqrt5"/> we examined the automorphisms of
+            <m>{\mathbb Q}( \sqrt{3}, \sqrt{5}\, )</m> fixing <m>{\mathbb Q}</m>.
+            <xref ref="figure-galois-1"/> compares the lattice of field extensions of
+            <m>{\mathbb Q}</m> with the lattice of subgroups of <m>G( {\mathbb Q}( \sqrt{3}, \sqrt{5}\, ) /{\mathbb Q})</m>.
+            The Fundamental Theorem of Galois Theory tells us what the relationship is between the two lattices.
+          </p>
+        </example>
+
+        <figure xml:id="figure-galois-1" permid="BJN">
+          <caption><m>G({\mathbb Q( \sqrt{3}, \sqrt{5}\, ) / {\mathbb Q})}</m></caption>
+              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+          <image xml:id="galois-root3-root5" permid="OAV">
+
+              <latex-image>
+                  <xi:include href="tikz/galois-root3-root5.tex" parse="text"/>
+              </latex-image>
+          </image>
+
+        </figure>
+
+        <p permid="VCE">
+          We are now ready to state and prove the Fundamental Theorem of Galois Theory.
+        </p>
+
+        <theorem xml:id="theorem-fundamental-galois" permid="sZI">
+          <title>Fundamental Theorem of Galois Theory</title>
+          <idx>
+          <h>Fundamental Theorem of Galois Theory</h>
+          </idx>
+          <statement>
+            <p permid="QiR">
+              Let <m>F</m> be a finite field or a field of characteristic zero.
+              If <m>E</m> is a finite normal extension of <m>F</m> with Galois group <m>G(E/F)</m>,
+              then the following statements are true.
+
+              <ol permid="jUr">
+                <li permid="Zvm">
+                  <p permid="cEn">
+                    The map <m>K \mapsto G(E/K)</m> is a bijection of subfields <m>K</m> of <m>E</m> containing <m>F</m> with the subgroups of <m>G(E/F)</m>.
+                  </p>
+                </li>
+
+                <li permid="FCv">
+                  <p permid="ILw">
+                    If <m>F \subset K \subset E</m>, then
+                    <me permid="Exp">
+                      [E:K] = |G(E/K)| \text{ and } [K:F] = [G(E/F):G(E/K)]
+                    </me>.
+                  </p>
+                </li>
+
+                <li permid="lJE">
+                  <p permid="oSF">
+                    <m>F \subset K \subset L \subset E</m> if and only if <m>\{ \identity \} \subset G(E/L) \subset G(E/K) \subset G(E/F)</m>.
+                  </p>
+                </li>
+
+                <li permid="RQN">
+                  <p permid="UZO">
+                    <m>K</m> is a normal extension of <m>F</m> if and only if <m>G(E/K)</m> is a normal subgroup of <m>G( E/F)</m>.
+                    In this case
+                    <me permid="kEy">
+                      G(K/F) \cong G(E/F) / G( E/K )
+                    </me>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+
+          <proof permid="QwZ">
+            <p permid="pQU">
+              (1) Suppose that <m>G(E/K) = G(E/L) = G</m>.
+              Both <m>K</m> and <m>L</m> are fixed fields of <m>G</m>;
+              hence, <m>K=L</m> and the map defined by <m>K \mapsto G(E/K)</m> is one-to-one.
+              To show that the map is onto,
+              let <m>G</m> be a subgroup of <m>G(E/F)</m> and <m>K</m> be the field fixed by <m>G</m>.
+              Then <m>F \subset K \subset E</m>;
+              consequently, <m>E</m> is a normal extension of <m>K</m>.
+              Thus, <m>G(E/K) = G</m> and the map <m>K \mapsto G(E/K)</m> is a bijection.
+            </p>
+
+            <p permid="VYd">
+              (2) By Theorem <xref ref="theorem-extension-order"/>, <m>|G(E/K)| = [E:K]</m>;
+              therefore,
+              <me permid="QLH">
+                |G(E/F)| = [G(E/F):G(E/K)] \cdot |G(E/K)| = [E:F] = [E:K][K:F]
+              </me>.
+              Thus, <m>[K:F] = [G(E/F):G(E/K)]</m>.
+            </p>
+
+            <p permid="Cfm">
+              Statement (3) is illustrated in <xref ref="figure-galois-2"/>.
+              We leave the proof of this property as an exercise.
+            </p>
+
+            <p permid="imv">
+              (4) This part takes a little more work.
+              Let <m>K</m> be a normal extension of <m>F</m>.
+              If <m>\sigma</m> is in <m>G(E/F)</m> and <m>\tau</m> is in <m>G(E/K)</m>,
+              we need to show that <m>\sigma^{-1} \tau \sigma</m> is in <m>G(E/K)</m>;
+              that is, we need to show that
+              <m>\sigma^{-1} \tau \sigma( \alpha) = \alpha</m> for all <m>\alpha \in K</m>.
+              Suppose that <m>f(x)</m> is the minimal polynomial of <m>\alpha</m> over <m>F</m>.
+              Then <m>\sigma( \alpha )</m> is also a root of <m>f(x)</m> lying in <m>K</m>,
+              since <m>K</m> is a normal extension of <m>F</m>.
+              Hence, <m>\tau( \sigma( \alpha )) = \sigma( \alpha )</m> or <m>\sigma^{-1} \tau \sigma( \alpha) = \alpha</m>.
+            </p>
+
+            <p permid="OtE">
+              Conversely, let <m>G(E/K)</m> be a normal subgroup of <m>G(E/F)</m>.
+              We need to show that <m>F = K_{G(K/F)}</m>.
+              Let <m>\tau \in G(E/K)</m>.
+              For all <m>\sigma \in G(E/F)</m> there exists a
+              <m>\overline{\tau} \in G(E/K)</m> such that <m>\tau \sigma = \sigma \overline{\tau}</m>.
+              Consequently, for all <m>\alpha \in K</m>
+              <me permid="wSQ">
+                \tau( \sigma( \alpha ) ) = \sigma( \overline{\tau}( \alpha ) ) = \sigma( \alpha );
+              </me>
+              hence, <m>\sigma( \alpha )</m> must be in the fixed field of <m>G(E/K)</m>.
+              Let <m>\overline{\sigma}</m> be the restriction of <m>\sigma</m> to <m>K</m>.
+              Then <m>\overline{\sigma}</m> is an automorphism of <m>K</m> fixing <m>F</m>,
+              since <m>\sigma( \alpha ) \in K</m> for all <m>\alpha \in K</m>;
+              hence, <m>\overline{\sigma} \in G(K/F)</m>.
+              Next, we will show that the fixed field of <m>G(K/F)</m> is <m>F</m>.
+              Let <m>\beta</m> be an element in <m>K</m> that is fixed by all automorphisms in <m>G(K/F)</m>.
+              In particular,
+              <m>\overline{\sigma}(\beta) = \beta</m> for all <m>\sigma \in G(E/F)</m>.
+              Therefore, <m>\beta</m> belongs to the fixed field <m>F</m> of <m>G(E/F)</m>.
+            </p>
+
+            <p permid="uAN">
+              Finally, we must show that when <m>K</m> is a normal extension of <m>F</m>,
+              <me permid="cZZ">
+                G(K/F) \cong G(E/F) / G(E/K)
+              </me>.
+              For <m>\sigma \in G(E/F)</m>,
+              let <m>\sigma_K</m> be the automorphism of <m>K</m> obtained by restricting <m>\sigma</m> to <m>K</m>.
+              Since <m>K</m> is a normal extension,
+              the argument in the preceding paragraph shows that <m>\sigma_K \in G( K/F)</m>.
+              Consequently, we have a map
+              <m>\phi:G(E/F) \rightarrow G(K/F)</m> defined by <m>\sigma \mapsto \sigma_K</m>.
+              This map is a group homomorphism since
+              <me permid="Jhi">
+                \phi( \sigma \tau ) = (\sigma \tau)_K = \sigma_K \tau_K  = \phi( \sigma) \phi( \tau )
+              </me>.
+              The kernel of <m>\phi</m> is <m>G(E/K)</m>.
+              By (2),
+              <me permid="por">
+                |G(E/F)| / |G(E/K)| = [K:F] = |G(K/F)|
+              </me>.
+              Hence, the image of <m>\phi</m> is <m>G(K/F)</m> and <m>\phi</m> is onto.
+              Applying the First Isomorphism Theorem, we have
+              <me permid="VvA">
+                G(K/F) \cong G(E/F) / G( E/K )
+              </me>.
+            </p>
+          </proof>
+        </theorem>
+
+        <figure xml:id="figure-galois-2" permid="hQW">
+          <caption>Subgroups of <m>G(E/F)</m> and subfields of <m>E</m></caption>
+              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+          <image width="30%" xml:id="galois-correspondence" permid="uIe">
+
+              <latex-image>
+                  <xi:include href="tikz/galois-correspondence.tex" parse="text"/>
+              </latex-image>
+          </image>
+
+        </figure>
+
+        <example xml:id="example-galois-x4-2" permid="TrF">
+          <p permid="brQ">
+            In this example we will illustrate the Fundamental Theorem of Galois Theory by determining the lattice of subgroups of the Galois group of <m>f(x) = x^4 - 2</m>.
+            We will compare this lattice to the lattice of field extensions of
+            <m>{\mathbb Q}</m> that are contained in the splitting field of <m>x^4-2</m>.
+            The splitting field of <m>f(x)</m> is <m>{\mathbb Q}( \sqrt[4]{2}, i )</m>.
+            To see this,
+            notice that <m>f(x)</m> factors as <m>(x^2 + \sqrt{2}\, )(x^2 - \sqrt{2}\, )</m>;
+            hence, the roots of <m>f(x)</m> are
+            <m>\pm \sqrt[4]{2}</m> and <m>\pm \sqrt[4]{2}\, i</m>.
+            We first adjoin the root <m>\sqrt[4]{2}</m> to
+            <m>{\mathbb Q}</m> and then adjoin the root <m>i</m> of <m>x^2 + 1</m> to <m>{\mathbb Q}(\sqrt[4]{2}\, )</m>.
+            The splitting field of <m>f(x)</m> is then <m>{\mathbb Q}(\sqrt[4]{2}\, )(i) = {\mathbb Q}( \sqrt[4]{2}, i )</m>.
+          </p>
+
+          <p permid="HyZ">
+            Since <m>[ {\mathbb Q}( \sqrt[4]{2}\, ) : {\mathbb Q}] = 4</m> and <m>i</m> is not in <m>{\mathbb Q}( \sqrt[4]{2}\, )</m>,
+            it must be the case that <m>[ {\mathbb Q}( \sqrt[4]{2}, i ): {\mathbb Q}(\sqrt[4]{2}\, )] = 2</m>.
+            Hence, <m>[ {\mathbb Q}( \sqrt[4]{2}, i ):{\mathbb Q}] = 8</m>.
+            The set
+            <me permid="BCJ">
+              \{ 1, \sqrt[4]{2}, (\sqrt[4]{2}\, )^2, (\sqrt[4]{2}\, )^3, i, i \sqrt[4]{2}, i (\sqrt[4]{2}\, )^2, i(\sqrt[4]{2}\, )^3 \}
+            </me>
+            is a basis of <m>{\mathbb Q}( \sqrt[4]{2}, i )</m> over <m>{\mathbb Q}</m>.
+            The lattice of field extensions of <m>{\mathbb Q}</m> contained in
+            <m>{\mathbb Q}( \sqrt[4]{2}, i)</m> is illustrated in <xref ref="figure-galois-3"/>(a).
+          </p>
+              <!-- Corrected the automorphism sigma.  Suggested by R. Beezer. - TWJ 4/14/2011 -->
+          <p permid="nGi">
+            The Galois group <m>G</m> of <m>f(x)</m> must be of order <m>8</m>.
+            Let <m>\sigma</m> be the automorphism defined by
+            <m>\sigma( \sqrt[4]{2}\, ) = i \sqrt[4]{2}</m> and <m>\sigma( i ) = i</m>,
+            and <m>\tau</m> be the automorphism defined by complex conjugation;
+            that is, <m>\tau(i ) = -i</m>.
+            Then <m>G</m> has an element of order <m>4</m> and an element of order <m>2</m>.
+            It is easy to verify by direct computation that the elements of <m>G</m> are
+            <m>\{ \identity, \sigma, \sigma^2, \sigma^3, \tau, \sigma \tau, \sigma^2 \tau, \sigma^3 \tau \}</m> and that the relations <m>\tau^2 = \identity</m>,
+            <m>\sigma^4 = \identity</m>,
+            and <m>\tau \sigma \tau = \sigma^{-1}</m> are satisfied;
+            hence, <m>G</m> must be isomorphic to <m>D_4</m>.
+            The lattice of subgroups of <m>G</m> is illustrated in <xref ref="figure-galois-3"/>(b).
+          </p>
+        </example>
+
+        <figure xml:id="figure-galois-3" permid="NYf">
+          <caption>Galois group of <m>x^4-2</m></caption>
+              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+          <image xml:id="galois-fourth-root2" permid="aPn">
+
+              <latex-image>
+                  <xi:include href="tikz/galois-fourth-root2.tex" parse="text"/>
+              </latex-image>
+          </image>
+
+        </figure>
+      </introduction>
+
+      <subsection xml:id="galois-subsection-historical-note" permid="tvh">
+        <title>Historical Note</title>
+        <p permid="rUC">
+          Solutions for the cubic and quartic equations were discovered in the 1500s.
+          Attempts to find solutions for the quintic equations puzzled some of history's best mathematicians.
+          In 1798, P. Ruffini
+              <idx><h>Ruffini, P.</h></idx>
+          submitted a paper that claimed no such solution could be found;
+          however, the paper was not well received.
+          In 1826, Niels Henrik Abel
+              <idx><h>Abel, Niels Henrik</h></idx>
+          (1802<ndash/>1829) finally offered the first correct proof that quintics are not always solvable by radicals.
+        </p>
+
+        <p permid="YbL">
+          Abel inspired the work of Évariste Galois.
+              <idx><h>Galois, Évariste</h></idx>
+          Born in 1811, Galois began to display extraordinary mathematical talent at the age of 14.
+          He applied for entrance to the École Polytechnique several times;
+          however, he had great difficulty meeting the formal entrance requirements,
+          and the examiners failed to recognize his mathematical genius.
+          He was finally accepted at the École Normale in 1829.
+        </p>
+
+        <p permid="EiU">
+          Galois worked to develop a theory of solvability for polynomials.
+          In 1829, at the age of 17, Galois presented two papers on the solution of algebraic equations to the Académie des Sciences de Paris.
+          These papers were sent to Cauchy,
+          who subsequently lost them.
+          A third paper was submitted to Fourier,
+          who died before he could read the paper.
+          Another paper was presented, but was not published until 1846.
+        </p>
+
+        <p permid="kqd">
+          Galois' democratic sympathies led him into the Revolution of 1830.
+          He was expelled from school and sent to prison for his part in the turmoil.
+          After his release in 1832,
+          he was drawn into a duel possibly over a love affair.
+          Certain that he would be killed,
+          he spent the evening before his death outlining his work and his basic ideas for research in a long letter to his friend Chevalier.
+          He was indeed dead the next day, at the age of 20.
+        </p>
+              <!--  Age of Galois' death corrected.  Suggested by K. Brooks. - TWJ 5/15/2012 -->
+      </subsection>
+
+      <xi:include href="exercises/galois-ftg-collected.ptx" />
+
+    </section>

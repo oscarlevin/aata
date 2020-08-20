@@ -10,7 +10,7 @@
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="isomorph" permid="OUu">
-  <title>Isomorphisms</title>
+  <title>Isomorphisms and Homomorphisms</title>
   <introduction permid="kQT">
     <p permid="qrX">
       Many groups may appear to be different at first glance,
@@ -483,1221 +483,1033 @@
         </statement>
       </exercise>
     </reading-questions>
-  </section>
 
-  <section xml:id="section-direct-products" permid="kCy">
-    <title>Direct Products</title>
-    <introduction permid="xfl">
-      <p permid="vbQ">
-        Given two groups <m>G</m> and <m>H</m>,
-        it is possible to construct a new group from the Cartesian product of <m>G</m> and <m>H</m>,
-        <m>G \times H</m>.
-        Conversely, given a large group,
-        it is sometimes possible to decompose the group;
-        that is, a group is sometimes isomorphic to the direct product of two smaller groups.
-        Rather than studying a large group <m>G</m>,
-        it is often easier to study the component groups of <m>G</m>.
-      </p>
-    </introduction>
+    <exercises xml:id="practice-isomorph">
+      <title>Practice Problems</title>
 
-    <subsection xml:id="isomorph-subsection-external-products" permid="HpV">
-      <title>External Direct Products</title>
-      <p permid="khm">
-        If <m>(G,\cdot)</m> and <m>(H, \circ)</m> are groups,
-        then we can make the Cartesian product of <m>G</m> and <m>H</m> into a new group.
-        As a set, our group is just the ordered pairs
-        <m>(g, h) \in G \times H</m> where <m>g \in G</m> and <m>h \in H</m>.
-        We can define a binary operation on <m>G \times H</m> by
-        <me permid="Ljd">
-          (g_1, h_1)(g_2, h_2) = (g_1 \cdot g_2, h_1 \circ h_2);
-        </me>
-        that is, we just multiply elements in the first coordinate as we do in <m>G</m> and elements in the second coordinate as we do in <m>H</m>.
-        We have specified the particular operations <m>\cdot</m> and <m>\circ</m> in each group here for the sake of clarity;
-        we usually just write <m>(g_1, h_1)(g_2, h_2) = (g_1  g_2, h_1 h_2)</m>.
-      </p>
-
-      <proposition xml:id="theorem-isomorph-7" permid="BAJ">
+      <exercise>
         <statement>
-          <p permid="Lqh">
-            Let <m>G</m> and <m>H</m> be groups.
-            The set <m>G \times H</m> is a group under the operation <m>(g_1, h_1)(g_2, h_2) = (g_1 g_2, h_1 h_2)</m> where
-            <m>g_1, g_2 \in G</m> and <m>h_1, h_2 \in H</m>.
+          <p>
+            Prove that <m>\Z \equiv 2\Z</m>.
           </p>
         </statement>
-
-        <proof permid="arO">
-          <p permid="kYk">
-            Clearly the binary operation defined above is closed.
-            If <m>e_G</m> and <m>e_H</m> are the identities of the groups <m>G</m> and <m>H</m> respectively,
-            then <m>(e_G, e_H)</m> is the identity of <m>G \times H</m>.
-            The inverse of <m>(g, h) \in G \times H</m> is <m>(g^{-1}, h^{-1})</m>.
-            The fact that the operation is associative follows directly from the associativity of <m>G</m> and <m>H</m>.
+        <solution>
+          <p>
+            We define the function <m>f:\Z \to 2\Z</m> by <m>f(x) = 2x</m>.  This is clearly a bijection.  Further, it satisfies the <em>homomorphism property</em>:            <m>f(x+y) = 2(x+y) = 2x + 2y = f(x) + f(y)</m>.
           </p>
-        </proof>
-      </proposition>
+        </solution>
+      </exercise>
 
-      <example xml:id="example-isomorph-r2-product" permid="adt">
-        <p permid="Nfu">
-          Let <m>{\mathbb R}</m> be the group of real numbers under addition.
-          The Cartesian product of <m>{\mathbb R}</m> with itself,
-          <m>{\mathbb R} \times {\mathbb R} = {\mathbb R}^2</m>,
-          is also a group,
-          in which the group operation is just addition in each coordinate;
-          that is, <m>(a, b) + (c, d) = (a + c, b + d)</m>.
-          The identity is <m>(0,0)</m> and the inverse of <m>(a, b)</m> is <m>(-a, -b)</m>.
-        </p>
-      </example>
-
-      <example xml:id="example-isomorph-z2xz2" permid="GkC">
-        <p permid="tmD">
-          Consider
-          <me permid="rqm">
-            {\mathbb Z}_2 \times {\mathbb Z}_2 = \{ (0, 0), (0, 1), (1, 0),(1, 1) \}
-          </me>.
-          Although <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> and
-          <m>{\mathbb Z}_4</m> both contain four elements, they are not isomorphic.
-          Every element <m>(a,b)</m> in <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> has order <m>2</m>,
-          since <m>(a,b) + (a,b) = (0,0)</m>;
-          however, <m>{\mathbb Z}_4</m> is cyclic.
-        </p>
-      </example>
-
-      <p permid="Qov">
-        The group <m>G \times H</m> is called the
-        <term>external direct product</term><idx><h>Direct product of groups</h><h>external</h></idx>
-            <idx><h>External direct product</h></idx>
-        of  <m>G</m> and <m>H</m>.
-        Notice that there is nothing special about the fact that we have used only two groups to build a new group.
-        The direct product
-        <me permid="Xxv">
-          \prod_{i = 1}^n G_i = G_1 \times G_2 \times \cdots \times G_n
-        </me>
-        of the groups <m>G_1, G_2, \ldots, G_n</m> is defined in exactly the same manner.
-        If <m>G = G_1 = G_2 = \cdots = G_n</m>,
-        we often write <m>G^n</m> instead of <m>G_1 \times G_2 \times \cdots \times G_n</m>.
-      </p>
-
-      <example xml:id="example-isomorph-z2n" permid="mrL">
-        <p permid="ZtM">
-          The group <m>{\mathbb Z}_2^n</m>,
-          considered as a set, is just the set of all binary <m>n</m>-tuples.
-          The group operation is the <q>exclusive or</q>
-          of two binary <m>n</m>-tuples.
-          For example,
-          <me permid="DEE">
-            (01011101) + (01001011) = (00010110)
-          </me>.
-          This group is important in coding theory,
-          in cryptography, and in many areas of computer science.
-        </p>
-      </example>
-
-      <theorem xml:id="theorem-isomorph-lcm" permid="pmr">
+      <exercise>
         <statement>
-          <p permid="mNx">
-            Let <m>(g, h) \in G \times H</m>.
-            If <m>g</m> and <m>h</m> have finite orders <m>r</m> and <m>s</m> respectively,
-            then the order of <m>(g, h)</m> in
-            <m>G \times H</m> is the least common multiple of <m>r</m> and <m>s</m>.
+          <p>
+            I'm thinking of a group <m>G = \{a, b, c, d, e, f, g, h\}</m> with an operation I'm calling <m>\oplus</m>.  It turns out that my group is isomorphic to <m>\Z_8</m>, and that there is an isomorphism <m>f: G \to \Z_8</m>.
+            <ol>
+              <li>
+                <p>
+                  In <m>G</m>,                  <m>a \oplus b = c</m>.  Also, <m>f(a) = 3</m> and <m>f(b) = 4</m>.  What is <m>f(c)</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>f(d) = 2</m>, what is <m>d\oplus d</m>?  Further, prove that <m>d\inv = a\oplus a</m>.
+                </p>
+              </li>
+            </ol>
           </p>
         </statement>
-
-        <proof permid="hWn">
-          <p permid="Rft">
-            Suppose that <m>m</m> is the least common multiple of <m>r</m> and <m>s</m> and let <m>n = |(g,h)|</m>.
-            Then
-            <md permid="jLN">
-              <mrow>(g,h)^m  = (g^m, h^m) = (e_G,e_H)</mrow>
-              <mrow>(g^n, h^n)  = (g, h)^n = (e_G,e_H)</mrow>
-            </md>.
-            Hence, <m>n</m> must divide <m>m</m>, and <m>n \leq m</m>.
-            However, by the second equation,
-            both <m>r</m> and <m>s</m> must divide <m>n</m>;
-            therefore, <m>n</m> is a common multiple of <m>r</m> and <m>s</m>.
-            Since <m>m</m> is the <em>least common multiple</em>
-            of <m>r</m> and <m>s</m>, <m>m \leq n</m>.
-            Consequently, <m>m</m> must be equal to <m>n</m>.
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  We have <m>f(a \oplus b) = f(a)+f(b)</m>.  But <m>f(a \oplus b) = f(c)</m> and <m>f(a) + f(b) = 3 + 4 = 7</m> so <m>f(c) = 7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We know that <m>f(d\oplus d) = f(d)+f(d) = 2+2 = 4</m>.  So <m>d \oplus d = b</m>.  As for the inverse: we need <m>f(d\inv) = 6</m>, and <m>f(a) = 3</m>, so <m>f(a \oplus a) = f(d\inv)</m>.  Since <m>f</m> is injective, we see that <m>d\inv = a\oplus a</m>.
+                </p>
+              </li>
+            </ol>
           </p>
-        </proof>
-      </theorem>
+        </solution>
+      </exercise>
 
-      <corollary permid="hHS">
+      <exercise>
         <statement>
-          <p permid="XEz">
-            Let <m>(g_1, \ldots, g_n) \in \prod G_i</m>.
-            If <m>g_i</m> has finite order <m>r_i</m> in <m>G_i</m>,
-            then the order of <m>(g_1, \ldots,
-            g_n)</m> in <m>\prod G_i</m> is the least common multiple of <m>r_1, \ldots, r_n</m>.
+          <p>
+            Show that <m>U(5)</m> is isomorphic to <m>U(10)</m>, but <m>U(12)</m> is not.
           </p>
         </statement>
-      </corollary>
+        <solution>
+          <p>
+            Define <m>f:U(5) \to U(10)</m> by <m>f = \begin{pmatrix} 1 \amp 2 \amp 3 \amp 4 \\ 1 \amp 3 \amp 7 \amp 9\end{pmatrix}</m>.  By inspection, <m>f</m> is a bijection.  To check that it is an isomorphism, we need to check the homomorphism property <m>f(xy) = f(x)f(y)</m>.  This means checking lots of pairs.  For example, <m>ff(2\cdot 3) = f(1) = 1 = 3\cdot 7 = f(2)f(3)</m>.  You can also note that <m>U(5)</m> is cyclic with generator <m>2</m>, and <m>U(10)</m> is cyclic with generator <m>3</m>, so sending <m>2</m> to <m>3</m> will determine the isomorphism.
+          </p>
+          <p>
+            As for <m>U(12)</m>, it cannot be isomorphic to <m>U(10)</m> or <m>U(5)</m>, since <m>U(12)</m> is not cyclic. Alternatively, note that every element in <m>U(12)</m> is its own inverse, but this is not true about the other groups.
+          </p>
+        </solution>
+      </exercise>
 
-      <example xml:id="example-isomorph-z12xz60" permid="SyU">
-        <p permid="FAV">
-          Let <m>(8, 56) \in {\mathbb Z}_{12} \times {\mathbb Z}_{60}</m>.
-          Since <m>\gcd(8,12) = 4</m>,
-          the order of <m>8</m> is <m>12/4 = 3</m> in <m>{\mathbb Z}_{12}</m>.
-          Similarly, the order of <m>56</m> in <m>{\mathbb Z}_{60}</m> is <m>15</m>.
-          The least common multiple of <m>3</m> and <m>15</m> is <m>15</m>;
-          hence, <m>(8, 56)</m> has order <m>15</m> in <m>{\mathbb Z}_{12} \times {\mathbb Z}_{60}</m>.
-        </p>
-      </example>
-
-      <example xml:id="example-isomorph-z2xz3" permid="yGd">
-        <p permid="lIe">
-          The group <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m> consists of the pairs
-          <md permid="PSW">
-            <mrow>&amp; (0,0), &amp; &amp; (0, 1), &amp; &amp; (0, 2), &amp; &amp; (1,0), &amp; &amp; (1, 1), &amp; &amp; (1, 2)</mrow>
-          </md>.
-          In this case, unlike that of
-          <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> and <m>{\mathbb Z}_4</m>,
-          it is true that <m>{\mathbb Z}_2 \times {\mathbb Z}_3 \cong {\mathbb Z}_6</m>.
-          We need only show that <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m> is cyclic.
-          It is easy to see that <m>(1,1)</m> is a generator for <m>{\mathbb Z}_2 \times {\mathbb Z}_3</m>.
-        </p>
-      </example>
-
-      <p permid="wvE">
-        The next theorem tells us exactly when the direct product of two cyclic groups is cyclic.
-      </p>
-
-      <theorem xml:id="theorem-z-pq" permid="VtA">
+      <exercise>
         <statement>
-          <p permid="SUG">
-            The group <m>{\mathbb Z}_m \times {\mathbb Z}_n</m> is isomorphic to
-            <m>{\mathbb Z}_{mn}</m> if and only if <m>\gcd(m,n)=1</m>.
+          <p>
+            Let <m>\phi:G \to H</m> be an isomorphism.  Show that <m>\phi(x) = e_H</m> if and only if <m>x = e_G</m>, where <m>e_G</m> and <m>e_H</m> are the identities of <m>G</m> and <m>H</m>, respectively.
           </p>
         </statement>
-
-        <proof permid="Odw">
-          <p permid="xmC">
-            We will first show that if <m>{\mathbb Z}_m \times {\mathbb Z}_n \cong {\mathbb Z}_{mn}</m>,
-            then <m>\gcd(m, n) = 1</m>.
-            We will prove the contrapositive;
-            that is, we will show that if <m>\gcd(m, n) = d \gt 1</m>,
-            then <m>{\mathbb Z}_m \times {\mathbb Z}_n</m> cannot be cyclic.
-            Notice that <m>mn/d</m> is divisible by both <m>m</m> and <m>n</m>;
-            hence, for any element <m>(a,b) \in {\mathbb Z}_m \times {\mathbb Z}_n</m>,
-            <me permid="waf">
-              \underbrace{(a,b) + (a,b)+ \cdots + (a,b)}_{mn/d \; \text{times}} = (0, 0)
-            </me>.
-            Therefore, no <m>(a, b)</m> can generate all of <m>{\mathbb Z}_m \times {\mathbb Z}_n</m>.
+        <hint>
+          <p>
+            Since <m>\phi</m> is a bijection, it is enough to prove that <m>\phi(e_G) = e_H</m>.  Note that <m>e_G = e_G^2</m>.  Use the homomorphism property.
           </p>
+        </hint>
+      </exercise>
 
-          <p permid="dtL">
-            The converse follows directly from <xref ref="theorem-isomorph-lcm"/> since
-            <m>\lcm(m,n) = mn</m> if and only if <m>\gcd(m,n)=1</m>.
-          </p>
-        </proof>
-      </theorem>
-
-      <corollary xml:id="corollary-relatively-prime" permid="NPb">
+      <exercise>
         <statement>
-          <p permid="DLI">
-            Let <m>n_1, \ldots, n_k</m> be positive integers.
-            Then
-            <me permid="cho">
-              \prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
+          <p>
+            Let <m>G = \R \setminus \{-1\}</m> with the operation <m>\ast</m> defined by <me>
+              a \ast b = a+b+ab.
             </me>
-            if and only if <m>\gcd( n_i, n_j) =1</m> for <m>i \neq j</m>.
+            We previously saw that <m>G</m> with this operation is a group.  Show that <m>(G, \ast)</m> is isomprhic to the multiplicative group of nonzero real numbers <m>\R^*</m>.
           </p>
         </statement>
-      </corollary>
+        <hint>
+          <p>
+            You need to define the isomorphism <m>f:G \to \R^*</m>.  A good place to start would be to decide what the identity is in each group.  Guess a reasonable function that sends the identity in <m>G</m> to the identity in <m>\R^*</m>.
+          </p>
+        </hint>
+      </exercise>
 
-      <corollary permid="tWk">
+      <exercise>
         <statement>
-          <p permid="jSR">
-            If
-            <me permid="Iox">
-              m = p_1^{e_1} \cdots  p_k^{e_k}
-            </me>,
-            where the <m>p_i</m>s are distinct primes, then
-            <me permid="ovG">
-              {\mathbb Z}_m \cong {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
-            </me>.
+          <p>
+            True or false: if <m>\phi:G \to H</m> is an isomorphism, then <m>\phi(a^n) = (\phi(a))^n</m> for all <m>a \in G</m>.
           </p>
         </statement>
-
-        <proof permid="mGg">
-          <p permid="JAU">
-            Since the greatest common divisor of <m>p_i^{e_i}</m> and
-            <m>p_j^{e_j}</m> is 1 for <m>i \neq j</m>,
-            the proof follows from <xref ref="corollary-relatively-prime"/>.
+        <solution>
+          <p>
+            True.  <m>\phi(a^2) = \phi(a\cdot a) = \phi(a)\phi(a) = (\phi(a))^2</m>.  You can generalize this by induction: <m>\phi(a\cdot a^{n-1}) = \phi(a)(\phi(a))^{n-1}</m>.
           </p>
-        </proof>
-      </corollary>
-            <!-- This reference needs to be fixed - TWJ 6/2/2010 -->
-      <p permid="cCN">
-        In <xref ref="struct"/>,
-        we will prove that all finite abelian groups are isomorphic to direct products of the form
-        <me permid="UCP">
-          {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
-        </me>
-        where <m>p_1, \ldots, p_k</m> are
-        (not necessarily distinct)
-        primes.
-      </p>
-    </subsection>
+        </solution>
+      </exercise>
+    </exercises>
 
-    <subsection xml:id="isomorph-subsection-internal-products" permid="nxe">
-      <title>Internal Direct Products</title>
-      <p permid="IJW">
-        The external direct product of two groups builds a large group out of two smaller groups.
-        We would like to be able to reverse this process and conveniently break down a group into its direct product components;
-        that is, we would like to be able to say when a group is isomorphic to the direct product of two of its subgroups.
-      </p>
 
-      <p permid="oRf">
-        Let <m>G</m> be a group with subgroups <m>H</m> and <m>K</m> satisfying the following conditions.
+    <exercises xml:id="collected-isomorph">
+      <title>Collected Homework</title>
 
-        <ul permid="EYf">
-          <li permid="Rmx">
-            <p permid="ZAQ">
-              <m>G = HK = \{ hk : h \in H, k \in K \}</m>;
-            </p>
-          </li>
-
-          <li permid="xtG">
-            <p permid="FHZ">
-              <m>H \cap K = \{ e \}</m>;
-            </p>
-          </li>
-
-          <li permid="dAP">
-            <p permid="lPi">
-              <m>hk = kh</m> for all <m>k \in K</m> and <m>h \in H</m>.
-            </p>
-          </li>
-        </ul>
-
-        Then <m>G</m> is the <term>internal direct product</term><idx><h>Direct product of groups</h><h>internal</h></idx>
-            <idx><h>Internal direct product</h></idx>
-        of <m>H</m> and <m>K</m>.
-      </p>
-
-      <example xml:id="example-isomorph-u8" permid="rbE">
-        <p permid="RPn">
-          The group <m>U(8)</m> is the internal direct product of
-          <me permid="AJY">
-            H = \{1, 3 \} \quad \text{and} \quad K  = \{1, 5 \}
-          </me>.
-        </p>
-      </example>
-
-      <example xml:id="example-isomorph-d6-product" permid="XiN">
-        <p permid="xWw">
-          The dihedral group <m>D_6</m> is an internal direct product of its two subgroups
-          <me permid="gRh">
-            H = \{\identity, r^3  \} \quad \text{and} \quad K  = \{\identity, r^2, r^4, s, r^2s, r^4 s \}
-          </me>.
-          It can easily be shown that <m>K \cong S_3</m>;
-          consequently, <m>D_6 \cong {\mathbb Z}_2 \times S_3</m>.
-        </p>
-      </example>
-
-      <example xml:id="example-isomorph-s3-not-a-product" permid="DpW">
-        <p permid="edF">
-          Not every group can be written as the internal direct product of two of its proper subgroups.
-          If the group <m>S_3</m> were an internal direct product of its proper subgroups <m>H</m> and <m>K</m>,
-          then one of the subgroups, say <m>H</m>,
-          would have to have order <m>3</m>.
-          In this case <m>H</m> is the subgroup <m>\{ (1), (123), (132) \}</m>.
-          The subgroup <m>K</m> must have order <m>2</m>,
-          but no matter which subgroup we choose for <m>K</m>,
-          the condition that <m>hk = kh</m> will never be satisfied for <m>h \in H</m> and <m>k \in K</m>.
-        </p>
-      </example>
-
-      <theorem xml:id="theorem-isomorph-directproducts" permid="eNm">
+      <exercise number="C1">
         <statement>
-          <p permid="zbP">
-            Let <m>G</m> be the internal direct product of subgroups <m>H</m> and <m>K</m>.
-            Then <m>G</m> is isomorphic to <m>H \times K</m>.
+          <p>
+          Consider the groups <m>\Z_6</m> and <m>\Z_2\times \Z_3</m>. 
+            <ol>
+              <li>
+                <p>
+                Is there an isomorphism <m>f: \Z_6 \to \Z_2\times \Z_3</m> that has <m>f(1) = (0,1)</m>?  Explain why or why not.
+                </p>
+              </li>
+              <li>
+                <p>
+                Determine whether these two groups are isomorphic.  Either find an isomorphism (and explain why it is) or explain why they are not isomorphic.
+                </p>
+              </li>
+            </ol>
           </p>
         </statement>
-
-        <proof permid="ukF">
-          <p permid="pId">
-            Since <m>G</m> is an internal direct product,
-            we can write any element <m>g \in G</m> as <m>g =hk</m> for some <m>h \in H</m> and some <m>k \in K</m>.
-            Define a map <m>\phi : G \rightarrow H \times K</m> by <m>\phi(g) = (h,k)</m>.
+        <hint>
+          <p>
+          First, <m>\Z_2\times \Z_3 = \{(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)\}</m>, and the operation is addition coordinate-wise.  So <m>(1,1) + (1,1) = (0,2)</m>.
           </p>
-
-          <p permid="VPm">
-            The first problem that we must face is to show that <m>\phi</m> is a well-defined map;
-            that is, we must show that <m>h</m> and <m>k</m> are uniquely determined by <m>g</m>.
-            Suppose that <m>g = hk=h'k'</m>.
-            Then <m>h^{-1} h'= k (k')^{-1}</m> is in both <m>H</m> and <m>K</m>,
-            so it must be the identity.
-            Therefore, <m>h = h'</m> and <m>k = k'</m>,
-            which proves that <m>\phi</m> is, indeed, well-defined.
+          <p>
+          For the first part, what would <m>f(2)</m> and <m>f(3)</m> be if we defined <m>f(1) = (0,1)</m>?  Why is this a problem?
           </p>
+        </hint>
+      </exercise>
 
-          <p permid="BWv">
-            To show that <m>\phi</m> preserves the group operation,
-            let <m>g_1 = h_1 k_1</m> and <m>g_2 = h_2 k_2</m> and observe that
-            <md permid="MYq">
-              <mrow>\phi( g_1 g_2 ) &amp; = \phi( h_1 k_1 h_2 k_2 )</mrow>
-              <mrow>&amp; = \phi(h_1  h_2 k_1 k_2)</mrow>
-              <mrow>&amp; = (h_1  h_2, k_1 k_2)</mrow>
-              <mrow>&amp; = (h_1, k_1)( h_2, k_2)</mrow>
-              <mrow>&amp; = \phi( g_1 ) \phi(  g_2 )</mrow>
-            </md>.
-            We will leave the proof that <m>\phi</m> is one-to-one and onto as an exercise.
-          </p>
-        </proof>
-      </theorem>
-
-      <example xml:id="example-isomorph-z6-product" permid="jxf">
-        <p permid="KkO">
-          The group <m>{\mathbb Z}_6</m> is an internal direct product isomorphic to <m>\{ 0, 2, 4\} \times \{ 0, 3 \}</m>.
-        </p>
-      </example>
-
-      <p permid="UYo">
-        We can extend the definition of an internal direct product of <m>G</m> to a collection of subgroups
-        <m>H_1, H_2, \ldots, H_n</m> of <m>G</m>, by requiring that
-
-        <ul permid="lfo">
-          <li permid="JHY">
-            <p permid="RWr">
-              <m>G = H_1 H_2 \cdots H_n = \{ h_1 h_2 \cdots h_n : h_i \in H_i \}</m>;
-            </p>
-          </li>
-
-          <li permid="pPh">
-            <p permid="ydA">
-              <m>H_i \cap \langle \cup_{j \neq i} H_j \rangle = \{ e \}</m>;
-            </p>
-          </li>
-
-          <li permid="VWq">
-            <p permid="ekJ">
-              <m>h_i h_j = h_j h_i</m> for all
-              <m>h_i \in H_i</m> and <m>h_j \in H_j</m>.
-            </p>
-          </li>
-        </ul>
-
-        We will leave the proof of the following theorem as an exercise.
-      </p>
-
-      <theorem permid="KUv">
+      <exercise number="C2">
         <statement>
-          <p permid="fiY">
-            Let <m>G</m> be the internal direct product of subgroups <m>H_i</m>,
-            where <m>i = 1, 2, \ldots, n</m>.
-            Then <m>G</m> is isomorphic to <m>\prod_i H_i</m>.
+          <p>
+          Suppose group <m>G_1</m> and <m>G_2</m> are isomorphic, with isomorphism <m>\phi:G_1 \to G_2</m>.  Let <m>H_1</m> be a subgroup of <m>G_1</m>.  Define <m>H_2 = \phi(H_1) = \{x \in G_2 \st x = \phi(h) \text{ for some } h \in H_1\}</m>.  Prove that <m>H_2</m> is a subgroup of <m>G_2</m>.  Futher, prove that if <m>H_1</m> is normal in <m>G_1</m>, then <m>H_2</m> is normal in <m>G_2</m>
           </p>
         </statement>
-      </theorem>
+        <hint>
+          <p>
+          This should be a fairly standard subgroup proof.  That is, identity, closures, inverses!  For the normal part, show <m>H_2</m> is closed under conjugates (assuming <m>H_1</m> is).
+          </p>
+        </hint>
+      </exercise>
+    </exercises>
 
-      <paragraphs permid="Yog">
-        <title>Sage</title>
-        <p permid="Bfx">
-          Sage can quickly determine if two permutation groups are isomorphic,
-          even though this should, in theory,
-          be a very difficult computation.
-        </p>
-      </paragraphs>
-    </subsection>
   </section>
+
+
+
+<!-- % TWJ, 2010/03/31 -->
+<!-- % The chapter HOMOMORPHISMS AND FACTOR GROUPS is now -->
+<!-- % two chapters: (10) NORMAL SUBGROUPS AND FACTOR GROUPS -->
+<!-- % (11) HOMOMORPHISMS -->
+<section xml:id="section-group-homomorphisms" permid="uOI">
+  <title>Group Homomorphisms</title>
+  <p permid="ato">
+      One of the basic ideas of algebra is the concept of a homomorphism,
+      a natural generalization of an isomorphism.
+      If we relax the requirement that an isomorphism of groups be bijective,
+      we have a homomorphism.
+  </p>
+
+  <p permid="pgN">
+      A <term>homomorphism</term>
+    <idx>
+      <h>Group</h>
+      <h>homomorphism of</h>
+    </idx>
+    <idx>
+      <h>Homomorphism</h>
+      <h>of groups</h>
+    </idx> between groups <m>(G, \cdot)</m> and
+    <m>(H, \circ)</m> is a map <m>\phi :G \rightarrow H</m> such that
+    <me permid="Stq">
+        \phi( g_1 \cdot g_2 ) = \phi( g_1 ) \circ \phi( g_2 )
+    </me>
+      for <m>g_1, g_2 \in G</m>.
+      The range of <m>\phi</m> in <m>H</m> is called the
+    <term>homomorphic image</term>
+    <idx>
+      <h>Homomorphic image</h>
+    </idx>
+      of <m>\phi</m>.
+  </p>
+
+  <p permid="VnW">
+      Two groups are related in the strongest possible way if they are isomorphic;
+      however, a weaker relationship may exist between two groups.
+      For example, the symmetric group <m>S_n</m> and the group
+    <m>{\mathbb Z}_2</m> are related by the fact that <m>S_n</m> can be divided into even and odd permutations that exhibit a group structure like that <m>{\mathbb Z}_2</m>,
+      as shown in the following multiplication table.
+  </p>
+
+  <sidebyside width="100%" permid="Oma">
+    <!-- math table -->
+    <p permid="umf">
+      <me permid="yAz">
+          \begin{array}{c|cc}
+          &amp; \text{even} &amp; \text{odd} \\ \hline
+          \text{even} &amp; \text{even} &amp; \text{odd} \\
+          \text{odd}  &amp; \text{odd}  &amp; \text{even}
+          \end{array}
+      </me>
+    </p>
+  </sidebyside>
+
+  <p permid="Bvf">
+      We use homomorphisms to study relationships such as the one we have just described.
+  </p>
+
+  <example xml:id="example-homomorph-zn" permid="kZx">
+    <p permid="QZC">
+        Let <m>G</m> be a group and <m>g \in G</m>.
+        Define a map <m>\phi : {\mathbb Z} \rightarrow G</m> by <m>\phi( n ) = g^n</m>.
+        Then <m>\phi</m> is a group homomorphism, since
+      <me permid="eHI">
+          \phi( m + n ) = g^{ m + n} = g^m g^n = \phi( m ) \phi( n )
+      </me>.
+        This homomorphism maps <m>{\mathbb Z}</m> onto the cyclic subgroup of <m>G</m> generated by <m>g</m>.
+    </p>
+  </example>
+
+  <example xml:id="example-homomorph-gl2" permid="RgG">
+    <p permid="xgL">
+        Let <m>G = GL_2( {\mathbb R })</m>.
+        If
+      <me permid="KOR">
+          A =
+          \begin{pmatrix}
+          a &amp; b \\
+          c &amp; d
+          \end{pmatrix}
+      </me>
+        is in <m>G</m>, then the determinant is  nonzero;
+        that is, <m>\det(A) = ad - bc \neq 0</m>.
+        Also, for any two elements <m>A</m> and <m>B</m> in <m>G</m>,
+      <m>\det(AB) = \det(A) \det(B)</m>.
+        Using the determinant, we can define a homomorphism
+      <m>\phi : GL_2( {\mathbb R }) \rightarrow {\mathbb R}^\ast</m> by <m>A \mapsto \det(A)</m>.
+    </p>
+  </example>
+
+  <example xml:id="example-homomorph-circle-group" permid="xnP">
+    <p permid="dnU">
+        Recall that the circle group
+      <m>{ \mathbb T}</m> consists of all complex numbers <m>z</m> such that <m>|z|=1</m>.
+        We can define a homomorphism <m>\phi</m> from the additive group of real numbers <m>{\mathbb R}</m> to
+      <m>{\mathbb T}</m> by <m>\phi : \theta \mapsto \cos \theta + i \sin \theta</m>.
+        Indeed,
+      <md permid="qWa">
+        <mrow>\phi( \alpha + \beta ) &amp; = \cos( \alpha + \beta ) + i \sin( \alpha + \beta )</mrow>
+        <mrow>&amp; = (\cos \alpha \cos \beta - \sin \alpha \sin \beta)  + i( \sin \alpha  \cos \beta + \cos \alpha \sin \beta )</mrow>
+        <mrow>&amp; = (\cos \alpha + i \sin \alpha )(\cos \beta + i \sin \beta)</mrow>
+        <mrow>&amp; = \phi( \alpha ) \phi( \beta )</mrow>
+      </md>.
+        Geometrically,
+        we are simply wrapping the real line around the circle in a group-theoretic fashion.
+    </p>
+  </example>
+
+  <p permid="hCo">
+      The following proposition lists some basic properties of group homomorphisms.
+  </p>
+
+  <proposition xml:id="proposition-homorphism-subgroup" permid="ESo">
+    <statement>
+      <p permid="kSt">
+          Let <m>\phi : G_1 \rightarrow G_2</m> be a homomorphism of groups.
+          Then
+
+        <ol permid="TFN">
+          <li permid="Mbo">
+            <p permid="rde">
+                If <m>e</m> is the identity of <m>G_1</m>,
+                then <m>\phi( e)</m> is the identity of <m>G_2</m>;
+            </p>
+          </li>
+
+          <li permid="six">
+            <p permid="Xkn">
+                For any element <m>g \in G_1</m>,
+              <m>\phi( g^{-1}) = [\phi( g )]^{- 1}</m>;
+            </p>
+          </li>
+
+          <li permid="YpG">
+            <p permid="Drw">
+                If <m>H_1</m> is a subgroup of <m>G_1</m>,
+                then <m>\phi( H_1 )</m> is a subgroup of <m>G_2</m>;
+            </p>
+          </li>
+
+          <li permid="EwP">
+            <p permid="jyF">
+                If <m>H_2</m> is a subgroup of <m>G_2</m>,
+                then <m>\phi^{-1}(H_2) = \{ g \in G _1: \phi(g) \in H_2 \}</m> is a subgroup of <m>G_1</m>.
+                Furthermore, if <m>H_2</m> is normal in <m>G_2</m>,
+                then <m>\phi^{-1}(H_2)</m> is normal in <m>G_1</m>.
+            </p>
+          </li>
+          <!-- % TWJ, 2011/09/15 -->          <!-- % Changed G to G_1 -->          <!-- % Suggested by Tony Perkins -->
+        </ol>
+      </p>
+    </statement>
+
+    <proof permid="fkl">
+      <p permid="etn">
+          (1) Suppose that <m>e</m> and <m>e'</m> are the identities of <m>G_1</m> and <m>G_2</m>,
+          respectively; then
+        <me permid="Xdj">
+            e' \phi(e) = \phi(e) = \phi(e e) = \phi(e) \phi(e)
+        </me>.
+          By cancellation, <m>\phi(e) = e'</m>.
+      </p>
+
+      <p permid="KAw">
+          (2) This statement follows from the fact that
+        <me permid="Dks">
+            \phi( g^{-1}) \phi(g) = \phi(g^{-1} g) = \phi(e) = e'
+        </me>.
+      </p>
+      <!--  Corrected notation error.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
+      <p permid="qHF">
+          (3) The set <m>\phi(H_1)</m> is nonempty since the identity of <m>G_2</m> is in <m>\phi(H_1)</m>.
+          Suppose that <m>H_1</m> is a subgroup of <m>G_1</m> and let <m>x</m> and <m>y</m> be in <m>\phi(H_1)</m>.
+          There exist elements <m>a,
+          b \in H_1</m> such that <m>\phi(a) = x</m> and <m>\phi(b)=y</m>.
+          Since
+        <me permid="jrB">
+            xy^{-1} = \phi(a)[ \phi(b)]^{-1} = \phi(a b^{-1} ) \in \phi(H_1)
+        </me>,
+        <m>\phi(H_1)</m> is a subgroup of <m>G_2</m> by <xref ref="proposition-subgroup"/>
+.
+      </p>
+      <!-- H_2 changed to G_2 in proof.  Suggested by K. Wenholz. -->
+      <!-- TWJ - 12/19/2011 -->
+      <p permid="WOO">
+          (4) Let <m>H_2</m> be a subgroup of <m>G_2</m> and define <m>H_1</m> to be <m>\phi^{-1}(H_2)</m>;
+          that is, <m>H_1</m> is the set of all
+        <m>g \in G_1</m> such that <m>\phi(g) \in H_2</m>.
+          The identity is in <m>H_1</m> since <m>\phi(e) = e'</m>.
+          If <m>a</m> and <m>b</m> are in <m>H_1</m>,
+          then <m>\phi(ab^{-1}) = \phi(a)[ \phi(b) ]^{-1}</m> is in <m>H_2</m> since <m>H_2</m> is a subgroup of <m>G_2</m>.
+          Therefore, <m>ab^{-1} \in H_1</m> and <m>H_1</m> is a subgroup of <m>G_1</m>.
+          If <m>H_2</m> is normal in <m>G_2</m>,
+          we must show that <m>g^{-1} h g \in H_1</m> for
+        <m>h \in H_1</m> and <m>g \in G_1</m>.
+          But
+        <me permid="PyK">
+            \phi( g^{-1} h g) = [ \phi(g) ]^{-1} \phi( h ) \phi( g ) \in H_2
+        </me>,
+          since <m>H_2</m> is a normal subgroup of <m>G_2</m>.
+          Therefore, <m>g^{-1}hg \in H_1</m>.
+      </p>
+    </proof>
+  </proposition>
+
+  <p permid="NJx">
+      Let <m>\phi : G \rightarrow H</m> be a group homomorphism and suppose that <m>e</m> is the identity of <m>H</m>.
+      By <xref ref="proposition-homorphism-subgroup"/>
+,
+  <m>\phi^{-1} ( \{ e \} )</m> is a subgroup of <m>G</m>.
+      This subgroup is called the <term>kernel</term>
+  <idx>
+    <h>Kernel</h>
+    <h>of a group homomorphism</h>
+  </idx>
+  <idx>
+    <h>Homomorphism</h>
+    <h>kernel of a group</h>
+  </idx> of <m>\phi</m> and will be denoted by <m>\ker \phi</m>.
+
+  <notation>
+    <usage>\ker \phi</usage>
+    <description>kernel of <m>\phi</m>
+    </description>
+  </notation>
+
+      In fact, this subgroup is a normal subgroup of <m>G</m> since the trivial subgroup is normal in <m>H</m>.
+      We state this result in the following theorem,
+      which says that with every homomorphism of groups we can naturally associate a normal subgroup.
+</p>
+
+<theorem permid="Aiv">
+  <statement>
+    <p permid="giA">
+          Let <m>\phi : G \rightarrow H</m> be a group homomorphism.
+          Then the kernel of <m>\phi</m> is a normal subgroup of <m>G</m>.
+    </p>
+  </statement>
+</theorem>
+
+<example xml:id="example-homomorph-g2-to-r" permid="duY">
+  <p permid="Jvd">
+        Let us examine the homomorphism
+    <m>\phi : GL_2( {\mathbb R }) \rightarrow {\mathbb R}^\ast</m> defined by <m>A \mapsto \det( A )</m>.
+        Since <m>1</m> is the identity of <m>{\mathbb R}^\ast</m>,
+        the kernel of this homomorphism is all
+    <m>2 \times 2</m> matrices having determinant one.
+        That is, <m>\ker \phi = SL_2( {\mathbb R })</m>.
+  </p>
+</example>
+
+<example xml:id="example-homomorph-kernel" permid="JCh">
+  <p permid="pCm">
+        The kernel of the group homomorphism <m>\phi : {\mathbb R} \rightarrow {\mathbb C}^\ast</m> defined by
+    <m>\phi( \theta ) = \cos \theta + i \sin \theta</m> is <m>\{ 2 \pi n : n \in {\mathbb Z} \}</m>.
+        Notice that <m>\ker \phi \cong {\mathbb Z}</m>.
+  </p>
+</example>
+
+<example xml:id="example-homomorph-z7" permid="pJq">
+  <p permid="VJv">
+        Suppose that we wish to determine all possible homomorphisms <m>\phi</m> from
+    <m>{\mathbb Z}_7</m> to <m>{\mathbb Z}_{12}</m>.
+        Since the kernel of <m>\phi</m> must be a subgroup of <m>{\mathbb Z}_7</m>,
+        there are only two possible kernels,
+    <m>\{ 0 \}</m> and all of <m>{\mathbb Z}_7</m>.
+        The image of a subgroup of
+    <m>{\mathbb Z}_7</m> must be a subgroup of <m>{\mathbb Z}_{12}</m>.
+        Hence, there is no injective homomorphism;
+        otherwise, <m>{\mathbb Z}_{12}</m> would have a subgroup of order <m>7</m>,
+        which is impossible.
+        Consequently,
+        the only possible homomorphism from <m>{\mathbb Z}_7</m> to
+    <m>{\mathbb Z}_{12}</m> is the one mapping all elements to zero.
+  </p>
+</example>
+
+<example xml:id="example-homomorph-gn" permid="VQz">
+  <p permid="BQE">
+        Let <m>G</m> be a group.
+        Suppose that <m>g \in G</m> and <m>\phi</m> is the homomorphism from
+    <m>{\mathbb Z}</m> to <m>G</m> given by <m>\phi( n ) = g^n</m>.
+        If the order of <m>g</m> is infinite,
+        then the kernel of this homomorphism is <m>\{ 0 \}</m> since <m>\phi</m> maps
+    <m>{\mathbb Z}</m> onto the cyclic subgroup of <m>G</m> generated by <m>g</m>.
+        However, if the order of <m>g</m> is finite,
+        say <m>n</m>,
+        then the kernel of <m>\phi</m> is <m>n {\mathbb Z}</m>.
+  </p>
+</example>
+
+<reading-questions xml:id="rqs-homomorphisms" permid="PJT">
+  <exercise permid="bYl">
+    <statement>
+      <p permid="ZdF">
+            What is the difference between a <em>homomorphism</em> and an <em>isomorphism</em>? 
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="Ifu">
+    <statement>
+      <p permid="FkO">
+            What do we mean by the <term>kernel</term> of a homomorphism?  What does this say about the kernel of any <em>isomorphism</em>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="omD">
+    <statement>
+      <p permid="lrX">
+            What can you say about the image of a subgroup under a homomorphism?
+            That is, what can you say about <m>\phi(H)</m> for a subgroup <m>H</m> of <m>G</m> and homomorphism <m>\phi:G \to G'</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="UtM">
+    <statement>
+      <p permid="Rzg">
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+      </p>
+    </statement>
+  </exercise>
+</reading-questions>
+
+<exercises xml:id="practice-homomorph">
+  <title>Practice Problems</title>
+  <exercise>
+    <statement>
+      <p>
+            Let <m>\DR</m> represent the group of all differentiable functions from <m>\R</m> to <m>\R</m>, under addition, and <m>\FR</m> be the group of all functions from <m>\R</m> to <m>\R</m>, under addition.  Let <m>\phi:\DR\to \FR</m> be given by <m>\phi(f) = f'</m> (the derivative of <m>f</m>).  Prove that <m>\phi</m> is a homomorphism and describe its kernel.
+      </p>
+    </statement>
+    <solution>
+      <p>
+            Let <m>f</m> and <m>g</m> be functions in <m>\DR</m>.  Then <m>\phi(f+g) = (f+g)' = f' + g' = \phi(f) + \phi(g)</m>, using the additive property of derivatives.  Thus <m>\phi</m> is a homomorphism.
+      </p>
+
+      <p>
+            The kernel of <m>\phi</m> is the set of all differentiable functions whose derivative is 0.  From calculus, we know that these are exactly the constant functions.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            Let <m>\phi: \Z \to \Z</m> be given by <m>\phi(n) = 5n</m>.  Prove that <m>\phi</m> is a group homomorphism.  Find the kernel and image of <m>\phi</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+            We have <m>\phi(a+b) = 5(a+b) = 5a+5b = \phi(a) + \phi(b)</m>, so <m>\phi</m> is a homomorphism.  The image of <m>\phi</m> will be <m>5\Z</m>.  The kernel is <m>\{0\}</m> (as you will show below, this is not surprising since <m>\phi</m> is injective).
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            If <m>G</m> is an abelian group, show that <m>\phi: G \to G</m> defined by <m>\phi(g) = g^2</m> is a homomorphism.
+      </p>
+    </statement>
+    <solution>
+      <p>
+            We have <m>\phi(ab) = (ab)^2 = a^2b^2</m> since <m>G</m> is abelian.  But <m>\phi(a)\phi(b) = a^2 b^2</m>, so we see that <m>\phi</m> satisfies the homomorphism property.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            How many homomorphisms from <m>\Z_7</m> to <m>\Z_{10}</m> are there?
+      </p>
+    </statement>
+    <solution>
+      <p>
+            Only one: the trivial homomorphism.  There are only two possible kernels: <m>\{0\}</m> or <m>\Z_7</m> (since there are only two subgroups of <m>\Z_7</m>).  If <m>\{0\}</m> is the kernel, then the homomorphism will be injective.  But that would mean that the image of the homomorphism would be a 7 elements subgroup of <m>\Z_{10}</m> which is impossible.  Thus the kernel can only be <m>\Z_{7}</m> which gives the trivial homomorphism (<m>\phi(x) = 0</m> for all <m>x</m>).
+      </p>
+    </solution>
+  </exercise>
+</exercises>
+
+
+<exercises xml:id="collected-homomorph">
+  <title>Collected Homework</title>
+
+  <exercise number="C1">
+    <statement>
+      <p>
+          Let <m>\phi:G \to H</m> be a homomorphism with kernel <m>K</m>.  Prove that <m>\phi</m> is injective (one-to-one) if and only if <m>K = \{e\}</m>.  (That is, if and only if the <em>only</em> element in the kernel is the identity.)  
+      </p>
+    </statement>
+    <hint>
+      <p>
+          The forward direction should be pretty easy.  For the converse (if <m>K = \{e\}</m> then <m>\phi</m> is injective), use the <q>standard</q> method to show a function is injective.  You will likely need to consider <m>\phi(a)\phi(b)\inv</m>.
+      </p>
+    </hint>
+  </exercise>
+
+</exercises>
+</section>
+
+<section xml:id="section-group-isomorphism-theorems" permid="aVR">
+<title>The Isomorphism Theorems</title>
+<p permid="tQG">
+      Although it is not evident at first,
+      factor groups correspond exactly to homomorphic images,
+      and we can use factor groups to study homomorphisms.
+      We already know that with every group homomorphism
+  <m>\phi: G \rightarrow H</m> we can associate a normal subgroup of <m>G</m>,
+  <m>\ker \phi</m>.
+      The converse is also true; that is,
+      every normal subgroup of a group <m>G</m> gives rise to homomorphism of groups.
+</p>
+
+<p permid="ZXP">
+      Let <m>H</m> be a normal subgroup of <m>G</m>.
+      Define the <term>natural</term>
+  <idx>
+    <h>Homomorphism</h>
+    <h>natural</h>
+  </idx> or
+  <term>canonical homomorphism</term>
+  <idx>
+    <h>Homomorphism</h>
+    <h>canonical</h>
+  </idx>
+  <me permid="vFT">
+        \phi : G \rightarrow G/H
+  </me>
+      by
+  <me permid="bNc">
+        \phi(g) = gH
+  </me>.
+      This is indeed a homomorphism, since
+  <me permid="HUl">
+        \phi( g_1 g_2 ) = g_1 g_2 H =  g_1 H g_2 H = \phi( g_1) \phi( g_2 )
+  </me>.
+      The kernel of this homomorphism is <m>H</m>.
+      The following theorems describe the relationships between group homomorphisms,
+      normal subgroups, and factor groups.
+</p>
+
+<theorem xml:id="theorem-first-isomorphism" permid="gpE">
+  <title>First Isomorphism Theorem</title>
+  <idx>
+    <h>First Isomorphism Theorem</h>
+    <h>for groups</h>
+  </idx>
+  <statement>
+    <p permid="MpJ">
+          If <m>\psi : G \rightarrow H</m> is a group homomorphism with <m>K =\ker \psi</m>,
+          then <m>K</m> is normal in <m>G</m>.
+          Let <m>\phi: G \rightarrow G/K</m> be the canonical homomorphism.
+          Then there exists a unique isomorphism
+      <m>\eta: G/K \rightarrow \psi(G)</m> such that <m>\psi = \eta \phi</m>.
+    </p>
+  </statement>
+
+  <proof permid="mOK">
+    <p permid="CVX">
+          We already know that <m>K</m> is normal in <m>G</m>.
+          Define <m>\eta: G/K \rightarrow \psi(G)</m> by <m>\eta(gK) = \psi(g)</m>.
+          We first show that <m>\eta</m> is a well-defined map.
+          If <m>g_1 K =g_2 K</m>, then for some <m>k \in K</m>,
+      <m>g_1 k=g_2</m>; consequently,
+      <me permid="obu">
+            \eta(g_1 K) = \psi(g_1) = \psi(g_1) \psi(k) = \psi(g_1k) = \psi(g_2) = \eta(g_2 K)
+      </me>.
+          Thus, <m>\eta</m> does not depend on the choice of coset representatives and the map
+      <m>\eta: G/K \rightarrow \psi(G)</m> is uniquely defined since <m>\psi =  \eta \phi</m>.
+          We must also show that <m>\eta</m> is a homomorphism. Indeed,
+      <md permid="UiD">
+        <mrow>\eta( g_1K g_2K ) &amp; = \eta(g_1 g_2K)</mrow>
+        <mrow>&amp; = \psi(g_1 g_2)</mrow>
+        <mrow>&amp; = \psi(g_1) \psi(g_2)</mrow>
+        <mrow>&amp; = \eta( g_1K) \eta( g_2K )</mrow>
+      </md>.
+          Clearly, <m>\eta</m> is onto <m>\psi( G)</m>.
+          To show that <m>\eta</m> is one-to-one,
+          suppose that <m>\eta(g_1 K) = \eta(g_2 K)</m>.
+          Then <m>\psi(g_1) = \psi(g_2)</m>.
+          This implies that <m>\psi( g_1^{-1} g_2 ) = e</m>,
+          or <m>g_1^{-1} g_2</m> is in the kernel of <m>\psi</m>;
+          hence, <m>g_1^{-1} g_2K = K</m>;
+          that is, <m>g_1K =g_2K</m>.
+    </p>
+  </proof>
+</theorem>
+<!--  Proof rewritten for clarification.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
+<p permid="GeY">
+      Mathematicians often use diagrams called
+  <term>commutative diagrams</term>
+  <idx>
+    <h>Commutative diagrams</h>
+  </idx>
+      to describe such theorems.
+      The following diagram <q>commutes</q>
+      since <m>\psi = \eta \phi</m>.
+</p>
+
+<sidebyside width="40%" margins="auto" permid="utj">
+  <!-- duplicate widths? -->
+  <image width="40%" xml:id="homomorphs-first-isomorphism" permid="AZG">
+    <description>A diagram with G mapped with an arrow to H by psi on the top row.  G gets mapped with an arrow down and right to G/K by phi.  G/K gets mapped with an arrow up and right to H by eta. </description>
+    <latex-image>
+      <xi:include href="tikz/homomorphs-first-isomorphism.tex" parse="text"/>
+    </latex-image>
+  </image>
+
+</sidebyside>
+
+<example xml:id="homo_cyclic" permid="BXI">
+  <p permid="hXN">
+        Let <m>G</m> be a cyclic group with generator <m>g</m>.
+        Define a map <m>\phi : {\mathbb Z} \rightarrow G</m> by <m>n \mapsto g^n</m>.
+        This map is a surjective homomorphism since
+    <me permid="ApM">
+          \phi( m + n) = g^{m+n} = g^m g^n = \phi(m) \phi(n)
+    </me>.
+        Clearly <m>\phi</m> is onto.
+        If <m>|g| = m</m>, then  <m>g^m = e</m>.
+        Hence, <m>\ker \phi = m {\mathbb Z}</m> and <m>{\mathbb Z} / \ker \phi =  {\mathbb Z} / m {\mathbb Z} \cong G</m>.
+        On the other hand, if the order of <m>g</m> is infinite,
+        then <m>\ker \phi = 0</m> and <m>\phi</m> is an isomorphism of <m>G</m> and <m>{\mathbb Z}</m>.
+        Hence, two cyclic groups are isomorphic exactly when they have the same order.
+        Up to isomorphism, the only cyclic groups are
+    <m>{\mathbb Z}</m> and <m>{\mathbb Z}_n</m>.
+  </p>
+</example>
+
+<theorem xml:id="theorem-second-isomorphism" permid="MwN">
+  <title>Second Isomorphism Theorem</title>
+  <idx>
+    <h>Second Isomorphism Theorem</h>
+    <h>for groups</h>
+  </idx>
+  <statement>
+    <p permid="swS">
+          Let  <m>H</m> be a subgroup of a group <m>G</m>
+          (not necessarily normal in <m>G</m>)
+          and <m>N</m> a normal subgroup of <m>G</m>.
+          Then <m>HN</m> is a subgroup of <m>G</m>,
+      <m>H \cap N</m> is a normal subgroup of <m>H</m>, and
+      <me permid="gwV">
+            H / H \cap N \cong HN /N
+      </me>.
+    </p>
+  </statement>
+
+  <proof permid="SVT">
+    <p permid="jdg">
+          We will first show that <m>HN = \{ hn : h \in H, n \in N \}</m> is a subgroup of <m>G</m>.
+          Suppose that  <m>h_1 n_1, h_2 n_2 \in HN</m>.
+          Since <m>N</m> is normal, <m>(h_2)^{-1} n_1 h_2 \in N</m>.
+          So
+      <me permid="MEe">
+            (h_1 n_1)(h_2 n_2) = h_1 h_2 ( (h_2)^{-1} n_1 h_2 )n_2
+      </me>
+          is in <m>HN</m>.
+          The inverse of <m>hn \in HN</m> is in <m>HN</m> since
+      <me permid="sLn">
+            ( hn )^{-1} = n^{-1 } h^{-1} = h^{-1} (h n^{-1} h^{-1} )
+      </me>.
+    </p>
+
+    <p permid="Pkp">
+          Next, we prove that <m>H \cap N</m> is normal in <m>H</m>.
+          Let <m>h \in H</m> and <m>n \in H \cap N</m>.
+          Then <m>h^{-1} n h \in H</m> since each element is in <m>H</m>.
+          Also, <m>h^{-1} n h \in N</m> since <m>N</m> is normal in <m>G</m>;
+          therefore, <m>h^{-1} n h \in H \cap N</m>.
+    </p>
+
+    <p permid="vry">
+          Now define a map <m>\phi</m> from <m>H</m> to <m> HN / N</m> by <m>h \mapsto h N</m>.
+          The map <m>\phi</m> is onto,
+          since any coset <m>h n N = h N</m> is the image of <m>h</m> in <m>H</m>.
+          We also know that <m>\phi</m> is a homomorphism because
+      <me permid="YSw">
+            \phi( h  h')  = h h' N =  h N h' N =  \phi( h ) \phi( h')
+      </me>.
+          By the First Isomorphism Theorem,
+          the image of <m>\phi</m> is isomorphic to <m>H / \ker \phi</m>; that is,
+      <me permid="EZF">
+            HN/N = \phi(H) \cong H / \ker \phi
+      </me>.
+          Since
+      <me permid="lgO">
+            \ker \phi = \{ h \in H : h \in N \} = H \cap N
+      </me>,
+      <m>HN/N = \phi(H) \cong H / H \cap N</m>.
+    </p>
+  </proof>
+</theorem>
+
+<theorem xml:id="theorem-correspondence" permid="sDW">
+  <title>Correspondence Theorem</title>
+  <idx>
+    <h>Correspondence Theorem</h>
+    <h>for groups</h>
+  </idx>
+  <statement>
+    <p permid="YEb">
+          Let <m>N</m> be a normal subgroup of a group <m>G</m>.
+          Then <m>H \mapsto H/N</m> is a one-to-one correspondence between the set of subgroups <m>H</m> containing <m>N</m> and the set of subgroups of <m>G/N</m>.
+          Furthermore,
+          the normal subgroups of <m>G</m> containing <m>N</m> correspond to normal subgroups of <m>G/N</m>.
+    </p>
+  </statement>
+
+  <proof permid="zdc">
+    <p permid="byH">
+          Let <m>H</m> be a subgroup of <m>G</m> containing <m>N</m>.
+          Since <m>N</m> is normal in <m>H</m>,      <m>H/N</m> makes is a factor group.
+          Let <m>aN</m> and <m>bN</m> be elements of <m>H/N</m>.
+          Then <m>(aN)( b^{-1} N )= ab^{-1}N \in H/N</m>;
+          hence, <m>H/N</m> is a subgroup of <m>G/N</m>.
+    </p>
+
+    <p permid="HFQ">
+          Let <m>S</m> be a subgroup of <m>G/N</m>.
+          This subgroup is a set of cosets of <m>N</m>.
+          If <m>H= \{ g \in G : gN \in S \}</m>,
+          then for <m>h_1, h_2 \in H</m>,
+          we have that <m>(h_1 N)( h_2 N )= h_1 h_2 N \in S</m> and <m>h_1^{-1} N \in S</m>.
+          Therefore, <m>H</m> must be a subgroup of <m>G</m>.
+          Clearly, <m>H</m> contains <m>N</m>.
+          Therefore, <m>S = H / N</m>.
+          Consequently, the map <m>H \mapsto H/N</m> is onto.
+    </p>
+    <!--  Notation error corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
+    <p permid="nMZ">
+          Suppose that <m>H_1</m> and <m>H_2</m> are subgroups of <m>G</m> containing <m>N</m> such that <m>H_1/N = H_2/N</m>.
+          If <m>h_1 \in H_1</m>, then <m>h_1 N \in H_1/N</m>.
+          Hence, <m>h_1 N = h_2 N \subset H_2</m> for some <m>h_2</m> in <m>H_2</m>.
+          However, since <m>N</m> is contained in <m>H_2</m>,
+          we know that <m>h_1 \in H_2</m> or <m>H_1 \subset H_2</m>.
+          Similarly, <m>H_2 \subset H_1</m>.
+          Since <m>H_1 = H_2</m>, the map <m>H \mapsto H/N</m> is one-to-one.
+    </p>
+    <!-- H/N changed to N/H.  Suggested by S. Engle. -->
+    <!-- TWJ - 12/19/2011 -->
+    <!-- Changed it back.  What was I thinking?  Suggested by R. Beezer. -->
+    <!-- TWJ - 11/29/2012 -->
+    <p permid="TUi">
+          Suppose that <m>H</m> is normal in <m>G</m> and <m>N</m> is a subgroup of <m>H</m>.
+          Then it is easy to verify that the map
+      <m>G/N \rightarrow G/H</m> defined by <m>gN \mapsto gH</m> is a homomorphism.
+          The kernel of this homomorphism is <m>H/N</m>,
+          which proves that <m>H/N</m> is normal in <m>G/N</m>.
+    </p>
+
+    <p permid="Abr">
+          Conversely, suppose that <m>H/N</m> is normal in <m>G/N</m>.
+          The homomorphism given by
+      <me permid="RnX">
+            G \rightarrow G/N \rightarrow \frac{G/N}{H/N}
+      </me>
+          has kernel <m>H</m>.
+          Hence, <m>H</m> must be normal in <m>G</m>.
+    </p>
+  </proof>
+</theorem>
+<!--  Statement of the Correspondence Theorem corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013. -->
+<p permid="mmh">
+      Notice that in the course of the proof of <xref ref="theorem-correspondence"/>
+, we have also proved the following theorem.
+</p>
+
+<theorem xml:id="theorem-third-isomorphism" permid="YLf">
+  <title>Third Isomorphism Theorem</title>
+  <idx>
+    <h>Third Isomorphism Theorem</h>
+    <h>for groups</h>
+  </idx>
+  <statement>
+    <p permid="ELk">
+          Let <m>G</m> be a group and <m>N</m> and <m>H</m> be normal subgroups of <m>G</m> with <m>N \subset H</m>.
+          Then
+      <me permid="xvg">
+            G/H \cong \frac{G/N}{H/N}
+      </me>.
+    </p>
+  </statement>
+</theorem>
+
+<example xml:id="example-homomorph-third-isomorphism" permid="ieR">
+  <p permid="OeW">
+        By the Third Isomorphism Theorem,
+    <me permid="dCp">
+          {\mathbb Z} / m {\mathbb Z} \cong ({\mathbb Z}/ mn {\mathbb Z})/ (m {\mathbb Z}/ mn {\mathbb Z})
+    </me>.
+        Since <m>| {\mathbb Z} / mn {\mathbb Z} | = mn</m> and  <m>|{\mathbb Z} / m{\mathbb Z}| = m</m>,
+        we have <m>| m {\mathbb Z} / mn {\mathbb Z}| = n</m>.
+  </p>
+</example>
+
+<paragraphs permid="OHz">
+  <title>Sage</title>
+  <p permid="IZE">
+        Sage can create homomorphisms between groups,
+        which can be used directly as functions,
+        and then queried for their kernels and images.
+        So there is great potential for exploring the many fundamental relationships between groups,
+        normal subgroups, quotient groups and properties of homomorphisms.
+  </p>
+</paragraphs>
+
+<reading-questions xml:id="rqs-fht" permid="vRc">
+  <exercise permid="AAV">
+    <statement>
+      <p permid="xGp">
+            If <m>\phi:G \to H</m> is a group homomorphism, what can you say about <m>\ker \phi</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="gIe">
+    <statement>
+      <p permid="dNy">
+            If <m>N</m> is a normal subgroup of <m>G</m>, must there be a homomorphism that has <m>N</m> as its kernel?  If so, what is it?
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="MPn">
+    <statement>
+      <p permid="JUH">
+            What is the point of showing that <m>\eta(g_1Kg_2) = \eta(g_1K)\eta(g_2K)</m> in the proof of <xref ref="theorem-first-isomorphism"/>
+?  Also, why is the proof not done directly after showing this?
+      </p>
+    </statement>
+  </exercise>
+  <exercise permid="sWw">
+    <statement>
+      <p permid="qbQ">
+            After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
+      </p>
+    </statement>
+  </exercise>
+</reading-questions>
+
+
+<exercises xml:id="practice-fht">
+  <title>Practice Problems</title>
+  <exercise>
+    <statement>
+      <p>
+            Describe all the homomorphisms from <m>\Z_{24}</m> to <m>\Z_{18}</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+            The kernel of a homomorphism must be a subgroup of the domain and the image must be a subgroup of the codomain.  Further, a generator must map to a generator.
+      </p>
+    </hint>
+    <solution>
+      <p>
+            The possible kernels are the subgroups of <m>\Z_{24}</m>.  We could have <m>K = \Z_{24}</m>, and this gives the trivial homomorphism (everything goes to 0).  Our next possible kernel is <m>\langle 2 \rangle = \{0, 2, 4, \ldots, 22\}</m>.  We can then send everything else to <m>9 \in \Z_{18}</m>.
+      </p>
+
+      <p>
+            Now take <m>K = \langle 3 \rangle = \{0, 3, 6, \ldots, 21\}</m>.  We know that <m>\Z_{24}/K \cong H</m> where <m>H</m> is the image of the homomorphism.  So we must have a 3-element subgroup of <m>\Z_{18}</m> as the image of the homomorphism.  Send <m>1</m> to <m>6</m> and <m>2</m> to 12, and so on.
+      </p>
+
+      <p>
+            There is not a subgroup of <m>\Z_{18}</m> containing 4 elements (since <m>4</m> does not divide 18), so it is impossible for us to have a kernel <m>\langle 4 \rangle</m>.  The next possible subgroup the kernel could be is <m>\langle 6 \rangle = \{0, 6, 12, 18\}</m>, which would give us 6 cosets.  There is a subgroup of order 6 in <m>\Z_{18}</m>, namely <m>\langle 3 \rangle = \{0, 3, 6, 9, 12, 15\}</m>.  So we can define <m>\phi(n) = 3n</m> as the homomorphism.
+      </p>
+
+      <p>
+            The kernel <m>K = \langle 8 \rangle</m> is not possible, nor is <m>K = \langle 12 \rangle</m>.  Thus we have all of the homomorphisms described.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            Prove that <m>\Z/\langle 5\rangle \cong \Z_5</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+            Define <m>\psi:\Z \to \Z_5</m> by <m>\psi(x) = x \pmod{5}</m>.  That is, send every element in <m>\Z</m> to its remainder when divided by 5.  The kernel of <m>\psi</m> is <m>\langle 5\rangle</m>, so by the Fundamental Homomorphism Theorem, <m>\Z/\langle 5 \rangle \cong \Z_5</m>.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            Let <m>\FR</m> be the set of all functions <m>f:\R to \R</m> under addition.  Let <m>B = \{f \in \FR \st f(0) = 0\}</m>.  Prove that <m>\FR/B \cong \R</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+            Define a surjective homomorphism <m>\psi:\FR \to \R</m> and use the FHT.
+      </p>
+    </hint>
+    <solution>
+      <p>
+            Define a surjective homomorphism <m>\psi:\FR \to \R</m> by <m>\psi(f) = f(0)</m>.  That is, <m>\psi</m> sends a function to its <m>y</m>-intercept.  It is easy to check this is a homomorphism: <m>\psi(f+g) = (f+g)(0) = f(0) + g(0) = \psi(f)+ \psi(g)</m>.  Also, it is clearly surjective since every real number <m>c</m> is the <m>y</m>-intercept for the constant function <m>f(x) = c</m>.  Further, the kernel of <m>\psi</m> is precisely <m>B</m>.
+      </p>
+      <p>
+            Thus, by the Fundamental Homomorphism Theorem, <m>\FR/B \cong \R</m>.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+            How many homomorphic images are there of <m>D_4</m>?
+      </p>
+    </statement>
+    <solution>
+      <p>
+            Suppose <m>H</m> is a homomorphic image of <m>D_4</m>.  Then <m>H \cong D_4/K</m> where <m>K</m> is the kernel of the homomorphism.  We know that <m>K</m> is a normal subgroup of <m>D_4</m>, which limits the number of possibilities for <m>K</m>.  We could have <m>K = \{r_0\}</m> or <m>k = D_4</m>, in which case we find that <m>H \cong D_4</m> or <m>H \cong \{e\}</m>, respetively.
+      </p>
+
+      <p>
+            The other normal subgroups of <m>D_4</m> are the three 4-element subgroups, and <m>\{r_0, r_2\}</m>.  For any of the 4-element subgroups, <m>D_4/K</m> would have size <m>2</m>, so this would say that <m>H \cong \Z_2</m> (since that is the only 2-element group).
+      </p>
+      <p>
+            For <m>K = \{r_0, r_2\}</m>, we will have <m>|H| = 4</m>, so there are two possibilities: <m>\Z_4</m> or <m>\Z_2 \times \Z_2</m>.  Now any element not in this kernel, if you square it, you will get something in the kernel.  That is, <m>(aK)^2 = a^2K = K</m> for all <m>a \in D_4</m>.  Thus <m>D_4/K \cong \Z_2\times \Z_2</m>.    
+      </p>
+    </solution>
+  </exercise>
+</exercises>
+
+
+<exercises xml:id="collected-fht">
+  <title>Collected Homework</title>
+
+  <exercise number="C1">
+    <statement>
+      <p>
+          Let <m>G</m> be an abelian group.  Let <m>H = \{g^2 \st g \in G\}</m> and <m>K = \{g \in G \st g^2 = e\}</m>.
+        <ol>
+          <li>
+            <p>
+                Find <m>H</m> and <m>K</m> for the example <m>G = U(7)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+                Use the Fundamental Homomorphism Theorem the relate the groups <m>H</m> and <m>K</m>.  That is, find a surjective homomorphism from <m>G</m> to one of them, such that the other is the kernel.  Justify your claims (including that your function really is a homomorphism).  Then explain how one is isomorphic to a quotient group involving the other. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+  </exercise>
+
+</exercises>
+</section>
 
     <!-- Exercises with Solutions  -->
-    <!-- File: isomorph.xml  -->
-    <!-- Title: Isomorphisms -->
-  <exercises xml:id="exercises-isomorph" filenamebase="isomorph" permid="LZO">
-    <title>Exercises</title>
 
-    <exercise number="1" permid="PEo" xml:id="isomorph-exercise-Z-isomorphic-nZ">
-      <statement>
-        <p permid="Hqi">
-          Prove that <m>\mathbb Z \cong n \mathbb Z</m> for <m>n \neq 0</m>.
-        </p>
-      </statement>
-      <hint permid="yUy">
-        <p permid="mdD">
-          Every infinite cyclic group is isomorphic to
-          <m>{\mathbb Z}</m> by <xref ref="theorem-isomorph-2"/>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="2" permid="vLx" xml:id="isomorph-exercise-C-star-gl2-subgroup">
-      <statement>
-        <p permid="nxr">
-          Prove that <m>{\mathbb C}^\ast</m> is isomorphic to the subgroup of
-          <m>GL_2( {\mathbb R} )</m> consisting of matrices of the form
-          <me permid="ZmI">
-            \begin{pmatrix}
-            a &amp; b \\
-            -b &amp; a
-            \end{pmatrix}
-          </me>.
-        </p>
-      </statement>
-      <hint permid="LiQ">
-        <p permid="SkM">
-          Define <m>\phi: {\mathbb C}^* \rightarrow GL_2( {\mathbb R})</m> by
-          <me permid="FtR">
-            \phi(a + bi) = 
-            \begin{pmatrix}
-            a &amp; b \\
-            -b &amp; a
-            \end{pmatrix}
-          </me>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="3" permid="bSG" xml:id="isomorph-exercise-U8-Z4">
-      <statement>
-        <p permid="TEA">
-          Prove or disprove: <m>U(8) \cong {\mathbb Z}_4</m>.
-        </p>
-      </statement>
-      <hint permid="Xxi">
-        <p permid="yrV">
-          False.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="4" permid="HZP" xml:id="isomorph-exercise-U8-matrices">
-      <statement>
-        <p permid="zLJ">
-          Prove that <m>U(8)</m> is isomorphic to the group of matrices
-          <me permid="xPs">
-            \begin{pmatrix}
-            1 &amp; 0 \\
-            0 &amp; 1
-            \end{pmatrix},
-            \begin{pmatrix}
-            1 &amp; 0 \\
-            0 &amp; -1
-            \end{pmatrix},
-            \begin{pmatrix}
-            -1 &amp; 0 \\
-            0 &amp; 1
-            \end{pmatrix},
-            \begin{pmatrix}
-            -1 &amp; 0 \\
-            0 &amp; -1
-            \end{pmatrix}
-          </me>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="5" permid="ogY" xml:id="isomorph-exercise-U5-U10">
-      <statement>
-        <p permid="fSS">
-          Show that <m>U(5)</m> is isomorphic to <m>U(10)</m>, but <m>U(12)</m> is not.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="6" permid="Uoh" xml:id="isomorph-exercise-Zn-nth-roots-of-unity">
-      <statement>
-        <p permid="Mab">
-          Show that the <m>n</m>th roots of unity are isomorphic to <m>{\mathbb Z}_n</m>.
-        </p>
-      </statement>
-      <hint permid="vZS">
-        <p permid="eze">
-          Define a map from <m>{\mathbb Z}_n</m> into the <m>n</m>th roots of unity by <m>k \mapsto \cis(2k\pi / n)</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="7" permid="Avq" xml:id="isomorph-exercise-cyclic-group-order-n">
-      <statement>
-        <p permid="shk">
-          Show that any cyclic group of order <m>n</m> is isomorphic to <m>{\mathbb Z}_n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="8" permid="gCz" xml:id="isomorph-exercise-Q-not-isomorphic-Z">
-      <statement>
-        <p permid="Yot">
-          Prove that <m>{\mathbb Q}</m> is not isomorphic to <m>{\mathbb Z}</m>.
-        </p>
-      </statement>
-      <hint permid="ovt">
-        <p permid="KGn">
-          Assume that <m>{\mathbb Q}</m> is cyclic and try to find a generator.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="9" permid="MJI" xml:id="isomorph-exercise-R-minus-neg-1">
-      <statement>
-        <p permid="EvC">
-          Let <m>G = {\mathbb R} \setminus \{ -1 \}</m> and define a binary operation on <m>G</m> by
-          <me permid="Czl">
-            a \ast b = a + b + ab
-          </me>.
-          Prove that <m>G</m> is a group under this operation.
-          Show that <m>(G, *)</m> is isomorphic to the multiplicative group of nonzero real numbers.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="10" permid="sQR" xml:id="isomorph-exercise-3x3-matrices">
-      <statement>
-        <p permid="kCL">
-          Show that the matrices
-          <md permid="uUM">
-            <mrow>\begin{pmatrix}
-            1 &amp; 0 &amp; 0 \\
-            0 &amp; 1 &amp; 0 \\
-            0 &amp; 0 &amp; 1
-            \end{pmatrix}
-            \quad
-            \begin{pmatrix}
-            1 &amp; 0 &amp; 0 \\
-            0 &amp; 0 &amp; 1 \\
-            0 &amp; 1 &amp; 0
-            \end{pmatrix}
-            \quad
-            \begin{pmatrix}
-            0 &amp; 1 &amp; 0 \\
-            1 &amp; 0 &amp; 0 \\
-            0 &amp; 0 &amp; 1
-            \end{pmatrix}</mrow>
-            <mrow>\begin{pmatrix}
-            0 &amp; 0 &amp; 1 \\
-            1 &amp; 0 &amp; 0 \\
-            0 &amp; 1 &amp; 0
-            \end{pmatrix}
-            \quad
-            \begin{pmatrix}
-            0 &amp; 0 &amp; 1 \\
-            0 &amp; 1 &amp; 0 \\
-            1 &amp; 0 &amp; 0
-            \end{pmatrix}
-            \quad
-            \begin{pmatrix}
-            0 &amp; 1 &amp; 0 \\
-            0 &amp; 0 &amp; 1 \\
-            1 &amp; 0 &amp; 0
-            \end{pmatrix}</mrow>
-          </md>
-          form a group.
-          Find an isomorphism of <m>G</m> with a more familiar group of order <m>6</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="11" permid="YYa" xml:id="isomorph-exercise-groups-order-8">
-      <statement>
-        <p permid="QJU">
-          Find five non-isomorphic groups of order <m>8</m>.
-        </p>
-      </statement>
-      <hint permid="MYd">
-        <p permid="qNw">
-          There are two nonabelian and three abelian groups that are not isomorphic.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="12" permid="Ffj" xml:id="isomorph-exercise-S4-not-iso-D12">
-      <statement>
-        <p permid="wRd">
-          Prove <m>S_4</m> is not isomorphic to <m>D_{12}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="13" permid="lms" xml:id="isomorph-exercise-matrix-Dn">
-      <statement>
-        <p permid="cYm">
-          Let <m>\omega = \cis(2 \pi /n)</m> be a primitive <m>n</m>th root of unity.
-          Prove that the matrices
-          <me permid="Hje">
-            A =
-            \begin{pmatrix}
-            \omega &amp; 0 \\
-            0 &amp; \omega^{-1}
-            \end{pmatrix}
-            \quad \text{and} \quad
-            B =
-            \begin{pmatrix}
-            0 &amp; 1 \\
-            1 &amp; 0
-            \end{pmatrix}
-          </me>
-          generate a multiplicative group isomorphic to <m>D_n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="14" permid="RtB" xml:id="isomorph-exercise-2x2-matrix-group-Dn">
-      <statement>
-        <p permid="Jfv">
-          Show that the set of all matrices of the form
-          <me permid="Txw">
-            \begin{pmatrix}
-            \pm 1 &amp; k \\
-            0 &amp; 1
-            \end{pmatrix}
-          </me>,
-          is a group isomorphic to <m>D_n</m>,
-          where all entries in the matrix are in <m>{\mathbb Z}_n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="15" permid="xAK" xml:id="isomorph-exercise-Z4xZ2">
-      <statement>
-        <p permid="pmE">
-          List all of the elements of <m>{\mathbb Z}_4 \times {\mathbb Z}_2</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="16" permid="dHT" xml:id="isomorph-exercise-order-element-ZmxZn">
-      <statement>
-        <p permid="VtN">
-          Find the order of each of the following elements.
-
-          <ol permid="MCE">
-            <li permid="GNs">
-              <p permid="KrS">
-                <m>(3, 4)</m> in <m>{\mathbb Z}_4 \times {\mathbb Z}_6</m>
-              </p>
-            </li>
-
-            <li permid="mUB">
-              <p permid="qzb">
-                <m>(6, 15, 4)</m> in <m>{\mathbb Z}_{30} \times {\mathbb Z}_{45} \times {\mathbb Z}_{24}</m>
-              </p>
-            </li>
-
-            <li permid="TbK">
-              <p permid="WGk">
-                <m>(5, 10, 15)</m> in <m>{\mathbb Z}_{25} \times {\mathbb Z}_{25} \times {\mathbb Z}_{25}</m>
-              </p>
-            </li>
-
-            <li permid="ziT">
-              <p permid="iUC">
-                <m>(8, 8, 8)</m> in <m>{\mathbb Z}_{10} \times {\mathbb Z}_{24} \times {\mathbb Z}_{80}</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <hint permid="xPf">
-        <p permid="WUF">
-          (a) <m>12</m>; (c) <m>5</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="17" permid="JPc" xml:id="isomorph-exercise-D4-not-internal-direct-product">
-      <statement>
-        <p permid="BAW">
-          Prove that <m>D_4</m> cannot be the internal direct product of two of its proper subgroups.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="18" permid="pWl" xml:id="isomorph-exercise-subgroup-Qstar">
-      <statement>
-        <p permid="hIf">
-          Prove that the subgroup of
-          <m>{\mathbb Q}^\ast</m> consisting of elements of the form <m>2^m 3^n</m> for
-          <m>m,n \in {\mathbb Z}</m> is an internal direct product isomorphic to <m>{\mathbb Z} \times {\mathbb Z}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="19" permid="Wdu" xml:id="isomorph-exercise-S3xZ2">
-      <statement>
-        <p permid="NPo">
-          Prove that <m>S_3 \times {\mathbb Z}_2</m> is isomorphic to <m>D_6</m>.
-          Can you make a conjecture about <m>D_{2n}</m>?
-          Prove your conjecture.
-        </p>
-      </statement>
-      <hint permid="WrP">
-        <p permid="DbO">
-          Draw the picture.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="20" permid="CkD" xml:id="isomorph-exercise-subgroup-order-3">
-      <statement>
-        <p permid="tWx">
-          Prove or disprove: Every abelian group of order divisible by <m>3</m> contains a subgroup of order <m>3</m>.
-        </p>
-      </statement>
-      <hint permid="iGh">
-        <p permid="jiX">
-          True.
-        </p>
-      </hint>
-    </exercise>
-
-    <!--Todo Fix the solution to Exercise 20-->
-
-    <exercise number="21" permid="irM" xml:id="isomorph-exercise-subgroup-order-6-counterexample">
-      <statement>
-        <p permid="adG">
-          Prove or disprove: Every nonabelian group of order divisible by 6 contains a subgroup of order <m>6</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="22" permid="OyV" xml:id="isomorph-exercise-order-20">
-      <statement>
-        <p permid="GkP">
-          Let <m>G</m> be a group of order <m>20</m>.
-          If <m>G</m> has subgroups <m>H</m> and <m>K</m> of orders <m>4</m> and <m>5</m> respectively such that <m>hk = kh</m> for all <m>h \in H</m> and <m>k \in K</m>,
-          prove that <m>G</m> is the internal direct product of <m>H</m> and <m>K</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="23" permid="uGe" xml:id="isomorph-exercise-GxK-congruent-GxH">
-      <statement>
-        <p permid="mrY">
-          Prove or disprove the following assertion.
-          Let <m>G</m>, <m>H</m>, and <m>K</m> be groups.
-          If <m>G \times K \cong H \times K</m>, then <m>G \cong H</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="24" permid="aNn" xml:id="isomorph-exercise-order-51">
-      <statement>
-        <p permid="Szh">
-          Prove or disprove: There is a noncyclic abelian group of order <m>51</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="25" permid="GUw" xml:id="isomorph-exercise-order-52">
-      <statement>
-        <p permid="yGq">
-          Prove or disprove: There is a noncyclic abelian group of order <m>52</m>.
-        </p>
-      </statement>
-      <hint permid="Txj">
-        <p permid="Pqg">
-          True.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="26" permid="nbF" xml:id="isomorph-exercise-identity-isomorph">
-      <statement>
-        <p permid="eNz">
-          Let <m>\phi : G \rightarrow H</m> be a group isomorphism.
-          Show that <m>\phi( x) = e_H</m> if and only if <m>x=e_G</m>,
-          where <m>e_G</m> and <m>e_H</m> are the identities of <m>G</m> and <m>H</m>,
-          respectively.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="27" permid="TiO" xml:id="isomorph-exercise-cyclic-isomorph">
-      <statement>
-        <p permid="KUI">
-          Let <m>G \cong H</m>.
-          Show that if <m>G</m> is cyclic, then so is <m>H</m>.
-        </p>
-      </statement>
-      <hint permid="LSK">
-        <p permid="vxp">
-          Let <m>a</m> be a generator for <m>G</m>.
-          If <m>\phi :G \rightarrow H</m> is an isomorphism,
-          show that <m>\phi(a)</m> is a generator for <m>H</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="28" permid="zpX" xml:id="isomorph-exercise-order-p-Zp">
-      <statement>
-        <p permid="rbR">
-          Prove that any group <m>G</m> of order <m>p</m>,
-          <m>p</m> prime, must be isomorphic to <m>{\mathbb Z}_p</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="29" permid="fxg" xml:id="isomorph-exercise-Sn-A-n-plus-2">
-      <statement>
-        <p permid="Xja">
-          Show that <m>S_n</m> is isomorphic to a subgroup of <m>A_{n+2}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="30" permid="LEp" xml:id="isomorph-exercise-Dn-Sn">
-      <statement>
-        <p permid="Dqj">
-          Prove that <m>D_n</m> is isomorphic to a subgroup of <m>S_n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="31" xml:id="isomorph-exercise-comp-inv" permid="rLy">
-      <statement>
-        <p permid="jxs">
-          Let <m>\phi : G_1 \rightarrow G_2</m> and <m>\psi : G_2 \rightarrow G_3</m> be isomorphisms.
-          Show that <m>\phi^{-1}</m> and
-          <m>\psi \circ \phi</m> are both isomorphisms.
-          Using these results,
-          show that the isomorphism of groups determines an equivalence relation on the class of all groups.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="32" permid="XSH" xml:id="isomorph-exercise-U5-Z4">
-      <statement>
-        <p permid="PEB">
-          Prove <m>U(5) \cong {\mathbb Z}_4</m>.
-          Can you generalize this result for <m>U(p)</m>, where <m>p</m> is prime?
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="33" permid="DZQ" xml:id="isomorph-exercise-S3-cayleys-theorem">
-      <statement>
-        <p permid="vLK">
-          Write out the permutations associated with each element of <m>S_3</m> in the proof of Cayley's Theorem.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="34" permid="kgZ" xml:id="isomorph-exercise-automorphism">
-      <statement>
-        <p permid="bST">
-          An <term>automorphism</term> of a group <m>G</m> is an isomorphism with itself.
-          Prove that complex conjugation is an automorphism of the additive group of complex numbers;
-          that is, show that the map
-          <m>\phi( a + bi ) = a - bi</m> is an isomorphism from
-          <m>{\mathbb C}</m> to <m>{\mathbb C}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="35" permid="Qoi" xml:id="isomorph-exercise-complex-conjugation">
-      <statement>
-        <p permid="Iac">
-          Prove that <m>a + ib \mapsto a - ib</m> is an automorphism of <m>{\mathbb C}^*</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="36" permid="wvr" xml:id="isomorph-exercise-conjugation-matrix">
-      <statement>
-        <p permid="ohl">
-          Prove that <m>A \mapsto B^{-1}AB</m> is an automorphism of
-          <m>SL_2({\mathbb R})</m> for all <m>B</m> in <m>GL_2({\mathbb R})</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="37" permid="cCA" xml:id="isomorph-exercise-autG">
-      <statement>
-        <p permid="Uou">
-          We will denote the set of all automorphisms of <m>G</m> by <m>\aut(G)</m>.
-
-          <notation>
-            <usage>\aut(G)</usage>
-            <description>automorphism group of a group <m>G</m></description>
-          </notation>
-
-          Prove that <m>\aut(G)</m> is a subgroup of <m>S_G</m>,
-          the group of permutations of <m>G</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="38" permid="IJJ" xml:id="isomorph-exercise-aut-Z6">
-      <statement>
-        <p permid="AvD">
-          Find <m>\aut( {\mathbb Z}_6)</m>.
-        </p>
-      </statement>
-      <hint permid="hAO">
-        <p permid="bEy">
-          Any automorphism of <m>{\mathbb Z}_6</m> must send 1 to another generator of <m>{\mathbb Z}_6</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="39" permid="oQS" xml:id="isomorph-exercise-aut-Z">
-      <statement>
-        <p permid="gCM">
-          Find <m>\aut( {\mathbb Z})</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="40" permid="UYb" xml:id="isomorph-exercise-congruent-automorphism-groups">
-      <statement>
-        <p permid="MJV">
-          Find two nonisomorphic groups <m>G</m> and <m>H</m> such that <m>\aut(G) \cong \aut(H)</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="41" xml:id="isomorph-exercise-inner-aut" permid="Bfk">
-      <statement>
-        <p permid="sRe">
-          Let <m>G</m> be a group and <m>g \in G</m>.
-          Define a map <m>i_g : G \rightarrow G</m> by <m>i_g(x) = g x g^{-1}</m>.
-          Prove that <m>i_g</m> defines an automorphism of <m>G</m>.
-          Such an automorphism is called an
-          <term>inner automorphism</term>.
-          The set of all inner automorphisms is denoted by <m>\inn(G)</m>.
-
-          <notation>
-            <usage>i_g</usage>
-            <description><m>i_g(x) = gxg^{-1}</m></description>
-          </notation>
-
-          <notation>
-            <usage>\inn(G)</usage>
-            <description>inner automorphism group of a group <m>G</m></description>
-          </notation>
-
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="42" permid="hmt" xml:id="isomorph-exercise-inn-G">
-      <statement>
-        <p permid="YYn">
-          Prove that <m>\inn(G)</m> is a subgroup of <m>\aut(G)</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="43" permid="NtC" xml:id="isomorph-exercise-aut-Q8">
-      <statement>
-        <p permid="Ffw">
-          What are the inner automorphisms of the quaternion group <m>Q_8</m>?
-          Is <m>\inn(G) = \aut(G)</m> in this case?
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="44" permid="tAL" xml:id="isomorph-exercise-right-regular-rep">
-      <statement>
-        <p permid="lmF">
-          Let <m>G</m> be a group and <m>g \in G</m>.
-          Define maps <m>\lambda_g :G \rightarrow G</m> and <m>\rho_g :G \rightarrow G</m> by
-          <m>\lambda_g(x) = gx</m> and <m>\rho_g(x) = xg^{-1}</m>.
-          Show that <m>i_g = \rho_g \circ \lambda_g</m> is an automorphism of <m>G</m>.
-          The isomorphism <m>g \mapsto \rho_g</m> is called the
-          <term>right regular representation</term> of <m>G</m>.
-
-          <notation>
-            <usage>\rho_g</usage>
-            <description>right regular representation</description>
-          </notation>
-
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="45" permid="ZHU" xml:id="isomorph-exercise-isomorphism-internal-direct-product">
-      <statement>
-        <p permid="RtO">
-          Let <m>G</m> be the internal direct product of subgroups <m>H</m> and <m>K</m>.
-          Show that the map <m>\phi : G \rightarrow H \times K</m> defined by <m>\phi(g) = (h,k)</m> for <m>g =hk</m>,
-          where <m>h \in H</m> and <m>k \in K</m>, is one-to-one and onto.
-        </p>
-      </statement>
-      <hint permid="eGi">
-        <p permid="HLH">
-          To show that <m>\phi</m> is one-to-one,
-          let <m>g_1 = h_1 k_1</m> and
-          <m>g_2 = h_2 k_2</m> and consider <m>\phi(g_1) = \phi(g_2)</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise number="46" permid="FPd" xml:id="isomorph-exercise-subgroups-isomorphic-groups">
-      <statement>
-        <p permid="xAX">
-          Let <m>G</m> and <m>H</m> be isomorphic groups.
-          If <m>G</m> has a subgroup of order <m>n</m>,
-          prove that <m>H</m> must also have a subgroup of order <m>n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="47" permid="lWm" xml:id="isomorph-exercise-direct-product-isomorphic-groups">
-      <statement>
-        <p permid="dIg">
-          If <m>G \cong \overline{G}</m> and <m>H \cong \overline{H}</m>,
-          show that <m>G \times H \cong \overline{G} \times \overline{H}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="48" permid="Sdv" xml:id="isomorph-exercise-GxH-iso-HxG">
-      <statement>
-        <p permid="JPp">
-          Prove that <m>G \times H</m> is isomorphic to <m>H \times G</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="49" permid="ykE" xml:id="isomorph-exercise-product-gcd-1">
-      <statement>
-        <p permid="pWy">
-          Let <m>n_1, \ldots, n_k</m> be positive integers.
-          Show that
-          <me permid="NIk">
-            \prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
-          </me>
-          if and only if <m>\gcd( n_i, n_j) =1</m> for <m>i \neq j</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="50" permid="erN" xml:id="isomorph-exercise-AxB-abelian">
-      <statement>
-        <p permid="WdH">
-          Prove that <m>A \times B</m> is abelian if and only if <m>A</m> and <m>B</m> are abelian.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="51" permid="KyW" xml:id="isomorph-exercise-internal-direct-product-of-n-subgroups">
-      <statement>
-        <p permid="CkQ">
-          If <m>G</m> is the internal direct product of <m>H_1, H_2, \ldots, H_n</m>,
-          prove that <m>G</m> is isomorphic to <m>\prod_i H_i</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="52" permid="qGf" xml:id="isomorph-exercise-H1xH2-subgroup">
-      <statement>
-        <p permid="irZ">
-          Let <m>H_1</m> and <m>H_2</m> be subgroups of <m>G_1</m> and <m>G_2</m>,
-          respectively.
-          Prove that <m>H_1 \times H_2</m> is a subgroup of <m>G_1 \times G_2</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="53" permid="WNo" xml:id="isomorph-exercise-d-gcd-iff">
-      <statement>
-        <p permid="Ozi">
-          Let <m>m, n \in {\mathbb Z}</m>.
-          Prove that <m>\langle m,n \rangle = \langle d \rangle</m> if and only if <m>d = \gcd(m,n)</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="54" permid="CUx" xml:id="isomorph-exercise-lcm">
-      <statement>
-        <p permid="uGr">
-          Let <m>m, n \in {\mathbb Z}</m>.
-          Prove that <m>\langle m \rangle \cap \langle n \rangle = \langle l \rangle</m> if and only if <m>l = \lcm(m,n)</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="55" xml:id="isomorph-exercise-classify-2p" permid="jbG">
-      <title>Groups of order <m>2p</m></title>
-      <statement>
-        <p permid="aNA">
-          In this series of exercises we will classify all groups of order <m>2p</m>,
-          where <m>p</m> is an odd prime.
-
-          <ol permid="sJN">
-            <li permid="fqc">
-              <p permid="PbL">
-                Assume <m>G</m> is a group of order <m>2p</m>,
-                where <m>p</m> is an odd prime.
-                If <m>a \in G</m>, show that <m>a</m> must have order <m>1</m>,
-                <m>2</m>, <m>p</m>, or <m>2p</m>.
-              </p>
-            </li>
-
-            <li permid="Lxl">
-              <p permid="viU">
-                Suppose that <m>G</m> has an element of order <m>2p</m>.
-                Prove that <m>G</m> is isomorphic to <m>{\mathbb Z}_{2p}</m>.
-                Hence, <m>G</m> is cyclic.
-              </p>
-            </li>
-
-            <li permid="rEu">
-              <p permid="bqd">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m>.
-                Show that <m>G</m> must contain an element of order <m>p</m>.
-                <em>Hint</em>: Assume that <m>G</m> does not contain an element of order <m>p</m>.
-              </p>
-            </li>
-
-            <li permid="XLD">
-              <p permid="Hxm">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m>.
-                Show that <m>G</m> must contain an element of order <m>2</m>.
-              </p>
-            </li>
-
-            <li permid="DSM">
-              <p permid="nEv">
-                Let <m>P</m> be a subgroup of <m>G</m> with order <m>p</m> and <m>y \in G</m> have order <m>2</m>.
-                Show that <m>yP = Py</m>.
-              </p>
-            </li>
-
-            <li permid="jZV">
-              <p permid="TLE">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m> and
-                <m>P = \langle z \rangle</m> is a subgroup of order <m>p</m> generated by <m>z</m>.
-                If <m>y</m> is an element of order <m>2</m>,
-                then <m>yz = z^ky</m> for some <m>2 \leq k \lt p</m>.
-              </p>
-            </li>
-
-            <li permid="Qhe">
-              <p permid="zSN">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m>.
-                Prove that <m>G</m> is not abelian.
-              </p>
-            </li>
-
-            <li permid="won">
-              <p permid="fZW">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m> and
-                <m>P = \langle z \rangle</m> is a subgroup of order <m>p</m> generated by <m>z</m> and <m>y</m> is an element of order <m>2</m>.
-                Show that we can list the elements of <m>G</m> as <m>\{z^iy^j\mid 0\leq i \lt p, 0\leq j \lt 2\}</m>.
-              </p>
-            </li>
-
-            <li permid="cvw">
-              <p permid="Mhf">
-                Suppose that <m>G</m> does not contain an element of order <m>2p</m> and
-                <m>P = \langle z \rangle</m> is a subgroup of order <m>p</m> generated by <m>z</m> and <m>y</m> is an element of order <m>2</m>.
-                Prove that the product <m>(z^iy^j)(z^ry^s)</m> can be expressed as a uniquely as <m>z^m y^n</m> for some non negative integers <m>m, n</m>.
-                Thus, conclude that there is only one possibility for a non-abelian group of order <m>2p</m>,
-                it must therefore be the one we have seen already, the dihedral group.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-
-  </exercises>
-
+    <xi:include href="./exercises/isomorphisms-additional.ptx" />
+ 
+    <xi:include href="./exercises/automorphisms-additional.ptx" />
 
 
   <section xml:id="isomorph-sage" permid="QJH">

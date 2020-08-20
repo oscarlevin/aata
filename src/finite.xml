@@ -554,8 +554,7 @@
           We are defining a map <m>\phi : {\mathbb Z}_2^3 \rightarrow {\mathbb Z}_2^6</m> by <m>\phi  : f(x) \mapsto g(x) f(x)</m>.
           It is easy to check that this map is a group homomorphism.
           In fact, if we regard <m>{\mathbb Z}_2^n</m> as a vector space over <m>{\mathbb Z}_2</m>,
-          <m>\phi</m> is a linear transformation of vector spaces
-          (see <xref ref="vect-exercise-linear-transformation"/>, <xref ref="vect"/>).
+          <m>\phi</m> is a linear transformation of vector spaces.
           Let us compute the kernel of <m>\phi</m>.
           Observe that <m>\phi ( a_0, a_1, a_2 ) = (000000)</m> exactly when
           <md permid="pYY">

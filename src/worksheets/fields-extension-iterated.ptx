@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-extension-iterated">
+    <title>Activity: Iterated Extensions</title>
+
+    <introduction>
+        <p>
+          We now have a fairly good idea how to work with <m>\Q(\alpha)</m>.  What if we consider <m>\Q(\sqrt[3]{5}, \sqrt{7})</m>, the smallest field containing <m>\Q</m>, <m>\sqrt[3]{5}</m> and also <m>\sqrt{7}</m>?
+
+        </p>
+    </introduction>
+
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          We can think of this as an extension of an extension.  Take <m>\Q(\sqrt[3]{5})</m> as our base field.  Adjoin to that <m>\sqrt{7}</m> to get <m>\Q(\sqrt[3]{5}, \sqrt{7})</m>.  
+          What is <m>[\Q(\sqrt[3]{5}, \sqrt{7}):\Q(\sqrt[3]{5})]</m>?  
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Over <m>\Q(\sqrt[3]{5})</m>, the minimal polynomial for <m>\sqrt{7}</m> is still <m>x^2 - 7</m>.  For what else could it be?  The only way that there could be a smaller degree polynomial would be for there to be a degree 1 polynomial, but in that case, we would have <m>\sqrt{7} \in \Q(\sqrt[3]{5})</m>.  It is not obvious, but this is not the case.
+        </p>
+        
+        <p>
+          Give that, we know that the <m>[\Q(\sqrt[3]{5}, \sqrt{7}):\Q(\sqrt[3]{5})] = 2</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise workspace="15%">
+        <statement>
+        <p> 
+          What is a basis for <m>\Q(\sqrt[3]{5}, \sqrt{7})</m> over <m>\Q(\sqrt[3]{5})</m>?  How do you know that this basis spans <m>\Q(\sqrt[3]{5}, \sqrt{7})</m>?
+        </p>
+       </statement>
+       <solution>
+         <p>
+           A basis will be <m>\{1, \sqrt{7}\}</m>. 
+         </p>
+       </solution>
+    </exercise>
+    
+
+        
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Using the basis above and the basis for <m>\Q(\sqrt[3]{5})</m> over <m>\Q</m>, find a basis for <m>\Q(\sqrt[3]{5}, \sqrt{7})</m> over <m>\Q</m>.  
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A basis for <m>\Q(\sqrt[3]{5})</m> over <m>\Q</m> is <m>\{1, \sqrt[3]{5}, \sqrt[3]{5}^2\}</m>.  So every element of <m>\Q(\sqrt[3]{5})</m> can be written in the form <m>a+b\sqrt[3]{5} + c \sqrt[3]{5}^2</m>.  
+          These are the coefficients we can multiply by basis elements <m>\{1, \sqrt{7}\}</m> for
+          <m>\Q(\sqrt[3]{5},\sqrt{7})</m> over <m>\Q(\sqrt[3]{5})</m>.  So a general element in <m>\Q(\sqrt[3]{5}, \sqrt{7})</m> has the form 
+          <me>
+            a+b\sqrt[3]{5} + c\sqrt[3]{5}^2 + a'\sqrt{7} + b'\sqrt[3]{5}\sqrt{7} + c'\sqrt[3]{5}^2\sqrt{7}.
+          </me>
+          A basis is thus 
+          <me>
+            \{1, \sqrt[3]{5}, \sqrt[3]{5}^2, \sqrt{7}, \sqrt[3]{5}\sqrt{7}, \sqrt[3]{5}^2\sqrt{7} \}.
+          </me>
+          
+        </p>
+      </solution>
+    </exercise>
+        
+        <exercise workspace="15%">
+          <statement>
+            <p>
+              What is <m>[\Q(\sqrt[3]{5}, \sqrt{7}):\Q]</m>?  What is the general rule for degrees of extensions of extensions?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              From looking at the basis above, we see that the degree over <m>\Q</m> is 6, which is of course, <m>2 \cdot 3</m>.  It certainly appears this will always work.  In other words, if <m>K</m> is an extension of <m>F</m>, which is an extension of <m>E</m>, we have 
+              <me>
+                [K:E] = [K:F]\cdot [F:E].
+              </me>
+              
+            </p>
+          </solution>
+        </exercise>
+        
+        <exercise workspace="0%">
+          <statement>
+            <p>
+              What is <m>[\Q(\sqrt{2}, \sqrt[4]{2}):\Q]</m>?
+            </p>
+          
+          </statement>
+          <solution>
+            <p>
+              At first, this might look like a counterexample to the <q>tower rule</q> we gave above.  The minimum polynomial for <m>\sqrt[4]{2}</m> over <m>\Q</m> is <m>x^4 - 2</m>, which has degree 4.  The minimum polynomial for <m>\sqrt{2}</m> is <m>x^2 - 2</m>.  
+              However, <m>[\Q(\sqrt{2}, \sqrt[4]{2}):\Q] = 4</m>, not 8.  This can be seen easily by noticing that <m>\Q(\sqrt{2}, \sqrt[4]{2}) = \Q(\sqrt[4]{2})</m>, as this already contains <m>\sqrt{2}</m>.
+            </p>
+            
+            <p>
+              The point is that the tower rule is correct: you do multiply the degrees of each extension.  But these degrees are not always the degree of the minimal polynomials over the base field.  Each time you go up one floor in the tower, you must again ask what the minimum polynomial for the next element you adjoin is.
+            </p>
+          </solution>
+        </exercise>
+    
+      
+
+</worksheet>

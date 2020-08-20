@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_grp-struct-series">
+    <title>Activity: (Sub)Normal Series</title>
+
+    <introduction>
+      <p>
+        Given a group, we can look at subgroups.  We say that a sequence of subgroups
+        <me>G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{e\}</me>
+        is a <term>subnormal series</term> provided each <m>H_i</m> is normal in <m>H_{i+1}</m>, and a <term>normal series</term> if each <m>H_i</m> is normal in <m>G</m>.
+      </p>
+      
+      <p>
+        A non-trivial group <m>G</m> is called <term>simple</term> provided it has no non-trivial normal subgroups.  We say that a subnormal series is a <term>composition series</term> and that a normal series is a <term>principle series</term> if every quotient group <m>H_{i+1}/H_i</m> is simple.
+      </p>
+    </introduction>
+
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Find a subnormal series for <m>D_4</m>. Is it a normal series?
+        </p>
+      </statement>
+      <solution>
+        <p>
+
+        </p>
+      </solution>
+    </exercise>
+
+
+    <exercise workspace="15%">
+        <statement>
+        <p> 
+          Find two different normal series for <m>\Z_{60}</m> of length 3 (length is the number of proper inclusions).
+
+        </p>
+       </statement>
+       <solution>
+         <p>
+
+         </p>
+       </solution>
+    </exercise>
+    
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Find the quotient groups <m>H_{i+1}/H_i</m> for both series above.  How are these related?  Are the series composition series?
+
+        </p>
+      </statement>
+      <solution>
+        <p>
+
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          Find a composition series for <m>\Z_{60}</m>.  Can you take it to be a <term>refinement</term> of the normal series you found above?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          
+        </p>
+      </solution>
+    </exercise>
+
+</worksheet>

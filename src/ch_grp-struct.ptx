@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2018  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2018  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="struct-more" permid="YWA">
+  <title>More of the Structure of Groups</title>
+  <introduction permid="YBb">
+    <p permid="PKf">
+      The ultimate goal of group theory is to classify all groups up to isomorphism;
+      that is, given a particular group,
+      we should be able to match it up with a known group via an isomorphism.
+      For example,
+      we have already proved that any finite cyclic group of order <m>n</m> is isomorphic to <m>{\mathbb Z}_n</m>;
+      hence, we <q>know</q> all finite cyclic groups.
+      It is probably not reasonable to expect that we will ever know all groups;
+      however, we can often classify certain types of groups or distinguish between groups in special cases.
+    </p>
+
+    <p permid="vRo">
+      In this chapter we will characterize all finite abelian groups.
+      <!-- We shall also investigate groups with sequences of subgroups.
+      If a group has a sequence of subgroups, say
+      <me permid="Dao">
+        G = H_n \supset H_{n - 1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
+      </me>,
+      where each subgroup <m>H_i</m> is normal in <m>H_{i+1}</m> and each of the factor groups <m>H_{i+1}/H_i</m> is abelian,
+      then <m>G</m> is a solvable group.
+      In addition to allowing us to distinguish between certain classes of groups,
+      solvable groups turn out to be central to the study of solutions to polynomial equations. -->
+    </p>
+  </introduction>
+<xi:include href="./sec_groups-order.ptx"/>
+<xi:include href="./sec_groups-lagrange.ptx"/>
+  <xi:include href="./sec_grp-struct-products.ptx"/>
+  <xi:include href="./sec_grp-struct-fags.ptx"/>
+
+  
+
+</chapter>

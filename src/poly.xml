@@ -341,6 +341,134 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-polynomial-rings">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+          List out all polynomials of degree 2 in the ring <m>\Z_2[x]</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          The coefficients must be either 0 or 1.  The coefficient of <m>x^2</m> must be 1, otherwise the degree would be less than 2.  For each of the other terms, we could have coefficient 0 or 1, so there are 4 polynomials:<m>x^2 + x + 1</m>,            <m>x^2 + x</m>,            <m>x^2 + 1</m>, and <m>x^2</m>. 
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          How many polynomials of degree 2 are there in <m>\Z_3[x]</m>?  Explain.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          The coefficient of <m>x^2</m> must be a 1 or 2.  The coefficient of <m>x</m> and the constant can be 0, 1, or 2.  Thus there are <m>2\cdot 3 \cdot 3 = 18</m> polynomials of degree 2 in this ring.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Are there polynomials of degree 4 in <m>\Z_3[x]</m>?  Explain.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          Yes!  The <em>coefficients</em> must be from <m>\Z_3</m>.  The powers of <m>x</m> are any integer.  In particular, there are infinitely many polynomials in <m>\Z_3[x]</m>.  
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Consider the two polynomials <m>p(x) = 5x^2 + 3x + 6</m> and <m>q(x) = 4x^2 - x + 9</m>.  
+            <ol>
+              <li>
+                <p>
+                Compute <m>p(x)+q(x)</m> and <m>p(x)q(x)</m> in the ring <m>\Z[x]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Compute <m>p(x)+q(x)</m> and <m>p(x)q(x)</m> in the ring <m>\R[x]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Compute <m>p(x)+q(x)</m> and <m>p(x)q(x)</m> in the ring <m>\Z_{12}[x]</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>p(x)+q(x) = 9x^2 +2x + 15</m> and 
+                  <md>
+                    <mrow> p(x)q(x) \amp = 20x^4 - 5x^3 + 45x^2 + 12x^3 -3x^2 + 18x + 24x^2 - 6x + 54</mrow>
+                    <mrow>  \amp = 20x^4 + 7x^3 + 66x^2 + 12x + 54</mrow>
+                  </md>.
+                </p>
+              </li>
+              <li>
+                <p>
+                We will get the same thing as in the previous part.
+                </p>
+              </li>
+              <li>
+                <p>
+                We can take our same calculations from (a) and reduce the results mod 12.  Or we could have reduced as we went (thanks to the homomorphism property).  So we get <m>p(x) + q(x) = 9x^2 + 2x + 3</m> and <m>p(x)q(x) = 8x^4 + 7x^3 + 6x^2 + 6</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-polynomial-rings">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Suppose <m>p(x)</m> and <m>q(x)</m> are polynomials in <m>R[x]</m> where <m>R</m> is a commutative ring with unity.  We want to understand how the degree of <m>p(x) + q(x)</m> and <m>p(x)q(x)</m> relate to the degrees of <m>p(x)</m> and <m>q(x)</m>.  
+            <ol>
+              <li>
+                <p>
+                Give an example of polynomials <m>p(x)</m> and <m>q(x)</m> in <m>\Z[x]</m> so that <m>\deg(p(x) + q(x)) \lt \max(\deg p(x),\deg q(x))</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Give an example of polynomials <m>p(x)</m> and <m>q(x)</m> in <m>\Z_{12}[x]</m> so that <m>\deg(p(x)q(x)) \lt \deg p(x) + \deg q(x)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                Can you repeat the previous part if <m>p(x)</m> and <m>q(x)</m> were polynomials in <m>\Z_{11}[x]</m>?  Explain.
+                </p>
+              </li>
+              <li>
+                <p>
+                What can you say in general?  In particular, in what situations can you claim that <m>\deg(p(x)+q(x)) = \max(\deg p(x), \deg q(x))</m> and in what situations can you claim that <m>\deg(p(x)q(x)) = \deg p(x) + \deg q(x)</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+    </exercises>
   </section>
 
   <section xml:id="section-poly-division-algorithm" permid="jqo">
@@ -765,6 +893,211 @@
         </statement>
       </exercise>
     </reading-questions>
+    <exercises xml:id="practice-polynomial-division-algorithm">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+            In <m>\Z_7[x]</m>, find the quotient and remainder as in the division algorithm for <m>a(x) = 5x^3 + 6x^2 - 3x + 4</m> and <m>b(x) = x-2</m>.  Then verify that <m>r(x)</m> is <m>a(2)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>5x^3 + 6x^2 - 3x + 4 = (5x^2 + 2x + 1)(x-2) + 6</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            In <m>\Z_5[x]</m>, find the quotient and remainder as in the division algorithm for <m>a(x) = 4x^5 - x^3 +x^2 + 4</m> and <m>b(x) = x^3-2</m>.  
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>4x^5 - x^3 +x^2 + 4 = (4x^2 + 4)(x^3 +3) + 4x^2 + 2</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose the ideal <m>J</m> of <m>\Z</m> is the smallest ideal that contains both 231 and 429.  Find a single element <m>p \in \Z</m> such that <m>J = \langle p \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have <m>J = \langle 33 \rangle</m>.  Note that <m>\langle 3 \rangle</m> and <m>\langle 11 \rangle</m> and <m>\langle 1 \rangle</m> are also ideals that contains 231 and 429, but these are larger ideals.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose the ideal <m>J</m> of <m>\Q[x]</m> is the smallest ideal that contains both <m>x^2 - 2x - 3</m> and <m>x^3 - 5x^2 + 6x</m>.  Find a single element <m>p \in \Q[x]</m> such that <m>J = \langle p \rangle</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Factor the polynomials
+          </p>
+        </hint>
+        <solution>
+          <p>
+            The polynomials factor as <m>(x-1)(x-3)</m> and <m>x(x-2)(x-3)</m>.  Thus the greatest common divisor for the two polynomials is <m>x-3</m> so both are in the ideal <m>\langle x-3\rangle</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose the ideal  <m>J</m> of <m>\Z_5[x]</m> is the smallest ideal that contains both <m>2x^7 + 4</m> and <m>x^7 + 1</m>.  Find a single element <m>p \in \Z_5[x]</m> such that <m>J = \langle p \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Note that if the ideal contains these polynomials then it also contains <m>2x^7 + 2</m> and thus also <m>2x^7 + 4 - (2x^7 + 2) = 2</m>, and then also 1 (since <m>2\cdot 3 \in J</m> too).  Thus <m>J = \langle 1 \rangle = \Z_5[x]</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>J</m> be an ideal that contains polynomials <m>a(x)</m> and <m>b(x)</m> in <m>F[x]</m> for some field <m>F</m>.  If <m>r(x)</m> is the remainder when <m>a(x)</m> is divided by <m>b(x)</m>, prove that <m>r(x)</m> is also in the ideal <m>J</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            By the division algorithm, <m>a(x) = q(x)b(x) + r(x)</m>, which in turn means that <m>a(x) - q(x)b(x) = r(x)</m>.  But <m>-q(x)b(x) \ in J</m> (since <m>J</m> absorbs products) and thus so is <m>a(x) - q(x)b(x) = r(x)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            In the previous problem you proved that if <m>a(x), b(x) \in J</m> and <m>a(x) = q(x)b(x) + r(x)</m>, then <m>r(x) \in J</m>.  If you then apply the division algorithm again, to <m>b(x)</m> and <m>r(x)</m>, to find <m>b(x) = q'(x)r(x) + r'(x)</m>, you would have that <m>r'(x) \in J</m> as well.
+          </p>
+          <p>
+            What would happen if you kept doing this?  Would it go on forever?  If it stops, how would it?  And what does this have to do with the GCD?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know that the process cannot go on forever, since each time the new remainder is smaller than the previous remainder (the new divisor).  Thus eventually this must stop (by having a remainder of zero).
+          </p>
+          <p>
+            The last non-zero remainder will in fact be the greatest common divisor of <m>a(x)</m> and <m>b(x)</m>, since it will be the smallest degree polynomial in the ideal.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Does <m>3x^3 - 4x^2 - x + 4</m>, as a polynomial in <m>\Z_5[x]</m> have any roots?  What does this tell you about whether the polynomial can factor in <m>\Z_5[x]</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are no roots.  Since any factorization would need to include a linear term, this says that the polynomial is irreducible.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find two different factorizations of <m>x^2 + x + 8</m> in <m>\Z_{10}[x]</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            One factorization is <m>(x+2)(x+9)</m>.  Are there other ways to multiply to <m>8</m> in <m>\Z_{10}</m>?
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-polynomial-division-algorithm">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Let <m>F</m> be a field and <m>p(x)</m> be a polynomial in <m>F[x]</m>.  Let <m>a \in F</m> be some element in <m>F</m>.  What will the remainder be when you divide <m>p(x)</m> by <m>x-a</m>?  We saw in class that if <m>a</m> is a root of <m>p(x)</m>, then the remainder will be zero.  But what if <m>a</m> is not a root?
+            <ol>
+              <li>
+                <p>
+                Try a few examples and conjecture a formula for the remainder.  Then use the division algorithm to prove your conjecture.
+                </p>
+              </li>
+              <li>
+                <p>
+                Restate the result you proved in the language of ideals.  In other words, which coset of the ideal <m>\langle x-a\rangle</m> will the remainder belong to?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise number="C2">
+        <introduction>
+          <p>
+          This exercise has basically the same content as the previous one.  In both parts below, you should use the division algorithm.
+          </p>
+        </introduction>
+        <statement>
+          <p>
+          Let <m>F</m> be a field, <m>a \in F</m> and <m>p(x) \in F[x]</m>. 
+            <ol>
+              <li>
+                <p>
+               Prove that when <m>p(x)</m> is divided by <m>x-a</m>, the remainder is the constant <m>p(a)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+              Prove that for any polynomial <m>b(x) \in F[x]</m>, the polynomial <m>p(x)</m> and the remainder when <m>p(x)</m> is divided by <m>b(x)</m> are in the same coset of <m>F[x]/\langle b(x)\rangle</m>.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <!-- <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                By the division algorithm, there are polynomials <m>q(x)</m> and <m>r(x)</m> such that 
+                <me>
+                  p(x) = q(x)(x-a) + r(x)
+                </me>
+                where <m>r(x) = 0</m> or <m>\deg r(x) \lt \deg (x-a)</m>.  This means that if <m>r(x)</m> is not the zero polynomial, then <m>r(x)</m> is a constant <m>r</m> (since it must have degree 0).
+              </p>
+
+              <p>
+                Now consider <m>p(a) = q(a)(a-a) + r</m>.  This says that <m>p(a) = r</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>r(x)</m> be the remainder when <m>p(x)</m> is divided by <m>b(x)</m>.  That is, <m>p(x) = q(x)b(x) + r(x)</m>.  In terms of cosets, this says that <m>p(x) \in \langle b(x)\rangle + r(x)</m>, which says that <m>\langle b(x) \rangle + p(x) = \langle b(x) \rangle + r(x)</m>, exactly what we want to show.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution> -->
+      </exercise>
+    </exercises>
   </section>
 
   <section xml:id="section-irreducible-poly" permid="Pxx">
@@ -1281,14 +1614,1150 @@
         </statement>
       </exercise>
     </reading-questions>
+
+    <exercises xml:id="practice-irreducible-polynomials">
+      <title>Practice Problems</title>
+
+      <exercise>
+        <statement>
+          <p>
+          True or false: <m>3x+ 9</m> is irreducible in <m>\Q[x]</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          True.  While <m>3x+9 = 3(x+3)</m>, we have not written the polynomial as  the product of two polynomials of smaller degree.  If fact, all degree 1 polynomials in <m>F[x]</m> were <m>F</m> is a field are irreducible because you can't have two degree 0 polynomials multiply to be a degree 1 polynomial.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Factor <m>x+2</m> in <m>\Z_6[x]</m> into two degree 1 polynomials.  Does this mean that <m>x+2</m> is not irreducible?
+          </p>
+        </statement>
+        <solution>
+          <p>
+          We have <m>x+2 = (2x+1)(3x+2)</m>.  This is strange.  Under our definition, the polynomial is still irreducible, but it does now factor into polynomials of positive degree (which would be an equivalent definition if the coefficients came from a field).
+          </p>
+        </solution>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+          Factor the polynomial <m>x^5 - 6x^3 - 6x^2 - 7x - 6</m> over <m>\Q</m> into irreducible factors (and explain how you know the irreducible factors are irreducible).
+          </p>
+        </statement>
+        <solution>
+          <p>
+          Using either the corollary to Gauss's lemma or the rational roots theorem, we know the only possible roots are <m>\pm 1</m>,            <m>\pm 2</m>,            <m>\pm 3</m>, and <m>\pm 6</m>.  Checking each of these shows that <m>x = -2</m>,            <m>x = -1</m> and <m>x = 3</m> are roots.  After doing long division, we find the polynomial factors as 
+            <me>(x-3)(x+1)(x+2)(x^2+1)</me>.
+          This is completely factored over <m>\Q</m> now.  The last quadratic factor is irreducible because if it were to factor, it would factor as linear terms, but it has no roots in <m>\Q</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Factor the polynomial <m>x^5 + x^4 + 3x^3 + 3x^2 + 2x + 2</m> completely over <m>\Z_5</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          We start by checking for roots (there are only 5 possibilities in <m>\Z_5</m>).  We find that <m>2</m>,            <m>3</m>, and <m>4</m> are roots.  Dividing by the corresponding factors gives us 
+            <me>
+            (x-2)(x-3)(x-4)(x^2 + 2) = (x+3)(x+2)(x+1)(x^2+2).
+            </me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Factor <m>4x^7 + 10x^4 - 15x^2 + 5</m> completely over <m>\Q</m> (and explain how you know the irreducible factors are irreducible).
+          </p>
+        </statement>
+        <solution>
+          <p>
+          The polynomial is already factored.  It is irreducible over <m>\Q</m> by Eisenstein's criterion using <m>p = 5</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Give an example of a polynomial with integer coefficients which has no roots in <m>\Q</m> but is <em>not</em> irreducible in <m>\Q[x]</m>.  Explain how you know your example works.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          Here is such a polynomial: <m>x^4 + 2x^2 + 1 = (x^2 + 1)(x^2+1)</m>.  Clearly it is not irreducible, and the only possible roots are <m>pm 1</m> neither of which are roots.  The point is that because the degree of the polynomial is greater than 3, it could factor as non-linear terms; roots only correspond to linear factors.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Give an example of a polynomial with integer coefficients that is irreducible but that you can't use Eisenstein's criterion to prove is irreducible.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          For example, <m>x^2 + 4x + 8</m> must be irreducible, because it is degree 2 and has not roots.  However, the only prime that we could use for Eisenstein's criterion would be <m>p = 2</m> and <m>2^2 = 4</m> divides the constant, so Eisenstein's criterion does not apply.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-irreducible-polynomials">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Explain how you know each of the following polynomials are irreducible in the given ring.  Reference the appropriate theorem when appropriate.
+            <ol>
+              <li>
+                <p>
+                  <m>f(x) = x^3 + 3x^2 + 4x + 5</m> in <m>\Q[x]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>g(x) = x^2 + 3x + 5</m> in <m>\Z_7[x]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>h(x) = x^5 + 6x^4 + 9x^2 + 3</m> in <m>\Q[x]</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise number="C2">
+        <statement>
+          <p>
+          You cannot apply Eisenstein's criterion to the polynomial <m>p(x) = x^3 - 3x + 1</m>.  However, we can apply it to <m>p(x+c)</m> for a carefully picked value of <m>c</m>.
+            <ol>
+              <li>
+                <p>
+                Prove that for any polynomial <m>p(x)</m> and any constant <m>c</m>, if <m>p(x+c)</m> is irreducible, then so is <m>p(x)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                For <m>p(x) = x^3 - 3x + 1</m>, prove that <m>p(x+2)</m> is irreducible.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+          For part (a), prove the contrapositive.  
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>
   </section>
 
+
+  <section xml:id="sec-factoring-c-r">
+    <title>Factoring over <m>\C</m> and <m>\R</m></title>
+    <introduction>
+      <p>
+        We will now consider how to factor over the larger fields <m>\R</m> and <m>\C</m>.  It will turn out that even if we only care about factoring polynomials over the real numbers, working in the complex numbers is helpful.  Thus we begin by reviewing a bit about the complex numbers and describing some of their group structure.
+      </p>
+    </introduction>
+
+      <subsection xml:id="section-mult-group-c" permid="sHa">
+        <title>Multiplicative Group of Complex Numbers</title>
+          <p permid="cHr">
+          The <term>complex numbers</term> are defined as
+            <me permid="eKZ">
+            {\mathbb C} = \{ a + bi : a, b \in {\mathbb R} \}
+            </me>,
+          where <m>i^2 = -1</m>.
+          If <m>z = a + bi</m>, then <m>a</m> is the <term>real part</term>
+          of <m>z</m> and <m>b</m> is the
+            <term>imaginary part</term> of <m>z</m>.
+          </p>
+
+          <p permid="IOA">
+          To add two complex numbers <m>z=a+bi</m> and <m>w= c+di</m>,
+          we just add the corresponding real and imaginary parts:
+            <me permid="KSi">
+            z + w=(a + bi ) + (c + di)  =  (a + c) + (b + d)i
+            </me>.
+          Remembering that <m>i^2 = -1</m>,
+          we multiply complex numbers just like polynomials.
+          The product of <m>z</m> and <m>w</m> is
+            <me permid="qZr">
+            (a + bi )(c + di)  =   ac + bdi^2 + adi + bci =  (ac -bd) +(ad + bc)i
+            </me>.
+          </p>
+
+          <p permid="oVJ">
+          Every nonzero complex number
+            <m>z = a +bi</m> has a multiplicative inverse;
+          that is, there exists a <m>z^{-1} \in {\mathbb C}^\ast</m> such that <m>z z^{-1} = z^{-1} z = 1</m>.
+          If <m>z = a + bi</m>, then
+            <me permid="XgA">
+            z^{-1} = \frac{a-bi}{ a^2 + b^2  }
+            </me>.
+          The <term>complex conjugate</term>
+            <idx>
+              <h>Conjugate, complex</h>
+            </idx>
+          of a complex number <m>z = a + bi</m> is defined to be <m>\overline{z} = a- bi</m>.
+          The <term>absolute value</term> or <term>modulus</term>
+          of  <m>z = a + bi</m>  is <m>|z| = \sqrt{a^2 + b^2}</m>.
+          </p>
+
+          <example xml:id="example-cyclic-complex-add" permid="KYZ">
+            <p permid="aSe">
+            Let <m>z = 2 + 3i</m> and <m>w = 1-2i</m>.
+            Then
+              <me permid="DnJ">
+              z + w = (2 + 3i) + (1 - 2i) = 3 + i
+              </me>
+            and
+              <me permid="juS">
+              z  w = (2 + 3i)(1 - 2i ) = 8 - i
+              </me>.
+            Also,
+              <md permid="PCb">
+                <mrow>z^{-1} &amp; = \frac{2}{13} - \frac{3}{13}i</mrow>
+                <mrow>|z| &amp; = \sqrt{13}</mrow>
+                <mrow>\overline{z} &amp; = 2-3i</mrow>
+              </md>.
+            </p>
+          </example>
+
+          <figure xml:id="figure-rectcoord" permid="Nyt">
+            <caption>Rectangular coordinates of a complex number</caption>
+            <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+            <image xml:id="cyclic-complex-rectangular" permid="KwJ">
+              <description>The complex plane where the horizontal axis is the x-axis or real axis and the verticle axis is the y-axis or imaginary axis. The point z1 = 2 + 3i is in the upper right quadrant, the point z2 = 1- 2i in the lower right quadrant, and z3 = -3 + 2i in the upper right quadrant.</description>
+
+              <latex-image>
+                <xi:include href="tikz/cyclic-complex-rectangular.tex" parse="text"/>
+              </latex-image>
+            </image>
+
+          </figure>
+
+          <p permid="VcS">
+          There are several ways of graphically representing complex numbers.
+          We can represent a complex number
+            <m>z = a +bi</m> as an ordered pair on the <m>xy</m> plane where <m>a</m> is the <m>x</m>
+          (or real)
+          coordinate and <m>b</m> is the <m>y</m>
+          (or imaginary)
+          coordinate.
+          This is called the <term>rectangular</term>
+          or <term>Cartesian</term> representation.
+          The rectangular representations of
+            <m>z_1 = 2 + 3i</m>,          <m>z_2 = 1 - 2i</m>,
+          and <m>z_3 = - 3 + 2i</m> are depicted in <xref ref="figure-rectcoord"/>.
+          </p>
+
+          <figure xml:id="figure-polarcoord" permid="tFC">
+            <caption>Polar coordinates of a complex number</caption>
+            <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+            <image xml:id="cyclic-complex-polar" permid="qDS">
+              <description>The complex plane where the horizontal axis is the x-axis or real axis and the verticle axis is the y-axis or imaginary axis.  The point a + bi is in the upper right quadrant.  The point is also determined by a ray that at an angle of theta counterclockwise from the horizontal axis having a length of r.</description>
+
+              <latex-image>
+                <xi:include href="tikz/cyclic-complex-polar.tex" parse="text"/>
+              </latex-image>
+            </image>
+
+          </figure>
+
+          <p permid="Bkb">
+          Nonzero complex numbers can also be represented using
+            <term>polar coordinates</term>.
+          To specify any nonzero point on the plane,
+          it suffices to give an angle <m>\theta</m> from the positive <m>x</m> axis in the counterclockwise direction and a distance <m>r</m> from the origin,
+          as in  <xref ref="figure-polarcoord"/>.
+          We can see that
+          <me permid="vJk">
+            z = a + bi = r( \cos \theta + i \sin \theta)
+          </me>.
+          Hence,
+          <me permid="bQt">
+            r = |z| = \sqrt{a^2 + b^2}
+          </me>
+          and
+          <md permid="HXC">
+            <mrow>a &amp; = r \cos \theta</mrow>
+            <mrow>b &amp; = r \sin \theta</mrow>
+          </md>.
+          We sometimes abbreviate <m>r( \cos \theta + i \sin \theta)</m> as <m>r \cis \theta</m>.
+
+          <notation>
+            <usage>\cis \theta</usage>
+            <description>
+              <m>\cos \theta + i \sin \theta</m>
+            </description>
+          </notation>
+
+          To assure that the representation of <m>z</m> is  well-defined,
+          we also require that <m>0^{\circ} \leq \theta \lt 360^{\circ}</m>.
+          If the measurement is in radians,
+          then <m>0 \leq \theta \lt2 \pi</m>.
+        </p>
+
+        <example xml:id="example-cyclic-polar" permid="rgi">
+          <p permid="GZn">
+            Suppose that <m>z = 2 \cis  60^{\circ}</m>.
+            Then
+            <me permid="oeL">
+              a  =  2 \cos 60^{\circ} = 1
+            </me>
+            and
+            <me permid="UlU">
+              b = 2 \sin 60^{\circ} = \sqrt{3}
+            </me>.
+            Hence, the rectangular representation is <m>z = 1+\sqrt{3}\, i</m>.
+          </p>
+
+          <p permid="ngw">
+            Conversely, if we are given a rectangular representation of a complex number,
+            it is often useful to know the number's polar representation.
+            If <m>z = 3 \sqrt{2} - 3 \sqrt{2}\, i</m>, then
+            <me permid="Atd">
+              r = \sqrt{a^2 + b^2} = \sqrt{36 } = 6
+            </me>
+            and
+            <me permid="gAm">
+              \theta = \arctan \left( \frac{b}{a} \right) = \arctan( - 1) = 315^{\circ}
+            </me>,
+            so <m>3 \sqrt{2} - 3 \sqrt{2}\, i=6 \cis  315^{\circ}</m>.
+          </p>
+        </example>
+
+        <p permid="hrk">
+          The polar representation of a complex number makes it easy to find products and powers of complex numbers.
+          The proof of the following proposition is straightforward and is left as an exercise.
+        </p>
+
+        <proposition xml:id="proposition-polar-mult" permid="ahX">
+          <statement>
+            <p permid="lrj">
+              Let <m>z = r \cis \theta</m> and
+              <m>w = s \cis \phi</m> be two nonzero complex numbers.
+              Then
+              <me permid="MHv">
+                zw = r s \cis( \theta + \phi)
+              </me>.
+            </p>
+          </statement>
+        </proposition>
+
+        <example xml:id="example-cyclic-polar-mult" permid="Xnr">
+          <p permid="TnF">
+            If <m>z = 3 \cis( \pi / 3 )</m> and <m>w = 2 \cis(\pi / 6 )</m>,
+            then <m>zw = 6 \cis( \pi / 2 ) = 6i</m>.
+          </p>
+        </example>
+
+        <theorem permid="uaO">
+          <title>DeMoivre</title>
+          <idx>
+            <h>DeMoivre's Theorem</h>
+          </idx>
+          <statement>
+            <p permid="sVI">
+              Let <m>z = r \cis \theta</m> be a nonzero complex number.
+              Then
+              <me permid="sOE">
+                [r \cis \theta  ]^n = r^n \cis( n \theta)
+              </me>
+              for <m>n = 1, 2, \ldots</m>.
+            </p>
+          </statement>
+
+          <proof permid="sVv">
+            <p permid="IeG">
+              We will use induction on <m>n</m>.
+              For <m>n = 1</m> the theorem is trivial.
+              Assume that the theorem is true for all <m>k</m> such that <m>1  \leq k \leq n</m>.
+              Then
+              <md permid="YVN">
+                <mrow>z^{n+1} &amp; = z^n z</mrow>
+                <mrow>&amp; = r^n( \cos  n \theta + i \sin n \theta ) r( \cos \theta + i\sin \theta )</mrow>
+                <mrow>&amp; = r^{n+1} [( \cos n \theta \cos \theta - \sin n \theta \sin \theta ) + i ( \sin n \theta \cos \theta + \cos n \theta \sin \theta)]</mrow>
+                <mrow>&amp; = r^{n+1} [ \cos( n \theta + \theta) + i \sin( n \theta + \theta) ]</mrow>
+                <mrow>&amp; = r^{n+1} [ \cos( n +1) \theta + i \sin( n+1) \theta  ]</mrow>
+              </md>.
+            </p>
+          </proof>
+        </theorem>
+
+        <example xml:id="theorem-demoivre" permid="DuA">
+          <p permid="zuO">
+            Suppose that <m>z= 1+i</m> and we wish to compute <m>z^{10}</m>.
+            Rather than computing <m>(1 + i)^{10}</m> directly,
+            it is much easier to switch to polar coordinates and calculate <m>z^{10}</m> using DeMoivre's Theorem:
+            <md permid="FcW">
+              <mrow>z^{10} &amp; = (1+i)^{10}</mrow>
+              <mrow>&amp; = \left( \sqrt{2} \cis \left( \frac{\pi }{4} \right) \right)^{10}</mrow>
+              <mrow>&amp; = ( \sqrt{2}\, )^{10} \cis \left( \frac{5\pi }{2} \right)</mrow>
+              <mrow>&amp; = 32  \cis \left( \frac{\pi }{2} \right)</mrow>
+              <mrow>&amp; = 32i</mrow>
+            </md>.
+          </p>
+        </example>
+
+
+      <paragraphs xml:id="cyclic-subsection-circle-group" permid="WYW">
+        <title>The Circle Group and the Roots of Unity</title>
+        <p permid="RMN">
+          The multiplicative group of the complex numbers,
+          <m>{\mathbb C}^*</m>, possesses some interesting subgroups.
+          Whereas <m>{\mathbb Q}^*</m> and
+          <m>{\mathbb R}^*</m> have no interesting subgroups of finite order,
+          <m>{\mathbb C}^*</m> has many.
+          We first consider the <term>circle group</term>,
+          <idx>
+            <h>Group</h>
+            <h>circle</h>
+          </idx>
+          <notation>
+            <usage>\mathbb T</usage>
+            <description>the circle group</description>
+          </notation>
+
+          <me permid="lkf">
+            {\mathbb T} = \{ z \in {\mathbb C} : |z| = 1 \}
+          </me>.
+          The following proposition is a direct result of <xref ref="proposition-polar-mult"/>
+  .
+        </p>
+
+        <proposition permid="CaM">
+          <statement>
+            <p permid="Rys">
+              The circle group is a subgroup of <m>{\mathbb C}^*</m>.
+            </p>
+          </statement>
+        </proposition>
+
+        <p permid="xTW">
+          Although the circle group has infinite order,
+          it has many interesting finite subgroups.
+          Suppose that <m>H = \{ 1, -1, i, -i \}</m>.
+          Then <m>H</m> is a subgroup of the circle group.
+          Also, <m>1</m>,        <m>-1</m>,        <m>i</m>,
+          and <m>-i</m> are exactly those complex numbers that satisfy the equation <m>z^4 = 1</m>.
+          The complex numbers satisfying the equation <m>z^n=1</m> are called the
+          <term>
+            <m>n</m>th roots of unity</term>.
+          <idx>
+            <h>
+              <m>n</m>th root of unity</h>
+          </idx>
+        </p>
+
+        <theorem permid="VTD">
+          <statement>
+            <p permid="ZcR">
+              If <m>z^n = 1</m>, then the <m>n</m>th roots of unity are
+              <me permid="Rro">
+                z = \cis\left( \frac{2 k \pi}{n } \right)
+              </me>,
+              where <m>k = 0, 1, \ldots, n-1</m>.
+              Furthermore,
+              the <m>n</m>th roots of unity form a cyclic subgroup of <m>{\mathbb T}</m> of order <m>n</m>
+            </p>
+          </statement>
+
+          <proof permid="ZcE">
+            <p permid="olP">
+              By DeMoivre's Theorem,
+              <me permid="xyx">
+                z^n = \cis \left( n \frac{2 k \pi}{n } \right) = \cis( 2 k \pi ) = 1
+              </me>.
+              The <m>z</m>'s are distinct since the numbers
+              <m>2 k \pi /n</m> are all distinct and are greater than or equal to 0 but less than <m>2 \pi</m>.
+              The fact that these are all of the roots of the equation <m>z^n=1</m> follows from from <xref ref="corollary-poly-zeros"/>,
+              which states that a polynomial of degree <m>n</m> can have at most <m>n</m> roots.
+              We will leave the proof that the <m>n</m>th roots of unity form a cyclic subgroup of <m>{\mathbb T}</m> as an exercise.
+          </p>
+        </proof>
+      </theorem>
+
+      <p permid="ebf">
+          A generator for the group of the <m>n</m>th roots of unity is called a
+        <term>primitive <m>n</m>th root of unity</term>.
+        <idx>
+          <h>Primitive <m>n</m>th root of unity</h>
+        </idx>
+      </p>
+
+      <example xml:id="example-roots_unity" permid="ihV">
+        <p permid="fBX">
+            The 8th roots of unity can be represented as eight equally spaced points on the unit circle (<xref ref="figure-rtsunity"/>).
+            The primitive 8th roots of unity are
+        <md permid="dFG">
+          <mrow>\omega &amp; = \frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
+          <mrow>\omega^3 &amp; = -\frac{\sqrt{2}}{2}  + \frac{\sqrt{2}}{2} i</mrow>
+          <mrow>\omega^5 &amp; = -\frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2} i</mrow>
+          <mrow>\omega^7 &amp; = \frac{\sqrt{2}}{2}  - \frac{\sqrt{2}}{2}i</mrow>
+        </md>.
+      </p>
+
+      <figure xml:id="figure-rtsunity" permid="LJg">
+        <caption>8th roots of unity</caption>
+        <!-- Replaced figure with tikz figure - TWJ 5/6/2010 -->
+        <image width="80%" xml:id="cyclic-roots-unity" permid="WLb">
+          <description>The 8 roots of unity are spaced evenly around the unit circle beginning with 1 on the positive horizontal axis and followed by omega, i, the cube of omega, -1, omega to the fifth power, -i, and omega to the seventh power.</description>
+
+          <latex-image>
+            <xi:include href="tikz/cyclic-roots-unity.tex" parse="text"/>
+          </latex-image>
+        </image>
+
+        </figure>
+      </example>
+
+      </paragraphs>
+    </subsection>
+
+    <subsection xml:id="subsec-factoring-with-c">
+      <title>Factoring With and Without Complex Numbers</title>
+
+        <p>
+          Every odd degree polynomial has a root in <m>\R</m> (how do we know?), so no odd degree polynomial (of degree at least 3) can be irreducible over <m>\R</m>.  What about even degree polynomials?  For example, what about <m>x^2 + 3</m>?  
+        </p>
+
+        <p>
+          Well, that polynomial has roots, but they are complex roots, in particular, non-real complex roots.
+        </p>
+
+        <p>
+          Let's see how to factor in the complex numbers.  It turns out (although hard to prove) that over <m>\C</m>, every polynomial factors into linear terms.  The  <em>Fundamental Theorem of Algebra</em> says: Every non-constant polynomial in <m>\mathbb C[x]</m> has a complex root.
+        </p>
+
+        <p>
+            What does this tell us about the irreducible polynomials in <m>\C[x]</m>? They are exactly the degree 1 polynomials. If <m>a(x)</m> is a polynomial for degree greater than 1 in <m>\C[x]</m>, then it must have a complex root <m>c</m>, so <m>x-c</m> is a factor. Applying this repeatedly, we find <me>a(x) = k(x-c_1)(x-c_2)\cdots(x-c_n)</me>. There will be exactly <m>n</m> roots (although note that the roots might not be distinct).
+         </p>
+          <p>
+            What about simple polynomials like <m>x^5 - 1</m>.  Okay, that is not irreducible, since 1 is a root.  Does it have any other roots?
+          </p>
+          
+          <example>
+            <statement>
+              <p>
+                Factor <m>x^5-1</m>.  
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We write <m>x^5 = 1</m>.  There are lots of ways to write 1 as a complex number though: <m>1 = e^0 = e^{i2\pi} = e^{i4\pi} = e^{i6\pi} = e^{i8\pi}</m> and so on.  However, we can stop there since we are taking 5th roots.
+              </p>
+              <p>
+                Now if <m>x^5 = e^{i2\pi}</m>, then <m>x = (x^{5})^\frac{1}{5} = e^{i2\pi/5}</m>.
+              </p>
+
+              <p>
+                On the other hand, <m>x^5 = e^{i4\pi}</m>, so this says that <m>x = e^{i4\pi/5}</m>.  This is a different complex number than <m>e^{i2\pi/5}</m>, since it has a different angle.
+              </p>
+
+              <p>
+                If we do this for each of the five representations of 1, we get the following five fifth-roots of 1:
+                <me>
+                  1 = e^{i0\pi/5}, ~~ e^{i2\pi/5}, ~~ e^{i4\pi/5}, ~~ e^{i6\pi/5}, ~~ e^{i8\pi/5}
+                </me>.
+                Note that while <m>e^{i10\pi/5}</m> is also a solution to the equation, this is already listed: <m>e^{i10\pi/5} = e^{i2\pi} = e^0 = 1</m>.  Similarly, <m>e^{i12\pi/5} = e^{i2\pi/5}</m>, and so on.
+              </p>
+
+              <p>
+                If we plot these five complex numbers we will get five equally spaced points on the unit circle.  Notice that if we raise each to a power we jump around the circle, landing on the point at <m>(1,0)</m> on the fifth power, as expected.
+              </p>
+
+            </solution>
+          </example>
+              
+            <p>
+              The example above is perhaps a little simplistic.  In particular, <m>r = 1</m> here, so we didn't need to do anything with that.  In general, if we had <m>re^{i\theta}</m> and took the <m>n</m>th root, we would get <m>\sqrt[n]{r}e^{i\theta/n}</m>.  
+              </p>
+
+            <example>
+              <statement>
+                <p>
+                  Factor <m>x^3 + 5</m> over the complex numbers.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  This is different from the previous example for two reasons: we will have an <m>r \ne 1</m>, and we will be finding roots of a negative number.
+                </p>
+                <p>
+                  Write <m>x^3 = -5 = 5e^{i\pi} = 5e^{i3\pi} = 5e^{i5\pi}</m>.  Then take third roots: <m>x = \sqrt[3]{5}e^{i\pi/3}</m> and <m>x = \sqrt[3]{5}e^{i3\pi/3}</m> and <m>x = \sqrt[3]{5}e^{i5\pi/3}</m>.
+                </p>
+                <p>
+                  Plot these three points on the complex plane.  One will be on the negative real axis (<m>x</m>-axis), the other two will be vertically aligned in the first and fourth quadrants.
+                </p>
+                <p>
+                  This says that <m>x^3 + 5 = (x+\sqrt[3]{5})(x - \sqrt[3]{5}e^{i\pi/3})(x-\sqrt[3]{5}e^{i5\pi/3})</m>.  As expected, we can factor the polynomial into linear factors over <m>\C</m>.
+                </p>
+              </solution>
+            </example>
+
+              <p>
+                Could we factor the polynomial <m>x^3+5</m> over <m>\R</m>?  We could simply use long division to factor out <m>x+\sqrt[3]{5}</m>, although that might be messy.  Notice though that if we did, then the quotient will be a degree 2 polynomial with real coefficients.
+              </p>
+
+              <p>
+                There is a better way.  We should be able to get the same polynomial by multiplying the two complex factors from the example above.
+              </p>
+            <example>
+              <statement>
+                <p>
+                  Factor <m>x^3+5</m> over the real numbers.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  Pick up where we left off when factoring of <m>\C</m>.  Then multiply the two factors corresponding to the complex conjugate roots.
+                  We find <me>(x-\sqrt[3]{5}e^{i\pi/3})(x-\sqrt[3]{5}e^{i5\pi/3}) - x^2 -\sqrt[3]{5}e^{i5\pi/3}x - \sqrt[3]{5}e^{i\pi/3}x + \sqrt[3]{5}^2e^{i6\pi/3}</me>.
+                  The last term is just <m>\sqrt[3]{5}^2</m>.  This makes sense if you think about adding the angles.
+                  
+                </p>
+                <p>
+                  What should be do with the middle terms?  If we write these using trig functions we can see how to add them.  Or use parallelograms.
+                </p>
+              </solution>
+            </example>
+
+          <p>
+            
+					Will something like this always work? If <m>a+bi</m> is a root of <m>a(x)</m>, then <m>a-bi</m> is also a root of <m>a(x)</m> (in <m>\C</m>). That is, if <m>r</m> is a root, so is its complex conjugate <m>\overline r</m> is as well.
+              </p>
+
+              <p>
+					How do we know? Well the function <m>f(r) = \overline r</m> is a ring homomorphism from <m>\mathbb C\to \mathbb C</m>. Check this. But then if <m>a(r) = 0</m>, apply <m>f</m> to both sides to get <m>a(\overline r) = 0</m>.
+              </p>
+
+              <p>
+					This is great: if <m>x-r</m> is a factor of <m>a(x)</m> in <m>\mathbb C[x]</m>, then so is <m>x-\overline r</m>. But notice: <me>(x-r)(x-\overline r) = x^2 - 2ax + (a^2 + b^2)</me> is a quadratic polynomial with <em>real</em> coefficients.
+              </p>
+
+              <p>
+					This shows that every polynomial in <m>\mathbb R[x]</m> can be factored into polynomials of degree 1 or 2 in <m>\mathbb R[x]</m>.
+              </p>
+
+              <p>
+					Thus the irreducible polynomials in <m>\mathbb R[x]</m> are exactly the linear polynomials and the quadratics with negative discriminant (i.e., <m>b^2 - 4ac \lt 0</m>).
+              </p>
+
+              <p>
+            Here is another example.  
+            </p>
+            <example>
+              <statement>
+                <p>
+                  Factor <m>p(x) = x^9 - 2x^8 - 3x^7 - 2x^2 + 4x + 6</m> completely over <m>\mathbb Q</m>, <m>\mathbb R</m> and <m>\mathbb C</m>.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  Note that the rational roots theorem tells us that the only possible rational roots are <m>\pm 1</m>, <m>\pm 2</m>, <m>\pm 3</m> and <m>\pm 6</m>. Plugging these in, we see quickly that <m>-1</m> and <m>3</m> are roots.
+                  
+                </p>
+                <p>
+                  After dividing by <m>(x+1)(x-3)</m> we are left with <m>(x^7 - 2)</m>, which is irreducible over <m>\mathbb Q</m> by Eisenstein. 
+                </p>
+                <p>
+                  Now let’s work over <m>\mathbb C</m>. We can find the roots of <m>x^7 - 2</m> by writing <m>2 = 2e^{i0} = 2e^{i2\pi} = 2e^{i4\pi} = \cdots = 2e^{i12\pi}</m>.
+                </p>
+
+                <p>
+                  Taking <m>7</m>th roots: <me>x = \sqrt[7]{2}, x = \sqrt[7]{2}e^{i2\pi/7}, x = \sqrt[7]{2}e^{i4\pi/7}, \ldots, x = \sqrt[7]{2}e^{i12\pi/7}</me>. 
+                </p>
+                <p>
+                  This allows us to write down the 9 factors of degree 1 for <m>p(x)</m> over <m>\mathbb C</m>.
+                  <me>x^7-2 = (x-\sqrt[7]{2})(x-\sqrt[7]{2}e^{i2\pi/7})(x-\sqrt[7]{2}e^{i4\pi/7})\cdots(x-\sqrt[7]{2}e^{i12\pi/7})
+                  </me>.
+                </p>
+                <p>
+                  Finally, over <m>\mathbb R</m> we can multiply out each pair of complex conjugate factors. To find them, look at the unit circle. This gives: <me>\begin{aligned}
+                    p(x)  = (x+1)(x-3)(x-\sqrt[7]{2})&amp;(x^2 - 2^{8/7}\cos(2\pi/7)x + 2^{2/7})\cdot \\ &amp; \cdot(x^2 - 2^{8/7}\cos(4\pi/7)x + 2^{2/7})(x^2 - 2^{8/7}\cos(6\pi/7)x + 2^{2/7})\end{aligned}</me>
+                </p>
+              </solution>
+            </example>
+            
+    </subsection>
+
+
+
+    <exercises xml:id="practice-factoring-c-r">
+      <title>Practice Problems</title>
+
+      <exercise permid="wlA">
+        <statement>
+          <p permid="AeI">
+          Evaluate each of the following.
+
+            <ol cols="2" permid="XBM">
+              <li permid="HXp">
+                <p permid="qig">
+                  <m>(3-2i)+ (5i-6)</m>
+                </p>
+              </li>
+
+              <li permid="oey">
+                <p permid="Wpp">
+                  <m>(4-5i)-\overline{(4i -4)}</m>
+                </p>
+              </li>
+
+              <li permid="UlH">
+                <p permid="Cwy">
+                  <m>(5-4i)(7+2i)</m>
+                </p>
+              </li>
+
+              <li permid="AsQ">
+                <p permid="iDH">
+                  <m>(9-i) \overline{(9-i)}</m>
+                </p>
+              </li>
+
+              <li permid="gzZ">
+                <p permid="OKQ">
+                  <m>i^{45}</m>
+                </p>
+              </li>
+
+              <li permid="MHi">
+                <p permid="uRZ">
+                  <m>(1+i)+\overline{(1+i)}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="klD">
+          <p permid="ubb">
+          (a) <m>-3 + 3i</m>; (c) <m>43- 18i</m>; (e) <m>i</m>
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise permid="csJ">
+        <statement>
+          <p permid="glR">
+          Convert the following complex numbers to the form <m>a + bi</m>.
+
+            <ol cols="2" permid="DIV">
+              <li permid="sOr">
+                <p permid="aZi">
+                  <m>2 e^{\pi / 6}</m>
+                </p>
+              </li>
+
+              <li permid="YVA">
+                <p permid="Hgr">
+                  <m>5 e^{9\pi/4}</m>
+                </p>
+              </li>
+
+              <li permid="FcJ">
+                <p permid="nnA">
+                  <m>3 e^{\pi}</m>
+                </p>
+              </li>
+
+              <li permid="ljS">
+                <p permid="TuJ">
+                  <m>\frac{1}{2}e^{7\pi/4}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="wzV">
+          <p permid="aik">
+          (a) <m>\sqrt{3} + i</m>; (c) <m>-3</m>.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise permid="IzS">
+        <statement>
+          <p permid="Mta">
+          Change the following complex numbers to polar representation.
+
+            <ol cols="3" permid="jQe">
+              <li permid="Rrb">
+                <p permid="zBS">
+                  <m>1-i</m>
+                </p>
+              </li>
+
+              <li permid="xyk">
+                <p permid="fJb">
+                  <m>-5</m>
+                </p>
+              </li>
+
+              <li permid="dFt">
+                <p permid="LQk">
+                  <m>2+2i</m>
+                </p>
+              </li>
+
+              <li permid="JMC">
+                <p permid="rXt">
+                  <m>\sqrt{3} + i</m>
+                </p>
+              </li>
+
+              <li permid="pTL">
+                <p permid="YeC">
+                  <m>-3i</m>
+                </p>
+              </li>
+
+              <li permid="WaU">
+                <p permid="ElL">
+                  <m>2i + 2 \sqrt{3}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="IOn">
+          <p permid="Gpt">
+          (a) <m>\sqrt{2} \cis( 7 \pi /4)</m>; (c)
+            <m>2 \sqrt{2} \cis( \pi /4)</m>; (e) <m>3 \cis(3 \pi/2)</m>.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise permid="oHb">
+        <statement>
+          <p permid="sAj">
+          Calculate each of the following expressions.
+
+            <ol cols="2" permid="PXn">
+              <li permid="Cid">
+                <p permid="ksU">
+                  <m>(1+i)^{-1}</m>
+                </p>
+              </li>
+
+              <li permid="ipm">
+                <p permid="QAd">
+                  <m>(1 - i)^{6}</m>
+                </p>
+              </li>
+
+              <li permid="Owv">
+                <p permid="wHm">
+                  <m>(\sqrt{3} + i)^{5}</m>
+                </p>
+              </li>
+
+              <li permid="uDE">
+                <p permid="cOv">
+                  <m>(-i)^{10}</m>
+                </p>
+              </li>
+
+              <li permid="aKN">
+                <p permid="IVE">
+                  <m>((1-i)/2)^{4}</m>
+                </p>
+              </li>
+
+              <li permid="GRW">
+                <p permid="pcN">
+                  <m>(-\sqrt{2} - \sqrt{2}\, i)^{12}</m>
+                </p>
+              </li>
+
+              <li permid="mZf">
+                <p permid="VjW">
+                  <m>(-2 + 2i)^{-5}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <hint permid="VcF">
+          <p permid="mwC">
+          (a) <m>(1 - i)/2</m>; (c) <m>16(i - \sqrt{3}\, )</m>; (e) <m>-1/4</m>.
+          </p>
+        </hint>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+          Prove that the function <m>\phi:\bC \to \bC</m> given by <m>\phi(z) = \bar z</m> is a ring homomorphism.  Here <m>\bar z = a-bi</m> is the complex conjugate of <m>z = a+bi</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+          Consider the two complex numbers <m>a+bi</m> and <m>c+di</m>.  We have 
+            <me>
+            \phi(a+bi)+\phi(c+di) = a-bi + c - di = a+c - (b+d)i = \phi(a+c+(b+d)i) = \phi((a+bi)+(c+di))
+            </me>
+          and
+            <me>
+            \phi(a+bi)\phi(c+di) = (a-bi)(c-di) = ac + bd - (cb+ad)i = \phi(ac+bd + (cb+ad)i) = \phi((a+bi)(c+di))
+            </me>.       
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Let <m>z</m> be a complex number.  Prove that the sum <m>z + \bar z</m> and product <m>z\cdot \bar z</m> or the number with its conjugate are always real numbers.
+          </p>
+        </statement>
+        <solution>
+          <p>
+          For the sum, it is easiest to think of <m>z = a+bi</m>, since now <m>a+bi+a-bi = 2a</m>.  For the product, write the number in polar form: <m>z = re^{i\theta}</m> so <m>\bar z = re^{-i\theta}</m>.  Thus <m>z\cdot\bar z = re^{i\theta}re^{-i\theta} = r^2e^{0} = r^2</m>.
+          </p>
+        </solution>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+          Is <m>x^7 - 1</m> irreducible over <m>\bC</m>?  How many roots should it have?  Find all of them.  Hint: use the polar form of complex numbers, <m>re^{i\vartheta}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+         The polynomial is not irreducible over <m>\bC</m> because the only irreducible polynomials with real coefficients over <m>\bC</m> are the linear polynomials.  It should have exactly 7 roots.  If we write <m>1 = e^0 = e^{2\pi i} = \cdots</m> and raise each to the <m>1/7</m> we get the roots.  They are:
+            <me>e^0 = 1, ~~ e^{\frac{2\pi}{7}i}, ~~ e^{\frac{4\pi}{7}i}, ~~ e^{\frac{6\pi}{7}i}, ~~ e^{\frac{8\pi}{7}i}, ~~ e^{\frac{10\pi}{7}i}, ~~ e^{\frac{12\pi}{7}i}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+          Factor <m>x^8 - 5x^7 - 14x^6 + x^2 - 5x - 14</m> completely over <m>\Q</m>,            <m>\bC</m> and <m>\R</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+          First, find rational roots.  They are -2 and 7.  Dividing we get
+            <me>(x+2)(x-7)(x^6+1)</me>
+          The last term has no roots but is still not irreducible.  We can use sum of cubes:
+            <me>(x+2)(x-7)(x^2+1)(x^4-x^2 + 1)</me>
+          The last degree 4 polynomial is irreducible - use the quadratic formula for <m>x^2</m> to see that there are no quadratic factors over <m>\Q</m>.
+
+          Now let's factor <m>(x^6 + 1)</m> over <m>\bC</m>.  There are 6 roots, namely
+            <me>e^{i\pi/6},~~ e^{i3\pi/6}, ~~e^{i5\pi/6},~~ e^{i7\pi/6}, ~~ e^{i9\pi/6}, ~~e^{i11\pi/6}</me>
+          These are all <q>nice</q> angles, so it is easy to convert back to rectangular form.  So over <m>\bC</m> we have the factorization
+            <me>(x+2)(x-7)(x-\frac{\sqrt{3}}{2}-\frac{1}{2}i)(x-\frac{\sqrt{3}}{2}+\frac{1}{2}i)(x-i)(x+i)(x+\frac{\sqrt{3}}{2}-\frac{1}{2}i)(x+\frac{\sqrt{3}}{2}+\frac{1}{2}i)</me>
+
+          Finally, to get the factorization over <m>\R</m> we multiply conjugate pairs:
+            <me>(x+2)(x-7)(x^2+1)(x^2 - \sqrt{3}+1)(x^2 + \sqrt{3}x + 1)</me>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+
+    <exercises xml:id="collected-factoring-c-r">
+      <title>Collected Homework</title>
+
+      <exercise number="C1">
+        <statement>
+          <p>
+          Factor the polynomial <m>p(x) = x^7 + 2x^6 - 3x - 6</m> completely (into irreducible factors) over <m>\Q</m>, then over <m>\bC</m>, and then over <m>\R</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+          Do the factoring in that order.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise number="C2">
+        <statement>
+          <p>
+          True or false: <m>x^4 + 20x^3 + 5x^2+ 10x + 15</m> is irreducible in <m>\R[x]</m>.  Briefly explain.
+          </p>
+        </statement>
+      </exercise>
+
+    </exercises>
+  </section>
+
+
+  <section xml:id="sec-euclidean-algorithm">
+    <title>The Euclidean Algorithm</title>
+    
+
+
+
+    <exercises xml:id="practice-euclidean-algorithm">
+      <title>Practice Problems</title>
+      <exercise>
+        <statement>
+          <p>
+            Find the greatest common divisor of 471 and 564 using the Euclidean Algorithm and then find integers <m>r</m> and <m>s</m> such that <m>\gcd(471,564) = 471r+564s</m>. 
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First we perform the Euclidean algorithm:
+            <md>
+              <mrow>564 = \amp 1\cdot 471 + 93 </mrow>
+              <mrow>471 = \amp 5\cdot 93 + 6 </mrow>
+              <mrow>93 = \amp 15\cdot 6 + 3 </mrow>
+              <mrow>6 = \amp 2\cdot 3 + 0 </mrow>
+            </md>
+            so <m>\gcd(471,564) = 3</m>.
+          </p>
+          <p>
+            Now working backwards through the lines of the Euclidean algorithm to find <m>r</m> and <m>s</m>:
+            <md>
+              <mrow>3 = \amp 93 - 15\cdot 6</mrow>
+              <mrow>3 = \amp 93 - 15\cdot (471 - 5\cdot 93) = -15\cdot 471 + 76\cdot 93</mrow>
+              <mrow>3 =  -15\cdot 471 + 76\cdot (564 - 471) = 76\cdot 564 - 91\cdot 471</mrow>
+            </md>
+            so <m>r = -91</m> and <m>s = 76</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find a single integer <m>n</m> such that the ideal <m>\langle n \rangle</m> is the smallest ideal in <m>\Z</m> containing both <m>471</m> and <m>564</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>n = 3</m>, since that is <m>\gcd(471,564)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            In the quotient ring <m>\Z/\langle 564 \rangle</m>, find an element <m>a + \langle 564\rangle</m> such that <m>(a+\langle 564\rangle)(471 + \langle 564\rangle) = 3 + \langle 564 \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Using the work done in question 1 above, we need <m>a = -91</m>.
+          </p>
+
+          <p>
+            Why is this?  Well we want <m>(a + \langle 564\rangle)(471 + \langle 564\rangle) = 3+\langle 564\rangle</m>.  In other words, we want <m>a\cdot 471 + \langle 564\rangle = 3 + \langle 564\rangle</m>, which is the same as asking that <m>3 \in a\cdot 471 + \langle 564\rangle</m>.  This is another way of requiring <me>3 = a\cdot 471 + k\cdot 564</me>.  We found values of <m>a</m> and <m>k</m> to make this so above.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Is <m>471 + \langle 564\rangle</m> a unit in <m>\Z/\langle 564\rangle</m>?  Explain.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No.  Being a unit means that there is a multiplicative inverse.  That would be a coset <m>a + \langle 564 \rangle</m> that when multiplied by <m>471+\langle 564\rangle</m> gives the unity <m>1+\langle 564\rangle</m>.  We would then have <m>471a = 1 + 564k</m> for some <m>k \in \Z</m>.  But that would imply that <m>\gcd(471, 564) = 1</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            In <m>\Q[x]</m>, find the greatest common divisor of the polynomials <m>a(x) = x^3 + 1</m> and <m>b(x) = x^4 + x^3 + 2x^2 + x - 1</m>.  Then express the gcd as a combination of the two polynomials (as in Bezout's lemma).
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The gcd is <m>x+1</m>.  Working backwards we get <m>x+1 = \frac{1}{2}(x^2 + x + 2)a(x) - \frac{1}{2}x b(x)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the greatest common divisor of <m>x^{24}-1</m> and <m>x^{15}-1</m> in <m>\Q[x]</m>, and then express the gcd as a combination of the two polynomials.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's use the Euclidean algorithm:
+            <md>
+              <mrow>x^{24} - 1 =  \amp x^9(x^{15} - 1) + x^9 - 1 </mrow>
+              <mrow>x^{15} - 1 =  \amp x^6(x^{9} - 1) + x^6 - 1 </mrow>
+              <mrow>x^{9} - 1 =  \amp x^3(x^{6} - 1) + x^3 - 1 </mrow>
+              <mrow>x^{6} - 1 =  \amp (x^3+1)(x^{3} - 1) + 0 </mrow>
+            </md>
+            Thus the gcd is <m>x^3-1</m>.
+          </p>
+          <p>
+            Now work backwards:
+            <md>
+              <mrow>x^3 - 1 = \amp [x^9-1] - x^3[x^6-1] </mrow>
+              <mrow>x^3 - 1 = \amp [x^9-1] - x^3([x^{15}-1] - x^6[x^9-1]) </mrow>
+              <mrow> = \amp -x^3[x^{15}-1] + (x^9+1)[x^9-1] </mrow>
+              <mrow>x^3 - 1 = \amp -x^3[x^{15}-1] + (x^9+1)([x^{24} - 1] - x^9[x^{15}-1] ) </mrow>
+              <mrow> = \amp (x^9+1)[x^{24}-1] - (x^{18}+x^9 +x^3)[x^{15}-1]  </mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find a coset <m>a(x) + \langle x^{24}-1\rangle</m> of <m>\Q[x]/\langle x^{24}-1\rangle</m> such that <m>(a(x) + \langle x^{24}-1\rangle)(x^{15}-1) + \langle x^{24}-1\rangle) = x^3-1 + \langle x^{24}-1\rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Using the computations from the previous problem, we get <m>a(x) = -x^{18} - x^9 - x^3</m>.
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+  </section>
   
     <!-- Exercises with Solutions  -->
     <!-- File: poly.xml  -->
     <!-- Title: Polynomials -->
   <exercises xml:id="exercises-poly" filenamebase="poly" permid="eGv">
-    <title>Exercises</title>
+    <title>Additional Exercises</title>
 
     <exercise number="1" permid="Aoz" xml:id="poly-exercise-polys-Zx">
       <statement>

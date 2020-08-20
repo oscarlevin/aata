@@ -43,7 +43,10 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\st}{:}
 \newcommand{\inv}{^{-1}}
-
+\newcommand{\bC}{\mathbb{C}}
+      \newcommand{\F}{\mathscr{F}}
+      \newcommand{\FR}{\mathscr{F}(\R)}
+      \newcommand{\DR}{\mathscr{D}(\R)}
     </macros>
     <!--This is the default-->
     <cross-references text="type-global"/>

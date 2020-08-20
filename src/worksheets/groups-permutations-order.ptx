@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-permutations-order">
+    <title>Activity: Orders of Permutations</title>
+
+    <introduction>
+        <p>
+          The <em>order</em> of an element <m>g</m> in a group <m>G</m> is the least natural number <m>n</m> such that <m>g^n = e</m>, if such a number exists (otherwise we say the order of <m>g</m> is infinite). 
+        </p>
+    </introduction>
+
+
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Find the orders of the elements of <m>S_5</m> below:
+          <me>\alpha = (12) \hspace{1in}\alpha = (123) \hspace{1in} \alpha = (1234) \hspace{1in} \alpha = (12345)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The orders are 2, 3, 4, and 5, respectively.
+        </p>
+      </solution>
+    </exercise>
+
+
+        <exercise workspace="10%">
+            <statement>
+            <p> 
+               Find an element of <m>S_5</m> that has an order different from those found above.  
+            </p>
+           </statement>
+           <solution>
+            <p>
+              We will need an element that is not just a cycle, since the longest cycle is of length 5.  So how about <m>(12)(345)</m>.  This will have order 6.
+            </p>
+           </solution>
+        </exercise>
+        
+
+        
+        <exercise workspace="10%">
+          <statement>
+            <p>
+            Let <m>\alpha</m> be an element of <m>S_5</m>.  What is <m>\alpha^{120}</m>?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              No matter what element we pick, <m>\alpha^{120}</m> will always be <m>(1)</m>.  This will work in general, but you can also see this by considering the orders of elements, which must all divide the size of the group.
+            </p>
+          </solution>
+        </exercise>
+        
+
+    
+    <exercise workspace="10%">
+      <statement>
+        <p>
+          Is there an element in <m>S_5</m> that has order <m>120</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          No there is not.  If there were, this would say that <m>S_5</m> was cyclic, and would thus be abelian, which we know is not the case.  Alternatively, just look at how to write elements as disjoint cycles.
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          What is the largest order of any element in <m>S_5</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The largest order will be 6, for elements that are the disjoint product of a 2-cycle and 3-cycle.  
+        </p>
+      </solution>
+    </exercise>
+    
+
+</worksheet>

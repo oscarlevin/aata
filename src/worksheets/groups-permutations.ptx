@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-permutations">
+    <title>Activity: Writing Cycles and Permutations</title>
+
+    <introduction>
+        <p>
+          Goal: Understand how elements of <m>S_n</m> can be represented as cycles and products of cycles.  
+        </p>
+    </introduction>
+
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          Can every permutation in <m>S_n</m> be represented using cycle notation?  How could you represent the permutation <m>\begin{pmatrix}1 \amp 2 \amp 3 \amp 4 \amp 5 \amp 6 \amp 7 \amp 8 \amp 9 \\ 3 \amp 5 \amp 2 \amp 8 \amp 7 \amp 9 \amp 6 \amp 1 \amp 4  \end{pmatrix}</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This particular permutation would be written as <m>(132576948)</m>.
+        </p>
+      </solution>
+    </exercise>
+
+
+        <exercise workspace="20%">
+            <statement>
+            <p> 
+               How should we define <q>cycle</q>?  Write a definition.  Some considerations: is <m>(132)(45)</m> a single cycle or two cycles?  Is <m>(3124)</m> a cycle?  What should we call the <term>length</term> of a cycle?
+            </p>
+           </statement>
+           <solution>
+            <p>
+              We will agree that <m>(132)(45)</m> is the product of two cycles, one of length 3, the other of length 2.  So the length of a cycle is the number of elements in it.
+            </p>
+           </solution>
+        </exercise>
+        
+
+        
+        <exercise workspace="20%">
+          <statement>
+            <p>
+              Here are a few permutations of <m>S_7</m>, written as products of cycles.  Are there other ways to write each of these using cycle notation?  What makes two products of cycles the <em>same</em>?
+              <me>
+                (142)(2534)(46)(135) \qquad\quad (12546) \qquad\quad (16)(14)(15)(12) \qquad\quad (12)(37)(25)(37)(45)(46)
+              </me>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              In fact, all four of these represent the same permutation.  You can see this my multiplying each out, which will always result in a product of disjoint cycles (or just a single cycle).  As long as we start with the smallest number of each cycle, the product of disjoint cycles is unique.
+            </p>
+          </solution>
+        </exercise>
+        
+    
+    <pagebreak/>
+    
+
+        <p>
+          A <em>transposition</em> (or <m>2</m>-cycle) is a cycle of <em>length</em> 2.  That is, it swaps (transposes) a pair of elements.
+        </p>
+
+    
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          Can the cycle <m>(13254)</m> be written as the product of transpositions?  Can it be written as the product of transpositions in more than one way?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Yes, we could write this as <m>(14)(15)(12)(13)</m> or <m>(13)(23)(25)(45)</m> (do you see the way these were found?) but also in other less standard ways.  For one thing, we could always just add a pair of identical transpositions back to back (this is like multiplying by the identity): <m>(14)(15)(12)(13)(34)(34)</m>. 
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          What about the product <m>(124)(2354)</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We could first multiply this out to get <m>(1235)</m> and then find <m>(15)(13)(12)</m> or <m>(12)(23)(35)</m>.  If we use a similar approach on each cycle separately we would get <m>(14)(12)(24)(25)(23)</m> or <m>(12)(24)(23)(35)(54)</m>.
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          Can you write <m>(13)(24)(45)(15)(26)(13)</m> as the product of more than 6 transpositions?  Fewer than 6 transpositions?  Can you write it as the product of an odd number of transpositions?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can multiply it out first: <m>(26453)</m> and then get <m>(26)(46)(45)(35)</m>.  Or we could just tack on some extra pairs: <m>(13)(24)(45)(16)(16)(26)(26)(15)(26)(13)</m>.  However it certainly seems like we will always need to use an even number of transpositions.
+        </p>
+      </solution>
+    </exercise>
+
+
+    <exercise workspace="1%">
+      <statement>
+        <p>
+          What numbers of transpositions can you write the identity <m>(1)</m> as? 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Note that <m>(1)</m> is not written as any transpositions, so we might even say that this is 0 transpositions.  We could write <m>(12)(12)</m> or <m>(13)(24)(13)(24)</m> (here since the transpositions are disjoint, they commute).  It looks like the identity must be written as an even number of transpositions.
+        </p>
+      </solution>
+    </exercise>
+</worksheet>
