@@ -3,15 +3,11 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-constructions-intro">
   
     <title>Collected Homework</title>
-    <introduction>
-      <p>
-        Answer the questions below and submit on Canvas.
-      </p>
-    </introduction>
+
     <exercise>
       <statement>
         <p>
-          Write up a careful argument for question 4 from the activity <xref ref="ws_fields-constructable-numbers">Constructible Numbers</xref>: Prove that if <m>a</m> and <m>b</m> are constructible numbers, with <m>b \ne 0</m>, then <m>a/b</m> is also constructible.
+          Write up a careful argument for question 4 from the activity <xref ref="ws_fields-constructable-numbers" text="custom">Constructible Numbers</xref>: Prove that if <m>a</m> and <m>b</m> are constructible numbers, with <m>b \ne 0</m>, then <m>a/b</m> is also constructible.
         </p>
       </statement>
       <hint>

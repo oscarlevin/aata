@@ -1310,13 +1310,7 @@
         including [5], [6], [10], and [11].
       </p>
 
-      <paragraphs permid="zXE">
-        <title>Sage</title>
-        <p permid="rvd">
-          We have not yet included any Sage material related to this chapter.
-        </p>
-      </paragraphs>
-
+     
     </subsection>
 
     <subsection xml:id="matrix-subsection-historical-note" permid="HCd">
@@ -1864,20 +1858,4 @@
 
 
 
-  <section xml:id="matrix-sage" permid="stf">
-    <title>Sage</title>
-    <p permid="oAx">
-      There is no Sage material for this chapter.
-    </p>
-  </section>
-
-  <exercises xml:id="matrix-sage-exercises" permid="TQv">
-    <title>Sage Exercises</title>
-    <introduction permid="AHy">
-      <p permid="NyG">
-        There are no Sage exercises for this chapter.
-      </p>
-    </introduction>
-
-  </exercises>
 </chapter>
