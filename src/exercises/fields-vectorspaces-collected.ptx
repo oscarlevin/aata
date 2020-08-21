@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-vectorspaces">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-vectorspaces" permid="Beu">
   
     <title>Collected Homework</title>
-    <introduction>
-      <p>
+    <introduction permid="rKI">
+      <p permid="wuB">
         All the questions below will consider the number <m>a = \sqrt{3+\sqrt[3]{2}}</m>.
       </p>
     </introduction>
-    <exercise>
+    <exercise permid="XRR">
       <statement>
-        <p>
+        <p permid="cBK">
           Verify that <m>a = \sqrt{3 + \sqrt[3]{2}}</m> is algebraic.  Then explain why you don't yet know whether the polynomial you found was the minimum polynomial.
         </p>
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="DZa">
       <statement>
-        <p>
+        <p permid="IIT">
           Write down a basis for <m>\Q(\sqrt[3]{2})</m> and say what <m>[\Q(\sqrt[3]{2}):\Q]</m> is, and why this makes sense.
           Then find <m>[\Q(a):\Q(\sqrt[3]{2})]</m> and a basis for <m>\Q(a)</m> over <m>\Q(\sqrt[3]{2})</m>.
         </p>
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="kgj">
       <statement>
-        <p>
+        <p permid="oQc">
           Use the previous question to find a basis for <m>\Q(a)</m> over <m>\Q</m> and then say what <m>[\Q(a):\Q]</m> must be.  Then give a different basis for <m>\Q(a)</m> over <m>\Q</m>.
         </p>
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="Qns">
       <statement>
-        <p>
+        <p permid="UXl">
           Using all of your work above, find the <em>minimal</em> polynomial for <m>a</m> over <m>\Q</m> and prove it is irreducible (using the previous question).
         </p>
       </statement>

@@ -1164,30 +1164,30 @@
       </exercise>
     </reading-questions>
 
-    <exercises xml:id="practice-1-2">
+    <exercises xml:id="practice-1-2" permid="RzP">
       <title>Practice Problems</title>
 
-      <exercise>
+      <exercise permid="qcz">
         <statement>
-          <p>
+          <p permid="lHb">
         Same or different: <m>\{2^n \in \N \st n \in \N\}</m> and <m>\{n \in \N \st 2^n \in \N\}</m>.
           </p>
         </statement>
-        <answer>
-          <p>
+        <answer permid="fDu">
+          <p permid="UIQ">
         Different.  The first set only has elements that are powers of 2, while the second set is all natural numbers.
           </p>
         </answer>
       </exercise>
 
-      <exercise>
+      <exercise permid="WjI">
         <statement>
-          <p>
+          <p permid="ROk">
         Same or different: <m>\{2^n \st n \in \N\}</m> and <m>\{n \st n = 2^x \text{ for some } x \in \N\}</m>.
           </p>
         </statement>
-        <answer>
-          <p>
+        <answer permid="LKD">
+          <p permid="APZ">
         Same.
           </p>
         </answer>
@@ -1239,72 +1239,72 @@
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="CqR">
         <statement>
-          <p>
+          <p permid="xVt">
       I'm trying to invent a function <m>f: \{1,2,3\} \to \{1,2,3,4\}</m>.  So far, I've decided <m>f(1) = 4</m> and <m>f(2) = 1</m>.  What should <m>f(3)</m> be ...
-            <ol>
-              <li>
-                <p>
+            <ol permid="NzQ">
+              <li permid="yqS">
+                <p permid="kXh">
             ... if I want <m>f</m> to be one-to-one?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="eyb">
+                <p permid="Req">
             ... if I want <m>f</m> to be onto?
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <answer>
-          <p>
+        <answer permid="rRM">
+          <p permid="gXi">
       To be one to one, I could take <m>f(3) = 2</m> or <m>f(3) = 3</m>, but the other two options would not work.  There is no choice I can make to make <m>f</m> onto.
           </p>
         </answer>
       </exercise>
 
-      <exercise>
+      <exercise permid="iya">
         <statement>
-          <p>
+          <p permid="ecC">
       I'm trying to invent a function <m>f: \{1,2,3\} \to \{1,2\}</m>.  So far, I've decided <m>f(1) = 2</m>.  What should <m>f(2)</m> and <m>f(3)</m> be ...
-            <ol>
-              <li>
-                <p>
+            <ol permid="tGZ">
+              <li permid="KFk">
+                <p permid="xlz">
             ... if I want <m>f</m> to be one-to-one?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="qMt">
+                <p permid="dsI">
             ... if I want <m>f</m> to be onto?
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <answer>
-          <p>
+        <answer permid="XYV">
+          <p permid="Ner">
       There is no way to make <m>f</m> one-to-one.  To make it onto, I just need one of <m>f(2)</m> or <m>f(3)</m> to be 1, so every element in the codomain is the image of at least one element of the domain.
           </p>
         </answer>
       </exercise>
 
-      <exercise>
+      <exercise permid="OFj">
         <statement>
-          <p>
+          <p permid="KjL">
         Consider the function <m>f:\Z \to \Z</m> given by <m>f(n) = \begin{cases}n+1 \amp \text{ if }n\text{ is even} \\ n-3 \amp \text{ if }n\text{ is odd} . \end{cases}
             </m>
 
-            <ol>
-              <li>
-                <p>
+            <ol permid="ZOi">
+              <li permid="WTC">
+                <p permid="JzR">
               Is <m>f</m> injective?
               Prove your answer.
                 </p>
               </li>
 
-              <li>
-                <p>
+              <li permid="DaL">
+                <p permid="pHa">
               Is <m>f</m> surjective?
               Prove your answer.
                 </p>
@@ -1312,16 +1312,16 @@
             </ol>
           </p>
         </statement>
-        <solution>
-          <ol>
-            <ol>
-              <li>
-                <p>
+        <solution permid="Ege">
+          <ol permid="Bly">
+            <ol permid="Hpf">
+              <li permid="jhU">
+                <p permid="VOj">
                   <m>f</m> is injective.
                 </p>
 
-                <proof>
-                  <p>
+                <proof permid="knn">
+                  <p permid="BVs">
                 Let <m>x</m> and <m>y</m> be elements of the domain <m>\Z</m>.
                 Assume <m>f(x) = f(y)</m>.
                 If <m>x</m> and <m>y</m> are both even,
@@ -1341,13 +1341,13 @@
 
               </li>
 
-              <li>
-                <p>
+              <li permid="Ppd">
+                <p permid="icB">
                   <m>f</m> is surjective.
                 </p>
 
-                <proof>
-                  <p>
+                <proof permid="Quw">
+                  <p permid="OjK">
                 Let <m>y</m> be an element of the codomain <m>\Z</m>.
                 We will show there is an element <m>n</m> of the domain (<m>\Z</m>) such that <m>f(n) = y</m>.
                 There are two cases: First, if <m>y</m> is even, then let <m>n = y+3</m>.
@@ -1369,28 +1369,28 @@
     </exercises>
 
 
-    <exercises xml:id="collected-1-2">
+    <exercises xml:id="collected-1-2" permid="xGY">
       <title>Collected Homework</title>
-      <exercise>
+      <exercise permid="uMs">
         <statement>
-          <p>
+          <p permid="qqU">
           Consider the sets below.  
-            <me>
+            <me permid="bhW">
             A = \{2n \st n \in \Z\} \qquad \text{ and } \qquad B = \{x \in \Z \st x^2 \in A\}
             </me>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="FVr">
+              <li permid="vwm">
+                <p permid="uqT">
                 Describe the sets <m>A</m> and <m>B</m> in words or by listing enough elements to see what is going on.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="bDv">
+                <p permid="ayc">
                 If <m>a \in A</m> and <m>b \in A</m>, must <m>a+b \in A</m>?  Explain.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="HKE">
+                <p permid="GFl">
                 If <m>a \in B</m> and <m>b \in B</m>, must <m>a+b \in B</m>?  Explain.
                 </p>
               </li>
@@ -1426,7 +1426,7 @@
           <p permid="oOo">
           To show a function <m>h</m> is one-to-one, you show that if <m>h(x) = h(y)</m> then <m>x=y</m>.
           </p>
-          <p>
+          <p permid="tlA">
           To show a function <m>h</m> is onto, show that for every element <m>c</m> in the codomain, there is some element <m>a</m> in the domain such that <m>h(a) = c</m>. 
           </p>
         </hint>
@@ -1759,22 +1759,22 @@
       </reading-questions>
 
 
-      <exercises xml:id="practice-1-3">
+      <exercises xml:id="practice-1-3" permid="dOh">
         <title>Practice Problems</title>
 
-        <exercise>
+        <exercise permid="aTB">
           <statement>
-            <p>
+            <p permid="Wyd">
             Consider all points <m>(x,y) \in \R \times \R = \R^2</m> (that is, all ordered pairs of real numbers; he usual real plane).  Define <m>\sim</m> defined by <m>(x,y) \sim (a,b)</m> if and only if <m>x^2 + y^2 = a^2 + b^2</m>.  Prove <m>\sim</m> is an equivalence relation. 
             </p>
           </statement>
-          <hint>
-            <p>
+          <hint permid="cIO">
+            <p permid="ZsJ">
             There are three things you must check. Note that since our set is a set of ordered pairs, the properties we are checking will need to relate ordered pairs to other ordered pairs.
             </p>
           </hint>
-          <solution>
-            <p>
+          <solution permid="wBF">
+            <p permid="PYX">
             For reflexivity, note that <m>x^2 + y^2 = x^2 + y^2</m> so <m>(x,y) \sim (x,y)</m>.  For symmetry, note that if <m>x^2 + y^2 = a^2 + b^2</m> then <m>a^2 + b^2 = x^2 + y^2</m> (since equality is symmetric).  For transitivity, if <m>x^2 + y^2 = a^2 + b^2</m> and <m>a^2 + b^2 = c^2 + d^2</m>, then <m>x^2 + y^2 = c^2 + d^2</m>.
             </p>
           </solution>
@@ -1833,63 +1833,63 @@
           Show that <m>\sim</m> is reflexive and transitive but not symmetric.
             </p>
           </statement>
-          <hint>
-            <p>
+          <hint permid="IPX">
+            <p permid="FzS">
             It is helpful to describe the points geometrically.  What does <m>a^2 + b^2</m> describe about the point <m>(a,b)</m>?
             </p>
           </hint>
         </exercise>
 
 
-        <exercise>
+        <exercise permid="HaK">
           <statement>
-            <p>
+            <p permid="CFm">
             For each non-negative real numbers <m>r</m>, define the set <m>A_r = \{(x,y) \in \R\times \R \st x^2 + y^2 = r^2\}</m>.  Prove that <m>\{A_r\}</m> is a partition.  Then say which equivalence relation for which it is the set of equivalence classes.
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="oXg">
+            <p permid="wgg">
             We must show that every point on the plane number is in one and only one of the sets <m>A_r</m> and that each <m>A_r</m> is nonempty.  Since <m>x^2 + y^2</m> is the square of the distance from the origin to <m>(x,y)</m>, no point is in more than one <m>A_r</m> (this would mean that the point was both distance <m>r^2</m> and <m>s^2</m> from the origin).  Moreover, every point is in some <m>A_r</m>, in particular, for <m>r^2 = x^2 + y^2</m>.
             </p>
 
-            <p>
+            <p permid="cnp">
             Each <m>A_r</m> is nonempty since the point <m>(r,0) \in A_r</m>.
             </p>
 
-            <p>
+            <p permid="Iuy">
             The corresponding equivalence relation is <m>\sim</m> such that <m>(x,y) \sim (a,b)</m> if and only if <m>x^2 + y^2 = a^2 + b^2</m>.
             </p>
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise permid="nhT">
           <statement>
-            <p>
+            <p permid="iMv">
           Consider the relation <m>\sim</m> on <m>\Z</m> defined by <m>a \sim b</m> if and only if <m>ab \ge 0</m>.
-              <ol>
-                <li>
-                  <p>
+              <ol permid="mcA">
+                <li permid="nRN">
+                  <p permid="mMu">
                 Prove that <m>\sim</m> is not an equivalence relation.  Say specifically what property of equivalence relations fails.
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="TYW">
+                  <p permid="zaM">
                 Let <m>[a] = \{b \st a \sim b\}</m> (the usual way you would define equivalence classes if <m>\sim</m> were an equivalence relation).  This still gives you sets of integers.  Explain why this collection of sets is not a partition.
                   </p>
                 </li>
               </ol>
             </p>
           </statement>
-          <solution>
-            <p>
-              <ol>
-                <li>
-                  <p>
+          <solution permid="Vep">
+            <p permid="oBH">
+              <ol permid="hsH">
+                <li permid="Agf">
+                  <p permid="fhV">
                     <m>\sim</m> is reflexive and symmetric, but not transitive.  For example, consider the integers <m>-1, 0, 1</m>.  We have <m>-1 \sim 0</m> and <m>0 \sim 1</m> but <m>-1 \not\sim 1</m>.
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="gno">
+                  <p permid="Lpe">
                 We have <m>[1] = \{0, 1, 2, 3,\ldots\}</m> and <m>[0] = \Z</m>.  Thus the collection of sets cannot be a partition because there are non-disjoint, non-equal sets in the collection.
                   </p>
                 </li>
@@ -1901,39 +1901,39 @@
       </exercises>
 
 
-      <exercises xml:id="collected-1-3">
+      <exercises xml:id="collected-1-3" permid="JVq">
         <title>Collected Homework</title>
 
-        <exercise>
+        <exercise permid="Tpc">
           <statement>
-            <p>
+            <p permid="OTE">
           Define the relation <m>\sim</m> on the real numbers <m>\R</m> by <m>a \sim b</m> if and only if <m>b-a \in \Z</m>.  Prove that <m>\sim</m> is an equivalence relation.
             </p>
           </statement>
         </exercise>
 
-        <exercise>
+        <exercise permid="zwl">
           <statement>
-            <p>
+            <p permid="vaN">
           Let <m>\mathcal L</m> be the set of all linear functions <m>f:\R \to \R</m>.   Define <m>\sim</m> on <m>\mathcal L</m> by <m>f \sim g</m> if and only if <m>f(0) = g(0)</m>.  
-              <ol>
-                <li>
-                  <p>
+              <ol permid="SjJ">
+                <li permid="Mux">
+                  <p permid="rwn">
                 Prove that <m>\sim</m> is an equivalence relation.
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="sBG">
+                  <p permid="XDw">
                 Describe the equivalence classes given by <m>\sim</m>.  In particular, describe <m>[f]</m> for <m>f(x) = 3x+2</m>.
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="YIP">
+                  <p permid="DKF">
                 For each real number <m>m</m>, define the set <m>A_m = \{f \in \mathcal L \st f \text{ has slope } m\}</m>.  Prove that the collection <m>\{A_m \st m \in R\}</m> is a partition of <m>\mathcal L</m>.  
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="EPY">
+                  <p permid="jRO">
                 Describe the equivalence relation that corresponds to the partition <m>\{A_m\}</m> from the previous part.  In particular, give an example of two functions that are equivalent and two that are not.
                   </p>
                 </li>
@@ -2223,7 +2223,7 @@
   <exercises xml:id="exercises-sets" filenamebase="sets" permid="mDp">
     <title>Additional Exercises</title>
   
-    <exercise permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
+    <exercise xml:id="sets-exercise-set-operations-empty-set" permid="Tus">
       <statement>
         <p permid="gOq">
           If <m>A = \{ a, b, c \}</m>,
@@ -2264,7 +2264,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="zBB" xml:id="sets-exercise-cartesian-product-nonempty-set">
+    <exercise xml:id="sets-exercise-cartesian-product-nonempty-set" permid="zBB">
       <statement>
         <p permid="MVz">
           Find an example of two nonempty sets <m>A</m> and <m>B</m> for which <m>A \times B = B \times A</m> is true.
@@ -2272,7 +2272,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="fIK" xml:id="sets-exercise-union-intersect-empty-set">
+    <exercise xml:id="sets-exercise-union-intersect-empty-set" permid="fIK">
       <statement>
         <p permid="tcI">
           Prove <m>A \cup \emptyset = A</m> and <m>A \cap \emptyset = \emptyset</m>.
@@ -2280,7 +2280,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="LPT" xml:id="sets-exercise-union-intersection-commute">
+    <exercise xml:id="sets-exercise-union-intersection-commute" permid="LPT">
       <statement>
         <p permid="ZjR">
           Prove <m>A \cup B = B \cup A</m> and <m>A \cap B = B \cap A</m>.
@@ -2288,7 +2288,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="rXc" xml:id="sets-exercise-union-distributes">
+    <exercise xml:id="sets-exercise-union-distributes" permid="rXc">
       <statement>
         <p permid="Fra">
           Prove <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.
@@ -2310,7 +2310,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="Yel" xml:id="sets-exercise-intersection-distributes">
+    <exercise xml:id="sets-exercise-intersection-distributes" permid="Yel">
       <statement>
         <p permid="lyj">
           Prove <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.
@@ -2318,7 +2318,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="Elu" xml:id="sets-exercise-subset-iff-intersection">
+    <exercise xml:id="sets-exercise-subset-iff-intersection" permid="Elu">
       <statement>
         <p permid="RFs">
           Prove <m>A \subset B</m> if and only if <m>A \cap B = A</m>.
@@ -2326,7 +2326,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="ksD" xml:id="sets-exercise-demorgan">
+    <exercise xml:id="sets-exercise-demorgan" permid="ksD">
       <statement>
         <p permid="xMB">
           Prove <m>(A \cap B)' = A' \cup B'</m>.
@@ -2334,7 +2334,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="QzM" xml:id="sets-exercise-set-minus-union">
+    <exercise xml:id="sets-exercise-set-minus-union" permid="QzM">
       <statement>
         <p permid="dTK">
           Prove <m>A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)</m>.
@@ -2347,7 +2347,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="wGV" xml:id="sets-exercise-times-union">
+    <exercise xml:id="sets-exercise-times-union" permid="wGV">
       <statement>
         <p permid="KaT">
           Prove <m>(A \cup B) \times C = (A \times C ) \cup (B \times C)</m>.
@@ -2355,7 +2355,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="cOe" xml:id="sets-exercise-set-minus-empty-set">
+    <exercise xml:id="sets-exercise-set-minus-empty-set" permid="cOe">
       <statement>
         <p permid="qic">
           Prove <m>(A \cap B) \setminus B = \emptyset</m>.
@@ -2363,7 +2363,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="IVn" xml:id="sets-exercise-union-set-minus">
+    <exercise xml:id="sets-exercise-union-set-minus" permid="IVn">
       <statement>
         <p permid="Wpl">
           Prove <m>(A \cup B) \setminus B = A \setminus B</m>.
@@ -2371,7 +2371,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="pcw" xml:id="sets-exercise-set-minus-distribute">
+    <exercise xml:id="sets-exercise-set-minus-distribute" permid="pcw">
       <statement>
         <p permid="Cwu">
           Prove <m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.
@@ -2384,7 +2384,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="VjF" xml:id="sets-exercise-a-cap-b-setminus-c">
+    <exercise xml:id="sets-exercise-a-cap-b-setminus-c" permid="VjF">
       <statement>
         <p permid="iDD">
           Prove <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
@@ -2392,7 +2392,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="BqO" xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a">
+    <exercise xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a" permid="BqO">
       <statement>
         <p permid="OKM">
           Prove <m>(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)</m>.
@@ -2400,7 +2400,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="hxX" xml:id="sets-exercise-which-are-maps">
+    <exercise xml:id="sets-exercise-which-are-maps" permid="hxX">
       <statement>
         <p permid="uRV">
           Which of the following relations <m>f: {\mathbb Q} \rightarrow {\mathbb Q}</m> define a mapping?
@@ -2442,7 +2442,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="NFg" xml:id="sets-exercise-which-are-one-to-one-onto">
+    <exercise xml:id="sets-exercise-which-are-one-to-one-onto" permid="NFg">
       <statement>
         <p permid="aZe">
           Determine which of the following functions are one-to-one and which are onto.
@@ -2483,7 +2483,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="tMp" xml:id="sets-exercise-inverse-composition">
+    <exercise xml:id="sets-exercise-inverse-composition" permid="tMp">
       <statement>
         <p permid="Hgn">
           Let <m>f :A \rightarrow B</m> and
@@ -2494,7 +2494,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="ZTy" xml:id="sets-exercise-functions-N-to-N">
+    <exercise xml:id="sets-exercise-functions-N-to-N" permid="ZTy">
       <statement>
         <p permid="nnw">
           <ol permid="slx">
@@ -2519,7 +2519,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="GaH" xml:id="sets-exercise-relation-on-circles">
+    <exercise xml:id="sets-exercise-relation-on-circles" permid="GaH">
       <statement>
         <p permid="TuF">
           Prove the relation defined on
@@ -2531,7 +2531,7 @@
 
     
 
-    <exercise permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
+    <exercise  xml:id="sets-exercise-inverse-rational-function" permid="SoZ">
       <statement>
         <p permid="fIX">
           Define a function on the real numbers by
@@ -2550,7 +2550,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="ywi" xml:id="sets-exercise-maps-set-operations">
+    <exercise xml:id="sets-exercise-maps-set-operations" permid="ywi">
       <statement>
         <p permid="LQg">
           Let <m>f: X \rightarrow Y</m> be a map with
@@ -2612,7 +2612,7 @@
     </exercise>
 
 
-    <exercise permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
+    <exercise xml:id="sets-exercise-matrix-mult-well-defined" permid="qRJ">
       <statement>
         <p permid="ElH">
           Show that an <m>m \times n</m> matrix gives rise to a well-defined map from
@@ -2621,7 +2621,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="WYS" xml:id="sets-exercise-reflexive-error">
+    <exercise xml:id="sets-exercise-reflexive-error" permid="WYS">
       <statement>
         <p permid="ksQ">
           Find the error in the following argument by providing a counterexample.
@@ -2639,7 +2639,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="Dgb" xml:id="sets-exercise-projective-real-line">
+    <exercise xml:id="sets-exercise-projective-real-line" permid="Dgb">
       <title>Projective Real Line</title>
       <statement>
         <p permid="QzZ">
@@ -2655,7 +2655,7 @@
     </exercise>
 
 
-    <exercise permid="sTe" xml:id="integers-exercise-pmi-sum-squares">
+    <exercise xml:id="integers-exercise-pmi-sum-squares" permid="sTe">
       <statement>
         <p permid="AEU">
           Prove that
@@ -2681,7 +2681,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="Zan" xml:id="integers-exercise-pmi-sum-cubes">
+    <exercise xml:id="integers-exercise-pmi-sum-cubes" permid="Zan">
       <statement>
         <p permid="gMd">
           Prove that
@@ -2693,7 +2693,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="Fhw" xml:id="integers-exercise-pmi-factorial">
+    <exercise xml:id="integers-exercise-pmi-factorial" permid="Fhw">
       <statement>
         <p permid="MTm">
           Prove that <m>n! \gt 2^n</m> for <m>n \geq 4</m>.
@@ -2710,7 +2710,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="loF" xml:id="integers-exercise-pmi-0dd-times-x">
+    <exercise xml:id="integers-exercise-pmi-0dd-times-x" permid="loF">
       <statement>
         <p permid="tav">
           Prove that
@@ -2722,7 +2722,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="RvO" xml:id="integers-exercise-pmi-divisible-by-3">
+    <exercise xml:id="integers-exercise-pmi-divisible-by-3" permid="RvO">
       <statement>
         <p permid="ZhE">
           Prove that <m>10^{n + 1} + 10^n + 1</m> is divisible by <m>3</m> for <m>n \in {\mathbb N}</m>.
@@ -2730,7 +2730,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="xCX" xml:id="integers-exercise-pmi-divisible-by-99">
+    <exercise xml:id="integers-exercise-pmi-divisible-by-99" permid="xCX">
       <statement>
         <p permid="FoN">
           Prove that <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> is divisible by <m>99</m> for <m>n \in {\mathbb N}</m>.
@@ -2738,7 +2738,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="dKg" xml:id="integers-exercise-pmi-geometric-arithmetic-mean">
+    <exercise xml:id="integers-exercise-pmi-geometric-arithmetic-mean" permid="dKg">
       <statement>
         <p permid="lvW">
           Show that
@@ -2749,7 +2749,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="JRp" xml:id="integers-exercise-pmi-leibniz">
+    <exercise xml:id="integers-exercise-pmi-leibniz" permid="JRp">
       <statement>
         <p permid="RDf">
           Prove the Leibniz rule for <m>f^{(n)} (x)</m>,
@@ -2768,7 +2768,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="pYy" xml:id="integers-exercise-pmi-sum-powers-of-2">
+    <exercise xml:id="integers-exercise-pmi-sum-powers-of-2" permid="pYy">
       <statement>
         <p permid="xKo">
           Use induction to prove that
@@ -2777,7 +2777,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="WfH" xml:id="integers-exercise-pmi-sum-n-over-n-plus-one">
+    <exercise xml:id="integers-exercise-pmi-sum-n-over-n-plus-one" permid="WfH">
       <statement>
         <p permid="dRx">
           Prove that
@@ -2789,7 +2789,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="CmQ" xml:id="integers-exercise-pmi-less-than-nx">
+    <exercise xml:id="integers-exercise-pmi-less-than-nx" permid="CmQ">
       <statement>
         <p permid="JYG">
           If <m>x</m> is a nonnegative real number,
@@ -2815,7 +2815,7 @@
       </hint>
     </exercise>
 
-    <exercise permid="itZ" xml:id="integers-exercise-power-sets">
+    <exercise xml:id="integers-exercise-power-sets" permid="itZ">
       <title>Power Sets</title>
       <statement>
         <p permid="qfP">
@@ -2840,7 +2840,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="OBi" xml:id="integers-exercise-pmi-equivalent">
+    <exercise xml:id="integers-exercise-pmi-equivalent" permid="OBi">
       <statement>
         <p permid="WmY">
           Prove that the two principles of mathematical induction stated in <xref ref="section-math-induction"/>
@@ -2849,7 +2849,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="uIr" xml:id="integers-exercise-smallest-natural-number">
+    <exercise xml:id="integers-exercise-smallest-natural-number" permid="uIr">
       <statement>
         <p permid="Cuh">
           Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number.
@@ -2864,7 +2864,7 @@
    
     <!--Todo Check references to the Fibonacci numbers-->
 
-    <exercise permid="ndS" xml:id="integers-exercise-fibonacci">
+    <exercise xml:id="integers-exercise-fibonacci" permid="ndS">
       <title>Fibonacci Numbers</title>
       <statement>
         <p permid="uPI">

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-burnside">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-burnside" permid="raO">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="plB">
       <statement>
-        <p>
+        <p permid="eMw">
           Let <m>X = \{1,2,3,4,5\}</m> and let <m>G = \{(1), (123), (132), (45), (123)(45), (132)(45)\}</m>.  Let <m>G</m> act on <m>X</m> in the obvious way.
-          <ol>
-            <li>
-              <p>
+          <ol permid="hHc">
+            <li permid="NOl">
+              <p permid="GjM">
                 For each <m>x \in X</m> and <m>g \in G</m>, find <m>\mathcal O_x</m>, <m>G_x</m>, and <m>X_g</m>.  Label these clearly.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="tVu">
+              <p permid="mqV">
                 Verify the <em>orbit-stabilizer theorem</em> and <em>Burnside's lemma</em> for this example and explain (i.e., demonstrate that you know what these are and mean).
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="acD">
+              <p permid="Sye">
                 To thank your professors for doing such an amazing job all semester, you decide to bake 6 pies.  You will give 3 to your favorite abstract algebra professor, 2 to your next favorite professor, and 1 to your third favorite.  You know how to make 4 different types of pies.  How man different pie-to-professor combinations can you create?  Use Burnside's lemma to explain how this relates to the <m>X</m> and <m>G</m> in this problem.
               </p>
             </li>
@@ -29,14 +29,14 @@
       </statement>
     </exercise>
 
-    <exercise>
+    <exercise permid="VsK">
       <statement>
-        <p>
+        <p permid="KTF">
           You want to make friendship bracelets for all your friends.  Each will consist of 10 beads. You have access to an unlimited supply of four different colors of beads.  However, you require that no two bracelets can be identical (since each of your friends is unique).  How many friends could you have and still be able to accomplish this?
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="BzT">
+        <p permid="yFn">
           You will want to use the group <m>D_{10}</m> that contains 20 elements (10 rotations and 10 reflections).  
         </p>
       </hint>

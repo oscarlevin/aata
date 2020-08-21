@@ -4,7 +4,7 @@
  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-simplicity-of-an" permid="GCx">
      <title>The Simplicity of the Alternating Group</title>
     <xi:include href="worksheets/groups-a5-simple.ptx" />
-     <subsection xml:id="subsec-the-proof">
+     <subsection xml:id="subsec-the-proof" permid="Zeo">
        <title>The Proof</title>
        
        <p permid="nWq">
@@ -216,8 +216,8 @@
            </p>
          </proof>
        </lemma>
-             <!-- TWJ - 1/13/2014 -->
-             <!-- nontrivial added to the lemma statement.  Suggested by M. Faucette. -->
+            <!-- TWJ - 1/13/2014 -->
+            <!-- nontrivial added to the lemma statement.  Suggested by M. Faucette. -->
        <theorem xml:id="theorem-an-simple" permid="OQQ">
          <statement>
            <p permid="FZU">

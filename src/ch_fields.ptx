@@ -11,8 +11,8 @@
 <!-- See the file COPYING for copying conditions.     -->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fields" permid="pNh">
   <title>Fields</title>
-  <introduction>
-    <p>
+  <introduction permid="bCI">
+    <p permid="HJR">
       Our goal in this chapter is to understand the theory of <term>fields</term>, similar to how we studied groups and rings.  The motivation is not altruistic though.  Rather, we will study fields as a canvas in which we can solve other problems, from factoring polynomials to constructing geometric figures with a straight edge and compass.
     </p>
   </introduction>

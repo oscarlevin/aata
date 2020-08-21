@@ -214,21 +214,21 @@
             </p>
           </proof>
         </theorem>
-              <!-- agraph{Original Proof} -->
-              <!-- The proof is similar to the proof of <xref ref="fields:isomorph_extension_theorem" />.  We will use mathematical induction on the degree of <m>f(x)</m>.  If the degree of <m>f(x)</m> is 0 or 1, then <m>E = F</m> and there is nothing to show.  Assume -->
-              <!-- that the result holds for all polynomials of degree <m>k</m> with <m>0 \leq k \lt n</m>.  Suppose that the degree of <m>f(x)</m> is <m>n</m>.  Let <m>p(x)</m> be an irreducible factor of <m>f(x)</m> of degree <m>r</m>.  Since all of the roots of <m>p(x)</m> are in <m>E</m>, we can choose one of -->
-              <!-- these roots, say <m>\alpha</m>, so that <m>F \subset F( \alpha ) \subset E</m>.  If <m>\beta</m> is any other root of <m>p(x)</m>, then <m>F \subset F( \beta ) \subset E</m>.  By <xref ref="fields:isomorph_lemma" />, there exists a unique isomorphism <m>\overline{\sigma}: F( \alpha ) \rightarrow F( \beta )</m> for each such <m>\beta</m> that fixes <m>F</m> elementwise.  Since <m>E</m> is a splitting field of <m>F(\beta)</m>, there are exactly <m>r</m> such isomorphisms.  We can factor -->
-              <!-- <m>p(x)</m> in <m>F(\alpha)</m> as <m>p(x) = (x - \alpha) q(x)</m>.  The degree of <m>q(x)</m> is less than <m>r</m>.  Since we know that <m>E</m> is the  splitting field of <m>q(x)</m> over <m>F(\alpha)</m>, we can apply -->
-              <!-- the induction  hypothesis to conclude that  -->
-              <!-- \[ -->
-              <!-- |G(E/F(\alpha))| = [E:F(\alpha)]. -->
-              <!-- \] -->
-              <!-- Consequently, there are -->
-              <!-- \[ -->
-              <!-- [E:F] = [E:F(\alpha)] [F( \alpha):F] -->
-              <!-- \] -->
-              <!-- possible automorphisms of <m>E</m> that fix <m>F</m>, or <m>|G(E/F)| = [E:F]</m>. -->
-              <!-- Proof fixed<mdash />I hope.  TWJ 24/4/2013 -->
+            <!-- agraph{Original Proof} -->
+            <!-- The proof is similar to the proof of <xref ref="fields:isomorph_extension_theorem" />.  We will use mathematical induction on the degree of <m>f(x)</m>.  If the degree of <m>f(x)</m> is 0 or 1, then <m>E = F</m> and there is nothing to show.  Assume -->
+            <!-- that the result holds for all polynomials of degree <m>k</m> with <m>0 \leq k \lt n</m>.  Suppose that the degree of <m>f(x)</m> is <m>n</m>.  Let <m>p(x)</m> be an irreducible factor of <m>f(x)</m> of degree <m>r</m>.  Since all of the roots of <m>p(x)</m> are in <m>E</m>, we can choose one of -->
+            <!-- these roots, say <m>\alpha</m>, so that <m>F \subset F( \alpha ) \subset E</m>.  If <m>\beta</m> is any other root of <m>p(x)</m>, then <m>F \subset F( \beta ) \subset E</m>.  By <xref ref="fields:isomorph_lemma" />, there exists a unique isomorphism <m>\overline{\sigma}: F( \alpha ) \rightarrow F( \beta )</m> for each such <m>\beta</m> that fixes <m>F</m> elementwise.  Since <m>E</m> is a splitting field of <m>F(\beta)</m>, there are exactly <m>r</m> such isomorphisms.  We can factor -->
+            <!-- <m>p(x)</m> in <m>F(\alpha)</m> as <m>p(x) = (x - \alpha) q(x)</m>.  The degree of <m>q(x)</m> is less than <m>r</m>.  Since we know that <m>E</m> is the  splitting field of <m>q(x)</m> over <m>F(\alpha)</m>, we can apply -->
+            <!-- the induction  hypothesis to conclude that  -->
+            <!-- \[ -->
+            <!-- |G(E/F(\alpha))| = [E:F(\alpha)]. -->
+            <!-- \] -->
+            <!-- Consequently, there are -->
+            <!-- \[ -->
+            <!-- [E:F] = [E:F(\alpha)] [F( \alpha):F] -->
+            <!-- \] -->
+            <!-- possible automorphisms of <m>E</m> that fix <m>F</m>, or <m>|G(E/F)| = [E:F]</m>. -->
+            <!-- Proof fixed<mdash />I hope.  TWJ 24/4/2013 -->
         <corollary permid="qfc">
           <statement>
             <p permid="yfn">
@@ -236,7 +236,7 @@
               Then <m>G(E/F)</m> is cyclic of order <m>k</m>.
             </p>
           </statement>
-              <!-- Corrected statement of the corollary.  Suggested by K. Wenholz. - TWJ 5/15/2012 -->
+            <!-- Corrected statement of the corollary.  Suggested by K. Wenholz. - TWJ 5/15/2012 -->
           <proof permid="Smm">
             <p permid="UiQ">
               Let <m>p</m> be the characteristic of <m>E</m> and <m>F</m> and assume that the orders of <m>E</m> and <m>F</m> are <m>p^m</m> and <m>p^n</m>,
@@ -278,7 +278,7 @@
               which is impossible.
             </p>
           </proof>
-              <!-- Corrected proof.  Suggested by M. Faucette. - TWJ 4/7/2014 -->
+            <!-- Corrected proof.  Suggested by M. Faucette. - TWJ 4/7/2014 -->
         </corollary>
 
         <example xml:id="example-galois-group-sqrt3-5" permid="uOV">
@@ -294,19 +294,19 @@
         </example>
 
         <example xml:id="example-galois-group-x4" permid="aWe">
-          <p>
+          <p permid="eqK">
             Let us compute the Galois group of
             <me permid="xYj">
               f(x) = x^4 + x^3 + x^2 + x + 1
             </me>
             over <m>{\mathbb Q}</m>.
             First let's check that <m>f(x)</m> is irreducible over <m>\Q</m>.  To do this, consider a new polynomial <m>g(x) = f(x+1)</m> (essentially doing a change of variables).  We have 
-            <me>
+            <me permid="qFc">
               g(x) = x^4 + 5x^3 + 10x^2 + 10x + 5.
             </me>
             This is irreducible by Eisenstein's criterion.  But if <m>f(x)</m> factored, then so would <m>g(x)</m>, so we see that <m>f(x)</m> is irreducible.
           </p>
-          <p>
+          <p permid="KxT">
             Furthermore, since <m>(x -1)f(x) = x^5 - 1</m>,
             we can use DeMoivre's Theorem to determine that the roots of <m>f(x)</m> are <m>\omega^i</m>,
             where  <m>i = 1, \ldots, 4</m> and

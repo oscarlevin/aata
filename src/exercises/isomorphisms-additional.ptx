@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-isomorph">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-isomorph" permid="VeC">
 <title>Additional Exercises</title>
 
 
- <exercise permid="PEo" xml:id="isomorph-exercise-Z-isomorphic-nZ">
+ <exercise xml:id="isomorph-exercise-Z-isomorphic-nZ" permid="PEo">
     <statement>
       <p permid="Hqi">
           Prove that <m>\mathbb Z \cong n \mathbb Z</m> for <m>n \neq 0</m>.
@@ -18,7 +18,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="vLx" xml:id="isomorph-exercise-C-star-gl2-subgroup">
+  <exercise xml:id="isomorph-exercise-C-star-gl2-subgroup" permid="vLx">
     <statement>
       <p permid="nxr">
           Prove that <m>{\mathbb C}^\ast</m> is isomorphic to the subgroup of
@@ -45,7 +45,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="bSG" xml:id="isomorph-exercise-U8-Z4">
+  <exercise xml:id="isomorph-exercise-U8-Z4" permid="bSG">
     <statement>
       <p permid="TEA">
           Prove or disprove: <m>U(8) \cong {\mathbb Z}_4</m>.
@@ -58,7 +58,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="HZP" xml:id="isomorph-exercise-U8-matrices">
+  <exercise xml:id="isomorph-exercise-U8-matrices" permid="HZP">
     <statement>
       <p permid="zLJ">
           Prove that <m>U(8)</m> is isomorphic to the group of matrices
@@ -84,7 +84,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="ogY" xml:id="isomorph-exercise-U5-U10">
+  <exercise xml:id="isomorph-exercise-U5-U10" permid="ogY">
     <statement>
       <p permid="fSS">
           Show that <m>U(5)</m> is isomorphic to <m>U(10)</m>, but <m>U(12)</m> is not.
@@ -92,7 +92,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="Uoh" xml:id="isomorph-exercise-Zn-nth-roots-of-unity">
+  <exercise xml:id="isomorph-exercise-Zn-nth-roots-of-unity" permid="Uoh">
     <statement>
       <p permid="Mab">
           Show that the <m>n</m>th roots of unity are isomorphic to <m>{\mathbb Z}_n</m>.
@@ -105,7 +105,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="Avq" xml:id="isomorph-exercise-cyclic-group-order-n">
+  <exercise xml:id="isomorph-exercise-cyclic-group-order-n" permid="Avq">
     <statement>
       <p permid="shk">
           Show that any cyclic group of order <m>n</m> is isomorphic to <m>{\mathbb Z}_n</m>.
@@ -113,7 +113,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="gCz" xml:id="isomorph-exercise-Q-not-isomorphic-Z">
+  <exercise xml:id="isomorph-exercise-Q-not-isomorphic-Z" permid="gCz">
     <statement>
       <p permid="Yot">
           Prove that <m>{\mathbb Q}</m> is not isomorphic to <m>{\mathbb Z}</m>.
@@ -126,7 +126,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="MJI" xml:id="isomorph-exercise-R-minus-neg-1">
+  <exercise xml:id="isomorph-exercise-R-minus-neg-1" permid="MJI">
     <statement>
       <p permid="EvC">
           Let <m>G = {\mathbb R} \setminus \{ -1 \}</m> and define a binary operation on <m>G</m> by
@@ -139,7 +139,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="sQR" xml:id="isomorph-exercise-3x3-matrices">
+  <exercise xml:id="isomorph-exercise-3x3-matrices" permid="sQR">
     <statement>
       <p permid="kCL">
           Show that the matrices
@@ -185,7 +185,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="YYa" xml:id="isomorph-exercise-groups-order-8">
+  <exercise xml:id="isomorph-exercise-groups-order-8" permid="YYa">
     <statement>
       <p permid="QJU">
           Find five non-isomorphic groups of order <m>8</m>.
@@ -198,7 +198,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="Ffj" xml:id="isomorph-exercise-S4-not-iso-D12">
+  <exercise xml:id="isomorph-exercise-S4-not-iso-D12" permid="Ffj">
     <statement>
       <p permid="wRd">
           Prove <m>S_4</m> is not isomorphic to <m>D_{12}</m>.
@@ -206,7 +206,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="lms" xml:id="isomorph-exercise-matrix-Dn">
+  <exercise xml:id="isomorph-exercise-matrix-Dn" permid="lms">
     <statement>
       <p permid="cYm">
           Let <m>\omega = \cis(2 \pi /n)</m> be a primitive <m>n</m>th root of unity.
@@ -229,7 +229,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="RtB" xml:id="isomorph-exercise-2x2-matrix-group-Dn">
+  <exercise xml:id="isomorph-exercise-2x2-matrix-group-Dn" permid="RtB">
     <statement>
       <p permid="Jfv">
           Show that the set of all matrices of the form
@@ -245,7 +245,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="xAK" xml:id="isomorph-exercise-Z4xZ2">
+  <exercise xml:id="isomorph-exercise-Z4xZ2" permid="xAK">
     <statement>
       <p permid="pmE">
           List all of the elements of <m>{\mathbb Z}_4 \times {\mathbb Z}_2</m>.
@@ -253,7 +253,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="dHT" xml:id="isomorph-exercise-order-element-ZmxZn">
+  <exercise xml:id="isomorph-exercise-order-element-ZmxZn" permid="dHT">
     <statement>
       <p permid="VtN">
           Find the order of each of the following elements.
@@ -292,7 +292,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="JPc" xml:id="isomorph-exercise-D4-not-internal-direct-product">
+  <exercise xml:id="isomorph-exercise-D4-not-internal-direct-product" permid="JPc">
     <statement>
       <p permid="BAW">
           Prove that <m>D_4</m> cannot be the internal direct product of two of its proper subgroups.
@@ -300,7 +300,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="pWl" xml:id="isomorph-exercise-subgroup-Qstar">
+  <exercise xml:id="isomorph-exercise-subgroup-Qstar" permid="pWl">
     <statement>
       <p permid="hIf">
           Prove that the subgroup of
@@ -310,7 +310,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="Wdu" xml:id="isomorph-exercise-S3xZ2">
+  <exercise xml:id="isomorph-exercise-S3xZ2" permid="Wdu">
     <statement>
       <p permid="NPo">
           Prove that <m>S_3 \times {\mathbb Z}_2</m> is isomorphic to <m>D_6</m>.
@@ -325,7 +325,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="CkD" xml:id="isomorph-exercise-subgroup-order-3">
+  <exercise xml:id="isomorph-exercise-subgroup-order-3" permid="CkD">
     <statement>
       <p permid="tWx">
           Prove or disprove: Every abelian group of order divisible by <m>3</m> contains a subgroup of order <m>3</m>.
@@ -340,7 +340,7 @@
 
   <!--Todo Fix the solution to Exercise 20-->
 
-  <exercise permid="irM" xml:id="isomorph-exercise-subgroup-order-6-counterexample">
+  <exercise xml:id="isomorph-exercise-subgroup-order-6-counterexample" permid="irM">
     <statement>
       <p permid="adG">
           Prove or disprove: Every nonabelian group of order divisible by 6 contains a subgroup of order <m>6</m>.
@@ -348,7 +348,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="OyV" xml:id="isomorph-exercise-order-20">
+  <exercise xml:id="isomorph-exercise-order-20" permid="OyV">
     <statement>
       <p permid="GkP">
           Let <m>G</m> be a group of order <m>20</m>.
@@ -358,7 +358,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="uGe" xml:id="isomorph-exercise-GxK-congruent-GxH">
+  <exercise xml:id="isomorph-exercise-GxK-congruent-GxH" permid="uGe">
     <statement>
       <p permid="mrY">
           Prove or disprove the following assertion.
@@ -368,7 +368,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="aNn" xml:id="isomorph-exercise-order-51">
+  <exercise xml:id="isomorph-exercise-order-51" permid="aNn">
     <statement>
       <p permid="Szh">
           Prove or disprove: There is a noncyclic abelian group of order <m>51</m>.
@@ -376,7 +376,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="GUw" xml:id="isomorph-exercise-order-52">
+  <exercise xml:id="isomorph-exercise-order-52" permid="GUw">
     <statement>
       <p permid="yGq">
           Prove or disprove: There is a noncyclic abelian group of order <m>52</m>.
@@ -389,7 +389,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="nbF" xml:id="isomorph-exercise-identity-isomorph">
+  <exercise xml:id="isomorph-exercise-identity-isomorph" permid="nbF">
     <statement>
       <p permid="eNz">
           Let <m>\phi : G \rightarrow H</m> be a group isomorphism.
@@ -400,7 +400,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="TiO" xml:id="isomorph-exercise-cyclic-isomorph">
+  <exercise xml:id="isomorph-exercise-cyclic-isomorph" permid="TiO">
     <statement>
       <p permid="KUI">
           Let <m>G \cong H</m>.
@@ -416,7 +416,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="zpX" xml:id="isomorph-exercise-order-p-Zp">
+  <exercise xml:id="isomorph-exercise-order-p-Zp" permid="zpX">
     <statement>
       <p permid="rbR">
           Prove that any group <m>G</m> of order <m>p</m>,
@@ -425,7 +425,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="fxg" xml:id="isomorph-exercise-Sn-A-n-plus-2">
+  <exercise xml:id="isomorph-exercise-Sn-A-n-plus-2" permid="fxg">
     <statement>
       <p permid="Xja">
           Show that <m>S_n</m> is isomorphic to a subgroup of <m>A_{n+2}</m>.
@@ -433,7 +433,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="LEp" xml:id="isomorph-exercise-Dn-Sn">
+  <exercise xml:id="isomorph-exercise-Dn-Sn" permid="LEp">
     <statement>
       <p permid="Dqj">
           Prove that <m>D_n</m> is isomorphic to a subgroup of <m>S_n</m>.
@@ -453,7 +453,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="XSH" xml:id="isomorph-exercise-U5-Z4">
+  <exercise xml:id="isomorph-exercise-U5-Z4" permid="XSH">
     <statement>
       <p permid="PEB">
           Prove <m>U(5) \cong {\mathbb Z}_4</m>.
@@ -462,7 +462,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="DZQ" xml:id="isomorph-exercise-S3-cayleys-theorem">
+  <exercise xml:id="isomorph-exercise-S3-cayleys-theorem" permid="DZQ">
     <statement>
       <p permid="vLK">
           Write out the permutations associated with each element of <m>S_3</m> in the proof of Cayley's Theorem.
@@ -470,7 +470,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="kgZ" xml:id="isomorph-exercise-automorphism">
+  <exercise xml:id="isomorph-exercise-automorphism" permid="kgZ">
     <statement>
       <p permid="bST">
           An <term>automorphism</term> of a group <m>G</m> is an isomorphism with itself.
@@ -482,7 +482,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="Qoi" xml:id="isomorph-exercise-complex-conjugation">
+  <exercise xml:id="isomorph-exercise-complex-conjugation" permid="Qoi">
     <statement>
       <p permid="Iac">
           Prove that <m>a + ib \mapsto a - ib</m> is an automorphism of <m>{\mathbb C}^*</m>.
@@ -490,7 +490,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="wvr" xml:id="isomorph-exercise-conjugation-matrix">
+  <exercise xml:id="isomorph-exercise-conjugation-matrix" permid="wvr">
     <statement>
       <p permid="ohl">
           Prove that <m>A \mapsto B^{-1}AB</m> is an automorphism of
@@ -499,7 +499,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="cCA" xml:id="isomorph-exercise-autG">
+  <exercise xml:id="isomorph-exercise-autG" permid="cCA">
     <statement>
       <p permid="Uou">
           We will denote the set of all automorphisms of <m>G</m> by <m>\aut(G)</m>.
@@ -516,7 +516,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="IJJ" xml:id="isomorph-exercise-aut-Z6">
+  <exercise xml:id="isomorph-exercise-aut-Z6" permid="IJJ">
     <statement>
       <p permid="AvD">
           Find <m>\aut( {\mathbb Z}_6)</m>.
@@ -529,7 +529,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="oQS" xml:id="isomorph-exercise-aut-Z">
+  <exercise xml:id="isomorph-exercise-aut-Z" permid="oQS">
     <statement>
       <p permid="gCM">
           Find <m>\aut( {\mathbb Z})</m>.
@@ -537,7 +537,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="UYb" xml:id="isomorph-exercise-congruent-automorphism-groups">
+  <exercise xml:id="isomorph-exercise-congruent-automorphism-groups" permid="UYb">
     <statement>
       <p permid="MJV">
           Find two nonisomorphic groups <m>G</m> and <m>H</m> such that <m>\aut(G) \cong \aut(H)</m>.
@@ -572,7 +572,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="hmt" xml:id="isomorph-exercise-inn-G">
+  <exercise xml:id="isomorph-exercise-inn-G" permid="hmt">
     <statement>
       <p permid="YYn">
           Prove that <m>\inn(G)</m> is a subgroup of <m>\aut(G)</m>.
@@ -580,7 +580,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="NtC" xml:id="isomorph-exercise-aut-Q8">
+  <exercise xml:id="isomorph-exercise-aut-Q8" permid="NtC">
     <statement>
       <p permid="Ffw">
           What are the inner automorphisms of the quaternion group <m>Q_8</m>?
@@ -589,7 +589,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="tAL" xml:id="isomorph-exercise-right-regular-rep">
+  <exercise xml:id="isomorph-exercise-right-regular-rep" permid="tAL">
     <statement>
       <p permid="lmF">
           Let <m>G</m> be a group and <m>g \in G</m>.
@@ -608,7 +608,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="ZHU" xml:id="isomorph-exercise-isomorphism-internal-direct-product">
+  <exercise xml:id="isomorph-exercise-isomorphism-internal-direct-product" permid="ZHU">
     <statement>
       <p permid="RtO">
           Let <m>G</m> be the internal direct product of subgroups <m>H</m> and <m>K</m>.
@@ -625,7 +625,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="FPd" xml:id="isomorph-exercise-subgroups-isomorphic-groups">
+  <exercise xml:id="isomorph-exercise-subgroups-isomorphic-groups" permid="FPd">
     <statement>
       <p permid="xAX">
           Let <m>G</m> and <m>H</m> be isomorphic groups.
@@ -635,7 +635,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="lWm" xml:id="isomorph-exercise-direct-product-isomorphic-groups">
+  <exercise xml:id="isomorph-exercise-direct-product-isomorphic-groups" permid="lWm">
     <statement>
       <p permid="dIg">
           If <m>G \cong \overline{G}</m> and <m>H \cong \overline{H}</m>,
@@ -644,7 +644,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="Sdv" xml:id="isomorph-exercise-GxH-iso-HxG">
+  <exercise xml:id="isomorph-exercise-GxH-iso-HxG" permid="Sdv">
     <statement>
       <p permid="JPp">
           Prove that <m>G \times H</m> is isomorphic to <m>H \times G</m>.
@@ -652,7 +652,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="ykE" xml:id="isomorph-exercise-product-gcd-1">
+  <exercise xml:id="isomorph-exercise-product-gcd-1" permid="ykE">
     <statement>
       <p permid="pWy">
           Let <m>n_1, \ldots, n_k</m> be positive integers.
@@ -664,7 +664,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="erN" xml:id="isomorph-exercise-AxB-abelian">
+  <exercise xml:id="isomorph-exercise-AxB-abelian" permid="erN">
     <statement>
       <p permid="WdH">
           Prove that <m>A \times B</m> is abelian if and only if <m>A</m> and <m>B</m> are abelian.
@@ -672,7 +672,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="KyW" xml:id="isomorph-exercise-internal-direct-product-of-n-subgroups">
+  <exercise xml:id="isomorph-exercise-internal-direct-product-of-n-subgroups" permid="KyW">
     <statement>
       <p permid="CkQ">
           If <m>G</m> is the internal direct product of <m>H_1, H_2, \ldots, H_n</m>,
@@ -681,7 +681,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="qGf" xml:id="isomorph-exercise-H1xH2-subgroup">
+  <exercise xml:id="isomorph-exercise-H1xH2-subgroup" permid="qGf">
     <statement>
       <p permid="irZ">
           Let <m>H_1</m> and <m>H_2</m> be subgroups of <m>G_1</m> and <m>G_2</m>,
@@ -691,7 +691,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="WNo" xml:id="isomorph-exercise-d-gcd-iff">
+  <exercise xml:id="isomorph-exercise-d-gcd-iff" permid="WNo">
     <statement>
       <p permid="Ozi">
           Let <m>m, n \in {\mathbb Z}</m>.
@@ -700,7 +700,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="CUx" xml:id="isomorph-exercise-lcm">
+  <exercise xml:id="isomorph-exercise-lcm" permid="CUx">
     <statement>
       <p permid="uGr">
           Let <m>m, n \in {\mathbb Z}</m>.
@@ -795,7 +795,7 @@
     </statement>
   </exercise>
 
-<exercise permid="nkj" xml:id="homomorph-exercise-det-homomorph">
+<exercise xml:id="homomorph-exercise-det-homomorph" permid="nkj">
   <statement>
     <p permid="mHG">
           Prove that <m>\det( AB) = \det(A) \det(B)</m> for <m>A, B \in GL_2( {\mathbb R} )</m>.
@@ -805,7 +805,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Trs" xml:id="homomorph-exercise-which-are-homomorph">
+<exercise xml:id="homomorph-exercise-which-are-homomorph" permid="Trs">
   <statement>
     <p permid="SOP">
           Which of the following maps are homomorphisms?
@@ -897,7 +897,7 @@
   </hint>
 </exercise>
 
-<exercise permid="zyB" xml:id="homomorph-exercise-matrix-mult">
+<exercise xml:id="homomorph-exercise-matrix-mult" permid="zyB">
   <statement>
     <p permid="yVY">
           Let <m>A</m> be an <m>m \times n</m> matrix.
@@ -907,7 +907,7 @@
   </statement>
 </exercise>
 
-<exercise permid="fFK" xml:id="homomorph-exercise-n-to-7n">
+<exercise xml:id="homomorph-exercise-n-to-7n" permid="fFK">
   <statement>
     <p permid="fdh">
           Let <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m> be given by <m>\phi(n) = 7n</m>.
@@ -923,7 +923,7 @@
   </hint>
 </exercise>
 
-<exercise permid="LMT" xml:id="homomorph-exercise-Z24-to-Z18">
+<exercise xml:id="homomorph-exercise-Z24-to-Z18" permid="LMT">
   <statement>
     <p permid="Lkq">
           Describe all of the homomorphisms from
@@ -942,7 +942,7 @@
 
 <!--Todo Fix the solution to Exercise 5.-->
 
-<exercise permid="rUc" xml:id="homomorph-exercise-Z-to-Z12">
+<exercise xml:id="homomorph-exercise-Z-to-Z12" permid="rUc">
   <statement>
     <p permid="rrz">
           Describe all of the homomorphisms from
@@ -951,7 +951,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Ybl" xml:id="homomorph-exercise-second-isomorph-ther">
+<exercise xml:id="homomorph-exercise-second-isomorph-ther" permid="Ybl">
   <statement>
     <p permid="XyI">
           In the group <m>{\mathbb Z}_{24}</m>,
@@ -993,7 +993,7 @@
 
 <!--Todo Double check the solution to Exercise 7.-->
 
-<exercise permid="Eiu" xml:id="homomorph-exercise-g-to-gn">
+<exercise xml:id="homomorph-exercise-g-to-gn" permid="Eiu">
   <statement>
     <p permid="DFR">
           If <m>G</m> is an abelian group and <m>n \in {\mathbb N}</m>,
@@ -1003,7 +1003,7 @@
   </statement>
 </exercise>
 
-<exercise permid="kpD" xml:id="homomorph-exercise-phi-G-abelian">
+<exercise xml:id="homomorph-exercise-phi-G-abelian" permid="kpD">
   <statement>
     <p permid="jNa">
           If <m>\phi : G \rightarrow H</m> is a group homomorphism and <m>G</m> is abelian,
@@ -1018,7 +1018,7 @@
   </hint>
 </exercise>
 
-<exercise permid="QwM" xml:id="homomorph-exercise-phi-G-cyclic">
+<exercise xml:id="homomorph-exercise-phi-G-cyclic" permid="QwM">
   <statement>
     <p permid="PUj">
           If <m>\phi : G \rightarrow H</m> is a group homomorphism and <m>G</m> is cyclic,
@@ -1027,7 +1027,7 @@
   </statement>
 </exercise>
 
-<exercise permid="wDV" xml:id="homomorph-exercise-cyclic-homomorph-generator">
+<exercise xml:id="homomorph-exercise-cyclic-homomorph-generator" permid="wDV">
   <statement>
     <p permid="wbs">
           Show that a homomorphism defined on a cyclic group is completely determined by its action on the generator of the group.
@@ -1044,7 +1044,7 @@
 		</solution>
 	</exercise>
 -->
-<exercise permid="cLe" xml:id="homomorph-exercise-one-subgroup-normal">
+<exercise xml:id="homomorph-exercise-one-subgroup-normal" permid="cLe">
   <statement>
     <p permid="ciB">
           If a group <m>G</m> has exactly one subgroup <m>H</m> of order <m>k</m>,
@@ -1053,7 +1053,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ISn" xml:id="homomorph-exercise-QmodZ-Q">
+<exercise xml:id="homomorph-exercise-QmodZ-Q" permid="ISn">
   <statement>
     <p permid="IpK">
           Prove or disprove:
@@ -1062,7 +1062,7 @@
   </statement>
 </exercise>
 
-<exercise permid="oZw" xml:id="homomorph-exercise-G-finitie-N-normal">
+<exercise xml:id="homomorph-exercise-G-finitie-N-normal" permid="oZw">
   <statement>
     <p permid="owT">
           Let <m>G</m> be a finite group and <m>N</m> a normal subgroup of <m>G</m>.
@@ -1073,7 +1073,7 @@
   </statement>
 </exercise>
 
-<exercise permid="VgF" xml:id="homomorph-exercise-quotient-to-quatient">
+<exercise xml:id="homomorph-exercise-quotient-to-quatient" permid="VgF">
   <statement>
     <p permid="UEc">
           Let <m>G_1</m> and <m>G_2</m> be groups,
@@ -1085,7 +1085,7 @@
   </statement>
 </exercise>
 
-<exercise permid="BnO" xml:id="homomorph-exercise-H-K-normal">
+<exercise xml:id="homomorph-exercise-H-K-normal" permid="BnO">
   <statement>
     <p permid="ALl">
           If <m>H</m> and <m>K</m> are normal subgroups of <m>G</m> and <m>H \cap K = \{ e \}</m>,
@@ -1094,7 +1094,7 @@
   </statement>
 </exercise>
 
-<exercise permid="huX" xml:id="homomorph-exercise-isomorphic-quotients">
+<exercise xml:id="homomorph-exercise-isomorphic-quotients" permid="huX">
   <statement>
     <p permid="gSu">
           Let <m>\phi : G_1 \rightarrow G_2</m> be a surjective group homomorphism.
@@ -1118,7 +1118,7 @@
   </statement>
 </exercise>
 
-<exercise permid="tJp" xml:id="homomorph-exercise-equivalence-relation">
+<exercise xml:id="homomorph-exercise-equivalence-relation" permid="tJp">
   <statement>
     <p permid="tgM">
           Given a homomorphism <m>\phi :G \rightarrow H</m> define a relation <m>\sim</m> on <m>G</m> by <m>a \sim b</m> if

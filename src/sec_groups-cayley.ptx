@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-cayley">
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-cayley" permid="CTu">
       <title>Isomorphisms and Cayley's Theorem</title>
-      <introduction>
-        <p>
+      <introduction permid="nKw">
+        <p permid="sup">
           Recall that two groups <m>(G, \cdot)</m> and
           <m>(H, \circ)</m> are <term>isomorphic</term>
               <idx><h>Group</h><h>isomorphic</h></idx>
           if there exists a one-to-one and onto map
           <m>\phi : G \rightarrow H</m> such that the group operation is preserved;  that is,
-          <me>
+          <me permid="JsA">
             \phi( a \cdot b) = \phi( a) \circ \phi( b)
           </me>
           for all <m>a</m> and <m>b</m> in <m>G</m>.
@@ -26,27 +26,27 @@
               <idx><h>Isomorphism</h><h>of groups</h></idx>
         </p>
 
-        <p>
+        <p permid="YBy">
           The main goal in group theory is to classify all groups;
           however, it makes sense to consider two groups to be the same if they are isomorphic.
           Hence, we can modify our goal of classifying all groups to classifying all groups
           <term>up to isomorphism</term>.
         </p>
         
-        <p>
+        <p permid="EIH">
           For example, you might wonder how many different cyclic groups there are of a given order.  It turns out the answer is 1.  For any given order, there is exactly one cyclic group (up to isomorphism) of that order: <m>\Z_n</m> is isomorphic to every cyclic group of order <m>n</m>.  Later will will give a similar classification of all abelian groups of a particular type.
         </p>
         
-        <p>
+        <p permid="kPQ">
           The other advantage in considering isomorphisms is that it provides us a way to represent groups in some consistent way.  Let's see what this means.
         </p>
       </introduction>
       
       <xi:include href="./worksheets/groups-cayley-permutations.ptx"/>
 
-      <subsection xml:id="isomorph-subsection-cayleys-theorem">
+      <subsection xml:id="isomorph-subsection-cayleys-theorem" permid="jaD">
         <title>Cayley's Theorem</title>
-        <p>
+        <p permid="QWZ">
           Cayley proved that if <m>G</m> is a group,
           it is isomorphic to a group of permutations on some set;
           hence, every group is a permutation group.
@@ -55,16 +55,16 @@
           such as a group of permutations or matrices.
         </p>
 
-        <example xml:id="example-isomorph-cayley">
-          <p>
+        <example xml:id="example-isomorph-cayley" permid="bwe">
+          <p permid="zYO">
             Consider the group <m>{\mathbb Z}_3</m>.
             The Cayley table for <m>{\mathbb Z}_3</m> is as follows.
           </p>
 
-          <sidebyside width="100%">
-              <!-- math table -->
-            <p>
-              <me>
+          <sidebyside width="100%" permid="HDn">
+            <!-- math table -->
+            <p permid="gfX">
+              <me permid="pzJ">
                 \begin{array}{c|ccc}
                 + &amp; 0 &amp; 1 &amp; 2 \\ \hline
                 0       &amp; 0 &amp; 1 &amp; 2 \\
@@ -75,10 +75,10 @@
             </p>
           </sidebyside>
 
-          <p>
+          <p permid="Mng">
             The addition table of <m>{\mathbb Z}_3</m> suggests that it is the same as the permutation group <m>G = \{ (0), (0 1 2), (0 2 1) \}</m>.
             The isomorphism here is
-            <md>
+            <md permid="VGS">
               <mrow>0 &amp; \mapsto
               \begin{pmatrix}
               0 &amp; 1 &amp; 2 \\ 0 &amp; 1 &amp; 2
@@ -98,13 +98,13 @@
           </p>
         </example>
 
-        <theorem xml:id="theorem-cayleys">
+        <theorem xml:id="theorem-cayleys" permid="voV">
           <title>Cayley</title>
           <idx>
           <h>Cayley's Theorem</h>
           </idx>
           <statement>
-            <p>
+            <p permid="TRF">
               Every group is isomorphic to a group of permutations.
             </p>
           </statement>
@@ -112,15 +112,15 @@
          
         </theorem>
 
-        <p>
+        <p permid="xei">
           The isomorphism <m>g \mapsto \lambda_g</m> is known as the
           <term>left regular representation</term><idx><h>Left regular representation</h></idx> of <m>G</m>.
         </p>
       </subsection>
 
-      <subsection xml:id="isomorph-subsection-historical-note">
+      <subsection xml:id="isomorph-subsection-historical-note" permid="PhM">
         <title>Historical Note</title>
-        <p>
+        <p permid="dlr">
           Arthur Cayley
               <idx><h>Cayley, Arthur</h></idx>
           was born in England in 1821, 

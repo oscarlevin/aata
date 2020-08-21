@@ -4,7 +4,7 @@
   <title>Additional Exercises</title>
 
 
-  <exercise permid="KCJ" xml:id="groups-exercise-symmetries-square">
+  <exercise xml:id="groups-exercise-symmetries-square" permid="KCJ">
     <statement>
       <p permid="Vcb">
           Describe the symmetries of a square and prove that the set of symmetries is a group.
@@ -16,7 +16,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="CYk" xml:id="groups-exercise-matrices-dont-commute">
+  <exercise xml:id="groups-exercise-matrices-dont-commute" permid="CYk">
     <statement>
       <p permid="NxC">
           Give an example of two elements <m>A</m> and <m>B</m> in
@@ -31,7 +31,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="jft" xml:id="groups-exercise-sl2-closed">
+  <exercise xml:id="groups-exercise-sl2-closed" permid="jft">
     <statement>
       <p permid="tEL">
           Prove that the product of two matrices in <m>SL_2({\mathbb R})</m> has determinant one.
@@ -41,7 +41,7 @@
 
   <!--Todo Check references to Heisenberg group-->
 
-  <exercise permid="PmC" xml:id="groups-exercise-heisenberg-group">
+  <exercise xml:id="groups-exercise-heisenberg-group" permid="PmC">
     <statement>
       <p permid="ZLU">
           Prove that the set of matrices of the form
@@ -79,7 +79,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="vtL" xml:id="groups-exercise-determinant-product">
+  <exercise xml:id="groups-exercise-determinant-product" permid="vtL">
     <statement>
       <p permid="FTd">
           Prove that <m>\det(AB) = \det(A) \det(B)</m> in <m>GL_2({\mathbb R})</m>.
@@ -90,7 +90,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="bAU" xml:id="groups-exercise-Zn-group">
+  <exercise xml:id="groups-exercise-Zn-group" permid="bAU">
     <statement>
       <p permid="mam">
           Let <m>{\mathbb Z}_2^n = \{ (a_1, a_2, \ldots,
@@ -105,7 +105,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="HId" xml:id="groups-exercise-R-star">
+  <exercise xml:id="groups-exercise-R-star" permid="HId">
     <statement>
       <p permid="Shv">
           Show that <m>{\mathbb R}^{\ast} = {\mathbb R} \setminus \{0 \}</m> is a group under the operation of multiplication.
@@ -113,7 +113,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="nPm" xml:id="groups-exercise-product-R-star-Z">
+  <exercise xml:id="groups-exercise-product-R-star-Z" permid="nPm">
     <statement>
       <p permid="yoE">
           Given the groups <m>{\mathbb R}^{\ast}</m> and <m>{\mathbb Z}</m>,
@@ -125,7 +125,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="TWv" xml:id="groups-exercise-order-6-nonabelain">
+  <exercise xml:id="groups-exercise-order-6-nonabelain" permid="TWv">
     <statement>
       <p permid="evN">
           Prove or disprove that every group containing six elements is abelian.
@@ -138,7 +138,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="AdE" xml:id="groups-exercise-product-exponents">
+  <exercise xml:id="groups-exercise-product-exponents" permid="AdE">
     <statement>
       <p permid="KCW">
           Give a specific example of some group <m>G</m> and elements
@@ -153,7 +153,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="gkN" xml:id="groups-exercise-groups-8-elements">
+  <exercise xml:id="groups-exercise-groups-8-elements" permid="gkN">
     <statement>
       <p permid="qKf">
           Give an example of three different groups with eight elements.
@@ -167,7 +167,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="MrW" xml:id="groups-exercise-n-factorial-permutations">
+  <exercise xml:id="groups-exercise-n-factorial-permutations" permid="MrW">
     <statement>
       <p permid="WRo">
           Show that there are <m>n!</m> permutations of a set containing <m>n</m> items.
@@ -192,7 +192,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="szf" xml:id="groups-exercise-additive-identity-Zn">
+  <exercise xml:id="groups-exercise-additive-identity-Zn" permid="szf">
     <statement>
       <p permid="CYx">
           Show that
@@ -204,7 +204,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="YGo" xml:id="groups-exercise-multiplicative-identity-Zn">
+  <exercise xml:id="groups-exercise-multiplicative-identity-Zn" permid="YGo">
     <statement>
       <p permid="jfG">
           Prove that there is a multiplicative identity for the integers modulo <m>n</m>:
@@ -215,7 +215,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="ENx" xml:id="groups-exercise-addition-commutative-Zn">
+  <exercise xml:id="groups-exercise-addition-commutative-Zn" permid="ENx">
     <statement>
       <p permid="PmP">
           For each <m>a \in {\mathbb Z}_n</m> find an element <m>b \in {\mathbb Z}_n</m> such that
@@ -226,7 +226,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="kUG" xml:id="groups-exercise-Zn-operations-well-defined">
+  <exercise xml:id="groups-exercise-Zn-operations-well-defined" permid="kUG">
     <statement>
       <p permid="vtY">
           Show that addition and multiplication mod <m>n</m> are well defined operations.
@@ -235,7 +235,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="RbP" xml:id="groups-exercise-Zn-associative">
+  <exercise xml:id="groups-exercise-Zn-associative" permid="RbP">
     <statement>
       <p permid="bBh">
           Show that addition and multiplication mod <m>n</m> are associative operations.
@@ -243,7 +243,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="xiY" xml:id="groups-exercise-Zn-distribute">
+  <exercise xml:id="groups-exercise-Zn-distribute" permid="xiY">
     <statement>
       <p permid="HIq">
           Show that multiplication distributes over addition modulo <m>n</m>:
@@ -254,7 +254,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="dqh" xml:id="groups-exercise-powers-of-inverses">
+  <exercise xml:id="groups-exercise-powers-of-inverses" permid="dqh">
     <statement>
       <p permid="nPz">
           Let <m>a</m> and <m>b</m> be elements in a group <m>G</m>.
@@ -272,7 +272,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="Jxq" xml:id="groups-exercise-Un-idempotent">
+  <exercise xml:id="groups-exercise-Un-idempotent" permid="Jxq">
     <statement>
       <p permid="TWI">
           Let <m>U(n)</m> be the group of units in <m>{\mathbb Z}_n</m>.
@@ -282,7 +282,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="pEz" xml:id="groups-exercise-product-of-inverses">
+  <exercise xml:id="groups-exercise-product-of-inverses" permid="pEz">
     <statement>
       <p permid="AdR">
           Prove that the inverse of <m>g _1 g_2 \cdots g_n</m> is <m>g_n^{-1} g_{n-1}^{-1} \cdots g_1^{-1}</m>.
@@ -290,7 +290,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="VLI" xml:id="groups-exercise-prove-xa-equal-b-solution">
+  <exercise xml:id="groups-exercise-prove-xa-equal-b-solution" permid="VLI">
     <statement>
       <p permid="gla">
           Prove the remainder of <xref ref="proposition-group-equations"/>
@@ -301,7 +301,7 @@
   </statement>
 </exercise>
 
-<exercise permid="BSR" xml:id="groups-exercise-prove-exponent-laws">
+<exercise xml:id="groups-exercise-prove-exponent-laws" permid="BSR">
   <statement>
     <p permid="Msj">
           Prove <xref ref="theorem-exponent-laws"/>
@@ -310,7 +310,7 @@
   </statement>
 </exercise>
 
-<exercise permid="iaa" xml:id="groups-exercise-cancellation-laws">
+<exercise xml:id="groups-exercise-cancellation-laws" permid="iaa">
   <statement>
     <p permid="szs">
           Prove the right and left cancellation laws for a group <m>G</m>;
@@ -321,7 +321,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Ohj" xml:id="groups-exercise-a-hat-square-equal-1">
+<exercise xml:id="groups-exercise-a-hat-square-equal-1" permid="Ohj">
   <statement>
     <p permid="YGB">
           Show that if <m>a^2 = e</m> for all elements <m>a</m> in a group <m>G</m>,
@@ -336,7 +336,7 @@
   </hint>
 </exercise>
 
-<exercise permid="uos" xml:id="groups-exercise-finite-group-even-order">
+<exercise xml:id="groups-exercise-finite-group-even-order" permid="uos">
   <statement>
     <p permid="ENK">
           Show that if <m>G</m> is a finite group of even order,
@@ -345,7 +345,7 @@
   </statement>
 </exercise>
 
-<exercise permid="avB" xml:id="groups-exercise-ab-2-and-a2-b2">
+<exercise xml:id="groups-exercise-ab-2-and-a2-b2" permid="avB">
   <statement>
     <p permid="kUT">
           Let <m>G</m> be a group and suppose that
@@ -355,7 +355,7 @@
   </statement>
 </exercise>
 
-<exercise permid="GCK" xml:id="groups-exercise-subgroups-Z3-times-Z3">
+<exercise xml:id="groups-exercise-subgroups-Z3-times-Z3" permid="GCK">
   <statement>
     <p permid="Rcc">
           Find all the subgroups of <m>{\mathbb Z}_3 \times {\mathbb Z}_3</m>.
@@ -367,7 +367,7 @@
   </statement>
 </exercise>
 
-<exercise permid="mJT" xml:id="groups-exercise-subgroups-S3">
+<exercise xml:id="groups-exercise-subgroups-S3" permid="mJT">
   <statement>
     <p permid="xjl">
           Find all the subgroups of the symmetry group of an equilateral triangle.
@@ -384,7 +384,7 @@
   </hint>
 </exercise>
 
-<exercise permid="SRc" xml:id="groups-exercise-subgroups-D4">
+<exercise xml:id="groups-exercise-subgroups-D4" permid="SRc">
   <statement>
     <p permid="dqu">
           Compute the subgroups of the symmetry group of a square.
@@ -392,7 +392,7 @@
   </statement>
 </exercise>
 
-<exercise permid="yYl" xml:id="groups-exercise-subgroup-powers-2">
+<exercise xml:id="groups-exercise-subgroup-powers-2" permid="yYl">
   <statement>
     <p permid="JxD">
           Let <m>H = \{2^k : k \in {\mathbb Z} \}</m>.
@@ -401,7 +401,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ffu" xml:id="groups-exercise-subgroup-Zn-times-Zn">
+<exercise xml:id="groups-exercise-subgroup-Zn-times-Zn" permid="ffu">
   <statement>
     <p permid="pEM">
           Let <m>n = 0, 1, 2, \ldots</m> and <m>n {\mathbb Z} = \{ nk : k \in {\mathbb Z} \}</m>.
@@ -420,7 +420,7 @@
   </statement>
 </exercise>
 
-<exercise permid="rtM" xml:id="groups-exercise-so-2">
+<exercise xml:id="groups-exercise-so-2" permid="rtM">
   <statement>
     <p permid="BTe">
           Let <m>G</m> consist of the <m>2 \times 2</m> matrices of the form
@@ -436,7 +436,7 @@
   </statement>
 </exercise>
 
-<exercise permid="XAV" xml:id="groups-exercise-a-plus-b-sqrt-2">
+<exercise xml:id="groups-exercise-a-plus-b-sqrt-2" permid="XAV">
   <statement>
     <p permid="ian">
           Prove that
@@ -456,7 +456,7 @@
   </hint>
 </exercise>
 
-<exercise permid="jPn" xml:id="groups-exercise-trace-0">
+<exercise xml:id="groups-exercise-trace-0" permid="jPn">
   <statement>
     <p permid="Ohw">
           Let <m>G</m> be the group of
@@ -476,7 +476,7 @@
   </statement>
 </exercise>
 
-<exercise permid="PWw" xml:id="groups-exercise-sl-2-Z">
+<exercise xml:id="groups-exercise-sl-2-Z" permid="PWw">
   <statement>
     <p permid="uoF">
           Prove or disprove: <m>SL_2( {\mathbb Z} )</m>,
@@ -486,7 +486,7 @@
   </statement>
 </exercise>
 
-<exercise permid="wdF" xml:id="groups-exercise-subgroups-Q8">
+<exercise xml:id="groups-exercise-subgroups-Q8" permid="wdF">
   <statement>
     <p permid="avO">
           List the subgroups of the quaternion group, <m>Q_8</m>.
@@ -494,7 +494,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ckO" xml:id="groups-exercise-intersect-subgroups">
+<exercise xml:id="groups-exercise-intersect-subgroups" permid="ckO">
   <statement>
     <p permid="GCX">
           Prove that the intersection of two subgroups of a group <m>G</m> is also a subgroup of <m>G</m>.
@@ -502,7 +502,7 @@
   </statement>
 </exercise>
 
-<exercise permid="IrX" xml:id="groups-exercise-union-subgroups">
+<exercise xml:id="groups-exercise-union-subgroups" permid="IrX">
   <statement>
     <p permid="mKg">
           Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
@@ -516,7 +516,7 @@
   </hint>
 </exercise>
 
-<exercise permid="ozg" xml:id="groups-exercise-product-subgroups">
+<exercise xml:id="groups-exercise-product-subgroups" permid="ozg">
   <statement>
     <p permid="SRp">
           Prove or disprove: If <m>H</m> and <m>K</m> are subgroups of a group <m>G</m>,
@@ -546,7 +546,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ANy" xml:id="groups-exercise-a4b-a3">
+<exercise xml:id="groups-exercise-a4b-a3" permid="ANy">
   <statement>
     <p permid="ffH">
           Let <m>a</m> and <m>b</m> be elements of a group <m>G</m>.
@@ -561,7 +561,7 @@
   </hint>
 </exercise>
 
-<exercise permid="gUH" xml:id="groups-exercise-infinite-subgroups">
+<exercise xml:id="groups-exercise-infinite-subgroups" permid="gUH">
   <statement>
     <p permid="LmQ">
           Give an example of an infinite group in which every nontrivial subgroup is infinite.
@@ -581,7 +581,7 @@
 	</exercise>
 
 -->
-<exercise permid="NbQ" xml:id="groups-exercise-xy-equal-x-1-y-1">
+<exercise xml:id="groups-exercise-xy-equal-x-1-y-1" permid="NbQ">
   <statement>
     <p permid="rtZ">
           If <m>xy = x^{-1} y^{-1}</m> for all <m>x</m> and <m>y</m> in <m>G</m>,
@@ -590,7 +590,7 @@
   </statement>
 </exercise>
 
-<exercise permid="tiZ" xml:id="groups-exercise-subgroups-of-nonabelian-groups">
+<exercise xml:id="groups-exercise-subgroups-of-nonabelian-groups" permid="tiZ">
   <statement>
     <p permid="XBi">
           Prove or disprove: Every proper subgroup of a nonabelian group is nonabelian.
@@ -600,7 +600,7 @@
 
 <!--Todo Fix references to centralizer-->
 
-<exercise permid="Zqi" xml:id="groups-exercise-centralizer">
+<exercise xml:id="groups-exercise-centralizer" permid="Zqi">
   <statement>
     <p permid="DIr">
           Let <m>H</m> be a subgroup of <m>G</m> and
@@ -613,7 +613,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Fxr" xml:id="groups-exercise-commutator">
+<exercise xml:id="groups-exercise-commutator" permid="Fxr">
   <statement>
     <p permid="jPA">
           Let <m>H</m> be a subgroup of <m>G</m>.
@@ -623,7 +623,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Ope" xml:id="cyclic-exercise-prove-or-disprove-cyclic-facts">
+<exercise xml:id="cyclic-exercise-prove-or-disprove-cyclic-facts" permid="Ope">
   <statement>
     <p permid="Sim">
           Prove or disprove each of the following statements.
@@ -669,7 +669,7 @@
   </hint>
 </exercise>
 
-<exercise permid="uwn" xml:id="cyclic-exercise-order-of-elements">
+<exercise xml:id="cyclic-exercise-order-of-elements" permid="uwn">
   <statement>
     <p permid="ypv">
           Find the order of each of the following elements.
@@ -720,7 +720,7 @@
   </hint>
 </exercise>
 
-<exercise permid="aDw" xml:id="cyclic-exercise-subgroup-elements">
+<exercise xml:id="cyclic-exercise-subgroup-elements" permid="aDw">
   <statement>
     <p permid="ewE">
           List all of the elements in each of the following subgroups.
@@ -816,7 +816,7 @@
   </hint>
 </exercise>
 
-<exercise permid="GKF" xml:id="cyclic-exercise-subgroups-GL2">
+<exercise xml:id="cyclic-exercise-subgroups-GL2" permid="GKF">
   <statement>
     <p permid="KDN">
           Find the subgroups of <m>GL_2( {\mathbb R })</m> generated by each of the following matrices.
@@ -938,7 +938,7 @@
   </hint>
 </exercise>
 
-<exercise permid="mRO" xml:id="cyclic-exercise-order-Z18-elements">
+<exercise xml:id="cyclic-exercise-order-Z18-elements" permid="mRO">
   <statement>
     <p permid="qKW">
           Find the order of every element in <m>{\mathbb Z}_{18}</m>.
@@ -946,7 +946,7 @@
   </statement>
 </exercise>
 
-<exercise permid="SYX" xml:id="cyclic-exercise-order-D4-elements">
+<exercise xml:id="cyclic-exercise-order-D4-elements" permid="SYX">
   <statement>
     <p permid="WSf">
           Find the order of every element in the symmetry group of the square,
@@ -955,7 +955,7 @@
   </statement>
 </exercise>
 
-<exercise permid="zgg" xml:id="cyclic-exercise-cyclic-subgroups-Q8">
+<exercise xml:id="cyclic-exercise-cyclic-subgroups-Q8" permid="zgg">
   <statement>
     <p permid="CZo">
           What are all of the cyclic subgroups of the quaternion group,
@@ -964,7 +964,7 @@
   </statement>
 </exercise>
 
-<exercise permid="fnp" xml:id="cyclic-exercise-cyclic-subgroups-U30">
+<exercise xml:id="cyclic-exercise-cyclic-subgroups-U30" permid="fnp">
   <statement>
     <p permid="jgx">
           List all of the cyclic subgroups of <m>U(30)</m>.
@@ -972,7 +972,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Luy" xml:id="cyclic-exercise-generators-subgroups-Z32">
+<exercise xml:id="cyclic-exercise-generators-subgroups-Z32" permid="Luy">
   <statement>
     <p permid="PnG">
           List every generator of each subgroup of order 8 in <m>{\mathbb Z}_{32}</m>.
@@ -980,7 +980,7 @@
   </statement>
 </exercise>
 
-<exercise permid="rBH" xml:id="cyclic-exercise-elements-finite-order">
+<exercise xml:id="cyclic-exercise-elements-finite-order" permid="rBH">
   <statement>
     <p permid="vuP">
           Find all elements of finite order in each of the following groups.
@@ -1016,7 +1016,7 @@
 </hint>
 </exercise>
 
-<exercise permid="XIQ" xml:id="cyclic-exercise-possible-orders-a24">
+<exercise xml:id="cyclic-exercise-possible-orders-a24" permid="XIQ">
 <statement>
   <p permid="bBY">
           If <m>a^{24} =e</m> in a group <m>G</m>,
@@ -1030,7 +1030,7 @@
 </hint>
 </exercise>
 
-<exercise permid="DPZ" xml:id="cyclic-exercise-cyclic-group-one-generator">
+<exercise xml:id="cyclic-exercise-cyclic-group-one-generator" permid="DPZ">
 <statement>
   <p permid="HJh">
           Find a cyclic group with exactly one generator.
@@ -1041,7 +1041,7 @@
 </statement>
 </exercise>
 
-<exercise permid="jXi" xml:id="cyclic-exercise-cyclic-groups-order-less-then-20">
+<exercise xml:id="cyclic-exercise-cyclic-groups-order-less-then-20" permid="jXi">
 <statement>
   <p permid="nQq">
           For <m>n \leq 20</m>, which groups <m>U(n)</m> are cyclic?
@@ -1051,7 +1051,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Qer" xml:id="cyclic-exercise-products-maynot-have-finite-orders">
+<exercise xml:id="cyclic-exercise-products-maynot-have-finite-orders" permid="Qer">
 <statement>
   <p permid="TXz">
           Let
@@ -1077,7 +1077,7 @@
 
 
 
-<exercise permid="UOk" xml:id="cyclic-exercise-complex-modulus">
+<exercise xml:id="cyclic-exercise-complex-modulus" permid="UOk">
 <statement>
   <p permid="YHs">
           Prove each of the following statements.
@@ -1123,7 +1123,7 @@
 </statement>
 </exercise>
 
-<exercise permid="AVt" xml:id="cyclic-exercise-6-roots-of-unity">
+<exercise xml:id="cyclic-exercise-6-roots-of-unity" permid="AVt">
 <statement>
   <p permid="EOB">
           List and graph the 6th roots of unity.
@@ -1133,7 +1133,7 @@
 </statement>
 </exercise>
 
-<exercise permid="hcC" xml:id="cyclic-exercise-5-roots-of-unity">
+<exercise xml:id="cyclic-exercise-5-roots-of-unity" permid="hcC">
 <statement>
   <p permid="kVK">
           List and graph the 5th roots of unity.
@@ -1143,7 +1143,7 @@
 </statement>
 </exercise>
 
-<exercise permid="NjL" xml:id="cyclic-exercise-calculate-powers-Zn">
+<exercise xml:id="cyclic-exercise-calculate-powers-Zn" permid="NjL">
 <statement>
   <p permid="RcT">
           Calculate each of the following.
@@ -1182,7 +1182,7 @@
 </hint>
 </exercise>
 
-<exercise permid="tqU" xml:id="cyclic-exercise-order-of-products">
+<exercise xml:id="cyclic-exercise-order-of-products" permid="tqU">
 <statement>
   <p permid="xkc">
           Let <m>a, b \in G</m>.
@@ -1211,7 +1211,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Zyd" xml:id="cyclic-exercise-Zpq-generators">
+<exercise xml:id="cyclic-exercise-Zpq-generators" permid="Zyd">
 <statement>
   <p permid="drl">
           Let <m>p</m> and <m>q</m> be distinct primes.
@@ -1220,7 +1220,7 @@
 </statement>
 </exercise>
 
-<exercise permid="FFm" xml:id="cyclic-exercise-Zp-hat-r-generators">
+<exercise xml:id="cyclic-exercise-Zp-hat-r-generators" permid="FFm">
 <statement>
   <p permid="Jyu">
           Let <m>p</m> be prime and <m>r</m> be a positive integer.
@@ -1229,7 +1229,7 @@
 </statement>
 </exercise>
 
-<exercise permid="lMv" xml:id="cyclic-exercise-Zp-subgroups">
+<exercise xml:id="cyclic-exercise-Zp-subgroups" permid="lMv">
 <statement>
   <p permid="pFD">
           Prove that <m>{\mathbb Z}_{p}</m> has no nontrivial subgroups if <m>p</m> is prime.
@@ -1237,7 +1237,7 @@
 </statement>
 </exercise>
 
-<exercise permid="RTE" xml:id="cyclic-exercise-orders-15-16">
+<exercise xml:id="cyclic-exercise-orders-15-16" permid="RTE">
 <statement>
   <p permid="VMM">
           If <m>g</m> and <m>h</m> have orders <m>15</m> and <m>16</m> respectively in a group <m>G</m>,
@@ -1251,7 +1251,7 @@
 </hint>
 </exercise>
 
-<exercise permid="yaN" xml:id="cyclic-exercise-generator-am">
+<exercise xml:id="cyclic-exercise-generator-am" permid="yaN">
 <statement>
   <p permid="BTV">
           Let <m>a</m> be an element in a group <m>G</m>.
@@ -1260,7 +1260,7 @@
 </statement>
 </exercise>
 
-<exercise permid="ehW" xml:id="cyclic-exercise-even-number-generators-Zn">
+<exercise xml:id="cyclic-exercise-even-number-generators-Zn" permid="ehW">
 <statement>
   <p permid="ibe">
           Prove that <m>{\mathbb Z}_n</m> has an even number of generators for <m>n \gt 2</m>.
@@ -1268,7 +1268,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Kpf" xml:id="cyclic-exercise-coprime-elements-Zn">
+<exercise xml:id="cyclic-exercise-coprime-elements-Zn" permid="Kpf">
 <statement>
   <p permid="Oin">
           Suppose that <m>G</m> is a group and let <m>a</m>,    <m>b \in G</m>.
@@ -1280,7 +1280,7 @@
 
 <!--Todo Fix references to torsion subgroup-->
 
-<exercise permid="qwo" xml:id="cyclic-exercise-elements-finite-order-subgroup">
+<exercise xml:id="cyclic-exercise-elements-finite-order-subgroup" permid="qwo">
 <statement>
   <p permid="upw">
           Let <m>G</m> be an abelian group.
@@ -1299,7 +1299,7 @@
 </hint>
 </exercise>
 
-<exercise permid="WDx" xml:id="cyclic-exercise-coprime-orders-generators">
+<exercise xml:id="cyclic-exercise-coprime-orders-generators" permid="WDx">
 <statement>
   <p permid="awF">
           Let <m>G</m> be a finite cyclic group of order <m>n</m> generated by <m>x</m>.
@@ -1309,7 +1309,7 @@
 </statement>
 </exercise>
 
-<exercise permid="CKG" xml:id="cyclic-exercise-cyclic-subgroup-order-4">
+<exercise xml:id="cyclic-exercise-cyclic-subgroup-order-4" permid="CKG">
 <statement>
   <p permid="GDO">
           If <m>G</m> is an abelian group that contains a pair of cyclic subgroups of order <m>2</m>,
@@ -1319,7 +1319,7 @@
 </statement>
 </exercise>
 
-<exercise permid="iRP" xml:id="cyclic-exercise-order-Zpq">
+<exercise xml:id="cyclic-exercise-order-Zpq" permid="iRP">
 <statement>
   <p permid="mKX">
           Let <m>G</m> be an abelian group of order <m>pq</m> where <m>\gcd(p,q) = 1</m>.
@@ -1329,7 +1329,7 @@
 </statement>
 </exercise>
 
-<exercise permid="OYY" xml:id="cyclic-exercise-subgroups-of-Z">
+<exercise xml:id="cyclic-exercise-subgroups-of-Z" permid="OYY">
 <statement>
   <p permid="SSg">
           Prove that the subgroups of <m>\mathbb Z</m> are exactly
@@ -1338,7 +1338,7 @@
 </statement>
 </exercise>
 
-<exercise permid="vgh" xml:id="cyclic-exercise-generators-of-Zn">
+<exercise xml:id="cyclic-exercise-generators-of-Zn" permid="vgh">
 <statement>
   <p permid="yZp">
           Prove that the generators of
@@ -1348,7 +1348,7 @@
 </statement>
 </exercise>
 
-<exercise permid="bnq" xml:id="cyclic-exercise-cyclic-ifno-nontrivial-proper-subgroup">
+<exercise xml:id="cyclic-exercise-cyclic-ifno-nontrivial-proper-subgroup" permid="bnq">
 <statement>
   <p permid="fgy">
           Prove that if <m>G</m> has no proper nontrivial subgroups,
@@ -1364,7 +1364,7 @@
 </hint>
 </exercise>
 
-<exercise permid="Huz" xml:id="cyclic-exercise-order-of-element-divides-order-group">
+<exercise xml:id="cyclic-exercise-order-of-element-divides-order-group" permid="Huz">
 <statement>
   <p permid="LnH">
           Prove that the order of an element in a cyclic group <m>G</m> must divide the order of the group.
@@ -1381,7 +1381,7 @@
 </statement>
 </exercise>
 
-<exercise permid="TIR" xml:id="cyclic-exercise-minus-one-root-of-unity">
+<exercise xml:id="cyclic-exercise-minus-one-root-of-unity" permid="TIR">
 <statement>
   <p permid="XBZ">
           For what integers <m>n</m> is <m>-1</m> an <m>n</m>th root of unity?
@@ -1389,7 +1389,7 @@
 </statement>
 </exercise>
 
-<exercise permid="zQa" xml:id="cyclic-exercise-polar-product-complex">
+<exercise xml:id="cyclic-exercise-polar-product-complex" permid="zQa">
 <statement>
   <p permid="DJi">
           If <m>z = r( \cos \theta + i \sin \theta)</m> and
@@ -1402,7 +1402,7 @@
 </statement>
 </exercise>
 
-<exercise permid="fXj" xml:id="cyclic-exercise-circle-group-subgroup-C-star">
+<exercise xml:id="cyclic-exercise-circle-group-subgroup-C-star" permid="fXj">
 <statement>
   <p permid="jQr">
           Prove that the circle group is a subgroup of <m>{\mathbb C}^*</m>.
@@ -1410,7 +1410,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Mes" xml:id="cyclic-exercise-nth-root-of-unity-cyclic">
+<exercise xml:id="cyclic-exercise-nth-root-of-unity-cyclic" permid="Mes">
 <statement>
   <p permid="PXA">
           Prove that the <m>n</m>th roots of unity form a cyclic subgroup of <m>{\mathbb T}</m> of order <m>n</m>.
@@ -1418,7 +1418,7 @@
 </statement>
 </exercise>
 
-<exercise permid="slB" xml:id="cyclic-exercise-order-of-elements-circle-group">
+<exercise xml:id="cyclic-exercise-order-of-elements-circle-group" permid="slB">
 <statement>
   <p permid="weJ">
           Let <m>\alpha \in \mathbb T</m>.
@@ -1428,7 +1428,7 @@
 </statement>
 </exercise>
 
-<exercise permid="YsK" xml:id="cyclic-exercise-order-of-elements-greaterthan-1-in-C">
+<exercise xml:id="cyclic-exercise-order-of-elements-greaterthan-1-in-C" permid="YsK">
 <statement>
   <p permid="clS">
           Let <m>z \in {\mathbb C}^\ast</m>.
@@ -1437,7 +1437,7 @@
 </statement>
 </exercise>
 
-<exercise permid="EzT" xml:id="cyclic-exercise-order-rational-angles-in-T">
+<exercise xml:id="cyclic-exercise-order-rational-angles-in-T" permid="EzT">
 <statement>
   <p permid="Itb">
           Let <m>z =\cos \theta + i \sin \theta</m> be in
@@ -1448,7 +1448,7 @@
 </exercise>
 
 
-<exercise permid="BzW" xml:id="permute-exercise-inverse-cycle">
+<exercise xml:id="permute-exercise-inverse-cycle" permid="BzW">
   <statement>
     <p permid="pVL">
           Find <m>(a_1, a_2, \ldots, a_n)^{-1}</m>.
@@ -1461,7 +1461,7 @@
   </hint>
 </exercise>
 
-<exercise permid="Syh" xml:id="permute-exercise-cycle-structures-A5">
+<exercise xml:id="permute-exercise-cycle-structures-A5" permid="Syh">
   <statement>
     <p permid="GTW">
           What are the possible cycle structures of elements of <m>A_5</m>?
@@ -1479,7 +1479,7 @@
   </hint>
 </exercise>
 
-<exercise permid="yFq" xml:id="permute-exercise-order-sigma-i">
+<exercise xml:id="permute-exercise-order-sigma-i" permid="yFq">
   <statement>
     <p permid="nbf">
           Let <m>\sigma \in S_n</m> have order <m>n</m>.
@@ -1498,7 +1498,7 @@
   </statement>
 </exercise>
 
-<exercise permid="KTI" xml:id="permute-exercise-elements-D5">
+<exercise xml:id="permute-exercise-elements-D5" permid="KTI">
   <statement>
     <p permid="zpx">
           Using cycle notation, list the elements in <m>D_5</m>.
@@ -1508,7 +1508,7 @@
   </statement>
 </exercise>
 
-<exercise permid="raR" xml:id="permute-exercise-diagonals-cube">
+<exercise xml:id="permute-exercise-diagonals-cube" permid="raR">
   <statement>
     <p permid="fwG">
           If the diagonals of a cube are labeled as <xref ref="figure-motions"/>
@@ -1519,7 +1519,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Xia" xml:id="permute-exercise-rigid-motions-tetrahedron">
+<exercise xml:id="permute-exercise-rigid-motions-tetrahedron" permid="Xia">
 <statement>
   <p permid="LDP">
           Find the group of rigid motions of a tetrahedron.
@@ -1528,7 +1528,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Dpj" xml:id="permute-exercise-Sn-nonabelian">
+<exercise xml:id="permute-exercise-Sn-nonabelian" permid="Dpj">
 <statement>
   <p permid="rKY">
           Prove that <m>S_n</m> is nonabelian for <m>n \geq 3</m>.
@@ -1541,7 +1541,7 @@
 </hint>
 </exercise>
 
-<exercise permid="jws" xml:id="permute-exercise-An-nonabelian">
+<exercise xml:id="permute-exercise-An-nonabelian" permid="jws">
 <statement>
   <p permid="XSh">
           Show that <m>A_n</m> is nonabelian for <m>n \geq 4</m>.
@@ -1549,7 +1549,7 @@
 </statement>
 </exercise>
 
-<exercise permid="PDB" xml:id="permute-exercise-Dn-nonabelian">
+<exercise xml:id="permute-exercise-Dn-nonabelian" permid="PDB">
 <statement>
   <p permid="DZq">
           Prove that <m>D_n</m> is nonabelian for <m>n \geq 3</m>.
@@ -1566,7 +1566,7 @@
 </statement>
 </exercise>
 
-<exercise permid="bRT" xml:id="permute-exercise-sigma-n-2-transpositions">
+<exercise xml:id="permute-exercise-sigma-n-2-transpositions" permid="bRT">
 <statement>
   <p permid="QnI">
           Let <m>\sigma \in S_n</m>.
@@ -1576,7 +1576,7 @@
 </statement>
 </exercise>
 
-<exercise permid="HZc" xml:id="permute-exercise-sigma-odd">
+<exercise xml:id="permute-exercise-sigma-odd" permid="HZc">
 <statement>
   <p permid="wuR">
           If <m>\sigma</m> can be expressed as an odd number of transpositions,
@@ -1585,7 +1585,7 @@
 </statement>
 </exercise>
 
-<exercise permid="ogl" xml:id="permute-exercise-sigma-squared-cycle">
+<exercise xml:id="permute-exercise-sigma-squared-cycle" permid="ogl">
 <statement>
   <p permid="cCa">
           If <m>\sigma</m> is a cycle of odd length,
@@ -1594,7 +1594,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Unu" xml:id="permute-exercise-3-cycle-even">
+<exercise xml:id="permute-exercise-3-cycle-even" permid="Unu">
 <statement>
   <p permid="IJj">
           Show that a <m>3</m>-cycle is an even permutation.
@@ -1602,7 +1602,7 @@
 </statement>
 </exercise>
 
-<exercise permid="AuD" xml:id="permute-exercise-An-product-3-cycles">
+<exercise xml:id="permute-exercise-An-product-3-cycles" permid="AuD">
 <statement>
   <p permid="oQs">
           Prove that in <m>A_n</m> with <m>n \geq 3</m>,
@@ -1616,7 +1616,7 @@
 </hint>
 </exercise>
 
-<exercise permid="gBM" xml:id="permute-exercise-Sn-product-certain-cycles">
+<exercise xml:id="permute-exercise-Sn-product-certain-cycles" permid="gBM">
 <statement>
   <p permid="UXB">
           Prove that any element in <m>S_n</m> can be written as a finite product of the following permutations.
@@ -1644,7 +1644,7 @@
 </statement>
 </exercise>
 
-<exercise permid="MIV" xml:id="permute-exercise-lambda-g-permutation">
+<exercise xml:id="permute-exercise-lambda-g-permutation" permid="MIV">
 <statement>
   <p permid="BeK">
           Let <m>G</m> be a group and define a map
@@ -1654,7 +1654,7 @@
 </statement>
 </exercise>
 
-<exercise permid="sQe" xml:id="permute-exercise-n-factorial-permutations">
+<exercise xml:id="permute-exercise-n-factorial-permutations" permid="sQe">
 <statement>
   <p permid="hlT">
           Prove that there exist <m>n!</m> permutations of a set containing <m>n</m> elements.
@@ -1662,7 +1662,7 @@
 </statement>
 </exercise>
 
-<exercise permid="YXn" xml:id="permute-exercise-center-Dn">
+<exercise xml:id="permute-exercise-center-Dn" permid="YXn">
 <statement>
   <p permid="Ntc">
           Recall that the <term>center</term> of a group <m>G</m> is
@@ -1676,7 +1676,7 @@
 </statement>
 </exercise>
 
-<exercise permid="Few" xml:id="permute-exercise-conjugate-cycle">
+<exercise xml:id="permute-exercise-conjugate-cycle" permid="Few">
 <statement>
   <p permid="tAl">
           Let <m>\tau = (a_1, a_2, \ldots,
@@ -1709,7 +1709,7 @@
 </hint>
 </exercise>
 
-<exercise permid="llF" xml:id="permute-exercise-conjugate-cycles-equivalence-relation">
+<exercise xml:id="permute-exercise-conjugate-cycles-equivalence-relation" permid="llF">
 <statement>
   <p permid="ZHu">
           For <m>\alpha</m> and <m>\beta</m> in <m>S_n</m>,
@@ -1720,7 +1720,7 @@
 </statement>
 </exercise>
 
-<exercise permid="RsO" xml:id="permute-exercise-SX-equivalence-relation">
+<exercise xml:id="permute-exercise-SX-equivalence-relation" permid="RsO">
 <statement>
   <p permid="FOD">
           Let <m>\sigma \in S_X</m>.
@@ -1770,7 +1770,7 @@
 </statement>
 </exercise>
 
-<exercise permid="xzX" xml:id="permute-exercise-center-Sn">
+<exercise xml:id="permute-exercise-center-Sn" permid="xzX">
 <statement>
   <p permid="lVM">
           Let <m>\alpha \in S_n</m> for <m>n \geq 3</m>.
@@ -1790,16 +1790,16 @@
 </statement>
 </exercise>
 
-<exercise xml:id="permute-exercise-conjugate-An">
+<exercise xml:id="permute-exercise-conjugate-An" permid="AIV">
 <statement>
-  <p>
+  <p permid="gQe">
           If <m>\sigma \in A_n</m> and <m>\tau \in S_n</m>,
           show that <m>\tau^{-1} \sigma \tau \in A_n</m>.
   </p>
 </statement>
 </exercise>
 
-<exercise permid="JOp" xml:id="permute-exercise-a-1-b-1-ab-even">
+<exercise xml:id="permute-exercise-a-1-b-1-ab-even" permid="JOp">
 <statement>
   <p permid="yke">
           Show that <m>\alpha^{-1} \beta^{-1} \alpha \beta</m> is even for <m>\alpha, \beta \in S_n</m>.
@@ -1807,7 +1807,7 @@
 </statement>
 </exercise>
 
-<exercise permid="pVy" xml:id="permute-exercise-Dn-relations">
+<exercise xml:id="permute-exercise-Dn-relations" permid="pVy">
 <statement>
   <p permid="ern">
           Let <m>r</m> and <m>s</m> be the elements in <m>D_n</m> described in <xref ref="theorem-dn-generator"/>

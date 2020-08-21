@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-algebraic">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-algebraic" permid="YXk">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="XhX">
       <statement>
-        <p>
+        <p permid="sQb">
           Consider the number <m>\alpha = \sqrt{3}+\sqrt{5}</m> and the field <m>\Q(\alpha)</m>, a simple extension of <m>\Q</m>.
-          <ol>
-            <li>
-              <p>
+          <ol permid="jwp">
+            <li permid="PDy">
+              <p permid="ogi">
                 Prove that <m>\alpha</m> is an algebraic number.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="vKH">
+              <p permid="Unr">
                 Is <m>\Q(\alpha)</m> an extension field of <m>\Q(\sqrt{3})</m>?  Is it an extension field of <m>\Q(\sqrt{5})</m>?  Explain.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="bRQ">
+              <p permid="AuA">
                 If we take <m>\Q(\sqrt{3})</m> and adjoin <m>\sqrt{5}</m>, do we get a bigger field?  We can write <m>\Q(\sqrt{3})(\sqrt{5})</m> as <m>\Q(\sqrt{3},\sqrt{5})</m>. 
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="HYZ">
+              <p permid="gBJ">
                 Find the minimal polynomials for <m>\sqrt{3}</m> over <m>\Q</m> and of <m>\alpha = \sqrt{3}+\sqrt{5}</m> of <m>\Q(\sqrt{3})</m>.  How do the degrees of these relate to the degree of the polynomial you found for <m>\alpha</m> in part (a)?
               </p>
             </li>
           </ol>
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="Dpg">
+        <p permid="MIS">
           For (b), first decide whether <m>\Q(\alpha)</m> contains the element <m>\sqrt{15}</m>.  If it does, note that it must also contain <m>\sqrt{15}(\sqrt{3}+\sqrt{5}) - 3(\sqrt{3}+\sqrt{5})</m>.  Why is this helpful?
         </p>
       </hint>

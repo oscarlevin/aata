@@ -275,7 +275,7 @@
         </statement>
       </exercise>
     </reading-questions>
-    <exercises xml:id="practice-cosets">
+    <exercises xml:id="practice-cosets" permid="MtK">
       <title>Practice Problems</title>
 
 
@@ -346,7 +346,7 @@
             <m>6 + \langle 8 \rangle</m>,
           and <m>7 + \langle 8 \rangle</m>; 
           </p>
-          <p>
+          <p permid="qqh">
           (c) <m>3 {\mathbb Z}</m>,
             <m>1 + 3 {\mathbb Z}</m>, and <m>2 + 3 {\mathbb Z}</m>.
           </p>
@@ -368,14 +368,14 @@
           Show that <m>g_1 \in Hg</m> and thus <m>gH \subset Hg</m>.
           </p>
         </hint>
-        <solution>
-          <p>
+        <solution permid="OiX">
+          <p permid="APm">
           Suppose <m>ghg\inv \in H</m> for all <m>g \in G</m> and <m>h \in H</m>.  Consider a fixed <m>g \in G</m>. We want to show that <m>gH = Hg</m>, which we will do by showing that everything in <m>gH</m> is already in <m>Hg</m>, and visa-versa.
           </p>
-          <p>
+          <p permid="gWv">
           First, let <m>x \in gH</m>.  This means that <m>x = gh_1</m> for some <m>h_1 \in H</m>.  But then <m>x = gh_1(g\inv g) = (gh_1g\inv)g</m>.  Since <m>gh_1g\inv \in H</m>, we have that <m>x \in Hg</m>.
           </p>
-          <p>
+          <p permid="NdE">
           Similarly, if <m>y \in Hg</m>, then <m>y = h_2g</m> for some <m>h_2 \in H</m>.  We have <m>y = (gg\inv)h_2g = g(g\inv hg)</m>.  But <m>g\inv h g \in H</m> (as <m>g\inv \in G</m>, we have <m>(g\inv)h(g\inv)\inv \in H</m>), so <m>y \in gH</m>.
           </p>
         </solution>
@@ -403,17 +403,17 @@
     </exercises>
 
 
-    <exercises xml:id="collected-cosets">
+    <exercises xml:id="collected-cosets" permid="sAT">
       <title>Collected Homework</title>
 
-      <exercise number="1">
+      <exercise number="1" permid="kWu">
         <statement>
-          <p>
+          <p permid="vaa">
           Let <m>G</m> be a group and <m>H</m> a subgroup of <m>G</m>.  Let <m>a</m> and <m>b</m> be elements of <m>G</m>.  Prove that <m>aH = b H</m> if and only if <m>b\inv a \in H</m>.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="uqg">
+          <p permid="Wxq">
           Remember you need to prove two directions: first assume <m>aH = bH</m> and prove that <m>b\inv a \in H</m>.  Second, assume <m>b\inv a \in H</m>, and prove <m>aH = bH</m>.  To prove this second direction, it would be enough to show that <m>a \in bH</m> using the fact we proved in class.
           </p>
         </hint>
@@ -740,35 +740,35 @@ they allow for the construction of a new class of groups,
 </exercise>
 </reading-questions>
 
-<exercises xml:id="practice-normal">
+<exercises xml:id="practice-normal" permid="YIc">
 <title>Practice Problems</title>
-<exercise xml:id="ex-d4-normal">
+<exercise xml:id="ex-d4-normal" permid="RdD">
   <statement>
-    <p>
+    <p permid="bhj">
             Let <m>G = D_4</m>, the group of symmetries of a square, and take <m>H = \{r_0, r_2, d_1, d_2\}</m>.  Is <m>H</m> normal in <m>G</m>?  If so, how many elements are in the factor group <m>G/H</m>?  Write out its group table.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="axp">
+    <p permid="tkN">
             Yes, <m>H</m> is normal in <m>G</m>.  You can see this by checking left vs right cosets.  In fact, you see that there will only be two cosets.  If you take any <m>a \in H</m>, we have <m>aH = H = Ha</m>.  What about <m>b \notin H</m>?  You can quickly check that we will have <m>bH = Hb</m>. 
     </p>
 
-    <p>
+    <p permid="ZrW">
             The factor group <m>G/H</m> will have order 2, since <m>|G/H| = [G:H] = \frac{|G|}{|H|}</m>.   Thus writing it's group table will be very easy.  Use <m>H</m> and <m>r_1H</m> as the two elements.  <m>H</m> is the identity, and <m>r_1Hr_1H = H</m>.
     </p>
   </solution>
 </exercise>
 
-<exercise>
+<exercise permid="xkM">
   <statement>
-    <p>
+    <p permid="Hos">
             A <term>conjugate</term> of an element <m>x \in G</m> is an element of <m>G</m> with the form <m>gxg\inv</m> for some <m>g \in G</m>.  Using <m>G = D_4</m> and <m>H = \{r_0, r_2, d_1, d_2\}</m>, find all the conjugates of all the elements of <m>H</m>.  What do you notice? 
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="GEy">
+    <p permid="Fzf">
             The conjuages of <m>r_0</m> are all <m>r_0</m>, since <m>gr_0g\inv = gg\inv = r_0</m> for any <m>g \in G</m>.  It is easy to check that the conjugates of <m>r_2</m> are allways <m>r_2</m>. Let's find some conjugates of <m>d_1</m>:
-      <md>
+      <md permid="EtM">
         <mrow>r_0d_1r_0\inv \amp = d_1 </mrow>
         <mrow>r_1d_1r_1\inv \amp = d_2 </mrow>
         <mrow>r_2d_1r_2\inv \amp = d_1 </mrow>
@@ -781,24 +781,24 @@ they allow for the construction of a new class of groups,
             Similarly, the conjugates of <m>d_2</m> will be either <m>d_1</m> or <m>d_2</m>.
     </p>
 
-    <p>
+    <p permid="lGo">
             Note that the conjugates for things in <m>H</m> are always (possibly different) things in <m>H</m>.  We say that <m>H</m> is <em>closed</em> under conjugates.  Of course we knew this would happen since <m>H</m> is normal in <m>G</m>.
     </p>
   </solution>
 </exercise>
 
-<exercise>
+<exercise permid="drV">
   <statement>
-    <p>
+    <p permid="nvB">
             Prove that if <m>G</m> is abelian and <m>H</m> is a subgroup, that <m>G/H</m> is abelian.
     </p>
   </statement>
-  <solution>
-    <p>
-      <proof>
-        <p>
+  <solution permid="mLH">
+    <p permid="RNx">
+      <proof permid="SSQ">
+        <p permid="OSR">
                 Consider two arbitrary elements of <m>G/H</m>:          <m>aH</m> and <m>bH</m>.  Note that <m>a,b \in G</m>, so <m>ab = ba</m>. We have 
-          <me>
+          <me permid="YmD">
                   aHbH = abH = baH = bHaH
           </me>.
                 Thus <m>G/H</m> is abelian. 
@@ -808,45 +808,45 @@ they allow for the construction of a new class of groups,
   </solution>
 </exercise>
 
-<exercise>
+<exercise permid="Jze">
   <statement>
-    <p>
+    <p permid="TCK">
             True or false: If <m>H</m> is abelian and <m>G/H</m> is abelian, then <m>G</m> is abelian.  Prove your answer.
     </p>
   </statement>
-  <hint>
-    <p>
+  <hint permid="yZZ">
+    <p permid="CEz">
             Look at <xref ref="ex-d4-normal"/>
 .
     </p>
   </hint>
 </exercise>
 
-<exercise>
+<exercise permid="pGn">
   <statement>
-    <p>
+    <p permid="zJT">
             Let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Prove that <m>H</m> is not normal in <m>G</m>.  Then give a specific example of what goes wrong if you try to define coset multiplication on the set of cosets <m>G/H</m>.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="fhi">
+    <p permid="xUG">
             Consider <m>r_1H = \{r_1, d_1\}</m>.  But <m>Hr_1 = \{r_1, d_2\}</m>.  So <m>r_1H \ne Hr_1</m>, so <m>H</m> is not normal.
     </p>
 
-    <p>
+    <p permid="ebP">
             To see what goes wrong with defining multiplication, consider <m>r_1Hr_1H = r_1r_1H = r_2H</m>.  This is the coset <m>r_2H = \{r_2, v\}</m>.  But since <m>r_1H = d_1H</m>, we should get the same set if we multiply <m>d_1Hd_1H = d_1d_1H = r_0H</m>.  But of course we don't, since <m>r_0H = H = \{r_0, h\}</m>.
     </p>
   </solution>
 </exercise>
 
-<exercise>
+<exercise permid="VNw">
   <statement>
-    <p>
+    <p permid="fRc">
             Again let <m>G = D_4</m> and <m>H = \{r_0, h\}</m>.  Show that <m>H </m> is not closed under conjugates.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="Lor">
+    <p permid="KiY">
             We know <m>H</m> won't be closed under conjugates because <m>H</m> is not normal in <m>G</m>.  But to be sure, consider <m>r_1hr_1\inv = r_1hr_3 = v</m>.  Since <m>h \in H</m> but <m>v \notin H</m>, we see that <m>H</m> is not closed under conjugates.
     </p>
   </solution>
@@ -854,31 +854,31 @@ they allow for the construction of a new class of groups,
 </exercises>
 
 
-<exercises xml:id="collected-normal">
+<exercises xml:id="collected-normal" permid="EPl">
 <title>Collected Homework</title>
 
-<exercise number="C1">
+<exercise number="C1" permid="BUF">
   <statement>
-    <p>
+    <p permid="LYl">
           Let <m>G = S_3</m> and <m>H = \{(1), (13)\}</m>. 
-      <ol>
-        <li>
-          <p>
+      <ol permid="XCJ">
+        <li permid="DJS">
+          <p permid="cmC">
                 Find the three (left) cosets of <m>H</m> in <m>G</m>.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="jRb">
+          <p permid="ItL">
                 Explain what goes wrong if you try to define an operation on the set of cosets <m>G/H</m>.  Do this with a specific example using this <m>G</m> and <m>H</m>.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="PYk">
+          <p permid="oAU">
                 Write out all the conjugates of <m>H</m> in <m>G</m>.  That is, find <m>gxg\inv</m> for all <m>x \in H</m> and <m>g \in G</m>.  Is <m>H</m> closed under conjugates?
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="wft">
+          <p permid="UId">
                 Show that <m>H</m> is not normal in <m>G</m> using the definition (about left and right cosets).
           </p>
         </li>
@@ -888,14 +888,14 @@ they allow for the construction of a new class of groups,
 
 </exercise>
 
-<exercise number="C2">
+<exercise number="C2" permid="ibO">
   <statement>
-    <p>
+    <p permid="sfu">
           BONUS! Prove that if <m>[G : H] = 2</m> then <m>H</m> is normal in <m>G</m>. 
     </p>
   </statement>
-  <hint>
-    <p>
+  <hint permid="rvA">
+    <p permid="iLI">
           This is not all that hard.  Try an example (such as <xref ref="ex-d4-normal"/>
 ) to see why this works.  Then explain it in general.
     </p>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-constructions-intro">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-constructions-intro" permid="zph">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="aMx">
       <statement>
-        <p>
+        <p permid="ThY">
           Write up a careful argument for question 4 from the activity <xref ref="ws_fields-constructable-numbers" text="custom">Constructible Numbers</xref>: Prove that if <m>a</m> and <m>b</m> are constructible numbers, with <m>b \ne 0</m>, then <m>a/b</m> is also constructible.
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="GTG">
+        <p permid="naP">
           As suggested in the worksheet, you will modify the argument that <m>a\cdot b</m> is constructible when <m>a</m> and <m>b</m> are.  That is, you should use similar triangles.  Make sure you explain why you can construct the similar triangles you need, and also why the side you find really is <m>a/b</m>.
         </p>
       </hint>

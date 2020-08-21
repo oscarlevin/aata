@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_fields-extension-degree">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_fields-extension-degree" permid="ikf">
     <title>Galois (sub)Groups</title>
-    <introduction>
-      <p>
+    <introduction permid="MCb">
+      <p permid="JHv">
         Consider the polynomial <m>a(x) = x^4 - 2</m> in <m>\Q[x]</m>.
       </p>
     </introduction>
 
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="sJk">
       <statement>
-        <p>
+        <p permid="pOE">
           Find the splitting field <m>E</m> for <m>a(x)</m> over <m>\Q</m>.
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="leL">
+        <p permid="dAm">
           There are four roots of <m>a(x)</m>, namely <m>\pm \sqrt[4]{2}</m> and <m>\pm\sqrt[4]{2}i</m>.
         </p>
       </solution>
     </exercise>
 
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="YQt">
         <statement>
-        <p> 
+        <p permid="VVN"> 
           Describe the Galois group <m>G</m> for <m>a(x)</m> over <m>\Q</m>.  How big is it?  Does it look like any group we have studied before?
         </p>
        </statement>
-       <solution>
+       <solution permid="RlU">
 
        </solution>
     </exercise>
     
 
         
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="EXC">
       <statement>
-        <p>
+        <p permid="CcW">
           Find all the subgroups of <m>G</m>.  Find all the subfields of <m>E</m> above <m>\Q</m>.  What do you notice?  Draw the lattice of subgroups and subfields to illustrate the connections.
         </p>
       </statement>
-      <solution>
+      <solution permid="xtd">
       
       </solution>
     </exercise>

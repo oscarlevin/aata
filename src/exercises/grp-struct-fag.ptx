@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-grps-struct-fag">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-grps-struct-fag" permid="JVD">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="xHl">
       <statement>
-        <p>
+        <p permid="dOu">
           Describe all abelian groups of order 200 (up to isomorphism).  Explain how you know you have them all.
         </p>
       </statement>

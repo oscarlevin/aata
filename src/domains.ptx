@@ -1282,7 +1282,7 @@
   <exercises xml:id="exercises-domains" filenamebase="domains" permid="kyu">
     <title>Exercises</title>
 
-    <exercise number="1" permid="gyv" xml:id="domains-exercise-Z-root-3">
+    <exercise number="1" xml:id="domains-exercise-Z-root-3" permid="gyv">
       <statement>
         <p permid="kUg">
           Let <m>z = a + b \sqrt{3}\, i</m> be in <m>{\mathbb Z}[ \sqrt{3}\, i]</m>.
@@ -1300,7 +1300,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="MFE" xml:id="domains-exercise-Z-i">
+    <exercise number="2" xml:id="domains-exercise-Z-i" permid="MFE">
       <statement>
         <p permid="Rbp">
           The Gaussian integers, <m>{\mathbb Z}[i]</m>, are a <acro>UFD</acro>.
@@ -1341,7 +1341,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="sMN" xml:id="domains-exercise-field-of-fractions">
+    <exercise number="3" xml:id="domains-exercise-field-of-fractions" permid="sMN">
       <statement>
         <p permid="xiy">
           Let <m>D</m> be an integral domain.
@@ -1370,7 +1370,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="YTW" xml:id="domains-exercise-subring-field">
+    <exercise number="4" xml:id="domains-exercise-subring-field" permid="YTW">
       <statement>
         <p permid="dpH">
           Prove or disprove: Any subring of a field <m>F</m> containing <m>1</m> is an integral domain.
@@ -1383,7 +1383,7 @@
       </hint>
     </exercise>
 
-    <exercise number="5" permid="Fbf" xml:id="domains-exercise-prime-irreducible">
+    <exercise number="5" xml:id="domains-exercise-prime-irreducible" permid="Fbf">
       <statement>
         <p permid="JwQ">
           Prove or disprove: If <m>D</m> is an integral domain,
@@ -1394,7 +1394,7 @@
 
     <!--Todo Check this solution.-->
 
-    <exercise number="6" permid="lio" xml:id="domains-exercise-subfield-iso-Q">
+    <exercise number="6" xml:id="domains-exercise-subfield-iso-Q" permid="lio">
       <statement>
         <p permid="pDZ">
           Let <m>F</m> be a field of characteristic zero.
@@ -1405,7 +1405,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="7" permid="Rpx" xml:id="domains-exercise-F-x">
+    <exercise number="7" xml:id="domains-exercise-F-x" permid="Rpx">
       <statement>
         <p permid="VLi">
           Let <m>F</m> be a field.
@@ -1452,7 +1452,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="8" permid="xwG" xml:id="domains-exercise-Z-p-x">
+    <exercise number="8" xml:id="domains-exercise-Z-p-x" permid="xwG">
       <statement>
         <p permid="BSr">
           Let <m>p</m> be prime and denote the field of fractions of
@@ -1464,7 +1464,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="9" permid="dDP" xml:id="domains-exercise-Q-i">
+    <exercise number="9" xml:id="domains-exercise-Q-i" permid="dDP">
       <statement>
         <p permid="hZA">
           Prove that the field of fractions of the Gaussian integers,
@@ -1484,7 +1484,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="10" permid="JKY" xml:id="domains-exercise-prime-field">
+    <exercise number="10" xml:id="domains-exercise-prime-field" permid="JKY">
       <statement>
         <p permid="OgJ">
           A field <m>F</m> is called a <term>prime field</term>
@@ -1519,7 +1519,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="11" permid="pSh" xml:id="domains-exercise-Z-root-2">
+    <exercise number="11" xml:id="domains-exercise-Z-root-2" permid="pSh">
       <statement>
         <p permid="unS">
           Let <m>{\mathbb Z}[ \sqrt{2}\, ] = \{ a + b \sqrt{2} : a, b \in {\mathbb Z} \}</m>.
@@ -1555,7 +1555,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="12" permid="VZq" xml:id="domains-exercise-UFD">
+    <exercise number="12" xml:id="domains-exercise-UFD" permid="VZq">
       <statement>
         <p permid="avb">
           Let <m>D</m> be a <acro>UFD</acro>.
@@ -1586,7 +1586,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="13" permid="Cgz" xml:id="domains-exercise-associates">
+    <exercise number="13" xml:id="domains-exercise-associates" permid="Cgz">
       <statement>
         <p permid="GCk">
           Let <m>D</m> be an integral domain.
@@ -1597,7 +1597,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="inI" xml:id="domains-exercise-euclidean-valuation-unit">
+    <exercise number="14" xml:id="domains-exercise-euclidean-valuation-unit" permid="inI">
       <statement>
         <p permid="mJt">
           Let <m>D</m> be a Euclidean domain with Euclidean valuation <m>\nu</m>.
@@ -1607,7 +1607,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="OuR" xml:id="domains-exercise-euclidean-valuation-associates">
+    <exercise number="15" xml:id="domains-exercise-euclidean-valuation-associates" permid="OuR">
       <statement>
         <p permid="SQC">
           Let <m>D</m> be a Euclidean domain with Euclidean valuation <m>\nu</m>.
@@ -1624,7 +1624,7 @@
       </hint>
     </exercise>
 
-    <exercise number="16" permid="uCa" xml:id="domains-exercise-Z-root-5-i">
+    <exercise number="16" xml:id="domains-exercise-Z-root-5-i" permid="uCa">
       <statement>
         <p permid="yXL">
           Show that <m>{\mathbb Z}[\sqrt{5}\, i]</m> is not a unique factorization domain.
@@ -1639,7 +1639,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="17" permid="aJj" xml:id="domains-exercise-subdomain-UFD">
+    <exercise number="17" xml:id="domains-exercise-subdomain-UFD" permid="aJj">
       <statement>
         <p permid="feU">
           Prove or disprove: Every subdomain of a <acro>UFD</acro> is also a <acro>UFD</acro>.
@@ -1647,7 +1647,7 @@
       </statement>
     </exercise>
 
-    <exercise number="18" permid="GQs" xml:id="domains-exercise-finitely-generated">
+    <exercise number="18" xml:id="domains-exercise-finitely-generated" permid="GQs">
       <statement>
         <p permid="Lmd">
           An ideal of a commutative ring <m>R</m> is said to be
@@ -1661,7 +1661,7 @@
       </statement>
     </exercise>
 
-    <exercise number="19" permid="mXB" xml:id="domains-exercise-artinian">
+    <exercise number="19" xml:id="domains-exercise-artinian" permid="mXB">
       <statement>
         <p permid="rtm">
           Let <m>D</m> be an integral domain with a descending chain of ideals <m>I_1 \supset I_2 \supset I_3 \supset \cdots</m>.
@@ -1677,7 +1677,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="TeK" xml:id="domains-exercise-local-ring">
+    <exercise number="20" xml:id="domains-exercise-local-ring" permid="TeK">
       <statement>
         <p permid="XAv">
           Let <m>R</m> be a commutative ring with identity.

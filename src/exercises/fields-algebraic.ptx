@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-fields-algebraic">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-fields-algebraic" permid="RsL">
   
     <title>Exercises</title>
-    <introduction>
-      <p>
+    <introduction permid="Fet">
+      <p permid="llC">
         Note: this set of exercises is not yet complete, and the numbers will change in the next few days.  This note will be removed when the section is finished.
       </p>
     </introduction>

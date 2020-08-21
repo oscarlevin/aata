@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-lagrange" permid="Evp">
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-lagrange" permid="BOb">
     <title>Lagrange's Theorem and its consequences</title>
     
     <xi:include href="./worksheets/groups-powers.ptx"/>

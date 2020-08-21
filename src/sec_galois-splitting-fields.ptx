@@ -3,7 +3,7 @@
 
   <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-galois-splitting-fields" permid="wmn">
     <title>Splitting Fields</title>
-    <introduction>
+    <introduction permid="WMl">
 
     <p permid="xkP">
       Let <m>F</m> be a field and <m>p(x)</m> be a nonconstant polynomial in <m>F[x]</m>.

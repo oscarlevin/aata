@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-groups-permutations">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-groups-permutations" permid="PKP">
   
     <title>Practice Problems</title>
 
-    <exercise number="1">
+    <exercise number="1" permid="NHh">
       <statement>
-        <p>
+        <p permid="NVC">
           Write the following permutations in cycle notation.
 
-          <ol cols="2">
-            <li>
-              <p>
-                <me>
+          <ol cols="2" permid="Ugn">
+            <li permid="sIX">
+              <p permid="IBP">
+                <me permid="rif">
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   2 &amp; 4 &amp; 1 &amp; 5 &amp; 3
@@ -21,9 +21,9 @@
               </p>
             </li>
 
-            <li>
-              <p>
-                <me>
+            <li permid="YQg">
+              <p permid="oIY">
+                <me permid="Xpo">
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   4 &amp; 2 &amp; 5 &amp; 1 &amp; 3
@@ -32,9 +32,9 @@
               </p>
             </li>
 
-            <li>
-              <p>
-                <me>
+            <li permid="EXp">
+              <p permid="UQh">
+                <me permid="Dwx">
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   3 &amp; 5 &amp; 1 &amp; 4 &amp; 2
@@ -43,9 +43,9 @@
               </p>
             </li>
 
-            <li>
-              <p>
-                <me>
+            <li permid="ley">
+              <p permid="AXq">
+                <me permid="jDG">
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   1 &amp; 4 &amp; 3 &amp; 2 &amp; 5
@@ -56,189 +56,189 @@
           </ol>
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="qTK">
+        <p permid="YuH">
           (a) <m>(12453)</m>; (b) <m>(14)(35)</m>; (c) <m>(13)(25)</m>; (d) <m>(24)</m>.
         </p>
       </answer>
     </exercise>
 
-    <exercise number="2">
+    <exercise number="2" permid="tOq">
       <statement>
-        <p>
+        <p permid="ucL">
           Compute each of the following.
 
-          <ol cols="2">
-            <li>
-              <p>
+          <ol cols="2" permid="Anw">
+            <li permid="RlH">
+              <p permid="hez">
                 <m>(1345)(234)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="xsQ">
+              <p permid="NlI">
                 <m>(12)(1253)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="dzZ">
+              <p permid="tsR">
                 <m>(143)(23)(24)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="JHi">
+              <p permid="ZAa">
                 <m>(1423)(34)(56)(1324)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="pOr">
+              <p permid="FHj">
                 <m>(1254)(13)(25)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="VVA">
+              <p permid="lOs">
                 <m>(1254) (13)(25)^2</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="CcJ">
+              <p permid="RVB">
                 <m>(1254)^{-1} (123)(45) (1254)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="ijS">
+              <p permid="ycK">
                 <m>(1254)^2 (123)(45)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="Orb">
+              <p permid="ejT">
                 <m>(123)(45) (1254)^{-2}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="uyk">
+              <p permid="Krc">
                 <m>(1254)^{100}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="aFt">
+              <p permid="qyl">
                 <m>|(1254)|</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="GMC">
+              <p permid="WFu">
                 <m>|(1254)^2|</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="mTL">
+              <p permid="CMD">
                 <m>(12)^{-1}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="TaU">
+              <p permid="iTM">
                 <m>(12537)^{-1}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="zid">
+              <p permid="PaV">
                 <m>[(12)(34)(12)(47)]^{-1}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="fpm">
+              <p permid="vie">
                 <m>[(1235)(467)]^{-1}</m>
               </p>
             </li>
           </ol>
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="XaT">
+        <p permid="EBQ">
           (a) <m>(135)(24)</m>; (b) <m>(253)</m>; (c) <m>(14)(23)</m>; (d) <m>(12)(56)</m>; (e) <m>(1324)</m>; (f) <m>(13254)</m>; (g) <m>(134)(25)</m>; (h) <m>(14)(235)</m>; (i) <m>(143)(25)</m>; (j) <m>(1)</m>; (k) <m>4</m> (i.e., the order of the element); (l) <m>2</m>; (m) <m>(12)</m>; (n) <m>(17352)</m>; (o) <m>(374)</m>; (p) <m>(476)(1532)</m>.
         </p>
       </answer>
     </exercise>
 
-    <exercise number="3">
+    <exercise number="3" permid="ZVz">
       <statement>
-        <p>
+        <p permid="ajU">
           Express the following permutations as products of transpositions and identify them as even or odd.
 
-          <ol cols="2">
-            <li>
-              <p>
+          <ol cols="2" permid="guF">
+            <li permid="Lwv">
+              <p permid="bpn">
                 <m>(14356)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="rDE">
+              <p permid="Hww">
                 <m>(156)(234)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="XKN">
+              <p permid="nDF">
                 <m>(1426)(142)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="DRW">
+              <p permid="TKO">
                 <m>(17254)(1423)(154632)</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="jZf">
+              <p permid="zRX">
                 <m>(142637)</m>
               </p>
             </li>
           </ol>
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="Dic">
+        <p permid="kIZ">
           (a) <m>(16)(15)(13)(14)</m> (even); (b) <m>(15)(56)(23)(24)</m> (even); (c) <m>(16)(14)(12)</m> (odd); (d) <m>(17)(72)(25)(54)(14)(42)(23)(15)(54)(46)(63)(32)</m> (even); (e) <m>(14)(42)(26)(63)(37)</m> (odd).
         </p>
       </answer>
     </exercise>
-    <exercise number="5">
+    <exercise number="5" permid="GcI">
       <statement>
-        <p>
+        <p permid="Grd">
           List all of the subgroups of <m>S_4</m>.
           Find each of the following sets:
 
-          <ol>
-            <li>
-              <p>
+          <ol permid="MBO">
+            <li permid="Qgo">
+              <p permid="fZg">
                 <m>\{ \sigma \in S_4 : \sigma(1) = 3 \}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="wnx">
+              <p permid="Mgp">
                 <m>\{ \sigma \in S_4 : \sigma(2) = 2 \}</m>
               </p>
             </li>
 
-            <li>
-              <p>
+            <li permid="cuG">
+              <p permid="sny">
                 <m>\{ \sigma \in S_4 : \sigma(1) = 3</m> and <m>\sigma(2) = 2 \}</m>.
               </p>
             </li>
@@ -247,81 +247,81 @@
           Are any of these sets subgroups of <m>S_4</m>?
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="jpl">
+        <p permid="JlJ">
           (a) <m>\{ (13), (13)(24), (132), (134), (1324), (1342) \}</m> is not a subgroup.
         </p>
-        <p>
+        <p permid="psS">
       (b) <m>\{(1), (134), (143), (13), (14), (34)\}</m> is a subgroup.
         </p>
-        <p>
+        <p permid="VAb">
       (c) <m>\{(13), (134)\}</m> is not a subgroup.
         </p>
 
       </hint>
     </exercise>
 
-    <exercise number="6">
+    <exercise number="6" permid="mjR">
       <statement>
-        <p>
+        <p permid="mym">
           Find all of the subgroups in <m>A_4</m>.
           What is the order of each subgroup?
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="Pwu">
+        <p permid="BHk">
       There are subgroups of orders 1, 2, 3, 4, and 12.  You have multiple choices for the subgroups of order 2 and 3.
         </p>
       </hint>
     </exercise>
 
-    <exercise number="7">
+    <exercise number="7" permid="Sra">
       <statement>
-        <p>
+        <p permid="SFv">
           Find all possible orders of elements in <m>S_7</m> and <m>A_7</m>.
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="vDD">
+        <p permid="QQi">
       The possible orders in <m>S_7</m> are 1, 2, 3, 4, 5, 6, 7, 10, and 12.  In <m>A_7</m> you can only have orders 1, 2, 3, 5, 6, and 7.
         </p>
       </answer>
     </exercise>
 
-    <exercise number="8">
+    <exercise number="8" permid="yyj">
       <statement>
-        <p>
+        <p permid="yME">
           Show that <m>A_{10}</m> contains an element of order <m>15</m>.
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="bKM">
+        <p permid="hOt">
           <m>(12345)(678)</m>.
         </p>
       </hint>
     </exercise>
 
-    <exercise number="9">
+    <exercise number="9" permid="eFs">
       <statement>
-        <p>
+        <p permid="eTN">
           Does <m>A_8</m> contain an element of order <m>26</m>?
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="HRV">
+        <p permid="wXr">
       No.  We will give a good reason why in chapter 6.
         </p>
       </answer>
     </exercise>
 
-    <exercise number="10">
+    <exercise number="10" permid="KMB">
       <statement>
-        <p>
+        <p permid="LaW">
           Find an element of largest order in <m>S_n</m> for <m>n = 3, \ldots, 10</m>.
         </p>
       </statement>
-      <answer>
-        <p>
+      <answer permid="nZe">
+        <p permid="deA">
           <m>(123)</m>,          <m>(1234)</m>,          <m>(12)(345)</m>, 
           <m>(123456)</m>,          <m>(123)(4567)</m>,          <m>(123)(45678)</m>,          <m>(1234)(56789)</m>,          <m>(12)(345)(678910)</m>.
         </p>

@@ -143,7 +143,7 @@
               The problem is that some of the <m>a_i</m>'s may be in <m>E</m> but not in <m>F</m>.
               We must show that this is impossible.
             </p>
-              <!-- Corrected typo.  Suggested by K. Brooks. - TWJ 6/15/2012 -->
+            <!-- Corrected typo.  Suggested by K. Brooks. - TWJ 6/15/2012 -->
             <p permid="lhb">
               Suppose that at least one of the <m>a_i</m>'s is in <m>E</m> but not in <m>F</m>.
               By rearranging the <m>\alpha_i</m>'s we may assume that <m>a_1</m> is nonzero.
@@ -299,12 +299,12 @@
 
         <figure xml:id="figure-galois-1" permid="BJN">
           <caption><m>G({\mathbb Q( \sqrt{3}, \sqrt{5}\, ) / {\mathbb Q})}</m></caption>
-              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+            <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
           <image xml:id="galois-root3-root5" permid="OAV">
 
-              <latex-image>
-                  <xi:include href="tikz/galois-root3-root5.tex" parse="text"/>
-              </latex-image>
+            <latex-image>
+                <xi:include href="tikz/galois-root3-root5.tex" parse="text"/>
+            </latex-image>
           </image>
 
         </figure>
@@ -451,12 +451,12 @@
 
         <figure xml:id="figure-galois-2" permid="hQW">
           <caption>Subgroups of <m>G(E/F)</m> and subfields of <m>E</m></caption>
-              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+            <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
           <image width="30%" xml:id="galois-correspondence" permid="uIe">
 
-              <latex-image>
-                  <xi:include href="tikz/galois-correspondence.tex" parse="text"/>
-              </latex-image>
+            <latex-image>
+                <xi:include href="tikz/galois-correspondence.tex" parse="text"/>
+            </latex-image>
           </image>
 
         </figure>
@@ -488,7 +488,7 @@
             The lattice of field extensions of <m>{\mathbb Q}</m> contained in
             <m>{\mathbb Q}( \sqrt[4]{2}, i)</m> is illustrated in <xref ref="figure-galois-3"/>(a).
           </p>
-              <!-- Corrected the automorphism sigma.  Suggested by R. Beezer. - TWJ 4/14/2011 -->
+            <!-- Corrected the automorphism sigma.  Suggested by R. Beezer. - TWJ 4/14/2011 -->
           <p permid="nGi">
             The Galois group <m>G</m> of <m>f(x)</m> must be of order <m>8</m>.
             Let <m>\sigma</m> be the automorphism defined by
@@ -507,12 +507,12 @@
 
         <figure xml:id="figure-galois-3" permid="NYf">
           <caption>Galois group of <m>x^4-2</m></caption>
-              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
+            <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/20/2010 -->
           <image xml:id="galois-fourth-root2" permid="aPn">
 
-              <latex-image>
-                  <xi:include href="tikz/galois-fourth-root2.tex" parse="text"/>
-              </latex-image>
+            <latex-image>
+                <xi:include href="tikz/galois-fourth-root2.tex" parse="text"/>
+            </latex-image>
           </image>
 
         </figure>
@@ -561,7 +561,7 @@
           he spent the evening before his death outlining his work and his basic ideas for research in a long letter to his friend Chevalier.
           He was indeed dead the next day, at the age of 20.
         </p>
-              <!--  Age of Galois' death corrected.  Suggested by K. Brooks. - TWJ 5/15/2012 -->
+            <!--  Age of Galois' death corrected.  Suggested by K. Brooks. - TWJ 5/15/2012 -->
       </subsection>
 
       <xi:include href="exercises/galois-ftg-collected.ptx" />

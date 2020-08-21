@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_fields-constructable-numbers">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_fields-constructable-numbers" permid="tVH">
     <title>Activity: Constructible Numbers</title>
 
-    <introduction>
-        <p>
+    <introduction permid="gXv">
+        <p permid="sgu">
           We have considered what geometric shapes we could or could not construct.  We are left with three big questions: is it possible to <em>trisect an angle</em>, to <em>double a cube</em>, or to <em>square a circle</em>.  To answer these questions, we must <q>algebratize</q> geometric constructions.
 
         </p>
         
-        <p>
+        <p permid="YnD">
           Start with two constructible points <m>0</m> and <m>1</m> <em>one unit</em> apart.  We define <term>constructible</term> recursively from this base case:
-          <ol>
-            <li>
-              <p>
+          <ol permid="CFz">
+            <li permid="iMI">
+              <p permid="bij">
                 A <term>constructible line</term> is a line passing through two constructible points.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="OTR">
+              <p permid="Hps">
                 A <term>constructible circle</term> is a circle whose radius is a constructible number and whose center is a constructible point.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="vba">
+              <p permid="nwB">
                 A <term>constructible point</term> is the intersection of two constructible lines, two constructible circles, or a constructible line and a constructible circle.
               </p>
             </li>
           </ol>
         </p>
         
-        <p>
+        <p permid="EuM">
           We say a number <m>a</m> is <term>constructible</term> provided <m>a = 0</m> or there are two constructible points distance <m>|a|</m> apart.  So far we have constructible numbers 0, 1, and <m>-1</m>.  What else is constructible?
         </p>
-        <p>
+        <p permid="kBV">
           For this activity, use GeoGebra.  Use only the <q>new point</q> tool (to place points at the intersections of lines, circles, or both), the <q>line through two points</q> tool, and the <q>compass</q> tool (under the circle menu).  You can also use the arrow to drag things around if you need to.
         </p>
     </introduction>
 
-    <exercise>
+    <exercise permid="NeE">
       <statement>
-        <p>
+        <p permid="QJe">
           Show that the numbers 2 and 4 are constructible.  Then show that the number <m>3 = 4 - 1</m> is constructible.
         </p>
       </statement>
-      <solution>
+      <solution permid="xVG">
         
       </solution>
     </exercise>
 
 
-        <exercise>
+        <exercise permid="tlN">
             <statement>
-            <p> 
+            <p permid="wQn"> 
                If <m>a</m> and <m>b</m> are constructible numbers, are the numbers <m>a+b</m> and <m>a-b</m> also constructible?  
             </p>
            </statement>
@@ -61,85 +61,85 @@
         
 
         
-        <exercise>
+        <exercise permid="ZsW">
           <statement>
-            <p>
+            <p permid="cXw">
               Suppose <m>a</m> and <m>b</m> are constructible.  Construct a triangle containing a base of unit length adjacent to a side of length <m>a</m>.  Construct a similar triangle with where the side corresponding the unit length side now has length <m>b</m>.  What is the length of the side corresponding to the <m>a</m>-length side?
             </p>
-            <image xml:id="img-construct-product" width="25%">
-              <latex-image>
-                \begin{tikzpicture}
-                  {\tiny
-                  \draw (0,0) -- (1.5,0) node[midway, above]{1};
-                  \draw (0,0) -- (1,1) node[midway,below]{$a$} -- (1.5,0);
-                  \draw (0,0) -- (2.25,0) node[midway,below]{$b$};
-                  \draw (0,0) -- (1.5,1.5) node[midway,above]{?} -- (2.25,0);
-                  }
-                \end{tikzpicture}
-              </latex-image>
+            <image xml:id="img-construct-product" width="25%" permid="hHp">
+            <latex-image>
+              \begin{tikzpicture}
+                {\tiny
+                \draw (0,0) -- (1.5,0) node[midway, above]{1};
+                \draw (0,0) -- (1,1) node[midway,below]{$a$} -- (1.5,0);
+                \draw (0,0) -- (2.25,0) node[midway,below]{$b$};
+                \draw (0,0) -- (1.5,1.5) node[midway,above]{?} -- (2.25,0);
+                }
+              \end{tikzpicture}
+            </latex-image>
             </image>
           </statement>
-          <solution>
-            <p>
+          <solution permid="ecP">
+            <p permid="TDK">
             </p>
           </solution>
         </exercise>
         
-        <exercise>
+        <exercise permid="FAf">
           <statement>
-            <p>
+            <p permid="JeF">
              Explain how you can modify the above construction to prove that if <m>a</m> and <m>b</m> are constructible, then <m>a/b</m> is constructible.
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="KjY">
+            <p permid="zKT">
 
             </p>
           </solution>
         </exercise>
         
-        <exercise>
+        <exercise permid="lHo">
           <statement>
-            <p>
+            <p permid="plO">
               Given constructible number <m>c</m>, explain how you can construct the figure below.  The vertical line should be perpendicular to the horizontal line, which is the diameter of the circle.  
             </p>
-              <image xml:id="img-root-construct" width="30%">
-                <latex-image>
-                  \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm, scale=0.75]
-                  \draw (-1.,0.)-- (5.,0.);
-                  \draw [shift={(2.,0.)}] plot[domain=0.:3.141592653589793,variable=\t]({1.*3.*cos(\t r)+0.*3.*sin(\t r)},{0.*3.*cos(\t r)+1.*3.*sin(\t r)});
-                  \draw (0.18,2.3848689691469427)-- (0.18,0.);
-                  \begin{scriptsize}
-                  \draw [fill=black] (-1.,0.) circle (1.5pt);
-                  \draw (-1, 0) node[below] {$0$};
-                  \draw [fill=black] (5.,0.) circle (1.5pt);
-                  \draw (5,0) node[below] {$c$};
-                  \draw [fill=black] (0.18,2.3848689691469427) circle (1.5pt);
-                  \draw [fill=black] (0.18,0.) circle (1.5pt);
-                  \draw (0.18,0.) node[below] {$1$};
-                  \end{scriptsize}
-                  \end{tikzpicture}
-                </latex-image>
+              <image xml:id="img-root-construct" width="30%" permid="NOy">
+            <latex-image>
+              \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm, scale=0.75]
+              \draw (-1.,0.)-- (5.,0.);
+              \draw [shift={(2.,0.)}] plot[domain=0.:3.141592653589793,variable=\t]({1.*3.*cos(\t r)+0.*3.*sin(\t r)},{0.*3.*cos(\t r)+1.*3.*sin(\t r)});
+              \draw (0.18,2.3848689691469427)-- (0.18,0.);
+              \begin{scriptsize}
+              \draw [fill=black] (-1.,0.) circle (1.5pt);
+              \draw (-1, 0) node[below] {$0$};
+              \draw [fill=black] (5.,0.) circle (1.5pt);
+              \draw (5,0) node[below] {$c$};
+              \draw [fill=black] (0.18,2.3848689691469427) circle (1.5pt);
+              \draw [fill=black] (0.18,0.) circle (1.5pt);
+              \draw (0.18,0.) node[below] {$1$};
+              \end{scriptsize}
+              \end{tikzpicture}
+            </latex-image>
               </image>
-            <p>
+            <p permid="VsX">
               What is the length of the vertical line?
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="qrh">
+            <p permid="fSc">
               
             </p>
           </solution>
         </exercise>
     
-        <exercise>
+        <exercise permid="ROx">
           <statement>
-            <p>
+            <p permid="BAg">
               Let <m>\mathfrak C</m> be the set of all constructible numbers.  What sort of set is this?  Is it a group?  A ring?  A field?  Is it one of these we know about already?
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="Wyq">
+            <p permid="LZl">
               
             </p>
           </solution>

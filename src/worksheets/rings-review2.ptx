@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_rings-review2">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_rings-review2" permid="Kdh">
     <title>Activity: Review of the Euclidean Algorithm</title>
 
-    <introduction>
-      <p>
+    <introduction permid="kQD">
+      <p permid="cgL">
         The goal of this activity is to remember how to use the Eulcidea Algorithm to find the greatest common divisor of two elements in a ring (numbers or polynomials, for us) and write the gcd as a linear combination of the two elements (which Bezout's lemma tells us we can do).
       </p>
 
-      <example xml:id="example-integers-gcd" permid="Uqu">
-        <p permid="jGJ">
+      <example xml:id="example-integers-gcd" permid="EJu">
+        <p permid="PSt">
           Let's find the gcd of <m>945</m> and <m>2415</m>.
           Repeatedly use the division algorithm:
-          <md permid="hay">
+          <md permid="Zmf">
             <mrow>2415 &amp; = 945 \cdot 2 + 525</mrow>
             <mrow>945 &amp; = 525 \cdot 1 + 420</mrow>
             <mrow>525 &amp; = 420 \cdot 1 + 105</mrow>
@@ -22,9 +22,9 @@
           Therefore, <m>\gcd( 945, 2415 ) = 105</m>.
         </p>
 
-        <p permid="PNS">
+        <p permid="vZC">
           Now work backwards to obtain numbers <m>r</m> and <m>s</m> such that <m>945 r + 2415 s = 105</m>.
-          <md permid="NhH">
+          <md permid="Fto">
             <mrow>105 &amp; = 525 + (-1) \cdot 420</mrow>
             <mrow>&amp; = 525 + (-1) \cdot [945 + (-1) \cdot 525]</mrow>
             <mrow>&amp; = 2 \cdot 525 + (-1) \cdot 945</mrow>
@@ -38,16 +38,16 @@
 
 
 
-<exercise workspace="15%">
+<exercise workspace="15%" permid="QXM">
   <statement>
-    <p>
+    <p permid="InU">
             Find the greatest common divisor of 471 and 564 using the Euclidean Algorithm and then find integers <m>r</m> and <m>s</m> such that <m>\gcd(471,564) = 471r+564s</m>. 
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="BOO">
+    <p permid="mFQ">
             First we perform the Euclidean algorithm:
-      <md>
+      <md permid="lAx">
         <mrow>564 = \amp 1\cdot 471 + 93 </mrow>
         <mrow>471 = \amp 5\cdot 93 + 6 </mrow>
         <mrow>93 = \amp 15\cdot 6 + 3 </mrow>
@@ -55,9 +55,9 @@
       </md>
             so <m>\gcd(471,564) = 3</m>.
     </p>
-    <p>
+    <p permid="SMZ">
             Now working backwards through the lines of the Euclidean algorithm to find <m>r</m> and <m>s</m>:
-      <md>
+      <md permid="RHG">
         <mrow>3 = \amp 93 - 15\cdot 6</mrow>
         <mrow>3 = \amp 93 - 15\cdot (471 - 5\cdot 93) = -15\cdot 471 + 76\cdot 93</mrow>
         <mrow>3 =  \amp -15\cdot 471 + 76\cdot (564 - 471) = 76\cdot 564 - 91\cdot 471</mrow>
@@ -69,31 +69,31 @@
 
 
 
-<exercise workspace="15%">
+<exercise workspace="15%" permid="xeV">
   <statement>
-    <p>
+    <p permid="ovd">
             In the quotient ring <m>\Z/\langle 564 \rangle</m>, find an element <m>a + \langle 564\rangle</m> such that <m>(a+\langle 564\rangle)(471 + \langle 564\rangle) = 3 + \langle 564 \rangle</m>.  Explain why the previous question is helpful here.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="hVX">
+    <p permid="yUi">
             Using the work done in question 1 above, we need <m>a = -91</m>.
     </p>
 
-    <p>
-            Why is this?  Well we want <m>(a + \langle 564\rangle)(471 + \langle 564\rangle) = 3+\langle 564\rangle</m>.  In other words, we want <m>a\cdot 471 + \langle 564\rangle = 3 + \langle 564\rangle</m>, which is the same as asking that <m>3 \in a\cdot 471 + \langle 564\rangle</m>.  This is another way of requiring <me>3 = a\cdot 471 + k\cdot 564</me>.  We found values of <m>a</m> and <m>k</m> to make this so above.
+    <p permid="fbr">
+            Why is this?  Well we want <m>(a + \langle 564\rangle)(471 + \langle 564\rangle) = 3+\langle 564\rangle</m>.  In other words, we want <m>a\cdot 471 + \langle 564\rangle = 3 + \langle 564\rangle</m>, which is the same as asking that <m>3 \in a\cdot 471 + \langle 564\rangle</m>.  This is another way of requiring <me permid="teW">3 = a\cdot 471 + k\cdot 564</me>.  We found values of <m>a</m> and <m>k</m> to make this so above.
     </p>
   </solution>
 </exercise>
 
-<exercise workspace="1%">
+<exercise workspace="1%" permid="dme">
   <statement>
-    <p>
+    <p permid="UCm">
             Is <m>471 + \langle 564\rangle</m> a unit in <m>\Z/\langle 564\rangle</m>?  Explain.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="Odg">
+    <p permid="LiA">
             No.  Being a unit means that there is a multiplicative inverse.  That would be a coset <m>a + \langle 564 \rangle</m> that when multiplied by <m>471+\langle 564\rangle</m> gives the unity <m>1+\langle 564\rangle</m>.  We would then have <m>471a = 1 + 564k</m> for some <m>k \in \Z</m>.  But that would imply that <m>\gcd(471, 564) = 1</m>.
     </p>
   </solution>
@@ -102,29 +102,29 @@
 <pagebreak />
 
 
-<exercise workspace="28%">
+<exercise workspace="28%" permid="Jtn">
   <statement>
-    <p>
+    <p permid="AJv">
             In <m>\Q[x]</m>, find the gcd of the polynomials <m>a(x) = x^3 + 1</m> and <m>b(x) = x^4 + x^3 + 2x^2 + x - 1</m>.  Then express the gcd as a combination of the two polynomials (as in Bezout's lemma).
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="ukp">
+    <p permid="rpJ">
             The gcd is <m>x+1</m>.  Working backwards we get <m>x+1 = \frac{1}{2}(x^2 + x + 2)a(x) - \frac{1}{2}x b(x)</m>.
     </p>
   </solution>
 </exercise>
 
-<exercise workspace="28%">
+<exercise workspace="28%" permid="pAw">
   <statement>
-    <p>
+    <p permid="gQE">
             Find the greatest common divisor of <m>x^{24}-1</m> and <m>x^{15}-1</m> in <m>\Q[x]</m>, and then express the gcd as a combination of the two polynomials.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="ary">
+    <p permid="XwS">
             Let's use the Euclidean algorithm:
-      <md>
+      <md permid="xOP">
         <mrow>x^{24} - 1 =  \amp x^9(x^{15} - 1) + x^9 - 1 </mrow>
         <mrow>x^{15} - 1 =  \amp x^6(x^{9} - 1) + x^6 - 1 </mrow>
         <mrow>x^{9} - 1 =  \amp x^3(x^{6} - 1) + x^3 - 1 </mrow>
@@ -132,9 +132,9 @@
       </md>
             Thus the gcd is <m>x^3-1</m>.
     </p>
-    <p>
+    <p permid="DEb">
             Now work backwards:
-      <md>
+      <md permid="dVY">
         <mrow>x^3 - 1 = \amp [x^9-1] - x^3[x^6-1] </mrow>
         <mrow>x^3 - 1 = \amp [x^9-1] - x^3([x^{15}-1] - x^6[x^9-1]) </mrow>
         <mrow> = \amp -x^3[x^{15}-1] + (x^9+1)[x^9-1] </mrow>
@@ -145,14 +145,14 @@
   </solution>
 </exercise>
 
-<exercise workspace="20%">
+<exercise workspace="20%" permid="VHF">
   <statement>
-    <p>
+    <p permid="MXN">
             Find a coset <m>a(x) + \langle x^{24}-1\rangle</m> of <m>\Q[x]/\langle x^{24}-1\rangle</m> such that <m>(a(x) + \langle x^{24}-1\rangle)(x^{15}-1 + \langle x^{24}-1\rangle) = x^3-1 + \langle x^{24}-1\rangle</m>.
     </p>
   </statement>
-  <solution>
-    <p>
+  <solution permid="GyH">
+    <p permid="jLk">
             Using the computations from the previous problem, we get <m>a(x) = -x^{18} - x^9 - x^3</m>.
     </p>
   </solution>

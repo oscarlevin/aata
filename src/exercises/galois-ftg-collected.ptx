@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-ftg">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-ftg" permid="yTI">
   
     <title>Collected Homework</title>
 
-<exercise>
+<exercise permid="JsN">
   <statement>
-    <p>
+    <p permid="SMz">
       Previously, we saw that the field <m>E = \Q(\sqrt[4]{3},i)</m> was the splitting field for the polynomial <m>x^4-3</m>.  We also claimed that there were 8 intermediate fields between <m>\Q</m> and <m>\Q(\sqrt[4]{3},i)</m> (so 10 fields total in the picture).  Let's explore what these could be.
-      <ol>
-        <li>
-          <p>
+      <ol permid="pzW">
+        <li permid="VHf">
+          <p permid="ujP">
             Describe the 8 automorphisms in <m>G(E/\Q)</m>.  The Galois group is isomorphic to <m>D_4</m>, so you should describe both what each element does to elements in the field and which element of <m>D_4</m> they correspond to.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="BOo">
+          <p permid="aqY">
             One of the subfields of <m>E</m> is <m>\Q(\sqrt{3})</m>.  Find the <em>fixer</em> of this subfield.  That is, find the subgroup of <m>G(E/\Q)</m> that corresponds to this subfield.  How many elements does it have, and how does this relate to the degrees around <m>\Q(\sqrt{3})</m>?
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="hVx">
+          <p permid="Gyh">
             Pick your favorite non-trivial subgroup of <m>D_4</m> that you did not just describe in the previous part, and find the <em>fixfield</em> of it.  That is, find the subfield of <m>E</m> that corresponds to your subgroup.  Again, compare sizes, indexes, and degrees.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="OcG">
+          <p permid="mFq">
             Bonus: Complete the lattice of subgroups of <m>D_4</m> and lattice of subfields of <m>E</m>.  
           </p>
         </li>

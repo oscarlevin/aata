@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-groups-cayley">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-groups-cayley" permid="wIW">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="MXn">
     <statement>
-      <p>
+      <p permid="Env">
         Let's prove Cayley's theorem.  Here is the overall structure, including the <q>big idea</q>.  After this, you are asked to provide the details.
       </p>
-      <proof>
-        <p>
+      <proof permid="ZlF">
+        <p permid="LRU">
           Let <m>G</m> be a graph.  We will define a group of permuations <m>\overline{G}</m> that is isomorphic to <m>G</m>.
           For any <m>g \in G</m>, define a  function
            <m>\lambda_g : G \rightarrow G</m> by <m>\lambda_g(a) = ga</m>.
            [Show <m>\lambda_g</m> is a permutation of <m>G</m>, i.e., a bijection.]
         </p>
-        <p>
+        <p permid="rZd">
           Now we are ready to define our group <m>\overline{G}</m>.
           Let
-          <me>
+          <me permid="QBN">
             \overline{G} = \{ \lambda_g \st g \in G \}
           </me>.
           We must show that <m>\overline{G}</m> is a group (where the operation is composition of functions).   [Show that <m>\overline{G}</m> is subgroup of <m>S_G</m> by showing it contains the identity, is closed under the operation, and is closed under inverses.]
         </p>
 
-        <p>
+        <p permid="Ygm">
           We can define an isomorphism from <m>G</m> to
           <m>\overline{G}</m> by <m>\phi : g \mapsto \lambda_g</m>.  We must prove this is really an isomorphism.  [Show that <m>\phi</m> is a bijection and satisfies the homomorphism property.]
         </p>
       </proof>
-      <p>
+      <p permid="kuE">
         Now fill in the gaps:
-        <ol>
-          <li>
-            <p>
+        <ol permid="FsO">
+          <li permid="lzX">
+            <p permid="iFr">
               Prove that <m>\lambda_g</m> is injective (one-to-one).
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="RHg">
+            <p permid="OMA">
               Prove that <m>\lambda_g</m> is surjective (onto).
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="xOp">
+            <p permid="uTJ">
               Prove that <m>\overline{G}</m> contains the identity.
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="dVy">
+            <p permid="baS">
               Prove that <m>\overline{G}</m> is closed under the operation (composition).
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="KcH">
+            <p permid="Hib">
               Prove that <m>\overline{G}</m> is closed under inverses.
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="qjQ">
+            <p permid="npk">
               Prove that <m>\phi</m> is injective.
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="WqZ">
+            <p permid="Twt">
               Prove that <m>\phi</m> is surjective.   
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="Cyi">
+            <p permid="zDC">
               Prove that <m>\phi</m> satisfies the homomorphism property.
             </p>
           </li>
         </ol>
       </p>
     </statement>
-    <hint>
-      <p>
+    <hint permid="tew">
+      <p permid="fKL">
         To prove a function <m>f:A \to B</m> is injective, suppose <m>f(a) = f(b)</m> and deduce that <m>a = b</m>.  To prove that the function is surjective, assume <m>b \in B</m> and find some <m>a \in A</m> such that <m>f(a) = b</m>.
       </p>
     </hint>

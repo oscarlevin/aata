@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-RSA-lab">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_groups-RSA-lab" permid="zaZ">
   <title>Activity: RSA Cryptography Lab</title>
 
-  <introduction>
-    <p>
+  <introduction permid="jih">
+    <p permid="TZj">
           Let's implement the ideas behind RSA cryptography to create a public encryption key that you can use to have your friends send you secure messages. 
     </p>
 
-    <p>
+    <p permid="Ags">
           We will use SAGE to compete this activity.  You can use the interactive SAGE cells in the online version of this activity.  Or use the online SAGE cell at <url>https://sagecell.sagemath.org/</url>.  Of course if you have SAGE installed, you can use that.
     </p>
   </introduction>
 
-  <exercise>
+  <exercise permid="Ppq">
     <statement>
-      <p>
-          First you will need to select two very large prime numbers.  Let's shoot for 20-25 digits. Luckily, SAGE has the command <c>next_prime()</c> which will give you the next prime larger than your input.  So pick a random input and get two primes.  You will want to save these as a constant.  For example (but you will need to find a much bigger numbers):
+      <p permid="gnB">
+          First you will need to select two very large prime numbers.  Let's shoot for 20-25 digits. Luckily, SAGE has the command <c>next_prime()</c>which will give you the next prime larger than your input.  So pick a random input and get two primes.  You will want to save these as a constant.  For example (but you will need to find a much bigger numbers):
       </p>
-      <sage>
+      <sage permid="fii">
         <input>
           p = next_prime(20)
           q = next_prime(30)
@@ -33,12 +33,12 @@
   </exercise>
 
 
-  <exercise>
+  <exercise permid="vwz">
     <statement>
-      <p> 
+      <p permid="MuK"> 
         Now you can compute <m>n = pq</m> and <m>m = (p-1)(q-1)</m>.  
       </p>
-      <sage>
+      <sage permid="Lpr">
         <input>
           n = p*q
           m = (p-1)*(q-1)
@@ -48,10 +48,10 @@
           (713, 660)
         </output>
       </sage>
-      <p>
+      <p permid="sBT">
         Notice that you <em>could</em> ask SAGE to find <m>m = \varphi(n)</m> using <c>euler_phi(n)</c>, but you should think about why this is a really really really bad idea.  If you want, you can try it below, but maybe first with only small values of <m>p</m> and <m>q</m>.
       </p>
-      <sage>
+      <sage permid="rwA">
         <input>
           euler_phi(n)
         </input>
@@ -64,19 +64,19 @@
 
 
 
-  <exercise>
+  <exercise permid="bDI">
     <statement>
-      <p>
+      <p permid="YJc">
           Now we need <m>E</m> and <m>D</m>.  Recall that we want <m>\gcd(E,m) = 1</m> and <m>DE \equiv 1 \pmod{m}</m>.  How are you going to find these?  
       </p>
-      <p>
-          SAGE has the command <c>gcd(E, m)</c> that will compute the gcd of the two inputs.  You could try factoring <m>m</m> and looking for a reasonably large value of <m>E</m>, or just guess and check until you find a suitable <m>E</m>.
+      <p permid="EQl">
+          SAGE has the command <c>gcd(E, m)</c>that will compute the gcd of the two inputs.  You could try factoring <m>m</m> and looking for a reasonably large value of <m>E</m>, or just guess and check until you find a suitable <m>E</m>.
       </p>
-      <p>
-           To find <m>D</m>, there is the command <c>inverse_mod(E, m)</c> which will run the Euclidean algorithm forwards and backwards on <m>E</m> and <m>m</m>.
+      <p permid="kXu">
+           To find <m>D</m>, there is the command <c>inverse_mod(E, m)</c>which will run the Euclidean algorithm forwards and backwards on <m>E</m> and <m>m</m>.
       </p>
       
-      <sage>
+      <sage permid="XDJ">
         <input>
           # repeatedly pick E until gcd(E,m) = 1.
           E = 35
@@ -86,7 +86,7 @@
           5
         </output>
       </sage>
-      <sage>
+      <sage permid="DKS">
         <input>
           D = inverse_mod(E,m)
           D
@@ -97,26 +97,26 @@
 
   </exercise>
 
-  <p>
+  <p permid="JAe">
       You can now publish the encryption pair <m>(n,E)</m> so your friends can send you messages.  You will need to keep <m>D</m> private.  But don't loose it!  The whole point is that without <m>p</m> and <m>q</m>, you should not be able to find <m>D</m> again, even if you had <m>n</m> and <m>E</m>.  Evaluate the cell below to refer to later:
   </p>
-  <sage>
+  <sage permid="jSb">
     <input>
       print("Your public key, E =", E,"; n =", n)
       print("Your private key, D =", D)
     </input>
   </sage>
   
-  <p>
+  <p permid="pHn">
       If someone has a message <m>x</m> to send you, they would simply need to compute <m>x^E \pmod{n}</m>.  SAGE can do this with <c>mod(x^E,n)</c>, but if <m>x</m> and <m>E</m> are large, this would take a really long time.
-      Luckily, there is a better way: <c>power_mod(x,E,n)</c> computes the same thing, but uses the method of repeated squaring to make this much more efficient. 
+      Luckily, there is a better way: <c>power_mod(x,E,n)</c>computes the same thing, but uses the method of repeated squaring to make this much more efficient. 
   </p>
 
-  <p>
+  <p permid="VOw">
     For example:
   </p>
 
-  <sage>
+  <sage permid="PZk">
     <input>
       a = mod(12345^35, 713)
       b = power_mod(12345,35,713)
@@ -127,16 +127,16 @@
     </output>
   </sage>
   
-  <p>
+  <p permid="BVF">
     You will need to use this function to decrypt the message <m>y</m> when you take <m>y^D \pmod{n}</m>. 
   </p>
 
-  <exercise>
+  <exercise permid="HKR">
     <statement>
-    <p>
-      When you get an encrypted message, you can assign it to the variable <c>encrypted</c> and then decrypt it using the <c>power_mod</c> function.
+    <p permid="ReD">
+      When you get an encrypted message, you can assign it to the variable <c>encrypted</c>and then decrypt it using the <c>power_mod</c>function.
     </p>
-    <sage>
+    <sage permid="wgt">
       <input>
         encrypted = #paste encrypted message here
         decrypted = power_mod(encrypted, D, n)
@@ -146,17 +146,17 @@
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise permid="nSa">
     <statement>
-      <p>
+      <p permid="xlM">
         The last piece of the puzzle is what to do with the number you get out of the decryption.  You will find some <m>x</m>, but need that to be translated into text you can read.  
       </p>
 
-      <p>
+      <p permid="dsV">
         This depends on the agreed upon method for translating a string of symbols into numbers.  For this lab, you can use the following code do decrypt the message:  
       </p>
 
-      <sage>
+      <sage permid="cnC">
         <input>
           digits = decrypted.digits(base=128)
           letters = [chr(ascii) for ascii in digits]
@@ -168,25 +168,25 @@
   </exercise>
       
 
-      <p>
+      <p permid="icO">
         Here is why the code above works.  First, we need to agree upon how to translate the original message into a number.  
       </p>
-      <p>
-        Suppose we have a string called <c>message</c>.  We can create a list of ASCII code values (0 through 127) using <c>digits = [ord(letter) for letter in message]</c>.  Here <c>ord()</c> converts a single letter into its ASCII code, so we do that for each letter in the message.
+      <p permid="OjX">
+        Suppose we have a string called <c>message</c>.  We can create a list of ASCII code values (0 through 127) using <c>digits = [ord(letter) for letter in message]</c>.  Here <c>ord()</c>converts a single letter into its ASCII code, so we do that for each letter in the message.
       </p>
 
-      <p>
-        We must then convert a collection of letters into a single number base 128.  SAGE can do this using the <c>ZZ()</c> function.  So <c>ZZ(digits,128)</c>.  This will only work if <m>128^k \lt n</m>, where <m>k</m> is the number of digits.  So in practice, we would break the longer message into chunks and encrypt each chunk separately.
+      <p permid="urg">
+        We must then convert a collection of letters into a single number base 128.  SAGE can do this using the <c>ZZ()</c>function.  So <c>ZZ(digits,128)</c>.  This will only work if <m>128^k \lt n</m>, where <m>k</m> is the number of digits.  So in practice, we would break the longer message into chunks and encrypt each chunk separately.
       </p>
 
-      <p>
-        To undo this coding, you can break down the received message <c>decrypted</c> using <c>digits = decrypted.digits(base=128)</c>, which makes a list of digits.  Then you can create a list of letters using <c>letters = [chr(ascii) for ascii in digits]</c>.  Finally, put these letters into a string using <c>''.join(letters)</c>. 
+      <p permid="ayp">
+        To undo this coding, you can break down the received message <c>decrypted</c>using <c>digits = decrypted.digits(base=128)</c>, which makes a list of digits.  Then you can create a list of letters using <c>letters = [chr(ascii) for ascii in digits]</c>.  Finally, put these letters into a string using <c>''.join(letters)</c>. 
       </p>
 
-      <p>
+      <p permid="GFy">
         To practice, you can try encoding and decoding messages below.   The first set of cells allow you to encrypt and decrypt a very short message. The second pair show a way to break up the message word by word using for loops break up the message into word-long chunks so there is no limit to the length of the message.
       </p>
-      <sage>
+      <sage permid="IuL">
         <input>
           message = #paste short message here.
           digits = [ord(letter) for letter in message]
@@ -196,7 +196,7 @@
         </input>
       </sage>
 
-      <sage>
+      <sage permid="oBU">
         <input>
           decrypted = power_mod(encrypted, D, n)
           digits = decrypted.digits(base=128)
@@ -206,11 +206,11 @@
 
       </sage>
       
-      <p>
+      <p permid="mMH">
         For longer messages:
       </p>
 
-      <sage>
+      <sage permid="UJd">
         <input>
           message = #paste message here, enclosed in quotes.
           message_array = message.split()
@@ -222,7 +222,7 @@
           encrypted
         </input>
       </sage>
-      <sage>
+      <sage permid="AQm">
         <input>
           dec_message_array = []
           for num in encrypted:
@@ -233,7 +233,7 @@
           ' '.join(dec_message_array)
         </input>
       </sage>
-  <p>
+  <p permid="STQ">
     Here is an empty sage cell in case you want to experiment with other commands:
   </p>    
   <sage type="practice"/>

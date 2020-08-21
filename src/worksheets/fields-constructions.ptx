@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-constructions">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-constructions" permid="Cka">
     <title>Activity: Geometric Constructions</title>
 
-    <introduction>
-        <p>
+    <introduction permid="acQ">
+        <p permid="FeG">
           Our first application of algebra (to other mathematics) will be to questions of classical geometry.  We will look at geometry as it was done in ancient Greece, except that we will use GeoGebra for our constructions.
         </p>
         
-        <p>
+        <p permid="llP">
           Our main question is, what can you <em>construct</em> using reasonable, fundamental tools.  The tools are: an <em>unmarked straightedge</em> and a <em>compass</em>.  
         </p>
         
-        <p>
+        <p permid="RsY">
           In GeoGebra, there are many more tools than these. Make sure you only use the <q>new point</q> tool (to place points at the intersections of lines and circles), the <q>line through two points</q> tool, and the <q>compass</q> tool (under the circle menu).  You can also use the arrow to drag things around if you need to.
         </p>
         
-        <p>
+        <p permid="xAh">
           To get a feel for the sorts of things you can construct, and maybe things you cannot, here are a few challenges.
         </p>
     </introduction>
 
-    <exercise workspace="1%">
+    <exercise workspace="1%" permid="GjZ">
       <statement>
-        <p>
+        <p permid="dHq">
           Can you construct a <m>60^\circ</m> angle?  A <m>30^\circ</m> angle?  If you have constructed any angle at all, can you construct an angle half its measure?  That is, can you <em>bisect</em> an given angle?
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="eMJ">
+        <p permid="UnE">
           If you can construct an equilateral triangle (draw two circles with the same radius with centers at the two points on a line, and look for the intersections), then the angles at the vertices will be <m>60^\deg</m>.
         </p>
         
-        <p>
+        <p permid="AuN">
           To bisect an angle, create a circle centered at the vertex of the angle.  Call the two points of intersection of this circle and the rays of the angle <m>A</m> and <m>B</m>.  Draw a circle centered at <m>A</m> with radius <m>\overline{AB}</m>, and another circle centered at <m>B</m> with radius <m>\overline{AB}</m>.  Create a line from the vertex of the angle to the intersection of these two circles (either or both).
         </p>
       </solution>
     </exercise>
 
 
-        <exercise workspace="1%">
+        <exercise workspace="1%" permid="mri">
             <statement>
-            <p> 
+            <p permid="JOz"> 
                Can you construct a square?  Can you double the square?  That is, if you can construct a square, can you construct a square of twice the area?  Careful: this is not a square whose side length is twice the side length of the original.
             </p>
            </statement>
-           <solution>
-             <p>
+           <solution permid="KTS">
+             <p permid="gBW">
                Constructing the square can be accomplished by creating perpendicular lines.  You can make the length of all the sides equal using the compass.
              </p>
              
-             <p>
+             <p permid="MJf">
                To <q>double the square</q> of side length 1 say, you need to find a line segment of length <m>\sqrt{2}</m> off which to build  a square.  Take the diagonal of the original square.
              </p>
            </solution>
@@ -58,44 +58,44 @@
         
 
         
-        <exercise workspace="1%">
+        <exercise workspace="1%" permid="Syr">
           <statement>
-            <p>
+            <p permid="pVI">
               Can you double the circle?  That is, can you construct a circle and then construct a second circle of twice the area?
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="rbb">
+            <p permid="sQo">
               Call the radius of the first circle 1, so you want to find a circle with radius <m>\sqrt{2}</m>.  If you can double the square, you should be able to double the circle!
             </p>
           </solution>
         </exercise>
         
-        <exercise workspace="1%">
+        <exercise workspace="1%" permid="yFA">
           <statement>
-            <p>
+            <p permid="WcR">
               Here are three much harder, but related challenges.  For each, play around enough to convince yourself these are really hard, if not impossible:
-              <ol>
-                <li>
-                  <p>
+              <ol permid="Dpt">
+                <li permid="jwC">
+                  <p permid="bSd">
                     Can you <em>trisect</em> and angle?  That is, given a constructed angle, can you construct an angle <m>1/3</m> its measure?
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="PDL">
+                  <p permid="HZm">
                     Can you double the <em>cube</em>?  That is, if you can constructed a cube (or at least a line segment which is the length of the edge of a cube), can you construct cube with twice the volume of the original?
                   </p>
                 </li>
-                <li>
-                  <p>
+                <li permid="vKU">
+                  <p permid="ogv">
                     Can you square the circle?  That is, if you have constructed a circle, can you construct a square that has the same area as the circle?
                   </p>
                 </li>
               </ol>
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="Xik">
+            <p permid="YXx">
               None of these are possible, although it will take us a while to prove it (less than the 2000 years it took humanity).
             </p>
           </solution>

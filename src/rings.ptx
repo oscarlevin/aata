@@ -462,46 +462,46 @@
       </exercise>
     </reading-questions>
 
-    <exercises xml:id="practice-rings-intro">
+    <exercises xml:id="practice-rings-intro" permid="Pav">
       <title>Practice Problems</title>
-      <exercise>
+      <exercise permid="zRx">
         <statement>
-          <p>
+          <p permid="vaA">
             Consider <m>\Z_8</m> as a ring.  
-            <ol>
-              <li>
-                <p>
+            <ol permid="Flk">
+              <li permid="OEW">
+                <p permid="bDi">
                   What are the <em>units</em> in this ring?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="uMf">
+                <p permid="HKr">
                   Is <m>\Z_8</m> a commutative ring?  A division ring?  An integral domain?  A field?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="aTo">
+                <p permid="nRA">
                   What if we look at <m>U(8) = \{1, 3, 5, 7\}</m>.  These all have multiplicative inverses mod 8.  Is <m>U(8)</m> a field?
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="mxM">
+          <p permid="UID">
+            <ol permid="gIA">
+              <li permid="Hax">
+                <p permid="TYJ">
                   The units are the elements of the ring that have multiplicative inverses.  So here, <m>1, 3, 5, 7</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="nhG">
+                <p permid="AfS">
                   <m>\Z_8</m> is a commutative ring (with unity) but is not a division ring, and thus not a field.  It is also not an integral domain because it contains zero divisors, such as <m>2</m> and <m>4</m> (since <m>2\cdot 4 = 0</m>).
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="ToP">
+                <p permid="gnb">
                   <m>U(8)</m> is a group under multiplication, but is not a field.  We would still need addition to work, and this subset is not a subring, since <m>U(8)</m> is not closed under addition.
                 </p>
               </li>
@@ -510,90 +510,90 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="fYG">
         <statement>
-          <p>
+          <p permid="bhJ">
             Define <m>\Z_3[i] = \{a+bi \st a, b \in \Z_3;~ i^2 = -1\}</m>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="lst">
+              <li permid="zvY">
+                <p permid="Muk">
                   How many elements are there in <m>\Z_3[i]</m>?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="fDh">
+                <p permid="sBt">
                   Construct addition and multiplication tables for <m>\Z_3[i]</m>.  
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="LKq">
+                <p permid="YIC">
                   Is <m>\Z_3[i]</m> a ring?  A commutative ring?  A commutative ring with unity?  A division ring?  An integral domain?  A field?  Use your tables to justify your answers.  
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="SEV">
+          <p permid="Kjy">
             There will be 9 elements.  When doing the tables, reduce mod 3 after each calculation.  For example, <m>2i\cdot 2i = -4 = 2</m>.
           </p>
-          <p>
+          <p permid="qqH">
             <m>\Z_3[i]</m> will be a field, so a commutative division ring with unity and an integral domain.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="MfP">
         <statement>
-          <p>
+          <p permid="HoS">
             How can you tell from the addition or multiplication tables whether a ring <m>R</m> is an integral domain?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="yMe">
+          <p permid="APM">
             We only need to look at the multiplication table.  Unless we include rows and columns for 0 (which is unnecessary, since <m>0 \cdot x = 0</m>), an integral domain will have no zeros at all in the multiplication table.  Any zero in a row and column that are not zero would say that that row and column are zero divisors.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="smY">
         <statement>
-          <p>
+          <p permid="nwb">
             We let <m>\Z[x]</m> be the ring of polynomials in the variable <m>x</m> with integer coefficients.  So <m>x^2 + 5x + 7 \in \Z[x]</m>, for example.
-            <ol>
-              <li>
-                <p>
+            <ol permid="RzC">
+              <li permid="rRz">
+                <p permid="EPL">
                   Is <m>\Z[x]</m> a commutative ring?  With unity?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="XYI">
+                <p permid="kWU">
                   Explain how you know that <m>\Z[x]</m> is not a field.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="EfR">
+                <p permid="Red">
                   What if we considered <m>\R[x]</m>, allowing real coefficients instead of just integer coefficients.  Is <em>this</em> a field?
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="eTn">
+          <p permid="gWV">
+            <ol permid="MPJ">
+              <li permid="kna">
+                <p permid="xlm">
                   Yes, <m>\Z[x]</m> is a commutative ring with unity.  <m>1</m> is a polynomial.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="Quj">
+                <p permid="dsv">
                   Look at the elements <m>x \in \Z[x]</m>.  There is no polynomial we can multiply by <m>x</m> to give us 1.  It's not just that <m>1/x</m> is not a polynomial, it is that any polynomial times <m>x</m> will result in a polynomial of degree at least 1.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="wBs">
+                <p permid="JzE">
                   As we have above, it is not the coefficients that are the problem (although if <m>\R[x]</m> we do have more units, since now <m>5</m> has an inverse).
                 </p>
               </li>
@@ -604,31 +604,31 @@
     </exercises>
 
 
-    <exercises xml:id="collected-rings-intro">
+    <exercises xml:id="collected-rings-intro" permid="vhE">
       <title>Collected Homework</title>
 
-      <exercise number="C1">
+      <exercise number="C1" permid="Yuh">
         <statement>
-          <p>
+          <p permid="TDk">
          Consider the ring <m>\Z_{5} = \{0, 1, 2, 3, 4\}</m>, where both addition and multiplication are done modulo 5.
-            <ol>
-              <li>
-                <p>
+            <ol permid="xGL">
+              <li permid="cIB">
+                <p permid="pGN">
                Although <m>\Z_5</m> does not contain negative numbers, explain how <m>-1</m> and <m>-3</m> still make sense.  Which elements of <m>\Z_5</m> are these?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="IPK">
+                <p permid="VNW">
                What is <m>(-3)2</m>?  Use your answer to the previous part to calculate this.  Is this what you would want it to be?  
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="oWT">
+                <p permid="BVf">
                Similarly, while <m>\frac{1}{3}</m> is not an element of <m>\Z_5</m>, this should still make sense.  Which element of <m>\Z_5</m> should <m>\frac{1}{3}</m> be?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="Vec">
+                <p permid="ico">
                Compute <m>\frac{1}{3} + \frac{1}{3}</m> and <m>\frac{1}{3} + 3</m> both the way you want to and using what you found in the previous part.  Does this work out?
                 </p>
               </li>
@@ -900,60 +900,60 @@
         </statement>
       </exercise>
     </reading-questions>
-    <exercises xml:id="practice-rings-props">
+    <exercises xml:id="practice-rings-props" permid="boN">
       <title>Practice Problems</title>
 
-      <exercise>
+      <exercise permid="EBq">
         <statement>
-          <p>
+          <p permid="zKt">
             For which <m>n</m> is <m>\Z_n</m> an integral domain?  For which <m>n</m> is <m>\Z_n</m> a field?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="Law">
+          <p permid="Nee">
             <m>\Z_n</m> will be an integral domain and a field for any prime <m>n</m>.  If <m>n</m> is not prime, say <m>n = ab</m>, then <m>a</m> and <m>b</m> are both zero divisors.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="kIz">
         <statement>
-          <p>
+          <p permid="fRC">
             Just like we did for groups, we can take the direct product of rings.  For example, the ring <m>\Z_2 \times \Z_3</m> contains 6 elements.  We add and multiply elements wise.
           </p>
 
-          <p>
+          <p permid="LYL">
             For which <m>m</m> and <m>n</m> is the ring <m>\Z_m \times \Z_n</m> an integral domain?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="rhF">
+          <p permid="tln">
             None of them, as long as <m>m</m> and <m>n</m> are at least 2.  Then we will have zero divisors <m>(1, 0)</m> and <m>(0,1)</m>.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="QPI">
         <statement>
-          <p>
+          <p permid="sfU">
             Let <m>R</m> be a ring.  For <m>x \in R</m>, we write <m>nx</m> to mean <m>x + x + \cdots + x</m> (            <m>n</m> times).  What is <m>(nx)^2</m>?  What about <m>(nx)^3</m>?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="XoO">
+          <p permid="Zsw">
             Let's try <m>(2x)^2</m>.  This is really <m>(x+x)(x+x)</m>, which we can apply the distributive property to.  We get <m>x(x+x) + x(x+x) = x^2 + x^2 + x^2 + x^2 = 4x^2</m>.  It should be clear this generalizes (although a careful proof would use induction).  So <m>(nx)^2 = n^2x^2</m>.  In fact, <m>(nx)^p = n^px^p</m>
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="wWR">
         <statement>
-          <p>
+          <p permid="Ynd">
             Suppose that <m>R</m> is a ring such that <m>x^3 = x</m> for all <m>x \in R</m>.  Prove that <m>6x = 0</m> for all <m>x \in R</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="DvX">
+          <p permid="FzF">
             Consider the elements <m>x + x = 2x</m>.  We have <m>2x = (2x)^3 = 8x^3 = 8x</m>.  Thus <m>6x = 0</m>.
           </p>
         </solution>
@@ -963,12 +963,12 @@
     </exercises>
 
 
-    <exercises xml:id="collected-rings-props">
+    <exercises xml:id="collected-rings-props" permid="HvW">
       <title>Collected Homework</title>
 
-      <exercise number="C1">
+      <exercise number="C1" permid="dea">
         <statement>
-          <p>
+          <p permid="Eum">
           An element <m>a</m> in a ring <m>R</m> is called an <term>idempotent</term> if <m>a^2 = a</m>.            
           Prove that if <m>R</m> is an integral domain, the only idempotents are 0 and 1.  Then give an example of a ring that has an idempotent other than 0 and 1.
           </p>
@@ -976,26 +976,26 @@
       </exercise>
 
 
-      <exercise number="C2">
+      <exercise number="C2" permid="Jlj">
         <statement>
-          <p>
+          <p permid="kBv">
           Suppose <m>R</m> is a ring such that <m>x^2 = x</m> for all <m>x \in R</m> (that is, every element is idempotent; such rings are called <term>Boolean rings</term>).  
-            <ol>
-              <li>
-                <p>
+            <ol permid="dNU">
+              <li permid="Bll">
+                <p permid="Ojx">
                 Prove that <m>-x = x</m> for all <m>x \in R</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="hsu">
+                <p permid="uqG">
                 Prove that <m>R</m> is commutative.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="jDg">
+          <p permid="WxQ">
           For the second part, what is <m>(a+b)^2</m>?
           </p>
         </hint>
@@ -1465,70 +1465,70 @@
         </statement>
       </exercise>
     </reading-questions>
-    <exercises xml:id="practice-rings-ideals">
+    <exercises xml:id="practice-rings-ideals" permid="nDf">
       <title>Practice Problems</title>
 
-      <exercise>
+      <exercise permid="pss">
         <statement>
-          <p>
+          <p permid="QIE">
           Let <m>\phi:R \to S</m> be a surjective (onto) ring homomorphism.  Prove that if <m>R</m> and <m>S</m> both have unities <m>1_R</m> and <m>1_S</m> then <m>\phi(1_R) = 1_S</m>.  
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="PKp">
+          <p permid="lGO">
           We have <m>\phi(1_R) = \phi(1_R1_R) = \phi(1_R)\phi(1_R)</m>.  But the unique element <m>x \in S</m> such that <m>ax = a</m> and <m>xa = a</m> for <m>a \in S</m> is <m>x = 1_S</m>.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="VzB">
         <statement>
-          <p>
+          <p permid="wPN">
           Let <m>R</m> be a ring with unity and <m>\phi:R \to S</m> a (not necessarily surjective) homomorphism.  Could <m>1</m> be in the kernel?  Show that if it is, that <m>\phi</m> is the trivial homomorphism <m>\phi(x) = 0</m> for all <m>x \in R</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="vRy">
+          <p permid="RNX">
           We know that the kernel <m>K</m> of <m>\phi</m> is an ideal.  If <m>1 \in K</m>, then <m>a\cdot 1 = a \in K</m>, since <m>K</m> absorbs products.  This means that every element of <m>R</m> is in the kernel, so the homomorphism is trivial.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="BGK">
         <statement>
-          <p>
+          <p permid="cWW">
           Consider the ring <m>R = \Z_3 \times \Z_3</m>.  This contains 9 elements, each of the form <m>(a,b)</m> where <m>a, b \in \Z_3</m>.  
-            <ol>
-              <li>
-                <p>
+            <ol permid="JVd">
+              <li permid="NzD">
+                <p permid="axP">
                 Find the two non-trivial ideas of <m>R</m> and the subring of <m>R</m> that is not an ideal.  Call this non-ideal subring <m>B</m>.
                 </p>
               </li>
             </ol>
-            <ol>
-              <li>
-                <p>
+            <ol permid="qcm">
+              <li permid="tGM">
+                <p permid="GEY">
                 Give an example of what goes wrong if you try to form the quotient ring <m>R/B</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="bYH">
+          <p permid="xVg">
+            <ol permid="sWS">
+              <li permid="ZNV">
+                <p permid="mMh">
               The ideals are <m>\{(0,0), (1,0), (2,0)\}</m> and <m>\{(0,0), (0,1), (0,2)\}</m>. 
               The subring that is not an ideal is <m>B = \{(0,0), (1,1), (2,2)\}</m>.  To see this is not an ideal, note that <m>(0,1)\cdot (1,1) = (0,1) \notin B</m>, so <m>B</m> does not absorb products.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="FVe">
+                <p permid="STq">
               Consider two cosets <m>(0,0) + B = B</m> and <m>(1,0) + B</m> (the other coset would be <m>(0,1) + B</m>).  There is no problem with defining these cosets, and in fact <m>R/B</m> will be a quotient group (since <m>B</m> is a normal subgroup of <m>\Z_3\times \Z_3</m>).  
                 </p>
 
-                <p>
+                <p permid="zaz">
               Thus the problem must be with multiplication.  We would have <m>((0,0)+B)((1,0)+B) = (0,0)+B</m>.  But another name for <m>(0,0) + B</m> is <m>(1,1)+B</m>, and <m>((1,1)+B)((1,0)+B) = (1,0)+B \ne B</m>.  So coset multiplication is not well defined.
                 </p>
               </li>
@@ -1537,54 +1537,54 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="hNT">
         <statement>
-          <p>
+          <p permid="Jef">
            Give an example of rings <m>R</m> and <m>S</m> and a function <m>\phi:R \to S</m> which is a group homomorphism but not a ring homomorphism.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="IfQ">
+          <p permid="CEZ">
            You know that if the kernel of <m>\phi</m> happens to be an ideal, then <m>\phi</m> will automatically be a ring homomorphism, by the Fundamental Homomorphism Theorem.  So we must find a ring <m>R</m> that has a subgroup (which would automatically be a normal subgroup) which is not an ideal.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="NVc">
         <statement>
-          <p>
+          <p permid="plo">
            Here is a nice application of homomorphisms.  For each <m>n</m>, we  consider the canonical homomorphism from <m>\Z</m> to <m>\Z/n\Z</m>.  It is easier to think of this as the homomorphism that sends <m>\Z</m> to <m>\Z_n</m>, which maps <m>a \in \Z</m> to <m>a \pmod{n}</m>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="Wjv">
+              <li permid="mcn">
+                <p permid="fhI">
                  Consider the equation <m>11x^2 - 8y^2 +  109 = 0</m>.  Note that <m>(7,9)</m> is a solution to this equation.  Explain how we can use this fact and a homomorphism to be sure that there is a solution in <m>\Z_5</m> to the equation <m>x^2 + 2y^2 + 4 = 0</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="Sjw">
+                <p permid="LoR">
                  Prove that the equation <m>x^2 - 7y^2 - 24 = 0</m> has no integer solutions.  You might want to use a homomorphism from <m>\Z</m> to <m>\Z_7</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="yqF">
+                <p permid="rwa">
                  Prove that <m>x^2 + (x+1)^2 + (x+2)^2 = y^2</m> has no integer solutions.  Hint: <m>\Z_3</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="Uui">
+          <p permid="iMi">
            The point of all this is that if there is no solution to the corresponding equation in <m>\Z_n</m>, then there is no solution in <m>\Z</m>.  When you apply the homomorphism to both sides of the equation, you use the homomorphism property to reduce every coefficient mod <m>n</m>.  And then you only have <m>n</m> possible values for each variable.  Better yet, if you pick <m>n</m> that makes one of the coefficients 0, you only have to check the other one.
           </p>
         </hint>
-        <solution>
-          <p>
+        <solution permid="omZ">
+          <p permid="ecp">
            (b) Suppose there was some pair <m>(a,b) \in \Z^2</m> that was a solution to the equation.  Apply the natural <m>\phi:\Z \to \Z_7</m>: 
-            <me>
+            <me permid="NNY">
              \phi(a^2 - 7b^2 - 24) = \phi(0)
             </me>
-            <me>
+            <me permid="tVh">
              \phi(a)^2 - 0 \phi(b) - 3 = 0
             </me>
            But this says that <m>3</m> is a square in <m>\Z_7</m>.  Checking each element in <m>\Z_7</m>, we find this is not the case, so no such <m>(a,b)</m> can exist.
@@ -1594,37 +1594,37 @@
     </exercises>
 
 
-    <exercises xml:id="collected-rings-ideals">
+    <exercises xml:id="collected-rings-ideals" permid="TKo">
       <title>Collected Homework</title>
 
-      <exercise number="C1">
+      <exercise number="C1" permid="ucl">
         <statement>
-          <p>
+          <p permid="Vsx">
           Let <m>F</m> be a field and <m>R</m> any ring containing more than one element. 
-            <ol>
-              <li>
-                <p>
+            <ol permid="CqE">
+              <li permid="exO">
+                <p permid="XDj">
                 Prove that <m>F</m> has no nontrivial ideals.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="KEX">
+                <p permid="DKs">
                 Prove that if there is a surjective homomorphism <m>\phi:F \to R</m>, then <m>F \cong R</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <hint permid="ABr">
+          <p permid="OTr">
+            <ol permid="Zeb">
+              <li permid="qMg">
+                <p permid="jRB">
                 The trivial ideals are <m>\{0\}</m> and <m>F</m>.  What if an ideal <m>I</m> contained some <m>a \ne 0</m>? 
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="WTp">
+                <p permid="PYK">
                 On a previous homework you proved that if the kernel of a homomorphism is the identity, then the homomorphism is injective.  This holds for ring homomorphisms as well and you may use that fact here. 
                 </p>
               </li>
@@ -1633,36 +1633,36 @@
         </hint>
       </exercise>
 
-      <exercise number="Bonus">
+      <exercise number="Bonus" permid="aju">
         <statement>
-          <p>
+          <p permid="BzG">
           Make up a problem similar to 5(b) or 5(c) from the practice problem above and show how to solve it.        
           </p>
         </statement>
       </exercise>
 
-      <exercise number="C2">
+      <exercise number="C2" permid="GqD">
         <statement>
-          <p>
+          <p permid="hGP">
       Consider the ring <m>\R[x]</m> of polynomials in the variable <m>x</m> with real coefficients.  We can divide polynomials using long division, which results in some remainder.
-            <ol>
-              <li>
-                <p>
+            <ol permid="ixN">
+              <li permid="Day">
+                <p permid="wfT">
             What is the remainder when you divide <m>3x^4 - 7x^3 + x^2 - 3x + 7</m> by <m>x^2 + 1</m>?  (Perform the long division, but you only need to submit the results: quotient and remainder.)
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="jhH">
+                <p permid="cnc">
             What do you get when you substitute <m>x^2 = -1</m> into <m>3x^4 - 7x^3 + x^2 - 3x + 7</m>? 
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="PoQ">
+                <p permid="Iul">
             Coincidence?  What sort of polynomial will you always get as a remainder when dividing a polynomial by<m>x^2 + 1</m>?  What sort of polynomial will you always get when substituting <m>x^2 = -1</m> into a polynomial?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="vvZ">
+                <p permid="oBu">
             Consider the quotient ring <m>\R[x]/\langle x^2 + 1\rangle</m>.  Use an evaluation homomorphism (with <m>a = \sqrt{-1}</m>) to prove that this quotient ring is isomorphic to <m>\bC</m> (the complex numbers, <m>\bC = \{a+bi \st a,b \in \R; i^2 = -1\}</m>).
                 </p>
               </li>
@@ -2158,7 +2158,7 @@
   <exercises xml:id="exercises-rings" filenamebase="rings" permid="LYB">
     <title>Additional Exercises</title>
 
-    <exercise number="1" permid="Vsn" xml:id="rings-exercise-which-are-rings">
+    <exercise number="1" xml:id="rings-exercise-which-are-rings" permid="Vsn">
       <statement>
         <p permid="mjH">
           Which of the following sets are rings with respect to the usual operations of addition and multiplication?
@@ -2223,7 +2223,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Bzw" xml:id="rings-exercise-2x2-matrix-ring">
+    <exercise number="2" xml:id="rings-exercise-2x2-matrix-ring" permid="Bzw">
       <statement>
         <p permid="SqQ">
           Let <m>R</m> be the ring of <m>2 \times 2</m> matrices of the form
@@ -2240,7 +2240,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="hGF" xml:id="rings-exercise-units">
+    <exercise number="3" xml:id="rings-exercise-units" permid="hGF">
       <statement>
         <p permid="yxZ">
           List or characterize all of the units in each of the following rings.
@@ -2315,7 +2315,7 @@
       </hint>
     </exercise>
 
-    <exercise number="4" permid="NNO" xml:id="rings-exercise-ideals">
+    <exercise number="4" xml:id="rings-exercise-ideals" permid="NNO">
       <statement>
         <p permid="eFi">
           Find all of the ideals in each of the following rings.
@@ -2365,7 +2365,7 @@
       </hint>
     </exercise>
 
-    <exercise number="5" permid="tUX" xml:id="rings-exercise-RmodI-multiplication-table">
+    <exercise number="5" xml:id="rings-exercise-RmodI-multiplication-table" permid="tUX">
       <statement>
         <p permid="KMr">
           For each of the following rings <m>R</m> with ideal <m>I</m>,
@@ -2388,7 +2388,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="acg" xml:id="rings-exercise-homo-Z6-Z15">
+    <exercise number="6" xml:id="rings-exercise-homo-Z6-Z15" permid="acg">
       <statement>
         <p permid="qTA">
           Find all homomorphisms <m>\phi : {\mathbb Z} / 6 {\mathbb Z} \rightarrow {\mathbb Z} / 15 {\mathbb Z}</m>.
@@ -2398,7 +2398,7 @@
 
     <!--Todo Add solution.-->
 
-    <exercise number="7" permid="Gjp" xml:id="rings-exercise-R-not-iso-C">
+    <exercise number="7" xml:id="rings-exercise-R-not-iso-C" permid="Gjp">
       <statement>
         <p permid="XaJ">
           Prove that <m>{\mathbb R}</m> is not isomorphic to <m>{\mathbb C}</m>.
@@ -2412,7 +2412,7 @@
       </hint>
     </exercise>
 
-    <exercise number="8" permid="mqy" xml:id="rings-exercise-Q-root-2-Q-root-3">
+    <exercise number="8" xml:id="rings-exercise-Q-root-2-Q-root-3" permid="mqy">
       <statement>
         <p permid="DhS">
           Prove or disprove: The ring
@@ -2428,7 +2428,7 @@
       </hint>
     </exercise>
 
-    <exercise number="9" permid="SxH" xml:id="rings-exercise-characteristic">
+    <exercise number="9" xml:id="rings-exercise-characteristic" permid="SxH">
       <statement>
         <p permid="jpb">
           What is the characteristic of the field formed by the set of matrices
@@ -2458,7 +2458,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="yEQ" xml:id="rings-exercise-C-iso-2x2-matrices">
+    <exercise number="10" xml:id="rings-exercise-C-iso-2x2-matrices" permid="yEQ">
       <statement>
         <p permid="Pwk">
           Define a map <m>\phi : {\mathbb C} \rightarrow {\mathbb M}_2 ({\mathbb R})</m> by
@@ -2477,7 +2477,7 @@
 
     <!--Todo Finish the proof.-->
 
-    <exercise number="11" permid="eLZ" xml:id="rings-exercise-gaussian-integers">
+    <exercise number="11" xml:id="rings-exercise-gaussian-integers" permid="eLZ">
       <statement>
         <p permid="vDt">
           Prove that the Gaussian integers,
@@ -2494,7 +2494,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="rar" xml:id="rings-exercise-systems-congruences">
+    <exercise number="13" xml:id="rings-exercise-systems-congruences" permid="rar">
       <statement>
         <p permid="HRL">
           Solve each of the following systems of congruences.
@@ -2550,7 +2550,7 @@
       </hint>
     </exercise>
 
-    <exercise number="14" permid="XhA" xml:id="rings-exercise-parallel-computation">
+    <exercise number="14" xml:id="rings-exercise-parallel-computation" permid="XhA">
       <statement>
         <p permid="nYU">
           Use the method of parallel computation outlined in the text to calculate
@@ -2562,7 +2562,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="15" permid="DoJ" xml:id="rings-exercise-parallelcomputation-fails">
+    <exercise number="15" xml:id="rings-exercise-parallelcomputation-fails" permid="DoJ">
       <statement>
         <p permid="Ugd">
           Explain why the method of parallel computation outlined in the text fails for
@@ -2571,7 +2571,7 @@
       </statement>
     </exercise>
 
-    <exercise number="16" permid="jvS" xml:id="rings-exercise-field-ideals">
+    <exercise number="16" xml:id="rings-exercise-field-ideals" permid="jvS">
       <statement>
         <p permid="Anm">
           If <m>R</m> is a field,
@@ -2585,7 +2585,7 @@
       </hint>
     </exercise>
 
-    <exercise number="17" permid="PDb" xml:id="rings-exercise-minus-a">
+    <exercise number="17" xml:id="rings-exercise-minus-a" permid="PDb">
       <statement>
         <p permid="guv">
           Let <m>a</m> be any element in a ring <m>R</m> with identity.
@@ -2594,7 +2594,7 @@
       </statement>
     </exercise>
 
-    <exercise number="18" permid="vKk" xml:id="rings-exercise-ring-homomorphisms">
+    <exercise number="18" xml:id="rings-exercise-ring-homomorphisms" permid="vKk">
       <statement>
         <p permid="MBE">
           Let <m>\phi : R \rightarrow S</m> be a ring homomorphism.
@@ -2638,7 +2638,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="bRt" xml:id="rings-exercise-associative-distributive">
+    <exercise number="19" xml:id="rings-exercise-associative-distributive" permid="bRt">
       <statement>
         <p permid="sIN">
           Prove that the associative law for multiplication and the distributive laws hold in <m>R/I</m>.
@@ -2646,7 +2646,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="HYC" xml:id="rings-exercise-second-iso">
+    <exercise number="20" xml:id="rings-exercise-second-iso" permid="HYC">
       <statement>
         <p permid="YPW">
           Prove the Second Isomorphism Theorem for rings: Let <m>I</m> be a subring of a ring <m>R</m>  and  <m>J</m> an ideal in <m>R</m>.
@@ -2660,7 +2660,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="21" permid="ofL" xml:id="rings-exercise-third-iso">
+    <exercise number="21" xml:id="rings-exercise-third-iso" permid="ofL">
       <statement>
         <p permid="EXf">
           Prove the Third Isomorphism Theorem for rings: Let <m>R</m> be a ring and <m>I</m> and <m>J</m> be ideals of <m>R</m>,
@@ -2675,7 +2675,7 @@
 
     <!--Todo Finish the solution.-->
 
-    <exercise number="22" permid="UmU" xml:id="rings-exercise-correspondence">
+    <exercise number="22" xml:id="rings-exercise-correspondence" permid="UmU">
       <statement>
         <p permid="leo">
           Prove the Correspondence Theorem: Let <m>I</m> be an ideal of a ring <m>R</m>.
@@ -2727,7 +2727,7 @@
       </statement>
     </exercise>
 
-    <exercise number="25" permid="MIv" xml:id="rings-exercise-collection-deals">
+    <exercise number="25" xml:id="rings-exercise-collection-deals" permid="MIv">
       <statement>
         <p permid="dzP">
           Let <m>\{ I_{\alpha} \}_{\alpha \in A}</m> be a collection of ideals in a ring <m>R</m>.
@@ -2738,7 +2738,7 @@
       </statement>
     </exercise>
 
-    <exercise number="26" permid="sPE" xml:id="rings-exercise-integral-domain-ideals">
+    <exercise number="26" xml:id="rings-exercise-integral-domain-ideals" permid="sPE">
       <statement>
         <p permid="JGY">
           Let <m>R</m> be an integral domain.
@@ -2755,7 +2755,7 @@
       </hint>
     </exercise>
 
-    <exercise number="27" permid="YWN" xml:id="rings-exercise-nilpotent">
+    <exercise number="27" xml:id="rings-exercise-nilpotent" permid="YWN">
       <statement>
         <p permid="pOh">
           Let <m>R</m> be a commutative ring.
@@ -2766,7 +2766,7 @@
       </statement>
     </exercise>
 
-    <exercise number="28" permid="FdW" xml:id="rings-exercise-boolean">
+    <exercise number="28" xml:id="rings-exercise-boolean" permid="FdW">
       <statement>
         <p permid="VVq">
           A ring <m>R</m> is a <term>Boolean ring</term>
@@ -2783,7 +2783,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="29" permid="llf" xml:id="rings-exercise-a3-commutative">
+    <exercise number="29" xml:id="rings-exercise-a3-commutative" permid="llf">
       <statement>
         <p permid="Ccz">
           Let <m>R</m> be a ring, where <m>a^3 =a</m> for all <m>a \in R</m>.
@@ -2794,7 +2794,7 @@
 
     <!--Todo Check solution.-->
 
-    <exercise number="30" permid="Rso" xml:id="rings-exercise-1R-1S">
+    <exercise number="30" xml:id="rings-exercise-1R-1S" permid="Rso">
       <statement>
         <p permid="ijI">
           Let <m>R</m> be a ring with identity <m>1_R</m> and <m>S</m> a subring of <m>R</m> with identity <m>1_S</m>.
@@ -2805,7 +2805,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="31" permid="xzx" xml:id="rings-exercise-R-0">
+    <exercise number="31" xml:id="rings-exercise-R-0" permid="xzx">
       <statement>
         <p permid="OqR">
           If we do not require the identity of a ring to be distinct from 0, we will not have a very interesting mathematical structure.
@@ -2824,7 +2824,7 @@
       </statement>
     </exercise>
 -->
-    <exercise number="32" permid="JNP" xml:id="rings-exercise-center">
+    <exercise number="32" xml:id="rings-exercise-center" permid="JNP">
       <statement>
         <p permid="aFj">
           Let <m>R</m> be a ring.
@@ -2837,7 +2837,7 @@
       </statement>
     </exercise>
 
-    <exercise number="33" permid="pUY" xml:id="rings-exercise-localized-at-p">
+    <exercise number="33" xml:id="rings-exercise-localized-at-p" permid="pUY">
       <statement>
         <p permid="GMs">
           Let <m>p</m> be prime.
@@ -2868,7 +2868,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="34" permid="Wch" xml:id="rings-exercise-Zp">
+    <exercise number="34" xml:id="rings-exercise-Zp" permid="Wch">
       <statement>
         <p permid="mTB">
           Prove or disprove: Every finite integral domain is isomorphic to <m>{\mathbb Z}_p</m>.
@@ -2878,7 +2878,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="35" permid="Cjq" xml:id="rings-exercise-automorphisms">
+    <exercise number="35" xml:id="rings-exercise-automorphisms" permid="Cjq">
       <statement>
         <p permid="TaK">
           Let <m>R</m> be a ring with identity.
@@ -2924,7 +2924,7 @@
       </statement>
     </exercise>
 
-    <exercise number="36" permid="iqz" xml:id="rings-exercise-cartesian-product">
+    <exercise number="36" xml:id="rings-exercise-cartesian-product" permid="iqz">
       <statement>
         <p permid="zhT">
           Let <m>R</m> and <m>S</m> be arbitrary rings.
@@ -2949,7 +2949,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="37" permid="OxI" xml:id="rings-exercise-idempotent">
+    <exercise number="37" xml:id="rings-exercise-idempotent" permid="OxI">
       <statement>
         <p permid="fpc">
           An element <m>x</m> in a ring is called an
@@ -2970,7 +2970,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="38" permid="uER" xml:id="rings-exercise-solution-mod-n">
+    <exercise number="38" xml:id="rings-exercise-solution-mod-n" permid="uER">
       <statement>
         <p permid="Lwl">
           Let <m>\gcd(a, n) = d</m> and <m>\gcd(b, d) \neq 1</m>.
@@ -2981,7 +2981,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="39" permid="aMa" xml:id="rings-exercise-chinese-remainder-theorem">
+    <exercise number="39" xml:id="rings-exercise-chinese-remainder-theorem" permid="aMa">
       <title>The Chinese Remainder Theorem for Rings</title>
       <statement>
         <p permid="rDu">
@@ -3025,7 +3025,7 @@
 
   <exercises xml:id="rings-exercises-programming" permid="sfK">
     <title>Programming Exercise</title>
-    <exercise permid="GTj" xml:id="rings-exercise-program-chinese-remainder">
+    <exercise xml:id="rings-exercise-program-chinese-remainder" permid="GTj">
       <statement>
         <p permid="XKD">
           Write a computer program implementing fast addition and multiplication using the Chinese Remainder Theorem and the method outlined in the text.

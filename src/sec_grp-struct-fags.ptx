@@ -2,7 +2,7 @@
 
   <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-finite-abelian-groups" permid="pUL">
     <title>Finite Abelian Groups</title>
-    <introduction>
+    <introduction permid="sXf">
     <p permid="IPA">
       In our investigation of cyclic groups we found that every group of prime order was isomorphic to <m>{\mathbb Z}_p</m>,
       where <m>p</m> was a prime number.

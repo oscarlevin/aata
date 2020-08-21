@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-permutations">
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-groups-permutations" permid="mjE">
     <title>Permutation Groups</title>
-    <introduction>
-      <p>
+    <introduction permid="dzM">
+      <p permid="CMq">
         Permutation groups are central to the study of geometric symmetries and to Galois theory,
         the study of finding solutions of polynomial equations.
         They also provide abundant examples of nonabelian groups.  
         Plus, as we have just seen, every group is isomorphic to a subgroup of a permutation group.  So let's study them.
       </p>
 
-        <p>
+        <p permid="iTz">
           In general, the permutations of a set <m>X</m> form a group we call <m>S_X</m>.
           If <m>X</m> is a finite set, we can assume <m>X=\{ 1, 2, \ldots, n\}</m>.
           In this case we write <m>S_n</m> instead of <m>S_X</m>.
@@ -26,17 +26,17 @@
           on <m>n</m> letters.
         </p>
 
-        <theorem>
+        <theorem permid="YPT">
           <statement>
-            <p>
+            <p permid="jYS">
               The symmetric group on <m>n</m> letters, <m>S_n</m>,
               is a group with <m>n!</m> elements,
               where the binary operation is the composition of maps.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="JGV">
+            <p permid="aFg">
               The identity of <m>S_n</m> is just the identity map that sends <m>1</m> to <m>1</m>,
               <m>2</m> to <m>2</m>, <m>\ldots</m>, <m>n</m> to <m>n</m>.
               If <m>f : S_n \rightarrow S_n</m> is a permutation,
@@ -49,17 +49,17 @@
           </proof>
         </theorem>
 
-        <p>
+        <p permid="PaI">
           A subgroup of <m>S_n</m> is called a
           <term>permutation group</term>.
               <idx><h>Group</h><h>permutation</h></idx>
               <idx><h>Permutation group</h></idx>
         </p>
 
-        <example xml:id="example-permute-s5">
-          <p>
+        <example xml:id="example-permute-s5" permid="EXc">
+          <p permid="hem">
             Consider the subgroup <m>G</m> of <m>S_5</m> consisting of the identity permutation <m>\identity</m> and the permutations
-            <md>
+            <md permid="jDt">
               <mrow>\sigma
               &amp; =
               \begin{pmatrix}
@@ -82,10 +82,10 @@
             The following table tells us how to multiply elements in the permutation group <m>G</m>.
           </p>
 
-          <sidebyside width="100%">
+          <sidebyside width="100%" permid="xsD">
 
-            <p>
-              <me>
+            <p permid="Nlv">
+              <me permid="Mgc">
                 \begin{array}{c|cccc}
                 \circ &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\ \hline
                 \identity &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\
@@ -98,8 +98,8 @@
           </sidebyside>
         </example>
 
-        <remark>
-          <p>
+        <remark permid="Rlu">
+          <p permid="qxY">
             Though it is natural to multiply elements in a group from left to right,
             functions are composed from right to left.
             Let <m>\sigma</m> and <m>\tau</m> be permutations on a set <m>X</m>.
@@ -119,11 +119,11 @@
           </p>
         </remark>
 
-        <example xml:id="example-permute-s4-nonabelian">
-          <p>
+        <example xml:id="example-permute-s4-nonabelian" permid="lel">
+          <p permid="tsE">
             Permutation multiplication is not usually commutative.
             Let
-            <md>
+            <md permid="PKC">
               <mrow>\sigma
               &amp; =
               \begin{pmatrix}
@@ -138,7 +138,7 @@
               \end{pmatrix}</mrow>
             </md>.
             Then
-            <me>
+            <me permid="snl">
               \sigma \tau
               =
               \begin{pmatrix}
@@ -147,7 +147,7 @@
               \end{pmatrix}
             </me>,
             but
-            <me>
+            <me permid="Yuu">
               \tau \sigma
               =
               \begin{pmatrix}
@@ -161,20 +161,20 @@
 
 
 
-      <subsection xml:id="permute-subsection-cycle-notation">
+      <subsection xml:id="permute-subsection-cycle-notation" permid="SqN">
         <title>Cycle Notation</title>
-        <p>
+        <p permid="vhR">
           The notation that we have used to represent permutations up to this point is cumbersome,
           to say the least.
           To work effectively with permutation groups,
           we need a more streamlined method of writing down and manipulating permutations.
         </p>
 
-        <p>
+        <p permid="bpa">
           A permutation <m>\sigma \in S_X</m> is a
           <term>cycle of length</term><idx><h>Cycle</h><h>definition of</h></idx> <m>k</m> if there exist elements <m>a_1, a_2, \ldots,
           a_k \in X</m> such that
-          <md>
+          <md permid="vRL">
             <mrow>\sigma( a_1 ) &amp; = a_2</mrow>
             <mrow>\sigma( a_2 ) &amp; = a_3</mrow>
             <mrow>&amp; \vdots</mrow>
@@ -192,10 +192,10 @@
           Cycles are the building blocks of all permutations.
         </p>
 
-        <example xml:id="example-permute-cycle-notation">
-          <p>
+        <example xml:id="example-permute-cycle-notation" permid="DhP">
+          <p permid="ZzN">
             The permutation
-            <me>
+            <me permid="EBD">
               \sigma =
               \begin{pmatrix}
               1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7\\
@@ -205,7 +205,7 @@
               (1 6 2 3 5 4 )
             </me>
             is a cycle of length <m>6</m>, whereas
-            <me>
+            <me permid="kIM">
               \tau =
               \begin{pmatrix}
               1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
@@ -217,10 +217,10 @@
             is a cycle of length <m>3</m>.
           </p>
 
-          <p>
+          <p permid="FGW">
             Not every permutation is a cycle.
             Consider the permutation
-            <me>
+            <me permid="QPV">
               \begin{pmatrix}
               1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
               2 &amp; 4 &amp; 1 &amp; 3 &amp; 6 &amp; 5
@@ -231,29 +231,29 @@
           </p>
         </example>
 
-        <example xml:id="example-permute-cycle-mult">
-          <p>
+        <example xml:id="example-permute-cycle-mult" permid="joY">
+          <p permid="lOf">
             It is very easy to compute products of cycles.
             Suppose that
-            <me>
+            <me permid="wXe">
               \sigma = (1 3 5 2 ) \quad \text{and} \quad \tau = (2 5 6)
             </me>.
             If we think of <m>\sigma</m> as
-            <me>
+            <me permid="den">
               1 \mapsto 3, \qquad
               3 \mapsto 5, \qquad
               5 \mapsto 2, \qquad
               2 \mapsto 1
             </me>,
             and <m>\tau</m> as
-            <me>
+            <me permid="Jlw">
               2 \mapsto 5, \qquad
               5 \mapsto 6, \qquad
               6 \mapsto 2
             </me>,
             then for <m>\sigma \tau</m> remembering that we apply <m>\tau</m> first and then <m>\sigma</m>,
             it must be the case that
-            <me>
+            <me permid="psF">
               1 \mapsto 3, \qquad
               3 \mapsto 5, \qquad
               5 \mapsto 6, \qquad
@@ -264,7 +264,7 @@
           </p>
         </example>
 
-        <p>
+        <p permid="Hwj">
           Two cycles in <m>S_X</m>, <m>\sigma = (a_1, a_2, \ldots,
           a_k )</m> and <m>\tau = (b_1, b_2, \ldots,
           b_l )</m>, are <term>disjoint</term>
@@ -272,12 +272,12 @@
           if <m>a_i \neq b_j</m> for all <m>i</m> and <m>j</m>.
         </p>
 
-        <example xml:id="example-permute-cycles-disjoint">
-          <p>
+        <example xml:id="example-permute-cycles-disjoint" permid="Pwh">
+          <p permid="RVo">
             The cycles <m>(1 3 5)</m> and <m>(2 7 )</m> are disjoint;
             however, the cycles <m>(1 3 5)</m> and <m>(3 4 7 )</m> are not.
             Calculating their products, we find that
-            <md>
+            <md permid="bYU">
               <mrow>(1 3 5)(2 7 ) &amp; = (1 3 5)(2 7 )</mrow>
               <mrow>(1 3 5)(3 4 7 ) &amp; = (1 3 4 7 5)</mrow>
             </md>.
@@ -286,16 +286,16 @@
           </p>
         </example>
 
-        <proposition>
+        <proposition permid="XaG">
           <statement>
-            <p>
+            <p permid="IBC">
               Let <m>\sigma</m> and <m>\tau</m> be two disjoint cycles in <m>S_X</m>.
               Then <m>\sigma \tau = \tau \sigma</m>.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="ijF">
+            <p permid="GMp">
               Let <m>\sigma = (a_1, a_2, \ldots,
               a_k )</m> and <m>\tau = (b_1, b_2, \ldots, b_l )</m>.
               We must show that <m>\sigma \tau(x) = \tau \sigma(x)</m> for all <m>x \in X</m>.
@@ -304,14 +304,14 @@
               then both <m>\sigma</m> and <m>\tau</m> fix <m>x</m>.
               That is, <m>\sigma(x)=x</m> and <m>\tau(x)=x</m>.
               Hence,
-              <me>
+              <me permid="VzO">
                 \sigma \tau(x) = \sigma( \tau(x)) = \sigma(x) = x = \tau(x) = \tau( \sigma(x)) =  \tau \sigma(x)
               </me>.
               <em>Do not forget that we are multiplying permutations right to left,
               which is the opposite of the order in which we usually multiply group elements.</em>
               Now suppose that <m>x \in \{ a_1, a_2, \ldots, a_k \}</m>.
               Then <m>\sigma( a_i ) = a_{(i \bmod k) + 1}</m>; that is,
-              <md>
+              <md permid="Igd">
                 <mrow>a_1 &amp; \mapsto a_2</mrow>
                 <mrow>a_2 &amp; \mapsto a_3</mrow>
                 <mrow>&amp; \vdots</mrow>
@@ -320,7 +320,7 @@
               </md>.
               However, <m>\tau(a_i) = a_i</m> since <m>\sigma</m> and <m>\tau</m> are disjoint.
               Therefore,
-              <md>
+              <md permid="onm">
                 <mrow>\sigma \tau(a_i) &amp; = \sigma( \tau(a_i))</mrow>
                 <mrow>&amp; = \sigma(a_i)</mrow>
                 <mrow>&amp; = a_{(i \bmod k)+1}</mrow>
@@ -334,15 +334,15 @@
           </proof>
         </proposition>
 
-        <theorem>
+        <theorem permid="qTx">
           <statement>
-            <p>
+            <p permid="Qgb">
               Every permutation in <m>S_n</m> can be written as the product of disjoint cycles.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="pOe">
+            <p permid="mTy">
               We can assume that <m>X = \{ 1, 2, \ldots, n \}</m>.
               If <m>\sigma \in S_n</m> and we define <m>X_1</m> to be <m>\{ \sigma(1), \sigma^2(1), \ldots \}</m>,
               then the set <m>X_1</m> is finite since <m>X</m> is finite.
@@ -354,7 +354,7 @@
               we are guaranteed that this process will end and there will be only a finite number of these sets,
               say <m>r</m>.
               If <m>\sigma_i</m> is the cycle defined by
-              <me>
+              <me permid="BGX">
                 \sigma_i( x ) = 
                 \begin{cases}
                 \sigma( x ) &amp; x \in X_i \\
@@ -368,10 +368,10 @@
           </proof>
         </theorem>
 
-        <example xml:id="example-permute-cycle-products">
-          <p>
+        <example xml:id="example-permute-cycle-products" permid="vDq">
+          <p permid="ycx">
             Let
-            <md>
+            <md permid="Uuv">
               <mrow>\sigma &amp; =
               \begin{pmatrix}
               1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
@@ -384,7 +384,7 @@
               \end{pmatrix}</mrow>
             </md>.
             Using cycle notation, we can write
-            <md>
+            <md permid="ABE">
               <mrow>\sigma      &amp; = (1624)</mrow>
               <mrow>\tau        &amp; = (13)(456)</mrow>
               <mrow>\sigma \tau &amp; = (1 3 6) ( 2 4 5)</mrow>
@@ -393,8 +393,8 @@
           </p>
         </example>
 
-        <remark>
-          <p>
+        <remark permid="bKz">
+          <p permid="WFh">
             From this point forward we will find it convenient to use cycle notation to represent permutations.
             When using cycle notation,
             we often denote the identity permutation by <m>(1)</m>.
@@ -405,32 +405,32 @@
       <xi:include href="./worksheets/groups-permutations.ptx"/>
 
 
-      <subsection xml:id="permute-subsection-transpositions">
+      <subsection xml:id="permute-subsection-transpositions" permid="yxW">
         <title>Transpositions</title>
-        <p>
+        <p permid="nDs">
           The simplest permutation is a cycle of length <m>2</m>.
           Such cycles are called <term>transpositions</term>.
               <idx><h>Transposition</h></idx>
           Since
-          <me>
+          <me permid="hOg">
             (a_1, a_2, \ldots, a_n ) = (a_1 a_n ) (a_1 a_{n-1} ) \cdots ( a_1 a_3 ) (a_1 a_2 )
           </me>,
           any cycle can be written as the product of transpositions,
           leading to the following proposition.
         </p>
 
-        <proposition>
+        <proposition permid="nYR">
           <statement>
-            <p>
+            <p permid="oIL">
               Any permutation of a finite set containing at least two elements can be written as the product of transpositions.
             </p>
           </statement>
         </proposition>
 
-        <example xml:id="example-permute-transpositions">
-          <p>
+        <example xml:id="example-permute-transpositions" permid="Anj">
+          <p permid="ejG">
             Consider the permutation
-            <me>
+            <me permid="NVp">
               ( 1 6 ) (2 5 3) = (1 6 )( 2 3 )( 2 5 ) = (1 6 )( 4 5 )(2 3 )( 4 5 )(2 5 )
             </me>.
             As we can see,
@@ -441,30 +441,30 @@
             However, as it turns out,
             no permutation can be written as the product of both an even number of transpositions and an odd number of transpositions.
             For instance, we could represent the permutation <m>(1 6)</m> by
-            <me>
+            <me permid="ucy">
               (2 3 )(1 6)( 2 3)
             </me>
             or by
-            <me>
+            <me permid="ajH">
               (3 5) (1 6) (1 3) (1 6) (1 3) (3 5) (5 6)
             </me>,
             but <m>(1 6)</m> will always be the product of an odd number of transpositions.
           </p>
         </example>
 
-        <lemma xml:id="lemma-identity-even-trans">
+        <lemma xml:id="lemma-identity-even-trans" permid="Uga">
           <statement>
-            <p>
+            <p permid="AXd">
               If the identity is written as the product of <m>r</m> transpositions,
-              <me>
+              <me permid="GqQ">
                 \identity = \tau_1 \tau_2 \cdots \tau_r
               </me>,
               then <m>r</m> is an even number.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="uxX">
+            <p permid="TaH">
               We will employ induction  on <m>r</m>.
               A transposition cannot be the identity;
               hence, <m>r \gt 1</m>.
@@ -472,7 +472,7 @@
               Suppose that <m>r \gt 2</m>.
               In this case the product of the last two transpositions,
               <m>\tau_{r-1} \tau_r</m>, must be one of the following cases:
-              <md>
+              <md permid="gIN">
                 <mrow>(a b)(a b) &amp; = \identity</mrow>
                 <mrow>(b c)(a b) &amp; = (a c)(b c)</mrow>
                 <mrow>(c d)(a b) &amp; = (a b)(c d)</mrow>
@@ -482,18 +482,18 @@
               and <m>d</m> are distinct.
             </p>
 
-            <p>
+            <p permid="zhQ">
               The first equation simply says that a transposition is its own inverse.
               If this case occurs, delete
               <m>\tau_{r-1} \tau_r</m> from the product to obtain
-              <me>
+              <me permid="mxZ">
                 \identity = \tau_1 \tau_2 \cdots \tau_{r - 3} \tau_{r - 2}
               </me>.
               By induction <m>r - 2</m> is even;
               hence, <m>r</m> must be even.
             </p>
 
-            <p>
+            <p permid="foZ">
               In each of the other three cases,
               we can replace <m>\tau_{r - 1} \tau_r</m> with the right-hand side of the corresponding equation to obtain a new product of <m>r</m> transpositions for the identity.
               In this new product the last occurrence of <m>a</m> will be in the next-to-the-last transposition.
@@ -504,7 +504,7 @@
               otherwise, we will repeat the procedure with <m>\tau_{r - 3} \tau_{r - 2}</m>.
             </p>
 
-            <p>
+            <p permid="Lwi">
               At some point either we will have two adjacent,
               identical transpositions canceling each other out or <m>a</m> will be shuffled so that it will appear only in the first transposition.
               However, the latter case cannot occur,
@@ -515,9 +515,9 @@
           </proof>
         </lemma>
 
-        <theorem xml:id="theorem-even-and-odd">
+        <theorem xml:id="theorem-even-and-odd" permid="HRI">
           <statement>
-            <p>
+            <p permid="wnk">
               If a permutation <m>\sigma</m> can be expressed as the product of an even number of transpositions,
               then any other product of transpositions equaling <m>\sigma</m> must also contain an even number of transpositions.
               Similarly, if <m>\sigma</m> can be expressed as the product of an odd number of transpositions,
@@ -525,17 +525,17 @@
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="VVn">
+            <p permid="rDr">
               Suppose that
-              <me>
+              <me permid="SFi">
                 \sigma = \sigma_1 \sigma_2 \cdots \sigma_m = \tau_1 \tau_2 \cdots \tau_n
               </me>,
               where <m>m</m> is even.
               We must show that <m>n</m> is also an even number.
               The inverse of <m>\sigma</m> is <m>\sigma_m \cdots \sigma_1</m>.
               Since
-              <me>
+              <me permid="yMr">
                 \identity = \sigma \sigma_m \cdots \sigma_1 = \tau_1  \cdots \tau_n \sigma_m \cdots \sigma_1
               </me>,
               <m>n</m> must be even by <xref ref="lemma-identity-even-trans"/>.
@@ -544,7 +544,7 @@
           </proof>
         </theorem>
 
-        <p>
+        <p permid="TKB">
           In light of <xref ref="theorem-even-and-odd"/>, we define a permutation to be <term>even</term>
               <idx><h>Permutation</h><h>even</h></idx>
           if it can be expressed as an even number of transpositions and <term>odd</term>
@@ -553,9 +553,9 @@
         </p>
       </subsection>
 
-      <subsection xml:id="permute-subsection-alternating-groups">
+      <subsection xml:id="permute-subsection-alternating-groups" permid="eFf">
         <title>The Alternating Groups</title>
-        <p>
+        <p permid="zRK">
           One of the most important subgroups of <m>S_n</m> is the set of all even permutations,
           <m>A_n</m>.
 
@@ -569,25 +569,25 @@
               <idx><h>Group</h><h>alternating</h></idx>
         </p>
 
-        <theorem>
+        <theorem permid="gus">
           <statement>
-            <p>
+            <p permid="cut">
               The set <m>A_n</m> is a subgroup of <m>S_n</m>.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="Ccw">
+            <p permid="XKA">
               Since the product of two even permutations must also be an even permutation,
               <m>A_n</m> is closed.
               The identity is an even permutation and therefore is in <m>A_n</m>.
               If <m>\sigma</m> is an even permutation, then
-              <me>
+              <me permid="eTA">
                 \sigma = \sigma_1 \sigma_2 \cdots \sigma_r
               </me>,
               where <m>\sigma_i</m> is a transposition and <m>r</m> is even.
               Since the inverse of any transposition is itself,
-              <me>
+              <me permid="LaJ">
                 \sigma^{-1} = \sigma_r \sigma_{r-1} \cdots \sigma_1
               </me>
               is also in <m>A_n</m>.
@@ -595,33 +595,33 @@
           </proof>
         </theorem>
 
-        <proposition>
+        <proposition permid="MBB">
           <statement>
-            <p>
+            <p permid="UPU">
               The number of even permutations in <m>S_n</m>,
               <m>n \geq 2</m>, is equal to the number of odd permutations;
               hence, the order of <m>A_n</m> is <m>n!/2</m>.
             </p>
           </statement>
 
-          <proof>
-            <p>
+          <proof permid="OqO">
+            <p permid="DRJ">
               Let <m>A_n</m> be the set of even permutations in <m>S_n</m> and <m>B_n</m> be the set of odd permutations.
               If we can show that there is a bijection between these sets,
               they must contain the same number of elements.
               Fix a transposition <m>\sigma</m> in <m>S_n</m>.
               Since <m>n \geq 2</m>, such a <m>\sigma</m> exists.
               Define
-              <me>
+              <me permid="rhS">
                 \lambda_{\sigma} : A_n \rightarrow B_n
               </me>
               by
-              <me>
+              <me permid="Xpb">
                 \lambda_{\sigma} ( \tau ) = \sigma  \tau 
               </me>.
               Suppose that <m>\lambda_{\sigma} ( \tau ) = \lambda_{\sigma} ( \mu )</m>.
               Then <m>\sigma  \tau = \sigma  \mu</m> and so
-              <me>
+              <me permid="Dwk">
                 \tau = \sigma^{-1} \sigma \tau = \sigma^{-1} \sigma \mu = \mu
               </me>.
               Therefore, <m>\lambda_{\sigma}</m> is one-to-one.
@@ -631,11 +631,11 @@
           </proof>
         </proposition>
 
-        <example xml:id="example-permute-s4">
-          <p>
+        <example xml:id="example-permute-s4" permid="sIK">
+          <p permid="KqP">
             The group <m>A_4</m> is the subgroup of <m>S_4</m> consisting of even permutations.
             There are twelve elements in  <m>A_4</m>:
-            <md>
+            <md permid="MPW">
               <mrow>&amp; (1)    &amp;&amp; (12)(34) &amp;&amp; (13)(24) &amp;&amp; (14)(23)</mrow>
               <mrow>&amp; (123)  &amp;&amp; (132)    &amp;&amp; (124)    &amp;&amp; (142)</mrow>
               <mrow>&amp; (134)  &amp;&amp; (143)    &amp;&amp; (234)    &amp;&amp; (243)</mrow>
@@ -647,9 +647,9 @@
         </example>
       </subsection>
 
-      <subsection xml:id="permute-historical-note">
+      <subsection xml:id="permute-historical-note" permid="KMo">
         <title>Historical Note</title>
-        <p>
+        <p permid="fYT">
           Lagrange
               <idx><h>Lagrange, Joseph-Louis</h></idx>
           first thought of permutations as functions from a set to itself,

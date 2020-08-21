@@ -1,124 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" top="3cm" bottom="100pt">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" top="3cm" bottom="100pt" permid="Xbt">
     <title>Networks Worksheet</title>
     <!-- <subtitle>An Activity Using Linear Algebra to Solve Network Applications</subtitle> -->
 
-    <introduction>
+    <introduction permid="npK">
         <title>Basic laws for electrical circuits</title>
         <date>Monday, January 7</date>
 
-        <p>This two-page worksheet was generously donated to the sample article by Virgil Pierce at a CuratedCourses workshop in August<nbsp/>2018.  It has default (skinny) left and right margins, but we have specified longer top and bottom margins, with the top being the larger of the two.</p>
+        <p permid="wJw">This two-page worksheet was generously donated to the sample article by Virgil Pierce at a CuratedCourses workshop in August<nbsp/>2018.  It has default (skinny) left and right margins, but we have specified longer top and bottom margins, with the top being the larger of the two.</p>
 
-        <theorem>
+        <theorem permid="qkq">
             <title> Ohms Law </title>
-            <p> The current through a resistor is proportional to the ratio of the <em> Voltage </em> to the <em> Resistance </em>
-                <me> I = \frac{V}{R} </me>
+            <p permid="rZD"> The current through a resistor is proportional to the ratio of the <em> Voltage </em> to the <em> Resistance </em>
+                <me permid="NHH"> I = \frac{V}{R} </me>
                 Or for our purposes
-                <me> I R = V </me>
+                <me permid="tOQ"> I R = V </me>
             </p>
         </theorem>
 
-        <theorem>
+        <theorem permid="Wrz">
             <title>Kirchoffs Current Law</title>
-            <p> The sum of the currents in a network meeting at a point is zero.
-                <me> \sum_{k=1}^n I_k = 0 </me>
+            <p permid="YgM"> The sum of the currents in a network meeting at a point is zero.
+                <me permid="ZVZ"> \sum_{k=1}^n I_k = 0 </me>
             </p>
         </theorem>
 
-        <example>
+        <example permid="iFR">
             <title> Kirchoff's Current Law </title>
-            <p> For the circuit below <m> I_1 + I_2 = I_3 </m>.</p>
-            <sidebyside width="40%">
-                <image xml:id="worksheet-kirchoff-law">
-                    <latex-image>
-                      \begin{tikzpicture}
-                        \draw (0,0) circle (10pt);
-                      \end{tikzpicture}
-                    </latex-image>
+            <p permid="kve"> For the circuit below <m> I_1 + I_2 = I_3 </m>.</p>
+            <sidebyside width="40%" permid="ONa">
+                <image xml:id="worksheet-kirchoff-law" permid="mkr">
+            <latex-image>
+              \begin{tikzpicture}
+                \draw (0,0) circle (10pt);
+              \end{tikzpicture}
+            </latex-image>
                 </image>
             </sidebyside>
         </example>
 
-        <theorem>
+        <theorem permid="CyI">
             <title> Kirchoffs Voltage Law </title>
-            <p> The sum of the voltages around any closed circuit (or subcircuit) is zero.
-                <me> \sum_{k=1}^n V_k = 0 </me>
+            <p permid="EnV"> The sum of the voltages around any closed circuit (or subcircuit) is zero.
+                <me permid="Gdi"> \sum_{k=1}^n V_k = 0 </me>
             </p>
         </theorem>
 
-        <p> Kirchoffs Current Law and Kirkoffs Voltage Law combined with Ohms Law gives for any circuit of resistors and sources a linear system that may (or may not) determine the currents.
+        <p permid="cQF"> Kirchoffs Current Law and Kirkoffs Voltage Law combined with Ohms Law gives for any circuit of resistors and sources a linear system that may (or may not) determine the currents.
         </p>
     </introduction>
 
     <pagebreak/>
 
-    <sidebyside width="45%" margins="0%">
-        <exercise workspace="12%">
+    <sidebyside width="45%" margins="0%" permid="uUj">
+        <exercise workspace="12%" permid="TwT">
             <statement>
-            <p>For the simple network pictured, calculuate the amperage in each part of the network by setting up a system of linear equations for the amperages. </p>
-           <sidebyside>
-                <image xml:id="worksheet-simple-network">
-                    <latex-image>
-                    \begin{tikzpicture}
-                      \draw (0,0) circle (10pt);
-                    \end{tikzpicture}
-                    </latex-image>
+            <p permid="QCn">For the simple network pictured, calculuate the amperage in each part of the network by setting up a system of linear equations for the amperages. </p>
+           <sidebyside permid="DiC">
+                <image xml:id="worksheet-simple-network" permid="SrA">
+            <latex-image>
+            \begin{tikzpicture}
+              \draw (0,0) circle (10pt);
+            \end{tikzpicture}
+            </latex-image>
                 </image>
             </sidebyside>
            </statement>
         </exercise>
 
-        <exercise workspace="12%">
+        <exercise workspace="12%" permid="zEc">
             <statement>
-            <p> Compare it with a parallel circuit network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages. </p>
-            <sidebyside>
-                <image xml:id="worksheet-parallel-circuit">
-                    <latex-image>
-                      \begin{tikzpicture}
-                        \draw (0,0) circle (10pt);
-                      \end{tikzpicture}
-                    </latex-image>
+            <p permid="IXO"> Compare it with a parallel circuit network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages. </p>
+            <sidebyside permid="bbs">
+                <image xml:id="worksheet-parallel-circuit" permid="yyJ">
+            <latex-image>
+              \begin{tikzpicture}
+                \draw (0,0) circle (10pt);
+              \end{tikzpicture}
+            </latex-image>
                 </image>
             </sidebyside>
             </statement>
         </exercise>
     </sidebyside>
 
-    <exercise workspace="12%">
+    <exercise workspace="12%" permid="fLl">
         <statement>
-        <p> Now for a more complicated network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages. 
+        <p permid="peX"> Now for a more complicated network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages. 
         </p>
         </statement>
     </exercise>
 
     <pagebreak/>
 
-    <exercise workspace="30%">
+    <exercise workspace="30%" permid="LSu">
         <statement>
-            <p> Now generalize these ideas to a context outside of electrical circuits. Consider the network of streets given in the diagram (with one-way directions as indicated).</p>
+            <p permid="Vmg"> Now generalize these ideas to a context outside of electrical circuits. Consider the network of streets given in the diagram (with one-way directions as indicated).</p>
 
-            <sidebyside width="65%">
-                <image xml:id="worksheet-street-network">
-                    <latex-image>
-                    <![CDATA[
-                    \begin{tikzpicture}[>=stealth]
-                    \draw[->, very thick] (0,0) -- (10, 0) node[midway, below]{East Bound Winooski Ave};
-                    \draw[<-, very thick] (0, 1) -- (10, 1) node[midway, above]{West Bound Winooski Ave};
-                        \draw[<-, very thick] (0, 4) -- (10, 4) node[midway, above]{Shelburne St};
-                        \draw[<-, very thick] (1, -1) -- (1, 5) node[midway, above, sloped]{Willow};
-                        \draw[->, very thick] (9, -1) -- (9, 5) node[midway, above, sloped]{Jay};
-                        \end{tikzpicture}
-                    ]]>
-                    </latex-image>
+            <sidebyside width="65%" permid="HiB">
+                <image xml:id="worksheet-street-network" permid="eFS">
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[>=stealth]
+            \draw[->, very thick] (0,0) -- (10, 0) node[midway, below]{East Bound Winooski Ave};
+            \draw[<-, very thick] (0, 1) -- (10, 1) node[midway, above]{West Bound Winooski Ave};
+                \draw[<-, very thick] (0, 4) -- (10, 4) node[midway, above]{Shelburne St};
+                \draw[<-, very thick] (1, -1) -- (1, 5) node[midway, above, sloped]{Willow};
+                \draw[->, very thick] (9, -1) -- (9, 5) node[midway, above, sloped]{Jay};
+                \end{tikzpicture}
+            ]]>
+            </latex-image>
                 </image>
             </sidebyside>
 
-            <p>A traffic engineer counts the hourly flow of cars into and out of this network at the entrances.  They get (EB = East Bound; WB = West Bound): </p>
+            <p permid="Btp">A traffic engineer counts the hourly flow of cars into and out of this network at the entrances.  They get (EB = East Bound; WB = West Bound): </p>
 
-            <table>
+            <table permid="KNb">
                 <caption> Estimated hourly traffic flow for the road network.</caption>
-                <tabular>
+                <tabular permid="qUk">
                     <row>
                         <cell>
                         </cell>
@@ -181,7 +181,7 @@
                 </tabular>
             </table>
 
-            <p> Use a variable for each segment inside of the network and set up a system of linear equations restricting the flow. Solve the system.  Note that you should not get a unique solution as traffic should be able to flow through the network in various ways. </p>
+            <p permid="hAy"> Use a variable for each segment inside of the network and set up a system of linear equations restricting the flow. Solve the system.  Note that you should not get a unique solution as traffic should be able to flow through the network in various ways. </p>
         </statement>
     </exercise>
 </worksheet>

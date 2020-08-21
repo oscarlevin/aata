@@ -484,50 +484,50 @@
       </exercise>
     </reading-questions>
 
-    <exercises xml:id="practice-isomorph">
+    <exercises xml:id="practice-isomorph" permid="tse">
       <title>Practice Problems</title>
 
-      <exercise>
+      <exercise permid="ejg">
         <statement>
-          <p>
+          <p permid="FUR">
             Prove that <m>\Z \equiv 2\Z</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="kIm">
+          <p permid="qbZ">
             We define the function <m>f:\Z \to 2\Z</m> by <m>f(x) = 2x</m>.  This is clearly a bijection.  Further, it satisfies the <em>homomorphism property</em>:            <m>f(x+y) = 2(x+y) = 2x + 2y = f(x) + f(y)</m>.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="Kqp">
         <statement>
-          <p>
+          <p permid="mca">
             I'm thinking of a group <m>G = \{a, b, c, d, e, f, g, h\}</m> with an operation I'm calling <m>\oplus</m>.  It turns out that my group is isomorphic to <m>\Z_8</m>, and that there is an isomorphism <m>f: G \to \Z_8</m>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="DvK">
+              <li permid="vRl">
+                <p permid="sWF">
                   In <m>G</m>,                  <m>a \oplus b = c</m>.  Also, <m>f(a) = 3</m> and <m>f(b) = 4</m>.  What is <m>f(c)</m>?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="bYu">
+                <p permid="ZdO">
                   If <m>f(d) = 2</m>, what is <m>d\oplus d</m>?  Further, prove that <m>d\inv = a\oplus a</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="QPv">
+          <p permid="Wji">
+            <ol permid="XoB">
+              <li permid="IfD">
+                <p permid="FkX">
                   We have <m>f(a \oplus b) = f(a)+f(b)</m>.  But <m>f(a \oplus b) = f(c)</m> and <m>f(a) + f(b) = 3 + 4 = 7</m> so <m>f(c) = 7</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="omM">
+                <p permid="lsg">
                   We know that <m>f(d\oplus d) = f(d)+f(d) = 2+2 = 4</m>.  So <m>d \oplus d = b</m>.  As for the inverse: we need <m>f(d\inv) = 6</m>, and <m>f(a) = 3</m>, so <m>f(a \oplus a) = f(d\inv)</m>.  Since <m>f</m> is injective, we see that <m>d\inv = a\oplus a</m>.
                 </p>
               </li>
@@ -536,59 +536,59 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="qxy">
         <statement>
-          <p>
+          <p permid="Sjj">
             Show that <m>U(5)</m> is isomorphic to <m>U(10)</m>, but <m>U(12)</m> is not.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="wWE">
+          <p permid="Cqr">
             Define <m>f:U(5) \to U(10)</m> by <m>f = \begin{pmatrix} 1 \amp 2 \amp 3 \amp 4 \\ 1 \amp 3 \amp 7 \amp 9\end{pmatrix}</m>.  By inspection, <m>f</m> is a bijection.  To check that it is an isomorphism, we need to check the homomorphism property <m>f(xy) = f(x)f(y)</m>.  This means checking lots of pairs.  For example, <m>ff(2\cdot 3) = f(1) = 1 = 3\cdot 7 = f(2)f(3)</m>.  You can also note that <m>U(5)</m> is cyclic with generator <m>2</m>, and <m>U(10)</m> is cyclic with generator <m>3</m>, so sending <m>2</m> to <m>3</m> will determine the isomorphism.
           </p>
-          <p>
+          <p permid="ixA">
             As for <m>U(12)</m>, it cannot be isomorphic to <m>U(10)</m> or <m>U(5)</m>, since <m>U(12)</m> is not cyclic. Alternatively, note that every element in <m>U(12)</m> is its own inverse, but this is not true about the other groups.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="WEH">
         <statement>
-          <p>
+          <p permid="yqs">
             Let <m>\phi:G \to H</m> be an isomorphism.  Show that <m>\phi(x) = e_H</m> if and only if <m>x = e_G</m>, where <m>e_G</m> and <m>e_H</m> are the identities of <m>G</m> and <m>H</m>, respectively.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="ddN">
+          <p permid="IPx">
             Since <m>\phi</m> is a bijection, it is enough to prove that <m>\phi(e_G) = e_H</m>.  Note that <m>e_G = e_G^2</m>.  Use the homomorphism property.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="CLQ">
         <statement>
-          <p>
-            Let <m>G = \R \setminus \{-1\}</m> with the operation <m>\ast</m> defined by <me>
+          <p permid="exB">
+            Let <m>G = \R \setminus \{-1\}</m> with the operation <m>\ast</m> defined by <me permid="MtX">
               a \ast b = a+b+ab.
             </me>
             We previously saw that <m>G</m> with this operation is a group.  Show that <m>(G, \ast)</m> is isomprhic to the multiplicative group of nonzero real numbers <m>\R^*</m>.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="JkW">
+          <p permid="oWG">
             You need to define the isomorphism <m>f:G \to \R^*</m>.  A good place to start would be to decide what the identity is in each group.  Guess a reasonable function that sends the identity in <m>G</m> to the identity in <m>\R^*</m>.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="iSZ">
         <statement>
-          <p>
+          <p permid="KEK">
             True or false: if <m>\phi:G \to H</m> is an isomorphism, then <m>\phi(a^n) = (\phi(a))^n</m> for all <m>a \in G</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="psf">
+          <p permid="OEJ">
             True.  <m>\phi(a^2) = \phi(a\cdot a) = \phi(a)\phi(a) = (\phi(a))^2</m>.  You can generalize this by induction: <m>\phi(a\cdot a^{n-1}) = \phi(a)(\phi(a))^{n-1}</m>.
           </p>
         </solution>
@@ -596,45 +596,45 @@
     </exercises>
 
 
-    <exercises xml:id="collected-isomorph">
+    <exercises xml:id="collected-isomorph" permid="Zzn">
       <title>Collected Homework</title>
 
-      <exercise number="C1">
+      <exercise number="C1" permid="Pai">
         <statement>
-          <p>
+          <p permid="qLT">
           Consider the groups <m>\Z_6</m> and <m>\Z_2\times \Z_3</m>. 
-            <ol>
-              <li>
-                <p>
+            <ol permid="jCT">
+              <li permid="UtV">
+                <p permid="Rzp">
                 Is there an isomorphism <m>f: \Z_6 \to \Z_2\times \Z_3</m> that has <m>f(1) = (0,1)</m>?  Explain why or why not.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="ABe">
+                <p permid="xGy">
                 Determine whether these two groups are isomorphic.  Either find an isomorphism (and explain why it is) or explain why they are not isomorphic.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="Vzo">
+          <p permid="VdP">
           First, <m>\Z_2\times \Z_3 = \{(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)\}</m>, and the operation is addition coordinate-wise.  So <m>(1,1) + (1,1) = (0,2)</m>.
           </p>
-          <p>
+          <p permid="BkY">
           For the first part, what would <m>f(2)</m> and <m>f(3)</m> be if we defined <m>f(1) = (0,1)</m>?  Why is this a problem?
           </p>
         </hint>
       </exercise>
 
-      <exercise number="C2">
+      <exercise number="C2" permid="vhr">
         <statement>
-          <p>
+          <p permid="WTc">
           Suppose group <m>G_1</m> and <m>G_2</m> are isomorphic, with isomorphism <m>\phi:G_1 \to G_2</m>.  Let <m>H_1</m> be a subgroup of <m>G_1</m>.  Define <m>H_2 = \phi(H_1) = \{x \in G_2 \st x = \phi(h) \text{ for some } h \in H_1\}</m>.  Prove that <m>H_2</m> is a subgroup of <m>G_2</m>.  Futher, prove that if <m>H_1</m> is normal in <m>G_1</m>, then <m>H_2</m> is normal in <m>G_2</m>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="BGx">
+          <p permid="hsh">
           This should be a fairly standard subgroup proof.  That is, identity, closures, inverses!  For the normal part, show <m>H_2</m> is closed under conjugates (assuming <m>H_1</m> is).
           </p>
         </hint>
@@ -971,59 +971,59 @@
   </exercise>
 </reading-questions>
 
-<exercises xml:id="practice-homomorph">
+<exercises xml:id="practice-homomorph" permid="FGw">
   <title>Practice Problems</title>
-  <exercise>
+  <exercise permid="boA">
     <statement>
-      <p>
+      <p permid="Dal">
             Let <m>\DR</m> represent the group of all differentiable functions from <m>\R</m> to <m>\R</m>, under addition, and <m>\FR</m> be the group of all functions from <m>\R</m> to <m>\R</m>, under addition.  Let <m>\phi:\DR\to \FR</m> be given by <m>\phi(f) = f'</m> (the derivative of <m>f</m>).  Prove that <m>\phi</m> is a homomorphism and describe its kernel.
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="hNG">
+      <p permid="uLS">
             Let <m>f</m> and <m>g</m> be functions in <m>\DR</m>.  Then <m>\phi(f+g) = (f+g)' = f' + g' = \phi(f) + \phi(g)</m>, using the additive property of derivatives.  Thus <m>\phi</m> is a homomorphism.
       </p>
 
-      <p>
+      <p permid="aTb">
             The kernel of <m>\phi</m> is the set of all differentiable functions whose derivative is 0.  From calculus, we know that these are exactly the constant functions.
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="HvJ">
     <statement>
-      <p>
+      <p permid="jhu">
             Let <m>\phi: \Z \to \Z</m> be given by <m>\phi(n) = 5n</m>.  Prove that <m>\phi</m> is a group homomorphism.  Find the kernel and image of <m>\phi</m>.
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="NUP">
+      <p permid="Hak">
             We have <m>\phi(a+b) = 5(a+b) = 5a+5b = \phi(a) + \phi(b)</m>, so <m>\phi</m> is a homomorphism.  The image of <m>\phi</m> will be <m>5\Z</m>.  The kernel is <m>\{0\}</m> (as you will show below, this is not surprising since <m>\phi</m> is injective).
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="nCS">
     <statement>
-      <p>
+      <p permid="PoD">
             If <m>G</m> is an abelian group, show that <m>\phi: G \to G</m> defined by <m>\phi(g) = g^2</m> is a homomorphism.
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="ubY">
+      <p permid="nht">
             We have <m>\phi(ab) = (ab)^2 = a^2b^2</m> since <m>G</m> is abelian.  But <m>\phi(a)\phi(b) = a^2 b^2</m>, so we see that <m>\phi</m> satisfies the homomorphism property.
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="TKb">
     <statement>
-      <p>
+      <p permid="vvM">
             How many homomorphisms from <m>\Z_7</m> to <m>\Z_{10}</m> are there?
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="ajh">
+      <p permid="ToC">
             Only one: the trivial homomorphism.  There are only two possible kernels: <m>\{0\}</m> or <m>\Z_7</m> (since there are only two subgroups of <m>\Z_7</m>).  If <m>\{0\}</m> is the kernel, then the homomorphism will be injective.  But that would mean that the image of the homomorphism would be a 7 elements subgroup of <m>\Z_{10}</m> which is impossible.  Thus the kernel can only be <m>\Z_{7}</m> which gives the trivial homomorphism (<m>\phi(x) = 0</m> for all <m>x</m>).
       </p>
     </solution>
@@ -1031,17 +1031,17 @@
 </exercises>
 
 
-<exercises xml:id="collected-homomorph">
+<exercises xml:id="collected-homomorph" permid="lNF">
   <title>Collected Homework</title>
 
-  <exercise number="C1">
+  <exercise number="C1" permid="zRk">
     <statement>
-      <p>
+      <p permid="bCV">
           Let <m>\phi:G \to H</m> be a homomorphism with kernel <m>K</m>.  Prove that <m>\phi</m> is injective (one-to-one) if and only if <m>K = \{e\}</m>.  (That is, if and only if the <em>only</em> element in the kernel is the identity.)  
       </p>
     </statement>
-    <hint>
-      <p>
+    <hint permid="Gqq">
+      <p permid="Nzq">
           The forward direction should be pretty easy.  For the converse (if <m>K = \{e\}</m> then <m>\phi</m> is injective), use the <q>standard</q> method to show a function is injective.  You will likely need to consider <m>\phi(a)\phi(b)\inv</m>.
       </p>
     </hint>
@@ -1380,87 +1380,87 @@
 </reading-questions>
 
 
-<exercises xml:id="practice-fht">
+<exercises xml:id="practice-fht" permid="RUO">
   <title>Practice Problems</title>
-  <exercise>
+  <exercise permid="fYt">
     <statement>
-      <p>
+      <p permid="HKe">
             Describe all the homomorphisms from <m>\Z_{24}</m> to <m>\Z_{18}</m>.
       </p>
     </statement>
-    <hint>
-      <p>
+    <hint permid="SEI">
+      <p permid="tGz">
             The kernel of a homomorphism must be a subgroup of the domain and the image must be a subgroup of the codomain.  Further, a generator must map to a generator.
       </p>
     </hint>
-    <solution>
-      <p>
+    <solution permid="mxz">
+      <p permid="zvL">
             The possible kernels are the subgroups of <m>\Z_{24}</m>.  We could have <m>K = \Z_{24}</m>, and this gives the trivial homomorphism (everything goes to 0).  Our next possible kernel is <m>\langle 2 \rangle = \{0, 2, 4, \ldots, 22\}</m>.  We can then send everything else to <m>9 \in \Z_{18}</m>.
       </p>
 
-      <p>
+      <p permid="fCU">
             Now take <m>K = \langle 3 \rangle = \{0, 3, 6, \ldots, 21\}</m>.  We know that <m>\Z_{24}/K \cong H</m> where <m>H</m> is the image of the homomorphism.  So we must have a 3-element subgroup of <m>\Z_{18}</m> as the image of the homomorphism.  Send <m>1</m> to <m>6</m> and <m>2</m> to 12, and so on.
       </p>
 
-      <p>
+      <p permid="LKd">
             There is not a subgroup of <m>\Z_{18}</m> containing 4 elements (since <m>4</m> does not divide 18), so it is impossible for us to have a kernel <m>\langle 4 \rangle</m>.  The next possible subgroup the kernel could be is <m>\langle 6 \rangle = \{0, 6, 12, 18\}</m>, which would give us 6 cosets.  There is a subgroup of order 6 in <m>\Z_{18}</m>, namely <m>\langle 3 \rangle = \{0, 3, 6, 9, 12, 15\}</m>.  So we can define <m>\phi(n) = 3n</m> as the homomorphism.
       </p>
 
-      <p>
+      <p permid="rRm">
             The kernel <m>K = \langle 8 \rangle</m> is not possible, nor is <m>K = \langle 12 \rangle</m>.  Thus we have all of the homomorphisms described.
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="MfC">
     <statement>
-      <p>
+      <p permid="nRn">
             Prove that <m>\Z/\langle 5\rangle \cong \Z_5</m>.
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="yLR">
+      <p permid="XYv">
             Define <m>\psi:\Z \to \Z_5</m> by <m>\psi(x) = x \pmod{5}</m>.  That is, send every element in <m>\Z</m> to its remainder when divided by 5.  The kernel of <m>\psi</m> is <m>\langle 5\rangle</m>, so by the Fundamental Homomorphism Theorem, <m>\Z/\langle 5 \rangle \cong \Z_5</m>.
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="smL">
     <statement>
-      <p>
+      <p permid="TYw">
             Let <m>\FR</m> be the set of all functions <m>f:\R to \R</m> under addition.  Let <m>B = \{f \in \FR \st f(0) = 0\}</m>.  Prove that <m>\FR/B \cong \R</m>.
       </p>
     </statement>
-    <hint>
-      <p>
+    <hint permid="Laj">
+      <p permid="ZNI">
             Define a surjective homomorphism <m>\psi:\FR \to \R</m> and use the FHT.
       </p>
     </hint>
-    <solution>
-      <p>
+    <solution permid="eTa">
+      <p permid="EfE">
             Define a surjective homomorphism <m>\psi:\FR \to \R</m> by <m>\psi(f) = f(0)</m>.  That is, <m>\psi</m> sends a function to its <m>y</m>-intercept.  It is easy to check this is a homomorphism: <m>\psi(f+g) = (f+g)(0) = f(0) + g(0) = \psi(f)+ \psi(g)</m>.  Also, it is clearly surjective since every real number <m>c</m> is the <m>y</m>-intercept for the constant function <m>f(x) = c</m>.  Further, the kernel of <m>\psi</m> is precisely <m>B</m>.
       </p>
-      <p>
+      <p permid="kmN">
             Thus, by the Fundamental Homomorphism Theorem, <m>\FR/B \cong \R</m>.
       </p>
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise permid="YtU">
     <statement>
-      <p>
+      <p permid="AfF">
             How many homomorphic images are there of <m>D_4</m>?
       </p>
     </statement>
-    <solution>
-      <p>
+    <solution permid="rhs">
+      <p permid="QtW">
             Suppose <m>H</m> is a homomorphic image of <m>D_4</m>.  Then <m>H \cong D_4/K</m> where <m>K</m> is the kernel of the homomorphism.  We know that <m>K</m> is a normal subgroup of <m>D_4</m>, which limits the number of possibilities for <m>K</m>.  We could have <m>K = \{r_0\}</m> or <m>k = D_4</m>, in which case we find that <m>H \cong D_4</m> or <m>H \cong \{e\}</m>, respetively.
       </p>
 
-      <p>
+      <p permid="wBf">
             The other normal subgroups of <m>D_4</m> are the three 4-element subgroups, and <m>\{r_0, r_2\}</m>.  For any of the 4-element subgroups, <m>D_4/K</m> would have size <m>2</m>, so this would say that <m>H \cong \Z_2</m> (since that is the only 2-element group).
       </p>
-      <p>
+      <p permid="cIo">
             For <m>K = \{r_0, r_2\}</m>, we will have <m>|H| = 4</m>, so there are two possibilities: <m>\Z_4</m> or <m>\Z_2 \times \Z_2</m>.  Now any element not in this kernel, if you square it, you will get something in the kernel.  That is, <m>(aK)^2 = a^2K = K</m> for all <m>a \in D_4</m>.  Thus <m>D_4/K \cong \Z_2\times \Z_2</m>.    
       </p>
     </solution>
@@ -1468,21 +1468,21 @@
 </exercises>
 
 
-<exercises xml:id="collected-fht">
+<exercises xml:id="collected-fht" permid="ybX">
   <title>Collected Homework</title>
 
-  <exercise number="C1">
+  <exercise number="C1" permid="EBd">
     <statement>
-      <p>
+      <p permid="gmO">
           Let <m>G</m> be an abelian group.  Let <m>H = \{g^2 \st g \in G\}</m> and <m>K = \{g \in G \st g^2 = e\}</m>.
-        <ol>
-          <li>
-            <p>
+        <ol permid="PKc">
+          <li permid="gIn">
+            <p permid="dNH">
                 Find <m>H</m> and <m>K</m> for the example <m>G = U(7)</m>.
             </p>
           </li>
-          <li>
-            <p>
+          <li permid="MPw">
+            <p permid="JUQ">
                 Use the Fundamental Homomorphism Theorem the relate the groups <m>H</m> and <m>K</m>.  That is, find a surjective homomorphism from <m>G</m> to one of them, such that the other is the kernel.  Justify your claims (including that your function really is a homomorphism).  Then explain how one is isomorphic to a quotient group involving the other. 
             </p>
           </li>

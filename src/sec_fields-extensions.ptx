@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-extension-fields">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="section-extension-fields" permid="dGQ">
   <title>Extension Fields</title>
-  <introduction>
+  <introduction permid="pVi">
     <p permid="WEx">
       Recall that we say a field <m>E</m> is an <term>extension field</term>
           <idx><h>Extension</h><h>field</h></idx>
@@ -14,27 +14,27 @@
       We write <m>F \subset E</m>.  Or goal is to build extension fields so that particular polynomials that were previously irreducible can now be factored in the extension field.
     </p>
     
-    <p>
+    <p permid="CjA">
       One obvious way to ensure this happens is to include the root of that polynomial in the field.  We previously defined <m>E = \Q(\sqrt{2}) = \{a + b\sqrt{2} \st a, b \in \Q</m> as an extension field of <m>\Q</m>.  In this field, the polynomial <m>x^2 - 2</m> has a root, so can be factored.
     </p>
     
-    <p>
+    <p permid="iqJ">
       In general, given a polynomial <m>p(x) \in F[x]</m> for some field <m>F</m>, and a root <m>\alpha</m>, we want to build an extension field containing <m>\alpha</m> so that <m>p(x)</m> factors.  We could do the same thing as above, taking <m>F(\alpha)</m>.  That is, add a new element <m>\alpha</m> to <m>F</m> and close the set under addition and multiplication.  The question is, will this always be a field?
     </p>
     
-    <p>
+    <p permid="OxS">
       Our salvation comes from quotient rings.  If it has been a while, you might review <xref ref="section-ring-homomorphisms"/>.  Then try the following activity, which works through the general strategy in the simple example of <m>\alpha = \sqrt{2}</m>.
     </p>
   </introduction>
   
   <xi:include href="./worksheets/fields-quotientrings.ptx"/>
   
-  <subsection xml:id="subsec_fields-extensions-quotients">
+  <subsection xml:id="subsec_fields-extensions-quotients" permid="JNZ">
     <title>Extension Fields and Polynomials</title>
     
     
     
-    <p>
+    <p permid="uFb">
       We will often take <m>F = \Q</m>, but of course other fields can be used as well and our strategy of using quotient rings will still work.
     </p>
 
@@ -50,7 +50,7 @@
         hence, <m>{\mathbb Z}_2[x] / \langle p(x) \rangle</m> is a field.
         (That modding out by a maximal ideal produces a fields is a result that applies to rings in general, not just polynomial rings; we could have argued that <m>\Z_2[x]/\langle p(x)\rangle</m> is a field using Bezout's identity as well.)
       </p>
-      <p>
+      <p permid="Wcr">
         Let <m>f(x) + \langle p(x) \rangle</m> be an arbitrary element of <m>{\mathbb Z}_2[x] / \langle p(x) \rangle</m>.
         By the division algorithm,
         <me permid="Oja">
@@ -117,7 +117,7 @@
       </table>
     </example>
 
-    <p>
+    <p permid="aMk">
       To summarize our strategy: we want to build an extension field of <m>F</m> that contains an element <m>\alpha</m>, presumably not already in <m>F</m>.  As long as <m>\alpha</m> is the root of a polynomial, we can take <m>p(x)</m> to be an irreducible polynomial (over <m>F</m>) that has <m>\alpha</m> as a root, and consider the quotient ring <m>F[x]/\langle p(x) \rangle</m>.  Using the Fundamental Homomorphism Theorem, this quotient ring will be isomorphic to our desired extension field.
     </p>
 

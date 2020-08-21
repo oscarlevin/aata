@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-constructions-conc">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-fields-constructions-conc" permid="uFo">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="xzU">
       <statement>
-        <p>
+        <p permid="iqW">
           Prove, using field extensions, that a regular 9-gon is not constructible (with a compass and straight-edge).
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="JOm">
+        <p permid="WcE">
           Your proof should mimic the proof we did in class that <m>20^\circ</m> is not constructible.  That is, your proof should talk about field extensions and polynomials (do not just argue that it is impossible because if we could construct it, we would then be able to construct <m>20^\circ</m> which we know is impossible).
         </p>
       </hint>
     </exercise>
-    <exercise>
+    <exercise permid="dHd">
       <statement>
-        <p>
+        <p permid="Oyf">
           Prove that it <em>is</em> possible to construct a regular 20-gon.
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="pVv">
+        <p permid="CjN">
           Do not give the construction completely, just say how you know that the 20-gon is constructible.  Note that if the central interior angle is constructible, then the 20-gon will be constructible.  
         </p>
       </hint>

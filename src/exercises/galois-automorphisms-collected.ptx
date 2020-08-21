@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-automorphisms">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-automorphisms" permid="dlE">
   
     <title>Collected Homework</title>
 
-<exercise>
+<exercise permid="bwr">
   <statement>
-    <p>
+    <p permid="xev">
       Consider the polynomial <m>a(x) = x^4 - 10x^2 + 21</m> in <m>\Q[x]</m>.
-      <ol>
-        <li>
-          <p>
+      <ol permid="HDA">
+        <li permid="nKJ">
+          <p permid="suC">
             Find the splitting field <m>E</m> over <m>\Q</m>.  Draw a tower diagram including all intermediate fields and their degrees.  Hint: start by factoring <m>a(x)</m>.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="TRS">
+          <p permid="YBL">
             Let <m>\Q(\alpha) \ne \Q(\beta)</m> be different intermediate fields between <m>\Q</m> and <m>E</m>.  Explain why there is NOT an isomorphism from <m>\Q(\alpha)</m> to <m>\Q(\beta)</m> that sends <m>\alpha</m> to <m>\beta</m>.  Then explain why there is no isomorphism between these fields at all.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="zZb">
+          <p permid="EIU">
             Describe a non-trivial <term>automorphism</term> of <m>E</m>.  Explain how you know your example works.  
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="ggk">
+          <p permid="kQd">
             Describe the Galois group <m>G(E/\Q)</m>.  Be sure to explicitly say what each element of the group is, as well as say what <q>standard</q> group it is isomorphic to.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="Mnt">
+          <p permid="QXm">
             Bonus! The polynomial <m>x^4 - 62x^2 + 625</m> has <m>\sqrt{3}+2\sqrt{7}</m> as a root.  Use your results from the previous parts to find the three other roots of this polynomial.
           </p>
         </li>

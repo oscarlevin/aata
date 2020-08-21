@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fields-subsection-algebraic-elements">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fields-subsection-algebraic-elements" permid="acq">
   
     <title>Algebraic Elements</title>
     <p permid="lrW">
@@ -100,11 +100,11 @@
       </proof>
     </theorem> -->
 
-    <p>
+    <p permid="KTs">
       There are lots of extension fields that contain elements transcendental over the base field.  For example, we could consider <m>\Q(\pi)</m>. It turns out this will be isomorphic to <m>\Q(x)</m>, the field of all rational functions with rational coefficients.  So in some sense, this is not that interesting: no matter what transcendental element you add, you get the same extension field.  We have a more interesting situation in the case of algebraic extensions.
     </p>
 
-    <theorem permid="UOX" xml:id="thm_minimum-poly">
+    <theorem xml:id="thm_minimum-poly" permid="UOX">
       <statement>
         <p permid="xrT">
           Let <m>E</m> be an extension field of a field <m>F</m> and
@@ -185,7 +185,7 @@
     </proposition>
     
     
-    <p>
+    <p permid="raB">
       Recall that <m>F(\alpha)</m> is simply the smallest field that contains <m>F</m> and <m>\alpha</m>.  What do elements in this set look like?  Since <m>F(\alpha)</m> is a field, it is closed under addition and multiplication, so <m>a + b \alpha + c \alpha^2 + \cdots</m> are elements we can get in <m>F(\alpha)</m>.  Do we need to consider arbitrarily large powers of <m>\alpha</m>?  No, and this is why it is helpful to recognize <m>F(\alpha)</m> as a quotient ring.  
     </p>
 
@@ -282,22 +282,22 @@
     </example>
     
     
-  <paragraphs xml:id="subsec_fields-extensions-summary">
+  <paragraphs xml:id="subsec_fields-extensions-summary" permid="Gjz">
   <title>Summary</title>
   
-    <p>
+    <p permid="mqI">
       At this point, it might seem like we are running around in circles, as it often seems whenever we get close to the Fundamental Homomorphism Theorem.  Before moving on, let's try to sort out the different things the theorems and propositions are doing in this section.
     </p>
     
-    <p>
+    <p permid="SxR">
       First, if we are start with a given polynomial <m>p(x)</m> over some field <m>F</m>, we know there is some extension field <m>E</m> above <m>F</m> in which <m>p(x)</m> has a root <m>\alpha</m> (and therefore factors).  This is <xref ref="theorem-fundamental-of-field-theory"/>.
     </p>
     
-    <p>
+    <p permid="yFa">
       On the other hand, we can start a extension field <m>E</m> of a base field <m>F</m> that contains some element <m>\alpha</m> <em>algebraic</em> over <m>F</m>.  By definition, <m>\alpha</m> is the root to some polynomial with coefficients from <m>F</m>, and by <xref ref="thm_minimum-poly"/> there is a minimum polynomial <m>p(x)</m> for <m>\alpha</m>.  By <xref ref="proposition-minimal-poly"/>, the field extension <m>F(\alpha)</m> (which is a subfield of <m>E</m>, if not <m>E</m> exactly) is isomorphic to the quotient ring <m>F[x]/\langle p(x) \rangle</m>.  
     </p>
     
-    <p>
+    <p permid="eMj">
       So if you have a minimal polynomial <m>p(x)</m>, you can find an extension field that contains a root <m>\alpha</m>, namely <m>F[x]/\langle p(x)\rangle</m>.  Or if you have an extension field with a root <m>\alpha</m>, you can find a minimal polynomial <m>p(x)</m> and the extension field that you would get by starting with <m>p(x)</m> will be precisely the smallest field containing <m>F</m> and <m>\alpha</m>.
     </p>
   </paragraphs>

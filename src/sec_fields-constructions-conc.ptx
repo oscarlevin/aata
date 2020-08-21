@@ -4,32 +4,32 @@
   
 
 
-    <section xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="section-constructions-conc">
+    <section xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="section-constructions-conc" permid="XhK">
       <title>What's Not Constructible</title>
       
-      <introduction>
-        <p>
+      <introduction permid="jwc">
+        <p permid="PDl">
           We are are now ready to solve the questions of antiquity about geometric constructions.  Briefly, here is what we know already.
         </p>
         
-        <p>
+        <p permid="vKu">
           The constructible numbers are a field containing <m>\Q</m> and contained in <m>\R</m>.  The field is closed under taking square roots of positive elements.  Right away, this tells us that numbers like <m>\sqrt{\frac{3 + \sqrt{5}}{\sqrt{7}}}</m> are constructible.
         </p>
         
-        <p>
+        <p permid="bRD">
           We also know something about the converse: if a real number <m>\alpha</m> is constructible, then it exists in a field extension <m>F_k</m> which is <q>at the end</q> of a sequence of iterated extensions
-          <me>
+          <me permid="Aun">
             {\mathbb Q} = F_0 \subset F_1 \subset \cdots \subset F_k
           </me>
           such that <m>F_i = F_{i-1}( \sqrt{ \alpha_i}\, )</m> with
           <m>\alpha_i \in F_i</m>.  In other words, the <em>only</em> way to get a constructible number is to find it inside a field extension you get by repeatedly adjoining square roots of elements in the previous field.
         </p>
 
-        <p>
+        <p permid="HYM">
           In particular, now that we know something about the degree of a field extension, we know that <m>[F_i:F_{i-1}] = 2</m> in each of the iterated extensions, and by the <em>tower rule</em> ( <xref ref="theorem-tower-indices"/>) we know that if <m>\alpha</m> is constructible, then there exists an integer <m>k \gt 0</m> such that <m>[{\mathbb Q}(\alpha) : {\mathbb Q} ] = 2^k</m>.          
         </p>
         
-        <p>
+        <p permid="ofV">
           So how does this help prove that you cannot construct particular geometric figures?  We will argue that if it were possible to construct such a figure, then a particular number would be constructible.  To show that is impossible, we will argue about the degree of the field extension that contains that number.
         </p>
       </introduction>
@@ -86,11 +86,11 @@
             <idx>
             <h>Trisection of an angle</h>
             </idx>
-            <p>
+            <p permid="Une">
               The question is whether given <em>any</em> angle, it is possible to construct the angle which is one third of it.  To prove this is impossible, we need only show that some angle is non-constructible while three times it is constructible.
             </p>
             
-            <paragraphs>
+            <paragraphs permid="DoT">
               
             <title>Trisecting an arbitrary angle is impossible</title>.
             <p permid="wAV">

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-splitting-fields">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-galois-splitting-fields" permid="UBM">
   
     <title>Collected Homework</title>
 
-<exercise>
+<exercise permid="faR">
   <statement>
-    <p>
+    <p permid="ouD">
       Consider the field <m>\Q(\sqrt[4]{3}, i)</m>.
-      <ol>
-        <li>
-          <p>
+      <ol permid="Lia">
+        <li permid="rpj">
+          <p permid="PRT">
             Is this a splitting field for some polynomial in <m>\Q[x]</m>?  If so, what is the degree of that polynomial.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="Xws">
+          <p permid="vZc">
             What is the <m>[Q(\sqrt[4]{3}, i):\Q]</m>?  Explain how you know.
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="DDB">
+          <p permid="cgl">
             It turns out that there are exactly 8 different fields between <m>\Q</m> and <m>\Q(\sqrt[4]{3}, i)</m>.  Find at least four of these (more if you can) and draw a large tower diagram showing how these are related (with degrees marked appropriately).
           </p>
         </li>
-        <li>
-          <p>
+        <li permid="jKK">
+          <p permid="Inu">
             Bonus! (but not really that hard, just not something we have done in a while): Prove that the fields <m>\Q(\sqrt[4]{3})</m> and <m>\Q(\sqrt[4]{3}i)</m> are isomorphic, but not equal.  Note, this fact might be helpful for the previous parts.
           </p>
         </li>

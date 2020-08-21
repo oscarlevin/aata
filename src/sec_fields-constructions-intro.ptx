@@ -102,12 +102,12 @@
 
         <figure xml:id="figure-multiplication-construction" permid="rRc">
           <caption>Construction of products</caption>
-              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
+            <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
           <image width="80%" xml:id="fields-multiply" permid="jvF">
 
-              <latex-image>
-                  <xi:include href="tikz/fields-multiply.tex" parse="text"/>
-              </latex-image>
+            <latex-image>
+                <xi:include href="tikz/fields-multiply.tex" parse="text"/>
+            </latex-image>
           </image>
 
         </figure>
@@ -131,12 +131,12 @@
 
         <figure xml:id="figure-root-construction" permid="XYl">
           <caption>Construction of roots</caption>
-              <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
+            <!-- Replaced figure with tikz figure and corrected figure - TWJ 8/19/2010 -->
           <image width="80%" xml:id="fields-root" permid="PCO">
 
-              <latex-image>
-                  <xi:include href="tikz/fields-root.tex" parse="text"/>
-              </latex-image>
+            <latex-image>
+                <xi:include href="tikz/fields-root.tex" parse="text"/>
+            </latex-image>
           </image>
 
         </figure>
@@ -282,30 +282,30 @@
         </lemma>
 
 
-        <p>
+        <p permid="sPO">
           So what is the field of <em>all</em> constructible numbers?  This will definitely contain <m>\Q</m>, but then we can repeatedly add square roots of elements.  And not just elements from <m>\Q</m>, but also square roots of elements found in extension fields we got by taking square roots previously.  
         </p>
         
-        <p>
+        <p permid="YWX">
           This brings us to the idea of an <term>itterated extension</term>: you get an extension field by adding a new number, then get another extension field by adding a new number to the first extension field.  And we can keep going as far as we like.  
         </p>
         
-        <p>
+        <p permid="Feg">
           So what we have now is that every constructable number is an element of some extension field of some extension field of some extension field of <ellipsis /> some extension field of <m>\Q</m>, each extension of the form <m>F(\sqrt{\alpha_i})</m> where <m>\alpha_i \in F</m> (but the <m>F</m>s are changing as we go up the line).  We can state this more cleanly as follows.
         </p>
 
 
-        <theorem>
+        <theorem permid="gBw">
           <statement>
-            <p>
+            <p permid="MIF">
               A real number <m>\alpha</m> is a constructible number if and only if there exists a  sequence of fields
-              <me>
+              <me permid="xzH">
                 {\mathbb Q} = F_0 \subset F_1 \subset \cdots \subset F_k
               </me>
               such that <m>F_i = F_{i-1}( \sqrt{ \alpha_i}\, )</m> with
               <m>\alpha_i \in F_i</m> and <m>\alpha \in F_k</m>.
-              <!-- In particular,
-              there exists an integer <m>k \gt 0</m> such that <m>[{\mathbb Q}(\alpha) : {\mathbb Q} ] = 2^k</m>. -->
+            <!-- In particular,
+            there exists an integer <m>k \gt 0</m> such that <m>[{\mathbb Q}(\alpha) : {\mathbb Q} ] = 2^k</m>. -->
             </p>
           </statement>
 
@@ -319,13 +319,13 @@
             </p>
           </proof> -->
         </theorem>
-              <!-- Clarified where <m>\alpha_i</m> lives - TWJ 4/23/2011 -->
+            <!-- Clarified where <m>\alpha_i</m> lives - TWJ 4/23/2011 -->
         
-        <p>
+        <p permid="llp">
           Now if we want the field of <em>all</em> constructible numbers, we need to extend this process forever.  This shows that the field of constructible numbers is not a <q>finite</q> extension of <m>\Q</m>, although it is still an <em>algebraic</em> extension.
         </p>      
               
-        <p>
+        <p permid="Rsy">
           What does all of this have to do with solving the problems of doubling the cube, squaring the circle, and trisecting an angle?  To answer this question we need to use what we have developed about the <em>size</em> of a field extension: its <term>degree</term>. 
         </p>
       </subsection>

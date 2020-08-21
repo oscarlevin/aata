@@ -1147,7 +1147,7 @@
   <exercises xml:id="exercises-finite" filenamebase="finite" permid="KWV">
     <title>Exercises</title>
 
-    <exercise number="1" permid="loS" xml:id="finite-exercise-calculate-degree">
+    <exercise number="1" xml:id="finite-exercise-calculate-degree" permid="loS">
       <statement>
         <p permid="BYV">
           Calculate each of the following.
@@ -1186,7 +1186,7 @@
       </hint>
     </exercise>
 
-    <exercise number="2" permid="Rwb" xml:id="finite-exercise-gf-pm-gf-pn">
+    <exercise number="2" xml:id="finite-exercise-gf-pm-gf-pn" permid="Rwb">
       <statement>
         <p permid="ige">
           Calculate <m>[\gf(p^m): \gf(p^n)]</m>, where <m>n \mid m</m>.
@@ -1194,7 +1194,7 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="xDk" xml:id="finite-exercise-gf-p-30">
+    <exercise number="3" xml:id="finite-exercise-gf-p-30" permid="xDk">
       <statement>
         <p permid="Onn">
           What is the lattice of subfields for <m>\gf(p^{30})</m>?
@@ -1202,7 +1202,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="dKt" xml:id="finite-exercise-Z-2-alpha">
+    <exercise number="4" xml:id="finite-exercise-Z-2-alpha" permid="dKt">
       <statement>
         <p permid="uuw">
           Let <m>\alpha</m> be a zero of
@@ -1221,7 +1221,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="5" permid="JRC" xml:id="finite-exercise-gf-27">
+    <exercise number="5" xml:id="finite-exercise-gf-27" permid="JRC">
       <statement>
         <p permid="aBF">
           Construct a finite field of order <m>27</m>.
@@ -1238,7 +1238,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="6" permid="pYL" xml:id="finite-exercise-Q-star-cyclic">
+    <exercise number="6" xml:id="finite-exercise-Q-star-cyclic" permid="pYL">
       <statement>
         <p permid="GIO">
           Prove or disprove: <m>{\mathbb Q}^\ast</m> is cyclic.
@@ -1246,7 +1246,7 @@
       </statement>
     </exercise>
 
-    <exercise number="7" permid="WfU" xml:id="finite-exercise-factor-Z2-polys">
+    <exercise number="7" xml:id="finite-exercise-factor-Z2-polys" permid="WfU">
       <statement>
         <p permid="mPX">
           Factor each of the following polynomials in <m>{\mathbb Z}_2[x]</m>.
@@ -1285,7 +1285,7 @@
       </hint>
     </exercise>
 
-    <exercise number="8" permid="Cnd" xml:id="finite-exercise-Z-2-x-over-degrre-3">
+    <exercise number="8" xml:id="finite-exercise-Z-2-x-over-degrre-3" permid="Cnd">
       <statement>
         <p permid="SXg">
           Prove or disprove:
@@ -1301,7 +1301,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="9" permid="ium" xml:id="finite-exercise-cyclic-codes">
+    <exercise number="9" xml:id="finite-exercise-cyclic-codes" permid="ium">
       <statement>
         <p permid="zep">
           Determine the number of cyclic codes of length <m>n</m> for <m>n = 6, 7, 8, 10</m>.
@@ -1311,7 +1311,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="10" permid="OBv" xml:id="finite-exercise-even-parity">
+    <exercise number="10" xml:id="finite-exercise-even-parity" permid="OBv">
       <statement>
         <p permid="fly">
           Prove that the ideal <m>\langle t + 1 \rangle</m> in <m>R_n</m> is the code in
@@ -1322,7 +1322,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="11" permid="uIE" xml:id="finite-exercise-BCH">
+    <exercise number="11" xml:id="finite-exercise-BCH" permid="uIE">
       <statement>
         <p permid="LsH">
           Construct all <acro>BCH</acro> codes of
@@ -1351,7 +1351,7 @@
 
     <!--Todo Complete the solution.-->
 
-    <exercise number="12" permid="aPN" xml:id="finite-exercise-algebraically-closed">
+    <exercise number="12" xml:id="finite-exercise-algebraically-closed" permid="aPN">
       <statement>
         <p permid="rzQ">
           Prove or disprove: There exists a finite field that is algebraically closed.
@@ -1364,7 +1364,7 @@
       </hint>
     </exercise>
 
-    <exercise number="13" permid="GWW" xml:id="finite-exercise-Zp-x">
+    <exercise number="13" xml:id="finite-exercise-Zp-x" permid="GWW">
       <statement>
         <p permid="XGZ">
           Let <m>p</m> be prime.
@@ -1376,7 +1376,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="14" permid="nef" xml:id="finite-exercise-integral-domian-p">
+    <exercise number="14" xml:id="finite-exercise-integral-domian-p" permid="nef">
       <statement>
         <p permid="DOi">
           Let <m>D</m> be an integral domain of characteristic <m>p</m>.
@@ -1398,7 +1398,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="16" permid="zsx" xml:id="finite-exercise-subfields">
+    <exercise number="16" xml:id="finite-exercise-subfields" permid="zsx">
       <statement>
         <p permid="QcA">
           Let <m>E</m> and <m>F</m> be subfields of a finite field <m>K</m>.
@@ -1409,7 +1409,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="17" permid="fzG" xml:id="finite-exercise-separable-extension">
+    <exercise number="17" xml:id="finite-exercise-separable-extension" permid="fzG">
       <statement>
         <p permid="wjJ">
           Let <m>F \subset E \subset K</m> be fields.
@@ -1424,7 +1424,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="LGP" xml:id="finite-exercise-F-alpha">
+    <exercise number="18" xml:id="finite-exercise-F-alpha" permid="LGP">
       <statement>
         <p permid="cqS">
           Let <m>E</m> be an extension of a finite field <m>F</m>,
@@ -1444,7 +1444,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="rNY" xml:id="finite-exercise-simple-extension">
+    <exercise number="19" xml:id="finite-exercise-simple-extension" permid="rNY">
       <statement>
         <p permid="Iyb">
           Show that every finite extension of a finite field <m>F</m> is simple;
@@ -1457,7 +1457,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="20" permid="XVh" xml:id="finite-exercise-irreducible-poly">
+    <exercise number="20" xml:id="finite-exercise-irreducible-poly" permid="XVh">
       <statement>
         <p permid="oFk">
           Show that for every <m>n</m> there exists an irreducible polynomial of degree <m>n</m> in <m>{\mathbb Z}_p[x]</m>.
@@ -1477,7 +1477,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="kjz" xml:id="finite-exercise-GF-pn-a-p">
+    <exercise number="22" xml:id="finite-exercise-GF-pn-a-p" permid="kjz">
       <statement>
         <p permid="ATC">
           Show that every element in
@@ -1488,7 +1488,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="23" permid="QqI" xml:id="finite-exercise-E-cap-F">
+    <exercise number="23" xml:id="finite-exercise-E-cap-F" permid="QqI">
       <statement>
         <p permid="haL">
           Let <m>E</m> and <m>F</m> be subfields of <m>\gf(p^n)</m>.
@@ -1498,7 +1498,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" permid="wxR" xml:id="finite-exercise-wilsons-ther">
+    <exercise number="24" xml:id="finite-exercise-wilsons-ther" permid="wxR">
       <title>Wilson's Theorem</title>
       <statement>
         <p permid="NhU">
@@ -1515,7 +1515,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="25" permid="cFa" xml:id="finite-exercise-minimal-gen-poly">
+    <exercise number="25" xml:id="finite-exercise-minimal-gen-poly" permid="cFa">
       <statement>
         <p permid="tpd">
           If <m>g(t)</m> is the minimal generator polynomial for a cyclic code <m>C</m> in <m>R_n</m>,
@@ -1526,7 +1526,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="26" permid="IMj" xml:id="finite-exercise-burst">
+    <exercise number="26" xml:id="finite-exercise-burst" permid="IMj">
       <statement>
         <p permid="Zwm">
           Often it is conceivable that a burst of errors might occur during transmission,
@@ -1541,7 +1541,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="27" permid="oTs" xml:id="finite-exercise-R-n">
+    <exercise number="27" xml:id="finite-exercise-R-n" permid="oTs">
       <statement>
         <p permid="FDv">
           Prove that the rings <m>R_n</m> and
@@ -1552,7 +1552,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="28" permid="VaB" xml:id="finite-exercise-code-gen-gt">
+    <exercise number="28" xml:id="finite-exercise-code-gen-gt" permid="VaB">
       <statement>
         <p permid="lKE">
           Let <m>C</m> be a code in <m>R_n</m> that is generated by <m>g(t)</m>.
@@ -1564,7 +1564,7 @@
 
     <!--Todo Finish proof.-->
 
-    <exercise number="29" permid="BhK" xml:id="finite-exercise-generator-matrix">
+    <exercise number="29" xml:id="finite-exercise-generator-matrix" permid="BhK">
       <statement>
         <p permid="RRN">
           Let <m>C = \langle g(t) \rangle</m> be a cyclic code in <m>R_n</m> and suppose that <m>x^n - 1 = g(x) h(x)</m>,
@@ -1639,7 +1639,7 @@
       </p>
     </introduction>
 
-    <exercise permid="Nwc" xml:id="finite-exercise-code-poly">
+    <exercise xml:id="finite-exercise-code-poly" permid="Nwc">
       <statement>
         <p permid="xYW">
           Show that <m>w(t)</m> is a code polynomial if and only if <m>s_i = 0</m> for all <m>i</m>.
@@ -1647,7 +1647,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="tDl" xml:id="finite-exercise-error-locator">
+    <exercise xml:id="finite-exercise-error-locator" permid="tDl">
       <statement>
         <p permid="egf">
           Show that
@@ -1663,7 +1663,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="ZKu" xml:id="finite-exercise-15-7-block-code">
+    <exercise xml:id="finite-exercise-15-7-block-code" permid="ZKu">
       <statement>
         <p permid="Kno">
           Recall the <m>(15,7)</m>-block <acro>BCH</acro> code in <xref ref="example-finite-parity-check-x7-1"/>.
@@ -1678,7 +1678,7 @@
       </statement>
     </exercise>
 
-    <exercise permid="FRD" xml:id="finite-exercise-original-code-poly">
+    <exercise xml:id="finite-exercise-original-code-poly" permid="FRD">
       <statement>
         <p permid="qux">
           Let <m>w(t) = 1 + t^2 +t^4 + t^5 + t^7 + t^{12} + t^{13}</m>.

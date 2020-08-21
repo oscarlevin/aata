@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-intro">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" solutions="yes" xml:id="ws_fields-intro" permid="TwG">
     <title>Activity: Extending Fields to Factor</title>
 
-    <introduction>
+    <introduction permid="BOB">
       
-        <p>Goal: Build the smallest field possible in which <m>p(x) = x^3 + 3x^2 - x + 2</m> is NOT irreducible.</p>
+        <p permid="xOC">Goal: Build the smallest field possible in which <m>p(x) = x^3 + 3x^2 - x + 2</m> is NOT irreducible.</p>
         
-        <p>
+        <p permid="dVL">
           Note that <m>p(x)</m> is irreducible over <m>\Q</m> because it has no roots in <m>\Q</m> (why is this and why is that enough?).  So let's invent a new number, call it <m>\s</m>, and insist that <m>\s</m> is a root of <m>p(x)</m>.  Then consider the smallest field <m>E</m> larger than <m>\Q</m> that also contains <m>\s</m>.
         </p>
     </introduction>
 
-        <exercise workspace="10%">
+        <exercise workspace="10%" permid="hVK">
             <statement>
-            <p> 
+            <p permid="KcU"> 
               List five elements in <m>E</m> that are NOT already in 
               <m>\Q</m>.  
             </p>
            </statement>
-           <solution>
-             <p>
+           <solution permid="Lin">
+             <p permid="ouQ">
                For example, <m>\s</m> (which is not in <m>\Q</m> because, by the rational roots theorem, there are no roots to <m>p(x)</m> in <m>\Q</m>), as well as <m>\s+1</m>, <m>4\s</m>, <m>\s^2</m>, and <m>3+\frac{1}{2}\s - \s^2</m>.
              </p>
            </solution>
         </exercise>
         
-        <exercise workspace="10%">
+        <exercise workspace="10%" permid="OcT">
           <statement>
-            <p>
+            <p permid="qkd">
               The element <m>\s^3</m> is in <m>E</m>, but this can also be written using smaller powers of <m>\s</m>.  How?  
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="rpw">
+            <p permid="UBZ">
               Since <m>\s^3 + 3\s^2 - \s + 2 = 0</m> we see that <m>\s^3 = -3\s^2 + \s - 2</m>.
             </p>
           </solution>
         </exercise>
 
-        <exercise workspace="10%">
+        <exercise workspace="10%" permid="ukc">
             <statement>
-            <p>
+            <p permid="Wrm">
               Describe <m>E</m> as a set using set builder notation.  In other words, <m>E</m> is the set of all elements of the form 
               <ellipsis />
             </p>
             </statement>
-            <solution>
-              <p>
+            <solution permid="XwF">
+              <p permid="AJi">
                 <m>E = \{a + b \s + c \s^2 \st a, b, c, \in \Q\}</m>.  Certainly everything of this form is in <m>E</m> since <m>E</m> must be closed under addition and multiplication.  That nothing else is is a consequence of the previous question: since <m>\s^3</m> can already be expressed as a linear combination of <m>1</m>, <m>\s</m>, and <m>\s^2</m>, any power of <m>\s</m> greater or equal to 3 can be as well.
               </p>
             </solution>
         </exercise>
         
-        <exercise workspace="20%">
+        <exercise workspace="20%" permid="arl">
           <statement>
-            <p>
+            <p permid="Cyv">
               Wait: why are we doing this?  Our goal is for <m>p(x)</m> to factor.  Does it?  What would one of the factors be?
             </p>
           </statement>
@@ -64,22 +64,22 @@
               Is <m>x - \s</m> a factor?
             </p>
           </hint> -->
-          <solution>
-            <p>
+          <solution permid="DDO">
+            <p permid="gQr">
               Yes, we get <m>p(x) = (x-\s)(x^2 + (3+\s)x - 1 + 3\s + \s^2)</m>.  Do this by long division.  The remainder might not look like zero right away, except that it is precisely <m>p(\s)</m>.  This is not a surprise: the division algorithm says that <m>p(x) = b(x)(x-\s) + r(x)</m> where <m>r(x)</m> is either the zero polynomial or has degree 0 (less than the degree of <m>(x-\s)</m>).  Now plug in <m>\s</m> for <m>x</m>.  Long division is just there to help us find <m>b(x)</m>.
             </p>
           </solution>
         </exercise>
-        <exercise>
+        <exercise permid="Gyu">
           <statement>
-            <p>
+            <p permid="iFE">
               Wait again: we want <m>E</m> to be a field.  Is it?  What would we need to check?
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="jKX">
+            <p permid="MXA">
               This is a hard question that we will return to.  Note that all we must check still is that every non-zero element in <m>E</m> has a multiplicative inverse.  That is, given <m>a+b\s + c\s^2</m>, find an element <m>a' + b'\s + c'\s^2</m> such that 
-              <me>
+              <me permid="npx">
                 (a+b\s+c \s^2)(a' + b'\s + c'\s^2) = 1
               </me>.
               You could do this algebraically, although it is not an easy computation, and requires you to know that the polynomial <m>p(x)</m> is irreducible.  We will see why later.
@@ -90,28 +90,28 @@
 
         <pagebreak/>
         
-        <exercise workspace="15%">
+        <exercise workspace="15%" permid="mFD">
             <statement>
-            <p> 
+            <p permid="OMN"> 
               List five elements in the quotient ring <m>\Q[x]/\langle p(x)\rangle</m> (using the same <m>p(x)</m> from the previous page).  Remember, these will all be cosets.
             </p>
            </statement>
-           <solution>
-             <p>
+           <solution permid="PSg">
+             <p permid="teJ">
                For example, <m>x  + \langle p(x) \rangle</m>,  <m>x+1 +\langle p(x) \rangle</m>, <m>4x + \langle p(x) \rangle</m>, <m>x^2 + \langle p(x) \rangle</m>, and <m>3+\frac{1}{2}x - x^2 + \langle p(x) \rangle</m>.
                
              </p>
            </solution>
         </exercise>
         
-        <exercise workspace="15%">
+        <exercise workspace="15%" permid="SMM">
           <statement>
-            <p>
+            <p permid="uTW">
               The element <m>x^3+\langle p(x) \rangle</m> is an element of <m>\Q[x]/\langle p(x) \rangle</m>, but it can also be written as a <q>simpler</q> coset.  How?  
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="vZp">
+            <p permid="ZlS">
               Since <m>x^3 + 3x^2 - x + 2 \in \langle p(x) \rangle</m> we see that <m>x^3 + \langle p(x) \rangle = -3x^2 + x - 2 + \langle p(x) \rangle</m>.  You can get here either by dividing <m>x^3</m> by <m>p(x)</m> and looking for the remainder, or by asking, what would I need to add to <m>p(x)</m> to get <m>x^3</m>.  
               That is because the coset <m>x^3 + \langle p(x) \rangle</m> contains all the polynomials in <m>\Q[x]</m> that result from adding <m>x^3</m> to a multiple of <m>p(x)</m>.  One of these elements is <m>x^3</m> (since the polynomial <m>0</m> is a multiple of <m>p(x)</m>).  
               So if we can find another polynomial <m>a(x)</m> such that <m>a(x)</m> added to a multiple of <m>p(x)</m> gives <m>x^3</m>, then <m>a(x) + \langle p(x)\rangle</m> will be exactly the same coset as <m>x^3 + \langle p(x) \rangle</m>.
@@ -119,31 +119,31 @@
           </solution>
         </exercise>
 
-        <exercise workspace="15%">
+        <exercise workspace="15%" permid="yTV">
             <statement>
-            <p>
+            <p permid="bbf">
               Describe <m>\Q[x]/\langle p(x) \rangle</m> as a set using set builder notation.  In other words, this quotient ring is the set of all cosets of the form <ellipsis />
             </p>
             </statement>
-            <solution>
-              <p>
+            <solution permid="cgy">
+              <p permid="Ftb">
                 <m>\Q[x]/\langle p(x) \rangle = \{a + bx + cx^2 + \langle p(x) \rangle \st a, b, c\in \Q\}</m>.  While we can certainly add a polynomial of degree greater to 2 to get a coset, we can always divide it by <m>p(x)</m> and get a remainder of degree 2 or less.  
               </p>
               
-              <p>
+              <p permid="lAk">
                 This looks very much like the definition of <m>E</m>, and in fact it suggests that <m>E \cong \Q[x]/\langle p(x) \rangle</m>.  This is correct, as we could prove using the fundamental homomorphism theorem.  To do that, we would need to identify a surjective homomorphism from <m>\Q[x]</m> onto <m>E</m> for which <m>p(x)</m> was the kernel. 
               </p>
             </solution>
         </exercise>
         
-        <exercise workspace="1%">
+        <exercise workspace="1%" permid="fbe">
           <statement>
-            <p>
+            <p permid="Hio">
               Wait: if we want to show that <m>E</m> is a field, and <m>E</m> is basically the same as <m>\Q[x]/\langle p(x) \rangle</m>, then we could just show <m>\Q[x]/\langle p(x) \rangle</m> is a field.  What would this mean?  What do we need to verify?
             </p>
           </statement>
-          <solution>
-            <p>
+          <solution permid="InH">
+            <p permid="RHt">
               We need to verify that for any coset <m>a+bx + cx^2 + \langle p(x) \rangle</m>, there is a coset <m>a' + b'x + c'x^2 + \langle p(x) \rangle</m> such that the product of the two cosets is the multiplicative identity coset, namely <m>1 + \langle p(x) \rangle</m>.  We will see how to do this next.
             </p>
           </solution>

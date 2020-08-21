@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_grp-struct-products">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" margin="1in" bottom="1.25cm" xml:id="ws_grp-struct-products" permid="OUe">
     <title>Activity: Decomposing with Direct Products</title>
 
-    <introduction>
-        <p>
+    <introduction permid="BVS">
+        <p permid="Ztj">
           Recall that last semester we saw that <m>\Z_6 \cong \Z_2\times \Z_3</m>.  When does this sort of thing happen?
         </p>
     </introduction>
 
-    <exercise workspace="30%">
+    <exercise workspace="30%" permid="idb">
       <statement>
-        <p>
+        <p permid="FAs">
           Given positive integers <m>m</m> and <m>n</m>, is it always true that <m>\Z_{mn} \cong \Z_m\times \Z_n</m>?   If this is not always true, for which <m>m</m> and <m>n</m> is it true?  Try some (many) examples. 
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="zbm">
+        <p permid="PZx">
           This is not always true.  For example, <m>\Z_4 \not\cong \Z_2 \times \Z_2</m>.  Similarly, <m>\Z_12 \not\cong \Z_2 \times \Z_6</m>.  In both of these cases, we know the groups are not isomorphic because <m>Z_{mn}</m> is cyclic, but the direct product is not.  What we need to have happen is that one of the elements of <m>\Z_m\times \Z_n</m> has order <m>mn</m>, and this will not happen if <m>m</m> and <m>n</m> have a common factor larger than 1. 
         </p>
         
-        <p>
+        <p permid="wgG">
           It is not obvious that this condition is also sufficient.  It is, as we will soon prove.
         </p>
       </solution>
     </exercise>
 
 
-    <exercise workspace="10%">
+    <exercise workspace="10%" permid="Okk">
         <statement>
-        <p> 
+        <p permid="lHB"> 
           Consider <m>\Z_{12}</m>.  Can we break this down as the direct product of two smaller <m>\Z_p</m> groups?  In other words is <m>\Z_{12} = \Z_m \times \Z_n</m> for some values of <m>m</m> and <m>n</m>?
         </p>
        </statement>
-       <solution>
-         <p>
+       <solution permid="fiv">
+         <p permid="cnP">
            In fact yes, <m>\Z_{12} \cong \Z_3 \times \Z_4</m>, since <m>(1,1)</m> has order 12 in the direct product.
          </p>
        </solution>
     </exercise>
     
-    <exercise workspace="25%">
+    <exercise workspace="25%" permid="urt">
       <statement>
-        <p>
+        <p permid="ROK">
           Suppose your absent minded professor claims the answer is <q>no</q> and you don't feel like arguing.   Maybe we can do something similar.  Find two subgroups of <m>\Z_{12}</m>, call them <m>H</m> and <m>K</m>, such that <m>H \cap K = \{0\}</m> and <m>HK = \Z_{12}</m>.  In general, <m>HK = \{h\ast k \st h \in H, k \in K\}</m>; here it would be better to write <m>H+K</m>.
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="LpE">
+        <p permid="IuY">
           Let <m>H = \langle 3 \rangle = \{0, 3, 6, 9\}</m> and <m>K = \langle 4 \rangle = \{0, 4, 8\}</m>.  The intersection <m>H \cap K = \{0\}</m> and every element in <m>\Z_{12}</m> can be written as the sum of something from <m>H</m> and something from <m>K</m>. 
         </p>
         
-        <p>
+        <p permid="oCh">
           Notice two things that will be relevant shortly: <m>\langle 3 \rangle \cong \Z_4</m> and <m>\langle 4 \rangle \cong \Z_3</m>, and those two groups were the parts of the direct product version of <m>\Z_{12}</m>.  Second, notice that the elements in <m>\langle 3 \rangle</m> all have order <m>2^k</m> for some <m>k</m>, and the elements of <m>\langle 4 \rangle</m> have order <m>3^k</m> for some <m>k</m> (here just <m>k = 0</m> and <m>k=1</m>).  How very curious.
         </p>
       </solution>
@@ -59,15 +59,15 @@
 
     <pagebreak/>
     
-    <p>
+    <p permid="WyD">
       For any <m>n</m>, the group <m>U(n)</m> is the set of all positive integers less than and relatively prime to <m>n</m>, under multiplication modulo <m>n</m>.  For example we saw that <m>U(8) = \{1,3, 5, 7\}</m>  is a group under multiplication modulo 8.
     </p>
     
-    <p>
+    <p permid="CFM">
       Consider the group <m>U(28)</m>.  The table below gives the twelve elements with their orders:
 
-      <sidebyside>
-  <tabular halign="center">
+      <sidebyside permid="VOJ">
+  <tabular halign="center" permid="iMV">
     <row bottom="medium">
       <cell right="medium">
         <m>g</m>
@@ -154,57 +154,57 @@
 </sidebyside>
     </p>
     
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="ayC">
       <statement>
-        <p>
+        <p permid="xVT">
           Let <m>G(n)</m> be the set of all elements of order <m>n^k</m> for some <m>k</m> (that is, elements with order some  <em>power</em> of <m>n</m>).  Find <m>G(2)</m> and <m>G(3)</m> for <m>U(28)</m>.
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="rwN">
+        <p permid="UJq">
           <m>G(2) = \{1, 13, 15, 27\}</m> and <m>G(3) = \{1, 9, 25\}</m>
         </p>
       </solution>
     </exercise>
 
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="GFL">
       <statement>
-        <p>
+        <p permid="edc">
           Are <m>G(2)</m> and <m>G(3)</m> subgroups of <m>U(28)</m>?  
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="XDW">
+        <p permid="AQz">
           Yes, both are subgroups.  In <m>G(2)</m>, every element is its own identity; in <m>G(3)</m>, we have <m>9\inv = 25</m>.  It is also not hard to check that the sets are closed under multiplication.
         </p>
       </solution>
     </exercise>
     
-    <exercise workspace="15%">
+    <exercise workspace="15%" permid="mMU">
       <statement>
-        <p>
+        <p permid="Kkl">
           Do <m>G(2)</m> and <m>G(3)</m> have the property that <m>G(2) \cap G(3) = \{1\}</m> and <m>U(28) = G(2)G(3)</m>?
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="DLf">
+        <p permid="gXI">
           Definitely <m>G(2) \cap G(3) = \{1\}</m>.  If you start multiplying out elements from <m>G(2)</m> and <m>G(3)</m>, then yes, you do get all of <m>U(28)</m>. 
         </p>
       </solution>
     </exercise>
     
-    <exercise workspace="1%">
+    <exercise workspace="1%" permid="SUd">
       <statement>
-        <p>
+        <p permid="qru">
           Is <m>U(28) \cong G(2) \times G(3)</m>?  Is <m>U(28) \cong \Z_m\times \Z_n</m> for some values of <m>m</m> and <m>n</m>?
         </p>
       </statement>
-      <solution>
-        <p>
+      <solution permid="jSo">
+        <p permid="NeR">
           Yes, <m>U_{28} \cong G(2) \times G(3)</m>, although it is not obvious how this isomorphism works.  It turns out that we can map <m>g = hk</m> to the pair <m>(h,k)</m>.  That is, the <q>obvious</q> isomorphism is correct.
         </p>
         
-        <p>
+        <p permid="tma">
           Now <m>U(28)</m> is NOT isomorphic to <m>\Z_4 \times \Z_3</m>, since that would make <m>\Z_4 \cong G(2)</m>, which is false.  In fact, <m>G(2) \cong \Z_2 \times \Z_2</m>, so we have that <m>U(28) \cong \Z_2 \times \Z_2 \times \Z_3</m>.  Since <m>\Z_2 \times \Z_3 \cong \Z_6</m>, we see that <m>U(28) \cong \Z_2 \times \Z_6</m>.
         </p>
       </solution>

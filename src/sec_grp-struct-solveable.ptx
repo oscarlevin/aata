@@ -6,7 +6,7 @@
 
   <xi:include href="worksheets/grp-struct-series.ptx" />
 
-   <subsection xml:id="subsec-solvable-groups">
+   <subsection xml:id="subsec-solvable-groups" permid="Flx">
      <title>Series of Subgroups</title>
      
    <p permid="mcd">
@@ -90,7 +90,7 @@
      </p>
    </example>
 
-    <p>
+    <p permid="lsG">
       A group is called <term>simple</term> provided it contains no non-trivial normal subgroups.  For series, we care whether the factor groups are simple or not.
     </p>
    <p permid="exE">

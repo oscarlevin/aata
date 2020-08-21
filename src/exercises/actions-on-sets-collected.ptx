@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-actions-on-sets">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homework-actions-on-sets" permid="cXj">
   
     <title>Collected Homework</title>
 
-    <exercise>
+    <exercise permid="nwo">
       <statement>
-        <p>
+        <p permid="wQa">
           Let <m>G</m> be the additive group of real numbers, <m>(\R,+)</m> and let <m>X = \R^2</m> be the real plane.  For each point <m>P \in X</m> and each <m>r \in G</m>, define <m>(r,P)</m> to be the point <m>P</m> lands on after rotating the plane counterclockwise about the origin through <m>r</m> radians.
-          <ol>
-            <li>
-              <p>
+          <ol permid="TDx">
+            <li permid="zKG">
+              <p permid="Ynq">
                 Prove that <m>X</m> is a <m>G</m>-set.  That is, prove that the procedure above defines an action of <m>G</m> on <m>X</m>.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="fRP">
+              <p permid="Euz">
                 Pick a point <m>P</m> other than the origin.  Describe geometrically the orbit containing <m>P</m>.  That is, find <m>\mathcal O_P</m>.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="LYY">
+              <p permid="kBI">
                 Find the stabilizer subgroup of <m>P</m> (i.e., the group <m>G_P</m>) for the point <m>P</m> you picked above.
               </p>
             </li>
-            <li>
-              <p>
+            <li permid="sgh">
+              <p permid="QIR">
                 Consider the group elements <m>g = \pi</m> and <m>h = 2\pi</m>.  Find the fixed points sets <m>X_g</m> and <m>X_h</m>.  Are there any other fixed point sets for other choices of group elements?  Briefly explain. 
               </p>
             </li>

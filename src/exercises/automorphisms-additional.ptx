@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homomorph-exercises-automorphisms">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="homomorph-exercises-automorphisms" permid="Jes">
 
 <title>Additional Exercises: Automorphisms</title>
 
-<exercise permid="ZQy" xml:id="homomorph-exercise-aut-G">
+<exercise xml:id="homomorph-exercise-aut-G" permid="ZQy">
   <statement>
     <p permid="ZnV">
           Let <m>\aut(G)</m> be the set of all automorphisms of <m>G</m>;
@@ -15,7 +15,7 @@
   </statement>
 </exercise>
 
-<exercise permid="FXH" xml:id="homomorph-exercise-inner-aut">
+<exercise xml:id="homomorph-exercise-inner-aut" permid="FXH">
   <statement>
     <p permid="Fve">
           An <term>inner automorphism</term>
@@ -36,7 +36,7 @@
   </statement>
 </exercise>
 
-<exercise permid="meQ" xml:id="homomorph-exercise-Inn-G">
+<exercise xml:id="homomorph-exercise-Inn-G" permid="meQ">
   <statement>
     <p permid="lCn">
           The set of all inner automorphisms is denoted by <m>\inn(G)</m>.
@@ -45,7 +45,7 @@
   </statement>
 </exercise>
 
-<exercise permid="SlZ" xml:id="homomorph-exercise-auto-not-inner">
+<exercise xml:id="homomorph-exercise-auto-not-inner" permid="SlZ">
   <statement>
     <p permid="RJw">
           Find an automorphism of a group <m>G</m> that is not an inner automorphism.
@@ -53,7 +53,7 @@
   </statement>
 </exercise>
 
-<exercise permid="yti" xml:id="homomorph-exercise-ZG-inner">
+<exercise xml:id="homomorph-exercise-ZG-inner" permid="yti">
   <statement>
     <p permid="xQF">
           Let <m>G</m> be a group and <m>i_g</m> be an inner automorphism of <m>G</m>,
@@ -74,7 +74,7 @@
   </statement>
 </exercise>
 
-<exercise permid="eAr" xml:id="homomorph-exercise-aut-S3">
+<exercise xml:id="homomorph-exercise-aut-S3" permid="eAr">
   <statement>
     <p permid="dXO">
           Compute <m>\aut(S_3)</m> and <m>\inn(S_3)</m>.
@@ -83,7 +83,7 @@
   </statement>
 </exercise>
 
-<exercise permid="KHA" xml:id="homomorph-exercise-aut-Z">
+<exercise xml:id="homomorph-exercise-aut-Z" permid="KHA">
   <statement>
     <p permid="KeX">
           Find all of the homomorphisms <m>\phi : {\mathbb Z} \rightarrow {\mathbb Z}</m>.
@@ -92,7 +92,7 @@
   </statement>
 </exercise>
 
-<exercise permid="qOJ" xml:id="homomorph-exercise-aut-Z8">
+<exercise xml:id="homomorph-exercise-aut-Z8" permid="qOJ">
   <statement>
     <p permid="qmg">
           Find all of the automorphisms of <m>{\mathbb Z}_8</m>.
@@ -101,7 +101,7 @@
   </statement>
 </exercise>
 
-<exercise permid="WVS" xml:id="homomorph-exercise-a-to-ka">
+<exercise xml:id="homomorph-exercise-a-to-ka" permid="WVS">
   <statement>
     <p permid="Wtp">
           For <m>k \in {\mathbb Z}_n</m>,
@@ -111,7 +111,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Ddb" xml:id="homomorph-exercise-phi-k-Zn">
+<exercise xml:id="homomorph-exercise-phi-k-Zn" permid="Ddb">
   <statement>
     <p permid="CAy">
           Prove that <m>\phi_k</m> is an isomorphism if and only if <m>k</m> is a generator of <m>{\mathbb Z}_n</m>.
@@ -119,7 +119,7 @@
   </statement>
 </exercise>
 
-<exercise permid="jkk" xml:id="homomorph-exercise-aut-Zn">
+<exercise xml:id="homomorph-exercise-aut-Zn" permid="jkk">
   <statement>
     <p permid="iHH">
           Show that every automorphism of
@@ -129,7 +129,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Prt" xml:id="homomorph-exercise-Un-aut-Zn">
+<exercise xml:id="homomorph-exercise-Un-aut-Zn" permid="Prt">
   <statement>
     <p permid="OOQ">
           Prove that <m>\psi : U(n) \rightarrow \aut({\mathbb Z}_n)</m> is an isomorphism,

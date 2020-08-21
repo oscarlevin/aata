@@ -793,7 +793,7 @@
         </statement>
       </exercise>
     </reading-questions>
-    <exercises xml:id="practice-gp-def-ex">
+    <exercises xml:id="practice-gp-def-ex" permid="kAV">
       <title>Practice Problems</title>
 
       <exercise number="1" permid="lZZ">
@@ -933,8 +933,8 @@
           Why or why not?
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="RrY">
+          <p permid="KLO">
             Both groups have order 4, but they are not the same.
           </p>
         </hint>
@@ -971,56 +971,56 @@
         </hint>
       </exercise>
 
-      <exercise number="x1">
+      <exercise number="x1" permid="hGp">
         <statement>
-          <p>
+          <p permid="YPt">
             Consider <m>(\Z,-)</m>, the integers with operation subtraction.  Explain why this is <em>not</em> a group.  Say specifically what goes wrong.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="xzh">
+          <p permid="qSX">
             It doesn't matter that subtraction is not commutative.  The other three properties do not hold though.  Can you say why?
           </p>
         </hint>
       </exercise>
 
-      <exercise number="x2">
+      <exercise number="x2" permid="NNy">
         <statement>
-          <p>
+          <p permid="EWC">
             Consider the operation that gives the distance between two numbers on the number line.  In other words, define <m>\ast</m> on <m>\R</m> by <m>x \ast y = |x-y|</m>.  Analyze this operation.  That is, decide whether the operation is associative, commutative, has an identity, and has inverses.  Is <m>(\R, \ast)</m> a group?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="dGq">
+          <p permid="LRh">
             Yes, the operation is commutative, since <m>|x-y| = |y-x|</m>.  The operation is not associative though: <m>(2\ast 1)\ast 3 = ||2-1| - 3| = |1-3| = 2</m> but <m>2 \ast (1 \ast 3) = |2- |1-3|| = |2-2| = 0</m>.  This is enough to prove that <m>(\R, \ast)</m> is not a group.
           </p>
 
-          <p>
+          <p permid="rYq">
             Even more, there is not an identity element: while 0 would be the natural choice here, and indeed <m>a \ast 0 = |a-0| = a</m> is true for all positive <m>a</m>, it is not true for negative <m>a</m>.  Since there is no identity, there can be no inverses.
           </p>
         </solution>
       </exercise>
 
-      <exercise number="x3">
+      <exercise number="x3" permid="tUH">
         <statement>
-          <p>
+          <p permid="ldL">
             Consider the set <m>S = \{A,B,C\}</m>.  It turns out that there are <m>19683</m> different operations on this set.  Below, you are asked to describe five of them, each with some given properties.  To do this, simply write out the <m>3\times 3</m> operation table.  Then say how you know that the operation you gave has the perperties requested.
-            <ol>
-              <li>
-                <p>
+            <ol permid="ZGr">
+              <li permid="qEC">
+                <p permid="jJX">
                   <m>\ast</m> is not commutative.
                 </p>
               </li>
-              <li>
+              <li permid="WLL">
                 <m>\ast</m> is not associative, but is commutative.
               </li>
-              <li>
+              <li permid="CSU">
                 <m>S</m> has an identity with respect to <m>\ast</m>, but the identity is not <m>A</m>.
               </li>
-              <li>
+              <li permid="jad">
                 <m>S</m> has an identity, but not every element has an inverse under <m>\ast</m>.
               </li>
-              <li>
+              <li permid="Phm">
                 <m>\ast</m> is commutative, <m>S</m> has an identity, and every element has an inverse under <m>\ast</m>.
               </li>
             </ol>
@@ -1028,43 +1028,43 @@
         </statement>
       </exercise>
 
-      <exercise number="x4">
+      <exercise number="x4" permid="abQ">
         <statement>
-          <p>
+          <p permid="RkU">
             Prove that every group of order 3 is abelian.  See part (e) of the previous problem.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="JNz">
+          <p permid="Xag">
             You might as well use <m>A</m> for the identity.  This takes care of one row and one column.  There are only 4 spots left in the Cayley table.  
           </p>
         </hint>
       </exercise>
 
-      <exercise number="x5">
+      <exercise number="x5" permid="GiZ">
         <statement>
-          <p>
+          <p permid="xsd">
             Define <m>\ast</m> on the real numbers <m>\R</m> by <m>x\ast y = x+y-5</m>.  Is <m>(\R, \ast)</m> a group?  Is it an abelian group?
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="pUI">
+          <p permid="Yfz">
             We will see that it is indeed an abelian group.  First, check that <m>\ast</m> is associative:
-            <me>
+            <me permid="IBc">
               (x\ast y)\ast z = (x+y-5)\ast z = (x+y-5)+z - 5 = x+y+z - 10
             </me>.
-            <me>
+            <me permid="oIl">
               x\ast (y \ast z) = x \ast (y+z-5) = x+(y+z-5)-5 = x+y+z - 10
             </me>.
             So <m>(x\ast y)\ast z = x \ast (y \ast z)</m> and the operation is associative.
           </p>
-          <p>
+          <p permid="EmI">
             What about the identity?  We need to find a real number <m>e</m> such that <m>x \ast e = x</m>.  But <m>x \ast e = x+e-5</m>, and for this to be <m>x</m> it must be that <m>e = 5</m>.  We must also have <m>e \ast x = x</m> and indeed <m>5 \ast x = 5+x-5 = x</m>.  Thus there is an identity element, <m>e = 5</m>.
           </p>
-          <p>
+          <p permid="ktR">
             For inverses, we much verify that for each <m>x \in \R</m> there is some other element <m>x' \in \R</m> such that <m>x \ast x' = x' \ast x = 5</m> (since <m>5</m> is the identity).  How can <m>x \ast x' = 5</m>?  Well <m>x \ast x' = x + x' - 5 = 5</m> means that <m>x' = 10 - x</m>.  And notice that <m>(10-x) \ast x = 10 - x + x -5 = 5</m> as needed.
           </p>
-          <p>
+          <p permid="QBa">
             Thus <m>(\R, \ast)</m> does form a group.  It is also easy to check that <m>\ast</m> is commutative, so this is in fact an <em>abelian</em> group.
           </p>
         </solution>
@@ -1072,7 +1072,7 @@
     </exercises>
 
 
-    <exercises xml:id="collected-gp-def-ex">
+    <exercises xml:id="collected-gp-def-ex" permid="QIe">
       <title>Collected Homework</title>
 
       <exercise number="7" permid="WRb">
@@ -1082,16 +1082,16 @@
           Prove that <m>(S, \ast)</m> is an abelian group.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="WbR">
+          <p permid="Dhp">
           Careful here for inverses.  They are not the usual inverses.  Say what they are and prove you are correct.
           </p>
         </hint>
       </exercise>
 
-      <exercise number="Bonus">
+      <exercise number="Bonus" permid="mqi">
         <statement>
-          <p>
+          <p permid="dzm">
           We know that a set <m>S</m> might or might not have an identity element with respect to the operation <m>\ast</m>.  Is it possible for a set to have more than one identity element?  Explain what this would mean in terms of the Cayley (operation) table, and why this answers the question.
           </p>
         </statement>
@@ -1347,40 +1347,40 @@
         </exercise>
       </reading-questions>
 
-    <exercises xml:id="practice-gp-prop">
+    <exercises xml:id="practice-gp-prop" permid="wPn">
       <title>Practice Problems</title>
-      <exercise>
+      <exercise permid="Sxr">
         <statement>
-          <p>
+          <p permid="JGv">
       Consider a group <m>G</m> which contains elements <m>a</m>,            <m>b</m>, and <m>c</m>, with identity <m>e</m> (among others, possibly).  Solve each of the equations below for <m>x</m>.
-            <ol>
-              <li>
+            <ol permid="FNA">
+              <li permid="vov">
                 <m>axb=c</m>
               </li>
-              <li>
+              <li permid="bvE">
                 <m>x^2a = bxc\inv</m> given <m>acx=xac</m>.
               </li>
-              <li>
+              <li permid="HCN">
                 <m>x^2 = a^2</m> given <m>x^5 = e</m>.
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="Cja">
+          <p permid="wIj">
+            <ol permid="BdH">
+              <li permid="nJW">
+                <p permid="PRg">
                   <m>x =  a\inv c b\inv</m>
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="TRf">
+                <p permid="vYp">
                   <m>x = bc\inv a\inv</m>
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="zYo">
+                <p permid="cfy">
                   <m>x = a^6</m>.
                 </p>
               </li>
@@ -1389,54 +1389,54 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="yEA">
         <statement>
-          <p>
+          <p permid="pNE">
         For each of the following rules, either prove that it is true in every group <m>G</m> or give a counterexample.
-            <ol>
-              <li>
-                <p>
+            <ol permid="lUJ">
+              <li permid="gfx">
+                <p permid="ImH">
               If <m>x^2 = e</m>, then <m>x=e</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="MmG">
+                <p permid="otQ">
                   <m>(ab)^2 = a^2b^2</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="stP">
+                <p permid="UAZ">
               If <m>x^2 = x</m> then <m>x = e</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="YAY">
+                <p permid="AIi">
               For every <m>x \in G</m>, there is some <m>y\in G</m> such taht <m>x = y^2</m> (in other words, every <m>x</m> has a square root).
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="iqj">
+          <p permid="cPs">
+            <ol permid="hkQ">
+              <li permid="EIh">
+                <p permid="gPr">
               False.  Look at <m>D_4</m> for a counterexample. 
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="kPq">
+                <p permid="MWA">
               False.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="QWz">
+                <p permid="tdJ">
               True.  If <m>x^2 = x</m>, then <m>x^2x\inv = x x\inv</m> which simplifies to <m>x = e</m>
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="xdI">
+                <p permid="ZkS">
               False.
                 </p>
               </li>
@@ -1445,62 +1445,62 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="eLJ">
         <statement>
-          <p>
+          <p permid="VUN">
         If <m>a,b \in G</m> and <m>ab = ba</m>, we say that <m>a</m> and <m>b</m>
             <term>commute</term>.  Assuming that <m>a</m> and <m>b</m> commute, prove the following.
-            <ol>
-              <li>
-                <p>
+            <ol permid="SbS">
+              <li permid="dkR">
+                <p permid="Fsb">
                   <m>a\inv</m> and <m>b\inv</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="Jsa">
+                <p permid="lzk">
                   <m>a</m> and <m>b\inv</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="pzj">
+                <p permid="RGt">
                   <m>a</m> commutes with <m>ab</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="VGs">
+                <p permid="xNC">
                   <m>a^2</m> commutes with <m>b^2</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="BNB">
+                <p permid="dUL">
                   <m>xax\inv</m> commutes with <m>xbx\inv</m> for any <m>x \in G</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="Oxs">
+          <p permid="IWB">
+            <ol permid="NrZ">
+              <li permid="hUK">
+                <p permid="KbU">
               We know that <m>a\inv b\inv = (ba)\inv</m>.  But because <m>ab = ba</m>, we get that <m>(ba)\inv = (ab)\inv = b\inv a\inv</m>.  Thus <m>a\inv b\inv = b\inv a\inv</m>, which says that <m>a\inv</m> and <m>b\inv</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="ObT">
+                <p permid="qjd">
               Note that <m>a = abb\inv</m>.  Since <m>a</m> and <m>b</m> commute, we get <m>a = bab\inv</m>.  Multiply by <m>b\inv</m> on the left: <m>b\inv a = a b\inv</m>, which is to say that <m>a</m> and <m>b\inv</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="ujc">
+                <p permid="Wqm">
               We want to show that <m>a(ab) = (ab)a</m>.  Well, <m>a(ab) = a(ba)</m> since <m>a</m> and <m>b</m> commute, and <m>a(ba) = (ab)a</m> since the group is associative.  Therefore <m>a</m> and <m>ab</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="aql">
+                <p permid="Cxv">
               Suppose <m>ab = ba</m>.  Now consider <m>a^2 b^2 = aabb</m>.  Since <m>a</m> and <m>b</m> commute, we have
-                  <md>
+                  <md permid="hdM">
                     <mrow>a^2b^2 \amp = aabb </mrow>
                     <mrow>\amp = abab </mrow>
                     <mrow>\amp = baab </mrow>
@@ -1510,12 +1510,12 @@
                 Thus <m>a^2</m> and <m>b^2</m> commute.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="Gxu">
+                <p permid="iEE">
               We want to show that <m>(xax\inv)(xbx\inv) = (xbx\inv)(xax\inv)</m>.  Well the left hand side can be simplified:
-                  <me>(xax\inv)(xbx\inv) = xabx\inv</me>
+                  <me permid="UPu">(xax\inv)(xbx\inv) = xabx\inv</me>
               and the right hand side can be simplified:
-                  <me>(xbx\inv)(xax\inv) = xbax\inv</me>
+                  <me permid="AWD">(xbx\inv)(xax\inv) = xbax\inv</me>
               But since <m>a</m> and <m>b</m> commute, <m>xabx\inv = xbax\inv</m> so <m>xax\inv</m> and <m>xbx\inv</m> commute.
                 </p>
               </li>
@@ -1524,34 +1524,34 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="KSS">
         <statement>
-          <p>
+          <p permid="CbW">
         Let <m>G</m> be a group.  Let <m>a, b, c</m> denote elements of <m>G</m>, and let <m>e</m> be the identity in <m>G</m>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="yjb">
+              <li permid="mED">
+                <p permid="OLN">
               Prove that if <m>ab = e</m>, then <m>ba = e</m>.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="SLM">
+                <p permid="uSW">
               Prove that if <m>abc = e</m>, then <m>cab = e</m> and <m>bca = e</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                <p>
+        <solution permid="uEB">
+          <p permid="pdK">
+            <ol permid="tzi">
+              <li permid="ySV">
+                <p permid="baf">
               Assume <m>ab = e</m>.  Then <m>a = b\inv</m>, so <m>ba = bb\inv</m>, or <m>ba = e</m>, as desired.
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="fae">
+                <p permid="Hho">
               Note that since <m>(ab)c = e</m>, we have that <m>ab = c\inv</m>.  That means that <m>c(ab) = e</m> as well.  Repeat for <m>a(bc) = e</m> to get the other equation.
                 </p>
               </li>
@@ -1560,53 +1560,53 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="rab">
         <statement>
-          <p>
+          <p permid="ijf">
         Prove that if <m>xay = a\inv</m>, then <m>yax = a\inv</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="aLK">
+          <p permid="VkT">
         Suppose <m>xay = a\inv</m>.  Then <m>xaya = e</m>.  By the previous problem this means that <m>ayax = e</m> and also that <m>yaxa = e</m>.  But then multiply by <m>a\inv</m> on the right: <m>yax = a\inv</m>.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="Xhk">
         <statement>
-          <p>
+          <p permid="Oqo">
         Let <m>a</m>,            <m>b</m>, and <m>c</m> each be equal to its own inverse.  Prove that if <m>ab = c</m>, then <m>bc = a</m> and <m>ca = b</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="GST">
+          <p permid="Bsc">
         Suppose <m>ab = c</m>.  Then <m>abc = e</m> (since <m>c\inv = c</m>), so <m>bc = a</m> (multiply by <m>a</m> on the left of both sides). Also, <m>cab = e</m>, so <m>ca = b</m> (multiplying by <m>b</m> on the right of both sides).
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="Dot">
         <statement>
-          <p>
+          <p permid="uxx">
         Prove that if <m>abc</m> is its own inverse, then <m>bca</m> is its own inverse, and <m>cab</m> is its own inverse.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="nac">
+          <p permid="hzl">
         We are given that <m>abcabc = e</m>  We get that <m>bcabca = e</m> and <m>cabcab = e</m>, which is basically what we want to show (just group them appropriately).
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="jvC">
         <statement>
-          <p>
+          <p permid="aEG">
         Let <m>a</m> and <m>b</m> each be equal to its own inverse.  Prove that <m>ba</m> is the inverse of <m>ab</m>.
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="Thl">
+          <p permid="NGu">
         We want to show that <m>(ab)(ba) = e</m>.  But <m>bb = e</m> and <m>aa = e</m>, so <m>abba = aa = e</m>, as required.
           </p>
         </solution>
@@ -1616,38 +1616,38 @@
     </exercises>
 
 
-    <exercises xml:id="collected-gp-prop">
+    <exercises xml:id="collected-gp-prop" permid="cWw">
       <title>Collected Homework</title>
 
-      <exercise>
+      <exercise permid="PCL">
         <statement>
-          <p>
+          <p permid="GLP">
           Let <m>a</m> be an element of a group <m>G</m> with identity <m>e</m>.  Prove that <m>a = a\inv</m> if and only if <m>a^2 = e</m>.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="zou">
+          <p permid="joy">
           You need to prove two directions here: if <m>a = a\inv</m> then <m>a^2 = e</m> and if <m>a^2 = e</m> then <m>a = a\inv</m>.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="vJU">
         <statement>
-          <p>
+          <p permid="mSY">
           Let <m>G</m> be a group and suppose that <m>(ab)^2 = a^2 b^2</m> for all <m>a, b \in G</m>.  Prove that <m>G</m> is abelian.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="fvD">
+          <p permid="PvH">
           You are trying to prove <m>xy = yx</m> for all <m>x, y \in G</m>.  Don't assume this!  It should be the last line of your proof.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="bRd">
         <statement>
-          <p>
+          <p permid="Tah">
           True or false: if <m>x^2 = a^2</m> then <m>x = a</m>.  Prove your answer.
           </p>
         </statement>
@@ -1967,91 +1967,91 @@
       </exercise>
     </reading-questions>
 
-    <exercises xml:id="practice-gp-subgp">
+    <exercises xml:id="practice-gp-subgp" permid="JdF">
       <title>Practice Problems</title>
 
-      <exercise>
+      <exercise permid="HYm">
         <statement>
-          <p>
+          <p permid="zhq">
           How many subgroups are there of <m>D_4</m>?  Find them all.  What are their orders?
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="LCM">
+          <p permid="vCQ">
           You should find 10 subgroups.  Their orders will be <m>1</m>,            <m>2</m>,            <m>4</m> and <m>8</m>.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="ofv">
         <statement>
-          <p>
+          <p permid="foz">
           How many subgroups are there of <m>\Z_8</m>?  Find them all.  What are their orders?
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="rJV">
+          <p permid="bJZ">
           There will be 4 subgroups.  One each of orders 1, 2, 4, and 8.
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="UmE">
         <statement>
-          <p>
+          <p permid="LvI">
           List the subgroups of <m>\Z_9</m>.  Then list the subgroups of <m>\Z_3 \times \Z_3</m> (the group of all ordered pairs <m>(a,b)</m> where <m>a</m> and <m>b</m> are in <m>\Z_3</m>).  Note this shows that the two groups are not the same.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="XRe">
+          <p permid="HRi">
           There are 3 subgroups of <m>\Z_9</m>.  There are more of <m>\Z_3 \times \Z_3</m>. 
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="AtN">
         <statement>
-          <p>
+          <p permid="rCR">
           Let <m>G = (\R, +)</m>, the real numbers under addition.  Let <m>H = \{\log a \st a \in \Q,~ a \gt 0\}</m>.  Prove that <m>H</m> is a subgroup of <m>G</m>
           </p>
         </statement>
-        <solution>
-          <p>
+        <solution permid="DYn">
+          <p permid="tND">
           The identity of <m>G</m> is <m>0</m>, and <m>0 = \log 1</m>.  Since <m>1 \in \Q</m> and positive, we see that <m>0 \in H</m>. 
           </p>
-          <p>
+          <p permid="ZUM">
           Suppose <m>a, b \in H</m>.  This means that <m>a = \log x</m> and <m>b = \log y</m> for some <m>x,y \in \Q</m>, both positive.  What about <m>a+b</m>?  Well, <m>a+b = \log x + \log y = \log(xy)</m>.  We have <m>xy \in \Q</m> and positive, so <m>a+b \in H</m>.
           </p>
-          <p>
+          <p permid="GbV">
           Finall, for inverses, suppose <m>a \in H</m>.  Then <m>a = \log x</m> for positive <m>x \in \Q</m>.  The inverse will be <m>-a = -\log x = \log(x\inv)</m>.  But <m>x\inv \in \Q</m> and still positive, so <m>-a \in H</m>.
           </p>
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise permid="gAW">
         <statement>
-          <p>
+          <p permid="XKa">
           Consider the group <m>G = (\R \times \R, +)</m>, the set of all ordered pairs of real numbers, under addition (where we add each coordinate independently: <m>(a,b) + (c,d) = (a+c, b+d)</m>).  Define the set <m>H = \{(x,y) \st y = 2x\}</m>.  Is <m>H</m> a subgroup of <m>G</m>?  Prove your answer.
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="kfw">
+          <p permid="nYr">
           Yes, <m>H</m> is a subgroup of <m>G</m>.  For closure under addition, consider <m>(x_1, y_1) \in H</m> and <m>(x_2, y_2) \in H</m>.  This means that <m>y_1 = 2x_1</m> and <m>y_2 = 2x_2</m>.  What about <m>(x_1+x_2, y_1+y_2)</m>?  Well, <m>y_1+y_2 = 2x_1 + 2x_2 = 2(x_1+x_2)</m>, so indeed, <m>(x_1+x_2, y_1+y_2) \in H</m>.  
           </p>
-          <p>
+          <p permid="UfA">
           For inverse, we need to check that <m>(-x, -y) \in H</m> given that <m>(x,y) \in H</m>.  Do it!
           </p>
         </hint>
       </exercise>
 
-      <exercise>
+      <exercise permid="MIf">
         <statement>
-          <p>
+          <p permid="DRj">
           Again consider <m>G = (\R\times \R, +)</m>, but this time define <m>H = \{(x,y) \st x^2 + y^2 > 0\}</m>.  Is <m>H</m> a subgroup of <m>G</m>?  Prove your answer.
           </p>
         </statement>
-        <answer>
-          <p>
+        <answer permid="QmF">
+          <p permid="mje">
           No.  <m>H</m> does not contain the identity (and is not closed under inverses).  You should show this!
           </p>
         </answer>
@@ -2060,37 +2060,37 @@
     </exercises>
 
 
-    <exercises xml:id="collected-gp-subgp">
+    <exercises xml:id="collected-gp-subgp" permid="pkO">
       <title>Collected Homework</title>
 
-      <exercise number="C1">
+      <exercise number="C1" permid="sPo">
         <statement>
-          <p>
+          <p permid="jYs">
           Consider the group <m>(\Q^*,\cdot)</m>, the non-zero rational numbers under multiplication.  Let <m>H = \{2^k \st k \in \Z\}</m>.  Prove that <m>H</m> is a subgroup of <m>G</m>.
           </p>
         </statement>
       </exercise>
 
-      <exercise number="C2">
+      <exercise number="C2" permid="YWx">
         <statement>
-          <p>
+          <p permid="QfB">
           Let <m>G</m> be a group and let <m>H = \{x \in G \st x^2 = e\}</m>.
-            <ol>
-              <li>
-                <p>
+            <ol permid="eqk">
+              <li permid="Lhn">
+                <p permid="nox">
                 If <m>G = D_4</m>, what is <m>H</m>?  Is <m>H</m> a subgroup of <m>G</m>?
                 </p>
               </li>
-              <li>
-                <p>
+              <li permid="row">
+                <p permid="TvG">
                 Prove that if <m>G</m> is abelian, then <m>H</m> is a subgroup of <m>G</m>.
                 </p>
               </li>
             </ol>
           </p>
         </statement>
-        <hint>
-          <p>
+        <hint permid="wtO">
+          <p permid="AmJ">
           Warning: this is not the same as <m>G^2 = \{g^2 \st g \in G\}</m> that we did in class.
           </p>
         </hint>
@@ -3547,10 +3547,10 @@
 </exercise>
 </reading-questions>
 
-<exercises xml:id="practice-gp-perm">
+<exercises xml:id="practice-gp-perm" permid="VrX">
 <title>Practice Problems</title>
 
-<exercise number="1" permid="Jev" xml:id="permute-exercise-cycle-notation">
+<exercise number="1" xml:id="permute-exercise-cycle-notation" permid="Jev">
 <statement>
   <p permid="xAk">
           Write the following permutations in cycle notation.
@@ -3797,10 +3797,10 @@
   <p permid="ZsZ">
           (a) <m>\{ (13), (13)(24), (132), (134), (1324), (1342) \}</m> is not a subgroup.
   </p>
-  <p>
+  <p permid="gtS">
       (b) <m>\{(1), (134), (143), (13), (14), (34)\}</m> is a subgroup.
   </p>
-  <p>
+  <p permid="MBb">
       (c) <m>\{(13), (134)\}</m> is not a subgroup.
   </p>
 
@@ -3814,8 +3814,8 @@
           What is the order of each subgroup?
   </p>
 </statement>
-<hint>
-  <p>
+<hint permid="cAX">
+  <p permid="sIk">
       There are subgroups of orders 1, 2, 3, 4, and 12.  You have multiple choices for the subgroups of order 2 and 3.
   </p>
 </hint>
@@ -3827,8 +3827,8 @@
           Find all possible orders of elements in <m>S_7</m> and <m>A_7</m>.
   </p>
 </statement>
-<answer>
-  <p>
+<answer permid="IIg">
+  <p permid="Sqn">
       The possible orders in <m>S_7</m> are 1, 2, 3, 4, 5, 6, 7, 10, and 12.  In <m>A_7</m> you can only have orders 1, 2, 3, 5, 6, and 7.
   </p>
 </answer>
@@ -3853,8 +3853,8 @@
           Does <m>A_8</m> contain an element of order <m>26</m>?
   </p>
 </statement>
-<answer>
-  <p>
+<answer permid="oPp">
+  <p permid="yxw">
       No.  We will give a good reason why in chapter 6.
   </p>
 </answer>
@@ -3866,8 +3866,8 @@
           Find an element of largest order in <m>S_n</m> for <m>n = 3, \ldots, 10</m>.
   </p>
 </statement>
-<answer>
-  <p>
+<answer permid="UWy">
+  <p permid="eEF">
     <m>(123)</m>,    <m>(1234)</m>,    <m>(12)(345)</m>, 
     <m>(123456)</m>,    <m>(123)(4567)</m>,    <m>(123)(45678)</m>,    <m>(1234)(56789)</m>,    <m>(12)(345)(678910)</m>.
   </p>
@@ -3877,21 +3877,21 @@
 </exercises>
 
 
-<exercises xml:id="collected-gp-perm">
+<exercises xml:id="collected-gp-perm" permid="Bzg">
 <title>Collected Homework</title>
 
-<exercise number="C1">
+<exercise number="C1" permid="FdG">
 <statement>
-  <p>
+  <p permid="wmK">
           Consider the group <m>S_7</m> and its 5040 elements.  Let <m>\sigma = (142376)</m>. 
-    <ol>
-      <li>
-        <p>
+    <ol permid="Kxt">
+      <li permid="XvF">
+        <p permid="zCP">
                  Find <m>\langle \sigma \rangle</m>, the cyclic subgroup of <m>S_7</m> generated by <m>\sigma</m>.  (Just list out all its elements.)
         </p>
       </li>
-      <li>
-        <p>
+      <li permid="DCO">
+        <p permid="fJY">
                 What is <m>\sigma^{5040}</m>?  Justify your answer.
         </p>
       </li>
@@ -3900,9 +3900,9 @@
 </statement>
 </exercise>
 
-<exercise number="C2">
+<exercise number="C2" permid="lkP">
 <statement>
-  <p>
+  <p permid="ctT">
           In the previous problem you found a cyclic subgroup of order 6 in <m>S_7</m>.  What is the order of the largest cyclic subgroup in <m>S_7</m>?  Is <m>S_7</m> itself cyclic?  Explain. 
   </p>
 </statement>
@@ -3985,7 +3985,7 @@
 
         <figure xml:id="figure-upc-codes" permid="wdS">
           <caption>A <acro>UPC</acro> code</caption>
-          <image width="50%" source="images/UPCcode">
+          <image width="50%" source="images/UPCcode" permid="NkV">
             <description>The vertical lines of a UPC bar scan code for 0-05000-30042-6</description>
           </image>
         </figure>

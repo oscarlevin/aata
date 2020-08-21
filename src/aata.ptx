@@ -16,21 +16,21 @@
 <!--    to preserve numbering and cross-references!   -->
 <!--    So it is never advisable to edit this file    -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-  <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
+  <xi:include href="./bookinfo.ptx" /> <!-- ISBN, website, other metadata -->
   <book xml:id="aata-toc" permid="aZr">
     <title>Abstract Algebra</title>
     <subtitle>Theory and Applications, Remixed!</subtitle>
-    <xi:include href="./frontmatter.xml" />                 <!-- Title Page, Preface, etc. -->
+    <xi:include href="./frontmatter.ptx" />                 <!-- Title Page, Preface, etc. -->
     <part xml:id="part-groups">
       <title>Groups</title>
-      <xi:include href="./sets.xml" />                        <!-- Set Theory  -->
+      <xi:include href="./sets.ptx" />                        <!-- Set Theory  -->
       <!-- <xi:include href="./integers.xml" />                    Integers -->
-      <xi:include href="./groups.xml" />                      <!-- Groups -->
+      <xi:include href="./groups.ptx" />                      <!-- Groups -->
       <!-- <xi:include href="./cyclic.xml" />                      Cyclic Groups -->
       <!-- <xi:include href="./permute.xml" />                     Permutation Groups -->
-      <xi:include href="./cosets.xml" />                      <!-- Cosets and Lagrange's Theorem -->
+      <xi:include href="./cosets.ptx" />                      <!-- Cosets and Lagrange's Theorem -->
       <!-- <xi:include href="./normal.xml" />                      Normal Subgroups -->
-      <xi:include href="./isomorph.xml" />                    <!-- Isomorphisms -->
+      <xi:include href="./isomorph.ptx" />                    <!-- Isomorphisms -->
           <!-- TWJ, 2010/03/31                                       -->
           <!-- The chapter HOMOMORPHISMS AND FACTOR GROUPS is now    -->
           <!-- two chapters: (10) NORMAL SUBGROUPS AND FACTOR GROUPS -->
@@ -40,9 +40,9 @@
     </part>
     <part xml:id="part-rings-and-fields">
       <title>Rings and Fields</title>
-      <xi:include href="./rings.xml" />                       <!-- Introduction to Rings -->
-      <xi:include href="./poly.xml" />                        <!-- Polynomial Rings -->
-      <xi:include href="./domains.xml" />                     <!-- Integral Domains -->
+      <xi:include href="./rings.ptx" />                       <!-- Introduction to Rings -->
+      <xi:include href="./poly.ptx" />                        <!-- Polynomial Rings -->
+      <xi:include href="./domains.ptx" />                     <!-- Integral Domains -->
       <xi:include href="./ch_fields.ptx" />
       <xi:include href="./ch_galois.ptx" />
 
@@ -55,18 +55,18 @@
       <xi:include href="./ch_grp-struct.ptx" />
       <xi:include href="./ch_cryptography.ptx" />
       <xi:include href="./ch_actions.ptx" />
-      <xi:include href="./sylow.xml" />                       <!-- Sylow Theorems -->
+      <xi:include href="./sylow.ptx" />                       <!-- Sylow Theorems -->
 
       
     </part>
     <part xml:id="part-additional">
     <title>Additional Topics</title>
-      <xi:include href="./matrix.xml" />                      <!-- Groups of Symmetries -->
-    <xi:include href="./algcodes.xml" />                    <!-- Coding Theory -->
-    <xi:include href="./finite.xml" />                      <!-- Finite Fields -->
-    <xi:include href="./boolean.xml" />                     <!-- Lattices and Boolean Algebras -->
+      <xi:include href="./matrix.ptx" />                      <!-- Groups of Symmetries -->
+    <xi:include href="./algcodes.ptx" />                    <!-- Coding Theory -->
+    <xi:include href="./finite.ptx" />                      <!-- Finite Fields -->
+    <xi:include href="./boolean.ptx" />                     <!-- Lattices and Boolean Algebras -->
     </part>
-    <xi:include href="./backmatter.xml" />                  <!-- GFDL, Hints, Notation -->
+    <xi:include href="./backmatter.ptx" />                  <!-- GFDL, Hints, Notation -->
   </book>
 </pretext>
 

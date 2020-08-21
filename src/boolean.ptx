@@ -1300,7 +1300,7 @@
   <exercises xml:id="exercises-boolean" filenamebase="boolean" permid="uyA">
     <title>Exercises</title>
 
-    <exercise number="1" permid="bpD" xml:id="boolean-exercise-lattice-power-set">
+    <exercise number="1" xml:id="boolean-exercise-lattice-power-set" permid="bpD">
       <statement>
         <p permid="QCq">
           Draw the lattice diagram for the power set of
@@ -1310,7 +1310,7 @@
       </statement>
     </exercise>
 
-    <exercise number="2" permid="HwM" xml:id="boolean-exercise-lattice-divisors-of-30">
+    <exercise number="2" xml:id="boolean-exercise-lattice-divisors-of-30" permid="HwM">
       <statement>
         <p permid="wJz">
           Draw the diagram for the set of positive integers that are divisors of <m>30</m>.
@@ -1332,7 +1332,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="nDV" xml:id="boolean-exercise-lattice-subgroups-Z12">
+    <exercise number="3" xml:id="boolean-exercise-lattice-subgroups-Z12" permid="nDV">
       <statement>
         <p permid="cQI">
           Draw a diagram of the lattice of subgroups of <m>{\mathbb Z}_{12}</m>.
@@ -1340,7 +1340,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="TLe" xml:id="boolean-exercise-divisors-210">
+    <exercise number="4" xml:id="boolean-exercise-divisors-210" permid="TLe">
       <statement>
         <p permid="IXR">
           Let <m>B</m> be the set of positive integers that are divisors of <m>210</m>.
@@ -1349,14 +1349,14 @@
           Find a set <m>X</m> such that <m>B</m> is isomorphic to <m>{\mathcal P}(X)</m>.
         </p>
       </statement>
-      <hint>
-        <p>
+      <hint permid="IPk">
+        <p permid="oWt">
           What are the atoms of <m>B</m>?
         </p>
       </hint>
     </exercise>
 
-    <exercise number="5" permid="zSn" xml:id="boolean-exercise-Z-poset">
+    <exercise number="5" xml:id="boolean-exercise-Z-poset" permid="zSn">
       <statement>
         <p permid="pfa">
           Prove or disprove:
@@ -1370,7 +1370,7 @@
       </hint>
     </exercise>
 
-    <exercise number="6" permid="fZw" xml:id="boolean-exercise-boolean-switching-circuit">
+    <exercise number="6" xml:id="boolean-exercise-boolean-switching-circuit" permid="fZw">
       <statement>
         <p permid="Vmj">
           Draw the switching circuit for each of the following Boolean expressions.
@@ -1437,7 +1437,7 @@
 
     <!--Todo Complete this solution.-->
 
-    <exercise number="7" permid="MgF" xml:id="boolean-exercise-circuit-3-switches">
+    <exercise number="7" xml:id="boolean-exercise-circuit-3-switches" permid="MgF">
       <statement>
         <p permid="Bts">
           Draw a circuit that will be closed exactly when only one of three switches <m>a</m>,
@@ -1446,7 +1446,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="snO" xml:id="boolean-exercise-equivalent-circuits">
+    <exercise number="8" xml:id="boolean-exercise-equivalent-circuits" permid="snO">
       <statement>
         <p permid="hAB">
           Prove or disprove that the two circuits shown are equivalent.
@@ -1472,7 +1472,7 @@
 
     <!--Todo Complete this solution.-->
 
-    <exercise number="9" permid="YuX" xml:id="boolean-exercise-power-set-cardinality">
+    <exercise number="9" xml:id="boolean-exercise-power-set-cardinality" permid="YuX">
       <statement>
         <p permid="NHK">
           Let <m>X</m> be a finite set containing <m>n</m> elements.
@@ -1482,7 +1482,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="ECg" xml:id="boolean-exercise-circuit-to-boolean">
+    <exercise number="10" xml:id="boolean-exercise-circuit-to-boolean" permid="ECg">
       <statement>
         <p permid="tOT">
           For each of the following circuits,
@@ -1509,7 +1509,7 @@
       </hint>
     </exercise>
 
-    <exercise number="11" permid="kJp" xml:id="boolean-exercise-lattice-nonzero-integers">
+    <exercise number="11" xml:id="boolean-exercise-lattice-nonzero-integers" permid="kJp">
       <statement>
         <p permid="ZWc">
           Prove or disprove: The set of all nonzero integers is a lattice,
@@ -1518,7 +1518,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="QQy" xml:id="boolean-exercise-partial-order">
+    <exercise number="12" xml:id="boolean-exercise-partial-order" permid="QQy">
       <statement>
         <p permid="Gdl">
           Let <m>L</m> be a nonempty set with two binary operations <m>\vee</m> and <m>\wedge</m> satisfying the commutative,
@@ -1534,7 +1534,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="13" permid="wXH" xml:id="boolean-exercise-LUB-subgroups-H-K">
+    <exercise number="13" xml:id="boolean-exercise-LUB-subgroups-H-K" permid="wXH">
       <statement>
         <p permid="mku">
           Let <m>G</m> be a group and <m>X</m> be the set of subgroups of <m>G</m> ordered by set-theoretic inclusion.
@@ -1546,7 +1546,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="14" permid="deQ" xml:id="boolean-exercise-ideals-poset">
+    <exercise number="14" xml:id="boolean-exercise-ideals-poset" permid="deQ">
       <statement>
         <p permid="SrD">
           Let <m>R</m> be a ring and suppose that <m>X</m> is the set of ideals of <m>R</m>.
@@ -1569,7 +1569,7 @@
       </hint>
     </exercise>
 
-    <exercise number="15" permid="JlZ" xml:id="boolean-exercise-boolean-identities">
+    <exercise number="15" xml:id="boolean-exercise-boolean-identities" permid="JlZ">
       <statement>
         <p permid="yyM">
           Let <m>B</m> be a Boolean algebra.
@@ -1612,7 +1612,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="16" permid="pti" xml:id="boolean-exercise-sitching-functions-boolean-algebra">
+    <exercise number="16" xml:id="boolean-exercise-sitching-functions-boolean-algebra" permid="pti">
       <statement>
         <p permid="eFV">
           By drawing the appropriate diagrams,
@@ -1623,7 +1623,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="17" permid="VAr" xml:id="boolean-exercise-binary-ops-boolean-alg">
+    <exercise number="17" xml:id="boolean-exercise-binary-ops-boolean-alg" permid="VAr">
       <statement>
         <p permid="KNe">
           Let <m>B</m> be a Boolean algebra.
@@ -1639,7 +1639,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="18" permid="BHA" xml:id="boolean-exercise-totally-ordered">
+    <exercise number="18" xml:id="boolean-exercise-totally-ordered" permid="BHA">
       <statement>
         <p permid="qUn">
           Let <m>X</m> be a poset such that for every <m>a</m> and <m>b</m> in <m>X</m>,
@@ -1672,7 +1672,7 @@
 
     <!--Todo Finish solution.-->
 
-    <exercise number="19" permid="hOJ" xml:id="boolean-exercise-order-perserving">
+    <exercise number="19" xml:id="boolean-exercise-order-perserving" permid="hOJ">
       <statement>
         <p permid="Xbw">
           Let <m>X</m> and <m>Y</m> be posets.
@@ -1689,7 +1689,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="NVS" xml:id="boolean-exercise-identity-a-equal-b">
+    <exercise number="20" xml:id="boolean-exercise-identity-a-equal-b" permid="NVS">
       <statement>
         <p permid="DiF">
           Let <m>B</m> be a Boolean algebra.
@@ -1707,7 +1707,7 @@
       </hint>
     </exercise>
 
-    <exercise number="21" permid="udb" xml:id="boolean-exercise-identity-a-equal-0">
+    <exercise number="21" xml:id="boolean-exercise-identity-a-equal-0" permid="udb">
       <statement>
         <p permid="jpO">
           Let <m>B</m> be a Boolean algebra.
@@ -1717,7 +1717,7 @@
       </statement>
     </exercise>
 
-    <exercise number="22" permid="akk" xml:id="boolean-exercise-product">
+    <exercise number="22" xml:id="boolean-exercise-product" permid="akk">
       <statement>
         <p permid="PwX">
           Let <m>L</m> and <m>M</m> be lattices.
@@ -1733,7 +1733,7 @@
   <exercises xml:id="boolean-exercises-programming" permid="aFJ">
     <title>Programming Exercises</title>
 
-    <exercise permid="Grt" xml:id="boolean-programming-exercise-boolean-polys">
+    <exercise xml:id="boolean-programming-exercise-boolean-polys" permid="Grt">
       <statement>
         <p permid="vEg">
           A <term>Boolean</term>

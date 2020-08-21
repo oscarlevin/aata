@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises-cosets" permid="FqA">
- <exercise permid="iDd" xml:id="cosets-exercise-integers-finite-index">
+ <exercise xml:id="cosets-exercise-integers-finite-index" permid="iDd">
     <statement>
       <p permid="moU">
           Prove or disprove: Every subgroup of the integers has finite index.
@@ -14,7 +14,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="OKm" xml:id="cosets-exercise-integers-finite-order">
+  <exercise xml:id="cosets-exercise-integers-finite-order" permid="OKm">
     <statement>
       <p permid="Swd">
           Prove or disprove: Every subgroup of the integers has finite order.
@@ -28,7 +28,7 @@
   </exercise>
 
 
-  <exercise permid="aYE" xml:id="cosets-exercise-cosets-sl2">
+  <exercise xml:id="cosets-exercise-cosets-sl2" permid="aYE">
     <statement>
       <p permid="eKv">
           Describe the left cosets of
@@ -38,7 +38,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="HfN" xml:id="cosets-exercise-euler-n-15">
+  <exercise xml:id="cosets-exercise-euler-n-15" permid="HfN">
     <statement>
       <p permid="KRE">
           Verify Euler's Theorem for <m>n = 15</m> and <m>a = 4</m>.
@@ -51,7 +51,7 @@
     </hint>
   </exercise>
 
-  <exercise permid="nmW" xml:id="cosets-exercise-fermat-4n-plus-3">
+  <exercise xml:id="cosets-exercise-fermat-4n-plus-3" permid="nmW">
     <statement>
       <p permid="qYN">
           Use Fermat's Little Theorem to show that if <m>p = 4n + 3</m> is prime,
@@ -60,7 +60,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="Tuf" xml:id="cosets-exercise-Z-infinite-in-Q">
+  <exercise xml:id="cosets-exercise-Z-infinite-in-Q" permid="Tuf">
     <statement>
       <p permid="XfW">
           Show that the integers have infinite index in the additive group of rational numbers.
@@ -68,7 +68,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="zBo" xml:id="cosets-exercise-R-in-C">
+  <exercise xml:id="cosets-exercise-R-in-C" permid="zBo">
     <statement>
       <p permid="Dnf">
           Show that the additive group of real numbers has infinite index in the additive group of the complex numbers.
@@ -76,7 +76,7 @@
     </statement>
   </exercise>
 
-  <exercise permid="fIx" xml:id="cosets-exercise-equivalent-cosets">
+  <exercise xml:id="cosets-exercise-equivalent-cosets" permid="fIx">
     <statement>
       <p permid="juo">
           Let <m>H</m> be a subgroup of a group <m>G</m> and suppose that <m>g_1, g_2 \in G</m>.
@@ -119,7 +119,7 @@
 
 
 
-  <exercise permid="rWP" xml:id="cosets-exercise-counterexample-proof">
+  <exercise xml:id="cosets-exercise-counterexample-proof" permid="rWP">
     <statement>
       <p permid="vIG">
           What fails in the proof of <xref ref="theorem-cosets-theorem-3"/>
@@ -129,7 +129,7 @@
   </statement>
 </exercise>
 
-<exercise permid="YdY" xml:id="cosets-exercise-order-g-divides-n">
+<exercise xml:id="cosets-exercise-order-g-divides-n" permid="YdY">
   <statement>
     <p permid="bPP">
           Suppose that <m>g^n = e</m>.
@@ -138,7 +138,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Elh" xml:id="cosets-exercise-cycle-structure">
+<exercise xml:id="cosets-exercise-cycle-structure" permid="Elh">
   <statement>
     <p permid="HWY">
           The <term>cycle structure</term>
@@ -157,7 +157,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ksq" xml:id="cosets-exercise-elements-of-order-2">
+<exercise xml:id="cosets-exercise-elements-of-order-2" permid="ksq">
   <statement>
     <p permid="oeh">
           If <m>|G| = 2n</m>,
@@ -169,7 +169,7 @@
 
 
 
-<exercise permid="cNR" xml:id="cosets-exercise-coset-intersection">
+<exercise xml:id="cosets-exercise-coset-intersection" permid="cNR">
   <statement>
     <p permid="gzI">
           Let <m>H</m> and <m>K</m> be subgroups of a group <m>G</m>.
@@ -183,7 +183,7 @@
   </hint>
 </exercise>
 
-<exercise permid="IVa" xml:id="cosets-exercise-double-cosets">
+<exercise xml:id="cosets-exercise-double-cosets" permid="IVa">
   <statement>
     <p permid="MGR">
           Let <m>H</m> and <m>K</m> be subgroups of a group <m>G</m>.
@@ -197,7 +197,7 @@
   </statement>
 </exercise>
 
-<exercise permid="pcj" xml:id="cosets-exercise-number-generators-cyclic-group">
+<exercise xml:id="cosets-exercise-number-generators-cyclic-group" permid="pcj">
   <statement>
     <p permid="sOa">
           Let <m>G</m> be a cyclic group of order <m>n</m>.
@@ -206,7 +206,7 @@
   </statement>
 </exercise>
 
-<exercise permid="Vjs" xml:id="cosets-exercise-euler-phi-formula">
+<exercise xml:id="cosets-exercise-euler-phi-formula" permid="Vjs">
   <statement>
     <p permid="YVj">
           Let <m>n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}</m>,
@@ -227,7 +227,7 @@
   </hint>
 </exercise>
 
-<exercise permid="BqB" xml:id="cosets-exercise-euler-phi-sum">
+<exercise xml:id="cosets-exercise-euler-phi-sum" permid="BqB">
   <statement>
     <p permid="Fcs">
           Show that
@@ -239,7 +239,7 @@
   </statement>
 </exercise>
 
-<exercise permid="wds" xml:id="normal-exercise-normal-subgroup">
+<exercise xml:id="normal-exercise-normal-subgroup" permid="wds">
   <statement>
     <p permid="grR">
           For each of the following groups <m>G</m>,
@@ -298,7 +298,7 @@
   </hint>
 </exercise>
 
-<exercise permid="ckB" xml:id="normal-exercise-D4">
+<exercise xml:id="normal-exercise-D4" permid="ckB">
   <statement>
     <p permid="Mza">
           Find all the subgroups of <m>D_4</m>.
@@ -308,7 +308,7 @@
   </statement>
 </exercise>
 
-<exercise permid="IrK" xml:id="normal-exercise-Q8">
+<exercise xml:id="normal-exercise-Q8" permid="IrK">
   <statement>
     <p permid="sGj">
           Find all the subgroups of the quaternion group, <m>Q_8</m>.
@@ -318,7 +318,7 @@
   </statement>
 </exercise>
 
-<exercise permid="oyT" xml:id="normal-exercise-triangular-matrices">
+<exercise xml:id="normal-exercise-triangular-matrices" permid="oyT">
   <statement>
     <p permid="YNs">
           Let <m>T</m> be the group of nonsingular upper triangular
@@ -376,7 +376,7 @@
   </statement>
 </exercise>
 
-<exercise permid="UGc" xml:id="normal-exercise-intersection">
+<exercise xml:id="normal-exercise-intersection" permid="UGc">
   <statement>
     <p permid="EUB">
           Show that the intersection of two normal subgroups is a normal subgroup.
@@ -384,7 +384,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ANl" xml:id="normal-exercise-abelian">
+<exercise xml:id="normal-exercise-abelian" permid="ANl">
   <statement>
     <p permid="lbK">
           If <m>G</m> is abelian, prove that <m>G/H</m> must also be abelian.
@@ -392,7 +392,7 @@
   </statement>
 </exercise>
 
-<exercise permid="gUu" xml:id="normal-exercise-H-GmodH">
+<exercise xml:id="normal-exercise-H-GmodH" permid="gUu">
   <statement>
     <p permid="RiT">
           Prove or disprove: If <m>H</m> is a normal subgroup of <m>G</m> such that <m>H</m> and <m>G/H</m> are abelian,
@@ -403,7 +403,7 @@
 
 <!--Todo Expand the solution to #8.-->
 
-<exercise permid="NbD" xml:id="normal-exercise-cyclic">
+<exercise xml:id="normal-exercise-cyclic" permid="NbD">
   <statement>
     <p permid="xqc">
           If <m>G</m> is cyclic, prove that <m>G/H</m> must also be cyclic.
@@ -417,7 +417,7 @@
   </hint>
 </exercise>
 
-<exercise permid="tiM" xml:id="normal-exercise-H-GmodH-cyclic">
+<exercise xml:id="normal-exercise-H-GmodH-cyclic" permid="tiM">
   <statement>
     <p permid="dxl">
           Prove or disprove: If <m>H</m> and <m>G/H</m> are cyclic,
@@ -426,7 +426,7 @@
   </statement>
 </exercise>
 
-<exercise permid="ZpV" xml:id="normal-exercise-index-2">
+<exercise xml:id="normal-exercise-index-2" permid="ZpV">
   <statement>
     <p permid="JEu">
           Let <m>H</m> be a subgroup of index <m>2</m> of a group <m>G</m>.
@@ -452,7 +452,7 @@
   </hint>
 </exercise>
 
-<exercise permid="lEn" xml:id="normal-exercise-centralizer">
+<exercise xml:id="normal-exercise-centralizer" permid="lEn">
   <statement>
     <p permid="VSM">
           Define the <term>centralizer</term>
