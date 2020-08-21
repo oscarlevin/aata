@@ -220,9 +220,7 @@
   <hint permid="CKp">
     <p permid="Isx">
           If <m>\gcd(m,n) = 1</m>,
-          then <m>\phi(mn) = \phi(m)\phi(n)</m> (      <xref ref="integers-exercise-gcd-products"/>
- in <xref ref="integers"/>
-).
+          then <m>\phi(mn) = \phi(m)\phi(n)</m> (      <xref ref="integers-exercise-gcd-products"/>).
     </p>
   </hint>
 </exercise>

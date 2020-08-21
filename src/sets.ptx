@@ -1723,7 +1723,7 @@
         <p permid="XuE">
           The integers modulo <m>n</m> are a very important example in the study of abstract algebra and will become quite useful in our investigation of various algebraic structures such as groups and rings.
           In our discussion of the integers modulo <m>n</m> we have actually assumed a result known as the division algorithm,
-          which will be stated and proved in <xref ref="integers"/>.
+          which will be stated and proved in <xref ref="section-division-algorithm"/>.
         </p>
       </example>
 

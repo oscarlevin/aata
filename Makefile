@@ -61,7 +61,7 @@ include Makefile.paths
 # MBUSR is where extension files get copied
 # so relative paths work properly
 MBXSL = $(MB)/xsl
-MBSCRIPT = $(MB)/script
+MBSCRIPT = $(MB)/pretext
 MBUSR = $(MB)/user
 MBDTD = $(MB)/schema/dtd
 
@@ -111,9 +111,9 @@ RSYNCDELETE=rsync --verbose  --progress --stats --compress --rsh=/usr/bin/ssh --
 diagrams:
 	install -d $(HTMLOUT)/images
 	-rm $(HTMLOUT)/images/*
-	$(MBSCRIPT)/mbx -v -c latex-image -f svg -d $(HTMLOUT)/images $(SRC)/aata.xml
-	$(MBSCRIPT)/mbx -v -c sageplot    -f pdf -d $(HTMLOUT)/images $(SRC)/aata.xml
-	$(MBSCRIPT)/mbx -v -c sageplot    -f svg -d $(HTMLOUT)/images $(SRC)/aata.xml
+	$(MBSCRIPT)/pretext -v -c latex-image -f svg -d $(HTMLOUT)/images $(SRC)/aata.ptx
+	$(MBSCRIPT)/pretext -v -c sageplot    -f pdf -d $(HTMLOUT)/images $(SRC)/aata.ptx
+	$(MBSCRIPT)/pretext -v -c sageplot    -f svg -d $(HTMLOUT)/images $(SRC)/aata.ptx
 
 
 ##########

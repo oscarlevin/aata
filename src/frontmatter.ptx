@@ -17,6 +17,16 @@
       <institution>Stephen F. Austin State University</institution>
       <email>judsontw@sfasu.edu</email>
     </author>
+    <credit>
+      <title>Remixed Version</title>
+      <author>
+        <personname>Oscar Levin</personname>
+        <department>School of Mathematical Sciences</department>
+        <institution>University of Northern Colorado</institution>
+        <email>oscar.levin@unco.edu</email>
+      </author>
+          
+    </credit>
 
     <credit>
       <title>Sage Exercises for Abstract Algebra</title>
@@ -41,7 +51,7 @@
   </titlepage>
 
   <colophon>
-    <edition>Annual Edition 2020</edition>
+    <edition>Annual Remixed Edition 2020</edition>
     <website>
       <name>
       <c>abstract.pugetsound.edu</c>
@@ -146,7 +156,50 @@
     </p>
   </acknowledgement>
 
+  <preface permid="JEk">
+    <title>Preface to the Remixed Version</title>
+    <p permid="SXW">
+      After teaching our Introductory Abstract Algebra sequence a few times at the University of Northern Colorado, I have attempted to rearrange the content of this book to better match the sequence of topics we cover in the course.  Most of the actual content is identical to the original AATA book, with a few notable exceptions:
+      <ul permid="pLt">
+        <li permid="VSC">
+          <p permid="uvm">
+            Reading questions have been added to the end of most sections.
+          </p>
+        </li>
+        <li permid="BZL">
+          <p permid="aCv">
+            Some additional exercises, listed as <em>practice problems</em> and <em>collected homework</em> have either been added, or taken from the chapter exercises.  These are now tied to the individual section they relate to.
+          </p>
+        </li>
+        <li permid="igU">
+          <p permid="GJE">
+            Especially in the second half of the book (chapters 8 through 11), some new, slower exposition is included.  My hope is that the first half of the book will also get this treatement, either as I teach this course in Fall 2020, or else at a later date.
+          </p>
+        </li>
+        <li permid="Ood">
+          <p permid="mQN">
+            The sections on Sage and their exercises has been removed.  Unfortunately, my class does not have the time to employ these, and it would have been difficult to consolodate those sections under the reorganization that took place.  They are, of course, still available in the original version of the book that is still widely available.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p permid="zff">
+      Much of the design of this remixed version was inspired by an effort to create a <q>for teachers</q> version of the book.  That effort continues and will likely subsume this version in the near future.  I hope that the work done here will be useful in that process.
+    </p>
+      <attribution>
+        <line>Oscar Levin</line>
+        <line>Greeley, Co; 2020</line>
+      </attribution>
+    
+  </preface>
+
   <preface permid="Cpq">
+  <title>Original Preface</title>
+  <p permid="fmo">
+    Note: the chapters listed here refer to the original version, not the remix.
+  </p>
+  
     <p permid="Nyp">
       This text is intended for a one or two-semester undergraduate course in abstract algebra.
       Traditionally,

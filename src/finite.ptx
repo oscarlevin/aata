@@ -105,7 +105,7 @@
         <p permid="LOg">
           We will prove this lemma using mathematical induction on <m>n</m>.
           We can use the binomial formula
-          (see <xref ref="integers"/>, <xref ref="example-integers-binomial-theorem"/>)
+          (see <xref ref="example-integers-binomial-theorem"/>)
           to verify the case for <m>n = 1</m>; that is,
           <me permid="jzS">
             (a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}
