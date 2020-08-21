@@ -1946,6 +1946,276 @@
 
     </section>
 
+<section xml:id="section-math-induction" permid="bUT">
+  <title>Mathematical Induction</title>
+  <p permid="xoP">
+      Suppose we wish to show that
+    <me permid="Ona">
+        1 + 2 + \cdots + n = \frac{n(n + 1)}{2}
+    </me>
+      for any natural number <m>n</m>.
+      This formula is easily  verified for small numbers such as <m>n = 1</m>,
+    <m>2</m>,    <m>3</m>, or <m>4</m>,
+      but it is impossible to verify for all natural numbers on a case-by-case basis.
+      To prove the formula true in general,
+      a more generic method is required.
+  </p>
+
+  <p permid="dvY">
+      Suppose we have verified the equation for the first <m>n</m> cases.
+      We will attempt to show that we can generate the formula for the <m>(n + 1)</m>th case from this knowledge.
+      The formula is true for <m>n = 1</m> since
+    <me permid="uuj">
+        1 = \frac{1(1 + 1)}{2}
+    </me>.
+      If we have verified the first <m>n</m> cases, then
+    <md permid="aBs">
+      <mrow>1 + 2 + \cdots + n + (n + 1) &amp; = \frac{n(n + 1)}{2} + n + 1</mrow>
+      <mrow>&amp; = \frac{n^2 + 3n + 2}{2}</mrow>
+      <mrow>&amp; = \frac{(n + 1)[(n + 1) + 1]}{2}</mrow>
+    </md>.
+      This is exactly the formula for the <m>(n + 1)</m>th case.
+  </p>
+
+  <p permid="JDh">
+      This method of proof is known as
+    <term>mathematical induction</term>.
+      Instead of attempting to verify a statement about some subset <m>S</m> of the positive integers
+    <m>{\mathbb N}</m> on a case-by-case basis,
+      an impossible task if <m>S</m> is an infinite set,
+      we give a specific proof for the smallest integer being considered,
+      followed by a generic argument showing that if the statement holds for a given case,
+      then it must also hold for the next case in the sequence.
+      We summarize mathematical induction in the following axiom.
+  </p>
+
+  <principle xml:id="principle-integers-first-pmi" permid="Plc">
+    <title>First Principle of Mathematical Induction</title>
+    <idx>
+      <h>Induction</h>
+      <h>first principle of</h>
+    </idx>
+    <statement>
+      <p permid="yPH">
+          Let <m>S(n)</m> be a statement about integers for
+        <m>n \in {\mathbb N}</m> and suppose <m>S(n_0)</m> is true for some integer <m>n_0</m>.
+          If for all integers <m>k</m> with <m>k \geq n_0</m>,
+        <m>S(k)</m> implies that <m>S(k+1)</m> is true,
+          then <m>S(n)</m> is true for all integers <m>n</m> greater than or equal to <m>n_0</m>.
+      </p>
+    </statement>
+  </principle>
+  <!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
+  <example xml:id="example-integers-induction-greater-than" permid="HGD">
+    <p permid="rli">
+        For all integers <m>n \geq 3</m>,      <m>2^n \gt n + 4</m>.
+        Since
+      <me permid="GIB">
+          8 = 2^3 \gt 3 + 4 = 7
+      </me>,
+        the statement is true for <m>n_0 = 3</m>.
+        Assume that <m>2^k \gt k + 4</m> for <m>k \geq 3</m>.
+        Then <m>2^{k + 1} = 2 \cdot 2^{k} \gt 2(k + 4)</m>.
+        But
+      <me permid="mPK">
+          2(k + 4) = 2k + 8 \gt k + 5 = (k + 1) + 4
+      </me>
+        since <m>k</m> is positive.
+        Hence, by induction,
+        the statement holds for all integers <m>n \geq 3</m>.
+    </p>
+  </example>
+
+  <example xml:id="example-integers-induction-divisible" permid="nNM">
+    <p permid="Xsr">
+        Every integer <m>10^{n + 1} + 3 \cdot 10^n + 5</m> is divisible by <m>9</m> for <m>n \in {\mathbb N}</m>.
+        For <m>n = 1</m>,
+      <me permid="SWT">
+          10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15
+      </me>
+        is divisible by <m>9</m>.
+        Suppose that <m>10^{k + 1} + 3 \cdot 10^k + 5</m> is divisible by <m>9</m> for <m>k \geq 1</m>.
+        Then
+      <md permid="zec">
+        <mrow>10^{(k + 1) + 1} + 3 \cdot 10^{k + 1} + 5&amp; = 10^{k + 2} + 3 \cdot 10^{k + 1} + 50 - 45</mrow>
+        <mrow>&amp; = 10 (10^{k + 1} + 3 \cdot 10^{k} + 5) - 45</mrow>
+      </md>
+        is divisible by <m>9</m>.
+    </p>
+  </example>
+
+  <example xml:id="example-integers-binomial-theorem" permid="TUV">
+    <p permid="DzA">
+        We will prove the binomial theorem using mathematical induction; that is,
+      <me permid="fll">
+          (a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}
+      </me>,
+        where <m>a</m> and <m>b</m> are real numbers,
+      <m>n \in \mathbb{N}</m>, and
+      <me permid="Lsu">
+          \binom{n}{k} = \frac{n!}{k! (n - k)!}
+      </me>
+        is the binomial coefficient.
+
+      <notation>
+        <usage>n!</usage>
+        <description>
+          <m>n</m> factorial</description>
+      </notation>
+
+      <notation>
+        <usage>\binom{n}{k}</usage>
+        <description>binomial coefficient <m>n!/(k!(n-k)!)</m>
+        </description>
+      </notation>
+
+        We first show that
+      <me permid="rzD">
+          \binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}
+      </me>.
+        This result follows from
+      <md permid="XGM">
+        <mrow>\binom{n}{k} + \binom{n}{k - 1} &amp; = \frac{n!}{k!(n - k)!} +\frac{n!}{(k-1)!(n - k + 1)!}</mrow>
+        <mrow>&amp; = \frac{(n + 1)!}{k!(n + 1 - k)!}</mrow>
+        <mrow>&amp; =\binom{n + 1}{k}</mrow>
+      </md>.
+        If <m>n = 1</m>, the binomial theorem is easy to verify.
+        Now assume that the result is true for <m>n</m> greater than or equal to <m>1</m>.
+        Then
+      <md permid="DNV">
+        <mrow>(a + b)^{n + 1} &amp; = (a + b)(a + b)^n</mrow>
+        <mrow>&amp; = (a + b) \left( \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}\right)</mrow>
+        <mrow>&amp; = \sum_{k = 0}^{n} \binom{n}{k} a^{k + 1} b^{n - k} + \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n + 1 - k}</mrow>
+        <mrow>&amp; = a^{n + 1} + \sum_{k = 1}^{n} \binom{n}{k - 1} a^{k} b^{n + 1 - k} + \sum_{k = 1}^{n} \binom{n}{k}  a^k b^{n + 1 - k} + b^{n + 1}</mrow>
+        <mrow>&amp;  = a^{n + 1} + \sum_{k = 1}^{n} \left[ \binom{n}{k - 1} + \binom{n}{k} \right]a^k b^{n + 1 - k} + b^{n + 1}</mrow>
+        <mrow>&amp;  = \sum_{k = 0}^{n + 1}   \binom{n + 1}{k} a^k b^{n + 1- k}</mrow>
+      </md>.
+    </p>
+  </example>
+
+  <p permid="pKq">
+      We have an equivalent statement of the Principle of Mathematical Induction that is often very useful.
+  </p>
+
+  <principle xml:id="principle-integers-second-pmi" permid="vsl">
+    <title>Second Principle of Mathematical Induction</title>
+    <idx>
+      <h>Induction</h>
+      <h>second principle of</h>
+    </idx>
+    <statement>
+      <p permid="eWQ">
+          Let <m>S(n)</m> be a statement about integers for
+        <m>n \in {\mathbb N}</m> and suppose <m>S(n_0)</m> is true for some integer <m>n_0</m>.
+          If <m>S(n_0), S(n_0 + 1), \ldots, S(k)</m> imply that
+        <m>S(k + 1)</m> for <m>k \geq n_0</m>,
+          then the statement <m>S(n)</m> is true for all integers <m>n \geq n_0</m>.
+      </p>
+    </statement>
+  </principle>
+  <!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
+  <p permid="VRz">
+      A nonempty subset <m>S</m> of
+    <m>{\mathbb Z}</m> is <term>well-ordered</term>
+    <idx>
+      <h>Well-ordered set</h>
+    </idx>
+      if <m>S</m> contains a least element.
+      Notice that the set <m>{\mathbb Z}</m> is not well-ordered since it does not contain a smallest element.
+      However, the natural numbers are well-ordered.
+  </p>
+
+  <principle permid="bzu">
+    <title>Principle of Well-Ordering</title>
+    <statement>
+      <p permid="LdZ">
+          Every nonempty subset of the natural numbers is well-ordered.
+      </p>
+    </statement>
+  </principle>
+
+  <p permid="BYI">
+      The Principle of Well-Ordering is equivalent to the Principle of Mathematical Induction.
+  </p>
+
+  <lemma xml:id="lemma-integers-smallest-number" permid="CWK">
+    <statement>
+      <p permid="Gug">
+          The Principle of Mathematical Induction implies that <m>1</m> is the least positive natural number.
+      </p>
+    </statement>
+
+    <proof permid="xhy">
+      <p permid="Mjs">
+          Let <m>S = \{ n \in {\mathbb N} : n \geq 1 \}</m>.
+          Then <m>1 \in S</m>.
+          Assume that <m>n \in S</m>.
+          Since <m>0 \lt 1</m>,
+          it must be the case that <m>n = n + 0 \lt n + 1</m>.
+          Therefore, <m>1 \leq n \lt n + 1</m>.
+          Consequently, if <m>n \in S</m>,
+          then <m>n + 1</m> must also be in <m>S</m>,
+          and by the Principle of Mathematical Induction, and <m>S = \mathbb N</m>.
+      </p>
+    </proof>
+  </lemma>
+  <!--  Theorem reworded for clarity.  TWJ 12/17/2011 -->
+  <!--  Suggested by K. Halasz and R. Beezer. -->
+  <theorem xml:id="theorem-integers-pmi-implies-pwo" permid="KBj">
+    <statement>
+      <p permid="BKn">
+          The Principle of Mathematical Induction implies the Principle of Well-Ordering.
+          That is, every nonempty subset of
+        <m>\mathbb N</m> contains a least element.
+      </p>
+    </statement>
+
+    <proof permid="sxF">
+      <p permid="sqB">
+          We must show that if <m>S</m> is a nonempty subset of the natural numbers,
+          then <m>S</m> contains a least element.
+          If <m>S</m> contains 1, then the theorem is true by <xref ref="lemma-integers-smallest-number"/>
+.
+          Assume that if <m>S</m> contains an integer <m>k</m> such that <m>1 \leq k \leq n</m>,
+          then <m>S</m> contains a least element.
+          We will show that if a set <m>S</m> contains an integer less than or equal to <m>n + 1</m>,
+          then <m>S</m> has a least element.
+          If <m>S</m> does not contain an integer less than <m>n+1</m>,
+          then <m>n+1</m> is the smallest integer in <m>S</m>.
+          Otherwise, since <m>S</m> is nonempty,
+      <m>S</m> must contain an integer less than or equal to <m>n</m>.
+          In this case, by induction, <m>S</m> contains a least element.
+    </p>
+  </proof>
+</theorem>
+<!-- wording change.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
+<p permid="ifR">
+      Induction can also be very useful in formulating definitions.
+      For instance, there are two ways to define <m>n!</m>,
+      the factorial of a positive integer <m>n</m>.
+
+  <ul permid="Yjp">
+    <li permid="Eqy">
+      <p permid="Dlf">
+            The <em>explicit</em> definition:
+        <m>n! = 1 \cdot 2 \cdot 3 \cdots (n - 1) \cdot n</m>.
+      </p>
+    </li>
+
+    <li permid="kxH">
+      <p permid="jso">
+            The <em>inductive</em> or <em>recursive</em> definition:
+        <m>1! = 1</m> and <m>n! = n(n - 1)!</m> for <m>n \gt 1</m>.
+      </p>
+    </li>
+  </ul>
+
+      Every good mathematician or computer scientist knows that looking at problems recursively,
+      as opposed to explicitly,
+      often results in better understanding of complex issues.
+</p>
+</section>
+
 
     <!-- Exercises with Solutions  -->
     <!-- File: sets.xml  -->
@@ -1953,7 +2223,7 @@
   <exercises xml:id="exercises-sets" filenamebase="sets" permid="mDp">
     <title>Additional Exercises</title>
   
-    <exercise number="2" permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
+    <exercise permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
       <statement>
         <p permid="gOq">
           If <m>A = \{ a, b, c \}</m>,
@@ -1994,7 +2264,7 @@
       </hint>
     </exercise>
 
-    <exercise number="3" permid="zBB" xml:id="sets-exercise-cartesian-product-nonempty-set">
+    <exercise permid="zBB" xml:id="sets-exercise-cartesian-product-nonempty-set">
       <statement>
         <p permid="MVz">
           Find an example of two nonempty sets <m>A</m> and <m>B</m> for which <m>A \times B = B \times A</m> is true.
@@ -2002,7 +2272,7 @@
       </statement>
     </exercise>
 
-    <exercise number="4" permid="fIK" xml:id="sets-exercise-union-intersect-empty-set">
+    <exercise permid="fIK" xml:id="sets-exercise-union-intersect-empty-set">
       <statement>
         <p permid="tcI">
           Prove <m>A \cup \emptyset = A</m> and <m>A \cap \emptyset = \emptyset</m>.
@@ -2010,7 +2280,7 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="LPT" xml:id="sets-exercise-union-intersection-commute">
+    <exercise permid="LPT" xml:id="sets-exercise-union-intersection-commute">
       <statement>
         <p permid="ZjR">
           Prove <m>A \cup B = B \cup A</m> and <m>A \cap B = B \cap A</m>.
@@ -2018,7 +2288,7 @@
       </statement>
     </exercise>
 
-    <exercise number="6" permid="rXc" xml:id="sets-exercise-union-distributes">
+    <exercise permid="rXc" xml:id="sets-exercise-union-distributes">
       <statement>
         <p permid="Fra">
           Prove <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.
@@ -2040,7 +2310,7 @@
       </hint>
     </exercise>
 
-    <exercise number="7" permid="Yel" xml:id="sets-exercise-intersection-distributes">
+    <exercise permid="Yel" xml:id="sets-exercise-intersection-distributes">
       <statement>
         <p permid="lyj">
           Prove <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.
@@ -2048,7 +2318,7 @@
       </statement>
     </exercise>
 
-    <exercise number="8" permid="Elu" xml:id="sets-exercise-subset-iff-intersection">
+    <exercise permid="Elu" xml:id="sets-exercise-subset-iff-intersection">
       <statement>
         <p permid="RFs">
           Prove <m>A \subset B</m> if and only if <m>A \cap B = A</m>.
@@ -2056,7 +2326,7 @@
       </statement>
     </exercise>
 
-    <exercise number="9" permid="ksD" xml:id="sets-exercise-demorgan">
+    <exercise permid="ksD" xml:id="sets-exercise-demorgan">
       <statement>
         <p permid="xMB">
           Prove <m>(A \cap B)' = A' \cup B'</m>.
@@ -2064,7 +2334,7 @@
       </statement>
     </exercise>
 
-    <exercise number="10" permid="QzM" xml:id="sets-exercise-set-minus-union">
+    <exercise permid="QzM" xml:id="sets-exercise-set-minus-union">
       <statement>
         <p permid="dTK">
           Prove <m>A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)</m>.
@@ -2077,7 +2347,7 @@
       </hint>
     </exercise>
 
-    <exercise number="11" permid="wGV" xml:id="sets-exercise-times-union">
+    <exercise permid="wGV" xml:id="sets-exercise-times-union">
       <statement>
         <p permid="KaT">
           Prove <m>(A \cup B) \times C = (A \times C ) \cup (B \times C)</m>.
@@ -2085,7 +2355,7 @@
       </statement>
     </exercise>
 
-    <exercise number="12" permid="cOe" xml:id="sets-exercise-set-minus-empty-set">
+    <exercise permid="cOe" xml:id="sets-exercise-set-minus-empty-set">
       <statement>
         <p permid="qic">
           Prove <m>(A \cap B) \setminus B = \emptyset</m>.
@@ -2093,7 +2363,7 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="IVn" xml:id="sets-exercise-union-set-minus">
+    <exercise permid="IVn" xml:id="sets-exercise-union-set-minus">
       <statement>
         <p permid="Wpl">
           Prove <m>(A \cup B) \setminus B = A \setminus B</m>.
@@ -2101,7 +2371,7 @@
       </statement>
     </exercise>
 
-    <exercise number="14" permid="pcw" xml:id="sets-exercise-set-minus-distribute">
+    <exercise permid="pcw" xml:id="sets-exercise-set-minus-distribute">
       <statement>
         <p permid="Cwu">
           Prove <m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.
@@ -2114,7 +2384,7 @@
       </hint>
     </exercise>
 
-    <exercise number="15" permid="VjF" xml:id="sets-exercise-a-cap-b-setminus-c">
+    <exercise permid="VjF" xml:id="sets-exercise-a-cap-b-setminus-c">
       <statement>
         <p permid="iDD">
           Prove <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
@@ -2122,7 +2392,7 @@
       </statement>
     </exercise>
 
-    <exercise number="16" permid="BqO" xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a">
+    <exercise permid="BqO" xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a">
       <statement>
         <p permid="OKM">
           Prove <m>(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)</m>.
@@ -2130,7 +2400,7 @@
       </statement>
     </exercise>
 
-    <exercise number="17" permid="hxX" xml:id="sets-exercise-which-are-maps">
+    <exercise permid="hxX" xml:id="sets-exercise-which-are-maps">
       <statement>
         <p permid="uRV">
           Which of the following relations <m>f: {\mathbb Q} \rightarrow {\mathbb Q}</m> define a mapping?
@@ -2172,7 +2442,7 @@
       </hint>
     </exercise>
 
-    <exercise number="18" permid="NFg" xml:id="sets-exercise-which-are-one-to-one-onto">
+    <exercise permid="NFg" xml:id="sets-exercise-which-are-one-to-one-onto">
       <statement>
         <p permid="aZe">
           Determine which of the following functions are one-to-one and which are onto.
@@ -2213,7 +2483,7 @@
       </hint>
     </exercise>
 
-    <exercise number="19" permid="tMp" xml:id="sets-exercise-inverse-composition">
+    <exercise permid="tMp" xml:id="sets-exercise-inverse-composition">
       <statement>
         <p permid="Hgn">
           Let <m>f :A \rightarrow B</m> and
@@ -2224,7 +2494,7 @@
       </statement>
     </exercise>
 
-    <exercise number="20" permid="ZTy" xml:id="sets-exercise-functions-N-to-N">
+    <exercise permid="ZTy" xml:id="sets-exercise-functions-N-to-N">
       <statement>
         <p permid="nnw">
           <ol permid="slx">
@@ -2249,7 +2519,7 @@
       </hint>
     </exercise>
 
-    <exercise number="21" permid="GaH" xml:id="sets-exercise-relation-on-circles">
+    <exercise permid="GaH" xml:id="sets-exercise-relation-on-circles">
       <statement>
         <p permid="TuF">
           Prove the relation defined on
@@ -2261,7 +2531,7 @@
 
     
 
-    <exercise number="23" permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
+    <exercise permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
       <statement>
         <p permid="fIX">
           Define a function on the real numbers by
@@ -2280,7 +2550,7 @@
       </hint>
     </exercise>
 
-    <exercise number="24" permid="ywi" xml:id="sets-exercise-maps-set-operations">
+    <exercise permid="ywi" xml:id="sets-exercise-maps-set-operations">
       <statement>
         <p permid="LQg">
           Let <m>f: X \rightarrow Y</m> be a map with
@@ -2342,7 +2612,7 @@
     </exercise>
 
 
-    <exercise number="27" permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
+    <exercise permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
       <statement>
         <p permid="ElH">
           Show that an <m>m \times n</m> matrix gives rise to a well-defined map from
@@ -2351,7 +2621,7 @@
       </statement>
     </exercise>
 
-    <exercise number="28" permid="WYS" xml:id="sets-exercise-reflexive-error">
+    <exercise permid="WYS" xml:id="sets-exercise-reflexive-error">
       <statement>
         <p permid="ksQ">
           Find the error in the following argument by providing a counterexample.
@@ -2369,7 +2639,7 @@
       </hint>
     </exercise>
 
-    <exercise number="29" permid="Dgb" xml:id="sets-exercise-projective-real-line">
+    <exercise permid="Dgb" xml:id="sets-exercise-projective-real-line">
       <title>Projective Real Line</title>
       <statement>
         <p permid="QzZ">
@@ -2382,6 +2652,271 @@
           which is very important in geometry.
         </p>
       </statement>
+    </exercise>
+
+
+    <exercise permid="sTe" xml:id="integers-exercise-pmi-sum-squares">
+      <statement>
+        <p permid="AEU">
+          Prove that
+          <me permid="CIC">
+            1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+      <hint permid="pCZ">
+        <p permid="iWP">
+          The base case,
+          <m>S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2</m> is true.
+          Assume that <m>S(k): 1^2 + 2^2 + \cdots + k^2 = [k(k + 1)(2k + 1)]/6</m> is true.
+          Then
+          <md permid="iPL">
+            <mrow>1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 &amp; = [k(k + 1)(2k + 1)]/6 + (k + 1)^2</mrow>
+            <mrow>&amp; = [(k + 1)((k + 1) + 1)(2(k + 1) + 1)]/6</mrow>
+          </md>,
+          and so <m>S(k + 1)</m> is true.
+          Thus, <m>S(n)</m> is true for all positive integers <m>n</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise permid="Zan" xml:id="integers-exercise-pmi-sum-cubes">
+      <statement>
+        <p permid="gMd">
+          Prove that
+          <me permid="ved">
+            1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="Fhw" xml:id="integers-exercise-pmi-factorial">
+      <statement>
+        <p permid="MTm">
+          Prove that <m>n! \gt 2^n</m> for <m>n \geq 4</m>.
+        </p>
+      </statement>
+      <hint permid="hYA">
+        <p permid="PdY">
+          The base case, <m>S(4): 4! = 24 \gt 16 =2^4</m> is true.
+          Assume <m>S(k): k! \gt 2^k</m> is true.
+          Then <m>(k + 1)! = k! (k + 1) \gt 2^k \cdot 2 = 2^{k + 1}</m>,
+          so <m>S(k + 1)</m> is true.
+          Thus, <m>S(n)</m> is true for all positive integers <m>n</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise permid="loF" xml:id="integers-exercise-pmi-0dd-times-x">
+      <statement>
+        <p permid="tav">
+          Prove that
+          <me permid="blm">
+            x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="RvO" xml:id="integers-exercise-pmi-divisible-by-3">
+      <statement>
+        <p permid="ZhE">
+          Prove that <m>10^{n + 1} + 10^n + 1</m> is divisible by <m>3</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="xCX" xml:id="integers-exercise-pmi-divisible-by-99">
+      <statement>
+        <p permid="FoN">
+          Prove that <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> is divisible by <m>99</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="dKg" xml:id="integers-exercise-pmi-geometric-arithmetic-mean">
+      <statement>
+        <p permid="lvW">
+          Show that
+          <me permid="nzE">
+            \sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k = 1}^{n} a_k
+          </me>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="JRp" xml:id="integers-exercise-pmi-leibniz">
+      <statement>
+        <p permid="RDf">
+          Prove the Leibniz rule for <m>f^{(n)} (x)</m>,
+          where <m>f^{(n)}</m> is the <m>n</m>th derivative of <m>f</m>; that is,
+          show that
+          <me permid="Mco">
+            (fg)^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n - k)}(x)
+          </me>.
+        </p>
+      </statement>
+      <hint permid="SPC">
+        <p permid="vlh">
+          Follow the proof in <xref ref="example-integers-binomial-theorem"/>
+.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise permid="pYy" xml:id="integers-exercise-pmi-sum-powers-of-2">
+      <statement>
+        <p permid="xKo">
+          Use induction to prove that
+          <m>1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="WfH" xml:id="integers-exercise-pmi-sum-n-over-n-plus-one">
+      <statement>
+        <p permid="dRx">
+          Prove that
+          <me permid="sjx">
+            \frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="CmQ" xml:id="integers-exercise-pmi-less-than-nx">
+      <statement>
+        <p permid="JYG">
+          If <m>x</m> is a nonnegative real number,
+          then show that <m>(1 + x)^n - 1 \geq nx</m> for <m>n = 0, 1, 2, \ldots</m>.
+        </p>
+      </statement>
+      <hint permid="rsm">
+        <p permid="bsq">
+          The base case,
+          <m>S(0): (1 + x)^0 - 1 = 0 \geq 0 = 0 \cdot x</m> is true.
+          Assume <m>S(k): (1 + x)^k -1 \geq kx</m> is true.
+          Then
+          <md permid="kEY">
+            <mrow>(1 + x)^{k + 1} - 1 &amp; = (1 + x)(1 + x)^k -1</mrow>
+            <mrow>&amp; = (1 + x)^k + x(1 + x)^k - 1</mrow>
+            <mrow>&amp; \geq kx + x(1 + x)^k</mrow>
+            <mrow>&amp; \geq kx + x</mrow>
+            <mrow>&amp; = (k + 1)x</mrow>
+          </md>,
+          so <m>S(k + 1)</m> is true.
+          Therefore, <m>S(n)</m> is true for all positive integers <m>n</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise permid="itZ" xml:id="integers-exercise-power-sets">
+      <title>Power Sets</title>
+      <statement>
+        <p permid="qfP">
+          Let <m>X</m> be a set.
+          Define the <term>power set</term> of <m>X</m>,
+          denoted <m>{\mathcal P}(X)</m>,
+          to be the set of all subsets  of <m>X</m>.
+
+          <notation>
+            <usage>\mathcal P(X)</usage>
+            <description>power set of <m>X</m>
+            </description>
+          </notation>
+
+          For example,
+          <me permid="wTq">
+            {\mathcal P}( \{a, b\} ) = \{ \emptyset, \{a\}, \{b\}, \{a, b\} \}
+          </me>.
+          For every positive integer <m>n</m>,
+          show that a set with exactly <m>n</m> elements has a power set with exactly <m>2^n</m> elements.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="OBi" xml:id="integers-exercise-pmi-equivalent">
+      <statement>
+        <p permid="WmY">
+          Prove that the two principles of mathematical induction stated in <xref ref="section-math-induction"/>
+ are equivalent.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise permid="uIr" xml:id="integers-exercise-smallest-natural-number">
+      <statement>
+        <p permid="Cuh">
+          Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number.
+          Use this result to show that the Principle of Well-Ordering implies the Principle of Mathematical Induction;
+          that is, show that if <m>S \subset {\mathbb N}</m> such that <m>1 \in S</m> and
+          <m>n + 1 \in S</m> whenever <m>n \in S</m>,
+          then <m>S = {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+   
+    <!--Todo Check references to the Fibonacci numbers-->
+
+    <exercise permid="ndS" xml:id="integers-exercise-fibonacci">
+      <title>Fibonacci Numbers</title>
+      <statement>
+        <p permid="uPI">
+          The Fibonacci numbers are
+          <me permid="daz">
+            1, 1, 2, 3, 5, 8, 13, 21, \ldots
+          </me>.
+          We can define them inductively by <m>f_1 = 1</m>,          <m>f_2 = 1</m>,
+          and <m>f_{n + 2} = f_{n + 1} + f_n</m> for <m>n \in {\mathbb N}</m>.
+
+          <ol permid="scg">
+            <li permid="yBm">
+              <p permid="xvT">
+                Prove that <m>f_n \lt 2^n</m>.
+              </p>
+            </li>
+
+            <li permid="eIv">
+              <p permid="dDc">
+                Prove that <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>,
+                <m>n \geq 2</m>.
+              </p>
+            </li>
+
+            <li permid="KPE">
+              <p permid="JKl">
+                Prove that <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.
+              </p>
+            </li>
+
+            <li permid="qWN">
+              <p permid="pRu">
+                Show that <m>\lim_{n \rightarrow \infty} f_n / f_{n + 1} = (\sqrt{5} - 1)/2</m>.
+              </p>
+            </li>
+
+            <li permid="XdW">
+              <p permid="VYD">
+                Prove that <m>f_n</m> and <m>f_{n + 1}</m> are relatively prime.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <hint permid="Iqx">
+        <p permid="Hzz">
+          For (a) and (b) use mathematical induction. (c) Show that <m>f_1 = 1</m>,
+          <m>f_2 = 1</m>,
+          and <m>f_{n + 2} = f_{n + 1} + f_n</m>. (d) Use part (c). (e) Use part (b) and <xref ref="integers-exercise-gcd-1"/>
+.
+        </p>
+      </hint>
     </exercise>
 
   </exercises>

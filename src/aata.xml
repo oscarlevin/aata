@@ -24,7 +24,7 @@
     <part xml:id="part-groups">
       <title>Groups</title>
       <xi:include href="./sets.xml" />                        <!-- Set Theory  -->
-      <xi:include href="./integers.xml" />                    <!-- Integers -->
+      <!-- <xi:include href="./integers.xml" />                    Integers -->
       <xi:include href="./groups.xml" />                      <!-- Groups -->
       <!-- <xi:include href="./cyclic.xml" />                      Cyclic Groups -->
       <!-- <xi:include href="./permute.xml" />                     Permutation Groups -->
