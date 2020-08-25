@@ -1130,7 +1130,7 @@
     </subsection>
 
     <reading-questions xml:id="rqs-sets-functions" permid="hGt">
-      <exercise permid="tUL">
+      <exercise xml:id="rq1-2-1" permid="tUL">
         <statement>
           <p permid="raf">
             Consider the sets <m>A = \{x \st x-3 \in \N\}</m> and <m>B = \{x \st \frac{x}{2} \in \N\}</m>.  Find (describe) the sets <m>A \cap B</m> and <m>A \cup B</m>. 
@@ -1141,21 +1141,21 @@
           </p>
         </statement>
       </exercise>
-      <exercise permid="abU">
+      <exercise xml:id="rq1-2-2" permid="abU">
         <statement>
           <p permid="Dox">
             What does it mean for two sets to be <term>disjoint</term>?  Describe in words and in symbols, and give an example and non-example.
           </p>
         </statement>
       </exercise>
-      <exercise permid="Gjd">
+      <exercise xml:id="rq1-2-3" permid="Gjd">
         <statement>
           <p permid="jvG">
             What is the difference between a function being one-to-one (injective) and being onto (surjective)?  
           </p>
         </statement>
       </exercise>
-      <exercise permid="mqm">
+      <exercise xml:id="rq1-2-4" permid="mqm">
         <statement>
           <p permid="PCP">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything).
@@ -1728,28 +1728,28 @@
       </example>
 
       <reading-questions xml:id="rqs-equiv-relations-parts" permid="NNC">
-        <exercise permid="Sxv">
+        <exercise xml:id="rq1-3-1" permid="Sxv">
           <statement>
             <p permid="vJY">
               Consider the relation <m>R \subset \Z \times \Z</m> that holds of <m>(x,y)</m> precisely when <m>x-y = 3</m>. Is <m>R</m> an equivalence relation?  Not not, what specific properties of an equivalence relation does it not satisfy? 
             </p>
           </statement>
         </exercise>
-        <exercise permid="yEE">
+        <exercise xml:id="rq1-3-2" permid="yEE">
           <statement>
             <p permid="bRh">
               Consider a set <m>X</m> and a partition <m>\mathcal{P}</m> of <m>X</m>.  Is it possible for an element <m>a \in X</m> to belong to two distinct sets of <m>\mathcal{P}</m>?  Briefly explain.
             </p>
           </statement>
         </exercise>
-        <exercise permid="eLN">
+        <exercise xml:id="rq1-3-3" permid="eLN">
           <statement>
             <p permid="HYq">
               Consider the equivalence realtion established by the integers modulo 5.  What does the notation <m>[4]</m> mean?  Be as specific as you can.
             </p>
           </statement>
         </exercise>
-        <exercise permid="KSW">
+        <exercise xml:id="rq1-3-4" permid="KSW">
           <statement>
             <p permid="ofz">
               After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).

@@ -473,28 +473,28 @@
           </p>
         </statement>
       </exercise> -->
-  <exercise permid="Cqi">
+  <exercise xml:id="rq-integers-1" permid="Cqi">
     <statement>
       <p permid="Hab">
             What is the <em>Division Algorithm</em>?  Illustrate your answer with the exampls (a) <m>a = 4</m> and <m>b = 15</m> and (b) <m>a = -3</m> and <m>b = 5</m>.
       </p>
     </statement>
   </exercise>
-  <exercise permid="ixr">
+  <exercise xml:id="rq-integers-2" permid="ixr">
     <statement>
       <p permid="nhk">
             Use the definition of <em>greatest common divisor</em> given in the section to explain why <m>\gcd(28, 42) = 14</m>.
       </p>
     </statement>
   </exercise>
-  <exercise permid="OEA">
+  <exercise xml:id="rq-integers-3" permid="OEA">
     <statement>
       <p permid="Tot">
             Is 1 a prime number?  Answer this question based on the definition in this section and explain.
       </p>
     </statement>
   </exercise>
-  <exercise permid="uLJ">
+  <exercise xml:id="rq-integers-4" permid="uLJ">
     <statement>
       <p permid="zvC">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -998,7 +998,7 @@
     </p>
 
     <reading-questions xml:id="rqs-polynomial-rings" permid="TYn">
-      <exercise permid="MtO">
+      <exercise xml:id="rq-poly-rings-1" permid="MtO">
         <statement>
           <p permid="zad">
             Consider the polynomial <m>1+3x^4 - 2x</m>.  
@@ -1022,21 +1022,21 @@
           </p>
         </statement>
       </exercise>
-      <exercise permid="sAX">
+      <exercise xml:id="rq-poly-rings-2" permid="sAX">
         <statement>
           <p permid="fhm">
             If <m>p(x)</m> and <m>q(x)</m> are polynomials in <m>R[x]</m> for a commutative ring <m>R</m>, what can we say about the degree of the polynomial <m>p(x)q(x)</m>?  Be as specific as possible.
           </p>
         </statement>
       </exercise>
-      <exercise permid="YIg">
+      <exercise xml:id="rq-poly-rings-3" permid="YIg">
         <statement>
           <p permid="Lov">
             What is the <term>evaluation homomorphism</term>?  Illustrate with an example using <m>R = \Z</m> and <m>\alpha = 2</m>.
           </p>
         </statement>
       </exercise>
-      <exercise permid="EPp">
+      <exercise xml:id="rq-poly-rings-4" permid="EPp">
         <statement>
           <p permid="rvE">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -1567,28 +1567,28 @@
     </p>
 
     <reading-questions xml:id="rqs-polynomial-division-algorithm" permid="Afw">
-      <exercise permid="kWy">
+      <exercise xml:id="rq-poly-divalg-1" permid="kWy">
         <statement>
           <p permid="XCN">
             What must be true of <m>r(x)</m> in the division algorithm for polynomials? How does this relate to <m>r</m> in the division algorithm for the integers?
           </p>
         </statement>
       </exercise>
-      <exercise permid="RdH">
+      <exercise xml:id="rq-poly-divalg-2" permid="RdH">
         <statement>
           <p permid="DJW">
             What can you say about the number <m>\alpha</m> and the polynomial <m>p(x)</m> if <m>p(x)</m> is in the kernel of the evaluation homomorphism <m>\phi_\alpha</m>?
           </p>
         </statement>
       </exercise>
-      <exercise permid="xkQ">
+      <exercise xml:id="rq-poly-divalg-3" permid="xkQ">
         <statement>
           <p permid="jRf">
             What do we mean by the <term>greatest common divisor</term> of a pair of polynomials <m>p(x)</m> and <m>q(x)</m>?  
           </p>
         </statement>
       </exercise>
-      <exercise permid="drZ">
+      <exercise xml:id="rq-poly-divalg-4" permid="drZ">
         <statement>
           <p permid="PYo">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -2288,28 +2288,28 @@
       </p>
     </subsection>
     <reading-questions xml:id="rqs-irreducible-polynomials" permid="gmF">
-      <exercise permid="Jzi">
+      <exercise xml:id="rq-irred-poly-1" permid="Jzi">
         <statement>
           <p permid="wfx">
             Is the polynomial <m>p(x) = 2x^2 - 4</m> irreducible?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="pGr">
+      <exercise xml:id="rq-irred-poly-2" permid="pGr">
         <statement>
           <p permid="cmG">
             Can every monic polynomial that is not irreducible be factored into two <em>monic</em> polynomials each with smaller degree? 
           </p>
         </statement>
       </exercise>
-      <exercise permid="VNA">
+      <exercise xml:id="rq-irred-poly-3" permid="VNA">
         <statement>
           <p permid="ItP">
             What, if anything, does Eisenstein's Criterion tell us about the polynomial <m>p(x) = x^3 + 6x^2 + 9x + 12</m>?  What about the polynomial <m>q(x) = x^3 + 6x^2 + 12x + 9</m>?  What about <m>f(x) = x^3 + 6x^2 + 12x + 36</m>?
           </p>
         </statement>
       </exercise>
-      <exercise permid="BUJ">
+      <exercise xml:id="rq-irred-poly-4" permid="BUJ">
         <statement>
           <p permid="oAY">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).

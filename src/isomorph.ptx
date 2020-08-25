@@ -454,28 +454,28 @@
     </subsection>
 
     <reading-questions xml:id="rqs-isomorphisms" permid="fCL">
-      <exercise permid="LJU">
+      <exercise xml:id="rq-isomorph-1" permid="LJU">
         <statement>
           <p permid="kmE">
             List three properties of a group that are preserved by isomorphism.
           </p>
         </statement>
       </exercise>
-      <exercise permid="rRd">
+      <exercise xml:id="rq-isomorph-2" permid="rRd">
         <statement>
           <p permid="QtN">
             True or false: for two groups to be isomorphic, they must have the same operation.  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="XYm">
+      <exercise xml:id="rq-isomorph-3" permid="XYm">
         <statement>
           <p permid="wAW">
             How many cyclic groups of order 10 are there?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="Efv">
+      <exercise xml:id="rq-isomorph-4" permid="Efv">
         <statement>
           <p permid="cIf">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -568,7 +568,9 @@
       <exercise permid="CLQ">
         <statement>
           <p permid="exB">
-            Let <m>G = \R \setminus \{-1\}</m> with the operation <m>\ast</m> defined by <me permid="MtX">
+            Let <m>G = \R \setminus \{-1\}</m> 
+            with the operation <m>\ast</m> 
+            defined by <me permid="MtX">
               a \ast b = a+b+ab.
             </me>
             We previously saw that <m>G</m> with this operation is a group.  Show that <m>(G, \ast)</m> is isomprhic to the multiplicative group of nonzero real numbers <m>\R^*</m>.
@@ -940,21 +942,21 @@
 </example>
 
 <reading-questions xml:id="rqs-homomorphisms" permid="PJT">
-  <exercise permid="bYl">
+  <exercise xml:id="rq-homomorph-1" permid="bYl">
     <statement>
       <p permid="ZdF">
             What is the difference between a <em>homomorphism</em> and an <em>isomorphism</em>? 
       </p>
     </statement>
   </exercise>
-  <exercise permid="Ifu">
+  <exercise xml:id="rq-homomorph-2" permid="Ifu">
     <statement>
       <p permid="FkO">
             What do we mean by the <term>kernel</term> of a homomorphism?  What does this say about the kernel of any <em>isomorphism</em>?
       </p>
     </statement>
   </exercise>
-  <exercise permid="omD">
+  <exercise xml:id="rq-homomorph-3" permid="omD">
     <statement>
       <p permid="lrX">
             What can you say about the image of a subgroup under a homomorphism?
@@ -962,7 +964,7 @@
       </p>
     </statement>
   </exercise>
-  <exercise permid="UtM">
+  <exercise xml:id="rq-homomorph-4" permid="UtM">
     <statement>
       <p permid="Rzg">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -1348,21 +1350,21 @@
 
 
 <reading-questions xml:id="rqs-fht" permid="vRc">
-  <exercise permid="AAV">
+  <exercise xml:id="rq-fht-1" permid="AAV">
     <statement>
       <p permid="xGp">
             If <m>\phi:G \to H</m> is a group homomorphism, what can you say about <m>\ker \phi</m>?
       </p>
     </statement>
   </exercise>
-  <exercise permid="gIe">
+  <exercise xml:id="rq-fht-2" permid="gIe">
     <statement>
       <p permid="dNy">
             If <m>N</m> is a normal subgroup of <m>G</m>, must there be a homomorphism that has <m>N</m> as its kernel?  If so, what is it?
       </p>
     </statement>
   </exercise>
-  <exercise permid="MPn">
+  <exercise xml:id="rq-fht-3" permid="MPn">
     <statement>
       <p permid="JUH">
             What is the point of showing that <m>\eta(g_1Kg_2) = \eta(g_1K)\eta(g_2K)</m> in the proof of <xref ref="theorem-first-isomorphism"/>
@@ -1370,7 +1372,7 @@
       </p>
     </statement>
   </exercise>
-  <exercise permid="sWw">
+  <exercise xml:id="rq-fht-4" permid="sWw">
     <statement>
       <p permid="qbQ">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).

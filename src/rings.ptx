@@ -432,28 +432,28 @@
     </example>
 
     <reading-questions xml:id="rqs-rings" permid="UIh">
-      <exercise permid="NdI">
+      <exercise xml:id="rq-rings-1" permid="NdI">
         <statement>
           <p permid="LYp">
             How are groups and rings related to each other?  How are they different?
           </p>
         </statement>
       </exercise>
-      <exercise permid="tkR">
+      <exercise xml:id="rq-rings-2" permid="tkR">
         <statement>
           <p permid="sfy">
             What is a field and how do fields relate to rings?
           </p>
         </statement>
       </exercise>
-      <exercise permid="Zsa">
+      <exercise xml:id="rq-rings-3" permid="Zsa">
         <statement>
           <p permid="YmH">
             What is an integral domain?  How do integral domains relate to rings and fields?
           </p>
         </statement>
       </exercise>
-      <exercise permid="Fzj">
+      <exercise xml:id="rq-rings-4" permid="Fzj">
         <statement>
           <p permid="EtQ">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -871,28 +871,28 @@
     </theorem>
 
     <reading-questions xml:id="rqs-domains-fields" permid="APq">
-      <exercise permid="lGs">
+      <exercise xml:id="rq-domains-fields-1" permid="lGs">
         <statement>
           <p permid="kAZ">
             What do we mean by a <term>zero divisor</term>?  Explain and illustrate with an example.
           </p>
         </statement>
       </exercise>
-      <exercise permid="RNB">
+      <exercise xml:id="rq-domains-fields-2" permid="RNB">
         <statement>
           <p permid="QIi">
             What do we mean by a <term>unit</term>?  Which elements of the field <m>\Q</m> are units?
           </p>
         </statement>
       </exercise>
-      <exercise permid="xUK">
+      <exercise xml:id="rq-domains-fields-3" permid="xUK">
         <statement>
           <p permid="wPr">
             What is the <em>Cancellation Law</em> and how does this relate to zero divisors?
           </p>
         </statement>
       </exercise>
-      <exercise permid="ebT">
+      <exercise xml:id="rq-domains-fields-4" permid="ebT">
         <statement>
           <p permid="cWA">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -1414,7 +1414,7 @@
     </theorem>
 
     <reading-questions xml:id="rqs-ring-homomorphisms-ideals" permid="gWz">
-      <exercise permid="Kjc">
+      <exercise xml:id="rq-rings-homomorph-ideals-1" permid="Kjc">
         <statement>
           <p permid="JdJ">
             Which of the following is true of the kernel of a ring homomorphism?  Briefly explain.
@@ -1443,21 +1443,21 @@
           </p>
         </statement>
       </exercise>
-      <exercise permid="qql">
+      <exercise xml:id="rq-rings-homomorph-ideals-2"  permid="qql">
         <statement>
           <p permid="pkS">
             What is an <term>ideal</term> of a ring?  How do ideals relate to subrings?
           </p>
         </statement>
       </exercise>
-      <exercise permid="Wxu">
+      <exercise xml:id="rq-rings-homomorph-ideals-3" permid="Wxu">
         <statement>
           <p permid="Vsb">
             If <m>R</m> is a ring and <m>I</m> is an ideal, what sort of thing is <m>R/I</m>?  What do its elements look like and what operation(s) exist for it?
           </p>
         </statement>
       </exercise>
-      <exercise permid="CED">
+      <exercise xml:id="rq-rings-homomorph-ideals-4"  permid="CED">
         <statement>
           <p permid="Bzk">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).

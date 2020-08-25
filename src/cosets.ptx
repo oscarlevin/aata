@@ -246,28 +246,28 @@
     </theorem>
 
     <reading-questions xml:id="rqs-cosets" permid="JGm">
-      <exercise permid="VUE">
+      <exercise xml:id="rq-cosets-1" permid="VUE">
         <statement>
           <p permid="SZY">
             Why do we sometimes need to specify <em>left</em> or <em>right</em> cosets instead of just calling them cosets?  When do we not need to worry about this?
           </p>
         </statement>
       </exercise>
-      <exercise permid="CbN">
+      <exercise xml:id="rq-cosets-2" permid="CbN">
         <statement>
           <p permid="zhh">
             Let <m>G = \Z_6</m> and <m>H = \{0,2,4\}</m>.  List all cosets of <m>H</m> in <m>G</m>.  How many are there?
           </p>
         </statement>
       </exercise>
-      <exercise permid="iiW">
+      <exercise xml:id="rq-cosets-3" permid="iiW">
         <statement>
           <p permid="foq">
             Let <m>G = S_4</m> and <m>H = \{(1), (12)(34), (13)(24), (14)(23)\}</m>.  What is the index of <m>H</m> in <m>G</m>?  Briefly explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="Oqf">
+      <exercise xml:id="rq-cosets-4" permid="Oqf">
         <statement>
           <p permid="Lvz">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -710,28 +710,28 @@ they allow for the construction of a new class of groups,
 </subsection>
 
 <reading-questions xml:id="rqs-factor-groups" permid="BkP">
-<exercise permid="hrY">
+<exercise xml:id="rq-factor-groups-1" permid="hrY">
   <statement>
     <p permid="FUI">
             Give two ways we can can be sure that a subgroup <m>H</m> of a group <m>G</m> is normal.
     </p>
   </statement>
 </exercise>
-<exercise permid="Nzh">
+<exercise xml:id="rq-factor-groups-2" permid="Nzh">
   <statement>
     <p permid="mbR">
             What does the notation <m>G/H</m> represent?  What does the notation <m>[G:H]</m> represent?  How are these related?
     </p>
   </statement>
 </exercise>
-<exercise permid="tGq">
+<exercise xml:id="rq-factor-groups-3" permid="tGq">
   <statement>
     <p permid="Sja">
             The subgroup <m>8\Z</m> is normal in <m>\Z</m>.  In the factor group <m>\Z/8\Z</m>, perform the computation <m>(3+8\Z) + (7+8\Z)</m>.
     </p>
   </statement>
 </exercise>
-<exercise permid="ZNz">
+<exercise xml:id="rq-factor-groups-4" permid="ZNz">
   <statement>
     <p permid="yqj">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).

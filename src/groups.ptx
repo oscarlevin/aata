@@ -345,28 +345,28 @@
     </subsection>
 
     <reading-questions xml:id="rqs-equiv-classes-symmetries" permid="CLH">
-      <exercise permid="bor">
+      <exercise xml:id="rq2-1-1" permid="bor">
         <statement>
           <p permid="Vzf">
             What does it mean to say that a number <m>a</m> in <m>\mathbb{Z}_8</m> has a <em>multiplicative inverse</em>?  Describe this in general, and illustrate with an example of an element that has this and one that doesn't.
           </p>
         </statement>
       </exercise>
-      <exercise permid="HvA">
+      <exercise xml:id="rq2-1-2" permid="HvA">
         <statement>
           <p permid="BGo">
             Why are there six <em>symmetires</em> of an equilateral triangle?  Does this mean there should be <m>4!=24</m> symmetries of a square?
           </p>
         </statement>
       </exercise>
-      <exercise permid="nCJ">
+      <exercise xml:id="rq2-1-3" permid="nCJ">
         <statement>
           <p permid="hNx">
             Which of the operations discussed in this section are <em>commutative</em> and which are not?  What does this mean?  Illustrate with examples.
           </p>
         </statement>
       </exercise>
-      <exercise permid="TJS">
+      <exercise xml:id="rq2-1-4" permid="TJS">
         <statement>
           <p permid="NUG">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you <em>think</em> you understand everything). 
@@ -764,28 +764,28 @@
       </p>
     </subsection>
     <reading-questions xml:id="rqs-group-defs" permid="iSQ">
-      <exercise permid="zRb">
+      <exercise xml:id="rq2-2-1" permid="zRb">
         <statement>
           <p permid="ubP">
             What does it mean for a group to be <em>abelian</em>?  Be as specific as possible.
           </p>
         </statement>
       </exercise>
-      <exercise permid="fYk">
+      <exercise xml:id="rq2-2-2" permid="fYk">
         <statement>
           <p permid="aiY">
             What is the inverse of the element 5 in (a) the group <m>\Z_8</m> and (b) the group <m>U(8)</m>?  Breifly explain your answers.
           </p>
         </statement>
       </exercise>
-      <exercise permid="Mft">
+      <exercise xml:id="rq2-2-3" permid="Mft">
         <statement>
           <p permid="Gqh">
             What is the order of the group <m>U(8)</m>?  Explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="smC">
+      <exercise xml:id="rq2-2-4" permid="smC">
         <statement>
           <p permid="mxq">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -1317,28 +1317,28 @@
       </p>
 
       <reading-questions xml:id="rqs-group-perperties" permid="OZZ">
-        <exercise permid="YtL">
+        <exercise xml:id="rq2-3-1" permid="YtL">
           <statement>
             <p permid="SEz">
               For any group <m>G</m> with elements <m>a</m> and <m>b</m>, is <m>(ab)\inv = a\inv b\inv</m>?  Explain why or give a counterexample.
             </p>
           </statement>
         </exercise>
-        <exercise permid="EAU">
+        <exercise xml:id="rq2-3-2" permid="EAU">
           <statement>
             <p permid="yLI">
               In any group <m>G</m> with elements <m>a</m> and <m>b</m>, is there a unique solution in the group to the equation <m>ax = b</m>? Explain why or give a counterexample.
             </p>
           </statement>
         </exercise>
-        <exercise permid="kId">
+        <exercise xml:id="rq2-3-3" permid="kId">
           <statement>
             <p permid="eSR">
               What are the <em>right and left cancellation laws</em>?  Do these hold for all groups, some groups, or no groups?  Explain.
             </p>
           </statement>
         </exercise>
-        <exercise permid="QPm">
+        <exercise xml:id="rq2-3-4" permid="QPm">
           <statement>
             <p permid="Laa">
               After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -1937,28 +1937,28 @@
 
     </subsection>
     <reading-questions xml:id="rqs-subgroups" permid="vhi">
-      <exercise permid="wWv">
+      <exercise xml:id="rq2-4-1" permid="wWv">
         <statement>
           <p permid="rhj">
             Is <m>\Z_4</m> a subgroup of <m>\Z_8</m>?  Explain.
           </p>
         </statement>
       </exercise>
-      <exercise permid="ddE">
+      <exercise xml:id="rq2-4-2" permid="ddE">
         <statement>
           <p permid="Xos">
             What makes a subgroup <em>proper</em>?  What makes a subgroup <em>non-trivial</em>?
           </p>
         </statement>
       </exercise>
-      <exercise permid="JkN">
+      <exercise xml:id="rq2-4-3" permid="JkN">
         <statement>
           <p permid="DvB">
             The subgroup criterion in <xref ref="proposition-subgroup"/> says that for <m>H</m> to be a subgroup it is enough for <m>H \ne \emptyset</m> and whenever <m>g,h \in H</m> we also have <m>gh\inv \in H</m>.  Does every subgroup need to contain the identity?  If so, why does this criterion not say so?
           </p>
         </statement>
       </exercise>
-      <exercise permid="prW">
+      <exercise xml:id="rq2-4-4" permid="prW">
         <statement>
           <p permid="jCK">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -2452,28 +2452,28 @@
 </example>
 </subsection>
 <reading-questions xml:id="rqs-cyclic" permid="wmB">
-<exercise permid="ctK">
+<exercise xml:id="rq2-5-1" permid="ctK">
   <statement>
     <p permid="AWu">
             Explain what it means for a group to be cyclic.  Your explanation should use the word <em>generator</em> at least once.
     </p>
   </statement>
 </exercise>
-<exercise permid="IAT">
+<exercise xml:id="rq2-5-2" permid="IAT">
   <statement>
     <p permid="hdD">
             Find two different generators for the group <m>U(9) = \{1,2,4,5,7,8\}</m>.  What does this say about whether <m>U(9)</m> is cyclic? (Compare to the previous question.)
     </p>
   </statement>
 </exercise>
-<exercise permid="oIc">
+<exercise xml:id="rq2-5-3" permid="oIc">
   <statement>
     <p permid="NkM">
             Suppose <m>H</m> is a subgroup of a cyclic group <m>G</m>.  Must <m>H</m> be abelian?  Explain.
     </p>
   </statement>
 </exercise>
-<exercise permid="UPl">
+<exercise xml:id="rq2-5-4" permid="UPl">
   <statement>
     <p permid="trV">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
@@ -3517,28 +3517,28 @@
 
 
 <reading-questions xml:id="rqs-permutations" permid="exs">
-<exercise permid="KEB">
+<exercise xml:id="rq2-6-1" permid="KEB">
 <statement>
   <p permid="vvD">
             What is the order of the group <m>S_4</m>?  What is the order of the group <m>A_4</m>?  Then, give an example of an element in <m>S_4</m> that is not in <m>A_4</m>.
   </p>
 </statement>
 </exercise>
-<exercise permid="qLK">
+<exercise xml:id="rq2-6-2" permid="qLK">
 <statement>
   <p permid="bCM">
             Write the permutation <m>\sigma = \begin{pmatrix}1 \amp 2 \amp 3 \amp 4 \amp 5 \amp 6 \amp 7 \\ 3 \amp 2 \amp7 \amp 5 \amp 6 \amp 4 \amp 1 \end{pmatrix}</m> in cycle notation.
   </p>
 </statement>
 </exercise>
-<exercise permid="WST">
+<exercise xml:id="rq2-6-3" permid="WST">
 <statement>
   <p permid="HJV">
             Write <m>\sigma = (142)(243)</m> as a single cycle or product of disjoint cycles.  Then, find <m>\sigma(2)</m>.
   </p>
 </statement>
 </exercise>
-<exercise permid="Dac">
+<exercise xml:id="rq2-6-4" permid="Dac">
 <statement>
   <p permid="nRe">
             After reading the section, what questions do you still have?  Write at least one well formulated question (even if you think you understand everything).
